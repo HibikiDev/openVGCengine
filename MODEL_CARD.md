@@ -1,6 +1,6 @@
 # Model card
 
-The models openVGCengine ships. Exact files and hashes for a build are in `models/manifest.json` and `bundle.json`.
+The models openVGCengine ships. The weights aren't in the repo: they're in each release's zips on the [Releases page](https://github.com/HibikiDev/openVGCengine/releases). Exact files and hashes for a build are in `models/manifest.json`, in every one of those zips, and in an install's `bundle.json`.
 
 ## The three models
 

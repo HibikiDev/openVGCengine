@@ -7,25 +7,25 @@
  "files": [
   {
    "format": "gen9championsvgc2026regmc",
-   "file": "gen9championsvgc2026regmc-1630-2026-09.json.gz",
-   "month": "2026-09",
+   "file": "gen9championsvgc2026regmc-1630-2026-10.json.gz",
+   "month": "2026-10",
    "cutoff": 1630,
-   "battles": 1631943,
+   "battles": 1649648,
    "source_format": "gen9championsvgc2026regmc",
-   "url": "https://www.smogon.com/stats/2026-09/chaos/gen9championsvgc2026regmc-1630.json",
-   "sha256": "4cad56bcb18195b3fd9afd36b801fdc756792b0b39b77703f512501aa5805194",
-   "bytes": 1254850
+   "url": "https://www.smogon.com/stats/2026-10/chaos/gen9championsvgc2026regmc-1630.json",
+   "sha256": "9febdf10b59ab5f49b0d99e6da88948ff270feee3764458d63eb7c8640413289",
+   "bytes": 1173395
   },
   {
    "format": "gen9championsvgc2026regmcbo3",
-   "file": "gen9championsvgc2026regmcbo3-1630-2026-09.json.gz",
-   "month": "2026-09",
+   "file": "gen9championsvgc2026regmcbo3-1630-2026-10.json.gz",
+   "month": "2026-10",
    "cutoff": 1630,
-   "battles": 223477,
+   "battles": 262609,
    "source_format": "gen9championsvgc2026regmcbo3",
-   "url": "https://www.smogon.com/stats/2026-09/chaos/gen9championsvgc2026regmcbo3-1630.json",
-   "sha256": "ec4980fd027ed3e22b691fdd5fe134e2e55ff1297a6a430a84037f6ea2febeaa",
-   "bytes": 614276
+   "url": "https://www.smogon.com/stats/2026-10/chaos/gen9championsvgc2026regmcbo3-1630.json",
+   "sha256": "daaf4854b9fff55e41490da58c60e796c7bf6ffe6010fcfa0569d53f9fd3e8ad",
+   "bytes": 602614
   },
   {
    "format": "gen5vgc2013",

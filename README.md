@@ -23,7 +23,7 @@ the two: test a team against a field, study matchups and brings, review replays,
 | Part | What it is |
 |---|---|
 | **Engine** (`crates/`) | A battle simulator in Rust: a port of [Showdown](https://github.com/smogon/pokemon-showdown)'s, checked against Showdown battle by battle (same random rolls, same result at every step). It plays thousands of games a second. |
-| **Model** (`models/`, `trainer/`) | The neural network that plays: picks the four to bring, the leads, and every turn's moves and switches. |
+| **Model** (`trainer/`; the weights are on the [Releases page](https://github.com/HibikiDev/openVGCengine/releases)) | The neural network that plays: picks the four to bring, the leads, and every turn's moves and switches. |
 | **Tools** (`suite/`) | A desktop app on top of the model: team testing, matchup and bring analysis, replay review. |
 | **Training buddy** | The bot as a practice partner on a Showdown server running on your own computer. |
 
