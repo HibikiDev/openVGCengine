@@ -1,0 +1,262 @@
+{
+	"format": "gen5vgc2013",
+	"seed": "gen5,63975,17127,48494,64135",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "bellossom",
+			"item": "duskball",
+			"ability": "forewarn",
+			"moves": [
+				"aromatherapy",
+				"dragonrush",
+				"incinerate",
+				"rollingkick"
+			],
+			"nature": "mild",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 200,
+				"spa": 0,
+				"spd": 164,
+				"spe": 52
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 0,
+				"def": 25,
+				"spa": 26,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "palpitoad",
+			"item": "smoothrock",
+			"ability": "sniper",
+			"moves": [
+				"cottonguard",
+				"bonemerang",
+				"sludgebomb",
+				"clamp"
+			],
+			"nature": "calm",
+			"evs": {
+				"hp": 0,
+				"atk": 76,
+				"def": 212,
+				"spa": 208,
+				"spd": 12,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 9
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "fearow",
+			"item": "enigmaberry",
+			"ability": "plus",
+			"moves": [
+				"mindreader",
+				"thunderfang",
+				"mistball",
+				"discharge"
+			],
+			"nature": "lax",
+			"evs": {
+				"hp": 104,
+				"atk": 92,
+				"def": 112,
+				"spa": 40,
+				"spd": 92,
+				"spe": 68
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 3,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "unfezant",
+			"item": "dragonfang",
+			"ability": "insomnia",
+			"moves": [
+				"poisonpowder",
+				"drillpeck",
+				"superfang",
+				"furyswipes"
+			],
+			"nature": "lonely",
+			"evs": {
+				"hp": 108,
+				"atk": 12,
+				"def": 232,
+				"spa": 28,
+				"spd": 128,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 18,
+				"atk": 31,
+				"def": 9,
+				"spa": 31,
+				"spd": 8,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "shelmet",
+			"item": "choiceband",
+			"ability": "naturalcure",
+			"moves": [
+				"fling",
+				"rest",
+				"mefirst",
+				"mirrormove"
+			],
+			"nature": "hasty",
+			"evs": {
+				"hp": 224,
+				"atk": 20,
+				"def": 160,
+				"spa": 16,
+				"spd": 88,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 20,
+				"spa": 31,
+				"spd": 31,
+				"spe": 15
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "pinsir",
+			"item": "focussash",
+			"ability": "liquidooze",
+			"moves": [
+				"psychup",
+				"acrobatics",
+				"powerwhip",
+				"mimic"
+			],
+			"nature": "gentle",
+			"evs": {
+				"hp": 64,
+				"atk": 60,
+				"def": 184,
+				"spa": 140,
+				"spd": 40,
+				"spe": 20
+			},
+			"ivs": {
+				"hp": 27,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "mantine",
+			"item": "petayaberry",
+			"ability": "poisonpoint",
+			"moves": [
+				"magnetbomb",
+				"firefang",
+				"payday",
+				"barrier"
+			],
+			"nature": "quirky",
+			"evs": {
+				"hp": 160,
+				"atk": 228,
+				"def": 56,
+				"spa": 64,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 30,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "braviary",
+			"item": "powerherb",
+			"ability": "imposter",
+			"moves": [
+				"dragontail",
+				"forcepalm",
+				"poisonpowder",
+				"cottonspore"
+			],
+			"nature": "serious",
+			"evs": {
+				"hp": 48,
+				"atk": 36,
+				"def": 32,
+				"spa": 240,
+				"spd": 152,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 1, move 2 1",
+			"p2": "move 2, move 1 2"
+		}
+	]
+}

@@ -1,0 +1,25 @@
+{
+	"format": "gen5vgc2013",
+	"formatName": "[Gen 5] VGC 2013",
+	"mod": "gen5",
+	"gameType": "doubles",
+	"minSourceGen": 1,
+	"ruleset": [
+		"Flat Rules"
+	],
+	"banlist": [
+		"Chatot",
+		"Dark Void",
+		"Sky Drop",
+		"Soul Dew"
+	],
+	"counts": {
+		"species": 646,
+		"megaForms": 0,
+		"moves": 555,
+		"abilities": 159,
+		"items": 238,
+		"types": 19
+	},
+	"generatedAt": "2026-10-24T13:41:11.335Z"
+}

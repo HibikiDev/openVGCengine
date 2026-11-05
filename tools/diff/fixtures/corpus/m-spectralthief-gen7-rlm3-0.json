@@ -1,0 +1,278 @@
+{
+	"format": "gen7vgc2019",
+	"seed": "gen5,38994,26450,54913,41905",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "deerling",
+			"item": "fightingmemory",
+			"ability": "technician",
+			"moves": [
+				"nastyplot",
+				"feint",
+				"dragondance",
+				"spectralthief"
+			],
+			"nature": "modest",
+			"evs": {
+				"hp": 0,
+				"atk": 176,
+				"def": 84,
+				"spa": 200,
+				"spd": 48,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "rattata",
+			"item": "netball",
+			"ability": "simple",
+			"moves": [
+				"minimize",
+				"shellsmash",
+				"doubleteam",
+				"swordsdance"
+			],
+			"nature": "calm",
+			"evs": {
+				"hp": 172,
+				"atk": 168,
+				"def": 168,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 12,
+				"atk": 31,
+				"def": 9,
+				"spa": 16,
+				"spd": 14,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "dhelmise",
+			"item": "metagrossite",
+			"ability": "contrary",
+			"moves": [
+				"minimize",
+				"swordsdance",
+				"calmmind",
+				"protect"
+			],
+			"nature": "lax",
+			"evs": {
+				"hp": 56,
+				"atk": 192,
+				"def": 88,
+				"spa": 168,
+				"spd": 4,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 28
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "geodude",
+			"item": "ghostiumz",
+			"ability": "pressure",
+			"moves": [
+				"calmmind",
+				"minimize",
+				"protect",
+				"shellsmash"
+			],
+			"nature": "gentle",
+			"evs": {
+				"hp": 72,
+				"atk": 212,
+				"def": 72,
+				"spa": 152,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 10,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "haxorus",
+			"item": "starfberry",
+			"ability": "pressure",
+			"moves": [
+				"swordsdance",
+				"doubleteam",
+				"shellsmash",
+				"dragondance"
+			],
+			"nature": "brave",
+			"evs": {
+				"hp": 16,
+				"atk": 60,
+				"def": 16,
+				"spa": 4,
+				"spd": 108,
+				"spe": 72
+			},
+			"ivs": {
+				"hp": 17,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "clefairy",
+			"item": "poisoniumz",
+			"ability": "pressure",
+			"moves": [
+				"spectralthief",
+				"nastyplot",
+				"dragondance",
+				"protect"
+			],
+			"nature": "bold",
+			"evs": {
+				"hp": 64,
+				"atk": 100,
+				"def": 56,
+				"spa": 196,
+				"spd": 56,
+				"spe": 36
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 29,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "gigalith",
+			"item": "magnet",
+			"ability": "pressure",
+			"moves": [
+				"minimize",
+				"dragondance",
+				"acupressure",
+				"nastyplot"
+			],
+			"nature": "brave",
+			"evs": {
+				"hp": 208,
+				"atk": 40,
+				"def": 0,
+				"spa": 96,
+				"spd": 152,
+				"spe": 12
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 10,
+				"spa": 31,
+				"spd": 31,
+				"spe": 20
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "scyther",
+			"item": "icicleplate",
+			"ability": "simple",
+			"moves": [
+				"swordsdance",
+				"minimize",
+				"calmmind",
+				"dragondance"
+			],
+			"nature": "sassy",
+			"evs": {
+				"hp": 24,
+				"atk": 192,
+				"def": 4,
+				"spa": 176,
+				"spd": 112,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 22,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 21
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 2 2, move 3",
+			"p2": "move 4, move 2"
+		},
+		{
+			"p1": "move 2 1, move 1",
+			"p2": "move 3, move 1 -1"
+		},
+		{
+			"p1": "move 2 2, move 2",
+			"p2": "move 2, move 1 2"
+		},
+		{
+			"p1": "move 4 2, switch 4",
+			"p2": "switch 4, move 3"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "pass, switch 4"
+		}
+	]
+}

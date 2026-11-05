@@ -1,0 +1,262 @@
+{
+	"format": "gen5vgc2013",
+	"seed": "gen5,43913,56643,14276,4122",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "dunsparce",
+			"item": "masterball",
+			"ability": "unnerve",
+			"moves": [
+				"substitute",
+				"doublekick",
+				"lovelykiss",
+				"sing"
+			],
+			"nature": "quiet",
+			"evs": {
+				"hp": 36,
+				"atk": 136,
+				"def": 140,
+				"spa": 132,
+				"spd": 64,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "manectric",
+			"item": "skyplate",
+			"ability": "liquidooze",
+			"moves": [
+				"wideguard",
+				"aquatail",
+				"visegrip",
+				"followme"
+			],
+			"nature": "relaxed",
+			"evs": {
+				"hp": 208,
+				"atk": 100,
+				"def": 176,
+				"spa": 24,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 27,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "rotomwash",
+			"item": "grepaberry",
+			"ability": "aftermath",
+			"moves": [
+				"substitute",
+				"mudsport",
+				"cut",
+				"irontail"
+			],
+			"nature": "bashful",
+			"evs": {
+				"hp": 124,
+				"atk": 68,
+				"def": 224,
+				"spa": 92,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 11,
+				"spa": 23,
+				"spd": 3,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "carvanha",
+			"item": "flameplate",
+			"ability": "cloudnine",
+			"moves": [
+				"drillrun",
+				"heatcrash",
+				"calmmind",
+				"switcheroo"
+			],
+			"nature": "jolly",
+			"evs": {
+				"hp": 220,
+				"atk": 36,
+				"def": 152,
+				"spa": 100,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "rotomwash",
+			"item": "fistplate",
+			"ability": "wonderskin",
+			"moves": [
+				"toxic",
+				"acupressure",
+				"razorleaf",
+				"rage"
+			],
+			"nature": "calm",
+			"evs": {
+				"hp": 232,
+				"atk": 76,
+				"def": 76,
+				"spa": 124,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 14,
+				"atk": 6,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 3
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "vanillish",
+			"item": "leftovers",
+			"ability": "illuminate",
+			"moves": [
+				"powerwhip",
+				"fierydance",
+				"fissure",
+				"healblock"
+			],
+			"nature": "bashful",
+			"evs": {
+				"hp": 144,
+				"atk": 24,
+				"def": 28,
+				"spa": 160,
+				"spd": 152,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "cascoon",
+			"item": "gripclaw",
+			"ability": "owntempo",
+			"moves": [
+				"mirrorcoat",
+				"synchronoise",
+				"swagger",
+				"grasspledge"
+			],
+			"nature": "hardy",
+			"evs": {
+				"hp": 52,
+				"atk": 160,
+				"def": 8,
+				"spa": 12,
+				"spd": 208,
+				"spe": 68
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 28,
+				"spa": 31,
+				"spd": 31,
+				"spe": 13
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "seedot",
+			"item": "dubiousdisc",
+			"ability": "magmaarmor",
+			"moves": [
+				"spiderweb",
+				"scald",
+				"wonderroom",
+				"cosmicpower"
+			],
+			"nature": "careful",
+			"evs": {
+				"hp": 240,
+				"atk": 136,
+				"def": 36,
+				"spa": 96,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 14,
+				"spa": 31,
+				"spd": 31,
+				"spe": 27
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 1, move 1",
+			"p2": "move 3, move 4"
+		}
+	]
+}

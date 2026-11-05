@@ -1,0 +1,262 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,18022,56434,4621,9838",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "gholdengo",
+			"item": "airballoon",
+			"ability": "ironfist",
+			"moves": [
+				"hornleech",
+				"superpower",
+				"psychicterrain",
+				"machpunch"
+			],
+			"nature": "naive",
+			"evs": {
+				"hp": 32,
+				"atk": 20,
+				"def": 17,
+				"spa": 11,
+				"spd": 27,
+				"spe": 27
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "zoroarkhisui",
+			"item": "ejectbutton",
+			"ability": "pickpocket",
+			"moves": [
+				"hornleech",
+				"overdrive",
+				"stompingtantrum",
+				"tackle"
+			],
+			"nature": "gentle",
+			"evs": {
+				"hp": 32,
+				"atk": 4,
+				"def": 8,
+				"spa": 16,
+				"spd": 1,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "clefable",
+			"item": "leek",
+			"ability": "purifyingsalt",
+			"moves": [
+				"phantomforce",
+				"soak",
+				"hex",
+				"armorcannon"
+			],
+			"nature": "lonely",
+			"evs": {
+				"hp": 32,
+				"atk": 23,
+				"def": 0,
+				"spa": 2,
+				"spd": 22,
+				"spe": 19
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "floetteeternal",
+			"item": "ejectbutton",
+			"ability": "thermalexchange",
+			"moves": [
+				"stormthrow",
+				"beatup",
+				"bugbite",
+				"darkestlariat"
+			],
+			"nature": "sassy",
+			"evs": {
+				"hp": 32,
+				"atk": 16,
+				"def": 28,
+				"spa": 11,
+				"spd": 2,
+				"spe": 27
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "talonflame",
+			"item": "airballoon",
+			"ability": "unaware",
+			"moves": [
+				"woodhammer",
+				"shellsmash",
+				"foulplay",
+				"hornleech"
+			],
+			"nature": "naive",
+			"evs": {
+				"hp": 32,
+				"atk": 16,
+				"def": 32,
+				"spa": 30,
+				"spd": 15,
+				"spe": 19
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "clefable",
+			"item": "redcard",
+			"ability": "compoundeyes",
+			"moves": [
+				"seedbomb",
+				"roost",
+				"lightscreen",
+				"kowtowcleave"
+			],
+			"nature": "relaxed",
+			"evs": {
+				"hp": 32,
+				"atk": 2,
+				"def": 15,
+				"spa": 21,
+				"spd": 24,
+				"spe": 26
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "zoroark",
+			"item": "kingsrock",
+			"ability": "shielddust",
+			"moves": [
+				"shadowsneak",
+				"hypervoice",
+				"gigadrain",
+				"finalgambit"
+			],
+			"nature": "gentle",
+			"evs": {
+				"hp": 32,
+				"atk": 21,
+				"def": 0,
+				"spa": 0,
+				"spd": 23,
+				"spe": 20
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "snorlax",
+			"item": "kingsrock",
+			"ability": "ironfist",
+			"moves": [
+				"armorcannon",
+				"protect",
+				"healpulse",
+				"temperflare"
+			],
+			"nature": "hardy",
+			"evs": {
+				"hp": 32,
+				"atk": 21,
+				"def": 3,
+				"spa": 24,
+				"spd": 27,
+				"spe": 13
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 2 1, move 4 2",
+			"p2": "move 3 2, move 2"
+		}
+	]
+}

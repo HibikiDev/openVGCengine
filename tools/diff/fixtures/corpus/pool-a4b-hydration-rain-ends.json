@@ -1,0 +1,322 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,33016,52193,26612,36134",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Staraptor",
+			"item": "Staraptite",
+			"ability": "Intimidate",
+			"moves": [
+				"Brave Bird",
+				"leechseed",
+				"Tailwind",
+				"Protect"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 15,
+				"atk": 19,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "Raichu",
+			"item": "Raichunite Y",
+			"ability": "Lightning Rod",
+			"moves": [
+				"Zap Cannon",
+				"Focus Blast",
+				"Fake Out",
+				"raindance"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 28,
+				"atk": 0,
+				"def": 13,
+				"spa": 1,
+				"spd": 0,
+				"spe": 24
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "Sylveon",
+			"item": "Fairy Feather",
+			"ability": "Shed Skin",
+			"moves": [
+				"Hyper Voice",
+				"Hyper Beam",
+				"whirlwind",
+				"Detect"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 23,
+				"atk": 0,
+				"def": 15,
+				"spa": 20,
+				"spd": 0,
+				"spe": 8
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "Gholdengo",
+			"item": "Life Orb",
+			"ability": "Good as Gold",
+			"moves": [
+				"Make It Rain",
+				"toxic",
+				"Nasty Plot",
+				"Protect"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 15,
+				"atk": 0,
+				"def": 1,
+				"spa": 18,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Salamence",
+			"item": "Salamencite",
+			"ability": "Suction Cups",
+			"moves": [
+				"Hyper Voice",
+				"Draco Meteor",
+				"Tailwind",
+				"raindance"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 7,
+				"atk": 0,
+				"def": 1,
+				"spa": 25,
+				"spd": 1,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "Raichu",
+			"item": "Raichunite Y",
+			"ability": "Purifying Salt",
+			"moves": [
+				"Zap Cannon",
+				"whirlwind",
+				"Encore",
+				"Protect"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 30,
+				"atk": 0,
+				"def": 8,
+				"spa": 0,
+				"spd": 0,
+				"spe": 28
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "Gholdengo",
+			"item": "Life Orb",
+			"ability": "Healer",
+			"moves": [
+				"whirlwind",
+				"Shadow Ball",
+				"Nasty Plot",
+				"Protect"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 17,
+				"atk": 0,
+				"def": 0,
+				"spa": 17,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "Incineroar",
+			"item": "Sitrus Berry",
+			"ability": "Hydration",
+			"moves": [
+				"willowisp",
+				"Flare Blitz",
+				"Throat Chop",
+				"Parting Shot"
+			],
+			"nature": "Careful",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 10,
+				"spa": 0,
+				"spd": 20,
+				"spe": 4
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"turns": [
+		{
+			"p1": "switch 4, move 1 -1",
+			"p2": "move 2 -2 mega, move 2 1"
+		},
+		{
+			"p1": "move 3, move 1 1",
+			"p2": "move 3, move 3 2"
+		},
+		{
+			"p1": "switch 3, move 1 -1 mega",
+			"p2": "move 2 -2, switch 3"
+		},
+		{
+			"p1": "move 2 -2, move 1 1",
+			"p2": "move 2 2, move 2 -1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 3, pass"
+		},
+		{
+			"p1": "move 3 -2, switch 3",
+			"p2": "move 1 2, move 2 2"
+		},
+		{
+			"p1": "pass, switch 3",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 3 2, move 4",
+			"p2": "move 2 1, move 2 1"
+		},
+		{
+			"p1": "move 2 2, move 2 1",
+			"p2": "move 3 -2, move 4"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 4, pass"
+		},
+		{
+			"p1": "switch 4, move 1 2",
+			"p2": "move 2 -2, move 3"
+		},
+		{
+			"p1": "move 3 2, move 2 2",
+			"p2": "move 1 2, pass"
+		},
+		{
+			"p1": "move 3 2, move 1 1",
+			"p2": "move 4 2, pass"
+		},
+		{
+			"p1": "move 2 -2, switch 4",
+			"p2": "move 4 -2, pass"
+		},
+		{
+			"p1": "move 2 1, move 4",
+			"p2": "move 1 1, pass"
+		}
+	],
+	"teams": [
+		"MC312",
+		"MC384"
+	]
+}

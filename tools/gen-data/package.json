@@ -1,0 +1,10 @@
+{
+  "name": "gen-data",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Extracts the Champions legal pool (species, moves, abilities, items, type chart, banlist) from the pinned Showdown checkout.",
+  "main": "gen-data.js",
+  "scripts": {
+    "gen-data": "node gen-data.js"
+  }
+}

@@ -1,0 +1,25 @@
+[package]
+name = "engine-py"
+version = "0.1.0"
+edition.workspace = true
+publish.workspace = true
+
+[lib]
+
+name = "vgc_engine"
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+engine-core = { path = "../engine-core" }
+engine-data = { path = "../engine-data" }
+engine-obs = { path = "../engine-obs" }
+pyo3 = { version = "0.29", features = ["abi3-py310"] }
+numpy = "0.29"
+rayon = "1"
+
+[features]
+
+extension-module = ["pyo3/extension-module"]
+
+
+alloc-count = []

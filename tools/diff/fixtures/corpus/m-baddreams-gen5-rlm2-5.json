@@ -1,0 +1,278 @@
+{
+	"format": "gen5vgc2013",
+	"seed": "gen5,64671,50084,2730,7558",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "pelipper",
+			"item": "toxicorb",
+			"ability": "baddreams",
+			"moves": [
+				"sleeptalk",
+				"hypnosis",
+				"protect",
+				"icywind"
+			],
+			"nature": "modest",
+			"evs": {
+				"hp": 52,
+				"atk": 48,
+				"def": 20,
+				"spa": 104,
+				"spd": 92,
+				"spe": 72
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "samurott",
+			"item": "poweranklet",
+			"ability": "magicguard",
+			"moves": [
+				"hypnosis",
+				"rest",
+				"protect",
+				"icywind"
+			],
+			"nature": "adamant",
+			"evs": {
+				"hp": 44,
+				"atk": 36,
+				"def": 244,
+				"spa": 116,
+				"spd": 4,
+				"spe": 64
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 5,
+				"spa": 21,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "gurdurr",
+			"item": "earthplate",
+			"ability": "baddreams",
+			"moves": [
+				"rest",
+				"spore",
+				"hypnosis",
+				"sleeptalk"
+			],
+			"nature": "bashful",
+			"evs": {
+				"hp": 196,
+				"atk": 124,
+				"def": 16,
+				"spa": 160,
+				"spd": 12,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 9,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "zoroark",
+			"item": "watmelberry",
+			"ability": "magicguard",
+			"moves": [
+				"sleeptalk",
+				"rest",
+				"hypnosis",
+				"icywind"
+			],
+			"nature": "quirky",
+			"evs": {
+				"hp": 204,
+				"atk": 240,
+				"def": 64,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 17,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "whiscash",
+			"item": "prettyfeather",
+			"ability": "baddreams",
+			"moves": [
+				"sleeppowder",
+				"rest",
+				"darkpulse",
+				"sleeptalk"
+			],
+			"nature": "careful",
+			"evs": {
+				"hp": 180,
+				"atk": 52,
+				"def": 204,
+				"spa": 12,
+				"spd": 60,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 5,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "volcarona",
+			"item": "icyrock",
+			"ability": "baddreams",
+			"moves": [
+				"rest",
+				"hypnosis",
+				"spore",
+				"icywind"
+			],
+			"nature": "lax",
+			"evs": {
+				"hp": 92,
+				"atk": 176,
+				"def": 232,
+				"spa": 8,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 27,
+				"spe": 17
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "golurk",
+			"item": "kebiaberry",
+			"ability": "magicguard",
+			"moves": [
+				"icywind",
+				"spore",
+				"sleeptalk",
+				"hypnosis"
+			],
+			"nature": "jolly",
+			"evs": {
+				"hp": 44,
+				"atk": 116,
+				"def": 100,
+				"spa": 52,
+				"spd": 184,
+				"spe": 12
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 16,
+				"def": 31,
+				"spa": 31,
+				"spd": 2,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "armaldo",
+			"item": "diveball",
+			"ability": "baddreams",
+			"moves": [
+				"spore",
+				"icywind",
+				"sleeptalk",
+				"hypnosis"
+			],
+			"nature": "serious",
+			"evs": {
+				"hp": 56,
+				"atk": 168,
+				"def": 248,
+				"spa": 36,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 15,
+				"atk": 31,
+				"def": 13,
+				"spa": 16,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 1, move 4",
+			"p2": "move 4, move 2 1"
+		},
+		{
+			"p1": "switch 3, move 1 2",
+			"p2": "switch 4, move 2 -1"
+		},
+		{
+			"p1": "move 1, move 4",
+			"p2": "move 3, move 2 -1"
+		},
+		{
+			"p1": "move 3 1, move 1 -1",
+			"p2": "move 1 -2, move 2 -1"
+		},
+		{
+			"p1": "move 3 1, move 1 2",
+			"p2": "switch 3, move 3 1"
+		}
+	]
+}

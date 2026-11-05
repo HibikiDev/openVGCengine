@@ -1,0 +1,322 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,52755,4948,2282,16413",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Golisopod-Mega",
+			"item": "Golisopite",
+			"ability": "Emergency Exit",
+			"moves": [
+				"Protect",
+				"lockon",
+				"entrainment",
+				"Leech Life"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 29,
+				"atk": 10,
+				"def": 5,
+				"spa": 0,
+				"spd": 20,
+				"spe": 2
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "Pelipper",
+			"item": "Focus Sash",
+			"ability": "Drizzle",
+			"moves": [
+				"Protect",
+				"fly",
+				"uturn",
+				"Hurricane"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 2,
+				"atk": 0,
+				"def": 0,
+				"spa": 32,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "Swampert-Mega",
+			"item": "Swampertite",
+			"ability": "Torrent",
+			"moves": [
+				"fissure",
+				"followme",
+				"High Horsepower",
+				"Ice Punch"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 14,
+				"atk": 30,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 22
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "Archaludon",
+			"item": "Leftovers",
+			"ability": "Stamina",
+			"moves": [
+				"followme",
+				"sheercold",
+				"Flash Cannon",
+				"Electro Shot"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 24,
+				"atk": 0,
+				"def": 2,
+				"spa": 5,
+				"spd": 25,
+				"spe": 10
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Incineroar",
+			"item": "Sitrus Berry",
+			"ability": "Intimidate",
+			"moves": [
+				"Flare Blitz",
+				"Darkest Lariat",
+				"rockslide",
+				"entrainment"
+			],
+			"nature": "Impish",
+			"evs": {
+				"hp": 31,
+				"atk": 0,
+				"def": 20,
+				"spa": 0,
+				"spd": 8,
+				"spe": 7
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "Rillaboom",
+			"item": "Miracle Seed",
+			"ability": "Grassy Surge",
+			"moves": [
+				"entrainment",
+				"phantomforce",
+				"Grassy Glide",
+				"Fake Out"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 17,
+				"atk": 14,
+				"def": 1,
+				"spa": 0,
+				"spd": 2,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "Sneasler",
+			"item": "Grassy Seed",
+			"ability": "Unburden",
+			"moves": [
+				"Close Combat",
+				"dig",
+				"Protect",
+				"phantomforce"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 20,
+				"atk": 20,
+				"def": 10,
+				"spa": 0,
+				"spd": 0,
+				"spe": 16
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "Salamence",
+			"item": "Salamencite",
+			"ability": "Intimidate",
+			"moves": [
+				"roleplay",
+				"Double-Edge",
+				"Protect",
+				"earthquake"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 0,
+				"atk": 4,
+				"def": 0,
+				"spa": 30,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 1, switch 4",
+			"p2": "move 4 2, move 2 -1"
+		},
+		{
+			"p1": "move 3 1, move 3 1",
+			"p2": "move 1 -2, move 1"
+		},
+		{
+			"p1": "move 2 1, move 2 -1",
+			"p2": "move 3, switch 4"
+		},
+		{
+			"p1": "move 1, move 2 -1",
+			"p2": "move 3, move 3 mega"
+		},
+		{
+			"p1": "move 4 1, move 4 2",
+			"p2": "move 1 1, move 2 -1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 3, pass"
+		},
+		{
+			"p1": "move 4 2, move 3 1",
+			"p2": "move 3, move 1 1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "pass, switch 3"
+		},
+		{
+			"p1": "move 3 1, switch 4",
+			"p2": "switch 4, move 1 -1"
+		},
+		{
+			"p1": "move 3 2, move 4 2",
+			"p2": "move 3 2, move 2 2"
+		},
+		{
+			"p1": "move 4 -2, move 4 2",
+			"p2": "move 2 1, move 4 -1"
+		},
+		{
+			"p1": "pass, switch 3",
+			"p2": "pass, switch 4"
+		},
+		{
+			"p1": "move 1, move 3 1",
+			"p2": "move 1, move 4 1"
+		},
+		{
+			"p1": "move 1, move 2",
+			"p2": "move 3 1, move 1"
+		},
+		{
+			"p1": "pass, switch 4",
+			"p2": "pass, pass"
+		}
+	],
+	"teams": [
+		"MC293",
+		"MC91"
+	]
+}

@@ -1,0 +1,323 @@
+{
+	"format": "gen6vgc2015",
+	"seed": "gen5,9416,57460,1255,47044",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Metagross",
+			"item": "Metagrossite",
+			"ability": "Clear Body",
+			"moves": [
+				"Meteor Mash",
+				"skydrop",
+				"Substitute",
+				"Protect"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 76,
+				"atk": 252,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 180
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "Suicune",
+			"item": "Sitrus Berry",
+			"ability": "Pressure",
+			"moves": [
+				"skydrop",
+				"Ice Beam",
+				"Tailwind",
+				"Snarl"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 252,
+				"atk": 0,
+				"def": 108,
+				"spa": 116,
+				"spd": 4,
+				"spe": 28
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "Hydreigon",
+			"item": "Life Orb",
+			"ability": "Levitate",
+			"moves": [
+				"skydrop",
+				"Draco Meteor",
+				"Tailwind",
+				"Protect"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 84,
+				"atk": 0,
+				"def": 0,
+				"spa": 252,
+				"spd": 0,
+				"spe": 172
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "Sylveon",
+			"item": "Choice Specs",
+			"ability": "Pixilate",
+			"moves": [
+				"Hyper Voice",
+				"Psyshock",
+				"skydrop",
+				"Hyper Beam"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 180,
+				"atk": 0,
+				"def": 0,
+				"spa": 252,
+				"spd": 0,
+				"spe": 76
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 30,
+				"spd": 30,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Rotom-Heat",
+			"item": "Expert Belt",
+			"ability": "Levitate",
+			"moves": [
+				"skydrop",
+				"Thunderbolt",
+				"Hidden Power Ice",
+				"Protect"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 108,
+				"atk": 0,
+				"def": 0,
+				"spa": 252,
+				"spd": 0,
+				"spe": 148
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 30,
+				"def": 30,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N",
+			"hpType": "Ice"
+		},
+		{
+			"name": "Mon1",
+			"species": "Metagross",
+			"item": "Metagrossite",
+			"ability": "Clear Body",
+			"moves": [
+				"Iron Head",
+				"Ice Punch",
+				"Substitute",
+				"skydrop"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 4,
+				"atk": 252,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "Hydreigon",
+			"item": "Choice Specs",
+			"ability": "Levitate",
+			"moves": [
+				"skydrop",
+				"Dark Pulse",
+				"Earth Power",
+				"Fire Blast"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 4,
+				"atk": 0,
+				"def": 0,
+				"spa": 252,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "Virizion",
+			"item": "Life Orb",
+			"ability": "Justified",
+			"moves": [
+				"Leaf Blade",
+				"Close Combat",
+				"skydrop",
+				"Protect"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 0,
+				"atk": 252,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 1 2 mega, move 2 1",
+			"p2": "switch 3, move 2 2"
+		},
+		{
+			"p1": "move 1 1, move 4",
+			"p2": "move 3 2, move 3 mega"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 4, pass"
+		},
+		{
+			"p1": "move 2 2, move 3",
+			"p2": "move 2 -2, switch 3"
+		},
+		{
+			"p1": "move 1, switch 4",
+			"p2": "move 2 2, move 3 -1"
+		},
+		{
+			"p1": "move 4, move 4 2",
+			"p2": "move 3 2, move 3 2"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "pass, switch 3"
+		},
+		{
+			"p1": "switch 3, move 1",
+			"p2": "move 1, move 2 1"
+		},
+		{
+			"p1": "move 4, move 4 -1",
+			"p2": "pass, move 1 1"
+		},
+		{
+			"p1": "switch 4, move 4 -1",
+			"p2": "pass, move 4 1"
+		},
+		{
+			"p1": "move 2 -2, move 4 -1",
+			"p2": "pass, move 1"
+		},
+		{
+			"p1": "switch 3, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 1 -2, move 1",
+			"p2": "pass, move 1 2"
+		},
+		{
+			"p1": "pass, switch 4",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 1 1, move 2 -1",
+			"p2": "pass, move 4 1"
+		}
+	],
+	"teams": [
+		"V15-9",
+		"V15-12"
+	]
+}

@@ -1,0 +1,282 @@
+{
+	"format": "gen7vgc2019",
+	"seed": "gen5,5440,33063,7521,22992",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "meloetta",
+			"item": "apicotberry",
+			"ability": "insomnia",
+			"moves": [
+				"closecombat",
+				"wideguard",
+				"hypervoice",
+				"protect"
+			],
+			"nature": "lonely",
+			"evs": {
+				"hp": 216,
+				"atk": 68,
+				"def": 8,
+				"spa": 216,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 12,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "meloetta",
+			"item": "zapplate",
+			"ability": "insomnia",
+			"moves": [
+				"protect",
+				"psychic",
+				"closecombat",
+				"hypervoice"
+			],
+			"nature": "lonely",
+			"evs": {
+				"hp": 208,
+				"atk": 160,
+				"def": 96,
+				"spa": 44,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 3,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "meloetta",
+			"item": "lycaniumz",
+			"ability": "soundproof",
+			"moves": [
+				"hypervoice",
+				"protect",
+				"closecombat",
+				"relicsong"
+			],
+			"nature": "adamant",
+			"evs": {
+				"hp": 216,
+				"atk": 208,
+				"def": 80,
+				"spa": 4,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 11,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 7
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "snorlax",
+			"item": "spelltag",
+			"ability": "sheerforce",
+			"moves": [
+				"protect",
+				"wideguard",
+				"hypervoice",
+				"relicsong"
+			],
+			"nature": "rash",
+			"evs": {
+				"hp": 52,
+				"atk": 116,
+				"def": 60,
+				"spa": 72,
+				"spd": 120,
+				"spe": 88
+			},
+			"ivs": {
+				"hp": 26,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "meloetta",
+			"item": "tapuniumz",
+			"ability": "soundproof",
+			"moves": [
+				"wideguard",
+				"closecombat",
+				"psychic",
+				"relicsong"
+			],
+			"nature": "lax",
+			"evs": {
+				"hp": 116,
+				"atk": 252,
+				"def": 136,
+				"spa": 4,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "meloetta",
+			"item": "hardstone",
+			"ability": "serenegrace",
+			"moves": [
+				"psychic",
+				"relicsong",
+				"closecombat",
+				"wideguard"
+			],
+			"nature": "timid",
+			"evs": {
+				"hp": 28,
+				"atk": 180,
+				"def": 92,
+				"spa": 184,
+				"spd": 24,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 30,
+				"spd": 30,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "meloetta",
+			"item": "stoneplate",
+			"ability": "insomnia",
+			"moves": [
+				"wideguard",
+				"psychic",
+				"hypervoice",
+				"relicsong"
+			],
+			"nature": "timid",
+			"evs": {
+				"hp": 252,
+				"atk": 188,
+				"def": 40,
+				"spa": 28,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 13,
+				"spa": 1,
+				"spd": 10,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "gengar",
+			"item": "firememory",
+			"ability": "sheerforce",
+			"moves": [
+				"psychic",
+				"protect",
+				"relicsong",
+				"hypervoice"
+			],
+			"nature": "quiet",
+			"evs": {
+				"hp": 8,
+				"atk": 40,
+				"def": 108,
+				"spa": 48,
+				"spd": 120,
+				"spe": 24
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 26,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 4, move 4",
+			"p2": "move 1, move 4"
+		},
+		{
+			"p1": "move 1 2, move 2 1",
+			"p2": "move 4, switch 3"
+		},
+		{
+			"p1": "switch 4, move 3 -1",
+			"p2": "move 3 -2, move 4"
+		},
+		{
+			"p1": "switch 3, move 3 2",
+			"p2": "switch 4, move 3"
+		},
+		{
+			"p1": "move 1, switch 3",
+			"p2": "switch 3, move 2 1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "pass, switch 4"
+		}
+	]
+}

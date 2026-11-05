@@ -1,0 +1,322 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,57054,48094,5380,30094",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Golisopod",
+			"item": "Golisopite",
+			"ability": "Emergency Exit",
+			"moves": [
+				"Iron Head",
+				"Leech Life",
+				"Drill Run",
+				"Protect"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 32,
+				"atk": 25,
+				"def": 0,
+				"spa": 0,
+				"spd": 9,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "Rillaboom",
+			"item": "Miracle Seed",
+			"ability": "Grassy Surge",
+			"moves": [
+				"Grassy Glide",
+				"Fake Out",
+				"High Horsepower",
+				"Protect"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 27,
+				"atk": 15,
+				"def": 5,
+				"spa": 0,
+				"spd": 10,
+				"spe": 9
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "Grimmsnarl",
+			"item": "Light Clay",
+			"ability": "Prankster",
+			"moves": [
+				"Spirit Break",
+				"Reflect",
+				"Light Screen",
+				"Parting Shot"
+			],
+			"nature": "Careful",
+			"evs": {
+				"hp": 31,
+				"atk": 0,
+				"def": 20,
+				"spa": 0,
+				"spd": 15,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "Sneasler",
+			"item": "Grassy Seed",
+			"ability": "Unburden",
+			"moves": [
+				"Dire Claw",
+				"Close Combat",
+				"Protect",
+				"Coaching"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 18,
+				"atk": 25,
+				"def": 4,
+				"spa": 0,
+				"spd": 1,
+				"spe": 18
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Sableye",
+			"item": "Sablenite",
+			"ability": "Prankster",
+			"moves": [
+				"Confuse Ray",
+				"Quash",
+				"Thunder Wave",
+				"Foul Play"
+			],
+			"nature": "Calm",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 9,
+				"spa": 0,
+				"spd": 25,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "Mimikyu",
+			"item": "Life Orb",
+			"ability": "Disguise",
+			"moves": [
+				"Thunderbolt",
+				"Shadow Claw",
+				"Bulk Up",
+				"Drain Punch"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 0,
+				"atk": 32,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "Morpeko",
+			"item": "Focus Sash",
+			"ability": "Hunger Switch",
+			"moves": [
+				"Aura Wheel",
+				"Fake Out",
+				"Protect",
+				"Knock Off"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 2,
+				"atk": 32,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "Maushold",
+			"item": "Red Card",
+			"ability": "Friend Guard",
+			"moves": [
+				"Follow Me",
+				"Feint",
+				"Super Fang",
+				"Thunder Wave"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 2,
+				"atk": 32,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 3 1 mega, move 2 -1",
+			"p2": "move 4 1 mega, move 2 -1"
+		},
+		{
+			"p1": "move 3 -2, switch 3",
+			"p2": "move 1 1, move 2 2"
+		},
+		{
+			"p1": "move 1 2, move 2",
+			"p2": "move 1 -2, move 3"
+		},
+		{
+			"p1": "move 3 -2, move 3",
+			"p2": "move 4 2, move 1 1"
+		},
+		{
+			"p1": "move 3 2, move 4 -1",
+			"p2": "move 4 1, move 4 2"
+		},
+		{
+			"p1": "pass, switch 3",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 2 2, move 4",
+			"p2": "move 3 2, move 4 -1"
+		},
+		{
+			"p1": "move 2 2, move 3 2",
+			"p2": "move 3 1, move 4 -1"
+		},
+		{
+			"p1": "move 3 2, move 4",
+			"p2": "move 2 1, switch 4"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "pass, switch 4"
+		},
+		{
+			"p1": "move 1 1, move 1 -1",
+			"p2": "move 1 -2, move 4 1"
+		},
+		{
+			"p1": "move 2 2, switch 4",
+			"p2": "move 3 1, move 1 1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "pass, switch 3"
+		},
+		{
+			"p1": "move 1 1, move 1 2",
+			"p2": "move 1 2, move 3"
+		},
+		{
+			"p1": "move 2 -2, move 2 2",
+			"p2": "move 2 2, move 3"
+		}
+	],
+	"teams": [
+		"BA-1011",
+		"BR-321-7"
+	]
+}

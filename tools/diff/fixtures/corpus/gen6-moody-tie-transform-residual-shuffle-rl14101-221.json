@@ -1,0 +1,262 @@
+{
+	"format": "gen6vgc2014",
+	"seed": "gen5,63870,5467,48799,54937",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "mandibuzz",
+			"item": "chartiberry",
+			"ability": "hustle",
+			"moves": [
+				"bellydrum",
+				"strength",
+				"solarbeam",
+				"screech"
+			],
+			"nature": "jolly",
+			"evs": {
+				"hp": 160,
+				"atk": 188,
+				"def": 88,
+				"spa": 12,
+				"spd": 60,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 3,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "aggron",
+			"item": "premierball",
+			"ability": "swarm",
+			"moves": [
+				"transform",
+				"jumpkick",
+				"mudsport",
+				"dig"
+			],
+			"nature": "naughty",
+			"evs": {
+				"hp": 160,
+				"atk": 112,
+				"def": 36,
+				"spa": 164,
+				"spd": 36,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 9,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "mrmime",
+			"item": "nomelberry",
+			"ability": "sweetveil",
+			"moves": [
+				"psychic",
+				"drainpunch",
+				"iceburn",
+				"worryseed"
+			],
+			"nature": "bold",
+			"evs": {
+				"hp": 0,
+				"atk": 124,
+				"def": 4,
+				"spa": 52,
+				"spd": 72,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 26,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "gogoat",
+			"item": "silverpowder",
+			"ability": "immunity",
+			"moves": [
+				"frostbreath",
+				"naturepower",
+				"memento",
+				"xscissor"
+			],
+			"nature": "jolly",
+			"evs": {
+				"hp": 168,
+				"atk": 144,
+				"def": 192,
+				"spa": 4,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 13,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "volcarona",
+			"item": "icyrock",
+			"ability": "anticipation",
+			"moves": [
+				"trickortreat",
+				"lockon",
+				"megahorn",
+				"bubble"
+			],
+			"nature": "modest",
+			"evs": {
+				"hp": 8,
+				"atk": 96,
+				"def": 0,
+				"spa": 184,
+				"spd": 208,
+				"spe": 12
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 21,
+				"def": 31,
+				"spa": 30,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "delphox",
+			"item": "focussash",
+			"ability": "moody",
+			"moves": [
+				"psybeam",
+				"morningsun",
+				"cometpunch",
+				"steelwing"
+			],
+			"nature": "quirky",
+			"evs": {
+				"hp": 52,
+				"atk": 80,
+				"def": 4,
+				"spa": 220,
+				"spd": 120,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 26,
+				"atk": 31,
+				"def": 31,
+				"spa": 9,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "dwebble",
+			"item": "salacberry",
+			"ability": "defiant",
+			"moves": [
+				"drillpeck",
+				"smog",
+				"screech",
+				"mindreader"
+			],
+			"nature": "impish",
+			"evs": {
+				"hp": 168,
+				"atk": 116,
+				"def": 208,
+				"spa": 16,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 4,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "espurr",
+			"item": "dubiousdisc",
+			"ability": "shellarmor",
+			"moves": [
+				"nightshade",
+				"takedown",
+				"sandtomb",
+				"secretpower"
+			],
+			"nature": "impish",
+			"evs": {
+				"hp": 184,
+				"atk": 224,
+				"def": 100,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 19
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 2 2, move 1 2",
+			"p2": "move 1 1, move 3 2"
+		}
+	]
+}

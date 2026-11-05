@@ -1,0 +1,262 @@
+{
+	"format": "gen6vgc2016",
+	"seed": "gen5,1715,60037,63226,49597",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "chandelure",
+			"item": "salamencite",
+			"ability": "desolateland",
+			"moves": [
+				"hydropump",
+				"raindance",
+				"earthquake",
+				"sandstorm"
+			],
+			"nature": "impish",
+			"evs": {
+				"hp": 228,
+				"atk": 80,
+				"def": 200,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 24,
+				"atk": 21,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "palkia",
+			"item": "mewtwonitex",
+			"ability": "desolateland",
+			"moves": [
+				"weatherball",
+				"heatwave",
+				"thunder",
+				"flamethrower"
+			],
+			"nature": "timid",
+			"evs": {
+				"hp": 176,
+				"atk": 248,
+				"def": 84,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 20,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 23
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "delphox",
+			"item": "roseliberry",
+			"ability": "desolateland",
+			"moves": [
+				"hurricane",
+				"flamethrower",
+				"eruption",
+				"sandstorm"
+			],
+			"nature": "lax",
+			"evs": {
+				"hp": 4,
+				"atk": 200,
+				"def": 228,
+				"spa": 76,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 16,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "quilladin",
+			"item": "meadowplate",
+			"ability": "primordialsea",
+			"moves": [
+				"hydropump",
+				"eruption",
+				"heatwave",
+				"weatherball"
+			],
+			"nature": "calm",
+			"evs": {
+				"hp": 152,
+				"atk": 44,
+				"def": 92,
+				"spa": 188,
+				"spd": 32,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 4,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "mandibuzz",
+			"item": "airballoon",
+			"ability": "primordialsea",
+			"moves": [
+				"icebeam",
+				"surf",
+				"raindance",
+				"hydropump"
+			],
+			"nature": "calm",
+			"evs": {
+				"hp": 120,
+				"atk": 248,
+				"def": 28,
+				"spa": 104,
+				"spd": 4,
+				"spe": 4
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 23
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "pikachu",
+			"item": "magmarizer",
+			"ability": "cloudnine",
+			"moves": [
+				"scald",
+				"surf",
+				"thunderbolt",
+				"eruption"
+			],
+			"nature": "hardy",
+			"evs": {
+				"hp": 144,
+				"atk": 84,
+				"def": 156,
+				"spa": 104,
+				"spd": 20,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 14,
+				"atk": 18,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "exploud",
+			"item": "widelens",
+			"ability": "primordialsea",
+			"moves": [
+				"hail",
+				"solarbeam",
+				"surf",
+				"weatherball"
+			],
+			"nature": "quiet",
+			"evs": {
+				"hp": 48,
+				"atk": 156,
+				"def": 124,
+				"spa": 180,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 15,
+				"atk": 31,
+				"def": 31,
+				"spa": 26,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "chimecho",
+			"item": "sharpbeak",
+			"ability": "airlock",
+			"moves": [
+				"fireblast",
+				"hurricane",
+				"solarbeam",
+				"protect"
+			],
+			"nature": "sassy",
+			"evs": {
+				"hp": 84,
+				"atk": 120,
+				"def": 188,
+				"spa": 116,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 26
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 1 2, move 4 1",
+			"p2": "move 2, move 3 1"
+		}
+	]
+}

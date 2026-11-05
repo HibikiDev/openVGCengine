@@ -1,0 +1,132 @@
+{% extends "base.html" %}
+{% block title %}Training Buddy · openVGCengine{% endblock %}
+{% block main %}
+{% set me = d.profiles[0] if d.profiles else none %}
+<div class="card">
+  <h1>Training Buddy</h1>
+  <p>Practise against the bot on the local Showdown server, then review the turns where it would have played differently.</p>
+  {% for m in msgs %}<div class="note">{{ m }}</div>{% endfor %}
+</div>
+
+<div class="card">
+  <h2>Practice bot</h2>
+  <table class="tbl">
+    <tr><td><b>Local Showdown server</b> <span class="muted small">(port 8000)</span></td>
+      <td>{% if d.server_up %}<span class="tag">running</span>{% else %}<span class="tag" style="background:var(--blush)">not running</span>
+        <div class="small muted">It starts with the practice bot (Start, below).{% if private %} Built once with <code>bash tools/buddy/make_server.sh</code>.{% endif %}</div>{% endif %}</td></tr>
+    <tr><td><b>{{ d.bot }}</b> <span class="muted small">(the bot you challenge)</span></td>
+      <td>{% if d.running %}<span class="tag">running</span> <span class="muted small">pid {{ d.pid }}</span>{% else %}<span class="tag" style="background:var(--sand)">stopped</span>{% endif %}</td></tr>
+  </table>
+  {% if local %}
+  <div style="display:flex; gap:10px; margin-top:12px">
+    <form method="post" action="/buddy/start"><button class="btn" type="submit"{% if d.running %} disabled{% endif %} onclick="this.textContent = 'Starting (up to a minute)...'">Start practice bot</button></form>
+    <form method="post" action="/buddy/stop"><button class="btn alt" type="submit"{% if not d.running %} disabled{% endif %}>Stop</button></form>
+  </div>
+  {% else %}<p class="small muted">Start and stop work only from this PC itself (open this page at 127.0.0.1:8765).</p>{% endif %}
+  <h3>How to play it</h3>
+  <ol class="small">
+    {% if in_app() %}<li><a class="btn" href="/buddy/play" style="padding: 2px 12px">Open Showdown</a> - the local Showdown in its own window (it starts the server if needed) - and pick the name you set below.</li>
+    {% else %}<li>Open the local Showdown at <a href="http://localhost:8000" target="_blank" rel="noopener">localhost:8000</a> on this PC (use <b>localhost</b>, not 127.0.0.1: Chrome blocks the client 127.0.0.1 sends you to, and it shows "can't connect to server"; in Safari it is the other way round - use <a href="http://127.0.0.1:8000" target="_blank" rel="noopener">127.0.0.1:8000</a>, or it stays on "Connecting...") and pick the name you set below.</li>{% endif %}
+    <li>Challenge <b>{{ d.bot }}</b> in a <b>buddy</b> format - <b>[Gen 9 Champions] VGC 2026 Reg M-C buddy</b> (Bo1), its Bo3 twin, or an older format's buddy twin (under "Training buddy (local)") - with your team. The buddy plays only these: same rules as the real formats, defined only on this local server.</li>
+    <li>Settings saved here apply from the next challenge; no restart needed.</li>
+  </ol>
+  <p class="small muted">It plays with the same model and search as the tools{% if d.rotation %}; its own teams when you don't pick one: {{ d.rotation }}{% elif d.default_bucket %}; in Reg M-C it's ready to play out of the box, with a team from your <a href="/buckets">Default bucket</a> each game, until you set your own below. Other formats need a team set below{% else %}; it plays the team you set below for each format{% endif %}.</p>
+  {% if d.tail %}<details><summary class="small">Practice bot log (last lines)</summary><pre class="small" style="white-space:pre-wrap">{{ d.tail|join('\n') }}</pre></details>{% endif %}
+</div>
+
+<div class="card">
+  <h2>Your practice settings</h2>
+  <div class="note small">If you use your regular Showdown name, it asks for your password: Showdown's client checks registered names against the real Showdown servers, even on this local server. You can always use a name that isn't registered instead.</div>
+  <form method="post" action="/buddy/settings">
+    <div class="row">
+      <div><label for="user">Your name on the local server</label><input id="user" name="user" maxlength="18" required value="{{ me.user if me else '' }}"></div>
+      <div><label><input type="checkbox" name="sheets"{% if not me or me.sheets %} checked{% endif %}> Open team sheets</label>
+        <div class="small muted">Off: the bot declines open sheets (closed-sheet practice).</div></div>
+    </div>
+    <label for="team">The team the bot plays {% include "_team_help.html" %}</label>
+    {% if d.formats is defined %}<p class="small" style="margin: 2px 0 6px">in <select name="team_fmt" style="width:auto">{% for f, name in d.formats %}<option value="{{ f }}">{{ name }}</option>{% endfor %}</select>
+      <span class="muted">- one team per format; the bot plays each in that format's challenges.</span></p>{% endif %}
+    <textarea id="team" name="team" data-team="whole" placeholder="{% if has_library %}a library id (e.g. BR-111), {% endif %}a pokepast.es link, or a pasted Showdown export (EVs optional: an open team sheet works as it is)"></textarea>
+    {% if d.rotation %}<label><input type="checkbox" name="rotation"> Let the bot play its own teams instead</label>{% endif %}
+    <div class="small muted">Leave the box empty{% if d.rotation %} and unticked{% endif %} to keep the current team.</div>
+    {% if me and me.drill_rows %}
+    <h3>Drill: fix the bot's leads</h3>
+    <p class="small muted">Lead drill: the bot always leads these two; set the back too to repeat the exact bring. One per format
+      with a single team (not a bucket).</p>
+    {% macro pick(name, six, chosen) %}<select name="{{ name }}"><option value="">{{ 'model picks' if name.startswith('back') else 'off' }}</option>{% for m in six %}<option value="{{ m }}"{% if m == chosen %} selected{% endif %}>{{ m }}</option>{% endfor %}</select>{% endmacro %}
+    {% for r in me.drill_rows %}
+    <div class="row">
+      <div><label>{{ r.name }}: leads</label>{{ pick('lead1@' ~ r.fmt, r.six, r.lead[0] if r.lead else '') }} {{ pick('lead2@' ~ r.fmt, r.six, r.lead[1] if r.lead|length > 1 else '') }}</div>
+      <div><label>Back</label>{{ pick('back1@' ~ r.fmt, r.six, r.back[0] if r.back else '') }} {{ pick('back2@' ~ r.fmt, r.six, r.back[1] if r.back|length > 1 else '') }}</div>
+    </div>{% endfor %}
+    {% elif me %}<p class="small muted">Pick a team (not a bucket) for the bot to unlock the lead drill.</p>{% endif %}
+    <button class="btn" type="submit">Save</button>
+  </form>
+  {% if d.profiles %}
+  <h3>Saved</h3>
+  <div class="scroll"><table class="tbl">
+    <tr><th>name</th><th>bot plays</th><th>open sheets</th><th>drill</th><th>games</th></tr>
+    {% for p in d.profiles %}<tr><td>{{ p.user }}</td><td>{{ p.team }}{% for f, t in p.others or [] %}<br><span class="small muted">{{ f }}:</span> <span class="small">{{ t }}</span>{% endfor %}</td><td>{{ 'on' if p.sheets else 'off' }}</td>
+      <td class="small">{% if p.lead %}leads {{ p.lead|join(' + ') }}{% if p.back %}, back {{ p.back|join(' + ') }}{% endif %}{% else %}<span class="muted">off</span>{% endif %}</td><td>{{ p.games }}</td></tr>{% endfor %}
+  </table></div>{% endif %}
+</div>
+
+{% if d.sessions is defined %}
+<div class="card" id="sessions">
+  <h2>Practice sessions</h2>
+  <p class="small">Group a block of games: record, leads, Pokémon and links. Start one here.</p>
+  {% set open_ = d.sessions|selectattr('end', 'none')|list %}
+  <form method="post" action="/buddy/session-start" style="display:flex; gap:10px; align-items:center; flex-wrap:wrap">
+    <select name="bot">{% for k, b in d.session_bots.items() %}<option value="{{ k }}">{{ b.label }}</option>{% endfor %}</select>
+    <input name="user" list="session-users" placeholder="your Showdown name" style="width: 14em" value="{{ open_[0].user if open_ else '' }}">
+    <datalist id="session-users">{% for u in d.session_users %}<option value="{{ u }}">{% endfor %}</datalist>
+    <input name="name" placeholder="session name (optional)" style="width: 16em">
+    <button class="btn" type="submit">Start a session</button>
+  </form>
+  {% if d.sessions %}
+  <div class="scroll"><table class="tbl small" style="margin-top: 10px">
+    <tr><th>session</th><th>who</th><th>bot</th><th>when</th><th class="num">games</th><th class="num">your record</th><th></th></tr>
+    {% for s in d.sessions[:30] %}<tr>
+      <td><b><a href="/buddy/session?{{ {'bot': s.bot, 'u': s.user, 's': s.start}|urlencode }}">{{ s.name }}</a></b></td>
+      <td>{{ s.user }}</td><td class="muted">{{ s.bot_label }}</td>
+      <td class="nowrap">{{ s.start[5:16] }} – {% if s.end %}{{ s.end[11:16] if s.end[:10] == s.start[:10] else s.end[5:16] }}{% else %}<span class="tag">running</span>{% endif %}</td>
+      <td class="num">{{ s.games }}</td><td class="num">{{ s.wins }}-{{ s.losses }}</td>
+      <td class="nowrap">{% set hid %}<input type="hidden" name="bot" value="{{ s.bot }}"><input type="hidden" name="user" value="{{ s.user }}"><input type="hidden" name="start" value="{{ s.start }}">{% endset %}
+        {% if not s.end %}<form method="post" action="/buddy/session-end" style="display:inline; margin:0">{{ hid }}<button class="btn alt" type="submit" style="padding: 2px 10px">end</button></form>
+        {% else %}<form method="post" action="/buddy/session-resume" style="display:inline; margin:0" onsubmit="return confirm('Resume this session? It runs again from its start, and any session of {{ s.user }} started after it ended is folded into it.')">{{ hid }}<button class="btn alt" type="submit" style="padding: 2px 10px">resume</button></form>{% endif %}
+        <form method="post" action="/buddy/session-delete" style="display:inline; margin:0" onsubmit="return confirm('Delete this session? Only the grouping goes - the games stay.')">{{ hid }}<button class="btn alt" type="submit" style="padding: 2px 10px" title="delete the session (the games stay)">✕</button></form></td></tr>{% endfor %}
+  </table></div>
+  {% else %}<p class="muted small">No sessions yet.</p>{% endif %}
+</div>
+{% endif %}
+
+<div class="card">
+  <h2 id="recent">Recent practice games</h2>
+  {% if d.players is defined and d.players %}<form method="get" action="/buddy#recent" style="margin: 0 0 8px">
+    <label class="small" style="display:inline; font-weight:400">Who: <select name="who" onchange="this.form.submit()">
+      <option value="">everyone</option>{% for u, n in d.players %}<option value="{{ u }}"{{ ' selected' if d.who and d.who|lower == u|lower }}>{{ u }} ({{ n }} games)</option>{% endfor %}</select></label>
+    {% if d.who %}<span class="small muted">· the newest 30 of {{ d.who }}'s games · <a href="/buddy#recent">everyone</a></span>{% endif %}</form>{% endif %}
+  {% if d.games %}
+  <div class="scroll"><table class="tbl">
+    {% set tagged = d.games and d.games[0].sessions is defined %}
+    <tr><th>when</th>{% if tagged %}<th>who</th>{% endif %}<th>bot's team</th><th>result</th><th>turns</th><th>where the model would have played differently</th>{% if tagged %}<th>session</th>{% endif %}<th></th></tr>
+    {% for g in d.games %}<tr>
+      <td class="small nowrap">{{ g.time }}{% if g.game %}<br><span class="muted">game {{ g.game }}</span>{% endif %}</td>
+      {% if tagged %}<td class="small">{{ g.opponent }}<br><span class="muted">vs {{ g.bot_label }}</span></td>{% endif %}
+      <td class="small">{{ g.team }}</td><td>{{ g.result }}</td><td>{{ g.turns or '' }}</td>
+      <td class="small">{% if g.notes %}<ul class="small" style="margin:0; padding-left:16px">{% for n in g.notes %}<li>{{ n }}</li>{% endfor %}</ul>{% elif g.notes is not none %}<span class="muted">nowhere notable</span>{% else %}<span class="muted">-</span>{% endif %}</td>
+      {% if tagged %}<td class="small">
+        {% for x in g.sessions %}<div style="display:flex; gap:4px; align-items:center"><a class="tag" href="/buddy/session?{{ {'bot': g.bot, 'u': x.user, 's': x.start}|urlencode }}">{{ x.name }}</a>
+          <form method="post" action="/buddy/session-remove" style="margin:0"><input type="hidden" name="bot" value="{{ g.bot }}"><input type="hidden" name="user" value="{{ x.user }}"><input type="hidden" name="start" value="{{ x.start }}"><input type="hidden" name="room" value="{{ g.room }}"><button class="btn alt" type="submit" style="padding: 0 6px" title="take this game out of the session">✕</button></form></div>{% endfor %}
+        {% if g.other_sessions %}<form method="post" action="/buddy/session-add" style="display:flex; gap:4px; margin:2px 0 0">
+          <input type="hidden" name="bot" value="{{ g.bot }}"><input type="hidden" name="room" value="{{ g.room }}">
+          <select name="pick" style="max-width: 11em" onchange="const [u, s] = this.value.split('|'); this.form.user.value = u; this.form.start.value = s">
+            <option value="">add to…</option>{% for x in g.other_sessions %}<option value="{{ x.user }}|{{ x.start }}">{{ x.name }} ({{ x.user }}, {{ x.start[5:10] }})</option>{% endfor %}</select>
+          <input type="hidden" name="user"><input type="hidden" name="start">
+          <button class="btn alt" type="submit" style="padding: 0 8px">add</button></form>{% elif not g.sessions %}<span class="muted">-</span>{% endif %}</td>{% endif %}
+      <td class="small nowrap"><a href="/status/game/{{ g.room }}{{ '?pov=human' if g.bot is defined }}">open</a>{% if g.series and g.bot == 'live' %}<br><a href="/status/series/{{ g.series }}">series</a>{% endif %}</td></tr>{% endfor %}
+  </table></div>
+  {% else %}<p class="muted">No practice games yet.</p>{% endif %}
+</div>
+
+{% endblock %}

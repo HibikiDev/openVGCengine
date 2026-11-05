@@ -1,0 +1,49 @@
+{
+ "note": "A starter bucket: three Reg M-C regional winners, as open team sheets. The practice bot plays these until you pick a team. Edit them, or use them as a pattern for your own.",
+ "updated": "2026-11-05 08:31",
+ "teams": [
+  {
+   "label": "Louisville Regional winner",
+   "src": "Farigiraf @ Sitrus Berry\nAbility: Armor Tail\nQuiet Nature\n- Psychic\n- Thunderbolt\n- Helping Hand\n- Trick Room\n\nIncineroar @ Chople Berry\nAbility: Intimidate\nAdamant Nature\n- Flare Blitz\n- Darkest Lariat\n- Parting Shot\n- Fake Out\n\nCharizard @ Charizardite Y\nAbility: Blaze\nModest Nature\n- Heat Wave\n- Weather Ball\n- Ancient Power\n- Protect\n\nSylveon @ Fairy Feather\nAbility: Pixilate\nModest Nature\n- Hyper Voice\n- Moonblast\n- Yawn\n- Protect\n\nVenusaur @ Focus Sash\nAbility: Chlorophyll\nModest Nature\n- Leaf Storm\n- Sludge Bomb\n- Sleep Powder\n- Protect\n\nGarchomp @ Choice Scarf\nAbility: Rough Skin\nAdamant Nature\n- Rock Slide\n- Stomping Tantrum\n- Dragon Claw\n- Earthquake\n",
+   "link": null,
+   "weight": 1.0,
+   "species": [
+    "Farigiraf",
+    "Incineroar",
+    "Charizard",
+    "Sylveon",
+    "Venusaur",
+    "Garchomp"
+   ]
+  },
+  {
+   "label": "Baltimore Regional winner",
+   "src": "Excadrill @ Focus Sash\nAbility: Sand Rush\nJolly Nature\n- Iron Head\n- High Horsepower\n- Rock Slide\n- Protect\n\nSalamence @ Salamencite\nAbility: Intimidate\nTimid Nature\n- Hyper Voice\n- Draco Meteor\n- Flamethrower\n- Protect\n\nTyranitar @ Tyranitarite\nAbility: Sand Stream\nJolly Nature\n- Rock Slide\n- Knock Off\n- Low Kick\n- Protect\n\nIndeedee @ Choice Scarf\nAbility: Psychic Surge\nModest Nature\n- Expanding Force\n- Mystical Fire\n- Trick\n- Protect\n\nCorviknight @ Psychic Seed\nAbility: Mirror Armor\nCareful Nature\n- Brave Bird\n- Power Trip\n- Bulk Up\n- Roost\n\nSneasler @ White Herb\nAbility: Unburden\nAdamant Nature\n- Dire Claw\n- Close Combat\n- Coaching\n- Protect\n",
+   "link": null,
+   "weight": 1.0,
+   "species": [
+    "Excadrill",
+    "Salamence",
+    "Tyranitar",
+    "Indeedee",
+    "Corviknight",
+    "Sneasler"
+   ]
+  },
+  {
+   "label": "Frankfurt Regional winner",
+   "src": "Gholdengo @ Life Orb\nAbility: Good as Gold\nModest Nature\n- Protect\n- Shadow Ball\n- Nasty Plot\n- Make It Rain\n\nVolcarona @ Rocky Helmet\nAbility: Flame Body\nTimid Nature\n- Overheat\n- Struggle Bug\n- Rage Powder\n- Tailwind\n\nGarchomp @ Garchompite Z\nAbility: Rough Skin\nModest Nature\n- Dragon Pulse\n- Earth Power\n- Power Gem\n- Protect\n\nIncineroar @ Sitrus Berry\nAbility: Intimidate\nImpish Nature\n- Parting Shot\n- Fake Out\n- Flare Blitz\n- Darkest Lariat\n\nRillaboom @ Miracle Seed\nAbility: Grassy Surge\nAdamant Nature\n- Grassy Glide\n- Wood Hammer\n- Fake Out\n- U-turn\n\nRaichu @ Raichunite Y\nAbility: Lightning Rod\nTimid Nature\n- Zap Cannon\n- Focus Blast\n- Fake Out\n- Protect\n",
+   "link": null,
+   "weight": 1.0,
+   "species": [
+    "Gholdengo",
+    "Volcarona",
+    "Garchomp",
+    "Incineroar",
+    "Rillaboom",
+    "Raichu"
+   ]
+  }
+ ],
+ "format": "gen9championsvgc2026regmc"
+}

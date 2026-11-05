@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block title %}Team Deep Dive · openVGCengine{% endblock %}
+{% block main %}
+<div class="card">
+  <h1>Team Deep Dive</h1>
+  <p>Your team against a field of teams: overall score, every matchup, which four to bring against each, and how the bot plays your team.</p>
+  <form method="post" action="/validate">
+    {% include "_format_pick.html" %}
+    <label for="team">Your team {% include "_team_help.html" %}</label>
+    <textarea id="team" name="team" required data-team></textarea>
+    <details style="margin: 8px 0"><summary class="small"><b>Compare with a reference team</b> (optional)</summary>
+      <p class="small muted">Played in the same games as yours, so the difference is steadier than either score. Doubles the run time.</p>
+      <textarea id="reference" name="reference" rows="5" data-team></textarea>
+    </details>
+    {% include "_dd_field.html" %}
+    <button class="btn" type="submit">Run the Deep Dive</button>
+    <details class="howto small"><summary>How this works</summary>
+      <p>The bot pilots both teams, thinking every turn through the way it plays a real game (<b>Search Mode</b>), so this measures how well
+        <em>the bot</em> plays your team - one that needs a human touch may rate lower than it deserves. Each team's score is good to about
+        ±{{ (98 / 48 ** 0.5)|round|int }} points at 48 games. The <b>bring matrix</b> then plays your likeliest fours against theirs, plus all
+        15 fours of each side screened for answers: <b>both adapt</b> is your score when both sides pick their brings well.</p>
+      <p><b>Fast mode</b> plays {{ FAST_FACTOR }}× the games on instinct, without search or bring matrix: good for ranking teams, but a single
+        matchup can be ~20 points off the searched bot.</p></details>
+  </form>
+</div>
+{% include "_history.html" %}
+<script>
+
+(() => {
+  const f = new URLSearchParams(location.search).get("field"), sel = document.getElementById("field");
+  if (f && [...sel.options].some(o => o.value === f)) sel.value = f;
+})();
+</script>
+{% endblock %}

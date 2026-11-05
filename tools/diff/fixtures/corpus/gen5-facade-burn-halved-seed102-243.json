@@ -1,0 +1,262 @@
+{
+	"format": "gen5vgc2013",
+	"seed": "gen5,4699,29497,25657,2551",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "rotomfrost",
+			"item": "heatrock",
+			"ability": "contrary",
+			"moves": [
+				"smog",
+				"scald",
+				"copycat",
+				"flatter"
+			],
+			"nature": "impish",
+			"evs": {
+				"hp": 40,
+				"atk": 72,
+				"def": 164,
+				"spa": 104,
+				"spd": 128,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "shelgon",
+			"item": "cornnberry",
+			"ability": "compoundeyes",
+			"moves": [
+				"shockwave",
+				"shadowclaw",
+				"supersonic",
+				"psybeam"
+			],
+			"nature": "quirky",
+			"evs": {
+				"hp": 124,
+				"atk": 136,
+				"def": 140,
+				"spa": 108,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 29,
+				"def": 12,
+				"spa": 31,
+				"spd": 17,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "minun",
+			"item": "babiriberry",
+			"ability": "clearbody",
+			"moves": [
+				"reflect",
+				"bestow",
+				"magnetbomb",
+				"block"
+			],
+			"nature": "jolly",
+			"evs": {
+				"hp": 228,
+				"atk": 20,
+				"def": 28,
+				"spa": 64,
+				"spd": 128,
+				"spe": 40
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 29,
+				"spa": 31,
+				"spd": 31,
+				"spe": 28
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "swoobat",
+			"item": "figyberry",
+			"ability": "arenatrap",
+			"moves": [
+				"quiverdance",
+				"boneclub",
+				"firepunch",
+				"quash"
+			],
+			"nature": "hardy",
+			"evs": {
+				"hp": 180,
+				"atk": 120,
+				"def": 180,
+				"spa": 28,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "skarmory",
+			"item": "dragonfang",
+			"ability": "sandstream",
+			"moves": [
+				"leechlife",
+				"facade",
+				"smellingsalts",
+				"futuresight"
+			],
+			"nature": "mild",
+			"evs": {
+				"hp": 132,
+				"atk": 80,
+				"def": 156,
+				"spa": 140,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 8,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "doduo",
+			"item": "quickball",
+			"ability": "heatproof",
+			"moves": [
+				"ancientpower",
+				"dracometeor",
+				"hammerarm",
+				"brine"
+			],
+			"nature": "quirky",
+			"evs": {
+				"hp": 176,
+				"atk": 124,
+				"def": 208,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 14,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "nidoking",
+			"item": "wiseglasses",
+			"ability": "superluck",
+			"moves": [
+				"petaldance",
+				"stomp",
+				"refresh",
+				"minimize"
+			],
+			"nature": "relaxed",
+			"evs": {
+				"hp": 60,
+				"atk": 40,
+				"def": 36,
+				"spa": 196,
+				"spd": 136,
+				"spe": 40
+			},
+			"ivs": {
+				"hp": 7,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 0,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "mareep",
+			"item": "chilldrive",
+			"ability": "moody",
+			"moves": [
+				"flareblitz",
+				"curse",
+				"sketch",
+				"dragonrage"
+			],
+			"nature": "naughty",
+			"evs": {
+				"hp": 0,
+				"atk": 68,
+				"def": 132,
+				"spa": 64,
+				"spd": 216,
+				"spe": 28
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 21,
+				"spd": 6,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 2 1, move 3 1",
+			"p2": "move 2 1, move 1 2"
+		}
+	]
+}

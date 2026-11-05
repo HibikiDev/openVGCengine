@@ -1,0 +1,6 @@
+<div class="card">
+  <h1>Self-play cells filled</h1>
+  <p>{{ r.played }} of {{ r.rows }} opponent row{{ 's' if r.rows != 1 }} played: {{ r.me }} against each row's most common team, {{ r.games }} games each, model {{ r.ckpt }}.</p>
+  {% if r.failed %}<div class="note">Not played (a team the engine can't load yet):<ul class="small">{% for f in r.failed %}<li>{{ f }}</li>{% endfor %}</ul></div>{% endif %}
+  <p><a class="btn" href="{{ r.back }}">Back to the matchups</a></p>
+</div>

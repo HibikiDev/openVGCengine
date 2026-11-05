@@ -1,0 +1,270 @@
+{
+	"format": "gen9vgc2024regg",
+	"seed": "gen5,60927,31446,33902,40576",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "flamigo",
+			"item": "whiteherb",
+			"ability": "competitive",
+			"moves": [
+				"trick",
+				"howl",
+				"dragondance",
+				"focusenergy"
+			],
+			"nature": "hardy",
+			"evs": {
+				"hp": 184,
+				"atk": 144,
+				"def": 124,
+				"spa": 28,
+				"spd": 28,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 26,
+				"spd": 1,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Rock"
+		},
+		{
+			"name": "Mon1",
+			"species": "flamigo",
+			"item": "psychicseed",
+			"ability": "costar",
+			"moves": [
+				"magicroom",
+				"roleplay",
+				"dragoncheer",
+				"shellsmash"
+			],
+			"nature": "sassy",
+			"evs": {
+				"hp": 156,
+				"atk": 240,
+				"def": 16,
+				"spa": 96,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Flying"
+		},
+		{
+			"name": "Mon2",
+			"species": "flamigo",
+			"item": "electricseed",
+			"ability": "opportunist",
+			"moves": [
+				"dragondance",
+				"terablast",
+				"skillswap",
+				"knockoff"
+			],
+			"nature": "careful",
+			"evs": {
+				"hp": 60,
+				"atk": 120,
+				"def": 148,
+				"spa": 68,
+				"spd": 68,
+				"spe": 40
+			},
+			"ivs": {
+				"hp": 29,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 3,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Ice"
+		},
+		{
+			"name": "Mon3",
+			"species": "flamigo",
+			"item": "electricseed",
+			"ability": "costar",
+			"moves": [
+				"nastyplot",
+				"dragoncheer",
+				"swordsdance",
+				"skillswap"
+			],
+			"nature": "lonely",
+			"evs": {
+				"hp": 180,
+				"atk": 160,
+				"def": 52,
+				"spa": 116,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 15,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Psychic"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "flamigo",
+			"item": "mistyseed",
+			"ability": "intimidate",
+			"moves": [
+				"knockoff",
+				"dragondance",
+				"decorate",
+				"howl"
+			],
+			"nature": "naive",
+			"evs": {
+				"hp": 108,
+				"atk": 116,
+				"def": 0,
+				"spa": 204,
+				"spd": 80,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 28,
+				"spd": 10,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Ice"
+		},
+		{
+			"name": "Mon1",
+			"species": "flamigo",
+			"item": "electricseed",
+			"ability": "electricsurge",
+			"moves": [
+				"bulkup",
+				"howl",
+				"psychup",
+				"dragondance"
+			],
+			"nature": "mild",
+			"evs": {
+				"hp": 168,
+				"atk": 216,
+				"def": 124,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Stellar"
+		},
+		{
+			"name": "Mon2",
+			"species": "flamigo",
+			"item": "mirrorherb",
+			"ability": "costar",
+			"moves": [
+				"bulkup",
+				"trick",
+				"magicroom",
+				"quiverdance"
+			],
+			"nature": "bold",
+			"evs": {
+				"hp": 56,
+				"atk": 28,
+				"def": 212,
+				"spa": 104,
+				"spd": 72,
+				"spe": 36
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 28,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Flying"
+		},
+		{
+			"name": "Mon3",
+			"species": "flamigo",
+			"item": "grassyseed",
+			"ability": "mistysurge",
+			"moves": [
+				"trick",
+				"nastyplot",
+				"calmmind",
+				"shellsmash"
+			],
+			"nature": "naive",
+			"evs": {
+				"hp": 180,
+				"atk": 84,
+				"def": 104,
+				"spa": 56,
+				"spd": 84,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 5,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Ice"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 1 2, move 2 1",
+			"p2": "move 1 1, move 4"
+		}
+	]
+}

@@ -1,0 +1,322 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,37190,45587,22320,8964",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Archaludon",
+			"item": "Leftovers",
+			"ability": "Stamina",
+			"moves": [
+				"dragondarts",
+				"Electro Shot",
+				"Dragon Pulse",
+				"Aura Sphere"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 0,
+				"spa": 1,
+				"spd": 29,
+				"spe": 4
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "Golisopod",
+			"item": "Golisopite",
+			"ability": "Emergency Exit",
+			"moves": [
+				"dragondarts",
+				"Leech Life",
+				"Sucker Punch",
+				"Swords Dance"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 32,
+				"atk": 32,
+				"def": 0,
+				"spa": 0,
+				"spd": 2,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "Politoed",
+			"item": "Sitrus Berry",
+			"ability": "Drizzle",
+			"moves": [
+				"Protect",
+				"Weather Ball",
+				"dragondarts",
+				"Encore"
+			],
+			"nature": "Calm",
+			"evs": {
+				"hp": 31,
+				"atk": 0,
+				"def": 23,
+				"spa": 0,
+				"spd": 12,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "Incineroar",
+			"item": "Passho Berry",
+			"ability": "Intimidate",
+			"moves": [
+				"Protect",
+				"dragondarts",
+				"Throat Chop",
+				"Parting Shot"
+			],
+			"nature": "Careful",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 22,
+				"spa": 0,
+				"spd": 12,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Sneasler",
+			"item": "Grassy Seed",
+			"ability": "Unburden",
+			"moves": [
+				"Protect",
+				"Dire Claw",
+				"Close Combat",
+				"dragondarts"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 21,
+				"atk": 30,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 15
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "Rillaboom",
+			"item": "Miracle Seed",
+			"ability": "Grassy Surge",
+			"moves": [
+				"Wood Hammer",
+				"Grassy Glide",
+				"dragondarts",
+				"Fake Out"
+			],
+			"nature": "Brave",
+			"evs": {
+				"hp": 32,
+				"atk": 25,
+				"def": 0,
+				"spa": 0,
+				"spd": 9,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "Blastoise",
+			"item": "Blastoisinite",
+			"ability": "Rain Dish",
+			"moves": [
+				"Protect",
+				"Waterfall",
+				"dragondarts",
+				"Ice Beam"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 22,
+				"atk": 0,
+				"def": 0,
+				"spa": 27,
+				"spd": 0,
+				"spe": 17
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "Camerupt",
+			"item": "Cameruptite",
+			"ability": "Solid Rock",
+			"moves": [
+				"Protect",
+				"dragondarts",
+				"Earth Power",
+				"Ancient Power"
+			],
+			"nature": "Quiet",
+			"evs": {
+				"hp": 31,
+				"atk": 0,
+				"def": 3,
+				"spa": 32,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 3 2, move 2 2",
+			"p2": "move 2 1, move 3 -1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "pass, switch 4"
+		},
+		{
+			"p1": "move 3 2, switch 3",
+			"p2": "move 3 2, move 2 -1 mega"
+		},
+		{
+			"p1": "move 4 1, move 3 2",
+			"p2": "move 2 -2, move 3 -1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 3, pass"
+		},
+		{
+			"p1": "move 1 1, move 4 2",
+			"p2": "move 3 2, move 2 1"
+		},
+		{
+			"p1": "switch 4, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 3 2, move 4 1",
+			"p2": "move 3 1, move 3 2"
+		},
+		{
+			"p1": "move 1, move 1",
+			"p2": "move 3 1, pass"
+		},
+		{
+			"p1": "move 2 1, move 3 2",
+			"p2": "move 3 2, pass"
+		},
+		{
+			"p1": "move 3 1, move 3 -1",
+			"p2": "move 3 -2, pass"
+		},
+		{
+			"p1": "move 2 -2, move 2 2",
+			"p2": "move 2 1, pass"
+		},
+		{
+			"p1": "move 3 -2, move 4 1",
+			"p2": "move 4 1, pass"
+		},
+		{
+			"p1": "switch 3, move 4 2",
+			"p2": "move 4 -2, pass"
+		},
+		{
+			"p1": "move 3 -2, move 3 -1",
+			"p2": "move 4 1, pass"
+		}
+	],
+	"teams": [
+		"MC400",
+		"MC203"
+	]
+}

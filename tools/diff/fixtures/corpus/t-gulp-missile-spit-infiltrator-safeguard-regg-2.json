@@ -1,0 +1,278 @@
+{
+ "format": "gen9vgc2024regg",
+ "seed": "gen5,777,888,999,1111",
+ "team1": [
+  {
+   "name": "Mon0",
+   "species": "cramorant",
+   "item": "",
+   "ability": "gulpmissile",
+   "moves": [
+    "protect",
+    "surf",
+    "growl",
+    "tailwhip"
+   ],
+   "nature": "modest",
+   "evs": {
+    "hp": 252,
+    "atk": 0,
+    "def": 4,
+    "spa": 252,
+    "spd": 0,
+    "spe": 0
+   },
+   "ivs": {
+    "hp": 31,
+    "atk": 31,
+    "def": 31,
+    "spa": 31,
+    "spd": 31,
+    "spe": 31
+   },
+   "level": 50,
+   "gender": "M",
+   "teraType": "Normal"
+  },
+  {
+   "name": "Mon1",
+   "species": "lapras",
+   "item": "",
+   "ability": "waterabsorb",
+   "moves": [
+    "protect",
+    "growl",
+    "tailwhip",
+    "icebeam"
+   ],
+   "nature": "modest",
+   "evs": {
+    "hp": 252,
+    "atk": 0,
+    "def": 4,
+    "spa": 252,
+    "spd": 0,
+    "spe": 0
+   },
+   "ivs": {
+    "hp": 31,
+    "atk": 31,
+    "def": 31,
+    "spa": 31,
+    "spd": 31,
+    "spe": 31
+   },
+   "level": 50,
+   "gender": "F",
+   "teraType": "Normal"
+  },
+  {
+   "name": "Mon2",
+   "species": "goodra",
+   "item": "",
+   "ability": "sapsipper",
+   "moves": [
+    "protect",
+    "dracometeor",
+    "flamethrower",
+    "sludgebomb"
+   ],
+   "nature": "modest",
+   "evs": {
+    "hp": 252,
+    "atk": 0,
+    "def": 4,
+    "spa": 252,
+    "spd": 0,
+    "spe": 0
+   },
+   "ivs": {
+    "hp": 31,
+    "atk": 31,
+    "def": 31,
+    "spa": 31,
+    "spd": 31,
+    "spe": 31
+   },
+   "level": 50,
+   "gender": "M",
+   "teraType": "Normal"
+  },
+  {
+   "name": "Mon3",
+   "species": "snorlax",
+   "item": "",
+   "ability": "thickfat",
+   "moves": [
+    "protect",
+    "bodyslam",
+    "rest",
+    "curse"
+   ],
+   "nature": "modest",
+   "evs": {
+    "hp": 252,
+    "atk": 0,
+    "def": 4,
+    "spa": 252,
+    "spd": 0,
+    "spe": 0
+   },
+   "ivs": {
+    "hp": 31,
+    "atk": 31,
+    "def": 31,
+    "spa": 31,
+    "spd": 31,
+    "spe": 31
+   },
+   "level": 50,
+   "gender": "F",
+   "teraType": "Normal"
+  }
+ ],
+ "team2": [
+  {
+   "name": "Mon0",
+   "species": "dragapult",
+   "item": "",
+   "ability": "infiltrator",
+   "moves": [
+    "superfang",
+    "quickattack",
+    "protect",
+    "growl"
+   ],
+   "nature": "jolly",
+   "evs": {
+    "hp": 252,
+    "atk": 0,
+    "def": 4,
+    "spa": 252,
+    "spd": 0,
+    "spe": 252
+   },
+   "ivs": {
+    "hp": 31,
+    "atk": 31,
+    "def": 31,
+    "spa": 31,
+    "spd": 31,
+    "spe": 31
+   },
+   "level": 50,
+   "gender": "M",
+   "teraType": "Normal"
+  },
+  {
+   "name": "Mon1",
+   "species": "blissey",
+   "item": "",
+   "ability": "naturalcure",
+   "moves": [
+    "safeguard",
+    "growl",
+    "protect",
+    "softboiled"
+   ],
+   "nature": "modest",
+   "evs": {
+    "hp": 252,
+    "atk": 0,
+    "def": 4,
+    "spa": 252,
+    "spd": 0,
+    "spe": 0
+   },
+   "ivs": {
+    "hp": 31,
+    "atk": 31,
+    "def": 31,
+    "spa": 31,
+    "spd": 31,
+    "spe": 31
+   },
+   "level": 50,
+   "gender": "F",
+   "teraType": "Normal"
+  },
+  {
+   "name": "Mon2",
+   "species": "goodra",
+   "item": "",
+   "ability": "sapsipper",
+   "moves": [
+    "protect",
+    "dracometeor",
+    "flamethrower",
+    "sludgebomb"
+   ],
+   "nature": "modest",
+   "evs": {
+    "hp": 252,
+    "atk": 0,
+    "def": 4,
+    "spa": 252,
+    "spd": 0,
+    "spe": 0
+   },
+   "ivs": {
+    "hp": 31,
+    "atk": 31,
+    "def": 31,
+    "spa": 31,
+    "spd": 31,
+    "spe": 31
+   },
+   "level": 50,
+   "gender": "M",
+   "teraType": "Normal"
+  },
+  {
+   "name": "Mon3",
+   "species": "snorlax",
+   "item": "",
+   "ability": "thickfat",
+   "moves": [
+    "protect",
+    "bodyslam",
+    "rest",
+    "curse"
+   ],
+   "nature": "modest",
+   "evs": {
+    "hp": 252,
+    "atk": 0,
+    "def": 4,
+    "spa": 252,
+    "spd": 0,
+    "spe": 0
+   },
+   "ivs": {
+    "hp": 31,
+    "atk": 31,
+    "def": 31,
+    "spa": 31,
+    "spd": 31,
+    "spe": 31
+   },
+   "level": 50,
+   "gender": "F",
+   "teraType": "Normal"
+  }
+ ],
+ "turns": [
+  {
+   "p1": "move 3, move 1",
+   "p2": "move 1 1, move 1"
+  },
+  {
+   "p1": "move 2, move 2",
+   "p2": "move 1 1, move 2"
+  },
+  {
+   "p1": "move 3, move 2",
+   "p2": "move 2 1, move 2"
+  }
+ ]
+}

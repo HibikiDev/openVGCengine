@@ -1,0 +1,308 @@
+{
+	"format": "gen8vgc2021",
+	"seed": "gen5,31929,55539,17088,59851",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "darmanitan",
+			"item": "shinystone",
+			"ability": "reckless",
+			"moves": [
+				"guillotine",
+				"circlethrow",
+				"paraboliccharge",
+				"scorchingsands"
+			],
+			"nature": "calm",
+			"evs": {
+				"hp": 40,
+				"atk": 108,
+				"def": 4,
+				"spa": 232,
+				"spd": 124,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 23,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "Venusaur",
+			"item": "cellbattery",
+			"ability": "aftermath",
+			"moves": [
+				"magicalleaf",
+				"milkdrink",
+				"darkestlariat",
+				"gigaimpact"
+			],
+			"nature": "quiet",
+			"evs": {
+				"hp": 248,
+				"atk": 100,
+				"def": 100,
+				"spa": 60,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"gigantamax": true
+		},
+		{
+			"name": "Mon2",
+			"species": "azelf",
+			"item": "rawstberry",
+			"ability": "reckless",
+			"moves": [
+				"skyattack",
+				"belch",
+				"bounce",
+				"headsmash"
+			],
+			"nature": "mild",
+			"evs": {
+				"hp": 228,
+				"atk": 56,
+				"def": 60,
+				"spa": 164,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 5,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "pancham",
+			"item": "focusband",
+			"ability": "cutecharm",
+			"moves": [
+				"bugbuzz",
+				"superpower",
+				"purify",
+				"flamecharge"
+			],
+			"nature": "bold",
+			"evs": {
+				"hp": 244,
+				"atk": 96,
+				"def": 168,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 5,
+				"atk": 30,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "mantine",
+			"item": "redcard",
+			"ability": "telepathy",
+			"moves": [
+				"gunkshot",
+				"spiritshackle",
+				"grassyterrain",
+				"bodyslam"
+			],
+			"nature": "quiet",
+			"evs": {
+				"hp": 136,
+				"atk": 104,
+				"def": 72,
+				"spa": 36,
+				"spd": 160,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 22
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "Coalossal",
+			"item": "waterstone",
+			"ability": "quickdraw",
+			"moves": [
+				"bulldoze",
+				"floralhealing",
+				"stoneedge",
+				"powdersnow"
+			],
+			"nature": "calm",
+			"evs": {
+				"hp": 160,
+				"atk": 204,
+				"def": 48,
+				"spa": 92,
+				"spd": 4,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 21,
+				"atk": 5,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"gigantamax": true
+		},
+		{
+			"name": "Mon2",
+			"species": "natu",
+			"item": "icyrock",
+			"ability": "serenegrace",
+			"moves": [
+				"terrainpulse",
+				"lovelykiss",
+				"gyroball",
+				"grasspledge"
+			],
+			"nature": "bashful",
+			"evs": {
+				"hp": 100,
+				"atk": 108,
+				"def": 196,
+				"spa": 104,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 23
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "toxel",
+			"item": "heatrock",
+			"ability": "regenerator",
+			"moves": [
+				"waterpledge",
+				"heatcrash",
+				"frenzyplant",
+				"magicpowder"
+			],
+			"nature": "careful",
+			"evs": {
+				"hp": 192,
+				"atk": 204,
+				"def": 112,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 1,
+				"def": 31,
+				"spa": 28,
+				"spd": 9,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 1 1, move 4 2",
+			"p2": "move 4 1, move 1"
+		},
+		{
+			"p1": "move 1 1, move 2",
+			"p2": "move 4 2, move 3 1 dynamax"
+		},
+		{
+			"p1": "switch 4, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 4 1, switch 3",
+			"p2": "move 4 1, move 3 1"
+		},
+		{
+			"p1": "move 1 2 dynamax, move 4 2",
+			"p2": "move 1 -2, move 1 1"
+		},
+		{
+			"p1": "move 4 2, move 4 -1",
+			"p2": "move 4 2, switch 3"
+		},
+		{
+			"p1": "pass, switch 3",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 4 2, move 2 -1",
+			"p2": "move 2 -2, move 2 2"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "pass, switch 4"
+		},
+		{
+			"p1": "pass, move 2 -1",
+			"p2": "move 3, switch 3"
+		},
+		{
+			"p1": "pass, move 3 -1",
+			"p2": "move 2 -2, move 2 1"
+		},
+		{
+			"p1": "pass, move 1 1",
+			"p2": "move 4 1, move 3 -1"
+		}
+	]
+}

@@ -1,0 +1,262 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,20977,13817,20549,40811",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "snorlax",
+			"item": "blackglasses",
+			"ability": "friendguard",
+			"moves": [
+				"tearfullook",
+				"lavaplume",
+				"chillingwater",
+				"selfdestruct"
+			],
+			"nature": "calm",
+			"evs": {
+				"hp": 32,
+				"atk": 7,
+				"def": 17,
+				"spa": 16,
+				"spd": 13,
+				"spe": 9
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "sinistchamasterpiece",
+			"item": "choicescarf",
+			"ability": "pressure",
+			"moves": [
+				"healbell",
+				"sparklingaria",
+				"spiritshackle",
+				"mirrorcoat"
+			],
+			"nature": "timid",
+			"evs": {
+				"hp": 32,
+				"atk": 24,
+				"def": 3,
+				"spa": 30,
+				"spd": 23,
+				"spe": 2
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "grimmsnarl",
+			"item": "choicescarf",
+			"ability": "megalauncher",
+			"moves": [
+				"smackdown",
+				"perishsong",
+				"doubleteam",
+				"populationbomb"
+			],
+			"nature": "modest",
+			"evs": {
+				"hp": 32,
+				"atk": 32,
+				"def": 27,
+				"spa": 19,
+				"spd": 3,
+				"spe": 10
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "typhlosion",
+			"item": "mentalherb",
+			"ability": "multiscale",
+			"moves": [
+				"trick",
+				"solarbeam",
+				"scaryface",
+				"lunge"
+			],
+			"nature": "jolly",
+			"evs": {
+				"hp": 32,
+				"atk": 10,
+				"def": 24,
+				"spa": 10,
+				"spd": 12,
+				"spe": 29
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "hippowdon",
+			"item": "passhoberry",
+			"ability": "prankster",
+			"moves": [
+				"skillswap",
+				"encore",
+				"roleplay",
+				"screech"
+			],
+			"nature": "hardy",
+			"evs": {
+				"hp": 32,
+				"atk": 22,
+				"def": 19,
+				"spa": 19,
+				"spd": 11,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "maushold",
+			"item": "sitrusberry",
+			"ability": "pressure",
+			"moves": [
+				"pluck",
+				"rapidspin",
+				"imprison",
+				"poltergeist"
+			],
+			"nature": "calm",
+			"evs": {
+				"hp": 32,
+				"atk": 27,
+				"def": 6,
+				"spa": 17,
+				"spd": 28,
+				"spe": 26
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "medicham",
+			"item": "roseliberry",
+			"ability": "friendguard",
+			"moves": [
+				"glaiverush",
+				"steelroller",
+				"nightslash",
+				"icespinner"
+			],
+			"nature": "bashful",
+			"evs": {
+				"hp": 32,
+				"atk": 19,
+				"def": 12,
+				"spa": 8,
+				"spd": 32,
+				"spe": 20
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "rotommow",
+			"item": "smoothrock",
+			"ability": "sandrush",
+			"moves": [
+				"tailslap",
+				"tearfullook",
+				"bounce",
+				"furyattack"
+			],
+			"nature": "gentle",
+			"evs": {
+				"hp": 32,
+				"atk": 21,
+				"def": 20,
+				"spa": 5,
+				"spd": 11,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 3 1, move 4",
+			"p2": "move 4 1, move 3"
+		}
+	]
+}

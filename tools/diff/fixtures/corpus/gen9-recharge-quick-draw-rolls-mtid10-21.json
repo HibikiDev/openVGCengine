@@ -1,0 +1,318 @@
+{
+	"format": "gen9vgc2023regd",
+	"seed": "gen5,47903,56441,40582,38474",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "meowscarada",
+			"item": "ejectpack",
+			"ability": "lightmetal",
+			"moves": [
+				"beatup",
+				"bulkup",
+				"closecombat",
+				"confide"
+			],
+			"nature": "calm",
+			"evs": {
+				"hp": 156,
+				"atk": 52,
+				"def": 164,
+				"spa": 128,
+				"spd": 8,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Dragon"
+		},
+		{
+			"name": "Mon1",
+			"species": "tyranitar",
+			"item": "ejectpack",
+			"ability": "unnerve",
+			"moves": [
+				"shelter",
+				"eruption",
+				"overheat",
+				"banefulbunker"
+			],
+			"nature": "bashful",
+			"evs": {
+				"hp": 52,
+				"atk": 84,
+				"def": 204,
+				"spa": 56,
+				"spd": 112,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 16,
+				"atk": 15,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 20
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Dark"
+		},
+		{
+			"name": "Mon2",
+			"species": "roaringmoon",
+			"item": "babiriberry",
+			"ability": "keeneye",
+			"moves": [
+				"snarl",
+				"rocktomb",
+				"twinbeam",
+				"soak"
+			],
+			"nature": "jolly",
+			"evs": {
+				"hp": 188,
+				"atk": 220,
+				"def": 100,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 11,
+				"spa": 31,
+				"spd": 23,
+				"spe": 23
+			},
+			"level": 50,
+			"gender": "N",
+			"teraType": "Fire"
+		},
+		{
+			"name": "Mon3",
+			"species": "goomy",
+			"item": "beastball",
+			"ability": "disguise",
+			"moves": [
+				"gigadrain",
+				"lowkick",
+				"headbutt",
+				"leafstorm"
+			],
+			"nature": "hasty",
+			"evs": {
+				"hp": 236,
+				"atk": 124,
+				"def": 4,
+				"spa": 104,
+				"spd": 40,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 21,
+				"atk": 31,
+				"def": 17,
+				"spa": 31,
+				"spd": 3,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Fire"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "tatsugiri",
+			"item": "lumberry",
+			"ability": "soundproof",
+			"moves": [
+				"overheat",
+				"bodypress",
+				"worryseed",
+				"psychup"
+			],
+			"nature": "timid",
+			"evs": {
+				"hp": 92,
+				"atk": 136,
+				"def": 128,
+				"spa": 104,
+				"spd": 48,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 5
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Bug"
+		},
+		{
+			"name": "Mon1",
+			"species": "inteleon",
+			"item": "dreadplate",
+			"ability": "marvelscale",
+			"moves": [
+				"partingshot",
+				"steelwing",
+				"iceshard",
+				"firelash"
+			],
+			"nature": "modest",
+			"evs": {
+				"hp": 128,
+				"atk": 240,
+				"def": 136,
+				"spa": 4,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 8,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 5,
+				"spe": 19
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Electric"
+		},
+		{
+			"name": "Mon2",
+			"species": "rotomheat",
+			"item": "cobaberry",
+			"ability": "quickdraw",
+			"moves": [
+				"partingshot",
+				"hydrocannon",
+				"direclaw",
+				"instruct"
+			],
+			"nature": "sassy",
+			"evs": {
+				"hp": 92,
+				"atk": 72,
+				"def": 164,
+				"spa": 124,
+				"spd": 56,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 27,
+				"def": 31,
+				"spa": 12,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N",
+			"teraType": "Normal"
+		},
+		{
+			"name": "Mon3",
+			"species": "hariyama",
+			"item": "ejectpack",
+			"ability": "filter",
+			"moves": [
+				"overheat",
+				"lick",
+				"screech",
+				"stringshot"
+			],
+			"nature": "serious",
+			"evs": {
+				"hp": 128,
+				"atk": 252,
+				"def": 128,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 26,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Fairy"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 3 1, move 2",
+			"p2": "move 3 1 terastallize, move 2 2"
+		},
+		{
+			"p1": "switch 3, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 1 terastallize, move 1",
+			"p2": "move 3 1, switch 3"
+		},
+		{
+			"p1": "move 2 2, move 2",
+			"p2": "move 2 2, move 3 1"
+		},
+		{
+			"p1": "move 4 2, switch 4",
+			"p2": "move 4 -2, switch 4"
+		},
+		{
+			"p1": "move 1, move 3 2",
+			"p2": "move 3 1, move 3 -1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "pass, switch 4"
+		},
+		{
+			"p1": "move 3 1, move 3 2",
+			"p2": "switch 4, move 4 -1"
+		},
+		{
+			"p1": "move 1, move 3 2",
+			"p2": "move 3 -2, move 2 1"
+		},
+		{
+			"p1": "move 2 1, move 4 1",
+			"p2": "move 1 1, move 1"
+		},
+		{
+			"p1": "move 2 2, move 4 -1",
+			"p2": "move 3 2, move 1 2"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "pass, switch 4"
+		}
+	],
+	"teams": [
+		"scenario-287b",
+		"scenario-121b"
+	]
+}

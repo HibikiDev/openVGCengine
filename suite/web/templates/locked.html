@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %}Paused · openVGCengine{% endblock %}
+{% block main %}
+<div class="card">
+  <h2>The tools are paused for now</h2>
+  <p>This PC's resources are in use{% if lock.reason %} for {{ lock.reason }}{% endif %}{% if lock.since %}, since {{ lock.since }}{% endif %}{% if lock.until %}, until about {{ lock.until }}{% endif %}.</p>
+  <p class="small muted">Nothing you asked for is lost: runs queued before the pause start again when it ends. Status, results and the run history stay available.</p>
+  <p><a class="btn alt" href="/">Home</a> {% if private %}<a class="btn alt" href="/status">Status</a>{% endif %}</p>
+</div>
+{% endblock %}

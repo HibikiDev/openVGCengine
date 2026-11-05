@@ -1,0 +1,286 @@
+{
+	"format": "gen9vgc2024regg",
+	"seed": "gen5,58638,57188,54302,9366",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "tatsugiri",
+			"item": "adrenalineorb",
+			"ability": "opportunist",
+			"moves": [
+				"dragontail",
+				"temperflare",
+				"tailwind",
+				"axekick"
+			],
+			"nature": "rash",
+			"evs": {
+				"hp": 0,
+				"atk": 244,
+				"def": 212,
+				"spa": 52,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 21,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Electric"
+		},
+		{
+			"name": "Mon1",
+			"species": "dondozo",
+			"item": "ejectpack",
+			"ability": "imposter",
+			"moves": [
+				"wingattack",
+				"dragonclaw",
+				"honeclaws",
+				"lusterpurge"
+			],
+			"nature": "hardy",
+			"evs": {
+				"hp": 140,
+				"atk": 132,
+				"def": 148,
+				"spa": 88,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Dark"
+		},
+		{
+			"name": "Mon2",
+			"species": "tatsugiri",
+			"item": "",
+			"ability": "opportunist",
+			"moves": [
+				"weatherball",
+				"dive",
+				"woodhammer",
+				"beatup"
+			],
+			"nature": "lonely",
+			"evs": {
+				"hp": 184,
+				"atk": 64,
+				"def": 108,
+				"spa": 36,
+				"spd": 116,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 1,
+				"def": 12,
+				"spa": 12,
+				"spd": 31,
+				"spe": 12
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Dragon"
+		},
+		{
+			"name": "Mon3",
+			"species": "tatsugiri",
+			"item": "mirrorherb",
+			"ability": "commander",
+			"moves": [
+				"pounce",
+				"triplearrows",
+				"flipturn",
+				"sacredsword"
+			],
+			"nature": "mild",
+			"evs": {
+				"hp": 212,
+				"atk": 240,
+				"def": 56,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 19,
+				"atk": 31,
+				"def": 8,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Grass"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "dondozo",
+			"item": "mirrorherb",
+			"ability": "commander",
+			"moves": [
+				"thunderwave",
+				"playrough",
+				"machpunch",
+				"stuffcheeks"
+			],
+			"nature": "gentle",
+			"evs": {
+				"hp": 76,
+				"atk": 100,
+				"def": 112,
+				"spa": 152,
+				"spd": 68,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 20,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Ice"
+		},
+		{
+			"name": "Mon1",
+			"species": "tatsugiri",
+			"item": "adrenalineorb",
+			"ability": "imposter",
+			"moves": [
+				"firelash",
+				"breakingswipe",
+				"recover",
+				"hex"
+			],
+			"nature": "mild",
+			"evs": {
+				"hp": 56,
+				"atk": 108,
+				"def": 32,
+				"spa": 224,
+				"spd": 24,
+				"spe": 64
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Ghost"
+		},
+		{
+			"name": "Mon2",
+			"species": "tatsugiri",
+			"item": "mirrorherb",
+			"ability": "imposter",
+			"moves": [
+				"razorshell",
+				"astralbarrage",
+				"pollenpuff",
+				"healpulse"
+			],
+			"nature": "brave",
+			"evs": {
+				"hp": 28,
+				"atk": 176,
+				"def": 36,
+				"spa": 40,
+				"spd": 196,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Dragon"
+		},
+		{
+			"name": "Mon3",
+			"species": "ditto",
+			"item": "ejectpack",
+			"ability": "commander",
+			"moves": [
+				"grassyterrain",
+				"spiritbreak",
+				"assurance",
+				"bugbite"
+			],
+			"nature": "brave",
+			"evs": {
+				"hp": 240,
+				"atk": 132,
+				"def": 8,
+				"spa": 4,
+				"spd": 16,
+				"spe": 20
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N",
+			"teraType": "Steel"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 3, move 2 2 terastallize",
+			"p2": "move 3 2, move 3"
+		},
+		{
+			"p1": "move 1 -2, switch 3",
+			"p2": "move 1 2, move 4 1 terastallize"
+		},
+		{
+			"p1": "switch 4, move 1 1",
+			"p2": "move 2 2, switch 3"
+		},
+		{
+			"p1": "pass, move 2 -1",
+			"p2": "move 2 -2, pass"
+		},
+		{
+			"p1": "pass, move 2 2",
+			"p2": "move 1 2, pass"
+		}
+	]
+}

@@ -1,0 +1,26 @@
+
+<div class="card">
+  <h1>Matrix checked with search: {{ r.opp }}</h1>
+  {% if r.gaps is defined and r.gaps %}<p class="small"><span class="tag">gap fill</span> only the cells the quick references still rested on unsearched - the Deep Dive merges them with this team's earlier checks.</p>{% endif %}
+  {% if r.note is defined and r.note %}<div class="note">{{ r.note }}</div>{% endif %}
+  <p class="muted small">{{ r.team|join(' · ') }} vs {{ r.species|join(' · ') }} · model {{ r.model }} · {{ r.games }} searched games a pairing · <a href="/job/{{ r.dd }}#mx-{{ r.opp }}">back to the Deep Dive matrix</a></p>
+  <form method="post" action="/mxcheck" style="margin: 0 0 8px"><input type="hidden" name="dd" value="{{ r.dd }}"><input type="hidden" name="opp" value="{{ r.opp }}"><input type="hidden" name="fresh" value="1">
+    <button class="btn alt" type="submit" style="padding: 2px 10px">run it again</button> <span class="small muted">fresh games on a new seed (the button on the matrix opens this result)</span></form>
+  {% if r.both_adapt %}{% set e = r.both_adapt.search - r.both_adapt.raw %}
+  <div class="stats">
+    <div><div class="big">{{ r.both_adapt.search|pct }}</div><div class="small muted">both adapt, with search (the quick matrix said {{ r.both_adapt.raw|pct }}: {{ "%+.0f"|format(e * 100) }} points)</div></div>
+  </div>
+  <p class="small muted">Both adapt again over the quick mix's brings ({{ r.both_adapt.brings.mine|length }} × {{ r.both_adapt.brings.theirs|length }}), now with searched scores; other cells stay quick reads.</p>{% endif %}
+  <div class="scroll"><table class="tbl small">
+    <tr><th>your bring</th><th>their bring</th><th>why it's checked</th><th class="num">quick<br><span class="muted">(instinct)</span></th><th class="num">with search<br><span class="muted">(as in a real game)</span></th><th class="num">difference</th><th></th></tr>
+    {% for c in r.cells %}{% set d = c.search - c.raw %}<tr>
+      <td><b>{{ c.mine[:2]|join(' + ') }}</b><br><span class="muted">{{ c.mine[2:]|join(' + ') }}</span></td>
+      <td><b>{{ c.theirs[:2]|join(' + ') }}</b><br><span class="muted">{{ c.theirs[2:]|join(' + ') }}</span></td>
+      <td>{{ c.tags|join('; ') }}</td>
+      <td class="num">{{ c.raw|pct }}</td>
+      <td class="cell" style="background: {{ c.search|heat }}"><b>{{ c.search|pct }}</b></td>
+      <td class="num {{ 'hirec' if d > 0.08 else 'lowrec' if d < -0.08 }}">{{ "%+.0f"|format(d * 100) }}</td>
+      <td class="small"><a href="/playout?{{ {'dd': r.dd, 'opp': r.opp, 'row': c.row, 'col': c.col}|urlencode }}">play it out</a></td></tr>{% endfor %}
+  </table></div>
+  {% if r.games %}<p class="small muted">A searched cell: ±{{ (100 / (r.games ** 0.5))|round|int }} points; gaps under ~12 are noise.</p>{% endif %}
+</div>

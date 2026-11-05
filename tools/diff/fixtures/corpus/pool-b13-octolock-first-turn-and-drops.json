@@ -1,0 +1,314 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,10,38374,46965,63311",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Tyranitar",
+			"item": "Tyranitarite",
+			"ability": "Sand Stream",
+			"moves": [
+				"guardsplit",
+				"helpinghand",
+				"Knock Off",
+				"Dragon Dance"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 9,
+				"atk": 25,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "Sneasler",
+			"item": "Grassy Seed",
+			"ability": "Unburden",
+			"moves": [
+				"octolock",
+				"Protect",
+				"uturn",
+				"Throat Chop"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 4,
+				"atk": 32,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 30
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "Salamence",
+			"item": "Salamencite",
+			"ability": "Intimidate",
+			"moves": [
+				"trickroom",
+				"Flamethrower",
+				"uturn",
+				"Tailwind"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 2,
+				"atk": 0,
+				"def": 0,
+				"spa": 32,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "Rillaboom",
+			"item": "Miracle Seed",
+			"ability": "Grassy Surge",
+			"moves": [
+				"Wood Hammer",
+				"tailwind",
+				"High Horsepower",
+				"substitute"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 20,
+				"atk": 6,
+				"def": 0,
+				"spa": 0,
+				"spd": 30,
+				"spe": 10
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Basculegion",
+			"item": "Choice Scarf",
+			"ability": "Adaptability",
+			"moves": [
+				"protect",
+				"Last Respects",
+				"Wave Crash",
+				"trickroom"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 4,
+				"atk": 20,
+				"def": 5,
+				"spa": 0,
+				"spd": 5,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "Indeedee-F",
+			"item": "Rocky Helmet",
+			"ability": "Psychic Surge",
+			"moves": [
+				"batonpass",
+				"Trick Room",
+				"Helping Hand",
+				"haze"
+			],
+			"nature": "Relaxed",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 25,
+				"spa": 4,
+				"spd": 5,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "Garchomp",
+			"item": "Life Orb",
+			"ability": "Rough Skin",
+			"moves": [
+				"syrupbomb",
+				"Dragon Claw",
+				"clearsmog",
+				"Rock Slide"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 16,
+				"atk": 8,
+				"def": 5,
+				"spa": 0,
+				"spd": 5,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "Clefable",
+			"item": "Sitrus Berry",
+			"ability": "Magic Guard",
+			"moves": [
+				"Protect",
+				"Follow Me",
+				"substitute",
+				"noretreat"
+			],
+			"nature": "Bold",
+			"evs": {
+				"hp": 29,
+				"atk": 0,
+				"def": 27,
+				"spa": 0,
+				"spd": 10,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 1 2 mega, move 1 -1",
+			"p2": "move 1, switch 3"
+		},
+		{
+			"p1": "move 1 -2, move 4 -1",
+			"p2": "move 1, move 2 1"
+		},
+		{
+			"p1": "move 4, move 4 2",
+			"p2": "switch 3, move 2 -1"
+		},
+		{
+			"p1": "move 1 -2, move 1 2",
+			"p2": "move 3 -2, move 1 -1"
+		},
+		{
+			"p1": "move 1 1, move 3 -1",
+			"p2": "move 3 -2, move 1 2"
+		},
+		{
+			"p1": "pass, switch 4",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "switch 4, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 4 1, move 3 1",
+			"p2": "move 3 -2, move 1 2"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 3, switch 4"
+		},
+		{
+			"p1": "move 1 2, move 3 2",
+			"p2": "move 2 -2, move 3"
+		},
+		{
+			"p1": "move 1 1, move 1 2",
+			"p2": "move 2 1, move 3"
+		},
+		{
+			"p1": "switch 3, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 3 -2, move 1 1",
+			"p2": "move 2 -2, move 4"
+		}
+	],
+	"teams": [
+		"MC382",
+		"MC295"
+	]
+}

@@ -1,0 +1,15 @@
+[package]
+name = "engine-obs"
+version = "0.1.0"
+edition.workspace = true
+publish.workspace = true
+
+[lib]
+name = "engine_obs"
+
+[dependencies]
+engine-core = { path = "../engine-core" }
+engine-data = { path = "../engine-data" }
+
+[dev-dependencies]
+engine-fuzz = { path = "../engine-fuzz" }

@@ -1,0 +1,262 @@
+{
+ "format": "gen9championsvgc2026regmc",
+ "seed": "gen5,121,5,123,11",
+ "team1": [
+  {
+   "name": "Mon0",
+   "species": "Emboar",
+   "item": "Leftovers",
+   "ability": "Blaze",
+   "moves": [
+    "Flamethrower",
+    "Protect",
+    "Heat Wave",
+    "Wild Charge"
+   ],
+   "nature": "Modest",
+   "evs": {
+    "hp": 252,
+    "atk": 0,
+    "def": 0,
+    "spa": 252,
+    "spd": 0,
+    "spe": 4
+   },
+   "ivs": {
+    "hp": 31,
+    "atk": 31,
+    "def": 31,
+    "spa": 31,
+    "spd": 31,
+    "spe": 31
+   },
+   "level": 50,
+   "gender": "M"
+  },
+  {
+   "name": "Mon1",
+   "species": "Incineroar",
+   "item": "Figy Berry",
+   "ability": "Intimidate",
+   "moves": [
+    "Fake Out",
+    "Protect",
+    "Snarl",
+    "Flare Blitz"
+   ],
+   "nature": "Careful",
+   "evs": {
+    "hp": 252,
+    "atk": 0,
+    "def": 0,
+    "spa": 0,
+    "spd": 252,
+    "spe": 0
+   },
+   "ivs": {
+    "hp": 31,
+    "atk": 31,
+    "def": 31,
+    "spa": 31,
+    "spd": 31,
+    "spe": 31
+   },
+   "level": 50,
+   "gender": "M"
+  },
+  {
+   "name": "Mon2",
+   "species": "Amoonguss",
+   "item": "Sitrus Berry",
+   "ability": "Regenerator",
+   "moves": [
+    "Spore",
+    "Protect",
+    "Rage Powder",
+    "Giga Drain"
+   ],
+   "nature": "Relaxed",
+   "evs": {
+    "hp": 252,
+    "atk": 0,
+    "def": 252,
+    "spa": 0,
+    "spd": 0,
+    "spe": 0
+   },
+   "ivs": {
+    "hp": 31,
+    "atk": 31,
+    "def": 31,
+    "spa": 31,
+    "spd": 31,
+    "spe": 31
+   },
+   "level": 50,
+   "gender": "M"
+  },
+  {
+   "name": "Mon3",
+   "species": "Cresselia",
+   "item": "Mental Herb",
+   "ability": "Levitate",
+   "moves": [
+    "Psychic",
+    "Protect",
+    "Trick Room",
+    "Helping Hand"
+   ],
+   "nature": "Bold",
+   "evs": {
+    "hp": 252,
+    "atk": 0,
+    "def": 252,
+    "spa": 0,
+    "spd": 0,
+    "spe": 0
+   },
+   "ivs": {
+    "hp": 31,
+    "atk": 31,
+    "def": 31,
+    "spa": 31,
+    "spd": 31,
+    "spe": 31
+   },
+   "level": 50,
+   "gender": "F"
+  }
+ ],
+ "team2": [
+  {
+   "name": "Mon0",
+   "species": "Walrein",
+   "item": "Leftovers",
+   "ability": "Thick Fat",
+   "moves": [
+    "Surf",
+    "Protect",
+    "Ice Beam",
+    "Rest"
+   ],
+   "nature": "Bold",
+   "evs": {
+    "hp": 252,
+    "atk": 0,
+    "def": 252,
+    "spa": 0,
+    "spd": 0,
+    "spe": 4
+   },
+   "ivs": {
+    "hp": 31,
+    "atk": 31,
+    "def": 31,
+    "spa": 31,
+    "spd": 31,
+    "spe": 31
+   },
+   "level": 50,
+   "gender": "M"
+  },
+  {
+   "name": "Mon1",
+   "species": "Snorlax",
+   "item": "Leftovers",
+   "ability": "Thick Fat",
+   "moves": [
+    "Curse",
+    "Body Slam",
+    "Rest",
+    "Protect"
+   ],
+   "nature": "Relaxed",
+   "evs": {
+    "hp": 252,
+    "atk": 0,
+    "def": 0,
+    "spa": 0,
+    "spd": 0,
+    "spe": 0
+   },
+   "ivs": {
+    "hp": 31,
+    "atk": 31,
+    "def": 31,
+    "spa": 31,
+    "spd": 31,
+    "spe": 31
+   },
+   "level": 50,
+   "gender": "M"
+  },
+  {
+   "name": "Mon2",
+   "species": "Snorlax",
+   "item": "Leftovers",
+   "ability": "Thick Fat",
+   "moves": [
+    "Curse",
+    "Body Slam",
+    "Rest",
+    "Protect"
+   ],
+   "nature": "Adamant",
+   "evs": {
+    "hp": 252,
+    "atk": 252,
+    "def": 0,
+    "spa": 0,
+    "spd": 0,
+    "spe": 0
+   },
+   "ivs": {
+    "hp": 31,
+    "atk": 31,
+    "def": 31,
+    "spa": 31,
+    "spd": 31,
+    "spe": 31
+   },
+   "level": 50,
+   "gender": "M"
+  },
+  {
+   "name": "Mon3",
+   "species": "Kartana",
+   "item": "Life Orb",
+   "ability": "Beast Boost",
+   "moves": [
+    "Leaf Blade",
+    "Protect",
+    "Sacred Sword",
+    "Smart Strike"
+   ],
+   "nature": "Jolly",
+   "evs": {
+    "hp": 0,
+    "atk": 252,
+    "def": 0,
+    "spa": 0,
+    "spd": 0,
+    "spe": 252
+   },
+   "ivs": {
+    "hp": 31,
+    "atk": 31,
+    "def": 31,
+    "spa": 31,
+    "spd": 31,
+    "spe": 31
+   },
+   "level": 50,
+   "gender": "N"
+  }
+ ],
+ "turns": [
+  {
+   "p1": "move 1 1, move 2",
+   "p2": "move 3 1, move 1"
+  }
+ ]
+}

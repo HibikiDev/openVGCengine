@@ -1,0 +1,262 @@
+{
+	"format": "gen7vgc2018",
+	"seed": "gen5,22693,64210,42947,15270",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "tornadus",
+			"item": "electriumz",
+			"ability": "competitive",
+			"moves": [
+				"pinmissile",
+				"boltstrike",
+				"wrap",
+				"coil"
+			],
+			"nature": "bold",
+			"evs": {
+				"hp": 100,
+				"atk": 92,
+				"def": 108,
+				"spa": 208,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 29,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "chandelure",
+			"item": "psychiumz",
+			"ability": "sandstream",
+			"moves": [
+				"spacialrend",
+				"endure",
+				"flail",
+				"explosion"
+			],
+			"nature": "serious",
+			"evs": {
+				"hp": 240,
+				"atk": 96,
+				"def": 24,
+				"spa": 148,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 3,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "spritzee",
+			"item": "wateriumz",
+			"ability": "stickyhold",
+			"moves": [
+				"howl",
+				"waterpledge",
+				"bonerush",
+				"liquidation"
+			],
+			"nature": "quirky",
+			"evs": {
+				"hp": 0,
+				"atk": 136,
+				"def": 156,
+				"spa": 16,
+				"spd": 108,
+				"spe": 92
+			},
+			"ivs": {
+				"hp": 2,
+				"atk": 31,
+				"def": 19,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "xurkitree",
+			"item": "normaliumz",
+			"ability": "shielddust",
+			"moves": [
+				"technoblast",
+				"pollenpuff",
+				"thunderpunch",
+				"extremespeed"
+			],
+			"nature": "relaxed",
+			"evs": {
+				"hp": 168,
+				"atk": 12,
+				"def": 240,
+				"spa": 88,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 7,
+				"atk": 31,
+				"def": 14,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "magnemite",
+			"item": "electriumz",
+			"ability": "unburden",
+			"moves": [
+				"psychicfangs",
+				"icebeam",
+				"wildcharge",
+				"fleurcannon"
+			],
+			"nature": "naive",
+			"evs": {
+				"hp": 208,
+				"atk": 164,
+				"def": 136,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 18,
+				"spe": 17
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "minior",
+			"item": "normaliumz",
+			"ability": "shieldsdown",
+			"moves": [
+				"toxicthread",
+				"bellydrum",
+				"refresh",
+				"safeguard"
+			],
+			"nature": "careful",
+			"evs": {
+				"hp": 240,
+				"atk": 108,
+				"def": 160,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 16,
+				"spa": 31,
+				"spd": 31,
+				"spe": 13
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "delcatty",
+			"item": "domefossil",
+			"ability": "magicbounce",
+			"moves": [
+				"roaroftime",
+				"doubleslap",
+				"tailglow",
+				"magnetbomb"
+			],
+			"nature": "impish",
+			"evs": {
+				"hp": 108,
+				"atk": 36,
+				"def": 228,
+				"spa": 136,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 8
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "kingdra",
+			"item": "groundiumz",
+			"ability": "shellarmor",
+			"moves": [
+				"drainpunch",
+				"lowkick",
+				"precipiceblades",
+				"powerwhip"
+			],
+			"nature": "hardy",
+			"evs": {
+				"hp": 168,
+				"atk": 252,
+				"def": 16,
+				"spa": 72,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 4,
+				"atk": 31,
+				"def": 28,
+				"spa": 31,
+				"spd": 12,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 3 2, move 3 1",
+			"p2": "move 4 2, move 4 zmove"
+		}
+	]
+}

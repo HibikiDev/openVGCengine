@@ -1,0 +1,318 @@
+{
+	"format": "gen9vgc2024regg",
+	"seed": "gen5,45765,50605,52862,13830",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "sandaconda",
+			"item": "splashplate",
+			"ability": "galewings",
+			"moves": [
+				"moonlight",
+				"skillswap",
+				"painsplit",
+				"lockon"
+			],
+			"nature": "docile",
+			"evs": {
+				"hp": 48,
+				"atk": 220,
+				"def": 216,
+				"spa": 24,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 29,
+				"def": 31,
+				"spa": 26,
+				"spd": 25,
+				"spe": 23
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Normal"
+		},
+		{
+			"name": "Mon1",
+			"species": "ralts",
+			"item": "boosterenergy",
+			"ability": "defiant",
+			"moves": [
+				"uturn",
+				"guillotine",
+				"trickroom",
+				"rocksmash"
+			],
+			"nature": "brave",
+			"evs": {
+				"hp": 36,
+				"atk": 8,
+				"def": 144,
+				"spa": 188,
+				"spd": 132,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 17,
+				"atk": 31,
+				"def": 8,
+				"spa": 12,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Flying"
+		},
+		{
+			"name": "Mon2",
+			"species": "urshifu",
+			"item": "sitrusberry",
+			"ability": "unnerve",
+			"moves": [
+				"protect",
+				"worryseed",
+				"overheat",
+				"bugbuzz"
+			],
+			"nature": "serious",
+			"evs": {
+				"hp": 208,
+				"atk": 48,
+				"def": 8,
+				"spa": 80,
+				"spd": 36,
+				"spe": 4
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Ice"
+		},
+		{
+			"name": "Mon3",
+			"species": "gallade",
+			"item": "toxicplate",
+			"ability": "neutralizinggas",
+			"moves": [
+				"hydropump",
+				"soak",
+				"roar",
+				"ficklebeam"
+			],
+			"nature": "naive",
+			"evs": {
+				"hp": 240,
+				"atk": 120,
+				"def": 136,
+				"spa": 12,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 9,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Ice"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "kyogre",
+			"item": "choicescarf",
+			"ability": "toxicdebris",
+			"moves": [
+				"poltergeist",
+				"entrainment",
+				"moonblast",
+				"superpower"
+			],
+			"nature": "impish",
+			"evs": {
+				"hp": 52,
+				"atk": 248,
+				"def": 100,
+				"spa": 52,
+				"spd": 56,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 8,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N",
+			"teraType": "Poison"
+		},
+		{
+			"name": "Mon1",
+			"species": "morpeko",
+			"item": "syrupyapple",
+			"ability": "contrary",
+			"moves": [
+				"headlongrush",
+				"simplebeam",
+				"coaching",
+				"seedbomb"
+			],
+			"nature": "relaxed",
+			"evs": {
+				"hp": 48,
+				"atk": 8,
+				"def": 48,
+				"spa": 28,
+				"spd": 108,
+				"spe": 12
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Fighting"
+		},
+		{
+			"name": "Mon2",
+			"species": "slaking",
+			"item": "sitrusberry",
+			"ability": "imposter",
+			"moves": [
+				"roar",
+				"bulldoze",
+				"simplebeam",
+				"splash"
+			],
+			"nature": "bold",
+			"evs": {
+				"hp": 80,
+				"atk": 132,
+				"def": 116,
+				"spa": 180,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 11,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Poison"
+		},
+		{
+			"name": "Mon3",
+			"species": "klefki",
+			"item": "boosterenergy",
+			"ability": "cheekpouch",
+			"moves": [
+				"coreenforcer",
+				"harden",
+				"powertrip",
+				"flamecharge"
+			],
+			"nature": "sassy",
+			"evs": {
+				"hp": 24,
+				"atk": 4,
+				"def": 140,
+				"spa": 4,
+				"spd": 44,
+				"spe": 68
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 20,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Bug"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 3 -2 terastallize, move 2 2",
+			"p2": "move 4 1 terastallize, switch 3"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "pass, switch 3"
+		},
+		{
+			"p1": "move 4 -2, switch 4",
+			"p2": "move 4 1, move 4 1"
+		},
+		{
+			"p1": "switch 4, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 2 -2, move 4 2",
+			"p2": "move 4 1, move 1 -1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 4, pass"
+		},
+		{
+			"p1": "move 4 1, move 3 1",
+			"p2": "move 3 1, move 2 1"
+		},
+		{
+			"p1": "move 2 2, move 4 1",
+			"p2": "move 4 -2, move 1 2"
+		},
+		{
+			"p1": "move 3, move 3 1",
+			"p2": "move 1, move 1 1"
+		},
+		{
+			"p1": "switch 3, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 4 2, move 2 2",
+			"p2": "move 4 -2, move 2 2"
+		},
+		{
+			"p1": "move 4 1, move 2 1",
+			"p2": "move 3 2, pass"
+		}
+	],
+	"teams": [
+		"scenario-25b",
+		"scenario-195a"
+	]
+}

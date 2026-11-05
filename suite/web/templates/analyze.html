@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block title %}Replay Analyzer · openVGCengine{% endblock %}
+{% block main %}
+<div class="card">
+  <h1>Replay Analyzer</h1>
+  <p>A replay turn by turn: how the model rates each side, and what it would have clicked next to what was played.</p>
+  <form method="post" action="/analyze">
+    <label for="replay">Replay <span class="hint">a replay link, or a replay you downloaded</span></label>
+    <textarea id="replay" name="replay" required placeholder="https://replay.pokemonshowdown.com/gen9championsvgc2026regmcbo3-..." style="min-height:70px"></textarea>
+    <p class="small" style="margin: 4px 0 8px"><label class="small" style="display:inline"><b>Or open a downloaded replay:</b> <input type="file" id="replay-file" accept=".html,.htm,.log,.txt" style="width:auto"></label>
+      <span id="replay-file-note" class="muted"></span></p>
+    {% set rf = replay_files() %}
+    <p class="small" style="margin: 0 0 6px"><b>Or keep them in the replays folder:</b> drop downloaded replays there and they show up here. <button type="button" class="btn alt" id="open-replays" style="padding: 2px 10px">Open the folder</button></p>
+    {% if rf %}<div class="row" style="gap: 6px; margin-bottom: 10px">{% for f in rf %}<button type="button" class="btn alt small" data-replay="{{ f.name }}" title="added {{ f.when }}" style="padding: 2px 10px">{{ f.name }}</button>{% endfor %}</div>{% endif %}
+    <script>
+      document.getElementById("replay-file").addEventListener("change", async (e) => {
+        const f = e.target.files[0];
+        if (!f) return;
+        document.getElementById("replay").value = await f.text();
+        document.getElementById("replay-file-note").textContent = "Loaded " + f.name + ".";
+      });
+      document.getElementById("open-replays").addEventListener("click", () => fetch("/api/replay-folder", {method: "POST"}));
+      document.querySelectorAll("[data-replay]").forEach((b) => b.addEventListener("click", () => { document.getElementById("replay").value = "file:" + b.dataset.replay; }));
+    </script>
+    <div class="row">
+      <div><label for="side">Whose decisions?</label>
+        <select id="side" name="side"><option value="both">Both players</option><option value="p1">Player 1</option><option value="p2">Player 2</option></select></div>
+    </div>
+    <details>
+      <summary>Team exports (optional)</summary>
+      <p class="small muted">Exact spreads instead of usage guesses.</p>
+      <div class="row">
+        <div><label for="paste_p1">Player 1's team</label><textarea id="paste_p1" name="paste_p1" placeholder="Garchomp @ ..."></textarea></div>
+        <div><label for="paste_p2">Player 2's team</label><textarea id="paste_p2" name="paste_p2"></textarea></div>
+      </div>
+    </details>
+    <button class="btn" type="submit">Analyze</button>
+  </form>
+</div>
+{% include "_history.html" %}
+{% endblock %}

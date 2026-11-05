@@ -1,0 +1,262 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,38010,1263,794,62290",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "torkoal",
+			"item": "aguavberry",
+			"ability": "berserk",
+			"moves": [
+				"earthquake",
+				"thunderbolt",
+				"rockslide",
+				"closecombat"
+			],
+			"nature": "docile",
+			"evs": {
+				"hp": 32,
+				"atk": 3,
+				"def": 29,
+				"spa": 6,
+				"spd": 15,
+				"spe": 27
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "zoroark",
+			"item": "sitrusberry",
+			"ability": "sheerforce",
+			"moves": [
+				"heatwave",
+				"rockslide",
+				"closecombat",
+				"earthquake"
+			],
+			"nature": "bashful",
+			"evs": {
+				"hp": 32,
+				"atk": 27,
+				"def": 27,
+				"spa": 26,
+				"spd": 1,
+				"spe": 12
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "torkoal",
+			"item": "aguavberry",
+			"ability": "berserk",
+			"moves": [
+				"heatwave",
+				"ironhead",
+				"rockslide",
+				"scald"
+			],
+			"nature": "quirky",
+			"evs": {
+				"hp": 32,
+				"atk": 6,
+				"def": 21,
+				"spa": 16,
+				"spd": 7,
+				"spe": 11
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "glalie",
+			"item": "sitrusberry",
+			"ability": "berserk",
+			"moves": [
+				"earthquake",
+				"flamethrower",
+				"ironhead",
+				"scald"
+			],
+			"nature": "rash",
+			"evs": {
+				"hp": 32,
+				"atk": 10,
+				"def": 2,
+				"spa": 3,
+				"spd": 16,
+				"spe": 17
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "klefki",
+			"item": "aguavberry",
+			"ability": "berserk",
+			"moves": [
+				"icebeam",
+				"scald",
+				"ironhead",
+				"heatwave"
+			],
+			"nature": "bold",
+			"evs": {
+				"hp": 32,
+				"atk": 17,
+				"def": 15,
+				"spa": 5,
+				"spd": 3,
+				"spe": 21
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "primarina",
+			"item": "",
+			"ability": "berserk",
+			"moves": [
+				"earthquake",
+				"scald",
+				"airslash",
+				"closecombat"
+			],
+			"nature": "naive",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 6,
+				"spa": 8,
+				"spd": 17,
+				"spe": 2
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "lucario",
+			"item": "",
+			"ability": "berserk",
+			"moves": [
+				"closecombat",
+				"ironhead",
+				"rockslide",
+				"airslash"
+			],
+			"nature": "rash",
+			"evs": {
+				"hp": 32,
+				"atk": 5,
+				"def": 6,
+				"spa": 1,
+				"spd": 27,
+				"spe": 26
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "incineroar",
+			"item": "aguavberry",
+			"ability": "sheerforce",
+			"moves": [
+				"rockslide",
+				"airslash",
+				"scald",
+				"earthquake"
+			],
+			"nature": "quiet",
+			"evs": {
+				"hp": 32,
+				"atk": 13,
+				"def": 18,
+				"spa": 4,
+				"spd": 25,
+				"spe": 19
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 1, move 1",
+			"p2": "move 4, move 1"
+		}
+	]
+}

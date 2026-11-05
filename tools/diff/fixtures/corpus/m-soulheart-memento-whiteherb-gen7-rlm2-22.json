@@ -1,0 +1,282 @@
+{
+	"format": "gen7vgc2019",
+	"seed": "gen5,39830,41185,19756,4254",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "frillish",
+			"item": "galladite",
+			"ability": "soulheart",
+			"moves": [
+				"protect",
+				"explosion",
+				"hyperbeam",
+				"memento"
+			],
+			"nature": "brave",
+			"evs": {
+				"hp": 216,
+				"atk": 196,
+				"def": 84,
+				"spa": 12,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 16,
+				"spe": 17
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "burmysandy",
+			"item": "alakazite",
+			"ability": "soulheart",
+			"moves": [
+				"memento",
+				"selfdestruct",
+				"rockslide",
+				"hyperbeam"
+			],
+			"nature": "gentle",
+			"evs": {
+				"hp": 32,
+				"atk": 76,
+				"def": 80,
+				"spa": 32,
+				"spd": 108,
+				"spe": 108
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 17,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "machamp",
+			"item": "whiteherb",
+			"ability": "soulheart",
+			"moves": [
+				"protect",
+				"earthquake",
+				"selfdestruct",
+				"memento"
+			],
+			"nature": "careful",
+			"evs": {
+				"hp": 24,
+				"atk": 104,
+				"def": 96,
+				"spa": 0,
+				"spd": 68,
+				"spe": 76
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "ribombeetotem",
+			"item": "toxicplate",
+			"ability": "soulheart",
+			"moves": [
+				"explosion",
+				"rockslide",
+				"earthquake",
+				"finalgambit"
+			],
+			"nature": "careful",
+			"evs": {
+				"hp": 108,
+				"atk": 116,
+				"def": 200,
+				"spa": 8,
+				"spd": 76,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "escavalier",
+			"item": "passhoberry",
+			"ability": "soulheart",
+			"moves": [
+				"explosion",
+				"memento",
+				"earthquake",
+				"protect"
+			],
+			"nature": "docile",
+			"evs": {
+				"hp": 92,
+				"atk": 20,
+				"def": 88,
+				"spa": 100,
+				"spd": 200,
+				"spe": 8
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 11,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 7
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "claydol",
+			"item": "aerodactylite",
+			"ability": "soulheart",
+			"moves": [
+				"explosion",
+				"rockslide",
+				"finalgambit",
+				"dracometeor"
+			],
+			"nature": "calm",
+			"evs": {
+				"hp": 120,
+				"atk": 44,
+				"def": 180,
+				"spa": 164,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 7,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "skuntank",
+			"item": "stoneplate",
+			"ability": "soulheart",
+			"moves": [
+				"memento",
+				"healingwish",
+				"dracometeor",
+				"explosion"
+			],
+			"nature": "quiet",
+			"evs": {
+				"hp": 216,
+				"atk": 92,
+				"def": 100,
+				"spa": 100,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 9,
+				"spd": 25,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "ferroseed",
+			"item": "keeberry",
+			"ability": "soulheart",
+			"moves": [
+				"protect",
+				"healingwish",
+				"dracometeor",
+				"rockslide"
+			],
+			"nature": "jolly",
+			"evs": {
+				"hp": 196,
+				"atk": 12,
+				"def": 96,
+				"spa": 176,
+				"spd": 28,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 3,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 3 2, move 2",
+			"p2": "move 3, move 1"
+		},
+		{
+			"p1": "pass, switch 4",
+			"p2": "pass, switch 3"
+		},
+		{
+			"p1": "move 1, move 2",
+			"p2": "move 2 2, move 2"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 4, pass"
+		},
+		{
+			"p1": "move 2, switch 3",
+			"p2": "move 2, move 1 2"
+		},
+		{
+			"p1": "switch 3, pass",
+			"p2": "pass, pass"
+		}
+	]
+}

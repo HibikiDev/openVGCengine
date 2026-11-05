@@ -1,0 +1,310 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,25890,50399,13085,21723",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Sneasler",
+			"item": "redcard",
+			"ability": "stench",
+			"moves": [
+				"Protect",
+				"futuresight",
+				"Close Combat",
+				"Dire Claw"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 0,
+				"atk": 22,
+				"def": 20,
+				"spa": 0,
+				"spd": 0,
+				"spe": 24
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "Lycanroc-Dusk",
+			"item": "ejectbutton",
+			"ability": "Tough Claws",
+			"moves": [
+				"futuresight",
+				"Rock Slide",
+				"Close Combat",
+				"Accelerock"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 1,
+				"atk": 32,
+				"def": 1,
+				"spa": 0,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "Basculegion",
+			"item": "redcard",
+			"ability": "Adaptability",
+			"moves": [
+				"Protect",
+				"futuresight",
+				"Aqua Jet",
+				"Wave Crash"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 12,
+				"atk": 13,
+				"def": 19,
+				"spa": 0,
+				"spd": 6,
+				"spe": 16
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "Kingambit",
+			"item": "lifeorb",
+			"ability": "Defiant",
+			"moves": [
+				"Protect",
+				"Kowtow Cleave",
+				"Sucker Punch",
+				"futuresight"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 24,
+				"atk": 32,
+				"def": 2,
+				"spa": 0,
+				"spd": 2,
+				"spe": 6
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Kingambit",
+			"item": "redcard",
+			"ability": "moldbreaker",
+			"moves": [
+				"futuresight",
+				"Kowtow Cleave",
+				"Sucker Punch",
+				"Low Kick"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 32,
+				"atk": 25,
+				"def": 2,
+				"spa": 0,
+				"spd": 5,
+				"spe": 2
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "Basculegion",
+			"item": "ejectbutton",
+			"ability": "Adaptability",
+			"moves": [
+				"Wave Crash",
+				"Last Respects",
+				"futuresight",
+				"Protect"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 4,
+				"atk": 24,
+				"def": 10,
+				"spa": 0,
+				"spd": 0,
+				"spe": 28
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "Sneasler",
+			"item": "lifeorb",
+			"ability": "keeneye",
+			"moves": [
+				"Dire Claw",
+				"Close Combat",
+				"futuresight",
+				"Protect"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 16,
+				"atk": 20,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 30
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "Rillaboom",
+			"item": "kingsrock",
+			"ability": "Grassy Surge",
+			"moves": [
+				"Grassy Glide",
+				"Wood Hammer",
+				"Fake Out",
+				"futuresight"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 30,
+				"atk": 25,
+				"def": 1,
+				"spa": 0,
+				"spd": 2,
+				"spe": 8
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 2 -2, move 3 -1",
+			"p2": "switch 4, move 1 -1"
+		},
+		{
+			"p1": "move 2 1, switch 3",
+			"p2": "move 1 -2, move 1 2"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "pass, switch 3"
+		},
+		{
+			"p1": "move 2 1, switch 3",
+			"p2": "move 1 -2, move 4"
+		},
+		{
+			"p1": "move 1 2, move 4 2",
+			"p2": "move 2 2, move 1 1"
+		},
+		{
+			"p1": "switch 3, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "pass, switch 3",
+			"p2": "pass, switch 3"
+		},
+		{
+			"p1": "move 4 1, move 3 2",
+			"p2": "move 4 2, move 2 1"
+		},
+		{
+			"p1": "switch 4, pass",
+			"p2": "switch 4, pass"
+		},
+		{
+			"p1": "move 2 2, move 4 1",
+			"p2": "move 1 1, move 2 -1"
+		},
+		{
+			"p1": "move 2 1, move 4 2",
+			"p2": "move 3 -2, pass"
+		},
+		{
+			"p1": "move 2 -2, move 2",
+			"p2": "move 4 1, pass"
+		}
+	],
+	"teams": [
+		"MC310",
+		"MC219"
+	]
+}

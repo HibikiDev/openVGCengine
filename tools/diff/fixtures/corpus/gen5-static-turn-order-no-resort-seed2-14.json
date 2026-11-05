@@ -1,0 +1,262 @@
+{
+	"format": "gen5vgc2013",
+	"seed": "gen5,10247,13670,18244,7494",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "miltank",
+			"item": "roseincense",
+			"ability": "imposter",
+			"moves": [
+				"minimize",
+				"whirlwind",
+				"morningsun",
+				"vinewhip"
+			],
+			"nature": "mild",
+			"evs": {
+				"hp": 160,
+				"atk": 100,
+				"def": 236,
+				"spa": 12,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 3,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "hypno",
+			"item": "healball",
+			"ability": "snowwarning",
+			"moves": [
+				"trickroom",
+				"dracometeor",
+				"takedown",
+				"luckychant"
+			],
+			"nature": "quirky",
+			"evs": {
+				"hp": 8,
+				"atk": 68,
+				"def": 36,
+				"spa": 220,
+				"spd": 64,
+				"spe": 12
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 9,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "zapdos",
+			"item": "luckypunch",
+			"ability": "slowstart",
+			"moves": [
+				"zenheadbutt",
+				"mimic",
+				"headcharge",
+				"bugbuzz"
+			],
+			"nature": "serious",
+			"evs": {
+				"hp": 36,
+				"atk": 224,
+				"def": 172,
+				"spa": 76,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 7,
+				"atk": 31,
+				"def": 10,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "seaking",
+			"item": "dousedrive",
+			"ability": "swiftswim",
+			"moves": [
+				"seedbomb",
+				"powdersnow",
+				"confusion",
+				"closecombat"
+			],
+			"nature": "docile",
+			"evs": {
+				"hp": 188,
+				"atk": 136,
+				"def": 156,
+				"spa": 28,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 15,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "huntail",
+			"item": "blackglasses",
+			"ability": "tangledfeet",
+			"moves": [
+				"waterpulse",
+				"flashcannon",
+				"yawn",
+				"muddywater"
+			],
+			"nature": "hasty",
+			"evs": {
+				"hp": 56,
+				"atk": 28,
+				"def": 164,
+				"spa": 104,
+				"spd": 136,
+				"spe": 20
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 10,
+				"spa": 31,
+				"spd": 12,
+				"spe": 1
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "nidoranm",
+			"item": "oranberry",
+			"ability": "hydration",
+			"moves": [
+				"frenzyplant",
+				"supersonic",
+				"sandattack",
+				"zapcannon"
+			],
+			"nature": "bold",
+			"evs": {
+				"hp": 252,
+				"atk": 36,
+				"def": 16,
+				"spa": 188,
+				"spd": 16,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 29,
+				"spd": 8,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "primeape",
+			"item": "muscleband",
+			"ability": "prankster",
+			"moves": [
+				"bite",
+				"lockon",
+				"metalburst",
+				"rocktomb"
+			],
+			"nature": "timid",
+			"evs": {
+				"hp": 16,
+				"atk": 192,
+				"def": 156,
+				"spa": 144,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 28,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "monferno",
+			"item": "wacanberry",
+			"ability": "download",
+			"moves": [
+				"rocksmash",
+				"rockclimb",
+				"imprison",
+				"spitup"
+			],
+			"nature": "modest",
+			"evs": {
+				"hp": 228,
+				"atk": 232,
+				"def": 8,
+				"spa": 40,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 17,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 4 1, move 2 2",
+			"p2": "move 2 1, move 3 2"
+		}
+	]
+}

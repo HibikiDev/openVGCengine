@@ -1,0 +1,310 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,64340,662,34383,53476",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Incineroar",
+			"item": "Sitrus Berry",
+			"ability": "Intimidate",
+			"moves": [
+				"Throat Chop",
+				"Flare Blitz",
+				"Fake Out",
+				"Parting Shot"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 32,
+				"atk": 5,
+				"def": 0,
+				"spa": 0,
+				"spd": 18,
+				"spe": 11
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "Pincurchin",
+			"item": "Life Orb",
+			"ability": "Electric Surge",
+			"moves": [
+				"Rising Voltage",
+				"Acupressure",
+				"Sucker Punch",
+				"Protect"
+			],
+			"nature": "Quiet",
+			"evs": {
+				"hp": 32,
+				"atk": 2,
+				"def": 0,
+				"spa": 32,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "Rillaboom",
+			"item": "Miracle Seed",
+			"ability": "Grassy Surge",
+			"moves": [
+				"Wood Hammer",
+				"Grassy Glide",
+				"U-turn",
+				"Fake Out"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 32,
+				"atk": 25,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 9
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "Lucario",
+			"item": "Lucarionite Z",
+			"ability": "Inner Focus",
+			"moves": [
+				"Flash Cannon",
+				"Aura Sphere",
+				"Terrain Pulse",
+				"Detect"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 2,
+				"atk": 0,
+				"def": 0,
+				"spa": 32,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Corviknight",
+			"item": "Psychic Seed",
+			"ability": "Mirror Armor",
+			"moves": [
+				"Bulk Up",
+				"Power Trip",
+				"Roost",
+				"Brave Bird"
+			],
+			"nature": "Careful",
+			"evs": {
+				"hp": 31,
+				"atk": 11,
+				"def": 1,
+				"spa": 0,
+				"spd": 15,
+				"spe": 8
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "Indeedee",
+			"item": "Choice Scarf",
+			"ability": "Psychic Surge",
+			"moves": [
+				"Expanding Force",
+				"Trick",
+				"Protect",
+				"Gravity"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 2,
+				"atk": 0,
+				"def": 0,
+				"spa": 32,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "Tyranitar",
+			"item": "Tyranitarite",
+			"ability": "Sand Stream",
+			"moves": [
+				"Knock Off",
+				"Rock Slide",
+				"Low Kick",
+				"Protect"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 32,
+				"atk": 32,
+				"def": 2,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "Excadrill",
+			"item": "Focus Sash",
+			"ability": "Mold Breaker",
+			"moves": [
+				"High Horsepower",
+				"Iron Head",
+				"Swords Dance",
+				"Protect"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 0,
+				"atk": 32,
+				"def": 0,
+				"spa": 0,
+				"spd": 2,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"turns": [
+		{
+			"p1": "switch 3, move 4",
+			"p2": "switch 3, move 2 1"
+		},
+		{
+			"p1": "move 4 1, move 1 1",
+			"p2": "switch 3, move 1 2"
+		},
+		{
+			"p1": "move 1, move 3 2",
+			"p2": "move 2 2, move 3"
+		},
+		{
+			"p1": "move 1, move 3 1",
+			"p2": "move 3, move 3"
+		},
+		{
+			"p1": "move 1, move 3 2",
+			"p2": "move 2 1, move 3"
+		},
+		{
+			"p1": "move 1, move 3 1",
+			"p2": "move 1, move 1 1"
+		},
+		{
+			"p1": "move 1, move 3 2",
+			"p2": "move 2 2, move 3"
+		},
+		{
+			"p1": "move 1, move 2 -1",
+			"p2": "move 3, move 3"
+		},
+		{
+			"p1": "switch 3, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 1 1, move 2 -2",
+			"p2": "move 2 1, move 4"
+		},
+		{
+			"p1": "move 2 2, move 4",
+			"p2": "move 3, move 1 1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "pass, switch 3"
+		}
+	],
+	"teams": [
+		"MC204",
+		"MC39"
+	]
+}

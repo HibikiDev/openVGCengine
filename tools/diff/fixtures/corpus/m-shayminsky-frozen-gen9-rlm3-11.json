@@ -1,0 +1,290 @@
+{
+	"format": "gen9vgc2024regg",
+	"seed": "gen5,32074,27243,6092,17381",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "shayminsky",
+			"item": "fastball",
+			"ability": "serenegrace",
+			"moves": [
+				"seedflare",
+				"blizzard",
+				"protect",
+				"icefang"
+			],
+			"nature": "careful",
+			"evs": {
+				"hp": 132,
+				"atk": 148,
+				"def": 36,
+				"spa": 144,
+				"spd": 48,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 11
+			},
+			"level": 50,
+			"gender": "N",
+			"teraType": "Fighting"
+		},
+		{
+			"name": "Mon1",
+			"species": "gengar",
+			"item": "leppaberry",
+			"ability": "serenegrace",
+			"moves": [
+				"freezedry",
+				"icebeam",
+				"triattack",
+				"blizzard"
+			],
+			"nature": "lax",
+			"evs": {
+				"hp": 148,
+				"atk": 184,
+				"def": 112,
+				"spa": 64,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Poison"
+		},
+		{
+			"name": "Mon2",
+			"species": "gengar",
+			"item": "heavydutyboots",
+			"ability": "serenegrace",
+			"moves": [
+				"freezedry",
+				"triattack",
+				"icefang",
+				"icepunch"
+			],
+			"nature": "bashful",
+			"evs": {
+				"hp": 224,
+				"atk": 40,
+				"def": 8,
+				"spa": 100,
+				"spd": 20,
+				"spe": 96
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 12,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Fighting"
+		},
+		{
+			"name": "Mon3",
+			"species": "snorlax",
+			"item": "silkscarf",
+			"ability": "serenegrace",
+			"moves": [
+				"blizzard",
+				"powdersnow",
+				"icefang",
+				"icepunch"
+			],
+			"nature": "careful",
+			"evs": {
+				"hp": 32,
+				"atk": 252,
+				"def": 64,
+				"spa": 88,
+				"spd": 72,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 5,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 12
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Rock"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "shayminsky",
+			"item": "bottlecap",
+			"ability": "serenegrace",
+			"moves": [
+				"icefang",
+				"protect",
+				"powdersnow",
+				"icepunch"
+			],
+			"nature": "careful",
+			"evs": {
+				"hp": 132,
+				"atk": 12,
+				"def": 216,
+				"spa": 68,
+				"spd": 24,
+				"spe": 56
+			},
+			"ivs": {
+				"hp": 4,
+				"atk": 17,
+				"def": 31,
+				"spa": 27,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N",
+			"teraType": "Ghost"
+		},
+		{
+			"name": "Mon1",
+			"species": "shayminsky",
+			"item": "gripclaw",
+			"ability": "flamebody",
+			"moves": [
+				"icefang",
+				"icebeam",
+				"powdersnow",
+				"triattack"
+			],
+			"nature": "gentle",
+			"evs": {
+				"hp": 216,
+				"atk": 56,
+				"def": 228,
+				"spa": 8,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 23,
+				"spe": 17
+			},
+			"level": 50,
+			"gender": "N",
+			"teraType": "Dark"
+		},
+		{
+			"name": "Mon2",
+			"species": "shayminsky",
+			"item": "dawnstone",
+			"ability": "naturalcure",
+			"moves": [
+				"protect",
+				"icefang",
+				"icebeam",
+				"triattack"
+			],
+			"nature": "impish",
+			"evs": {
+				"hp": 56,
+				"atk": 232,
+				"def": 140,
+				"spa": 72,
+				"spd": 8,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 30,
+				"spa": 24,
+				"spd": 25,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N",
+			"teraType": "Ground"
+		},
+		{
+			"name": "Mon3",
+			"species": "shayminsky",
+			"item": "splashplate",
+			"ability": "serenegrace",
+			"moves": [
+				"seedflare",
+				"icefang",
+				"icepunch",
+				"powdersnow"
+			],
+			"nature": "serious",
+			"evs": {
+				"hp": 160,
+				"atk": 20,
+				"def": 168,
+				"spa": 72,
+				"spd": 88,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 23,
+				"atk": 8,
+				"def": 30,
+				"spa": 31,
+				"spd": 31,
+				"spe": 3
+			},
+			"level": 50,
+			"gender": "N",
+			"teraType": "Grass"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 4 2 terastallize, move 2 1",
+			"p2": "move 4 1, move 1 1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 3, pass"
+		},
+		{
+			"p1": "move 1 -2, move 3 -1",
+			"p2": "move 1, move 4 1"
+		},
+		{
+			"p1": "switch 3, move 3 1",
+			"p2": "move 1, switch 4"
+		},
+		{
+			"p1": "move 1 1, move 3 -1",
+			"p2": "move 3 -2, move 3 1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 4, pass"
+		}
+	]
+}

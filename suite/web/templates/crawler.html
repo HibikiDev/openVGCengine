@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+{% block title %}Line Crawler · openVGCengine{% endblock %}
+{% block main %}
+<div class="card">
+  <h1>Line Crawler</h1>
+  <p>One game, one turn at a time: you pick both sides' moves, with the bot's read beside them. Every different choice or roll becomes a branch you can return to.</p>
+  <p class="small muted">The bot sees both full sheets here (in a real game, only the open ones).</p>
+  <form method="post" action="/crawler">
+    {% set no_sheets = true %}{% include "_format_pick.html" %}
+    <div class="row">
+      <div><label for="a">Team A {% include "_team_help.html" %}</label><textarea id="a" name="a" required data-team></textarea>
+        <div class="custom-bring" id="pa"><span class="small muted">leads</span>
+          {% for k in (1, 2, 3, 4) %}{% if k == 3 %}<span class="small muted">back</span>{% endif %}<select name="a{{ k }}" aria-label="team A {{ 'lead' if k < 3 else 'back' }} {{ k if k < 3 else k - 2 }}" required><option value="">-</option></select>{% endfor %}
+        </div></div>
+      <div><label for="b">Team B</label><textarea id="b" name="b" required data-team></textarea>
+        <div class="custom-bring" id="pb"><span class="small muted">leads</span>
+          {% for k in (1, 2, 3, 4) %}{% if k == 3 %}<span class="small muted">back</span>{% endif %}<select name="b{{ k }}" aria-label="team B {{ 'lead' if k < 3 else 'back' }} {{ k if k < 3 else k - 2 }}" required><option value="">-</option></select>{% endfor %}
+        </div></div>
+    </div>
+    <div class="row">
+      <div><label for="name_a">Name for team A (optional)</label><input id="name_a" name="name_a" maxlength="40"></div>
+      <div><label for="name_b">Name for team B (optional)</label><input id="name_b" name="name_b" maxlength="40"></div>
+    </div>
+    <button class="btn" type="submit">Start the game</button>
+  </form>
+</div>
+{% if sessions %}
+<div class="card flat">
+  <h3>Recent crawls</h3>
+  <div class="scroll"><table class="tbl">
+    <tr><th>when</th><th>leads and back</th><th class="num">positions</th><th></th></tr>
+    {% for s in sessions %}<tr><td class="small">{{ s.created|ago if s.created else '' }}</td>
+      <td class="small"><b>{{ s.names.a or 'A' }}</b>: {{ s.leads[0][:2]|join(' + ') }} <span class="muted">({{ s.leads[0][2:]|join(', ') }})</span><br>
+        <b>{{ s.names.b or 'B' }}</b>: {{ s.leads[1][:2]|join(' + ') }} <span class="muted">({{ s.leads[1][2:]|join(', ') }})</span></td>
+      <td class="num">{{ s.nodes }}</td><td class="small"><a href="/crawler/s/{{ s.id }}">open</a></td></tr>{% endfor %}
+  </table></div>
+</div>
+{% endif %}
+<script>
+
+(() => {
+  const timers = {};
+  async function fill(side) {
+    const text = document.getElementById(side).value.trim();
+    if (!text) return;
+    let names = [];
+    try {
+      const r = await fetch("/api/species", {method: "POST", headers: {"Content-Type": "application/x-www-form-urlencoded"},
+                                              body: "team=" + encodeURIComponent(text)});
+      names = (await r.json()).species || [];
+    } catch (e) { names = []; }
+    [1, 2, 3, 4].forEach((k, i) => {
+      const sel = document.querySelector(`select[name="${side}${k}"]`), keep = sel.value || String(i);
+      sel.innerHTML = names.length ? names.map((m, j) => `<option value="${j}">${m.replace(/</g, "&lt;")}</option>`).join("")
+                                   : '<option value="">(team not readable yet)</option>';
+      if (names.length) sel.value = Number(keep) < names.length ? keep : String(i);
+    });
+  }
+  ["a", "b"].forEach(side => document.getElementById(side).addEventListener("input", () => {
+    clearTimeout(timers[side]); timers[side] = setTimeout(() => fill(side), 600);
+  }));
+  document.querySelector('form[action="/crawler"]').addEventListener("submit", ev => {
+    for (const side of ["a", "b"]) {
+      const v = [1, 2, 3, 4].map(k => document.querySelector(`select[name="${side}${k}"]`).value);
+      if (new Set(v).size !== 4) { ev.preventDefault(); alert(`Team ${side.toUpperCase()}: pick four different Pokemon.`); return; }
+    }
+  });
+})();
+</script>
+{% endblock %}

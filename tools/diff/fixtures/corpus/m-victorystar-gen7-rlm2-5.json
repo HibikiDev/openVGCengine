@@ -1,0 +1,274 @@
+{
+	"format": "gen7vgc2019",
+	"seed": "gen5,15773,16461,9587,45603",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "vivillonsavanna",
+			"item": "dreadplate",
+			"ability": "victorystar",
+			"moves": [
+				"hypnosis",
+				"willowisp",
+				"sleeppowder",
+				"rockslide"
+			],
+			"nature": "mild",
+			"evs": {
+				"hp": 60,
+				"atk": 64,
+				"def": 232,
+				"spa": 152,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 0,
+				"def": 31,
+				"spa": 31,
+				"spd": 30,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "skuntank",
+			"item": "choiceband",
+			"ability": "compoundeyes",
+			"moves": [
+				"rockslide",
+				"willowisp",
+				"icywind",
+				"hypnosis"
+			],
+			"nature": "brave",
+			"evs": {
+				"hp": 212,
+				"atk": 64,
+				"def": 200,
+				"spa": 28,
+				"spd": 4,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 14,
+				"spa": 31,
+				"spd": 31,
+				"spe": 19
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "dewgong",
+			"item": "fairiumz",
+			"ability": "victorystar",
+			"moves": [
+				"focusblast",
+				"hypnosis",
+				"willowisp",
+				"hydropump"
+			],
+			"nature": "serious",
+			"evs": {
+				"hp": 32,
+				"atk": 4,
+				"def": 120,
+				"spa": 144,
+				"spd": 208,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "kingler",
+			"item": "reapercloth",
+			"ability": "compoundeyes",
+			"moves": [
+				"icywind",
+				"hydropump",
+				"sleeppowder",
+				"stoneedge"
+			],
+			"nature": "serious",
+			"evs": {
+				"hp": 24,
+				"atk": 156,
+				"def": 244,
+				"spa": 40,
+				"spd": 44,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 22,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "flaaffy",
+			"item": "dragonmemory",
+			"ability": "victorystar",
+			"moves": [
+				"hypnosis",
+				"fireblast",
+				"willowisp",
+				"rockslide"
+			],
+			"nature": "docile",
+			"evs": {
+				"hp": 48,
+				"atk": 32,
+				"def": 36,
+				"spa": 80,
+				"spd": 200,
+				"spe": 4
+			},
+			"ivs": {
+				"hp": 19,
+				"atk": 31,
+				"def": 31,
+				"spa": 14,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "wailmer",
+			"item": "rawstberry",
+			"ability": "victorystar",
+			"moves": [
+				"stoneedge",
+				"hydropump",
+				"rockslide",
+				"fireblast"
+			],
+			"nature": "serious",
+			"evs": {
+				"hp": 172,
+				"atk": 132,
+				"def": 200,
+				"spa": 4,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 27,
+				"spa": 31,
+				"spd": 31,
+				"spe": 19
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "houndour",
+			"item": "mistyseed",
+			"ability": "victorystar",
+			"moves": [
+				"focusblast",
+				"stoneedge",
+				"hydropump",
+				"willowisp"
+			],
+			"nature": "hasty",
+			"evs": {
+				"hp": 168,
+				"atk": 160,
+				"def": 100,
+				"spa": 20,
+				"spd": 60,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 17,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "minccino",
+			"item": "repeatball",
+			"ability": "compoundeyes",
+			"moves": [
+				"willowisp",
+				"hydropump",
+				"stoneedge",
+				"focusblast"
+			],
+			"nature": "impish",
+			"evs": {
+				"hp": 208,
+				"atk": 0,
+				"def": 132,
+				"spa": 52,
+				"spd": 80,
+				"spe": 36
+			},
+			"ivs": {
+				"hp": 5,
+				"atk": 28,
+				"def": 29,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 1 2, move 2 2",
+			"p2": "move 3 2, move 2 2"
+		},
+		{
+			"p1": "move 4, switch 4",
+			"p2": "move 3 -2, move 3"
+		},
+		{
+			"p1": "switch 4, move 1",
+			"p2": "move 3 2, move 2 -1"
+		},
+		{
+			"p1": "move 4 -2, move 3 1",
+			"p2": "move 1 1, move 4 1"
+		}
+	]
+}

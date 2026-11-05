@@ -1,0 +1,318 @@
+{
+	"format": "gen9vgc2023regd",
+	"seed": "gen5,119,51127,37802,4054",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "zoroark",
+			"item": "beastball",
+			"ability": "electricsurge",
+			"moves": [
+				"phantomforce",
+				"vinewhip",
+				"icespinner",
+				"facade"
+			],
+			"nature": "bold",
+			"evs": {
+				"hp": 100,
+				"atk": 204,
+				"def": 188,
+				"spa": 16,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 13,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Fairy"
+		},
+		{
+			"name": "Mon1",
+			"species": "scatterbug",
+			"item": "boosterenergy",
+			"ability": "rockypayload",
+			"moves": [
+				"psychicterrain",
+				"earthpower",
+				"irontail",
+				"magicroom"
+			],
+			"nature": "mild",
+			"evs": {
+				"hp": 228,
+				"atk": 40,
+				"def": 228,
+				"spa": 12,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 27,
+				"spa": 3,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Fire"
+		},
+		{
+			"name": "Mon2",
+			"species": "igglybuff",
+			"item": "boosterenergy",
+			"ability": "vesselofruin",
+			"moves": [
+				"memento",
+				"gunkshot",
+				"screech",
+				"disarmingvoice"
+			],
+			"nature": "lax",
+			"evs": {
+				"hp": 80,
+				"atk": 76,
+				"def": 60,
+				"spa": 52,
+				"spd": 216,
+				"spe": 24
+			},
+			"ivs": {
+				"hp": 10,
+				"atk": 1,
+				"def": 31,
+				"spa": 31,
+				"spd": 7,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Grass"
+		},
+		{
+			"name": "Mon3",
+			"species": "landorustherian",
+			"item": "boosterenergy",
+			"ability": "klutz",
+			"moves": [
+				"minimize",
+				"knockoff",
+				"lavaplume",
+				"steelwing"
+			],
+			"nature": "modest",
+			"evs": {
+				"hp": 140,
+				"atk": 40,
+				"def": 36,
+				"spa": 80,
+				"spd": 52,
+				"spe": 136
+			},
+			"ivs": {
+				"hp": 22,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 29,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Fairy"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "cryogonal",
+			"item": "boosterenergy",
+			"ability": "psychicsurge",
+			"moves": [
+				"cottonspore",
+				"discharge",
+				"sunnyday",
+				"magicroom"
+			],
+			"nature": "serious",
+			"evs": {
+				"hp": 112,
+				"atk": 172,
+				"def": 224,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 18,
+				"def": 31,
+				"spa": 31,
+				"spd": 5,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N",
+			"teraType": "Dark"
+		},
+		{
+			"name": "Mon1",
+			"species": "houndstone",
+			"item": "maliciousarmor",
+			"ability": "swordofruin",
+			"moves": [
+				"aquatail",
+				"appleacid",
+				"raindance",
+				"faketears"
+			],
+			"nature": "serious",
+			"evs": {
+				"hp": 248,
+				"atk": 188,
+				"def": 36,
+				"spa": 36,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Stellar"
+		},
+		{
+			"name": "Mon2",
+			"species": "quilladin",
+			"item": "cellbattery",
+			"ability": "orichalcumpulse",
+			"moves": [
+				"lowkick",
+				"pyroball",
+				"gastroacid",
+				"headbutt"
+			],
+			"nature": "jolly",
+			"evs": {
+				"hp": 228,
+				"atk": 188,
+				"def": 92,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 23,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Ghost"
+		},
+		{
+			"name": "Mon3",
+			"species": "quaxwell",
+			"item": "boosterenergy",
+			"ability": "quarkdrive",
+			"moves": [
+				"assurance",
+				"grassyterrain",
+				"swallow",
+				"knockoff"
+			],
+			"nature": "naive",
+			"evs": {
+				"hp": 52,
+				"atk": 60,
+				"def": 52,
+				"spa": 220,
+				"spd": 124,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 29,
+				"def": 31,
+				"spa": 31,
+				"spd": 28,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Dragon"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 1 -2 terastallize, move 1",
+			"p2": "move 4, switch 3"
+		},
+		{
+			"p1": "move 1, move 3 1",
+			"p2": "switch 4, move 3 2"
+		},
+		{
+			"p1": "move 3 1, move 2 -1",
+			"p2": "move 3, move 2 2"
+		},
+		{
+			"p1": "pass, switch 3",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 4 2, move 3 2",
+			"p2": "move 2, move 2 -1 terastallize"
+		},
+		{
+			"p1": "move 3 -2, move 3 -1",
+			"p2": "switch 4, move 3 -1"
+		},
+		{
+			"p1": "move 4 2, move 1 -1",
+			"p2": "switch 4, move 2 1"
+		},
+		{
+			"p1": "pass, switch 4",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 4 2, move 4 2",
+			"p2": "move 2, move 2 -1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 3, pass"
+		},
+		{
+			"p1": "move 4 -2, move 4 1",
+			"p2": "move 1 -2, move 2 -1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "pass, switch 4"
+		}
+	],
+	"teams": [
+		"scenario-203a",
+		"scenario-218a"
+	]
+}

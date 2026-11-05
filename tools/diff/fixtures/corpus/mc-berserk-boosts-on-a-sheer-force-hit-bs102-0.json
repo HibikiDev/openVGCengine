@@ -1,0 +1,262 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,12732,42945,1929,46581",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "mausholdfour",
+			"item": "sitrusberry",
+			"ability": "berserk",
+			"moves": [
+				"flamethrower",
+				"scald",
+				"airslash",
+				"closecombat"
+			],
+			"nature": "lax",
+			"evs": {
+				"hp": 32,
+				"atk": 7,
+				"def": 28,
+				"spa": 6,
+				"spd": 16,
+				"spe": 23
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "pelipper",
+			"item": "aguavberry",
+			"ability": "sheerforce",
+			"moves": [
+				"thunderbolt",
+				"ironhead",
+				"heatwave",
+				"earthquake"
+			],
+			"nature": "naughty",
+			"evs": {
+				"hp": 32,
+				"atk": 4,
+				"def": 15,
+				"spa": 13,
+				"spd": 29,
+				"spe": 3
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "indeedeef",
+			"item": "sitrusberry",
+			"ability": "sheerforce",
+			"moves": [
+				"closecombat",
+				"scald",
+				"heatwave",
+				"rockslide"
+			],
+			"nature": "naughty",
+			"evs": {
+				"hp": 32,
+				"atk": 9,
+				"def": 30,
+				"spa": 29,
+				"spd": 26,
+				"spe": 9
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "gallade",
+			"item": "aguavberry",
+			"ability": "berserk",
+			"moves": [
+				"icebeam",
+				"scald",
+				"closecombat",
+				"airslash"
+			],
+			"nature": "sassy",
+			"evs": {
+				"hp": 32,
+				"atk": 7,
+				"def": 15,
+				"spa": 8,
+				"spd": 7,
+				"spe": 15
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "scrafty",
+			"item": "sitrusberry",
+			"ability": "sheerforce",
+			"moves": [
+				"icebeam",
+				"scald",
+				"earthquake",
+				"airslash"
+			],
+			"nature": "modest",
+			"evs": {
+				"hp": 32,
+				"atk": 23,
+				"def": 1,
+				"spa": 31,
+				"spd": 20,
+				"spe": 4
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "basculegion",
+			"item": "",
+			"ability": "berserk",
+			"moves": [
+				"airslash",
+				"closecombat",
+				"flamethrower",
+				"heatwave"
+			],
+			"nature": "timid",
+			"evs": {
+				"hp": 32,
+				"atk": 10,
+				"def": 25,
+				"spa": 11,
+				"spd": 12,
+				"spe": 27
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "lycanrocdusk",
+			"item": "",
+			"ability": "berserk",
+			"moves": [
+				"scald",
+				"airslash",
+				"earthquake",
+				"thunderbolt"
+			],
+			"nature": "docile",
+			"evs": {
+				"hp": 32,
+				"atk": 22,
+				"def": 15,
+				"spa": 8,
+				"spd": 29,
+				"spe": 14
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "lopunny",
+			"item": "aguavberry",
+			"ability": "berserk",
+			"moves": [
+				"scald",
+				"closecombat",
+				"airslash",
+				"flamethrower"
+			],
+			"nature": "timid",
+			"evs": {
+				"hp": 32,
+				"atk": 4,
+				"def": 29,
+				"spa": 0,
+				"spd": 27,
+				"spe": 13
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 4 1, move 4",
+			"p2": "move 1 1, move 1 1"
+		}
+	]
+}

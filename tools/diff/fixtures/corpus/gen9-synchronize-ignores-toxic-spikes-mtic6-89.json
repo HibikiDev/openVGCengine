@@ -1,0 +1,318 @@
+{
+	"format": "gen9vgc2023regc",
+	"seed": "gen5,46902,48984,30638,53107",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "dragapult",
+			"item": "ejectpack",
+			"ability": "merciless",
+			"moves": [
+				"dracometeor",
+				"milkdrink",
+				"gigadrain",
+				"dragondarts"
+			],
+			"nature": "docile",
+			"evs": {
+				"hp": 56,
+				"atk": 104,
+				"def": 168,
+				"spa": 180,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Ice"
+		},
+		{
+			"name": "Mon1",
+			"species": "applin",
+			"item": "tangaberry",
+			"ability": "anticipation",
+			"moves": [
+				"tropkick",
+				"poisonsting",
+				"powertrip",
+				"partingshot"
+			],
+			"nature": "lax",
+			"evs": {
+				"hp": 76,
+				"atk": 56,
+				"def": 220,
+				"spa": 156,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 21,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Water"
+		},
+		{
+			"name": "Mon2",
+			"species": "hawlucha",
+			"item": "ejectpack",
+			"ability": "goodasgold",
+			"moves": [
+				"screech",
+				"furycutter",
+				"toxicspikes",
+				"icespinner"
+			],
+			"nature": "serious",
+			"evs": {
+				"hp": 204,
+				"atk": 152,
+				"def": 76,
+				"spa": 20,
+				"spd": 56,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 22
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Psychic"
+		},
+		{
+			"name": "Mon3",
+			"species": "ironthorns",
+			"item": "ejectpack",
+			"ability": "noguard",
+			"moves": [
+				"firespin",
+				"psychicfangs",
+				"spite",
+				"screech"
+			],
+			"nature": "naughty",
+			"evs": {
+				"hp": 228,
+				"atk": 240,
+				"def": 40,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 26,
+				"atk": 5,
+				"def": 31,
+				"spa": 31,
+				"spd": 12,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N",
+			"teraType": "Poison"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "sobble",
+			"item": "ejectpack",
+			"ability": "corrosion",
+			"moves": [
+				"watershuriken",
+				"bodyslam",
+				"stringshot",
+				"snarl"
+			],
+			"nature": "bashful",
+			"evs": {
+				"hp": 248,
+				"atk": 116,
+				"def": 12,
+				"spa": 72,
+				"spd": 52,
+				"spe": 8
+			},
+			"ivs": {
+				"hp": 25,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Electric"
+		},
+		{
+			"name": "Mon1",
+			"species": "luvdisc",
+			"item": "ejectpack",
+			"ability": "synchronize",
+			"moves": [
+				"firefang",
+				"twinbeam",
+				"dracometeor",
+				"stoneaxe"
+			],
+			"nature": "timid",
+			"evs": {
+				"hp": 108,
+				"atk": 152,
+				"def": 60,
+				"spa": 188,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 5,
+				"def": 26,
+				"spa": 25,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Dragon"
+		},
+		{
+			"name": "Mon2",
+			"species": "murkrow",
+			"item": "ejectpack",
+			"ability": "regenerator",
+			"moves": [
+				"circlethrow",
+				"sludge",
+				"icywind",
+				"storedpower"
+			],
+			"nature": "rash",
+			"evs": {
+				"hp": 236,
+				"atk": 64,
+				"def": 48,
+				"spa": 160,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 12,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Ground"
+		},
+		{
+			"name": "Mon3",
+			"species": "glastrier",
+			"item": "weaknesspolicy",
+			"ability": "serenegrace",
+			"moves": [
+				"transform",
+				"partingshot",
+				"magmastorm",
+				"storedpower"
+			],
+			"nature": "gentle",
+			"evs": {
+				"hp": 128,
+				"atk": 60,
+				"def": 64,
+				"spa": 164,
+				"spd": 92,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 14,
+				"spa": 31,
+				"spd": 31,
+				"spe": 19
+			},
+			"level": 50,
+			"gender": "N",
+			"teraType": "Ice"
+		}
+	],
+	"turns": [
+		{
+			"p1": "switch 4, move 3 1",
+			"p2": "move 3, switch 4"
+		},
+		{
+			"p1": "switch 4, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 1 -2, move 1 1",
+			"p2": "move 3 terastallize, move 2 1"
+		},
+		{
+			"p1": "switch 4, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "pass, switch 4"
+		},
+		{
+			"p1": "pass, switch 3",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 4 2, move 4 -1 terastallize",
+			"p2": "move 2 -2, switch 4"
+		},
+		{
+			"p1": "move 3 1, move 3",
+			"p2": "move 3, move 1 2"
+		},
+		{
+			"p1": "move 2 2, move 1 1",
+			"p2": "move 1 -2, move 2 2"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 4, pass"
+		},
+		{
+			"p1": "move 3 -2, move 4 1",
+			"p2": "switch 3, switch 4"
+		},
+		{
+			"p1": "move 2 2, switch 4",
+			"p2": "move 2 -2, move 1 2"
+		}
+	],
+	"teams": [
+		"scenario-284a",
+		"scenario-18a"
+	]
+}

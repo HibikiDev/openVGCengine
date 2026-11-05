@@ -1,0 +1,262 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,27915,19814,38093,3782",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "corviknight",
+			"item": "nevermeltice",
+			"ability": "damp",
+			"moves": [
+				"selfdestruct",
+				"explosion",
+				"speedswap",
+				"destinybond"
+			],
+			"nature": "adamant",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 31,
+				"spa": 6,
+				"spd": 5,
+				"spe": 7
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "politoed",
+			"item": "mysticwater",
+			"ability": "moldbreaker",
+			"moves": [
+				"selfdestruct",
+				"explosion",
+				"petalblizzard",
+				"speedswap"
+			],
+			"nature": "lonely",
+			"evs": {
+				"hp": 32,
+				"atk": 26,
+				"def": 4,
+				"spa": 18,
+				"spd": 10,
+				"spe": 19
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "volcarona",
+			"item": "whiteherb",
+			"ability": "damp",
+			"moves": [
+				"explosion",
+				"selfdestruct",
+				"lockon",
+				"xscissor"
+			],
+			"nature": "naughty",
+			"evs": {
+				"hp": 32,
+				"atk": 24,
+				"def": 21,
+				"spa": 15,
+				"spd": 10,
+				"spe": 13
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "maushold",
+			"item": "charcoal",
+			"ability": "damp",
+			"moves": [
+				"explosion",
+				"selfdestruct",
+				"clearsmog",
+				"grassyterrain"
+			],
+			"nature": "rash",
+			"evs": {
+				"hp": 32,
+				"atk": 6,
+				"def": 8,
+				"spa": 24,
+				"spd": 20,
+				"spe": 6
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "blastoise",
+			"item": "psychicseed",
+			"ability": "damp",
+			"moves": [
+				"explosion",
+				"selfdestruct",
+				"gigaimpact",
+				"bulkup"
+			],
+			"nature": "relaxed",
+			"evs": {
+				"hp": 32,
+				"atk": 10,
+				"def": 8,
+				"spa": 24,
+				"spd": 32,
+				"spe": 7
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "mausholdfour",
+			"item": "normalgem",
+			"ability": "aftermath",
+			"moves": [
+				"explosion",
+				"selfdestruct",
+				"rockblast",
+				"rapidspin"
+			],
+			"nature": "impish",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 29,
+				"spa": 7,
+				"spd": 28,
+				"spe": 9
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "meowscarada",
+			"item": "focussash",
+			"ability": "aftermath",
+			"moves": [
+				"selfdestruct",
+				"explosion",
+				"iceshard",
+				"tripleaxel"
+			],
+			"nature": "impish",
+			"evs": {
+				"hp": 32,
+				"atk": 12,
+				"def": 6,
+				"spa": 14,
+				"spd": 19,
+				"spe": 31
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "hawlucha",
+			"item": "damprock",
+			"ability": "moldbreaker",
+			"moves": [
+				"explosion",
+				"selfdestruct",
+				"bitterblade",
+				"harden"
+			],
+			"nature": "quiet",
+			"evs": {
+				"hp": 32,
+				"atk": 17,
+				"def": 9,
+				"spa": 26,
+				"spd": 15,
+				"spe": 8
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 1, move 2",
+			"p2": "move 3 1, move 3 2"
+		}
+	]
+}

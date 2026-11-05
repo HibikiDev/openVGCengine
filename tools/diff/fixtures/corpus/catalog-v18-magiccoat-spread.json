@@ -1,0 +1,262 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,42672,34238,63957,55326",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "basculegion",
+			"item": "grassyseed",
+			"ability": "bigpecks",
+			"moves": [
+				"thunderwave",
+				"magiccoat",
+				"willowisp",
+				"protect"
+			],
+			"nature": "quiet",
+			"evs": {
+				"hp": 32,
+				"atk": 4,
+				"def": 24,
+				"spa": 23,
+				"spd": 31,
+				"spe": 3
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "abomasnow",
+			"item": "payapaberry",
+			"ability": "magicguard",
+			"moves": [
+				"spore",
+				"taunt",
+				"growl",
+				"encore"
+			],
+			"nature": "careful",
+			"evs": {
+				"hp": 32,
+				"atk": 3,
+				"def": 28,
+				"spa": 10,
+				"spd": 9,
+				"spe": 30
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "scizor",
+			"item": "silkscarf",
+			"ability": "shielddust",
+			"moves": [
+				"spore",
+				"magiccoat",
+				"protect",
+				"spikes"
+			],
+			"nature": "quirky",
+			"evs": {
+				"hp": 32,
+				"atk": 14,
+				"def": 27,
+				"spa": 12,
+				"spd": 19,
+				"spe": 8
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "espathra",
+			"item": "psychicseed",
+			"ability": "guarddog",
+			"moves": [
+				"willowisp",
+				"spore",
+				"encore",
+				"magiccoat"
+			],
+			"nature": "relaxed",
+			"evs": {
+				"hp": 32,
+				"atk": 1,
+				"def": 4,
+				"spa": 30,
+				"spd": 14,
+				"spe": 25
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "rotommow",
+			"item": "spelltag",
+			"ability": "levitate",
+			"moves": [
+				"growl",
+				"spore",
+				"tackle",
+				"magiccoat"
+			],
+			"nature": "quirky",
+			"evs": {
+				"hp": 32,
+				"atk": 17,
+				"def": 21,
+				"spa": 15,
+				"spd": 12,
+				"spe": 15
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "arboliva",
+			"item": "lifeorb",
+			"ability": "overgrow",
+			"moves": [
+				"growl",
+				"magiccoat",
+				"thunderwave",
+				"spikes"
+			],
+			"nature": "quiet",
+			"evs": {
+				"hp": 32,
+				"atk": 14,
+				"def": 25,
+				"spa": 3,
+				"spd": 21,
+				"spe": 12
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "grimmsnarl",
+			"item": "spelltag",
+			"ability": "grassysurge",
+			"moves": [
+				"growl",
+				"thunderwave",
+				"protect",
+				"willowisp"
+			],
+			"nature": "relaxed",
+			"evs": {
+				"hp": 32,
+				"atk": 27,
+				"def": 27,
+				"spa": 14,
+				"spd": 14,
+				"spe": 7
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "milotic",
+			"item": "metalcoat",
+			"ability": "queenlymajesty",
+			"moves": [
+				"taunt",
+				"spore",
+				"willowisp",
+				"protect"
+			],
+			"nature": "jolly",
+			"evs": {
+				"hp": 32,
+				"atk": 20,
+				"def": 24,
+				"spa": 9,
+				"spd": 24,
+				"spe": 25
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 2, move 3",
+			"p2": "move 4, move 3 2"
+		}
+	]
+}

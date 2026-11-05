@@ -1,0 +1,262 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,59851,18458,60297,9302",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "scovillain",
+			"item": "powerbracer",
+			"ability": "klutz",
+			"moves": [
+				"quickattack",
+				"guardswap",
+				"muddywater",
+				"dragonclaw"
+			],
+			"nature": "bashful",
+			"evs": {
+				"hp": 32,
+				"atk": 9,
+				"def": 30,
+				"spa": 8,
+				"spd": 7,
+				"spe": 29
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "excadrill",
+			"item": "powerbelt",
+			"ability": "moldbreaker",
+			"moves": [
+				"shiftgear",
+				"aquastep",
+				"detect",
+				"nuzzle"
+			],
+			"nature": "naive",
+			"evs": {
+				"hp": 32,
+				"atk": 32,
+				"def": 30,
+				"spa": 23,
+				"spd": 31,
+				"spe": 15
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "zoroarkhisui",
+			"item": "fullincense",
+			"ability": "torrent",
+			"moves": [
+				"barrier",
+				"tackle",
+				"featherdance",
+				"sheercold"
+			],
+			"nature": "quirky",
+			"evs": {
+				"hp": 32,
+				"atk": 10,
+				"def": 17,
+				"spa": 23,
+				"spd": 24,
+				"spe": 17
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "basculegion",
+			"item": "powerweight",
+			"ability": "cloudnine",
+			"moves": [
+				"skyattack",
+				"raindance",
+				"babydolleyes",
+				"skyuppercut"
+			],
+			"nature": "serious",
+			"evs": {
+				"hp": 32,
+				"atk": 13,
+				"def": 16,
+				"spa": 10,
+				"spd": 13,
+				"spe": 2
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "baxcalibur",
+			"item": "machobrace",
+			"ability": "liquidooze",
+			"moves": [
+				"nuzzle",
+				"howl",
+				"taunt",
+				"ragingbull"
+			],
+			"nature": "bold",
+			"evs": {
+				"hp": 32,
+				"atk": 29,
+				"def": 22,
+				"spa": 9,
+				"spd": 32,
+				"spe": 7
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "lopunny",
+			"item": "poweranklet",
+			"ability": "contrary",
+			"moves": [
+				"healpulse",
+				"ragefist",
+				"meanlook",
+				"doublekick"
+			],
+			"nature": "naive",
+			"evs": {
+				"hp": 32,
+				"atk": 5,
+				"def": 32,
+				"spa": 16,
+				"spd": 9,
+				"spe": 2
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "alakazam",
+			"item": "powerband",
+			"ability": "chlorophyll",
+			"moves": [
+				"harden",
+				"gigadrain",
+				"stickyweb",
+				"wingattack"
+			],
+			"nature": "lonely",
+			"evs": {
+				"hp": 32,
+				"atk": 28,
+				"def": 23,
+				"spa": 12,
+				"spd": 6,
+				"spe": 18
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "swampert",
+			"item": "deepseatooth",
+			"ability": "receiver",
+			"moves": [
+				"transform",
+				"snore",
+				"coil",
+				"roleplay"
+			],
+			"nature": "hasty",
+			"evs": {
+				"hp": 32,
+				"atk": 9,
+				"def": 10,
+				"spa": 17,
+				"spd": 8,
+				"spe": 17
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 3, move 2 2",
+			"p2": "move 2, move 1 1"
+		}
+	]
+}

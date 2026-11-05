@@ -1,0 +1,318 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,28575,16421,7895,29393",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Incineroar",
+			"item": "White Herb",
+			"ability": "Intimidate",
+			"moves": [
+				"Fake Out",
+				"Flare Blitz",
+				"Throat Chop",
+				"psychicnoise"
+			],
+			"nature": "Brave",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 20,
+				"spa": 0,
+				"spd": 14,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "Farigiraf",
+			"item": "Colbur Berry",
+			"ability": "Armor Tail",
+			"moves": [
+				"Expanding Force",
+				"Thunderbolt",
+				"encore",
+				"Protect"
+			],
+			"nature": "Sassy",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 20,
+				"spa": 0,
+				"spd": 14,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "Hatterene",
+			"item": "Life Orb",
+			"ability": "Mummy",
+			"moves": [
+				"Expanding Force",
+				"Dazzling Gleam",
+				"Trick Room",
+				"reflect"
+			],
+			"nature": "Quiet",
+			"evs": {
+				"hp": 27,
+				"atk": 0,
+				"def": 7,
+				"spa": 32,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "Camerupt",
+			"item": "Cameruptite",
+			"ability": "Solid Rock",
+			"moves": [
+				"taunt",
+				"Earth Power",
+				"Ancient Power",
+				"Protect"
+			],
+			"nature": "Quiet",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 2,
+				"spa": 32,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Raichu",
+			"item": "Raichunite Y",
+			"ability": "Lightning Rod",
+			"moves": [
+				"torment",
+				"Zap Cannon",
+				"Focus Blast",
+				"Protect"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 2,
+				"spa": 0,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "Milotic",
+			"item": "Grassy Seed",
+			"ability": "Screen Cleaner",
+			"moves": [
+				"lightscreen",
+				"Ice Beam",
+				"Icy Wind",
+				"Protect"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 10,
+				"spa": 17,
+				"spd": 5,
+				"spe": 2
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "Rillaboom",
+			"item": "Miracle Seed",
+			"ability": "Wandering Spirit",
+			"moves": [
+				"reflect",
+				"Grassy Glide",
+				"Wood Hammer",
+				"High Horsepower"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 32,
+				"atk": 32,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 2
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "Arcanine-Hisui",
+			"item": "Focus Sash",
+			"ability": "Screen Cleaner",
+			"moves": [
+				"Flare Blitz",
+				"Head Smash",
+				"taunt",
+				"Protect"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 1,
+				"atk": 32,
+				"def": 1,
+				"spa": 0,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 1 2, move 1 2",
+			"p2": "move 4, move 3"
+		},
+		{
+			"p1": "move 2 2, move 3 1",
+			"p2": "move 2 1, move 2 2"
+		},
+		{
+			"p1": "move 4 -2, move 3 1",
+			"p2": "move 2 2 mega, move 2 -1"
+		},
+		{
+			"p1": "move 2 1, move 1 1",
+			"p2": "switch 3, move 2 -1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 4, pass"
+		},
+		{
+			"p1": "move 4 -2, switch 3",
+			"p2": "move 1 1, move 2 -1"
+		},
+		{
+			"p1": "switch 4, move 4",
+			"p2": "move 1 1, move 2 1"
+		},
+		{
+			"p1": "move 3 1 mega, move 4",
+			"p2": "move 1 2, move 2 1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 3, pass"
+		},
+		{
+			"p1": "move 3 1, switch 4",
+			"p2": "move 1 2, move 2 2"
+		},
+		{
+			"p1": "move 4, move 4 -1",
+			"p2": "move 2 -2, move 4"
+		},
+		{
+			"p1": "move 3 1, move 3 2",
+			"p2": "move 1 -2, move 3"
+		},
+		{
+			"p1": "switch 3, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 1 -2, move 3 2",
+			"p2": "move 3 -2, pass"
+		}
+	],
+	"teams": [
+		"BA-484",
+		"FR-437"
+	]
+}

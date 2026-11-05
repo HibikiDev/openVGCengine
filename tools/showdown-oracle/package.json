@@ -1,0 +1,10 @@
+{
+  "name": "showdown-oracle",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Runs the pinned Showdown sim as a library and emits canonical per-turn battle state, used as the oracle for engine-core's diff harness.",
+  "main": "oracle.js",
+  "scripts": {
+    "oracle": "node oracle.js"
+  }
+}

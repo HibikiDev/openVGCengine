@@ -1,0 +1,12 @@
+[package]
+name = "engine-fuzz"
+version = "0.1.0"
+edition.workspace = true
+publish.workspace = true
+
+[lib]
+name = "engine_fuzz"
+
+[dependencies]
+engine-core = { path = "../engine-core" }
+engine-data = { path = "../engine-data" }

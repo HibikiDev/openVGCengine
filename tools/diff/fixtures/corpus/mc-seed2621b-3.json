@@ -1,0 +1,306 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,8940,11927,52872,4972",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Sneasler",
+			"item": "Focus Sash",
+			"ability": "pickpocket",
+			"moves": [
+				"Dire Claw",
+				"Close Combat",
+				"Feint",
+				"Fake Out"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 0,
+				"atk": 32,
+				"def": 2,
+				"spa": 0,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "Gholdengo",
+			"item": "ejectbutton",
+			"ability": "pickpocket",
+			"moves": [
+				"Make It Rain",
+				"Shadow Ball",
+				"Nasty Plot",
+				"Protect"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 17,
+				"atk": 0,
+				"def": 0,
+				"spa": 17,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "Incineroar",
+			"item": "Sitrus Berry",
+			"ability": "pickpocket",
+			"moves": [
+				"Flare Blitz",
+				"Darkest Lariat",
+				"Fake Out",
+				"Parting Shot"
+			],
+			"nature": "Impish",
+			"evs": {
+				"hp": 31,
+				"atk": 1,
+				"def": 25,
+				"spa": 0,
+				"spd": 5,
+				"spe": 4
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "Salamence",
+			"item": "Salamencite",
+			"ability": "Intimidate",
+			"moves": [
+				"Hyper Voice",
+				"Draco Meteor",
+				"Tailwind",
+				"Protect"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 21,
+				"atk": 0,
+				"def": 0,
+				"spa": 13,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Floette-Eternal",
+			"item": "Floettite",
+			"ability": "Flower Veil",
+			"moves": [
+				"Light of Ruin",
+				"Moonblast",
+				"Dazzling Gleam",
+				"Protect"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 10,
+				"atk": 0,
+				"def": 17,
+				"spa": 15,
+				"spd": 0,
+				"spe": 24
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "Sneasler",
+			"item": "Grassy Seed",
+			"ability": "pickpocket",
+			"moves": [
+				"Close Combat",
+				"Dire Claw",
+				"Rock Slide",
+				"Protect"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 22,
+				"atk": 10,
+				"def": 1,
+				"spa": 0,
+				"spd": 1,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "Rillaboom",
+			"item": "sitrusberry",
+			"ability": "pickpocket",
+			"moves": [
+				"Wood Hammer",
+				"Grassy Glide",
+				"U-turn",
+				"Fake Out"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 32,
+				"atk": 32,
+				"def": 0,
+				"spa": 0,
+				"spd": 1,
+				"spe": 1
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "Basculegion",
+			"item": "sitrusberry",
+			"ability": "pickpocket",
+			"moves": [
+				"Last Respects",
+				"Wave Crash",
+				"Aqua Jet",
+				"Protect"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 2,
+				"atk": 32,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 3 -2, move 2 -1",
+			"p2": "move 1 1, switch 3"
+		},
+		{
+			"p1": "switch 3, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 1 2, move 2 -1",
+			"p2": "switch 3, move 2 1"
+		},
+		{
+			"p1": "switch 4, move 4",
+			"p2": "switch 3, move 1 1"
+		},
+		{
+			"p1": "move 1 mega, move 4",
+			"p2": "move 2 1 mega, move 1 2"
+		},
+		{
+			"p1": "switch 4, pass",
+			"p2": "pass, switch 3"
+		},
+		{
+			"p1": "move 4 1, move 2 1",
+			"p2": "move 3, move 1 2"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 4, pass"
+		},
+		{
+			"p1": "move 1 1, move 1",
+			"p2": "move 3 1, move 2 1"
+		},
+		{
+			"p1": "pass, move 2 2",
+			"p2": "move 3 1, move 4"
+		},
+		{
+			"p1": "pass, move 2 1",
+			"p2": "move 2 2, move 1 -1"
+		}
+	],
+	"teams": [
+		"MC23",
+		"MC66"
+	]
+}

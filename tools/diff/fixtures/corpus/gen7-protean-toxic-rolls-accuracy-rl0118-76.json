@@ -1,0 +1,262 @@
+{
+	"format": "gen7vgc2018",
+	"seed": "gen5,39278,3882,50134,56260",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "grotle",
+			"item": "poweranklet",
+			"ability": "multiscale",
+			"moves": [
+				"supersonic",
+				"furycutter",
+				"pinmissile",
+				"banefulbunker"
+			],
+			"nature": "relaxed",
+			"evs": {
+				"hp": 4,
+				"atk": 164,
+				"def": 112,
+				"spa": 136,
+				"spd": 92,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 15
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "regigigas",
+			"item": "bottlecap",
+			"ability": "protean",
+			"moves": [
+				"toxic",
+				"calmmind",
+				"darkvoid",
+				"scratch"
+			],
+			"nature": "quiet",
+			"evs": {
+				"hp": 60,
+				"atk": 16,
+				"def": 108,
+				"spa": 72,
+				"spd": 0,
+				"spe": 104
+			},
+			"ivs": {
+				"hp": 25,
+				"atk": 31,
+				"def": 23,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "golisopod",
+			"item": "choicespecs",
+			"ability": "sniper",
+			"moves": [
+				"futuresight",
+				"mudslap",
+				"foresight",
+				"poisonsting"
+			],
+			"nature": "relaxed",
+			"evs": {
+				"hp": 68,
+				"atk": 108,
+				"def": 204,
+				"spa": 12,
+				"spd": 116,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 26,
+				"def": 31,
+				"spa": 23,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "machop",
+			"item": "chilanberry",
+			"ability": "solidrock",
+			"moves": [
+				"energyball",
+				"gyroball",
+				"lick",
+				"flamethrower"
+			],
+			"nature": "quiet",
+			"evs": {
+				"hp": 52,
+				"atk": 44,
+				"def": 180,
+				"spa": 80,
+				"spd": 124,
+				"spe": 28
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 9,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "raticatealola",
+			"item": "ganlonberry",
+			"ability": "cursedbody",
+			"moves": [
+				"conversion2",
+				"flyingpress",
+				"absorb",
+				"smartstrike"
+			],
+			"nature": "bashful",
+			"evs": {
+				"hp": 236,
+				"atk": 152,
+				"def": 120,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "torkoal",
+			"item": "slowbronite",
+			"ability": "pressure",
+			"moves": [
+				"beatup",
+				"leaftornado",
+				"dracometeor",
+				"present"
+			],
+			"nature": "lonely",
+			"evs": {
+				"hp": 220,
+				"atk": 36,
+				"def": 220,
+				"spa": 32,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "sylveon",
+			"item": "kingsrock",
+			"ability": "superluck",
+			"moves": [
+				"constrict",
+				"strengthsap",
+				"karatechop",
+				"zingzap"
+			],
+			"nature": "bashful",
+			"evs": {
+				"hp": 28,
+				"atk": 88,
+				"def": 20,
+				"spa": 152,
+				"spd": 220,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "chingling",
+			"item": "leftovers",
+			"ability": "honeygather",
+			"moves": [
+				"wakeupslap",
+				"megadrain",
+				"spikecannon",
+				"razorwind"
+			],
+			"nature": "jolly",
+			"evs": {
+				"hp": 0,
+				"atk": 36,
+				"def": 244,
+				"spa": 144,
+				"spd": 16,
+				"spe": 68
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 13,
+				"def": 31,
+				"spa": 31,
+				"spd": 10,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 2 2, move 1 1",
+			"p2": "move 1 2, move 2 1"
+		}
+	]
+}

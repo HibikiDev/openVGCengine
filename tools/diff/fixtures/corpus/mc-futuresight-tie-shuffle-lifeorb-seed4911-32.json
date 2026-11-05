@@ -1,0 +1,310 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,40039,43479,24771,10865",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Pelipper",
+			"item": "Life Orb",
+			"ability": "Drizzle",
+			"moves": [
+				"Hurricane",
+				"Protect",
+				"futuresight",
+				"Tailwind"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 0,
+				"spa": 32,
+				"spd": 2,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "Lucario",
+			"item": "Lucarionite Z",
+			"ability": "Inner Focus",
+			"moves": [
+				"futuresight",
+				"Flash Cannon",
+				"Calm Mind",
+				"Detect"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 31,
+				"atk": 0,
+				"def": 0,
+				"spa": 6,
+				"spd": 3,
+				"spe": 26
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "Rillaboom",
+			"item": "Miracle Seed",
+			"ability": "Grassy Surge",
+			"moves": [
+				"Grassy Glide",
+				"Wood Hammer",
+				"Fake Out",
+				"futuresight"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 32,
+				"atk": 5,
+				"def": 0,
+				"spa": 0,
+				"spd": 29,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "Grimmsnarl",
+			"item": "Light Clay",
+			"ability": "Prankster",
+			"moves": [
+				"futuresight",
+				"Parting Shot",
+				"Reflect",
+				"Light Screen"
+			],
+			"nature": "Sassy",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 19,
+				"spa": 0,
+				"spd": 15,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Volcarona",
+			"item": "Grassy Seed",
+			"ability": "Flame Body",
+			"moves": [
+				"Flamethrower",
+				"Giga Drain",
+				"futuresight",
+				"Protect"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 21,
+				"atk": 0,
+				"def": 15,
+				"spa": 5,
+				"spd": 1,
+				"spe": 24
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "Sneasler",
+			"item": "White Herb",
+			"ability": "Unburden",
+			"moves": [
+				"Close Combat",
+				"futuresight",
+				"Fake Out",
+				"Coaching"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 18,
+				"atk": 25,
+				"def": 4,
+				"spa": 0,
+				"spd": 1,
+				"spe": 18
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "Rillaboom",
+			"item": "Miracle Seed",
+			"ability": "Grassy Surge",
+			"moves": [
+				"Wood Hammer",
+				"futuresight",
+				"High Horsepower",
+				"Fake Out"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 32,
+				"atk": 15,
+				"def": 0,
+				"spa": 0,
+				"spd": 18,
+				"spe": 1
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "Incineroar",
+			"item": "Sitrus Berry",
+			"ability": "Intimidate",
+			"moves": [
+				"Flare Blitz",
+				"Throat Chop",
+				"futuresight",
+				"Fake Out"
+			],
+			"nature": "Careful",
+			"evs": {
+				"hp": 32,
+				"atk": 1,
+				"def": 8,
+				"spa": 0,
+				"spd": 20,
+				"spe": 5
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 3 -2, move 3",
+			"p2": "move 3 2, move 1 1"
+		},
+		{
+			"p1": "move 3 -2, move 2 2",
+			"p2": "move 3 2, switch 3"
+		},
+		{
+			"p1": "move 1 -2, move 3 mega",
+			"p2": "move 1 2, move 3 1"
+		},
+		{
+			"p1": "pass, switch 3",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 2, move 1 -1",
+			"p2": "move 2 -2, move 1 -1"
+		},
+		{
+			"p1": "move 2, move 1 2",
+			"p2": "move 3 2, switch 4"
+		},
+		{
+			"p1": "move 3 1, move 4 2",
+			"p2": "move 3 1, switch 4"
+		},
+		{
+			"p1": "move 3 2, move 2 -1",
+			"p2": "move 3 1, move 3 1"
+		},
+		{
+			"p1": "move 2, move 1 1",
+			"p2": "switch 4, move 2 1"
+		},
+		{
+			"p1": "switch 4, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 4, move 2 -1",
+			"p2": "move 2 2, move 3 2"
+		},
+		{
+			"p1": "move 1 1, pass",
+			"p2": "move 1 -2, move 1 2"
+		}
+	],
+	"teams": [
+		"MC93",
+		"MC245"
+	]
+}

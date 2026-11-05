@@ -1,0 +1,310 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,23904,52672,63025,4567",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Golisopod",
+			"item": "Golisopite",
+			"ability": "Emergency Exit",
+			"moves": [
+				"supercellslam",
+				"Aqua Jet",
+				"morningsun",
+				"Protect"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 32,
+				"atk": 32,
+				"def": 2,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "Rillaboom",
+			"item": "Miracle Seed",
+			"ability": "Grassy Surge",
+			"moves": [
+				"sweetkiss",
+				"endeavor",
+				"U-turn",
+				"Fake Out"
+			],
+			"nature": "Careful",
+			"evs": {
+				"hp": 24,
+				"atk": 14,
+				"def": 3,
+				"spa": 0,
+				"spd": 24,
+				"spe": 1
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "Sneasler",
+			"item": "White Herb",
+			"ability": "Unburden",
+			"moves": [
+				"Close Combat",
+				"Rock Slide",
+				"axekick",
+				"sweetkiss"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 0,
+				"atk": 32,
+				"def": 1,
+				"spa": 0,
+				"spd": 1,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "Milotic",
+			"item": "Leftovers",
+			"ability": "Competitive",
+			"moves": [
+				"Scald",
+				"Ice Beam",
+				"dynamicpunch",
+				"synthesis"
+			],
+			"nature": "Calm",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 32,
+				"spa": 0,
+				"spd": 2,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Blastoise",
+			"item": "Blastoisinite",
+			"ability": "Torrent",
+			"moves": [
+				"Water Spout",
+				"snowscape",
+				"Shell Smash",
+				"flatter"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 9,
+				"atk": 0,
+				"def": 0,
+				"spa": 32,
+				"spd": 0,
+				"spe": 25
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "Indeedee-F",
+			"item": "Colbur Berry",
+			"ability": "Psychic Surge",
+			"moves": [
+				"dynamicpunch",
+				"Helping Hand",
+				"supercellslam",
+				"Trick Room"
+			],
+			"nature": "Calm",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 15,
+				"spa": 7,
+				"spd": 11,
+				"spe": 1
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "Torkoal",
+			"item": "Charcoal",
+			"ability": "Drought",
+			"moves": [
+				"Eruption",
+				"Weather Ball",
+				"horndrill",
+				"snowscape"
+			],
+			"nature": "Quiet",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 1,
+				"spa": 32,
+				"spd": 1,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "Golisopod",
+			"item": "Golisopite",
+			"ability": "Emergency Exit",
+			"moves": [
+				"Leech Life",
+				"dynamicpunch",
+				"teeterdance",
+				"Protect"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 32,
+				"atk": 32,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 2
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 4, move 1 2",
+			"p2": "move 4 -2 mega, move 3 -1"
+		},
+		{
+			"p1": "switch 4, move 3 -1",
+			"p2": "switch 3, move 3 -1"
+		},
+		{
+			"p1": "pass, switch 3",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "switch 4, move 4 2",
+			"p2": "move 3 1, move 1 2"
+		},
+		{
+			"p1": "move 1 2, move 1 1",
+			"p2": "move 4, move 1 2"
+		},
+		{
+			"p1": "switch 3, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 4 -2, move 3 -1",
+			"p2": "move 1, move 1 -1"
+		},
+		{
+			"p1": "pass, switch 3",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 2 1, move 1 2",
+			"p2": "move 4, move 1 2"
+		},
+		{
+			"p1": "move 2 -2, move 1 -1 mega",
+			"p2": "move 3 1, switch 3"
+		},
+		{
+			"p1": "pass, switch 4",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "pass, move 3 1",
+			"p2": "move 3 1, move 4 1"
+		}
+	],
+	"teams": [
+		"MC216",
+		"MC287"
+	]
+}

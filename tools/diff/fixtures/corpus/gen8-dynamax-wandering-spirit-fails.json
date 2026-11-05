@@ -1,0 +1,306 @@
+{
+	"format": "gen8vgc2022",
+	"seed": "gen5,1264,36363,17379,25184",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "pikachusinnoh",
+			"item": "tr25",
+			"ability": "unseenfist",
+			"moves": [
+				"powertrick",
+				"armthrust",
+				"healbell",
+				"bounce"
+			],
+			"nature": "gentle",
+			"evs": {
+				"hp": 248,
+				"atk": 140,
+				"def": 68,
+				"spa": 52,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 27,
+				"spa": 31,
+				"spd": 16,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "drifloon",
+			"item": "tr97",
+			"ability": "wanderingspirit",
+			"moves": [
+				"covet",
+				"echoedvoice",
+				"originpulse",
+				"absorb"
+			],
+			"nature": "lax",
+			"evs": {
+				"hp": 156,
+				"atk": 240,
+				"def": 112,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 8,
+				"def": 0,
+				"spa": 31,
+				"spd": 14,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "rillaboom",
+			"item": "duskstone",
+			"ability": "powerspot",
+			"moves": [
+				"flyingpress",
+				"instruct",
+				"horndrill",
+				"eternabeam"
+			],
+			"nature": "rash",
+			"evs": {
+				"hp": 180,
+				"atk": 60,
+				"def": 0,
+				"spa": 188,
+				"spd": 56,
+				"spe": 24
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 4,
+				"def": 7,
+				"spa": 25,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "silvallyflying",
+			"item": "tr54",
+			"ability": "psychicsurge",
+			"moves": [
+				"soak",
+				"heatwave",
+				"highjumpkick",
+				"dig"
+			],
+			"nature": "lax",
+			"evs": {
+				"hp": 160,
+				"atk": 80,
+				"def": 28,
+				"spa": 240,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 25,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "rotom",
+			"item": "ghostmemory",
+			"ability": "heatproof",
+			"moves": [
+				"selfdestruct",
+				"stompingtantrum",
+				"watergun",
+				"disarmingvoice"
+			],
+			"nature": "sassy",
+			"evs": {
+				"hp": 192,
+				"atk": 220,
+				"def": 20,
+				"spa": 76,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 11,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "poliwrath",
+			"item": "tr94",
+			"ability": "tangledfeet",
+			"moves": [
+				"dazzlinggleam",
+				"powerwhip",
+				"gunkshot",
+				"afteryou"
+			],
+			"nature": "lonely",
+			"evs": {
+				"hp": 172,
+				"atk": 64,
+				"def": 100,
+				"spa": 156,
+				"spd": 16,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 26,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "umbreon",
+			"item": "tr40",
+			"ability": "gluttony",
+			"moves": [
+				"geomancy",
+				"poisontail",
+				"lashout",
+				"drumbeating"
+			],
+			"nature": "mild",
+			"evs": {
+				"hp": 92,
+				"atk": 16,
+				"def": 4,
+				"spa": 28,
+				"spd": 96,
+				"spe": 80
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "tapubulu",
+			"item": "icememory",
+			"ability": "fluffy",
+			"moves": [
+				"magicroom",
+				"shellsidearm",
+				"sludgebomb",
+				"flamecharge"
+			],
+			"nature": "hasty",
+			"evs": {
+				"hp": 72,
+				"atk": 72,
+				"def": 244,
+				"spa": 44,
+				"spd": 76,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 2 1, move 4 1",
+			"p2": "move 2 1, move 4 2"
+		},
+		{
+			"p1": "move 4 1, move 3",
+			"p2": "move 4 1 dynamax, move 2 1"
+		},
+		{
+			"p1": "move 1, move 1 1 dynamax",
+			"p2": "move 4 1, move 3 1"
+		},
+		{
+			"p1": "switch 4, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 4 -2, move 1 2",
+			"p2": "switch 3, move 4 1"
+		},
+		{
+			"p1": "move 1, move 3 1",
+			"p2": "move 2 2, move 2 1"
+		},
+		{
+			"p1": "move 4 2, move 4 -1",
+			"p2": "move 3 -2, move 3 2"
+		},
+		{
+			"p1": "move 1, move 1 2",
+			"p2": "move 1, move 3 -1"
+		},
+		{
+			"p1": "move 1 -2, switch 3",
+			"p2": "move 1, switch 4"
+		},
+		{
+			"p1": "move 3 2, move 3 1",
+			"p2": "move 4 2, move 3 -1"
+		},
+		{
+			"p1": "move 2, move 2 2",
+			"p2": "move 2 1, switch 4"
+		},
+		{
+			"p1": "move 1 1, move 2 -1",
+			"p2": "switch 3, move 2 2"
+		}
+	]
+}

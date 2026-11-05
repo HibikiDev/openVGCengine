@@ -1,0 +1,262 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,55631,39505,25530,45957",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "pelipper",
+			"item": "scopelens",
+			"ability": "imposter",
+			"moves": [
+				"comeuppance",
+				"mudshot",
+				"leechlife",
+				"chillyreception"
+			],
+			"nature": "quirky",
+			"evs": {
+				"hp": 32,
+				"atk": 28,
+				"def": 19,
+				"spa": 19,
+				"spd": 1,
+				"spe": 18
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "politoed",
+			"item": "zoomlens",
+			"ability": "imposter",
+			"moves": [
+				"axekick",
+				"snaptrap",
+				"nastyplot",
+				"healbell"
+			],
+			"nature": "calm",
+			"evs": {
+				"hp": 32,
+				"atk": 9,
+				"def": 8,
+				"spa": 14,
+				"spd": 20,
+				"spe": 18
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "ninetalesalola",
+			"item": "terrainextender",
+			"ability": "imposter",
+			"moves": [
+				"nobleroar",
+				"petalblizzard",
+				"scaryface",
+				"clangoroussoul"
+			],
+			"nature": "gentle",
+			"evs": {
+				"hp": 32,
+				"atk": 4,
+				"def": 29,
+				"spa": 27,
+				"spd": 19,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "salazzle",
+			"item": "shedshell",
+			"ability": "forewarn",
+			"moves": [
+				"hurricane",
+				"hydrocannon",
+				"solarblade",
+				"acrobatics"
+			],
+			"nature": "docile",
+			"evs": {
+				"hp": 32,
+				"atk": 15,
+				"def": 8,
+				"spa": 19,
+				"spd": 16,
+				"spe": 9
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "glalie",
+			"item": "spelltag",
+			"ability": "imposter",
+			"moves": [
+				"protect",
+				"accelerock",
+				"snowscape",
+				"stoneaxe"
+			],
+			"nature": "serious",
+			"evs": {
+				"hp": 32,
+				"atk": 3,
+				"def": 24,
+				"spa": 31,
+				"spd": 11,
+				"spe": 3
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "venusaur",
+			"item": "leftovers",
+			"ability": "trace",
+			"moves": [
+				"raindance",
+				"circlethrow",
+				"megakick",
+				"aquacutter"
+			],
+			"nature": "brave",
+			"evs": {
+				"hp": 32,
+				"atk": 29,
+				"def": 32,
+				"spa": 2,
+				"spd": 0,
+				"spe": 1
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "incineroar",
+			"item": "twistedspoon",
+			"ability": "trace",
+			"moves": [
+				"sandtomb",
+				"seedbomb",
+				"taunt",
+				"terrainpulse"
+			],
+			"nature": "rash",
+			"evs": {
+				"hp": 32,
+				"atk": 2,
+				"def": 15,
+				"spa": 9,
+				"spd": 3,
+				"spe": 13
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "sirfetchd",
+			"item": "",
+			"ability": "imposter",
+			"moves": [
+				"mudslap",
+				"risingvoltage",
+				"stormthrow",
+				"brutalswing"
+			],
+			"nature": "serious",
+			"evs": {
+				"hp": 32,
+				"atk": 8,
+				"def": 19,
+				"spa": 12,
+				"spd": 7,
+				"spe": 10
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 1, move 3",
+			"p2": "move 3, move 2 2"
+		}
+	]
+}

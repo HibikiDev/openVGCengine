@@ -1,0 +1,322 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,37780,12207,59064,40573",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Hatterene",
+			"item": "Life Orb",
+			"ability": "Magic Bounce",
+			"moves": [
+				"Protect",
+				"strengthsap",
+				"healbell",
+				"Dazzling Gleam"
+			],
+			"nature": "Quiet",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 2,
+				"spa": 32,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "Camerupt",
+			"item": "Cameruptite",
+			"ability": "Solid Rock",
+			"moves": [
+				"Protect",
+				"powerswap",
+				"Ancient Power",
+				"hypnosis"
+			],
+			"nature": "Quiet",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 2,
+				"spa": 32,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "Armarouge",
+			"item": "Twisted Spoon",
+			"ability": "Flash Fire",
+			"moves": [
+				"Expanding Force",
+				"stealthrock",
+				"reflecttype",
+				"Trick Room"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 0,
+				"spa": 32,
+				"spd": 2,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "Golisopod",
+			"item": "Golisopite",
+			"ability": "Emergency Exit",
+			"moves": [
+				"Leech Life",
+				"guardswap",
+				"Iron Head",
+				"powerswap"
+			],
+			"nature": "Brave",
+			"evs": {
+				"hp": 32,
+				"atk": 32,
+				"def": 0,
+				"spa": 0,
+				"spd": 2,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Incineroar",
+			"item": "Sitrus Berry",
+			"ability": "Intimidate",
+			"moves": [
+				"Flare Blitz",
+				"reflect",
+				"Parting Shot",
+				"stealthrock"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 28,
+				"atk": 5,
+				"def": 1,
+				"spa": 0,
+				"spd": 9,
+				"spe": 23
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "Floette-Eternal",
+			"item": "Floettite",
+			"ability": "Flower Veil",
+			"moves": [
+				"Moonblast",
+				"afteryou",
+				"Calm Mind",
+				"hypnosis"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 27,
+				"atk": 0,
+				"def": 2,
+				"spa": 25,
+				"spd": 0,
+				"spe": 12
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "Lucario",
+			"item": "Lucarionite Z",
+			"ability": "Inner Focus",
+			"moves": [
+				"hypnosis",
+				"swordsdance",
+				"Calm Mind",
+				"Detect"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 31,
+				"atk": 0,
+				"def": 7,
+				"spa": 8,
+				"spd": 6,
+				"spe": 14
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "Basculegion",
+			"item": "Life Orb",
+			"ability": "Adaptability",
+			"moves": [
+				"Wave Crash",
+				"reflect",
+				"corrosivegas",
+				"Protect"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 4,
+				"atk": 28,
+				"def": 5,
+				"spa": 0,
+				"spd": 0,
+				"spe": 29
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 2 1, switch 3",
+			"p2": "move 4, move 1 -1"
+		},
+		{
+			"p1": "move 4, move 1 -1",
+			"p2": "move 3 1, move 2 1"
+		},
+		{
+			"p1": "switch 3, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "switch 4, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 4 -2 mega, move 1 1",
+			"p2": "move 3 -2, switch 3"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 3, pass"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 4, pass"
+		},
+		{
+			"p1": "move 1 2, move 4",
+			"p2": "move 3, move 3"
+		},
+		{
+			"p1": "move 3 2, move 1 -1",
+			"p2": "switch 3, move 1 1"
+		},
+		{
+			"p1": "move 3 -2, move 1 2",
+			"p2": "move 3 1, move 4 mega"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 3, pass"
+		},
+		{
+			"p1": "move 4 2, move 3 -1",
+			"p2": "switch 3, move 1 2"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 3, pass"
+		},
+		{
+			"p1": "move 2 1, move 1 -1",
+			"p2": "move 1 1, move 4"
+		},
+		{
+			"p1": "move 4 1, move 2",
+			"p2": "move 1 2, move 1 -1"
+		}
+	],
+	"teams": [
+		"MC325",
+		"MC369"
+	]
+}

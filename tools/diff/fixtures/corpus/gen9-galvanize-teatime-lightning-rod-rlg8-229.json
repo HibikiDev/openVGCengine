@@ -1,0 +1,270 @@
+{
+	"format": "gen9vgc2024regg",
+	"seed": "gen5,27120,20087,6719,831",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "slitherwing",
+			"item": "focussash",
+			"ability": "lightningrod",
+			"moves": [
+				"zingzap",
+				"circlethrow",
+				"mysticalfire",
+				"axekick"
+			],
+			"nature": "relaxed",
+			"evs": {
+				"hp": 116,
+				"atk": 200,
+				"def": 48,
+				"spa": 0,
+				"spd": 144,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 1,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N",
+			"teraType": "Rock"
+		},
+		{
+			"name": "Mon1",
+			"species": "nacli",
+			"item": "nevermeltice",
+			"ability": "poisonpoint",
+			"moves": [
+				"shadowball",
+				"zingzap",
+				"firepledge",
+				"snore"
+			],
+			"nature": "quirky",
+			"evs": {
+				"hp": 12,
+				"atk": 224,
+				"def": 184,
+				"spa": 88,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 16,
+				"atk": 31,
+				"def": 30,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Rock"
+		},
+		{
+			"name": "Mon2",
+			"species": "dialga",
+			"item": "auspiciousarmor",
+			"ability": "magicguard",
+			"moves": [
+				"terrainpulse",
+				"mountaingale",
+				"stringshot",
+				"jawlock"
+			],
+			"nature": "bold",
+			"evs": {
+				"hp": 184,
+				"atk": 196,
+				"def": 100,
+				"spa": 28,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 0,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N",
+			"teraType": "Water"
+		},
+		{
+			"name": "Mon3",
+			"species": "dugtrio",
+			"item": "occaberry",
+			"ability": "galvanize",
+			"moves": [
+				"lowkick",
+				"finalgambit",
+				"wish",
+				"teatime"
+			],
+			"nature": "impish",
+			"evs": {
+				"hp": 8,
+				"atk": 128,
+				"def": 168,
+				"spa": 112,
+				"spd": 92,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 2,
+				"atk": 31,
+				"def": 15,
+				"spa": 31,
+				"spd": 31,
+				"spe": 2
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Dragon"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "tepig",
+			"item": "lureball",
+			"ability": "galvanize",
+			"moves": [
+				"teatime",
+				"selfdestruct",
+				"jawlock",
+				"hydrocannon"
+			],
+			"nature": "bold",
+			"evs": {
+				"hp": 200,
+				"atk": 116,
+				"def": 104,
+				"spa": 88,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 2,
+				"spa": 31,
+				"spd": 31,
+				"spe": 1
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Ghost"
+		},
+		{
+			"name": "Mon1",
+			"species": "pawmi",
+			"item": "lureball",
+			"ability": "wonderskin",
+			"moves": [
+				"rocksmash",
+				"accelerock",
+				"protect",
+				"covet"
+			],
+			"nature": "calm",
+			"evs": {
+				"hp": 36,
+				"atk": 208,
+				"def": 176,
+				"spa": 88,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 8,
+				"atk": 31,
+				"def": 20,
+				"spa": 31,
+				"spd": 20,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Stellar"
+		},
+		{
+			"name": "Mon2",
+			"species": "groudon",
+			"item": "lightclay",
+			"ability": "sandrush",
+			"moves": [
+				"matchagotcha",
+				"shadowball",
+				"steameruption",
+				"headsmash"
+			],
+			"nature": "quiet",
+			"evs": {
+				"hp": 4,
+				"atk": 120,
+				"def": 0,
+				"spa": 112,
+				"spd": 36,
+				"spe": 60
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 6,
+				"def": 31,
+				"spa": 15,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N",
+			"teraType": "Dark"
+		},
+		{
+			"name": "Mon3",
+			"species": "volbeat",
+			"item": "premierball",
+			"ability": "immunity",
+			"moves": [
+				"irontail",
+				"ember",
+				"ragepowder",
+				"waterfall"
+			],
+			"nature": "relaxed",
+			"evs": {
+				"hp": 200,
+				"atk": 248,
+				"def": 60,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 28,
+				"def": 31,
+				"spa": 31,
+				"spd": 20,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Fire"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 3 1 terastallize, move 4 2",
+			"p2": "move 1, move 2 1"
+		}
+	]
+}

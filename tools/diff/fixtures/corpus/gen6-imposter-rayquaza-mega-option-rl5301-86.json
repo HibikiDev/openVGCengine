@@ -1,0 +1,262 @@
+{
+	"format": "gen6vgc2016",
+	"seed": "gen5,47546,25776,7879,47093",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "groudon",
+			"item": "redorb",
+			"ability": "anticipation",
+			"moves": [
+				"hydropump",
+				"skillswap",
+				"swordsdance",
+				"originpulse"
+			],
+			"nature": "modest",
+			"evs": {
+				"hp": 220,
+				"atk": 120,
+				"def": 160,
+				"spa": 8,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 11,
+				"def": 24,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "groudon",
+			"item": "redorb",
+			"ability": "swiftswim",
+			"moves": [
+				"dragonascent",
+				"protect",
+				"thunderbolt",
+				"eruption"
+			],
+			"nature": "jolly",
+			"evs": {
+				"hp": 108,
+				"atk": 48,
+				"def": 236,
+				"spa": 116,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 4,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "kyogre",
+			"item": "redorb",
+			"ability": "waterabsorb",
+			"moves": [
+				"swordsdance",
+				"hydropump",
+				"thunderbolt",
+				"dragonascent"
+			],
+			"nature": "modest",
+			"evs": {
+				"hp": 108,
+				"atk": 64,
+				"def": 124,
+				"spa": 212,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 12
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "kyogre",
+			"item": "blueorb",
+			"ability": "synchronize",
+			"moves": [
+				"earthquake",
+				"originpulse",
+				"sunnyday",
+				"icebeam"
+			],
+			"nature": "modest",
+			"evs": {
+				"hp": 76,
+				"atk": 236,
+				"def": 116,
+				"spa": 80,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "rayquaza",
+			"item": "redorb",
+			"ability": "tintedlens",
+			"moves": [
+				"earthquake",
+				"rockslide",
+				"fireblast",
+				"icebeam"
+			],
+			"nature": "careful",
+			"evs": {
+				"hp": 156,
+				"atk": 8,
+				"def": 208,
+				"spa": 92,
+				"spd": 20,
+				"spe": 24
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 20
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "rayquaza",
+			"item": "redorb",
+			"ability": "imposter",
+			"moves": [
+				"thunder",
+				"hydropump",
+				"dragonascent",
+				"waterspout"
+			],
+			"nature": "bold",
+			"evs": {
+				"hp": 4,
+				"atk": 148,
+				"def": 140,
+				"spa": 120,
+				"spd": 96,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 6,
+				"atk": 14,
+				"def": 10,
+				"spa": 4,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "groudon",
+			"item": "blueorb",
+			"ability": "pickup",
+			"moves": [
+				"waterspout",
+				"sunnyday",
+				"icebeam",
+				"earthquake"
+			],
+			"nature": "relaxed",
+			"evs": {
+				"hp": 48,
+				"atk": 12,
+				"def": 8,
+				"spa": 0,
+				"spd": 60,
+				"spe": 56
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "rayquaza",
+			"item": "",
+			"ability": "flowergift",
+			"moves": [
+				"icebeam",
+				"skillswap",
+				"thunder",
+				"extremespeed"
+			],
+			"nature": "gentle",
+			"evs": {
+				"hp": 128,
+				"atk": 0,
+				"def": 116,
+				"spa": 116,
+				"spd": 124,
+				"spe": 24
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 12,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 2 2, move 4",
+			"p2": "move 3 1, move 3"
+		}
+	]
+}

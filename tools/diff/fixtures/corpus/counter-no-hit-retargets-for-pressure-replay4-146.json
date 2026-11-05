@@ -1,0 +1,262 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,13893,49818,61114,51716",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "tinkaton",
+			"item": "silverpowder",
+			"ability": "pressure",
+			"moves": [
+				"growth",
+				"upperhand",
+				"lockon",
+				"counter"
+			],
+			"nature": "impish",
+			"evs": {
+				"hp": 32,
+				"atk": 30,
+				"def": 9,
+				"spa": 15,
+				"spd": 15,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "zoroarkhisui",
+			"item": "magnet",
+			"ability": "torrent",
+			"moves": [
+				"metalsound",
+				"woodhammer",
+				"electricterrain",
+				"hardpress"
+			],
+			"nature": "adamant",
+			"evs": {
+				"hp": 32,
+				"atk": 1,
+				"def": 20,
+				"spa": 5,
+				"spd": 24,
+				"spe": 10
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "torterra",
+			"item": "silverpowder",
+			"ability": "prankster",
+			"moves": [
+				"nastyplot",
+				"electroball",
+				"skillswap",
+				"pollenpuff"
+			],
+			"nature": "lax",
+			"evs": {
+				"hp": 32,
+				"atk": 6,
+				"def": 18,
+				"spa": 13,
+				"spd": 31,
+				"spe": 9
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "lycanrocdusk",
+			"item": "dragonfang",
+			"ability": "telepathy",
+			"moves": [
+				"bodypress",
+				"teeterdance",
+				"inferno",
+				"sheercold"
+			],
+			"nature": "rash",
+			"evs": {
+				"hp": 32,
+				"atk": 8,
+				"def": 16,
+				"spa": 5,
+				"spd": 1,
+				"spe": 24
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "kommoo",
+			"item": "charcoal",
+			"ability": "pressure",
+			"moves": [
+				"trailblaze",
+				"bulldoze",
+				"roleplay",
+				"switcheroo"
+			],
+			"nature": "timid",
+			"evs": {
+				"hp": 32,
+				"atk": 12,
+				"def": 4,
+				"spa": 4,
+				"spd": 19,
+				"spe": 17
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "dragonite",
+			"item": "scopelens",
+			"ability": "poisonheal",
+			"moves": [
+				"solarbeam",
+				"toxicspikes",
+				"memento",
+				"drainpunch"
+			],
+			"nature": "serious",
+			"evs": {
+				"hp": 32,
+				"atk": 18,
+				"def": 9,
+				"spa": 19,
+				"spd": 25,
+				"spe": 8
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "weavile",
+			"item": "poisonbarb",
+			"ability": "steadfast",
+			"moves": [
+				"scaleshot",
+				"aerialace",
+				"guardswap",
+				"brutalswing"
+			],
+			"nature": "adamant",
+			"evs": {
+				"hp": 32,
+				"atk": 27,
+				"def": 27,
+				"spa": 11,
+				"spd": 4,
+				"spe": 5
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "espathra",
+			"item": "tangaberry",
+			"ability": "flashfire",
+			"moves": [
+				"bulkup",
+				"tickle",
+				"toxicthread",
+				"headlongrush"
+			],
+			"nature": "brave",
+			"evs": {
+				"hp": 32,
+				"atk": 2,
+				"def": 32,
+				"spa": 30,
+				"spd": 29,
+				"spe": 31
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 4, move 4 2",
+			"p2": "move 1 2, move 3 2"
+		}
+	]
+}

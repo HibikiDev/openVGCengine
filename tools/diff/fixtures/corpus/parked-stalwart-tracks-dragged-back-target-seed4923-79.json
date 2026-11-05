@@ -1,0 +1,310 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,25134,12199,1205,31535",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Sneasler",
+			"item": "White Herb",
+			"ability": "cursedbody",
+			"moves": [
+				"Protect",
+				"Close Combat",
+				"futuresight",
+				"Rock Tomb"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 14,
+				"atk": 23,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 29
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "Golisopod",
+			"item": "Golisopite",
+			"ability": "stench",
+			"moves": [
+				"Leech Life",
+				"Liquidation",
+				"futuresight",
+				"Iron Head"
+			],
+			"nature": "Brave",
+			"evs": {
+				"hp": 32,
+				"atk": 32,
+				"def": 0,
+				"spa": 0,
+				"spd": 2,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "Rillaboom",
+			"item": "redcard",
+			"ability": "Grassy Surge",
+			"moves": [
+				"Grassy Glide",
+				"futuresight",
+				"Knock Off",
+				"Fake Out"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 32,
+				"atk": 32,
+				"def": 0,
+				"spa": 0,
+				"spd": 2,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "Pelipper",
+			"item": "redcard",
+			"ability": "Drizzle",
+			"moves": [
+				"futuresight",
+				"Ice Beam",
+				"Protect",
+				"Tailwind"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 12,
+				"atk": 0,
+				"def": 0,
+				"spa": 32,
+				"spd": 2,
+				"spe": 20
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Archaludon",
+			"item": "ejectbutton",
+			"ability": "Stalwart",
+			"moves": [
+				"futuresight",
+				"Draco Meteor",
+				"Thunderbolt",
+				"Steel Beam"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 2,
+				"atk": 0,
+				"def": 0,
+				"spa": 32,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "Salamence",
+			"item": "Salamencite",
+			"ability": "Intimidate",
+			"moves": [
+				"Protect",
+				"Double-Edge",
+				"futuresight",
+				"Hyper Voice"
+			],
+			"nature": "Naive",
+			"evs": {
+				"hp": 0,
+				"atk": 8,
+				"def": 0,
+				"spa": 26,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "Whimsicott",
+			"item": "Coba Berry",
+			"ability": "normalize",
+			"moves": [
+				"Tailwind",
+				"Moonblast",
+				"Protect",
+				"futuresight"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 30,
+				"atk": 0,
+				"def": 29,
+				"spa": 0,
+				"spd": 0,
+				"spe": 7
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "Armarouge",
+			"item": "redcard",
+			"ability": "Flash Fire",
+			"moves": [
+				"Dark Pulse",
+				"futuresight",
+				"Expanding Force",
+				"Wide Guard"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 0,
+				"atk": 0,
+				"def": 2,
+				"spa": 32,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 3 -2, move 2 2",
+			"p2": "move 4 -2, move 2 -1 mega"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 3, pass"
+		},
+		{
+			"p1": "move 4 1, move 1 2 mega",
+			"p2": "move 2 1, move 2 -1"
+		},
+		{
+			"p1": "switch 3, move 1 2",
+			"p2": "move 4 1, move 3 1"
+		},
+		{
+			"p1": "move 1 -2, move 1 1",
+			"p2": "switch 3, move 2 2"
+		},
+		{
+			"p1": "move 1 -2, switch 4",
+			"p2": "move 4 2, move 1"
+		},
+		{
+			"p1": "move 3 -2, switch 4",
+			"p2": "move 2 2, move 2 -1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 4, switch 3"
+		},
+		{
+			"p1": "move 3 2, move 3 2",
+			"p2": "move 3 -2, move 2 1"
+		},
+		{
+			"p1": "move 2 -2, switch 3",
+			"p2": "move 2 2, pass"
+		},
+		{
+			"p1": "pass, switch 3",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 4 1, move 4 2",
+			"p2": "move 3 2, pass"
+		}
+	],
+	"teams": [
+		"MC173",
+		"MC155"
+	]
+}

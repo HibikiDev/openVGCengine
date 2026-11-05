@@ -1,0 +1,318 @@
+{
+	"format": "gen9vgc2024regg",
+	"seed": "gen5,35858,30481,59352,56864",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "leafeon",
+			"item": "choiceband",
+			"ability": "unaware",
+			"moves": [
+				"wideguard",
+				"ragingbull",
+				"roleplay",
+				"hardpress"
+			],
+			"nature": "relaxed",
+			"evs": {
+				"hp": 152,
+				"atk": 104,
+				"def": 4,
+				"spa": 72,
+				"spd": 172,
+				"spe": 4
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 0,
+				"spa": 31,
+				"spd": 31,
+				"spe": 2
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Bug"
+		},
+		{
+			"name": "Mon1",
+			"species": "necrozmaduskmane",
+			"item": "sitrusberry",
+			"ability": "moody",
+			"moves": [
+				"sketch",
+				"ragingbull",
+				"surf",
+				"knockoff"
+			],
+			"nature": "relaxed",
+			"evs": {
+				"hp": 220,
+				"atk": 236,
+				"def": 52,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 1,
+				"spd": 31,
+				"spe": 18
+			},
+			"level": 50,
+			"gender": "N",
+			"teraType": "Ghost"
+		},
+		{
+			"name": "Mon2",
+			"species": "samurotthisui",
+			"item": "sitrusberry",
+			"ability": "opportunist",
+			"moves": [
+				"teleport",
+				"entrainment",
+				"bitterblade",
+				"counter"
+			],
+			"nature": "quiet",
+			"evs": {
+				"hp": 128,
+				"atk": 12,
+				"def": 128,
+				"spa": 100,
+				"spd": 80,
+				"spe": 60
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 1,
+				"spe": 6
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Ice"
+		},
+		{
+			"name": "Mon3",
+			"species": "ogerponcornerstone",
+			"item": "cornerstonemask",
+			"ability": "unaware",
+			"moves": [
+				"ivycudgel",
+				"twister",
+				"skillswap",
+				"dragondance"
+			],
+			"nature": "bold",
+			"evs": {
+				"hp": 176,
+				"atk": 236,
+				"def": 96,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 17,
+				"def": 31,
+				"spa": 30,
+				"spd": 24,
+				"spe": 3
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Rock"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "slowbro",
+			"item": "sitrusberry",
+			"ability": "moxie",
+			"moves": [
+				"retaliate",
+				"skillswap",
+				"nobleroar",
+				"spite"
+			],
+			"nature": "naughty",
+			"evs": {
+				"hp": 188,
+				"atk": 108,
+				"def": 212,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 23,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Fairy"
+		},
+		{
+			"name": "Mon1",
+			"species": "mismagius",
+			"item": "choicescarf",
+			"ability": "opportunist",
+			"moves": [
+				"bugbite",
+				"flamethrower",
+				"magneticflux",
+				"photongeyser"
+			],
+			"nature": "mild",
+			"evs": {
+				"hp": 212,
+				"atk": 80,
+				"def": 8,
+				"spa": 104,
+				"spd": 104,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 23,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Ghost"
+		},
+		{
+			"name": "Mon2",
+			"species": "ogerponwellspring",
+			"item": "wellspringmask",
+			"ability": "waterabsorb",
+			"moves": [
+				"ivycudgel",
+				"entrainment",
+				"sandtomb",
+				"babydolleyes"
+			],
+			"nature": "lonely",
+			"evs": {
+				"hp": 72,
+				"atk": 156,
+				"def": 228,
+				"spa": 20,
+				"spd": 32,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 18,
+				"atk": 31,
+				"def": 11,
+				"spa": 6,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Water"
+		},
+		{
+			"name": "Mon3",
+			"species": "glalie",
+			"item": "safetygoggles",
+			"ability": "limber",
+			"moves": [
+				"skillswap",
+				"thunderfang",
+				"gravapple",
+				"metalburst"
+			],
+			"nature": "naive",
+			"evs": {
+				"hp": 168,
+				"atk": 28,
+				"def": 144,
+				"spa": 168,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 23,
+				"atk": 24,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Ice"
+		}
+	],
+	"turns": [
+		{
+			"p1": "switch 3, move 1 2 terastallize",
+			"p2": "move 3 2, move 2 -1"
+		},
+		{
+			"p1": "move 2 1, switch 4",
+			"p2": "move 4 1, switch 3"
+		},
+		{
+			"p1": "move 3 -2, move 3 -1",
+			"p2": "move 1 1, move 4 2 terastallize"
+		},
+		{
+			"p1": "move 3 1, move 4",
+			"p2": "move 2 2, switch 4"
+		},
+		{
+			"p1": "switch 3, move 1 -1",
+			"p2": "move 2 1, move 2 2"
+		},
+		{
+			"p1": "move 3 -2, move 1 -1",
+			"p2": "move 2 -2, switch 4"
+		},
+		{
+			"p1": "move 3 2, move 3 -1",
+			"p2": "move 1 2, move 4 -1"
+		},
+		{
+			"p1": "move 3 -2, move 3 1",
+			"p2": "move 4 2, move 2 2"
+		},
+		{
+			"p1": "move 3 -2, move 2",
+			"p2": "move 4 -2, move 4 -1"
+		},
+		{
+			"p1": "move 3 -2, switch 3",
+			"p2": "move 3 -2, move 2 -1"
+		},
+		{
+			"p1": "move 3 -2, move 2 2",
+			"p2": "move 2 1, switch 3"
+		},
+		{
+			"p1": "move 3 1, move 3 2",
+			"p2": "move 2 2, move 1 1"
+		}
+	],
+	"teams": [
+		"scenario-95b",
+		"scenario-109b"
+	]
+}

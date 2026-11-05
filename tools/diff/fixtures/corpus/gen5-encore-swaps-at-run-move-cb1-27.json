@@ -1,0 +1,307 @@
+{
+	"format": "gen5vgc2013",
+	"seed": "gen5,31342,23645,3385,64968",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Amoonguss",
+			"item": "Mental Herb",
+			"ability": "Regenerator",
+			"moves": [
+				"Spore",
+				"Rage Powder",
+				"Giga Drain",
+				"Protect"
+			],
+			"nature": "Calm",
+			"evs": {
+				"hp": 164,
+				"atk": 0,
+				"def": 100,
+				"spa": 4,
+				"spd": 156,
+				"spe": 84
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 0,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "Jellicent",
+			"item": "Leftovers",
+			"ability": "Cursed Body",
+			"moves": [
+				"Scald",
+				"Will-O-Wisp",
+				"Taunt",
+				"Trick Room"
+			],
+			"nature": "Calm",
+			"evs": {
+				"hp": 252,
+				"atk": 0,
+				"def": 128,
+				"spa": 4,
+				"spd": 104,
+				"spe": 20
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 0,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "Latios",
+			"item": "Life Orb",
+			"ability": "Levitate",
+			"moves": [
+				"Draco Meteor",
+				"Psyshock",
+				"Tailwind",
+				"Protect"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 4,
+				"atk": 0,
+				"def": 0,
+				"spa": 252,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 0,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "Hitmontop",
+			"item": "Fighting Gem",
+			"ability": "Intimidate",
+			"moves": [
+				"Fake Out",
+				"Close Combat",
+				"Stone Edge",
+				"Helping Hand"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 28,
+				"atk": 252,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 228
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Liepard",
+			"item": "Dark Gem",
+			"ability": "Prankster",
+			"moves": [
+				"Foul Play",
+				"Fake Out",
+				"Swagger",
+				"Encore"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 132,
+				"atk": 4,
+				"def": 116,
+				"spa": 0,
+				"spd": 4,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "Cresselia",
+			"item": "Expert Belt",
+			"ability": "Levitate",
+			"moves": [
+				"Psychic",
+				"Hidden Power Fire",
+				"Icy Wind",
+				"Helping Hand"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 92,
+				"atk": 0,
+				"def": 4,
+				"spa": 248,
+				"spd": 20,
+				"spe": 144
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 2,
+				"def": 31,
+				"spa": 30,
+				"spd": 31,
+				"spe": 30
+			},
+			"level": 50,
+			"gender": "F",
+			"hpType": "Fire"
+		},
+		{
+			"name": "Mon2",
+			"species": "Breloom",
+			"item": "Focus Sash",
+			"ability": "Technician",
+			"moves": [
+				"Mach Punch",
+				"Bullet Seed",
+				"Spore",
+				"Protect"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 4,
+				"atk": 252,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 0,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "Scizor",
+			"item": "Steel Gem",
+			"ability": "Technician",
+			"moves": [
+				"Bug Bite",
+				"Bullet Punch",
+				"Swords Dance",
+				"Protect"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 212,
+				"atk": 60,
+				"def": 4,
+				"spa": 0,
+				"spd": 172,
+				"spe": 60
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 0,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 4, switch 3",
+			"p2": "move 2 -2, move 2 1"
+		},
+		{
+			"p1": "switch 4, move 2 -1",
+			"p2": "move 2 -2, move 3"
+		},
+		{
+			"p1": "switch 3, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 1 -2, move 1 -1",
+			"p2": "move 4 -2, switch 4"
+		},
+		{
+			"p1": "move 3 2, move 2 1",
+			"p2": "move 4 1, move 2 -1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 4, pass"
+		},
+		{
+			"p1": "move 1 1, move 2 -1",
+			"p2": "move 1 1, move 1 -1"
+		},
+		{
+			"p1": "switch 4, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 4, move 2 1",
+			"p2": "move 3, move 2 2"
+		},
+		{
+			"p1": "move 4, pass",
+			"p2": "move 2 2, move 2 -1"
+		},
+		{
+			"p1": "move 1 2, pass",
+			"p2": "move 3, move 1 2"
+		}
+	],
+	"teams": [
+		"V13-13",
+		"V13-2"
+	]
+}

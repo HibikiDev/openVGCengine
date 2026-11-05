@@ -1,0 +1,3414 @@
+{
+	"generated": "2026-10-24T07:53:22.583Z",
+	"moves": {
+		"absorb": {
+			"flags": {
+				"gen6": {
+					"protect": 1,
+					"mirror": 1,
+					"heal": 1,
+					"metronome": 1
+				},
+				"gen5": {
+					"protect": 1,
+					"mirror": 1,
+					"metronome": 1
+				}
+			}
+		},
+		"acidarmor": {
+			"pp": {
+				"gen6": 20,
+				"gen5": 40
+			}
+		},
+		"aircutter": {
+			"basePower": {
+				"gen6": 60,
+				"gen5": 55
+			}
+		},
+		"airslash": {
+			"pp": {
+				"gen6": 15,
+				"gen5": 20
+			}
+		},
+		"aromatherapy": {
+			"handlers": [
+				"onHit"
+			]
+		},
+		"assurance": {
+			"basePower": {
+				"gen6": 60,
+				"gen5": 50
+			}
+		},
+		"aurasphere": {
+			"basePower": {
+				"gen6": 80,
+				"gen5": 90
+			}
+		},
+		"autotomize": {
+			"volatileStatus": {
+				"gen6": null,
+				"gen5": "autotomize"
+			},
+			"handlers": [
+				"onHit",
+				"condition.onModifyWeight",
+				"condition.onRestart",
+				"condition.onStart"
+			]
+		},
+		"barrier": {
+			"pp": {
+				"gen6": 20,
+				"gen5": 30
+			}
+		},
+		"bestow": {
+			"flags": {
+				"gen6": {
+					"mirror": 1,
+					"bypasssub": 1,
+					"allyanim": 1,
+					"noassist": 1,
+					"failcopycat": 1
+				},
+				"gen5": {
+					"protect": 1,
+					"mirror": 1,
+					"noassist": 1,
+					"failcopycat": 1
+				}
+			}
+		},
+		"blizzard": {
+			"basePower": {
+				"gen6": 110,
+				"gen5": 120
+			}
+		},
+		"block": {
+			"flags": {
+				"gen6": {
+					"reflectable": 1,
+					"mirror": 1,
+					"metronome": 1
+				},
+				"gen5": {
+					"protect": 1,
+					"reflectable": 1,
+					"mirror": 1,
+					"metronome": 1
+				}
+			}
+		},
+		"bodyslam": {
+			"flags": {
+				"gen6": {
+					"contact": 1,
+					"protect": 1,
+					"mirror": 1,
+					"nonsky": 1,
+					"metronome": 1,
+					"minimize": 1
+				},
+				"gen5": {
+					"contact": 1,
+					"protect": 1,
+					"mirror": 1,
+					"nonsky": 1,
+					"metronome": 1
+				}
+			}
+		},
+		"bounce": {
+			"flags": {
+				"gen6": {
+					"contact": 1,
+					"charge": 1,
+					"protect": 1,
+					"mirror": 1,
+					"gravity": 1,
+					"distance": 1,
+					"metronome": 1,
+					"nosleeptalk": 1,
+					"noassist": 1,
+					"failinstruct": 1
+				},
+				"gen5": {
+					"contact": 1,
+					"charge": 1,
+					"protect": 1,
+					"mirror": 1,
+					"gravity": 1,
+					"distance": 1,
+					"metronome": 1,
+					"nosleeptalk": 1
+				}
+			}
+		},
+		"bubble": {
+			"basePower": {
+				"gen6": 40,
+				"gen5": 20
+			}
+		},
+		"bugbuzz": {
+			"flags": {
+				"gen6": {
+					"protect": 1,
+					"mirror": 1,
+					"sound": 1,
+					"bypasssub": 1,
+					"metronome": 1
+				},
+				"gen5": {
+					"protect": 1,
+					"mirror": 1,
+					"sound": 1,
+					"metronome": 1
+				}
+			}
+		},
+		"camouflage": {
+			"handlers": [
+				"onHit"
+			]
+		},
+		"charm": {
+			"type": {
+				"gen6": "Fairy",
+				"gen5": "Normal"
+			}
+		},
+		"chatter": {
+			"basePower": {
+				"gen6": 65,
+				"gen5": 60
+			},
+			"secondary": {
+				"gen6": {
+					"chance": 100,
+					"volatileStatus": "confusion"
+				},
+				"gen5": {
+					"chance": 10,
+					"volatileStatus": "confusion"
+				}
+			},
+			"flags": {
+				"gen6": {
+					"protect": 1,
+					"mirror": 1,
+					"sound": 1,
+					"distance": 1,
+					"bypasssub": 1,
+					"noassist": 1,
+					"failcopycat": 1,
+					"failinstruct": 1,
+					"failmefirst": 1,
+					"nosleeptalk": 1,
+					"failmimic": 1,
+					"nosketch": 1
+				},
+				"gen5": {
+					"protect": 1,
+					"sound": 1,
+					"distance": 1,
+					"noassist": 1,
+					"failcopycat": 1,
+					"failmefirst": 1,
+					"nosleeptalk": 1,
+					"failmimic": 1,
+					"nosketch": 1
+				}
+			},
+			"handlers": [
+				"onModifyMove"
+			]
+		},
+		"conversion": {
+			"handlers": [
+				"onHit"
+			]
+		},
+		"copycat": {
+			"handlers": [
+				"onHit"
+			]
+		},
+		"cottonspore": {
+			"target": {
+				"gen6": "allAdjacentFoes",
+				"gen5": "normal"
+			}
+		},
+		"covet": {
+			"pp": {
+				"gen6": 25,
+				"gen5": 40
+			}
+		},
+		"crabhammer": {
+			"basePower": {
+				"gen6": 100,
+				"gen5": 90
+			}
+		},
+		"defog": {
+			"handlers": [
+				"onHit"
+			]
+		},
+		"dig": {
+			"flags": {
+				"gen6": {
+					"contact": 1,
+					"charge": 1,
+					"protect": 1,
+					"mirror": 1,
+					"nonsky": 1,
+					"metronome": 1,
+					"nosleeptalk": 1,
+					"noassist": 1,
+					"failinstruct": 1
+				},
+				"gen5": {
+					"contact": 1,
+					"charge": 1,
+					"protect": 1,
+					"mirror": 1,
+					"nonsky": 1,
+					"metronome": 1,
+					"nosleeptalk": 1
+				}
+			}
+		},
+		"dive": {
+			"flags": {
+				"gen6": {
+					"contact": 1,
+					"charge": 1,
+					"protect": 1,
+					"mirror": 1,
+					"nonsky": 1,
+					"metronome": 1,
+					"nosleeptalk": 1,
+					"noassist": 1,
+					"failinstruct": 1
+				},
+				"gen5": {
+					"contact": 1,
+					"charge": 1,
+					"protect": 1,
+					"mirror": 1,
+					"nonsky": 1,
+					"metronome": 1,
+					"nosleeptalk": 1
+				}
+			}
+		},
+		"dracometeor": {
+			"basePower": {
+				"gen6": 130,
+				"gen5": 140
+			}
+		},
+		"dragonpulse": {
+			"basePower": {
+				"gen6": 85,
+				"gen5": 90
+			}
+		},
+		"dragonrush": {
+			"flags": {
+				"gen6": {
+					"contact": 1,
+					"protect": 1,
+					"mirror": 1,
+					"metronome": 1,
+					"minimize": 1
+				},
+				"gen5": {
+					"contact": 1,
+					"protect": 1,
+					"mirror": 1,
+					"metronome": 1
+				}
+			}
+		},
+		"drainpunch": {
+			"flags": {
+				"gen6": {
+					"contact": 1,
+					"protect": 1,
+					"mirror": 1,
+					"punch": 1,
+					"heal": 1,
+					"metronome": 1
+				},
+				"gen5": {
+					"contact": 1,
+					"protect": 1,
+					"mirror": 1,
+					"punch": 1,
+					"metronome": 1
+				}
+			}
+		},
+		"dreameater": {
+			"flags": {
+				"gen6": {
+					"protect": 1,
+					"mirror": 1,
+					"heal": 1,
+					"metronome": 1
+				},
+				"gen5": {
+					"protect": 1,
+					"mirror": 1,
+					"metronome": 1
+				}
+			}
+		},
+		"echoedvoice": {
+			"flags": {
+				"gen6": {
+					"protect": 1,
+					"mirror": 1,
+					"sound": 1,
+					"bypasssub": 1,
+					"metronome": 1
+				},
+				"gen5": {
+					"protect": 1,
+					"mirror": 1,
+					"sound": 1,
+					"metronome": 1
+				}
+			}
+		},
+		"electroball": {
+			"handlers": [
+				"basePowerCallback"
+			]
+		},
+		"energyball": {
+			"basePower": {
+				"gen6": 90,
+				"gen5": 80
+			}
+		},
+		"extrasensory": {
+			"pp": {
+				"gen6": 20,
+				"gen5": 30
+			}
+		},
+		"feint": {
+			"flags": {
+				"gen6": {
+					"mirror": 1,
+					"noassist": 1,
+					"failcopycat": 1
+				},
+				"gen5": {
+					"noassist": 1,
+					"failcopycat": 1
+				}
+			}
+		},
+		"finalgambit": {
+			"flags": {
+				"gen6": {
+					"protect": 1,
+					"metronome": 1,
+					"noparentalbond": 1
+				},
+				"gen5": {
+					"contact": 1,
+					"protect": 1,
+					"metronome": 1
+				}
+			}
+		},
+		"fireblast": {
+			"basePower": {
+				"gen6": 110,
+				"gen5": 120
+			}
+		},
+		"firepledge": {
+			"basePower": {
+				"gen6": 80,
+				"gen5": 50
+			},
+			"handlers": [
+				"basePowerCallback"
+			]
+		},
+		"flamethrower": {
+			"basePower": {
+				"gen6": 90,
+				"gen5": 95
+			}
+		},
+		"fly": {
+			"flags": {
+				"gen6": {
+					"contact": 1,
+					"charge": 1,
+					"protect": 1,
+					"mirror": 1,
+					"gravity": 1,
+					"distance": 1,
+					"metronome": 1,
+					"nosleeptalk": 1,
+					"noassist": 1,
+					"failinstruct": 1
+				},
+				"gen5": {
+					"contact": 1,
+					"charge": 1,
+					"protect": 1,
+					"mirror": 1,
+					"gravity": 1,
+					"distance": 1,
+					"metronome": 1
+				}
+			}
+		},
+		"followme": {
+			"priority": {
+				"gen6": 2,
+				"gen5": 3
+			}
+		},
+		"frostbreath": {
+			"basePower": {
+				"gen6": 60,
+				"gen5": 40
+			}
+		},
+		"furycutter": {
+			"basePower": {
+				"gen6": 40,
+				"gen5": 20
+			},
+			"handlers": [
+				"condition.onRestart"
+			]
+		},
+		"futuresight": {
+			"basePower": {
+				"gen6": 120,
+				"gen5": 100
+			},
+			"handlers": [
+				"onTry"
+			]
+		},
+		"gigadrain": {
+			"flags": {
+				"gen6": {
+					"protect": 1,
+					"mirror": 1,
+					"heal": 1,
+					"metronome": 1
+				},
+				"gen5": {
+					"protect": 1,
+					"mirror": 1,
+					"metronome": 1
+				}
+			}
+		},
+		"glare": {
+			"accuracy": {
+				"gen6": 100,
+				"gen5": 90
+			}
+		},
+		"grasspledge": {
+			"basePower": {
+				"gen6": 80,
+				"gen5": 50
+			},
+			"handlers": [
+				"basePowerCallback"
+			]
+		},
+		"grasswhistle": {
+			"flags": {
+				"gen6": {
+					"protect": 1,
+					"reflectable": 1,
+					"mirror": 1,
+					"sound": 1,
+					"bypasssub": 1,
+					"metronome": 1
+				},
+				"gen5": {
+					"protect": 1,
+					"reflectable": 1,
+					"mirror": 1,
+					"sound": 1,
+					"metronome": 1
+				}
+			}
+		},
+		"growl": {
+			"flags": {
+				"gen6": {
+					"protect": 1,
+					"reflectable": 1,
+					"mirror": 1,
+					"sound": 1,
+					"bypasssub": 1,
+					"metronome": 1
+				},
+				"gen5": {
+					"protect": 1,
+					"reflectable": 1,
+					"mirror": 1,
+					"sound": 1,
+					"metronome": 1
+				}
+			}
+		},
+		"growth": {
+			"pp": {
+				"gen6": 20,
+				"gen5": 40
+			}
+		},
+		"gunkshot": {
+			"accuracy": {
+				"gen6": 80,
+				"gen5": 70
+			}
+		},
+		"gyroball": {
+			"handlers": [
+				"basePowerCallback"
+			]
+		},
+		"healbell": {
+			"flags": {
+				"gen6": {
+					"snatch": 1,
+					"sound": 1,
+					"distance": 1,
+					"bypasssub": 1,
+					"metronome": 1
+				},
+				"gen5": {
+					"snatch": 1,
+					"sound": 1,
+					"metronome": 1
+				}
+			},
+			"handlers": [
+				"onHit"
+			]
+		},
+		"healpulse": {
+			"handlers": [
+				"onHit"
+			]
+		},
+		"heatcrash": {
+			"flags": {
+				"gen6": {
+					"contact": 1,
+					"protect": 1,
+					"mirror": 1,
+					"nonsky": 1,
+					"metronome": 1,
+					"minimize": 1
+				},
+				"gen5": {
+					"contact": 1,
+					"protect": 1,
+					"mirror": 1,
+					"nonsky": 1,
+					"metronome": 1
+				}
+			}
+		},
+		"heatwave": {
+			"basePower": {
+				"gen6": 95,
+				"gen5": 100
+			}
+		},
+		"hex": {
+			"basePower": {
+				"gen6": 65,
+				"gen5": 50
+			}
+		},
+		"hiddenpower": {
+			"basePower": {
+				"gen6": 60,
+				"gen5": 0
+			},
+			"handlers": [
+				"basePowerCallback"
+			]
+		},
+		"hornleech": {
+			"flags": {
+				"gen6": {
+					"contact": 1,
+					"protect": 1,
+					"mirror": 1,
+					"heal": 1,
+					"metronome": 1
+				},
+				"gen5": {
+					"contact": 1,
+					"protect": 1,
+					"mirror": 1,
+					"metronome": 1
+				}
+			}
+		},
+		"hurricane": {
+			"basePower": {
+				"gen6": 110,
+				"gen5": 120
+			}
+		},
+		"hydropump": {
+			"basePower": {
+				"gen6": 110,
+				"gen5": 120
+			}
+		},
+		"hypervoice": {
+			"flags": {
+				"gen6": {
+					"protect": 1,
+					"mirror": 1,
+					"sound": 1,
+					"bypasssub": 1,
+					"metronome": 1
+				},
+				"gen5": {
+					"protect": 1,
+					"mirror": 1,
+					"sound": 1,
+					"metronome": 1
+				}
+			}
+		},
+		"icebeam": {
+			"basePower": {
+				"gen6": 90,
+				"gen5": 95
+			}
+		},
+		"incinerate": {
+			"basePower": {
+				"gen6": 60,
+				"gen5": 30
+			},
+			"handlers": [
+				"onHit"
+			]
+		},
+		"knockoff": {
+			"basePower": {
+				"gen6": 65,
+				"gen5": 20
+			},
+			"handlers": [
+				"onBasePower"
+			]
+		},
+		"leafstorm": {
+			"basePower": {
+				"gen6": 130,
+				"gen5": 140
+			}
+		},
+		"leechlife": {
+			"flags": {
+				"gen6": {
+					"contact": 1,
+					"protect": 1,
+					"mirror": 1,
+					"heal": 1,
+					"metronome": 1
+				},
+				"gen5": {
+					"contact": 1,
+					"protect": 1,
+					"mirror": 1,
+					"metronome": 1
+				}
+			}
+		},
+		"lick": {
+			"basePower": {
+				"gen6": 30,
+				"gen5": 20
+			}
+		},
+		"lightscreen": {
+			"handlers": [
+				"condition.onAnyModifyDamage"
+			]
+		},
+		"lowsweep": {
+			"basePower": {
+				"gen6": 65,
+				"gen5": 60
+			}
+		},
+		"magiccoat": {
+			"handlers": [
+				"condition.onAllyTryHitSide"
+			]
+		},
+		"magicroom": {
+			"priority": {
+				"gen6": 0,
+				"gen5": -7
+			}
+		},
+		"magmastorm": {
+			"basePower": {
+				"gen6": 100,
+				"gen5": 120
+			}
+		},
+		"meanlook": {
+			"flags": {
+				"gen6": {
+					"reflectable": 1,
+					"mirror": 1,
+					"metronome": 1
+				},
+				"gen5": {
+					"protect": 1,
+					"reflectable": 1,
+					"mirror": 1,
+					"metronome": 1
+				}
+			}
+		},
+		"megadrain": {
+			"flags": {
+				"gen6": {
+					"protect": 1,
+					"mirror": 1,
+					"heal": 1,
+					"metronome": 1
+				},
+				"gen5": {
+					"protect": 1,
+					"mirror": 1,
+					"metronome": 1
+				}
+			}
+		},
+		"metalsound": {
+			"flags": {
+				"gen6": {
+					"protect": 1,
+					"reflectable": 1,
+					"mirror": 1,
+					"sound": 1,
+					"bypasssub": 1,
+					"allyanim": 1,
+					"metronome": 1
+				},
+				"gen5": {
+					"protect": 1,
+					"reflectable": 1,
+					"mirror": 1,
+					"sound": 1,
+					"metronome": 1
+				}
+			}
+		},
+		"meteormash": {
+			"basePower": {
+				"gen6": 90,
+				"gen5": 100
+			},
+			"accuracy": {
+				"gen6": 90,
+				"gen5": 85
+			}
+		},
+		"minimize": {
+			"pp": {
+				"gen6": 10,
+				"gen5": 20
+			},
+			"handlers": [
+				"condition.onAccuracy"
+			]
+		},
+		"moonlight": {
+			"type": {
+				"gen6": "Fairy",
+				"gen5": "Normal"
+			}
+		},
+		"muddywater": {
+			"basePower": {
+				"gen6": 90,
+				"gen5": 95
+			}
+		},
+		"mudsport": {
+			"volatileStatus": {
+				"gen6": null,
+				"gen5": "mudsport"
+			},
+			"handlers": [
+				"condition.onAnyBasePower",
+				"condition.onBasePower",
+				"condition.onFieldEnd",
+				"condition.onFieldStart",
+				"condition.onStart"
+			]
+		},
+		"naturepower": {
+			"target": {
+				"gen6": "normal",
+				"gen5": "self"
+			},
+			"handlers": [
+				"onHit",
+				"onTryHit"
+			]
+		},
+		"overheat": {
+			"basePower": {
+				"gen6": 130,
+				"gen5": 140
+			}
+		},
+		"perishsong": {
+			"flags": {
+				"gen6": {
+					"sound": 1,
+					"distance": 1,
+					"bypasssub": 1,
+					"metronome": 1
+				},
+				"gen5": {
+					"sound": 1,
+					"distance": 1,
+					"metronome": 1
+				}
+			}
+		},
+		"pinmissile": {
+			"basePower": {
+				"gen6": 25,
+				"gen5": 14
+			},
+			"accuracy": {
+				"gen6": 95,
+				"gen5": 85
+			}
+		},
+		"poisonfang": {
+			"secondary": {
+				"gen6": {
+					"chance": 50,
+					"status": "tox"
+				},
+				"gen5": {
+					"chance": 30,
+					"status": "tox"
+				}
+			}
+		},
+		"poisongas": {
+			"accuracy": {
+				"gen6": 90,
+				"gen5": 80
+			}
+		},
+		"powergem": {
+			"basePower": {
+				"gen6": 80,
+				"gen5": 70
+			}
+		},
+		"psychoshift": {
+			"accuracy": {
+				"gen6": 100,
+				"gen5": 90
+			}
+		},
+		"psychup": {
+			"handlers": [
+				"onHit"
+			]
+		},
+		"psywave": {
+			"accuracy": {
+				"gen6": 100,
+				"gen5": 80
+			}
+		},
+		"quickguard": {
+			"handlers": [
+				"onTry",
+				"condition.onTryHit"
+			]
+		},
+		"ragepowder": {
+			"priority": {
+				"gen6": 2,
+				"gen5": 3
+			},
+			"flags": {
+				"gen6": {
+					"noassist": 1,
+					"failcopycat": 1,
+					"powder": 1
+				},
+				"gen5": {
+					"noassist": 1,
+					"failcopycat": 1
+				}
+			},
+			"handlers": [
+				"condition.onFoeRedirectTarget"
+			]
+		},
+		"reflect": {
+			"handlers": [
+				"condition.onAnyModifyDamage"
+			]
+		},
+		"roar": {
+			"accuracy": {
+				"gen6": true,
+				"gen5": 100
+			},
+			"flags": {
+				"gen6": {
+					"reflectable": 1,
+					"mirror": 1,
+					"sound": 1,
+					"bypasssub": 1,
+					"allyanim": 1,
+					"metronome": 1,
+					"noassist": 1,
+					"failcopycat": 1
+				},
+				"gen5": {
+					"protect": 1,
+					"reflectable": 1,
+					"mirror": 1,
+					"sound": 1,
+					"bypasssub": 1,
+					"metronome": 1
+				}
+			}
+		},
+		"rocktomb": {
+			"basePower": {
+				"gen6": 60,
+				"gen5": 50
+			},
+			"accuracy": {
+				"gen6": 95,
+				"gen5": 80
+			},
+			"pp": {
+				"gen6": 15,
+				"gen5": 10
+			}
+		},
+		"round": {
+			"flags": {
+				"gen6": {
+					"protect": 1,
+					"mirror": 1,
+					"sound": 1,
+					"bypasssub": 1,
+					"metronome": 1
+				},
+				"gen5": {
+					"protect": 1,
+					"mirror": 1,
+					"sound": 1,
+					"metronome": 1
+				}
+			}
+		},
+		"sacredsword": {
+			"pp": {
+				"gen6": 15,
+				"gen5": 20
+			}
+		},
+		"screech": {
+			"flags": {
+				"gen6": {
+					"protect": 1,
+					"reflectable": 1,
+					"mirror": 1,
+					"sound": 1,
+					"bypasssub": 1,
+					"allyanim": 1,
+					"metronome": 1
+				},
+				"gen5": {
+					"protect": 1,
+					"reflectable": 1,
+					"mirror": 1,
+					"sound": 1,
+					"metronome": 1
+				}
+			}
+		},
+		"secretpower": {
+			"secondary": {
+				"gen6": {
+					"chance": 30,
+					"status": "par"
+				},
+				"gen5": {
+					"chance": 30,
+					"boosts": {
+						"accuracy": -1
+					}
+				}
+			}
+		},
+		"sing": {
+			"flags": {
+				"gen6": {
+					"protect": 1,
+					"reflectable": 1,
+					"mirror": 1,
+					"sound": 1,
+					"bypasssub": 1,
+					"metronome": 1
+				},
+				"gen5": {
+					"protect": 1,
+					"reflectable": 1,
+					"mirror": 1,
+					"sound": 1,
+					"metronome": 1
+				}
+			}
+		},
+		"skullbash": {
+			"basePower": {
+				"gen6": 130,
+				"gen5": 100
+			},
+			"pp": {
+				"gen6": 10,
+				"gen5": 15
+			}
+		},
+		"skydrop": {
+			"flags": {
+				"gen6": {
+					"contact": 1,
+					"charge": 1,
+					"protect": 1,
+					"mirror": 1,
+					"gravity": 1,
+					"distance": 1,
+					"metronome": 1,
+					"nosleeptalk": 1,
+					"noassist": 1,
+					"failinstruct": 1
+				},
+				"gen5": {
+					"contact": 1,
+					"charge": 1,
+					"protect": 1,
+					"mirror": 1,
+					"gravity": 1,
+					"distance": 1,
+					"metronome": 1,
+					"nosleeptalk": 1
+				}
+			},
+			"handlers": [
+				"onTryHit"
+			]
+		},
+		"smellingsalts": {
+			"basePower": {
+				"gen6": 70,
+				"gen5": 60
+			}
+		},
+		"smog": {
+			"basePower": {
+				"gen6": 30,
+				"gen5": 20
+			}
+		},
+		"snarl": {
+			"flags": {
+				"gen6": {
+					"protect": 1,
+					"mirror": 1,
+					"sound": 1,
+					"bypasssub": 1
+				},
+				"gen5": {
+					"protect": 1,
+					"mirror": 1,
+					"sound": 1
+				}
+			}
+		},
+		"snore": {
+			"basePower": {
+				"gen6": 50,
+				"gen5": 40
+			},
+			"flags": {
+				"gen6": {
+					"protect": 1,
+					"mirror": 1,
+					"sound": 1,
+					"bypasssub": 1
+				},
+				"gen5": {
+					"protect": 1,
+					"mirror": 1,
+					"sound": 1
+				}
+			}
+		},
+		"soak": {
+			"handlers": [
+				"onHit"
+			]
+		},
+		"stormthrow": {
+			"basePower": {
+				"gen6": 60,
+				"gen5": 40
+			}
+		},
+		"stringshot": {
+			"boosts": {
+				"gen6": {
+					"spe": -2
+				},
+				"gen5": {
+					"spe": -1
+				}
+			}
+		},
+		"strugglebug": {
+			"basePower": {
+				"gen6": 50,
+				"gen5": 30
+			}
+		},
+		"submission": {
+			"pp": {
+				"gen6": 20,
+				"gen5": 25
+			}
+		},
+		"substitute": {
+			"handlers": [
+				"condition.onTryPrimaryHit"
+			]
+		},
+		"supersonic": {
+			"flags": {
+				"gen6": {
+					"protect": 1,
+					"reflectable": 1,
+					"mirror": 1,
+					"sound": 1,
+					"bypasssub": 1,
+					"metronome": 1
+				},
+				"gen5": {
+					"protect": 1,
+					"reflectable": 1,
+					"mirror": 1,
+					"sound": 1,
+					"metronome": 1
+				}
+			}
+		},
+		"surf": {
+			"basePower": {
+				"gen6": 90,
+				"gen5": 95
+			}
+		},
+		"sweetkiss": {
+			"type": {
+				"gen6": "Fairy",
+				"gen5": "Normal"
+			}
+		},
+		"sweetscent": {
+			"boosts": {
+				"gen6": {
+					"evasion": -2
+				},
+				"gen5": {
+					"evasion": -1
+				}
+			}
+		},
+		"swordsdance": {
+			"pp": {
+				"gen6": 20,
+				"gen5": 30
+			}
+		},
+		"synchronoise": {
+			"basePower": {
+				"gen6": 120,
+				"gen5": 70
+			},
+			"pp": {
+				"gen6": 10,
+				"gen5": 15
+			}
+		},
+		"tailwind": {
+			"pp": {
+				"gen6": 15,
+				"gen5": 30
+			}
+		},
+		"thief": {
+			"basePower": {
+				"gen6": 60,
+				"gen5": 40
+			},
+			"pp": {
+				"gen6": 25,
+				"gen5": 10
+			}
+		},
+		"thunder": {
+			"basePower": {
+				"gen6": 110,
+				"gen5": 120
+			}
+		},
+		"thunderbolt": {
+			"basePower": {
+				"gen6": 90,
+				"gen5": 95
+			}
+		},
+		"toxic": {
+			"handlers": [
+				"onPrepareHit"
+			]
+		},
+		"uproar": {
+			"flags": {
+				"gen6": {
+					"protect": 1,
+					"mirror": 1,
+					"sound": 1,
+					"bypasssub": 1,
+					"metronome": 1,
+					"nosleeptalk": 1,
+					"failinstruct": 1
+				},
+				"gen5": {
+					"protect": 1,
+					"mirror": 1,
+					"sound": 1,
+					"metronome": 1,
+					"nosleeptalk": 1
+				}
+			}
+		},
+		"vinewhip": {
+			"basePower": {
+				"gen6": 45,
+				"gen5": 35
+			},
+			"pp": {
+				"gen6": 25,
+				"gen5": 15
+			}
+		},
+		"wakeupslap": {
+			"basePower": {
+				"gen6": 70,
+				"gen5": 60
+			}
+		},
+		"waterpledge": {
+			"basePower": {
+				"gen6": 80,
+				"gen5": 50
+			},
+			"handlers": [
+				"basePowerCallback"
+			]
+		},
+		"watersport": {
+			"volatileStatus": {
+				"gen6": null,
+				"gen5": "watersport"
+			},
+			"handlers": [
+				"condition.onAnyBasePower",
+				"condition.onBasePower",
+				"condition.onFieldEnd",
+				"condition.onFieldStart",
+				"condition.onStart"
+			]
+		},
+		"whirlwind": {
+			"accuracy": {
+				"gen6": true,
+				"gen5": 100
+			},
+			"flags": {
+				"gen6": {
+					"reflectable": 1,
+					"mirror": 1,
+					"bypasssub": 1,
+					"allyanim": 1,
+					"metronome": 1,
+					"noassist": 1,
+					"failcopycat": 1,
+					"wind": 1
+				},
+				"gen5": {
+					"protect": 1,
+					"reflectable": 1,
+					"mirror": 1,
+					"bypasssub": 1,
+					"metronome": 1
+				}
+			}
+		},
+		"wideguard": {
+			"handlers": [
+				"onTry"
+			]
+		},
+		"willowisp": {
+			"accuracy": {
+				"gen6": 85,
+				"gen5": 75
+			}
+		},
+		"wonderroom": {
+			"priority": {
+				"gen6": 0,
+				"gen5": -7
+			}
+		},
+		"shadowforce": {
+			"flags": {
+				"gen6": {
+					"contact": 1,
+					"charge": 1,
+					"mirror": 1,
+					"metronome": 1,
+					"nosleeptalk": 1,
+					"noassist": 1,
+					"failinstruct": 1,
+					"minimize": 1
+				},
+				"gen5": {
+					"contact": 1,
+					"charge": 1,
+					"mirror": 1,
+					"metronome": 1,
+					"nosleeptalk": 1
+				}
+			}
+		}
+	},
+	"species": {
+		"pikachu": {
+			"baseStats": {
+				"gen6": {
+					"hp": 35,
+					"atk": 55,
+					"def": 40,
+					"spa": 50,
+					"spd": 50,
+					"spe": 90
+				},
+				"gen5": {
+					"hp": 35,
+					"atk": 55,
+					"def": 30,
+					"spa": 50,
+					"spd": 40,
+					"spe": 90
+				}
+			}
+		},
+		"zapdos": {
+			"abilities": {
+				"gen6": {
+					"0": "Pressure",
+					"H": "Static"
+				},
+				"gen5": {
+					"0": "Pressure",
+					"H": "Lightning Rod"
+				}
+			}
+		},
+		"gigalith": {
+			"baseStats": {
+				"gen6": {
+					"hp": 85,
+					"atk": 135,
+					"def": 130,
+					"spa": 60,
+					"spd": 80,
+					"spe": 25
+				},
+				"gen5": {
+					"hp": 85,
+					"atk": 135,
+					"def": 130,
+					"spa": 60,
+					"spd": 70,
+					"spe": 25
+				}
+			}
+		},
+		"ralts": {
+			"types": {
+				"gen6": [
+					"Psychic",
+					"Fairy"
+				],
+				"gen5": [
+					"Psychic"
+				]
+			}
+		},
+		"kirlia": {
+			"types": {
+				"gen6": [
+					"Psychic",
+					"Fairy"
+				],
+				"gen5": [
+					"Psychic"
+				]
+			}
+		},
+		"gardevoir": {
+			"types": {
+				"gen6": [
+					"Psychic",
+					"Fairy"
+				],
+				"gen5": [
+					"Psychic"
+				]
+			}
+		},
+		"butterfree": {
+			"baseStats": {
+				"gen6": {
+					"hp": 60,
+					"atk": 45,
+					"def": 50,
+					"spa": 90,
+					"spd": 80,
+					"spe": 70
+				},
+				"gen5": {
+					"hp": 60,
+					"atk": 45,
+					"def": 50,
+					"spa": 80,
+					"spd": 80,
+					"spe": 70
+				}
+			}
+		},
+		"beedrill": {
+			"baseStats": {
+				"gen6": {
+					"hp": 65,
+					"atk": 90,
+					"def": 40,
+					"spa": 45,
+					"spd": 80,
+					"spe": 75
+				},
+				"gen5": {
+					"hp": 65,
+					"atk": 80,
+					"def": 40,
+					"spa": 45,
+					"spd": 80,
+					"spe": 75
+				}
+			}
+		},
+		"pidgeot": {
+			"baseStats": {
+				"gen6": {
+					"hp": 83,
+					"atk": 80,
+					"def": 75,
+					"spa": 70,
+					"spd": 70,
+					"spe": 101
+				},
+				"gen5": {
+					"hp": 83,
+					"atk": 80,
+					"def": 75,
+					"spa": 70,
+					"spd": 70,
+					"spe": 91
+				}
+			}
+		},
+		"raichu": {
+			"baseStats": {
+				"gen6": {
+					"hp": 60,
+					"atk": 90,
+					"def": 55,
+					"spa": 90,
+					"spd": 80,
+					"spe": 110
+				},
+				"gen5": {
+					"hp": 60,
+					"atk": 90,
+					"def": 55,
+					"spa": 90,
+					"spd": 80,
+					"spe": 100
+				}
+			}
+		},
+		"nidoqueen": {
+			"baseStats": {
+				"gen6": {
+					"hp": 90,
+					"atk": 92,
+					"def": 87,
+					"spa": 75,
+					"spd": 85,
+					"spe": 76
+				},
+				"gen5": {
+					"hp": 90,
+					"atk": 82,
+					"def": 87,
+					"spa": 75,
+					"spd": 85,
+					"spe": 76
+				}
+			}
+		},
+		"nidoking": {
+			"baseStats": {
+				"gen6": {
+					"hp": 81,
+					"atk": 102,
+					"def": 77,
+					"spa": 85,
+					"spd": 75,
+					"spe": 85
+				},
+				"gen5": {
+					"hp": 81,
+					"atk": 92,
+					"def": 77,
+					"spa": 85,
+					"spd": 75,
+					"spe": 85
+				}
+			}
+		},
+		"clefairy": {
+			"types": {
+				"gen6": [
+					"Fairy"
+				],
+				"gen5": [
+					"Normal"
+				]
+			}
+		},
+		"clefable": {
+			"baseStats": {
+				"gen6": {
+					"hp": 95,
+					"atk": 70,
+					"def": 73,
+					"spa": 95,
+					"spd": 90,
+					"spe": 60
+				},
+				"gen5": {
+					"hp": 95,
+					"atk": 70,
+					"def": 73,
+					"spa": 85,
+					"spd": 90,
+					"spe": 60
+				}
+			},
+			"types": {
+				"gen6": [
+					"Fairy"
+				],
+				"gen5": [
+					"Normal"
+				]
+			}
+		},
+		"jigglypuff": {
+			"types": {
+				"gen6": [
+					"Normal",
+					"Fairy"
+				],
+				"gen5": [
+					"Normal"
+				]
+			},
+			"abilities": {
+				"gen6": {
+					"0": "Cute Charm",
+					"1": "Competitive",
+					"H": "Friend Guard"
+				},
+				"gen5": {
+					"0": "Cute Charm",
+					"H": "Friend Guard"
+				}
+			}
+		},
+		"wigglytuff": {
+			"baseStats": {
+				"gen6": {
+					"hp": 140,
+					"atk": 70,
+					"def": 45,
+					"spa": 85,
+					"spd": 50,
+					"spe": 45
+				},
+				"gen5": {
+					"hp": 140,
+					"atk": 70,
+					"def": 45,
+					"spa": 75,
+					"spd": 50,
+					"spe": 45
+				}
+			},
+			"types": {
+				"gen6": [
+					"Normal",
+					"Fairy"
+				],
+				"gen5": [
+					"Normal"
+				]
+			},
+			"abilities": {
+				"gen6": {
+					"0": "Cute Charm",
+					"1": "Competitive",
+					"H": "Frisk"
+				},
+				"gen5": {
+					"0": "Cute Charm",
+					"H": "Frisk"
+				}
+			}
+		},
+		"vileplume": {
+			"baseStats": {
+				"gen6": {
+					"hp": 75,
+					"atk": 80,
+					"def": 85,
+					"spa": 110,
+					"spd": 90,
+					"spe": 50
+				},
+				"gen5": {
+					"hp": 75,
+					"atk": 80,
+					"def": 85,
+					"spa": 100,
+					"spd": 90,
+					"spe": 50
+				}
+			}
+		},
+		"poliwrath": {
+			"baseStats": {
+				"gen6": {
+					"hp": 90,
+					"atk": 95,
+					"def": 95,
+					"spa": 70,
+					"spd": 90,
+					"spe": 70
+				},
+				"gen5": {
+					"hp": 90,
+					"atk": 85,
+					"def": 95,
+					"spa": 70,
+					"spd": 90,
+					"spe": 70
+				}
+			}
+		},
+		"alakazam": {
+			"baseStats": {
+				"gen6": {
+					"hp": 55,
+					"atk": 50,
+					"def": 45,
+					"spa": 135,
+					"spd": 95,
+					"spe": 120
+				},
+				"gen5": {
+					"hp": 55,
+					"atk": 50,
+					"def": 45,
+					"spa": 135,
+					"spd": 85,
+					"spe": 120
+				}
+			}
+		},
+		"victreebel": {
+			"baseStats": {
+				"gen6": {
+					"hp": 80,
+					"atk": 105,
+					"def": 65,
+					"spa": 100,
+					"spd": 70,
+					"spe": 70
+				},
+				"gen5": {
+					"hp": 80,
+					"atk": 105,
+					"def": 65,
+					"spa": 100,
+					"spd": 60,
+					"spe": 70
+				}
+			}
+		},
+		"golem": {
+			"baseStats": {
+				"gen6": {
+					"hp": 80,
+					"atk": 120,
+					"def": 130,
+					"spa": 55,
+					"spd": 65,
+					"spe": 45
+				},
+				"gen5": {
+					"hp": 80,
+					"atk": 110,
+					"def": 130,
+					"spa": 55,
+					"spd": 65,
+					"spe": 45
+				}
+			}
+		},
+		"mrmime": {
+			"types": {
+				"gen6": [
+					"Psychic",
+					"Fairy"
+				],
+				"gen5": [
+					"Psychic"
+				]
+			}
+		},
+		"cleffa": {
+			"types": {
+				"gen6": [
+					"Fairy"
+				],
+				"gen5": [
+					"Normal"
+				]
+			}
+		},
+		"igglybuff": {
+			"types": {
+				"gen6": [
+					"Normal",
+					"Fairy"
+				],
+				"gen5": [
+					"Normal"
+				]
+			},
+			"abilities": {
+				"gen6": {
+					"0": "Cute Charm",
+					"1": "Competitive",
+					"H": "Friend Guard"
+				},
+				"gen5": {
+					"0": "Cute Charm",
+					"H": "Friend Guard"
+				}
+			}
+		},
+		"togepi": {
+			"types": {
+				"gen6": [
+					"Fairy"
+				],
+				"gen5": [
+					"Normal"
+				]
+			}
+		},
+		"togetic": {
+			"types": {
+				"gen6": [
+					"Fairy",
+					"Flying"
+				],
+				"gen5": [
+					"Normal",
+					"Flying"
+				]
+			}
+		},
+		"ampharos": {
+			"baseStats": {
+				"gen6": {
+					"hp": 90,
+					"atk": 75,
+					"def": 85,
+					"spa": 115,
+					"spd": 90,
+					"spe": 55
+				},
+				"gen5": {
+					"hp": 90,
+					"atk": 75,
+					"def": 75,
+					"spa": 115,
+					"spd": 90,
+					"spe": 55
+				}
+			}
+		},
+		"bellossom": {
+			"baseStats": {
+				"gen6": {
+					"hp": 75,
+					"atk": 80,
+					"def": 95,
+					"spa": 90,
+					"spd": 100,
+					"spe": 50
+				},
+				"gen5": {
+					"hp": 75,
+					"atk": 80,
+					"def": 85,
+					"spa": 90,
+					"spd": 100,
+					"spe": 50
+				}
+			}
+		},
+		"marill": {
+			"types": {
+				"gen6": [
+					"Water",
+					"Fairy"
+				],
+				"gen5": [
+					"Water"
+				]
+			}
+		},
+		"azumarill": {
+			"baseStats": {
+				"gen6": {
+					"hp": 100,
+					"atk": 50,
+					"def": 80,
+					"spa": 60,
+					"spd": 80,
+					"spe": 50
+				},
+				"gen5": {
+					"hp": 100,
+					"atk": 50,
+					"def": 80,
+					"spa": 50,
+					"spd": 80,
+					"spe": 50
+				}
+			},
+			"types": {
+				"gen6": [
+					"Water",
+					"Fairy"
+				],
+				"gen5": [
+					"Water"
+				]
+			}
+		},
+		"jumpluff": {
+			"baseStats": {
+				"gen6": {
+					"hp": 75,
+					"atk": 55,
+					"def": 70,
+					"spa": 55,
+					"spd": 95,
+					"spe": 110
+				},
+				"gen5": {
+					"hp": 75,
+					"atk": 55,
+					"def": 70,
+					"spa": 55,
+					"spd": 85,
+					"spe": 110
+				}
+			}
+		},
+		"snubbull": {
+			"types": {
+				"gen6": [
+					"Fairy"
+				],
+				"gen5": [
+					"Normal"
+				]
+			}
+		},
+		"granbull": {
+			"types": {
+				"gen6": [
+					"Fairy"
+				],
+				"gen5": [
+					"Normal"
+				]
+			}
+		},
+		"beautifly": {
+			"baseStats": {
+				"gen6": {
+					"hp": 60,
+					"atk": 70,
+					"def": 50,
+					"spa": 100,
+					"spd": 50,
+					"spe": 65
+				},
+				"gen5": {
+					"hp": 60,
+					"atk": 70,
+					"def": 50,
+					"spa": 90,
+					"spd": 50,
+					"spe": 65
+				}
+			}
+		},
+		"exploud": {
+			"baseStats": {
+				"gen6": {
+					"hp": 104,
+					"atk": 91,
+					"def": 63,
+					"spa": 91,
+					"spd": 73,
+					"spe": 68
+				},
+				"gen5": {
+					"hp": 104,
+					"atk": 91,
+					"def": 63,
+					"spa": 91,
+					"spd": 63,
+					"spe": 68
+				}
+			}
+		},
+		"azurill": {
+			"types": {
+				"gen6": [
+					"Normal",
+					"Fairy"
+				],
+				"gen5": [
+					"Normal"
+				]
+			}
+		},
+		"mawile": {
+			"types": {
+				"gen6": [
+					"Steel",
+					"Fairy"
+				],
+				"gen5": [
+					"Steel"
+				]
+			}
+		},
+		"plusle": {
+			"abilities": {
+				"gen6": {
+					"0": "Plus",
+					"H": "Lightning Rod"
+				},
+				"gen5": {
+					"0": "Plus"
+				}
+			}
+		},
+		"minun": {
+			"abilities": {
+				"gen6": {
+					"0": "Minus",
+					"H": "Volt Absorb"
+				},
+				"gen5": {
+					"0": "Minus"
+				}
+			}
+		},
+		"feebas": {
+			"abilities": {
+				"gen6": {
+					"0": "Swift Swim",
+					"1": "Oblivious",
+					"H": "Adaptability"
+				},
+				"gen5": {
+					"0": "Swift Swim",
+					"H": "Adaptability"
+				}
+			}
+		},
+		"milotic": {
+			"abilities": {
+				"gen6": {
+					"0": "Marvel Scale",
+					"1": "Competitive",
+					"H": "Cute Charm"
+				},
+				"gen5": {
+					"0": "Marvel Scale",
+					"H": "Cute Charm"
+				}
+			}
+		},
+		"kecleon": {
+			"abilities": {
+				"gen6": {
+					"0": "Color Change",
+					"H": "Protean"
+				},
+				"gen5": {
+					"0": "Color Change"
+				}
+			}
+		},
+		"duskull": {
+			"abilities": {
+				"gen6": {
+					"0": "Levitate",
+					"H": "Frisk"
+				},
+				"gen5": {
+					"0": "Levitate"
+				}
+			}
+		},
+		"dusclops": {
+			"abilities": {
+				"gen6": {
+					"0": "Pressure",
+					"H": "Frisk"
+				},
+				"gen5": {
+					"0": "Pressure"
+				}
+			}
+		},
+		"starly": {
+			"abilities": {
+				"gen6": {
+					"0": "Keen Eye",
+					"H": "Reckless"
+				},
+				"gen5": {
+					"0": "Keen Eye"
+				}
+			}
+		},
+		"staraptor": {
+			"baseStats": {
+				"gen6": {
+					"hp": 85,
+					"atk": 120,
+					"def": 70,
+					"spa": 50,
+					"spd": 60,
+					"spe": 100
+				},
+				"gen5": {
+					"hp": 85,
+					"atk": 120,
+					"def": 70,
+					"spa": 50,
+					"spd": 50,
+					"spe": 100
+				}
+			}
+		},
+		"roserade": {
+			"baseStats": {
+				"gen6": {
+					"hp": 60,
+					"atk": 70,
+					"def": 65,
+					"spa": 125,
+					"spd": 105,
+					"spe": 90
+				},
+				"gen5": {
+					"hp": 60,
+					"atk": 70,
+					"def": 55,
+					"spa": 125,
+					"spd": 105,
+					"spe": 90
+				}
+			}
+		},
+		"mimejr": {
+			"types": {
+				"gen6": [
+					"Psychic",
+					"Fairy"
+				],
+				"gen5": [
+					"Psychic"
+				]
+			}
+		},
+		"togekiss": {
+			"types": {
+				"gen6": [
+					"Fairy",
+					"Flying"
+				],
+				"gen5": [
+					"Normal",
+					"Flying"
+				]
+			}
+		},
+		"dusknoir": {
+			"abilities": {
+				"gen6": {
+					"0": "Pressure",
+					"H": "Frisk"
+				},
+				"gen5": {
+					"0": "Pressure"
+				}
+			}
+		},
+		"stoutland": {
+			"baseStats": {
+				"gen6": {
+					"hp": 85,
+					"atk": 110,
+					"def": 90,
+					"spa": 45,
+					"spd": 90,
+					"spe": 80
+				},
+				"gen5": {
+					"hp": 85,
+					"atk": 100,
+					"def": 90,
+					"spa": 45,
+					"spd": 90,
+					"spe": 80
+				}
+			}
+		},
+		"unfezant": {
+			"baseStats": {
+				"gen6": {
+					"hp": 80,
+					"atk": 115,
+					"def": 80,
+					"spa": 65,
+					"spd": 55,
+					"spe": 93
+				},
+				"gen5": {
+					"hp": 80,
+					"atk": 105,
+					"def": 80,
+					"spa": 65,
+					"spd": 55,
+					"spe": 93
+				}
+			}
+		},
+		"seismitoad": {
+			"baseStats": {
+				"gen6": {
+					"hp": 105,
+					"atk": 95,
+					"def": 75,
+					"spa": 85,
+					"spd": 75,
+					"spe": 74
+				},
+				"gen5": {
+					"hp": 105,
+					"atk": 85,
+					"def": 75,
+					"spa": 85,
+					"spd": 75,
+					"spe": 74
+				}
+			}
+		},
+		"leavanny": {
+			"baseStats": {
+				"gen6": {
+					"hp": 75,
+					"atk": 103,
+					"def": 80,
+					"spa": 70,
+					"spd": 80,
+					"spe": 92
+				},
+				"gen5": {
+					"hp": 75,
+					"atk": 103,
+					"def": 80,
+					"spa": 70,
+					"spd": 70,
+					"spe": 92
+				}
+			}
+		},
+		"venipede": {
+			"abilities": {
+				"gen6": {
+					"0": "Poison Point",
+					"1": "Swarm",
+					"H": "Speed Boost"
+				},
+				"gen5": {
+					"0": "Poison Point",
+					"1": "Swarm",
+					"H": "Quick Feet"
+				}
+			}
+		},
+		"whirlipede": {
+			"abilities": {
+				"gen6": {
+					"0": "Poison Point",
+					"1": "Swarm",
+					"H": "Speed Boost"
+				},
+				"gen5": {
+					"0": "Poison Point",
+					"1": "Swarm",
+					"H": "Quick Feet"
+				}
+			}
+		},
+		"scolipede": {
+			"baseStats": {
+				"gen6": {
+					"hp": 60,
+					"atk": 100,
+					"def": 89,
+					"spa": 55,
+					"spd": 69,
+					"spe": 112
+				},
+				"gen5": {
+					"hp": 60,
+					"atk": 90,
+					"def": 89,
+					"spa": 55,
+					"spd": 69,
+					"spe": 112
+				}
+			},
+			"abilities": {
+				"gen6": {
+					"0": "Poison Point",
+					"1": "Swarm",
+					"H": "Speed Boost"
+				},
+				"gen5": {
+					"0": "Poison Point",
+					"1": "Swarm",
+					"H": "Quick Feet"
+				}
+			}
+		},
+		"cottonee": {
+			"types": {
+				"gen6": [
+					"Grass",
+					"Fairy"
+				],
+				"gen5": [
+					"Grass"
+				]
+			}
+		},
+		"whimsicott": {
+			"types": {
+				"gen6": [
+					"Grass",
+					"Fairy"
+				],
+				"gen5": [
+					"Grass"
+				]
+			}
+		},
+		"basculinbluestriped": {
+			"abilities": {
+				"gen6": {
+					"0": "Rock Head",
+					"1": "Adaptability",
+					"H": "Mold Breaker"
+				},
+				"gen5": {
+					"0": "Rock Head",
+					"1": "Adaptability",
+					"H": "Mold Breaker",
+					"S": "Reckless"
+				}
+			}
+		},
+		"krookodile": {
+			"baseStats": {
+				"gen6": {
+					"hp": 95,
+					"atk": 117,
+					"def": 80,
+					"spa": 65,
+					"spd": 70,
+					"spe": 92
+				},
+				"gen5": {
+					"hp": 95,
+					"atk": 117,
+					"def": 70,
+					"spa": 65,
+					"spd": 70,
+					"spe": 92
+				}
+			}
+		},
+		"gothorita": {
+			"abilities": {
+				"gen6": {
+					"0": "Frisk",
+					"1": "Competitive",
+					"H": "Shadow Tag"
+				},
+				"gen5": {
+					"0": "Frisk",
+					"H": "Shadow Tag"
+				}
+			}
+		},
+		"gothitelle": {
+			"abilities": {
+				"gen6": {
+					"0": "Frisk",
+					"1": "Competitive",
+					"H": "Shadow Tag"
+				},
+				"gen5": {
+					"0": "Frisk",
+					"H": "Shadow Tag"
+				}
+			}
+		},
+		"ferrothorn": {
+			"abilities": {
+				"gen6": {
+					"0": "Iron Barbs",
+					"H": "Anticipation"
+				},
+				"gen5": {
+					"0": "Iron Barbs"
+				}
+			}
+		},
+		"litwick": {
+			"abilities": {
+				"gen6": {
+					"0": "Flash Fire",
+					"1": "Flame Body",
+					"H": "Infiltrator"
+				},
+				"gen5": {
+					"0": "Flash Fire",
+					"1": "Flame Body",
+					"H": "Shadow Tag"
+				}
+			}
+		},
+		"lampent": {
+			"abilities": {
+				"gen6": {
+					"0": "Flash Fire",
+					"1": "Flame Body",
+					"H": "Infiltrator"
+				},
+				"gen5": {
+					"0": "Flash Fire",
+					"1": "Flame Body",
+					"H": "Shadow Tag"
+				}
+			}
+		},
+		"chandelure": {
+			"abilities": {
+				"gen6": {
+					"0": "Flash Fire",
+					"1": "Flame Body",
+					"H": "Infiltrator"
+				},
+				"gen5": {
+					"0": "Flash Fire",
+					"1": "Flame Body",
+					"H": "Shadow Tag"
+				}
+			}
+		}
+	},
+	"abilities": {
+		"anticipation": {
+			"handlers": [
+				"onStart"
+			]
+		},
+		"frisk": {
+			"handlers": [
+				"onStart"
+			]
+		},
+		"keeneye": {
+			"handlers": [
+				"onModifyMove"
+			]
+		},
+		"magicbounce": {
+			"handlers": [
+				"onAllyTryHitSide"
+			]
+		},
+		"oblivious": {
+			"handlers": [
+				"onTryHit",
+				"onUpdate"
+			]
+		},
+		"overcoat": {
+			"handlers": [
+				"onImmunity",
+				"onTryHit"
+			]
+		},
+		"sapsipper": {
+			"handlers": [
+				"onAllyTryHitSide"
+			]
+		},
+		"serenegrace": {
+			"handlers": [
+				"onModifyMove"
+			]
+		},
+		"soundproof": {
+			"handlers": [
+				"onAllyTryHitSide"
+			]
+		}
+	},
+	"items": {
+		"aguavberry": {
+			"naturalGift": {
+				"gen6": {
+					"basePower": 80,
+					"type": "Dragon"
+				},
+				"gen5": {
+					"basePower": 60,
+					"type": "Dragon"
+				}
+			}
+		},
+		"apicotberry": {
+			"naturalGift": {
+				"gen6": {
+					"basePower": 100,
+					"type": "Ground"
+				},
+				"gen5": {
+					"basePower": 80,
+					"type": "Ground"
+				}
+			}
+		},
+		"aspearberry": {
+			"naturalGift": {
+				"gen6": {
+					"basePower": 80,
+					"type": "Ice"
+				},
+				"gen5": {
+					"basePower": 60,
+					"type": "Ice"
+				}
+			}
+		},
+		"babiriberry": {
+			"naturalGift": {
+				"gen6": {
+					"basePower": 80,
+					"type": "Steel"
+				},
+				"gen5": {
+					"basePower": 60,
+					"type": "Steel"
+				}
+			}
+		},
+		"belueberry": {
+			"naturalGift": {
+				"gen6": {
+					"basePower": 100,
+					"type": "Electric"
+				},
+				"gen5": {
+					"basePower": 80,
+					"type": "Electric"
+				}
+			}
+		},
+		"blukberry": {
+			"naturalGift": {
+				"gen6": {
+					"basePower": 90,
+					"type": "Fire"
+				},
+				"gen5": {
+					"basePower": 70,
+					"type": "Fire"
+				}
+			}
+		},
+		"chartiberry": {
+			"naturalGift": {
+				"gen6": {
+					"basePower": 80,
+					"type": "Rock"
+				},
+				"gen5": {
+					"basePower": 60,
+					"type": "Rock"
+				}
+			}
+		},
+		"cheriberry": {
+			"naturalGift": {
+				"gen6": {
+					"basePower": 80,
+					"type": "Fire"
+				},
+				"gen5": {
+					"basePower": 60,
+					"type": "Fire"
+				}
+			}
+		},
+		"chestoberry": {
+			"naturalGift": {
+				"gen6": {
+					"basePower": 80,
+					"type": "Water"
+				},
+				"gen5": {
+					"basePower": 60,
+					"type": "Water"
+				}
+			}
+		},
+		"chilanberry": {
+			"naturalGift": {
+				"gen6": {
+					"basePower": 80,
+					"type": "Normal"
+				},
+				"gen5": {
+					"basePower": 60,
+					"type": "Normal"
+				}
+			}
+		},
+		"chopleberry": {
+			"naturalGift": {
+				"gen6": {
+					"basePower": 80,
+					"type": "Fighting"
+				},
+				"gen5": {
+					"basePower": 60,
+					"type": "Fighting"
+				}
+			}
+		},
+		"cobaberry": {
+			"naturalGift": {
+				"gen6": {
+					"basePower": 80,
+					"type": "Flying"
+				},
+				"gen5": {
+					"basePower": 60,
+					"type": "Flying"
+				}
+			}
+		},
+		"colburberry": {
+			"naturalGift": {
+				"gen6": {
+					"basePower": 80,
+					"type": "Dark"
+				},
+				"gen5": {
+					"basePower": 60,
+					"type": "Dark"
+				}
+			}
+		},
+		"cornnberry": {
+			"naturalGift": {
+				"gen6": {
+					"basePower": 90,
+					"type": "Bug"
+				},
+				"gen5": {
+					"basePower": 70,
+					"type": "Bug"
+				}
+			}
+		},
+		"durinberry": {
+			"naturalGift": {
+				"gen6": {
+					"basePower": 100,
+					"type": "Water"
+				},
+				"gen5": {
+					"basePower": 80,
+					"type": "Water"
+				}
+			}
+		},
+		"enigmaberry": {
+			"naturalGift": {
+				"gen6": {
+					"basePower": 100,
+					"type": "Bug"
+				},
+				"gen5": {
+					"basePower": 80,
+					"type": "Bug"
+				}
+			}
+		},
+		"figyberry": {
+			"naturalGift": {
+				"gen6": {
+					"basePower": 80,
+					"type": "Bug"
+				},
+				"gen5": {
+					"basePower": 60,
+					"type": "Bug"
+				}
+			}
+		},
+		"ganlonberry": {
+			"naturalGift": {
+				"gen6": {
+					"basePower": 100,
+					"type": "Ice"
+				},
+				"gen5": {
+					"basePower": 80,
+					"type": "Ice"
+				}
+			}
+		},
+		"grepaberry": {
+			"naturalGift": {
+				"gen6": {
+					"basePower": 90,
+					"type": "Flying"
+				},
+				"gen5": {
+					"basePower": 70,
+					"type": "Flying"
+				}
+			}
+		},
+		"habanberry": {
+			"naturalGift": {
+				"gen6": {
+					"basePower": 80,
+					"type": "Dragon"
+				},
+				"gen5": {
+					"basePower": 60,
+					"type": "Dragon"
+				}
+			}
+		},
+		"hondewberry": {
+			"naturalGift": {
+				"gen6": {
+					"basePower": 90,
+					"type": "Ground"
+				},
+				"gen5": {
+					"basePower": 70,
+					"type": "Ground"
+				}
+			}
+		},
+		"iapapaberry": {
+			"naturalGift": {
+				"gen6": {
+					"basePower": 80,
+					"type": "Dark"
+				},
+				"gen5": {
+					"basePower": 60,
+					"type": "Dark"
+				}
+			}
+		},
+		"kasibberry": {
+			"naturalGift": {
+				"gen6": {
+					"basePower": 80,
+					"type": "Ghost"
+				},
+				"gen5": {
+					"basePower": 60,
+					"type": "Ghost"
+				}
+			}
+		},
+		"kebiaberry": {
+			"naturalGift": {
+				"gen6": {
+					"basePower": 80,
+					"type": "Poison"
+				},
+				"gen5": {
+					"basePower": 60,
+					"type": "Poison"
+				}
+			}
+		},
+		"kelpsyberry": {
+			"naturalGift": {
+				"gen6": {
+					"basePower": 90,
+					"type": "Fighting"
+				},
+				"gen5": {
+					"basePower": 70,
+					"type": "Fighting"
+				}
+			}
+		},
+		"lansatberry": {
+			"naturalGift": {
+				"gen6": {
+					"basePower": 100,
+					"type": "Flying"
+				},
+				"gen5": {
+					"basePower": 80,
+					"type": "Flying"
+				}
+			}
+		},
+		"leppaberry": {
+			"naturalGift": {
+				"gen6": {
+					"basePower": 80,
+					"type": "Fighting"
+				},
+				"gen5": {
+					"basePower": 60,
+					"type": "Fighting"
+				}
+			}
+		},
+		"liechiberry": {
+			"naturalGift": {
+				"gen6": {
+					"basePower": 100,
+					"type": "Grass"
+				},
+				"gen5": {
+					"basePower": 80,
+					"type": "Grass"
+				}
+			}
+		},
+		"lumberry": {
+			"naturalGift": {
+				"gen6": {
+					"basePower": 80,
+					"type": "Flying"
+				},
+				"gen5": {
+					"basePower": 60,
+					"type": "Flying"
+				}
+			}
+		},
+		"magoberry": {
+			"naturalGift": {
+				"gen6": {
+					"basePower": 80,
+					"type": "Ghost"
+				},
+				"gen5": {
+					"basePower": 60,
+					"type": "Ghost"
+				}
+			}
+		},
+		"magostberry": {
+			"naturalGift": {
+				"gen6": {
+					"basePower": 90,
+					"type": "Rock"
+				},
+				"gen5": {
+					"basePower": 70,
+					"type": "Rock"
+				}
+			}
+		},
+		"nanabberry": {
+			"naturalGift": {
+				"gen6": {
+					"basePower": 90,
+					"type": "Water"
+				},
+				"gen5": {
+					"basePower": 70,
+					"type": "Water"
+				}
+			}
+		},
+		"nomelberry": {
+			"naturalGift": {
+				"gen6": {
+					"basePower": 90,
+					"type": "Dragon"
+				},
+				"gen5": {
+					"basePower": 70,
+					"type": "Dragon"
+				}
+			}
+		},
+		"occaberry": {
+			"naturalGift": {
+				"gen6": {
+					"basePower": 80,
+					"type": "Fire"
+				},
+				"gen5": {
+					"basePower": 60,
+					"type": "Fire"
+				}
+			}
+		},
+		"oranberry": {
+			"naturalGift": {
+				"gen6": {
+					"basePower": 80,
+					"type": "Poison"
+				},
+				"gen5": {
+					"basePower": 60,
+					"type": "Poison"
+				}
+			}
+		},
+		"pamtreberry": {
+			"naturalGift": {
+				"gen6": {
+					"basePower": 90,
+					"type": "Steel"
+				},
+				"gen5": {
+					"basePower": 70,
+					"type": "Steel"
+				}
+			}
+		},
+		"passhoberry": {
+			"naturalGift": {
+				"gen6": {
+					"basePower": 80,
+					"type": "Water"
+				},
+				"gen5": {
+					"basePower": 60,
+					"type": "Water"
+				}
+			}
+		},
+		"payapaberry": {
+			"naturalGift": {
+				"gen6": {
+					"basePower": 80,
+					"type": "Psychic"
+				},
+				"gen5": {
+					"basePower": 60,
+					"type": "Psychic"
+				}
+			}
+		},
+		"pechaberry": {
+			"naturalGift": {
+				"gen6": {
+					"basePower": 80,
+					"type": "Electric"
+				},
+				"gen5": {
+					"basePower": 60,
+					"type": "Electric"
+				}
+			}
+		},
+		"persimberry": {
+			"naturalGift": {
+				"gen6": {
+					"basePower": 80,
+					"type": "Ground"
+				},
+				"gen5": {
+					"basePower": 60,
+					"type": "Ground"
+				}
+			}
+		},
+		"petayaberry": {
+			"naturalGift": {
+				"gen6": {
+					"basePower": 100,
+					"type": "Poison"
+				},
+				"gen5": {
+					"basePower": 80,
+					"type": "Poison"
+				}
+			}
+		},
+		"pinapberry": {
+			"naturalGift": {
+				"gen6": {
+					"basePower": 90,
+					"type": "Grass"
+				},
+				"gen5": {
+					"basePower": 70,
+					"type": "Grass"
+				}
+			}
+		},
+		"pomegberry": {
+			"naturalGift": {
+				"gen6": {
+					"basePower": 90,
+					"type": "Ice"
+				},
+				"gen5": {
+					"basePower": 70,
+					"type": "Ice"
+				}
+			}
+		},
+		"qualotberry": {
+			"naturalGift": {
+				"gen6": {
+					"basePower": 90,
+					"type": "Poison"
+				},
+				"gen5": {
+					"basePower": 70,
+					"type": "Poison"
+				}
+			}
+		},
+		"rabutaberry": {
+			"naturalGift": {
+				"gen6": {
+					"basePower": 90,
+					"type": "Ghost"
+				},
+				"gen5": {
+					"basePower": 70,
+					"type": "Ghost"
+				}
+			}
+		},
+		"rawstberry": {
+			"naturalGift": {
+				"gen6": {
+					"basePower": 80,
+					"type": "Grass"
+				},
+				"gen5": {
+					"basePower": 60,
+					"type": "Grass"
+				}
+			}
+		},
+		"razzberry": {
+			"naturalGift": {
+				"gen6": {
+					"basePower": 80,
+					"type": "Steel"
+				},
+				"gen5": {
+					"basePower": 60,
+					"type": "Steel"
+				}
+			}
+		},
+		"rindoberry": {
+			"naturalGift": {
+				"gen6": {
+					"basePower": 80,
+					"type": "Grass"
+				},
+				"gen5": {
+					"basePower": 60,
+					"type": "Grass"
+				}
+			}
+		},
+		"salacberry": {
+			"naturalGift": {
+				"gen6": {
+					"basePower": 100,
+					"type": "Fighting"
+				},
+				"gen5": {
+					"basePower": 80,
+					"type": "Fighting"
+				}
+			}
+		},
+		"shucaberry": {
+			"naturalGift": {
+				"gen6": {
+					"basePower": 80,
+					"type": "Ground"
+				},
+				"gen5": {
+					"basePower": 60,
+					"type": "Ground"
+				}
+			}
+		},
+		"sitrusberry": {
+			"naturalGift": {
+				"gen6": {
+					"basePower": 80,
+					"type": "Psychic"
+				},
+				"gen5": {
+					"basePower": 60,
+					"type": "Psychic"
+				}
+			}
+		},
+		"spelonberry": {
+			"naturalGift": {
+				"gen6": {
+					"basePower": 90,
+					"type": "Dark"
+				},
+				"gen5": {
+					"basePower": 70,
+					"type": "Dark"
+				}
+			}
+		},
+		"starfberry": {
+			"naturalGift": {
+				"gen6": {
+					"basePower": 100,
+					"type": "Psychic"
+				},
+				"gen5": {
+					"basePower": 80,
+					"type": "Psychic"
+				}
+			}
+		},
+		"tamatoberry": {
+			"naturalGift": {
+				"gen6": {
+					"basePower": 90,
+					"type": "Psychic"
+				},
+				"gen5": {
+					"basePower": 70,
+					"type": "Psychic"
+				}
+			}
+		},
+		"tangaberry": {
+			"naturalGift": {
+				"gen6": {
+					"basePower": 80,
+					"type": "Bug"
+				},
+				"gen5": {
+					"basePower": 60,
+					"type": "Bug"
+				}
+			}
+		},
+		"wacanberry": {
+			"naturalGift": {
+				"gen6": {
+					"basePower": 80,
+					"type": "Electric"
+				},
+				"gen5": {
+					"basePower": 60,
+					"type": "Electric"
+				}
+			}
+		},
+		"watmelberry": {
+			"naturalGift": {
+				"gen6": {
+					"basePower": 100,
+					"type": "Fire"
+				},
+				"gen5": {
+					"basePower": 80,
+					"type": "Fire"
+				}
+			}
+		},
+		"wepearberry": {
+			"naturalGift": {
+				"gen6": {
+					"basePower": 90,
+					"type": "Electric"
+				},
+				"gen5": {
+					"basePower": 70,
+					"type": "Electric"
+				}
+			}
+		},
+		"wikiberry": {
+			"naturalGift": {
+				"gen6": {
+					"basePower": 80,
+					"type": "Rock"
+				},
+				"gen5": {
+					"basePower": 60,
+					"type": "Rock"
+				}
+			}
+		},
+		"yacheberry": {
+			"naturalGift": {
+				"gen6": {
+					"basePower": 80,
+					"type": "Ice"
+				},
+				"gen5": {
+					"basePower": 60,
+					"type": "Ice"
+				}
+			}
+		},
+		"custapberry": {
+			"naturalGift": {
+				"gen6": {
+					"basePower": 100,
+					"type": "Ghost"
+				},
+				"gen5": {
+					"basePower": 80,
+					"type": "Ghost"
+				}
+			}
+		},
+		"jabocaberry": {
+			"naturalGift": {
+				"gen6": {
+					"basePower": 100,
+					"type": "Dragon"
+				},
+				"gen5": {
+					"basePower": 80,
+					"type": "Dragon"
+				}
+			}
+		},
+		"micleberry": {
+			"naturalGift": {
+				"gen6": {
+					"basePower": 100,
+					"type": "Rock"
+				},
+				"gen5": {
+					"basePower": 80,
+					"type": "Rock"
+				}
+			}
+		},
+		"rowapberry": {
+			"naturalGift": {
+				"gen6": {
+					"basePower": 100,
+					"type": "Dark"
+				},
+				"gen5": {
+					"basePower": 80,
+					"type": "Dark"
+				}
+			}
+		}
+	},
+	"conditions": {
+		"gem": {
+			"handlers": [
+				"onBasePower"
+			]
+		},
+		"partiallytrapped": {
+			"handlers": [
+				"onResidual",
+				"onStart"
+			]
+		},
+		"slp": {
+			"handlers": [
+				"onSwitchIn"
+			]
+		},
+		"stall": {
+			"counterMax": {
+				"gen6": 729,
+				"gen5": 256
+			},
+			"handlers": [
+				"onRestart",
+				"onStallMove",
+				"onStart"
+			]
+		}
+	},
+	"typechart": [
+		{
+			"attack": "Dark",
+			"defend": "Steel",
+			"gen6": 0,
+			"gen5": -1
+		},
+		{
+			"attack": "Fairy",
+			"defend": "Steel",
+			"gen6": -1,
+			"gen5": 0
+		},
+		{
+			"attack": "Ghost",
+			"defend": "Steel",
+			"gen6": 0,
+			"gen5": -1
+		}
+	]
+}

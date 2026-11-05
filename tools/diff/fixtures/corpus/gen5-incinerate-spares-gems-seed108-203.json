@@ -1,0 +1,263 @@
+{
+	"format": "gen5vgc2013",
+	"seed": "gen5,41784,6277,1118,34720",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "caterpie",
+			"item": "fightinggem",
+			"ability": "clearbody",
+			"moves": [
+				"twineedle",
+				"shadowclaw",
+				"megakick",
+				"magiccoat"
+			],
+			"nature": "gentle",
+			"evs": {
+				"hp": 232,
+				"atk": 32,
+				"def": 140,
+				"spa": 76,
+				"spd": 28,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 16,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "hitmonchan",
+			"item": "kasibberry",
+			"ability": "clearbody",
+			"moves": [
+				"thunder",
+				"gigadrain",
+				"vitalthrow",
+				"sleeptalk"
+			],
+			"nature": "lonely",
+			"evs": {
+				"hp": 228,
+				"atk": 20,
+				"def": 172,
+				"spa": 88,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 20,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 28
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "sharpedo",
+			"item": "chilldrive",
+			"ability": "owntempo",
+			"moves": [
+				"outrage",
+				"revenge",
+				"fierydance",
+				"return"
+			],
+			"nature": "rash",
+			"evs": {
+				"hp": 96,
+				"atk": 140,
+				"def": 64,
+				"spa": 16,
+				"spd": 32,
+				"spe": 160
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 11,
+				"def": 14,
+				"spa": 19,
+				"spd": 31,
+				"spe": 13
+			},
+			"level": 50,
+			"gender": "M",
+			"happiness": 0
+		},
+		{
+			"name": "Mon3",
+			"species": "landorustherian",
+			"item": "pechaberry",
+			"ability": "illuminate",
+			"moves": [
+				"acidarmor",
+				"howl",
+				"bellydrum",
+				"slackoff"
+			],
+			"nature": "hardy",
+			"evs": {
+				"hp": 172,
+				"atk": 160,
+				"def": 176,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 8,
+				"spa": 31,
+				"spd": 30,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "roserade",
+			"item": "powerbracer",
+			"ability": "magicguard",
+			"moves": [
+				"magnetbomb",
+				"icepunch",
+				"incinerate",
+				"icefang"
+			],
+			"nature": "calm",
+			"evs": {
+				"hp": 36,
+				"atk": 104,
+				"def": 108,
+				"spa": 252,
+				"spd": 8,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 8,
+				"def": 31,
+				"spa": 13,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "houndoom",
+			"item": "smoothrock",
+			"ability": "soundproof",
+			"moves": [
+				"sleeppowder",
+				"tailglow",
+				"faketears",
+				"gastroacid"
+			],
+			"nature": "jolly",
+			"evs": {
+				"hp": 188,
+				"atk": 28,
+				"def": 32,
+				"spa": 120,
+				"spd": 76,
+				"spe": 64
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 18,
+				"def": 21,
+				"spa": 31,
+				"spd": 3,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "charizard",
+			"item": "upgrade",
+			"ability": "superluck",
+			"moves": [
+				"flameburst",
+				"thunderpunch",
+				"leafstorm",
+				"focuspunch"
+			],
+			"nature": "bold",
+			"evs": {
+				"hp": 244,
+				"atk": 24,
+				"def": 88,
+				"spa": 96,
+				"spd": 56,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "tangrowth",
+			"item": "babiriberry",
+			"ability": "dryskin",
+			"moves": [
+				"acrobatics",
+				"wrap",
+				"outrage",
+				"doubleslap"
+			],
+			"nature": "timid",
+			"evs": {
+				"hp": 248,
+				"atk": 152,
+				"def": 108,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 4, move 1 1",
+			"p2": "move 3, move 3 2"
+		}
+	]
+}

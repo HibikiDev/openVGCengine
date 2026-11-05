@@ -1,0 +1,298 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,64543,29718,42880,276",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Torkoal",
+			"item": "Charcoal",
+			"ability": "Drought",
+			"moves": [
+				"Eruption",
+				"Weather Ball",
+				"Helping Hand",
+				"Protect"
+			],
+			"nature": "Quiet",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 0,
+				"spa": 32,
+				"spd": 2,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "Alakazam",
+			"item": "Alakazite",
+			"ability": "Inner Focus",
+			"moves": [
+				"Expanding Force",
+				"Focus Blast",
+				"Calm Mind",
+				"Protect"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 1,
+				"atk": 0,
+				"def": 1,
+				"spa": 32,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "Typhlosion-Hisui",
+			"item": "Choice Scarf",
+			"ability": "Frisk",
+			"moves": [
+				"Eruption",
+				"Shadow Ball",
+				"Overheat",
+				"Heat Wave"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 1,
+				"atk": 0,
+				"def": 1,
+				"spa": 32,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "Whimsicott",
+			"item": "Focus Sash",
+			"ability": "Prankster",
+			"moves": [
+				"Moonblast",
+				"Tailwind",
+				"Sunny Day",
+				"Encore"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 1,
+				"atk": 0,
+				"def": 1,
+				"spa": 32,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Salamence",
+			"item": "Salamencite",
+			"ability": "Intimidate",
+			"moves": [
+				"Hyper Voice",
+				"Flamethrower",
+				"Draco Meteor",
+				"Protect"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 2,
+				"atk": 0,
+				"def": 0,
+				"spa": 32,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "Sneasler",
+			"item": "White Herb",
+			"ability": "Unburden",
+			"moves": [
+				"Fake Out",
+				"Dire Claw",
+				"Close Combat",
+				"Rock Tomb"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 20,
+				"atk": 0,
+				"def": 31,
+				"spa": 0,
+				"spd": 0,
+				"spe": 15
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "Kingambit",
+			"item": "Chople Berry",
+			"ability": "Defiant",
+			"moves": [
+				"Kowtow Cleave",
+				"Low Kick",
+				"Iron Head",
+				"Sucker Punch"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 31,
+				"atk": 25,
+				"def": 2,
+				"spa": 0,
+				"spd": 0,
+				"spe": 8
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "Basculegion",
+			"item": "Life Orb",
+			"ability": "Adaptability",
+			"moves": [
+				"Wave Crash",
+				"Last Respects",
+				"Aqua Jet",
+				"Protect"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 4,
+				"atk": 31,
+				"def": 11,
+				"spa": 0,
+				"spd": 0,
+				"spe": 20
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 2 -2, move 1 1 mega",
+			"p2": "move 2 -2 mega, move 2 -1"
+		},
+		{
+			"p1": "pass, switch 3",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 1, move 3 -1",
+			"p2": "move 2 -2, move 2 2"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 4, switch 3"
+		},
+		{
+			"p1": "move 2 2, switch 4",
+			"p2": "move 1 2, move 1 2"
+		},
+		{
+			"p1": "move 4, move 1 1",
+			"p2": "move 1 -2, pass"
+		},
+		{
+			"p1": "move 2 -2, move 4 2",
+			"p2": "move 3 -2, pass"
+		},
+		{
+			"p1": "pass, switch 4",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 2 2, move 2 2",
+			"p2": "move 1 1, pass"
+		}
+	],
+	"teams": [
+		"MC261",
+		"MC107"
+	]
+}

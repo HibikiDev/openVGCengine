@@ -1,0 +1,318 @@
+{
+	"format": "gen9vgc2024regg",
+	"seed": "gen5,57213,53439,28222,10712",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "cramorant",
+			"item": "liechiberry",
+			"ability": "neutralizinggas",
+			"moves": [
+				"entrainment",
+				"lick",
+				"retaliate",
+				"imprison"
+			],
+			"nature": "bashful",
+			"evs": {
+				"hp": 120,
+				"atk": 204,
+				"def": 104,
+				"spa": 80,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 23,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Bug"
+		},
+		{
+			"name": "Mon1",
+			"species": "timburr",
+			"item": "aguavberry",
+			"ability": "imposter",
+			"moves": [
+				"uturn",
+				"acidspray",
+				"secretsword",
+				"painsplit"
+			],
+			"nature": "relaxed",
+			"evs": {
+				"hp": 156,
+				"atk": 64,
+				"def": 232,
+				"spa": 24,
+				"spd": 32,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 13,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 15
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Dark"
+		},
+		{
+			"name": "Mon2",
+			"species": "timburr",
+			"item": "softsand",
+			"ability": "imposter",
+			"moves": [
+				"heavyslam",
+				"stuffcheeks",
+				"transform",
+				"eeriespell"
+			],
+			"nature": "modest",
+			"evs": {
+				"hp": 68,
+				"atk": 192,
+				"def": 232,
+				"spa": 16,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Flying"
+		},
+		{
+			"name": "Mon3",
+			"species": "wugtrio",
+			"item": "sitrusberry",
+			"ability": "unnerve",
+			"moves": [
+				"aquatail",
+				"swallow",
+				"gastroacid",
+				"revivalblessing"
+			],
+			"nature": "quirky",
+			"evs": {
+				"hp": 208,
+				"atk": 108,
+				"def": 148,
+				"spa": 0,
+				"spd": 44,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 12,
+				"spd": 22,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Steel"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "exeggutor",
+			"item": "hardstone",
+			"ability": "armortail",
+			"moves": [
+				"iceshard",
+				"lifedew",
+				"playrough",
+				"transform"
+			],
+			"nature": "quiet",
+			"evs": {
+				"hp": 60,
+				"atk": 220,
+				"def": 208,
+				"spa": 20,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 2,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Rock"
+		},
+		{
+			"name": "Mon1",
+			"species": "hoppip",
+			"item": "boosterenergy",
+			"ability": "intimidate",
+			"moves": [
+				"quiverdance",
+				"doubleshock",
+				"focuspunch",
+				"simplebeam"
+			],
+			"nature": "jolly",
+			"evs": {
+				"hp": 176,
+				"atk": 252,
+				"def": 80,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 19,
+				"spa": 31,
+				"spd": 1,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Psychic"
+		},
+		{
+			"name": "Mon2",
+			"species": "samurott",
+			"item": "quickball",
+			"ability": "intimidate",
+			"moves": [
+				"simplebeam",
+				"round",
+				"flamecharge",
+				"bulletseed"
+			],
+			"nature": "naive",
+			"evs": {
+				"hp": 160,
+				"atk": 92,
+				"def": 172,
+				"spa": 84,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 25,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Steel"
+		},
+		{
+			"name": "Mon3",
+			"species": "pignite",
+			"item": "wiseglasses",
+			"ability": "drizzle",
+			"moves": [
+				"flamewheel",
+				"coreenforcer",
+				"furycutter",
+				"spikes"
+			],
+			"nature": "modest",
+			"evs": {
+				"hp": 180,
+				"atk": 16,
+				"def": 120,
+				"spa": 96,
+				"spd": 96,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Electric"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 3 1 terastallize, move 3 2",
+			"p2": "move 3 -2 terastallize, switch 3"
+		},
+		{
+			"p1": "move 1 2, move 4 -1",
+			"p2": "move 1 1, move 4 1"
+		},
+		{
+			"p1": "move 1 1, move 2 1",
+			"p2": "move 4 -2, move 2 -1"
+		},
+		{
+			"p1": "move 1 1, switch 3",
+			"p2": "move 2 -2, move 4 -1"
+		},
+		{
+			"p1": "move 2 -2, move 4 2",
+			"p2": "move 2 -2, move 1 1"
+		},
+		{
+			"p1": "move 1 -2, move 4 2",
+			"p2": "move 3 -2, move 2 2"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 4, switch 3"
+		},
+		{
+			"p1": "move 3 -2, move 1 1",
+			"p2": "move 1 -2, move 4 1"
+		},
+		{
+			"p1": "move 4, move 1 -1",
+			"p2": "move 1 2, move 4 1"
+		},
+		{
+			"p1": "switch 3, move 3 1",
+			"p2": "move 2, move 4 1"
+		},
+		{
+			"p1": "switch 4, move 3 1",
+			"p2": "move 1 1, move 4 -1"
+		},
+		{
+			"p1": "move 1 1, switch 3",
+			"p2": "move 3 1, move 2 1"
+		}
+	],
+	"teams": [
+		"scenario-30a",
+		"scenario-107a"
+	]
+}

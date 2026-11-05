@@ -1,0 +1,262 @@
+{
+	"format": "gen8vgc2021",
+	"seed": "gen5,21605,35665,15740,58398",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "alcremielemoncream",
+			"item": "cobaberry",
+			"ability": "trace",
+			"moves": [
+				"skillswap",
+				"instruct",
+				"tackle",
+				"trick"
+			],
+			"nature": "bold",
+			"evs": {
+				"hp": 192,
+				"atk": 164,
+				"def": 152,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 21,
+				"spd": 0,
+				"spe": 11
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "stoutland",
+			"item": "kebiaberry",
+			"ability": "dancer",
+			"moves": [
+				"instruct",
+				"switcheroo",
+				"featherdance",
+				"swordsdance"
+			],
+			"nature": "modest",
+			"evs": {
+				"hp": 24,
+				"atk": 136,
+				"def": 196,
+				"spa": 152,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 8,
+				"atk": 31,
+				"def": 31,
+				"spa": 28,
+				"spd": 31,
+				"spe": 22
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "poliwag",
+			"item": "chartiberry",
+			"ability": "gorillatactics",
+			"moves": [
+				"closecombat",
+				"trick",
+				"featherdance",
+				"encore"
+			],
+			"nature": "impish",
+			"evs": {
+				"hp": 196,
+				"atk": 60,
+				"def": 152,
+				"spa": 32,
+				"spd": 68,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "gourgeistsmall",
+			"item": "heatrock",
+			"ability": "gorillatactics",
+			"moves": [
+				"featherdance",
+				"knockoff",
+				"encore",
+				"protect"
+			],
+			"nature": "impish",
+			"evs": {
+				"hp": 20,
+				"atk": 164,
+				"def": 12,
+				"spa": 192,
+				"spd": 88,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 22,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "gossifleur",
+			"item": "kebiaberry",
+			"ability": "trace",
+			"moves": [
+				"closecombat",
+				"encore",
+				"trick",
+				"instruct"
+			],
+			"nature": "timid",
+			"evs": {
+				"hp": 76,
+				"atk": 196,
+				"def": 236,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 20,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "turtonator",
+			"item": "blackglasses",
+			"ability": "gorillatactics",
+			"moves": [
+				"encore",
+				"tackle",
+				"skillswap",
+				"protect"
+			],
+			"nature": "quirky",
+			"evs": {
+				"hp": 152,
+				"atk": 12,
+				"def": 12,
+				"spa": 132,
+				"spd": 56,
+				"spe": 88
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 10,
+				"spa": 4,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "aromatisse",
+			"item": "silkscarf",
+			"ability": "gorillatactics",
+			"moves": [
+				"trick",
+				"switcheroo",
+				"protect",
+				"swordsdance"
+			],
+			"nature": "lonely",
+			"evs": {
+				"hp": 44,
+				"atk": 84,
+				"def": 132,
+				"spa": 188,
+				"spd": 60,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 16,
+				"atk": 31,
+				"def": 31,
+				"spa": 14,
+				"spd": 7,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "stunfiskgalar",
+			"item": "mistyseed",
+			"ability": "dancer",
+			"moves": [
+				"gastroacid",
+				"skillswap",
+				"knockoff",
+				"instruct"
+			],
+			"nature": "adamant",
+			"evs": {
+				"hp": 252,
+				"atk": 200,
+				"def": 56,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 9,
+				"atk": 31,
+				"def": 24,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 2 1, move 3 2",
+			"p2": "move 3 1, move 2 1"
+		}
+	]
+}

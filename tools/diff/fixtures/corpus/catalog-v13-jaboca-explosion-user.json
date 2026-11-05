@@ -1,0 +1,262 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,29740,56712,42077,20654",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "noivern",
+			"item": "jabocaberry",
+			"ability": "competitive",
+			"moves": [
+				"sunnyday",
+				"earthquake",
+				"closecombat",
+				"round"
+			],
+			"nature": "relaxed",
+			"evs": {
+				"hp": 32,
+				"atk": 6,
+				"def": 1,
+				"spa": 14,
+				"spd": 32,
+				"spe": 17
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "farigiraf",
+			"item": "cellbattery",
+			"ability": "grasspelt",
+			"moves": [
+				"cottonguard",
+				"crushclaw",
+				"gigatonhammer",
+				"minimize"
+			],
+			"nature": "calm",
+			"evs": {
+				"hp": 32,
+				"atk": 1,
+				"def": 5,
+				"spa": 8,
+				"spd": 6,
+				"spe": 11
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "dragalge",
+			"item": "mail",
+			"ability": "voltabsorb",
+			"moves": [
+				"meanlook",
+				"pound",
+				"chargebeam",
+				"afteryou"
+			],
+			"nature": "naughty",
+			"evs": {
+				"hp": 32,
+				"atk": 30,
+				"def": 6,
+				"spa": 3,
+				"spd": 18,
+				"spe": 14
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "gogoat",
+			"item": "gripclaw",
+			"ability": "stakeout",
+			"moves": [
+				"watershuriken",
+				"flatter",
+				"recycle",
+				"shellsmash"
+			],
+			"nature": "docile",
+			"evs": {
+				"hp": 32,
+				"atk": 10,
+				"def": 8,
+				"spa": 15,
+				"spd": 23,
+				"spe": 7
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "kommoo",
+			"item": "",
+			"ability": "longreach",
+			"moves": [
+				"explosion",
+				"steelroller",
+				"topsyturvy",
+				"rockwrecker"
+			],
+			"nature": "naive",
+			"evs": {
+				"hp": 32,
+				"atk": 10,
+				"def": 13,
+				"spa": 2,
+				"spd": 15,
+				"spe": 24
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "lycanrocdusk",
+			"item": "rowapberry",
+			"ability": "shielddust",
+			"moves": [
+				"armorcannon",
+				"poisonpowder",
+				"tailslap",
+				"psychicnoise"
+			],
+			"nature": "lax",
+			"evs": {
+				"hp": 32,
+				"atk": 19,
+				"def": 27,
+				"spa": 25,
+				"spd": 27,
+				"spe": 11
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "meowscarada",
+			"item": "stickybarb",
+			"ability": "forewarn",
+			"moves": [
+				"meteorbeam",
+				"bind",
+				"ficklebeam",
+				"aquatail"
+			],
+			"nature": "docile",
+			"evs": {
+				"hp": 32,
+				"atk": 27,
+				"def": 32,
+				"spa": 4,
+				"spd": 10,
+				"spe": 28
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "volcarona",
+			"item": "ringtarget",
+			"ability": "overgrow",
+			"moves": [
+				"burnup",
+				"iciclespear",
+				"finalgambit",
+				"perishsong"
+			],
+			"nature": "relaxed",
+			"evs": {
+				"hp": 32,
+				"atk": 7,
+				"def": 10,
+				"spa": 29,
+				"spd": 4,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 3 2, move 4",
+			"p2": "move 1, move 1 2"
+		}
+	]
+}

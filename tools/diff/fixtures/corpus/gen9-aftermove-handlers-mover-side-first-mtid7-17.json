@@ -1,0 +1,318 @@
+{
+	"format": "gen9vgc2023regd",
+	"seed": "gen5,48399,43101,5753,61985",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "ironjugulis",
+			"item": "ejectpack",
+			"ability": "receiver",
+			"moves": [
+				"magmastorm",
+				"mirrorcoat",
+				"snarl",
+				"harden"
+			],
+			"nature": "rash",
+			"evs": {
+				"hp": 196,
+				"atk": 240,
+				"def": 28,
+				"spa": 44,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N",
+			"teraType": "Rock"
+		},
+		{
+			"name": "Mon1",
+			"species": "wyrdeer",
+			"item": "ejectpack",
+			"ability": "battlearmor",
+			"moves": [
+				"spiritshackle",
+				"overheat",
+				"leafstorm",
+				"direclaw"
+			],
+			"nature": "timid",
+			"evs": {
+				"hp": 96,
+				"atk": 188,
+				"def": 120,
+				"spa": 92,
+				"spd": 12,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 16,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Grass"
+		},
+		{
+			"name": "Mon2",
+			"species": "fennekin",
+			"item": "ejectpack",
+			"ability": "fluffy",
+			"moves": [
+				"leafstorm",
+				"powertrip",
+				"saltcure",
+				"chargebeam"
+			],
+			"nature": "modest",
+			"evs": {
+				"hp": 240,
+				"atk": 252,
+				"def": 16,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 30,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 12,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Poison"
+		},
+		{
+			"name": "Mon3",
+			"species": "decidueyehisui",
+			"item": "ejectpack",
+			"ability": "justified",
+			"moves": [
+				"partingshot",
+				"waterpulse",
+				"incinerate",
+				"falseswipe"
+			],
+			"nature": "bold",
+			"evs": {
+				"hp": 208,
+				"atk": 120,
+				"def": 112,
+				"spa": 68,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 9,
+				"spd": 0,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Poison"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "krokorok",
+			"item": "laggingtail",
+			"ability": "poisonpoint",
+			"moves": [
+				"psychic",
+				"nightdaze",
+				"shelter",
+				"screech"
+			],
+			"nature": "adamant",
+			"evs": {
+				"hp": 124,
+				"atk": 108,
+				"def": 92,
+				"spa": 132,
+				"spd": 4,
+				"spe": 48
+			},
+			"ivs": {
+				"hp": 15,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 3,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Ground"
+		},
+		{
+			"name": "Mon1",
+			"species": "flareon",
+			"item": "ejectpack",
+			"ability": "drizzle",
+			"moves": [
+				"partingshot",
+				"cosmicpower",
+				"block",
+				"quiverdance"
+			],
+			"nature": "sassy",
+			"evs": {
+				"hp": 112,
+				"atk": 232,
+				"def": 156,
+				"spa": 8,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 2,
+				"spa": 31,
+				"spd": 20,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Dark"
+		},
+		{
+			"name": "Mon2",
+			"species": "pikachupartner",
+			"item": "ejectpack",
+			"ability": "moldbreaker",
+			"moves": [
+				"sweetkiss",
+				"luminacrash",
+				"spiritshackle",
+				"partingshot"
+			],
+			"nature": "naughty",
+			"evs": {
+				"hp": 68,
+				"atk": 168,
+				"def": 196,
+				"spa": 76,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 8
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Grass"
+		},
+		{
+			"name": "Mon3",
+			"species": "deerlingautumn",
+			"item": "skyplate",
+			"ability": "simple",
+			"moves": [
+				"vinewhip",
+				"snore",
+				"growl",
+				"dracometeor"
+			],
+			"nature": "calm",
+			"evs": {
+				"hp": 232,
+				"atk": 124,
+				"def": 96,
+				"spa": 56,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 19,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Fire"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 1 1, move 3 1",
+			"p2": "move 4 2 terastallize, move 2"
+		},
+		{
+			"p1": "pass, switch 4",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 4, pass"
+		},
+		{
+			"p1": "move 1 -2 terastallize, move 4 2",
+			"p2": "move 4 1, switch 3"
+		},
+		{
+			"p1": "switch 3, move 4 2",
+			"p2": "move 3, move 3 -1"
+		},
+		{
+			"p1": "switch 4, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 3 -2, move 4 -1",
+			"p2": "move 1 1, move 4 1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "pass, switch 3"
+		},
+		{
+			"p1": "move 4 1, switch 4",
+			"p2": "move 3, move 1 1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "pass, switch 3"
+		},
+		{
+			"p1": "move 3 2, move 4 -1",
+			"p2": "move 1 1, move 2 1"
+		},
+		{
+			"p1": "move 4 1, move 1 -1",
+			"p2": "move 1 2, move 1 1"
+		}
+	],
+	"teams": [
+		"scenario-266a",
+		"scenario-185a"
+	]
+}

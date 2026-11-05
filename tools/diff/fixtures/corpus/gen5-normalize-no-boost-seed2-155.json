@@ -1,0 +1,262 @@
+{
+	"format": "gen5vgc2013",
+	"seed": "gen5,15823,56981,3396,56509",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "pidove",
+			"item": "shedshell",
+			"ability": "normalize",
+			"moves": [
+				"vitalthrow",
+				"drillpeck",
+				"dracometeor",
+				"softboiled"
+			],
+			"nature": "calm",
+			"evs": {
+				"hp": 192,
+				"atk": 80,
+				"def": 68,
+				"spa": 132,
+				"spd": 36,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 9,
+				"spd": 31,
+				"spe": 16
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "ivysaur",
+			"item": "psychicgem",
+			"ability": "lightningrod",
+			"moves": [
+				"zapcannon",
+				"sludge",
+				"guardswap",
+				"shadowball"
+			],
+			"nature": "timid",
+			"evs": {
+				"hp": 8,
+				"atk": 240,
+				"def": 64,
+				"spa": 196,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "fearow",
+			"item": "softsand",
+			"ability": "sandveil",
+			"moves": [
+				"block",
+				"chipaway",
+				"scaryface",
+				"reversal"
+			],
+			"nature": "docile",
+			"evs": {
+				"hp": 156,
+				"atk": 128,
+				"def": 76,
+				"spa": 88,
+				"spd": 60,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 15,
+				"spd": 31,
+				"spe": 4
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "simipour",
+			"item": "starfberry",
+			"ability": "imposter",
+			"moves": [
+				"morningsun",
+				"scald",
+				"ominouswind",
+				"flameburst"
+			],
+			"nature": "serious",
+			"evs": {
+				"hp": 124,
+				"atk": 196,
+				"def": 140,
+				"spa": 48,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "slowbro",
+			"item": "magoberry",
+			"ability": "superluck",
+			"moves": [
+				"guardswap",
+				"woodhammer",
+				"highjumpkick",
+				"scratch"
+			],
+			"nature": "relaxed",
+			"evs": {
+				"hp": 76,
+				"atk": 176,
+				"def": 80,
+				"spa": 84,
+				"spd": 44,
+				"spe": 48
+			},
+			"ivs": {
+				"hp": 3,
+				"atk": 31,
+				"def": 6,
+				"spa": 31,
+				"spd": 3,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "empoleon",
+			"item": "upgrade",
+			"ability": "solarpower",
+			"moves": [
+				"firepunch",
+				"workup",
+				"mudsport",
+				"furyattack"
+			],
+			"nature": "lax",
+			"evs": {
+				"hp": 188,
+				"atk": 68,
+				"def": 248,
+				"spa": 4,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 11,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "mareep",
+			"item": "wikiberry",
+			"ability": "telepathy",
+			"moves": [
+				"toxicspikes",
+				"recover",
+				"doubleslap",
+				"skullbash"
+			],
+			"nature": "relaxed",
+			"evs": {
+				"hp": 208,
+				"atk": 156,
+				"def": 144,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "slowbro",
+			"item": "oranberry",
+			"ability": "harvest",
+			"moves": [
+				"faketears",
+				"sweetscent",
+				"nightshade",
+				"aurorabeam"
+			],
+			"nature": "serious",
+			"evs": {
+				"hp": 16,
+				"atk": 28,
+				"def": 112,
+				"spa": 16,
+				"spd": 168,
+				"spe": 116
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 2 2, move 2 1",
+			"p2": "move 4 1, move 3"
+		}
+	]
+}

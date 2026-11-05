@@ -1,0 +1,262 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,25497,60077,52019,6514",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "mudsdale",
+			"item": "colburberry",
+			"ability": "sandforce",
+			"moves": [
+				"grassyterrain",
+				"wavecrash",
+				"shellsmash",
+				"kowtowcleave"
+			],
+			"nature": "impish",
+			"evs": {
+				"hp": 32,
+				"atk": 6,
+				"def": 17,
+				"spa": 30,
+				"spd": 12,
+				"spe": 18
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "raichualola",
+			"item": "grassyseed",
+			"ability": "minus",
+			"moves": [
+				"psyshock",
+				"vacuumwave",
+				"skillswap",
+				"psychicterrain"
+			],
+			"nature": "impish",
+			"evs": {
+				"hp": 32,
+				"atk": 25,
+				"def": 0,
+				"spa": 2,
+				"spd": 22,
+				"spe": 5
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "kangaskhan",
+			"item": "bigroot",
+			"ability": "emergencyexit",
+			"moves": [
+				"dazzlinggleam",
+				"psyshock",
+				"phantomforce",
+				"tackle"
+			],
+			"nature": "hardy",
+			"evs": {
+				"hp": 32,
+				"atk": 17,
+				"def": 16,
+				"spa": 16,
+				"spd": 3,
+				"spe": 21
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "hippowdon",
+			"item": "lifeorb",
+			"ability": "parentalbond",
+			"moves": [
+				"detect",
+				"superpower",
+				"nastyplot",
+				"coil"
+			],
+			"nature": "sassy",
+			"evs": {
+				"hp": 32,
+				"atk": 27,
+				"def": 28,
+				"spa": 17,
+				"spd": 19,
+				"spe": 2
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "toxtricity",
+			"item": "fairyfeather",
+			"ability": "shadowtag",
+			"moves": [
+				"dragonclaw",
+				"auroraveil",
+				"iceshard",
+				"tailwind"
+			],
+			"nature": "quirky",
+			"evs": {
+				"hp": 32,
+				"atk": 23,
+				"def": 26,
+				"spa": 21,
+				"spd": 12,
+				"spe": 27
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "hydreigon",
+			"item": "yacheberry",
+			"ability": "opportunist",
+			"moves": [
+				"psychup",
+				"steelroller",
+				"armorcannon",
+				"firstimpression"
+			],
+			"nature": "impish",
+			"evs": {
+				"hp": 32,
+				"atk": 10,
+				"def": 21,
+				"spa": 9,
+				"spd": 18,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "delphox",
+			"item": "electricseed",
+			"ability": "sandforce",
+			"moves": [
+				"tickle",
+				"feint",
+				"aurasphere",
+				"magicpowder"
+			],
+			"nature": "jolly",
+			"evs": {
+				"hp": 32,
+				"atk": 32,
+				"def": 0,
+				"spa": 4,
+				"spd": 28,
+				"spe": 23
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "alakazam",
+			"item": "terrainextender",
+			"ability": "sandforce",
+			"moves": [
+				"sandstorm",
+				"perishsong",
+				"gigadrain",
+				"smackdown"
+			],
+			"nature": "careful",
+			"evs": {
+				"hp": 32,
+				"atk": 30,
+				"def": 5,
+				"spa": 6,
+				"spd": 28,
+				"spe": 11
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 3, move 2 1",
+			"p2": "move 4, move 1 1"
+		}
+	]
+}

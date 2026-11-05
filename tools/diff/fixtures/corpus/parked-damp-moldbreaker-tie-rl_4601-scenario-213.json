@@ -1,0 +1,262 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,51497,5919,40618,45001",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "indeedeef",
+			"item": "lumberry",
+			"ability": "moldbreaker",
+			"moves": [
+				"explosion",
+				"selfdestruct",
+				"wavecrash",
+				"firelash"
+			],
+			"nature": "mild",
+			"evs": {
+				"hp": 32,
+				"atk": 8,
+				"def": 10,
+				"spa": 17,
+				"spd": 31,
+				"spe": 4
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "clawitzer",
+			"item": "sitrusberry",
+			"ability": "moldbreaker",
+			"moves": [
+				"selfdestruct",
+				"explosion",
+				"shellsidearm",
+				"sacredsword"
+			],
+			"nature": "sassy",
+			"evs": {
+				"hp": 32,
+				"atk": 32,
+				"def": 11,
+				"spa": 32,
+				"spd": 14,
+				"spe": 10
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "sinistcha",
+			"item": "smoothrock",
+			"ability": "damp",
+			"moves": [
+				"selfdestruct",
+				"explosion",
+				"lowsweep",
+				"reflecttype"
+			],
+			"nature": "adamant",
+			"evs": {
+				"hp": 32,
+				"atk": 10,
+				"def": 25,
+				"spa": 6,
+				"spd": 15,
+				"spe": 13
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "cinderace",
+			"item": "hardstone",
+			"ability": "damp",
+			"moves": [
+				"explosion",
+				"selfdestruct",
+				"firepunch",
+				"torment"
+			],
+			"nature": "careful",
+			"evs": {
+				"hp": 32,
+				"atk": 22,
+				"def": 17,
+				"spa": 19,
+				"spd": 8,
+				"spe": 17
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "altaria",
+			"item": "zoomlens",
+			"ability": "damp",
+			"moves": [
+				"selfdestruct",
+				"explosion",
+				"bonerush",
+				"smackdown"
+			],
+			"nature": "quiet",
+			"evs": {
+				"hp": 32,
+				"atk": 7,
+				"def": 11,
+				"spa": 23,
+				"spd": 27,
+				"spe": 7
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "aegislash",
+			"item": "heatrock",
+			"ability": "damp",
+			"moves": [
+				"selfdestruct",
+				"explosion",
+				"coil",
+				"aurawheel"
+			],
+			"nature": "sassy",
+			"evs": {
+				"hp": 32,
+				"atk": 21,
+				"def": 32,
+				"spa": 14,
+				"spd": 13,
+				"spe": 27
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "meowsticf",
+			"item": "payapaberry",
+			"ability": "aftermath",
+			"moves": [
+				"selfdestruct",
+				"explosion",
+				"lastresort",
+				"endure"
+			],
+			"nature": "hardy",
+			"evs": {
+				"hp": 32,
+				"atk": 31,
+				"def": 1,
+				"spa": 5,
+				"spd": 4,
+				"spe": 28
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "typhlosionhisui",
+			"item": "babiriberry",
+			"ability": "aftermath",
+			"moves": [
+				"selfdestruct",
+				"explosion",
+				"belch",
+				"powerswap"
+			],
+			"nature": "naughty",
+			"evs": {
+				"hp": 32,
+				"atk": 20,
+				"def": 2,
+				"spa": 13,
+				"spd": 27,
+				"spe": 22
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 4 1, move 4 2",
+			"p2": "move 1, move 1"
+		}
+	]
+}

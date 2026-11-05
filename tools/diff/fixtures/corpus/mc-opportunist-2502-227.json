@@ -1,0 +1,262 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,14410,13144,48491,60384",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "pyroar",
+			"item": "shedshell",
+			"ability": "berserk",
+			"moves": [
+				"entrainment",
+				"hornleech",
+				"clangingscales",
+				"flamecharge"
+			],
+			"nature": "brave",
+			"evs": {
+				"hp": 32,
+				"atk": 24,
+				"def": 18,
+				"spa": 27,
+				"spd": 4,
+				"spe": 22
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "typhlosion",
+			"item": "",
+			"ability": "earlybird",
+			"moves": [
+				"xscissor",
+				"powergem",
+				"encore",
+				"knockoff"
+			],
+			"nature": "quiet",
+			"evs": {
+				"hp": 32,
+				"atk": 1,
+				"def": 5,
+				"spa": 10,
+				"spd": 23,
+				"spe": 14
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "scovillain",
+			"item": "yacheberry",
+			"ability": "forecast",
+			"moves": [
+				"tickle",
+				"tailwind",
+				"flamecharge",
+				"grassknot"
+			],
+			"nature": "adamant",
+			"evs": {
+				"hp": 32,
+				"atk": 5,
+				"def": 31,
+				"spa": 29,
+				"spd": 20,
+				"spe": 25
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "weavile",
+			"item": "grassyseed",
+			"ability": "dragonize",
+			"moves": [
+				"faketears",
+				"powergem",
+				"bugbite",
+				"leechlife"
+			],
+			"nature": "bold",
+			"evs": {
+				"hp": 32,
+				"atk": 14,
+				"def": 19,
+				"spa": 2,
+				"spd": 11,
+				"spe": 16
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "pelipper",
+			"item": "metalcoat",
+			"ability": "opportunist",
+			"moves": [
+				"hex",
+				"hornleech",
+				"bulletpunch",
+				"psychicnoise"
+			],
+			"nature": "docile",
+			"evs": {
+				"hp": 32,
+				"atk": 16,
+				"def": 21,
+				"spa": 12,
+				"spd": 20,
+				"spe": 17
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "archaludon",
+			"item": "zoomlens",
+			"ability": "aromaveil",
+			"moves": [
+				"tickle",
+				"detect",
+				"sunnyday",
+				"imprison"
+			],
+			"nature": "serious",
+			"evs": {
+				"hp": 32,
+				"atk": 30,
+				"def": 11,
+				"spa": 23,
+				"spd": 32,
+				"spe": 9
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "squawkabilly",
+			"item": "poisonbarb",
+			"ability": "disguise",
+			"moves": [
+				"trickroom",
+				"reflect",
+				"calmmind",
+				"tailwind"
+			],
+			"nature": "lax",
+			"evs": {
+				"hp": 32,
+				"atk": 6,
+				"def": 14,
+				"spa": 12,
+				"spd": 27,
+				"spe": 18
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "farigiraf",
+			"item": "electricseed",
+			"ability": "plus",
+			"moves": [
+				"psychicfangs",
+				"closecombat",
+				"sacredsword",
+				"doubleedge"
+			],
+			"nature": "timid",
+			"evs": {
+				"hp": 32,
+				"atk": 26,
+				"def": 13,
+				"spa": 19,
+				"spd": 21,
+				"spe": 31
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 4 1, move 3 2",
+			"p2": "move 1 2, move 3"
+		}
+	]
+}

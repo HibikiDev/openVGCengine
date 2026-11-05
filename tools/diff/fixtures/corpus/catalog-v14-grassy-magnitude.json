@@ -1,0 +1,262 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,53702,60416,53916,16648",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "hippowdon",
+			"item": "colburberry",
+			"ability": "drought",
+			"moves": [
+				"furycutter",
+				"teleport",
+				"secretpower",
+				"razorwind"
+			],
+			"nature": "timid",
+			"evs": {
+				"hp": 32,
+				"atk": 20,
+				"def": 11,
+				"spa": 1,
+				"spd": 24,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "starmie",
+			"item": "terrainextender",
+			"ability": "sandrush",
+			"moves": [
+				"skullbash",
+				"teleport",
+				"furycutter",
+				"magnitude"
+			],
+			"nature": "quirky",
+			"evs": {
+				"hp": 32,
+				"atk": 19,
+				"def": 9,
+				"spa": 16,
+				"spd": 24,
+				"spe": 31
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "pelipper",
+			"item": "twistedspoon",
+			"ability": "hypercutter",
+			"moves": [
+				"mudsport",
+				"skullbash",
+				"embargo",
+				"furycutter"
+			],
+			"nature": "relaxed",
+			"evs": {
+				"hp": 32,
+				"atk": 5,
+				"def": 27,
+				"spa": 23,
+				"spd": 14,
+				"spe": 5
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "kangaskhan",
+			"item": "habanberry",
+			"ability": "swarm",
+			"moves": [
+				"mudsport",
+				"nightmare",
+				"skullbash",
+				"embargo"
+			],
+			"nature": "naive",
+			"evs": {
+				"hp": 32,
+				"atk": 26,
+				"def": 4,
+				"spa": 27,
+				"spd": 10,
+				"spe": 19
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "mimikyu",
+			"item": "persimberry",
+			"ability": "purifyingsalt",
+			"moves": [
+				"razorwind",
+				"magnitude",
+				"secretpower",
+				"nightmare"
+			],
+			"nature": "jolly",
+			"evs": {
+				"hp": 32,
+				"atk": 2,
+				"def": 22,
+				"spa": 22,
+				"spd": 13,
+				"spe": 3
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "zoroark",
+			"item": "yacheberry",
+			"ability": "grassysurge",
+			"moves": [
+				"magnitude",
+				"autotomize",
+				"mudsport",
+				"skullbash"
+			],
+			"nature": "brave",
+			"evs": {
+				"hp": 32,
+				"atk": 20,
+				"def": 30,
+				"spa": 5,
+				"spd": 16,
+				"spe": 20
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "aerodactyl",
+			"item": "psychicseed",
+			"ability": "guts",
+			"moves": [
+				"secretpower",
+				"mudsport",
+				"skullbash",
+				"watersport"
+			],
+			"nature": "jolly",
+			"evs": {
+				"hp": 32,
+				"atk": 9,
+				"def": 12,
+				"spa": 9,
+				"spd": 2,
+				"spe": 10
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "dragonite",
+			"item": "poisonbarb",
+			"ability": "poisonheal",
+			"moves": [
+				"furycutter",
+				"embargo",
+				"mudsport",
+				"razorwind"
+			],
+			"nature": "modest",
+			"evs": {
+				"hp": 32,
+				"atk": 2,
+				"def": 26,
+				"spa": 15,
+				"spd": 18,
+				"spe": 28
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 3 2, move 1 2",
+			"p2": "move 3 1, move 1"
+		}
+	]
+}

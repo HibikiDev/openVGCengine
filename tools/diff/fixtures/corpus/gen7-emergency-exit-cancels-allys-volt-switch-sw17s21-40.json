@@ -1,0 +1,311 @@
+{
+	"format": "gen7vgc2017",
+	"seed": "gen5,43928,62104,19770,11244",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Lilligant",
+			"item": "Grassium Z",
+			"ability": "Chlorophyll",
+			"moves": [
+				"Protect",
+				"After You",
+				"Sleep Powder",
+				"Energy Ball"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 0,
+				"atk": 0,
+				"def": 0,
+				"spa": 252,
+				"spd": 4,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "Salazzle",
+			"item": "Focus Sash",
+			"ability": "Corrosion",
+			"moves": [
+				"Sludge Bomb",
+				"Flamethrower",
+				"Knock Off",
+				"Protect"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 0,
+				"atk": 0,
+				"def": 0,
+				"spa": 252,
+				"spd": 4,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "Pheromosa",
+			"item": "Life Orb",
+			"ability": "Beast Boost",
+			"moves": [
+				"Focus Blast",
+				"Hidden Power Fire",
+				"Protect",
+				"U-turn"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 4,
+				"atk": 252,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 30,
+				"spe": 30,
+				"spa": 30,
+				"spd": 31
+			},
+			"level": 50,
+			"gender": "N",
+			"hpType": "Fire"
+		},
+		{
+			"name": "Mon3",
+			"species": "Hariyama",
+			"item": "Flame Orb",
+			"ability": "Guts",
+			"moves": [
+				"Fake Out",
+				"Knock Off",
+				"Heavy Slam",
+				"Feint"
+			],
+			"nature": "Brave",
+			"evs": {
+				"hp": 28,
+				"atk": 244,
+				"def": 108,
+				"spa": 0,
+				"spd": 124,
+				"spe": 4
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Tapu Lele",
+			"item": "Choice Scarf",
+			"ability": "Psychic Surge",
+			"moves": [
+				"Psychic",
+				"Dazzling Gleam",
+				"Shadow Ball",
+				"Thunderbolt"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 0,
+				"atk": 0,
+				"def": 12,
+				"spa": 244,
+				"spd": 4,
+				"spe": 248
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "Incineroar",
+			"item": "Incinium Z",
+			"ability": "Blaze",
+			"moves": [
+				"Brick Break",
+				"Darkest Lariat",
+				"Fake Out",
+				"U-turn"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 164,
+				"atk": 252,
+				"def": 0,
+				"spa": 0,
+				"spd": 4,
+				"spe": 84
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "Golisopod",
+			"item": "Assault Vest",
+			"ability": "Emergency Exit",
+			"moves": [
+				"Poison Jab",
+				"Leech Life",
+				"First Impression",
+				"Aqua Jet"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 252,
+				"atk": 0,
+				"def": 100,
+				"spa": 0,
+				"spd": 156,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "Tapu Koko",
+			"item": "Fairium Z",
+			"ability": "Electric Surge",
+			"moves": [
+				"Protect",
+				"Sky Drop",
+				"Volt Switch",
+				"Thunderbolt"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 0,
+				"atk": 0,
+				"def": 0,
+				"spa": 252,
+				"spd": 4,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"turns": [
+		{
+			"p1": "switch 4, move 4",
+			"p2": "move 1 2, move 4 -1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "pass, switch 3"
+		},
+		{
+			"p1": "move 1 1, move 3 -1",
+			"p2": "move 1 2, move 3 2"
+		},
+		{
+			"p1": "move 4 -2, move 3 -1",
+			"p2": "switch 4, move 3 -1"
+		},
+		{
+			"p1": "pass, switch 4",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 1 -2, move 1",
+			"p2": "move 4 1, move 2 1"
+		},
+		{
+			"p1": "move 1 1, switch 3",
+			"p2": "move 3 -2, move 3 1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "pass, switch 3"
+		},
+		{
+			"p1": "switch 3, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 4 2 zmove, move 4 1",
+			"p2": "move 3 2, move 1 -1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 3, pass"
+		},
+		{
+			"p1": "move 2 -2, pass",
+			"p2": "move 2 2, switch 3"
+		}
+	],
+	"teams": [
+		"U17-123",
+		"U17-186"
+	]
+}

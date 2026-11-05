@@ -1,0 +1,318 @@
+{
+	"format": "gen9vgc2024regg",
+	"seed": "gen5,1828,40953,60993,6255",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "spidops",
+			"item": "choicescarf",
+			"ability": "protosynthesis",
+			"moves": [
+				"worryseed",
+				"lick",
+				"reflecttype",
+				"dualwingbeat"
+			],
+			"nature": "modest",
+			"evs": {
+				"hp": 156,
+				"atk": 108,
+				"def": 200,
+				"spa": 44,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 15
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Dragon"
+		},
+		{
+			"name": "Mon1",
+			"species": "giratinaorigin",
+			"item": "choicescarf",
+			"ability": "adaptability",
+			"moves": [
+				"brickbreak",
+				"shadowball",
+				"spitup",
+				"worryseed"
+			],
+			"nature": "serious",
+			"evs": {
+				"hp": 176,
+				"atk": 120,
+				"def": 64,
+				"spa": 12,
+				"spd": 136,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 8,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N",
+			"teraType": "Stellar"
+		},
+		{
+			"name": "Mon2",
+			"species": "froslass",
+			"item": "heavyball",
+			"ability": "psychicsurge",
+			"moves": [
+				"strengthsap",
+				"simplebeam",
+				"mist",
+				"steameruption"
+			],
+			"nature": "mild",
+			"evs": {
+				"hp": 232,
+				"atk": 156,
+				"def": 40,
+				"spa": 24,
+				"spd": 56,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 8,
+				"def": 31,
+				"spa": 9,
+				"spd": 31,
+				"spe": 12
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Ground"
+		},
+		{
+			"name": "Mon3",
+			"species": "poltchageist",
+			"item": "cloversweet",
+			"ability": "drizzle",
+			"moves": [
+				"magneticflux",
+				"boomburst",
+				"transform",
+				"guardswap"
+			],
+			"nature": "naive",
+			"evs": {
+				"hp": 12,
+				"atk": 184,
+				"def": 0,
+				"spa": 180,
+				"spd": 96,
+				"spe": 36
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N",
+			"teraType": "Bug"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "vivillongarden",
+			"item": "bignugget",
+			"ability": "neutralizinggas",
+			"moves": [
+				"strength",
+				"petaldance",
+				"lunge",
+				"coreenforcer"
+			],
+			"nature": "naive",
+			"evs": {
+				"hp": 184,
+				"atk": 16,
+				"def": 136,
+				"spa": 172,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 28,
+				"atk": 9,
+				"def": 31,
+				"spa": 31,
+				"spd": 25,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Flying"
+		},
+		{
+			"name": "Mon1",
+			"species": "slowpoke",
+			"item": "boosterenergy",
+			"ability": "superluck",
+			"moves": [
+				"rockwrecker",
+				"makeitrain",
+				"powdersnow",
+				"coreenforcer"
+			],
+			"nature": "sassy",
+			"evs": {
+				"hp": 16,
+				"atk": 228,
+				"def": 96,
+				"spa": 4,
+				"spd": 76,
+				"spe": 88
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 5,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Ground"
+		},
+		{
+			"name": "Mon2",
+			"species": "gengar",
+			"item": "choicescarf",
+			"ability": "unnerve",
+			"moves": [
+				"terablast",
+				"sweetkiss",
+				"trick",
+				"worryseed"
+			],
+			"nature": "modest",
+			"evs": {
+				"hp": 204,
+				"atk": 168,
+				"def": 68,
+				"spa": 68,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 17,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Dragon"
+		},
+		{
+			"name": "Mon3",
+			"species": "baxcalibur",
+			"item": "choicescarf",
+			"ability": "unnerve",
+			"moves": [
+				"fierydance",
+				"simplebeam",
+				"judgment",
+				"bugbite"
+			],
+			"nature": "mild",
+			"evs": {
+				"hp": 232,
+				"atk": 8,
+				"def": 168,
+				"spa": 100,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Ground"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 2 -2 terastallize, move 4 1",
+			"p2": "switch 4, move 4"
+		},
+		{
+			"p1": "switch 4, move 4 -1",
+			"p2": "move 2 1, switch 4"
+		},
+		{
+			"p1": "move 1, move 4 -1",
+			"p2": "move 2 2, move 1 1 terastallize"
+		},
+		{
+			"p1": "switch 3, move 4 -1",
+			"p2": "switch 4, switch 3"
+		},
+		{
+			"p1": "move 2 1, move 4 2",
+			"p2": "move 3, move 4 -1"
+		},
+		{
+			"p1": "move 4 -2, move 4 1",
+			"p2": "move 4, switch 3"
+		},
+		{
+			"p1": "move 1 2, move 4 2",
+			"p2": "switch 3, move 3 -1"
+		},
+		{
+			"p1": "move 1 -2, move 4 1",
+			"p2": "move 2 1, move 3 1"
+		},
+		{
+			"p1": "move 2 -2, switch 4",
+			"p2": "move 2 -2, move 3 1"
+		},
+		{
+			"p1": "move 2 1, switch 4",
+			"p2": "switch 4, switch 3"
+		},
+		{
+			"p1": "move 2 -2, move 4 1",
+			"p2": "move 4 2, switch 3"
+		},
+		{
+			"p1": "move 2 1, switch 3",
+			"p2": "move 4 1, move 2"
+		}
+	],
+	"teams": [
+		"scenario-289b",
+		"scenario-255b"
+	]
+}

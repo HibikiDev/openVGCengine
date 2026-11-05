@@ -1,0 +1,25 @@
+{
+	"format": "gen9vgc2025regi",
+	"formatName": "[Gen 9] VGC 2025 Reg I",
+	"mod": "gen9",
+	"gameType": "doubles",
+	"minSourceGen": 9,
+	"ruleset": [
+		"Flat Rules",
+		"!! Adjust Level = 50",
+		"Min Source Gen = 9",
+		"VGC Timer",
+		"Open Team Sheets",
+		"Limit Two Restricted"
+	],
+	"banlist": [],
+	"counts": {
+		"species": 868,
+		"megaForms": 0,
+		"moves": 682,
+		"abilities": 269,
+		"items": 249,
+		"types": 19
+	},
+	"generatedAt": "2026-10-25T07:12:26.520Z"
+}

@@ -1,0 +1,278 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,34498,29081,55117,55776",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "staraptor",
+			"item": "tangaberry",
+			"ability": "trace",
+			"moves": [
+				"aquajet",
+				"flail",
+				"pinmissile",
+				"grassknot"
+			],
+			"nature": "brave",
+			"evs": {
+				"hp": 32,
+				"atk": 24,
+				"def": 1,
+				"spa": 18,
+				"spd": 7,
+				"spe": 27
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "baxcalibur",
+			"item": "damprock",
+			"ability": "imposter",
+			"moves": [
+				"wonderroom",
+				"mountaingale",
+				"furyattack",
+				"toxicspikes"
+			],
+			"nature": "serious",
+			"evs": {
+				"hp": 32,
+				"atk": 6,
+				"def": 7,
+				"spa": 16,
+				"spd": 31,
+				"spe": 20
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "dragalge",
+			"item": "yacheberry",
+			"ability": "drizzle",
+			"moves": [
+				"poisonpowder",
+				"highjumpkick",
+				"thunder",
+				"accelerock"
+			],
+			"nature": "calm",
+			"evs": {
+				"hp": 32,
+				"atk": 24,
+				"def": 0,
+				"spa": 5,
+				"spd": 6,
+				"spe": 5
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "salamence",
+			"item": "mysticwater",
+			"ability": "trace",
+			"moves": [
+				"pounce",
+				"recycle",
+				"burningjealousy",
+				"lowsweep"
+			],
+			"nature": "docile",
+			"evs": {
+				"hp": 32,
+				"atk": 24,
+				"def": 21,
+				"spa": 26,
+				"spd": 16,
+				"spe": 23
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "perrserker",
+			"item": "mentalherb",
+			"ability": "trace",
+			"moves": [
+				"flowertrick",
+				"magicroom",
+				"gigaimpact",
+				"tropkick"
+			],
+			"nature": "rash",
+			"evs": {
+				"hp": 32,
+				"atk": 25,
+				"def": 9,
+				"spa": 3,
+				"spd": 32,
+				"spe": 8
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "maushold",
+			"item": "zoomlens",
+			"ability": "imposter",
+			"moves": [
+				"stuffcheeks",
+				"corrosivegas",
+				"bugbite",
+				"smackdown"
+			],
+			"nature": "jolly",
+			"evs": {
+				"hp": 32,
+				"atk": 20,
+				"def": 24,
+				"spa": 18,
+				"spd": 0,
+				"spe": 8
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "perrserker",
+			"item": "oranberry",
+			"ability": "intimidate",
+			"moves": [
+				"fairylock",
+				"bravebird",
+				"doublehit",
+				"recover"
+			],
+			"nature": "naughty",
+			"evs": {
+				"hp": 32,
+				"atk": 13,
+				"def": 4,
+				"spa": 3,
+				"spd": 30,
+				"spe": 11
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "basculegionf",
+			"item": "miracleseed",
+			"ability": "drizzle",
+			"moves": [
+				"spicyextract",
+				"moonlight",
+				"twinbeam",
+				"aircutter"
+			],
+			"nature": "docile",
+			"evs": {
+				"hp": 32,
+				"atk": 9,
+				"def": 28,
+				"spa": 21,
+				"spd": 12,
+				"spe": 17
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 3 2, move 4 2",
+			"p2": "move 4 2, move 2 2"
+		},
+		{
+			"p1": "move 3 -2, move 3 2",
+			"p2": "move 4 1, move 1 -1"
+		},
+		{
+			"p1": "move 3 -2, move 4 2",
+			"p2": "move 1 2, move 3 1"
+		},
+		{
+			"p1": "move 2 1, move 4 1",
+			"p2": "move 4 1, move 4 2"
+		},
+		{
+			"p1": "move 2 2, switch 4",
+			"p2": "move 1 1, switch 3"
+		}
+	]
+}

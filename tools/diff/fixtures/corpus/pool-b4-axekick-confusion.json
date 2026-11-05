@@ -1,0 +1,322 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,24768,1753,43940,42956",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Sylveon",
+			"item": "Fairy Feather",
+			"ability": "Pixilate",
+			"moves": [
+				"axekick",
+				"Hyper Beam",
+				"Calm Mind",
+				"swagger"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 9,
+				"atk": 0,
+				"def": 22,
+				"spa": 30,
+				"spd": 0,
+				"spe": 5
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "Sinistcha",
+			"item": "Sitrus Berry",
+			"ability": "Hospitality",
+			"moves": [
+				"Matcha Gotcha",
+				"growth",
+				"clearsmog",
+				"Protect"
+			],
+			"nature": "Bold",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 4,
+				"spa": 0,
+				"spd": 30,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "Milotic",
+			"item": "Leftovers",
+			"ability": "Competitive",
+			"moves": [
+				"endeavor",
+				"Ice Beam",
+				"Icy Wind",
+				"swagger"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 31,
+				"atk": 0,
+				"def": 21,
+				"spa": 11,
+				"spd": 1,
+				"spe": 1
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "Salamence",
+			"item": "Salamencite",
+			"ability": "Intimidate",
+			"moves": [
+				"Hyper Voice",
+				"supercellslam",
+				"snowscape",
+				"Draco Meteor"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 2,
+				"atk": 0,
+				"def": 0,
+				"spa": 32,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Floette-Eternal",
+			"item": "Floettite",
+			"ability": "Flower Veil",
+			"moves": [
+				"axekick",
+				"Dazzling Gleam",
+				"growth",
+				"Protect"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 9,
+				"spa": 15,
+				"spd": 1,
+				"spe": 9
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "Incineroar",
+			"item": "Sitrus Berry",
+			"ability": "Intimidate",
+			"moves": [
+				"endeavor",
+				"Snarl",
+				"Fake Out",
+				"confuseray"
+			],
+			"nature": "Careful",
+			"evs": {
+				"hp": 31,
+				"atk": 0,
+				"def": 8,
+				"spa": 0,
+				"spd": 10,
+				"spe": 17
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "Archaludon",
+			"item": "Leftovers",
+			"ability": "Stamina",
+			"moves": [
+				"Flash Cannon",
+				"Dragon Pulse",
+				"supercellslam",
+				"swagger"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 1,
+				"spa": 5,
+				"spd": 25,
+				"spe": 3
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "Basculegion",
+			"item": "Choice Scarf",
+			"ability": "Adaptability",
+			"moves": [
+				"endeavor",
+				"nightshade",
+				"Aqua Jet",
+				"Flip Turn"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 1,
+				"atk": 32,
+				"def": 1,
+				"spa": 0,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 4 1, move 3 2",
+			"p2": "move 1 2, move 3 2"
+		},
+		{
+			"p1": "move 1 -2, switch 4",
+			"p2": "move 1 2, move 2"
+		},
+		{
+			"p1": "move 1 -2, switch 3",
+			"p2": "move 1 -2, move 4 -1"
+		},
+		{
+			"p1": "move 4 2, move 1 -1",
+			"p2": "move 1 2 mega, move 2"
+		},
+		{
+			"p1": "move 2 2, move 3",
+			"p2": "move 1 -2, move 1 -1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "pass, switch 3"
+		},
+		{
+			"p1": "move 1, move 2 2",
+			"p2": "move 1 1, move 3 2"
+		},
+		{
+			"p1": "move 1 1, move 2 -1",
+			"p2": "move 1 -2, move 1 -1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 4, pass"
+		},
+		{
+			"p1": "switch 3, move 4 2",
+			"p2": "move 2 1, move 1 -1"
+		},
+		{
+			"p1": "move 1, switch 4",
+			"p2": "move 2 1, move 3 -1"
+		},
+		{
+			"p1": "move 4 1 mega, move 3 2",
+			"p2": "move 2 1, move 1 2"
+		},
+		{
+			"p1": "move 2 1, move 1",
+			"p2": "move 2 1, move 3 -1"
+		},
+		{
+			"p1": "switch 4, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "switch 3, move 1",
+			"p2": "pass, move 4 1"
+		}
+	],
+	"teams": [
+		"MC84",
+		"MC442"
+	]
+}

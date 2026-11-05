@@ -1,0 +1,268 @@
+{
+	"seed": "gen5,1,2,3,4",
+	"format": "gen9championsvgc2026regmc",
+	"team1": [
+		{
+			"name": "a",
+			"species": "talonflame",
+			"item": "",
+			"ability": "Pressure",
+			"moves": [
+				"swordsdance",
+				"batonpass",
+				"protect",
+				"quickattack"
+			],
+			"nature": "Hardy",
+			"evs": {
+				"hp": 32,
+				"atk": 16,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "b",
+			"species": "snorlax",
+			"item": "",
+			"ability": "Pressure",
+			"moves": [
+				"tackle",
+				"protect",
+				"quickattack",
+				"aquajet"
+			],
+			"nature": "Hardy",
+			"evs": {
+				"hp": 32,
+				"atk": 16,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "c",
+			"species": "slowking",
+			"item": "",
+			"ability": "Pressure",
+			"moves": [
+				"tackle",
+				"protect",
+				"quickattack",
+				"aquajet"
+			],
+			"nature": "Hardy",
+			"evs": {
+				"hp": 32,
+				"atk": 16,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "d",
+			"species": "milotic",
+			"item": "",
+			"ability": "Pressure",
+			"moves": [
+				"tackle",
+				"protect",
+				"quickattack",
+				"aquajet"
+			],
+			"nature": "Hardy",
+			"evs": {
+				"hp": 32,
+				"atk": 16,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"team2": [
+		{
+			"name": "e",
+			"species": "lopunny",
+			"item": "",
+			"ability": "Pressure",
+			"moves": [
+				"tackle",
+				"protect",
+				"quickattack",
+				"aquajet"
+			],
+			"nature": "Hardy",
+			"evs": {
+				"hp": 32,
+				"atk": 16,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 20
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "f",
+			"species": "sylveon",
+			"item": "",
+			"ability": "Pressure",
+			"moves": [
+				"tackle",
+				"protect",
+				"quickattack",
+				"aquajet"
+			],
+			"nature": "Hardy",
+			"evs": {
+				"hp": 32,
+				"atk": 16,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 10
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "g",
+			"species": "snorlax",
+			"item": "",
+			"ability": "Pressure",
+			"moves": [
+				"tackle"
+			],
+			"nature": "Hardy",
+			"evs": {
+				"hp": 32,
+				"atk": 16,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "h",
+			"species": "slowking",
+			"item": "",
+			"ability": "Pressure",
+			"moves": [
+				"tackle"
+			],
+			"nature": "Hardy",
+			"evs": {
+				"hp": 32,
+				"atk": 16,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 1, move 1 1",
+			"p2": "move 1 1, move 1 1"
+		},
+		{
+			"p1": "move 2, move 1 1",
+			"p2": "move 1 1, move 1 1"
+		},
+		{
+			"p1": "switch 3, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 1 1, move 1 1",
+			"p2": "move 1 1, move 1 1"
+		}
+	]
+}

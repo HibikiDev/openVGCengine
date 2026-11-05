@@ -1,0 +1,322 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,9864,27816,40341,34224",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Golisopod",
+			"item": "Golisopite",
+			"ability": "Emergency Exit",
+			"moves": [
+				"Iron Head",
+				"Leech Life",
+				"Swords Dance",
+				"Sucker Punch"
+			],
+			"nature": "Brave",
+			"evs": {
+				"hp": 32,
+				"atk": 32,
+				"def": 0,
+				"spa": 0,
+				"spd": 2,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "Torkoal",
+			"item": "focusband",
+			"ability": "Drought",
+			"moves": [
+				"Eruption",
+				"Protect",
+				"Heat Wave",
+				"Weather Ball"
+			],
+			"nature": "Quiet",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 0,
+				"spa": 32,
+				"spd": 2,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "Hatterene",
+			"item": "focusband",
+			"ability": "Magic Bounce",
+			"moves": [
+				"Dazzling Gleam",
+				"Expanding Force",
+				"Trick Room",
+				"Protect"
+			],
+			"nature": "Quiet",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 1,
+				"spa": 32,
+				"spd": 1,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "Indeedee-F",
+			"item": "focusband",
+			"ability": "Psychic Surge",
+			"moves": [
+				"Trick Room",
+				"Helping Hand",
+				"Psychic",
+				"Follow Me"
+			],
+			"nature": "Relaxed",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 32,
+				"spa": 1,
+				"spd": 1,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Sneasler",
+			"item": "Grassy Seed",
+			"ability": "Unburden",
+			"moves": [
+				"Close Combat",
+				"Dire Claw",
+				"Rock Slide",
+				"Protect"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 16,
+				"atk": 20,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 30
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "Volcarona",
+			"item": "Rocky Helmet",
+			"ability": "Flame Body",
+			"moves": [
+				"Heat Wave",
+				"Struggle Bug",
+				"Rage Powder",
+				"Protect"
+			],
+			"nature": "Bold",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 32,
+				"spa": 0,
+				"spd": 1,
+				"spe": 1
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "Baxcalibur",
+			"item": "Baxcalibrite",
+			"ability": "Thermal Exchange",
+			"moves": [
+				"Glaive Rush",
+				"Ice Shard",
+				"Swords Dance",
+				"Protect"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 32,
+				"atk": 25,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 9
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "Rillaboom",
+			"item": "Occa Berry",
+			"ability": "Grassy Surge",
+			"moves": [
+				"Wood Hammer",
+				"Grassy Glide",
+				"U-turn",
+				"Fake Out"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 30,
+				"atk": 20,
+				"def": 0,
+				"spa": 0,
+				"spd": 7,
+				"spe": 9
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 4 1, move 4 -1",
+			"p2": "move 2 -2, switch 3"
+		},
+		{
+			"p1": "switch 4, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 3 1, switch 4",
+			"p2": "move 4, move 2 -1"
+		},
+		{
+			"p1": "move 3 1, move 4 2",
+			"p2": "move 3, move 2 2"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 4, pass"
+		},
+		{
+			"p1": "move 3 -2, move 1 1",
+			"p2": "move 1 1, move 2 2 mega"
+		},
+		{
+			"p1": "pass, switch 4",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 3 1, move 4 2",
+			"p2": "move 3 -2, move 2 2"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 3, pass"
+		},
+		{
+			"p1": "move 3 1, move 2",
+			"p2": "switch 3, move 1 -1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "pass, switch 3"
+		},
+		{
+			"p1": "move 4, move 2",
+			"p2": "pass, move 3"
+		},
+		{
+			"p1": "move 3 1, move 3",
+			"p2": "pass, move 1"
+		},
+		{
+			"p1": "switch 3, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 1, move 2",
+			"p2": "pass, move 1"
+		}
+	],
+	"teams": [
+		"MC88",
+		"MC233"
+	]
+}

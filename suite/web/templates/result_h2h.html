@@ -1,0 +1,114 @@
+
+{% set o = r.overall %}{% set A = r.teams.a %}{% set B = r.teams.b %}
+{% macro mons_table(T) %}
+<div class="scroll"><table class="tbl"><tr><th></th><th>brought</th><th>led</th><th class="num">scores when brought</th><th class="num">when led</th></tr>
+  {% for m in T.mons %}<tr{% if not m.brought %} class="muted"{% endif %}><td><b>{{ m.mon }}</b></td>
+    <td><div class="bar" style="min-width:70px"><i style="width: {{ (m.brought * 100)|round(1) }}%"></i><span>{{ m.brought|pct }}</span></div></td>
+    <td><div class="bar sun" style="min-width:70px"><i style="width: {{ (m.led * 100)|round(1) }}%"></i><span>{{ m.led|pct }}</span></div></td>
+    <td class="num">{{ m.score_brought|pct }}</td><td class="num">{{ m.score_led|pct }}</td></tr>{% endfor %}
+</table></div>
+<p class="small" style="margin-top:10px"><b>Leads:</b> {% for x in T.leads[:4] %}{{ x.name }} <span class="muted">{{ x.share|pct }} · scores {{ x.score|pct }}</span>{{ "; " if not loop.last }}{% endfor %}</p>
+<p class="small"><b>Fours:</b> {% for x in T.fours[:3] %}{{ x.name }} <span class="muted">{{ x.share|pct }}</span>{{ "; " if not loop.last }}{% endfor %}</p>
+{% endmacro %}
+<div class="card">
+  <h1>{{ r.ids.a if "\n" not in r.ids.a else "Team A" }} <span class="muted">vs</span> {{ r.ids.b if "\n" not in r.ids.b else "Team B" }} {% if r.format_name %}<span class="tag">{{ r.format_name }}</span>{% endif %}</h1>
+  {% from "_team_export.html" import team_export %}{% if team_paste is defined and job is defined and job %}<div style="display:flex; gap:18px; flex-wrap:wrap">{{ team_export(team_paste(job.params.a), "show " ~ (r.ids.a if "\n" not in r.ids.a else "Team A")) }}{{ team_export(team_paste(job.params.b), "show " ~ (r.ids.b if "\n" not in r.ids.b else "Team B")) }}</div>{% endif %}
+  <p class="six"><b>A</b> {{ r.species.a|join(' · ') }}<br><b>B</b> {{ r.species.b|join(' · ') }}</p>
+  <p class="muted small">model {{ r.model }} · {{ r.games }} self-play games, {{ r.turns }} turns on average{% if r.deep %} · <b>deep mode</b>: both sides searched{% endif %}{% if r.bring_temp != 1 %} · team preview varied{% endif %} · <a href="/h2h">another matchup</a></p>
+  {% if not r.deep %}<p class="small" style="color:#b5483a"><b>Quick mode</b> (no search): a rough screen - re-run in deep mode before relying on it.</p>{% endif %}
+  <div class="stats">
+    <div><div class="big">{{ o.score|pct }}</div><div class="small muted">team A's score (95%: {{ o.ci[0]|pct }}–{{ o.ci[1]|pct }})</div></div>
+    <div><div class="big" style="font-size:2rem">{{ "%+d"|format(o.elo|int) }}</div><div class="small muted">Elo, A over B</div></div>
+    {% if r.matrix and r.matrix.equilibrium %}<div><div class="big" style="font-size:2rem">{{ r.matrix.equilibrium.value|pct }}</div><div class="small muted">A when both adapt their brings <span class="tag mx-alt" title="raw self-play: the policy without search, even in deep mode - wrong in about half of the hard matchups checked">quick read</span></div></div>{% endif %}
+  </div>
+</div>
+{% macro pts(x) %}{{ "%+.1f"|format(x * 100) }}{% endmacro %}
+{% if r.luck %}{% set L = r.luck %}
+<div class="card flat">
+  <h3>Luck in this matchup</h3>
+  <div class="stats">
+    <div><div class="big">±{{ "%.0f"|format(L.sd * 100) }}</div><div class="small muted">dice swing in a game's win chance (1 SD)</div></div>
+    <div><div class="big">{{ "%.0f"|format(L.top3_share * 100) }}%</div><div class="small muted">of the luck sits in the top three chance events</div></div>
+    <div><div class="big">{{ pts(L.net_a) }}</div><div class="small muted">chance events' net worth to A, per game</div></div>
+  </div>
+  <div class="scroll"><table class="tbl"><tr><th></th><th class="num">luck it creates</th><th class="num">luck it carries</th><th class="num">damage rolls</th></tr>
+    <tr><td><b>A</b></td><td class="num hirec">{{ pts(L.a.creates) }}</td><td class="num lowrec">{{ pts(L.a.carries) }}</td><td class="num muted">±{{ "%.1f"|format(L.a.rolls * 100) }}</td></tr>
+    <tr><td><b>B</b></td><td class="num hirec">{{ pts(L.b.creates) }}</td><td class="num lowrec">{{ pts(L.b.carries) }}</td><td class="num muted">±{{ "%.1f"|format(L.b.rolls * 100) }}</td></tr>
+  </table></div>
+  <h3 style="margin-top:14px">The chance events that matter most</h3>
+  <div class="scroll"><table class="tbl"><tr><th>side</th><th>who</th><th>move</th><th>event</th><th class="num">per game, for A</th></tr>
+    {% for x in L.top %}<tr><td>{{ x.side }}</td><td class="small">{{ x.mon }}</td><td class="small">{{ x.move }}</td><td class="small">{{ x.event }}</td>
+      <td class="num {{ 'hirec' if x.per_game > 0 else 'lowrec' }}">{{ pts(x.per_game) }}</td></tr>{% endfor %}
+  </table></div>
+  <details class="howto small"><summary>How luck is measured</summary><p>{{ L.games }} games of the raw policy (no search, even in deep mode), each chance roll replayed both ways - the chance event and the usual outcome; the gap in the model's win estimate times the event's chance is its worth per game. <b>Creates</b> / <b>carries</b>: a side's own rolls that help / hurt it. Guaranteed effects don't count; damage rolls are two-sided.</p></details>
+</div>
+{% elif r.luck_error %}<div class="note">The luck card failed: {{ r.luck_error }}</div>{% endif %}
+{% if r.bo3 %}{% set S = r.bo3 %}
+<div class="card flat">
+  <h3>Best-of-three</h3>
+  {% if not S.series %}<div class="note">No complete series in this run (a bug before 10-29 stopped every series at game 1) - run it again.</div>{% else %}
+  <div class="stats">
+    <div><div class="big">{{ S.score|pct }}</div><div class="small muted">A's series win rate ({{ S.series }} series; 95%: {{ S.ci[0]|pct }}–{{ S.ci[1]|pct }})</div></div>
+    <div><div class="big" style="font-size:2rem">{{ S.to_g3|pct }}</div><div class="small muted">of series go to game 3</div></div>
+  </div>{% endif %}
+  <div class="scroll"><table class="tbl"><tr><th></th><th class="num">A scores</th><th>A leads (share · A's score)</th><th>B leads (share · B's score)</th></tr>
+  {% for g in S.games %}<tr><td><b>G{{ g.game }}</b><div class="small muted">{{ g.n }} games</div></td><td class="cell" style="background: {{ g.score|heat }}">{{ g.score|pct }}</td>
+    <td class="small">{% for x in g.a %}<div>{{ x.name }} <span class="muted">{{ x.share|pct }} · {{ x.score|pct }}</span></div>{% endfor %}</td>
+    <td class="small">{% for x in g.b %}<div>{{ x.name }} <span class="muted">{{ x.share|pct }} · {{ x.score|pct }}</span></div>{% endfor %}</td></tr>{% endfor %}</table></div>
+  <p class="small">{% for side, lab in (("a", "A"), ("b", "B")) %}{% set c = S.changes[side] %}<b>{{ lab }}</b> changed its lead in {{ c.changed|pct }} of later games
+    (its own score {{ c.score_changed|pct }} after changing, {{ c.score_kept|pct }} after keeping){{ ". " if loop.first else "." }}{% endfor %}</p>
+  <p class="small muted">Lead changes follow the bot's rule: switch after a bad game, keep after a convincing win.</p>
+</div>
+{% endif %}
+<div class="grid2">
+  <div class="card flat"><h3>Team A</h3>{{ mons_table(A) }}</div>
+  <div class="card flat"><h3>Team B</h3>{{ mons_table(B) }}<p class="small muted">B's "scores" columns are B's own score.</p></div>
+</div>
+<div class="card flat">
+  <h3>Lead matchups</h3>
+  <div class="scroll"><table class="tbl"><tr><th>A leads</th><th>B leads</th><th class="num">share of games</th><th class="num">A scores</th></tr>
+  {% for m in r.matchups %}<tr><td>{{ m.a }}</td><td>{{ m.b }}</td><td class="num">{{ m.share|pct }}</td>
+    <td class="cell" style="background: {{ m.score|heat }}">{{ m.score|pct }}</td></tr>{% endfor %}</table></div>
+  
+</div>
+{% for pl in r.plans %}
+<div class="card flat">
+  <h3>Turn 1: {{ pl.a }} <span class="muted">vs</span> {{ pl.b }}</h3>
+  <p class="small muted">{{ pl.n }} games · A scores {{ pl.score|pct }}</p>
+  <div class="grid2">
+    {% for s in ("a", "b") %}<div><b>{{ "Team A" if s == "a" else "Team B" }}</b>
+      {% for ln in pl.lines[s] %}<div class="pline"><div class="who"><span>{{ ln.line }}</span><b>{{ ln.score|pct }}</b></div>
+        <div class="bar{{ ' sky' if s == 'b' }}"><i style="width: {{ (ln.share * 100)|round(1) }}%"></i><span>{{ ln.share|pct }} of the time</span></div></div>{% endfor %}
+    </div>{% endfor %}
+  </div>
+  <p class="small muted">How often each side opens this way · its own score when it does.</p>
+</div>
+{% endfor %}
+{% if r.matrix %}{% set mx = r.matrix %}
+<div class="card flat">
+  <h3>Bring against bring <span class="tag mx-alt" title="raw self-play: the policy without search, even in deep mode - wrong in about half of the hard matchups checked">quick read</span></h3>
+  <p class="small muted">Raw self-play games (no search), also in deep mode: a first look at which fours matter, not a result.</p>
+  <p class="small muted">The model's top {{ mx.k }} brings for each side, every pairing played out ({{ mx.games_per_cell }} games each, ±{{ (mx.matrix_se * 100)|round|int }}% at worst). Cells are A's score; ◆ / <span class="tag mx-alt">screened</span>: found by trying all fours.</p>
+  <div class="scroll"><table class="tbl">
+    <tr><th>A brings</th><th class="num">model likes</th><th class="num">vs B's likely</th><th class="num">worst</th>{% for t in mx.their_options %}<th class="num" title="{{ t.lead|join(' + ') }} (+{{ t.back|join(', ') }})">B{{ loop.index }}{% if t.screened %}◆{% endif %}</th>{% endfor %}</tr>
+    {% for m in mx.my_options %}{% set i = loop.index0 %}
+    <tr><td><b>{{ m.lead|join(' + ') }}</b> <span class="muted small">(+{{ m.back|join(', ') }})</span>{% if m.screened %} <span class="tag mx-alt">screened</span>{% endif %}{% if i == mx.best_response %} <span class="tag">best</span>{% endif %}{% if i == mx.safest %} <span class="tag">safest</span>{% endif %}</td>
+      <td class="num">{{ m.head_p|prob }}</td><td class="num"><b>{{ mx.vs_predicted[i]|pct }}</b></td><td class="num">{{ mx.worst_case[i]|pct }}</td>
+      {% for v in mx.matrix[i] %}<td class="cell" style="background: {{ v|heat }}">{{ v|pct }}</td>{% endfor %}</tr>{% endfor %}
+  </table></div>
+  <p class="small">{% for t in mx.their_options %}<b>B{{ loop.index }}</b> {{ t.lead|join(' + ') }} <span class="muted">(+{{ t.back|join(', ') }}) · model likes {{ t.head_p|prob }}</span>{{ "; " if not loop.last }}{% endfor %}</p>
+  <p class="small muted">If both sides keep adapting to each other, it settles around {{ mx.equilibrium.value|pct }} for A.</p>
+  {% if mx.summary %}{% from "_brings_summary.html" import brings_summary %}{{ brings_summary(mx.summary, 'A') }}{% endif %}
+</div>
+{% endif %}
+{% if r.examples %}
+<div class="card flat">
+  <h3>Example games</h3>
+  <p class="small muted">Played in real Showdown{% if r.deep %} with search{% endif %} - anecdotes; the numbers above are the evidence.</p>
+  {% for e in r.examples %}{% if e.lines is defined %}
+  <div class="small"><a href="/job/{{ job.id }}/game/{{ loop.index0 }}">{% if e.series %}Series {{ e.series }}, game {{ e.game }}{% else %}Game {{ loop.index }}{% endif %}</a> · <span class="chip {{ 'won' if e.won else 'lost' }}">{{ 'A won' if e.won else 'B won' }}</span>
+    <span class="muted">· {{ e.turns }} turns</span></div>
+  {% else %}<div class="small muted">{{ e.error }}</div>{% endif %}{% endfor %}
+</div>
+{% endif %}
+<details class="howto small"><summary>Caveats</summary><p>{% for c in r.caveats %}{{ c[0]|upper }}{{ c[1:] }}.{{ " " if not loop.last }}{% endfor %}</p></details>

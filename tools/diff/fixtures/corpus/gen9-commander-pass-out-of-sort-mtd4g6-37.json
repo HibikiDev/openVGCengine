@@ -1,0 +1,318 @@
+{
+	"format": "gen9vgc2024regg",
+	"seed": "gen5,28699,5929,59460,15845",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "tatsugiridroopy",
+			"item": "oranberry",
+			"ability": "commander",
+			"moves": [
+				"muddywater",
+				"dracometeor",
+				"dragondarts",
+				"protect"
+			],
+			"nature": "mild",
+			"evs": {
+				"hp": 128,
+				"atk": 176,
+				"def": 140,
+				"spa": 64,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Psychic"
+		},
+		{
+			"name": "Mon1",
+			"species": "dondozo",
+			"item": "netball",
+			"ability": "oblivious",
+			"moves": [
+				"orderup",
+				"moonblast",
+				"skillswap",
+				"gyroball"
+			],
+			"nature": "adamant",
+			"evs": {
+				"hp": 48,
+				"atk": 104,
+				"def": 228,
+				"spa": 128,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Bug"
+		},
+		{
+			"name": "Mon2",
+			"species": "kilowattrel",
+			"item": "shellbell",
+			"ability": "commander",
+			"moves": [
+				"ficklebeam",
+				"grassknot",
+				"breakingswipe",
+				"perishsong"
+			],
+			"nature": "adamant",
+			"evs": {
+				"hp": 224,
+				"atk": 112,
+				"def": 172,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 16,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Ghost"
+		},
+		{
+			"name": "Mon3",
+			"species": "zorua",
+			"item": "ejectbutton",
+			"ability": "adaptability",
+			"moves": [
+				"furyattack",
+				"earthquake",
+				"slackoff",
+				"doubleedge"
+			],
+			"nature": "docile",
+			"evs": {
+				"hp": 88,
+				"atk": 216,
+				"def": 8,
+				"spa": 196,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 26,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Dark"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "dondozo",
+			"item": "beastball",
+			"ability": "imposter",
+			"moves": [
+				"orderup",
+				"extremespeed",
+				"heartswap",
+				"helpinghand"
+			],
+			"nature": "bold",
+			"evs": {
+				"hp": 204,
+				"atk": 52,
+				"def": 156,
+				"spa": 96,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 8,
+				"atk": 31,
+				"def": 23,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Dark"
+		},
+		{
+			"name": "Mon1",
+			"species": "ironboulder",
+			"item": "ejectbutton",
+			"ability": "noguard",
+			"moves": [
+				"megakick",
+				"coil",
+				"roar",
+				"secretsword"
+			],
+			"nature": "impish",
+			"evs": {
+				"hp": 36,
+				"atk": 112,
+				"def": 16,
+				"spa": 8,
+				"spd": 240,
+				"spe": 96
+			},
+			"ivs": {
+				"hp": 15,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 30,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N",
+			"teraType": "Steel"
+		},
+		{
+			"name": "Mon2",
+			"species": "tatsugiridroopy",
+			"item": "shedshell",
+			"ability": "commander",
+			"moves": [
+				"perishsong",
+				"dracometeor",
+				"icywind",
+				"protect"
+			],
+			"nature": "quirky",
+			"evs": {
+				"hp": 140,
+				"atk": 184,
+				"def": 184,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 22,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 0
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Normal"
+		},
+		{
+			"name": "Mon3",
+			"species": "coalossal",
+			"item": "ejectpack",
+			"ability": "libero",
+			"moves": [
+				"roar",
+				"darkestlariat",
+				"blizzard",
+				"steelwing"
+			],
+			"nature": "mild",
+			"evs": {
+				"hp": 208,
+				"atk": 244,
+				"def": 56,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 6,
+				"atk": 9,
+				"def": 31,
+				"spa": 12,
+				"spd": 13,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Bug"
+		}
+	],
+	"turns": [
+		{
+			"p1": "pass, move 4 1",
+			"p2": "move 3 1 terastallize, move 1 1"
+		},
+		{
+			"p1": "pass, move 4 -1 terastallize",
+			"p2": "move 3 2, move 4 -1"
+		},
+		{
+			"p1": "pass, move 3 2",
+			"p2": "move 1 2, switch 3"
+		},
+		{
+			"p1": "pass, move 1 1",
+			"p2": "move 1 2, pass"
+		},
+		{
+			"p1": "pass, move 4 2",
+			"p2": "move 3 1, pass"
+		},
+		{
+			"p1": "pass, move 2 2",
+			"p2": "move 4 1, pass"
+		},
+		{
+			"p1": "pass, move 2 -1",
+			"p2": "move 2 2, pass"
+		},
+		{
+			"p1": "pass, move 4 1",
+			"p2": "move 4 1, pass"
+		},
+		{
+			"p1": "pass, move 2 1",
+			"p2": "move 1 1, pass"
+		},
+		{
+			"p1": "pass, move 3 2",
+			"p2": "move 3 -2, pass"
+		},
+		{
+			"p1": "pass, move 1 1",
+			"p2": "move 2 1, pass"
+		},
+		{
+			"p1": "pass, move 3 -1",
+			"p2": "move 4 2, pass"
+		}
+	],
+	"teams": [
+		"scenario-290b",
+		"scenario-162a"
+	]
+}

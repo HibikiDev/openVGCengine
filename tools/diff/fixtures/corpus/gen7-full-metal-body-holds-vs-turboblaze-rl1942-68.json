@@ -1,0 +1,262 @@
+{
+	"format": "gen7vgc2019",
+	"seed": "gen5,15105,24472,41380,9113",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "hoppip",
+			"item": "normaliumz",
+			"ability": "fullmetalbody",
+			"moves": [
+				"acid",
+				"fierydance",
+				"headsmash",
+				"afteryou"
+			],
+			"nature": "mild",
+			"evs": {
+				"hp": 68,
+				"atk": 208,
+				"def": 84,
+				"spa": 16,
+				"spd": 60,
+				"spe": 72
+			},
+			"ivs": {
+				"hp": 30,
+				"atk": 8,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "sunflora",
+			"item": "ironplate",
+			"ability": "aftermath",
+			"moves": [
+				"hyperspacehole",
+				"recover",
+				"peck",
+				"dragonhammer"
+			],
+			"nature": "jolly",
+			"evs": {
+				"hp": 32,
+				"atk": 76,
+				"def": 148,
+				"spa": 220,
+				"spd": 32,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 6,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "slurpuff",
+			"item": "gyaradosite",
+			"ability": "hypercutter",
+			"moves": [
+				"dualchop",
+				"happyhour",
+				"painsplit",
+				"spikecannon"
+			],
+			"nature": "lonely",
+			"evs": {
+				"hp": 0,
+				"atk": 156,
+				"def": 224,
+				"spa": 96,
+				"spd": 32,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 18,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "vivillonocean",
+			"item": "psychiumz",
+			"ability": "arenatrap",
+			"moves": [
+				"storedpower",
+				"swordsdance",
+				"soak",
+				"avalanche"
+			],
+			"nature": "timid",
+			"evs": {
+				"hp": 248,
+				"atk": 176,
+				"def": 84,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 12,
+				"atk": 31,
+				"def": 26,
+				"spa": 6,
+				"spd": 31,
+				"spe": 28
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "misdreavus",
+			"item": "ultraball",
+			"ability": "turboblaze",
+			"moves": [
+				"grasswhistle",
+				"eerieimpulse",
+				"banefulbunker",
+				"smartstrike"
+			],
+			"nature": "hasty",
+			"evs": {
+				"hp": 148,
+				"atk": 28,
+				"def": 208,
+				"spa": 124,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 1,
+				"spd": 11,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "wimpod",
+			"item": "ringtarget",
+			"ability": "tangledfeet",
+			"moves": [
+				"finalgambit",
+				"poisonfang",
+				"assist",
+				"scratch"
+			],
+			"nature": "lax",
+			"evs": {
+				"hp": 172,
+				"atk": 80,
+				"def": 120,
+				"spa": 100,
+				"spd": 36,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 0,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "horsea",
+			"item": "buginiumz",
+			"ability": "owntempo",
+			"moves": [
+				"icepunch",
+				"dizzypunch",
+				"highjumpkick",
+				"furycutter"
+			],
+			"nature": "naughty",
+			"evs": {
+				"hp": 140,
+				"atk": 228,
+				"def": 28,
+				"spa": 20,
+				"spd": 92,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 21,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "vulpix",
+			"item": "mewtwonitex",
+			"ability": "harvest",
+			"moves": [
+				"celebrate",
+				"confide",
+				"disarmingvoice",
+				"brutalswing"
+			],
+			"nature": "lax",
+			"evs": {
+				"hp": 204,
+				"atk": 216,
+				"def": 64,
+				"spa": 24,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 26,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 3 2, move 3 1",
+			"p2": "move 2 1, move 4 1"
+		}
+	]
+}

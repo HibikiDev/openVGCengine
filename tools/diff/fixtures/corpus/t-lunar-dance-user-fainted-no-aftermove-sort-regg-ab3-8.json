@@ -1,0 +1,290 @@
+{
+	"format": "gen9vgc2024regg",
+	"seed": "gen5,37404,21993,46599,3229",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "corviknight",
+			"item": "mirrorherb",
+			"ability": "imposter",
+			"moves": [
+				"encore",
+				"reversal",
+				"grasspledge",
+				"spitup"
+			],
+			"nature": "careful",
+			"evs": {
+				"hp": 88,
+				"atk": 96,
+				"def": 176,
+				"spa": 148,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 14,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 1,
+				"spe": 13
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Bug"
+		},
+		{
+			"name": "Mon1",
+			"species": "espathra",
+			"item": "whiteherb",
+			"ability": "opportunist",
+			"moves": [
+				"absorb",
+				"brutalswing",
+				"thunderwave",
+				"kowtowcleave"
+			],
+			"nature": "rash",
+			"evs": {
+				"hp": 252,
+				"atk": 228,
+				"def": 28,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 7,
+				"atk": 31,
+				"def": 20,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Ghost"
+		},
+		{
+			"name": "Mon2",
+			"species": "espathra",
+			"item": "",
+			"ability": "opportunist",
+			"moves": [
+				"firespin",
+				"dynamaxcannon",
+				"terrainpulse",
+				"slackoff"
+			],
+			"nature": "timid",
+			"evs": {
+				"hp": 116,
+				"atk": 232,
+				"def": 112,
+				"spa": 48,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 18,
+				"spa": 31,
+				"spd": 31,
+				"spe": 20
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Dragon"
+		},
+		{
+			"name": "Mon3",
+			"species": "corviknight",
+			"item": "whiteherb",
+			"ability": "mirrorarmor",
+			"moves": [
+				"stockpile",
+				"acrobatics",
+				"thunderpunch",
+				"lowkick"
+			],
+			"nature": "careful",
+			"evs": {
+				"hp": 132,
+				"atk": 180,
+				"def": 120,
+				"spa": 76,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 2,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Electric"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "flamigo",
+			"item": "whiteherb",
+			"ability": "opportunist",
+			"moves": [
+				"leafage",
+				"armorcannon",
+				"dragondarts",
+				"lunardance"
+			],
+			"nature": "lonely",
+			"evs": {
+				"hp": 88,
+				"atk": 36,
+				"def": 44,
+				"spa": 236,
+				"spd": 104,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 21,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Water"
+		},
+		{
+			"name": "Mon1",
+			"species": "espathra",
+			"item": "ejectpack",
+			"ability": "imposter",
+			"moves": [
+				"meanlook",
+				"decorate",
+				"wonderroom",
+				"memento"
+			],
+			"nature": "quirky",
+			"evs": {
+				"hp": 76,
+				"atk": 196,
+				"def": 68,
+				"spa": 32,
+				"spd": 4,
+				"spe": 132
+			},
+			"ivs": {
+				"hp": 26,
+				"atk": 27,
+				"def": 31,
+				"spa": 13,
+				"spd": 31,
+				"spe": 23
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Ice"
+		},
+		{
+			"name": "Mon2",
+			"species": "annihilape",
+			"item": "whiteherb",
+			"ability": "mirrorarmor",
+			"moves": [
+				"psychup",
+				"swordsdance",
+				"overdrive",
+				"headsmash"
+			],
+			"nature": "naive",
+			"evs": {
+				"hp": 248,
+				"atk": 232,
+				"def": 28,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Flying"
+		},
+		{
+			"name": "Mon3",
+			"species": "corviknight",
+			"item": "mirrorherb",
+			"ability": "opportunist",
+			"moves": [
+				"charm",
+				"smokescreen",
+				"simplebeam",
+				"fusionbolt"
+			],
+			"nature": "jolly",
+			"evs": {
+				"hp": 32,
+				"atk": 232,
+				"def": 104,
+				"spa": 140,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 5,
+				"spa": 31,
+				"spd": 24,
+				"spe": 2
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Grass"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 4 2, move 4 2",
+			"p2": "move 4, move 1 1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 3, pass"
+		},
+		{
+			"p1": "move 4 2 terastallize, move 3 2",
+			"p2": "move 1 -2 terastallize, move 2 -1"
+		},
+		{
+			"p1": "move 4 -2, move 1 2",
+			"p2": "move 1 2, move 1 2"
+		},
+		{
+			"p1": "switch 4, move 3 2",
+			"p2": "move 1 -2, switch 4"
+		},
+		{
+			"p1": "move 4 -2, move 4 2",
+			"p2": "move 1 -2, move 2 -1"
+		}
+	]
+}

@@ -1,0 +1,262 @@
+{
+	"format": "gen8vgc2021",
+	"seed": "gen5,21605,35665,15740,58398",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "gengar",
+			"item": "rawstberry",
+			"ability": "clearbody",
+			"moves": [
+				"trickortreat",
+				"shadowball",
+				"curse",
+				"rockslide"
+			],
+			"nature": "bold",
+			"evs": {
+				"hp": 192,
+				"atk": 164,
+				"def": 152,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 21,
+				"spd": 0,
+				"spe": 11
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "gengar",
+			"item": "griseousorb",
+			"ability": "clearbody",
+			"moves": [
+				"shadowball",
+				"trickortreat",
+				"rockslide",
+				"protect"
+			],
+			"nature": "modest",
+			"evs": {
+				"hp": 24,
+				"atk": 136,
+				"def": 196,
+				"spa": 152,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 8,
+				"atk": 31,
+				"def": 31,
+				"spa": 28,
+				"spd": 31,
+				"spe": 22
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "duraludon",
+			"item": "lovesweet",
+			"ability": "cursedbody",
+			"moves": [
+				"tackle",
+				"rockslide",
+				"shadowball",
+				"curse"
+			],
+			"nature": "impish",
+			"evs": {
+				"hp": 32,
+				"atk": 172,
+				"def": 104,
+				"spa": 164,
+				"spd": 36,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "dragapult",
+			"item": "firestone",
+			"ability": "clearbody",
+			"moves": [
+				"protect",
+				"tackle",
+				"shadowball",
+				"rockslide"
+			],
+			"nature": "gentle",
+			"evs": {
+				"hp": 176,
+				"atk": 44,
+				"def": 132,
+				"spa": 48,
+				"spd": 88,
+				"spe": 20
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "cursola",
+			"item": "tr21",
+			"ability": "cursedbody",
+			"moves": [
+				"trickortreat",
+				"tackle",
+				"curse",
+				"rockslide"
+			],
+			"nature": "relaxed",
+			"evs": {
+				"hp": 184,
+				"atk": 236,
+				"def": 40,
+				"spa": 48,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 15,
+				"spe": 5
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "cursola",
+			"item": "bigroot",
+			"ability": "pressure",
+			"moves": [
+				"tackle",
+				"protect",
+				"rockslide",
+				"curse"
+			],
+			"nature": "quiet",
+			"evs": {
+				"hp": 20,
+				"atk": 112,
+				"def": 40,
+				"spa": 0,
+				"spd": 144,
+				"spe": 92
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 26,
+				"spd": 11,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "cursola",
+			"item": "razorclaw",
+			"ability": "cursedbody",
+			"moves": [
+				"tackle",
+				"shadowball",
+				"protect",
+				"rockslide"
+			],
+			"nature": "relaxed",
+			"evs": {
+				"hp": 112,
+				"atk": 64,
+				"def": 48,
+				"spa": 124,
+				"spd": 44,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 7,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "duraludon",
+			"item": "lumberry",
+			"ability": "clearbody",
+			"moves": [
+				"tackle",
+				"trickortreat",
+				"curse",
+				"shadowball"
+			],
+			"nature": "naive",
+			"evs": {
+				"hp": 252,
+				"atk": 200,
+				"def": 56,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 9,
+				"atk": 31,
+				"def": 24,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 2 1, move 3",
+			"p2": "move 2 1, move 1 2"
+		}
+	]
+}

@@ -1,0 +1,262 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,54236,50915,7457,2484",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "basculegionf",
+			"item": "hardstone",
+			"ability": "thickfat",
+			"moves": [
+				"grasspledge",
+				"firepledge",
+				"waterpledge",
+				"haze"
+			],
+			"nature": "brave",
+			"evs": {
+				"hp": 32,
+				"atk": 4,
+				"def": 21,
+				"spa": 28,
+				"spd": 9,
+				"spe": 14
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "corviknight",
+			"item": "shedshell",
+			"ability": "klutz",
+			"moves": [
+				"grasspledge",
+				"firepledge",
+				"waterpledge",
+				"coil"
+			],
+			"nature": "relaxed",
+			"evs": {
+				"hp": 32,
+				"atk": 24,
+				"def": 10,
+				"spa": 19,
+				"spd": 26,
+				"spe": 14
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "whimsicott",
+			"item": "shedshell",
+			"ability": "snowwarning",
+			"moves": [
+				"waterpledge",
+				"firepledge",
+				"grasspledge",
+				"bugbite"
+			],
+			"nature": "timid",
+			"evs": {
+				"hp": 32,
+				"atk": 7,
+				"def": 5,
+				"spa": 4,
+				"spd": 10,
+				"spe": 6
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "gengar",
+			"item": "lightclay",
+			"ability": "justified",
+			"moves": [
+				"grasspledge",
+				"firepledge",
+				"waterpledge",
+				"torchsong"
+			],
+			"nature": "rash",
+			"evs": {
+				"hp": 32,
+				"atk": 3,
+				"def": 4,
+				"spa": 19,
+				"spd": 28,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "clawitzer",
+			"item": "babiriberry",
+			"ability": "libero",
+			"moves": [
+				"grasspledge",
+				"firepledge",
+				"waterpledge",
+				"nightslash"
+			],
+			"nature": "bold",
+			"evs": {
+				"hp": 32,
+				"atk": 11,
+				"def": 7,
+				"spa": 15,
+				"spd": 18,
+				"spe": 27
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "absol",
+			"item": "occaberry",
+			"ability": "armortail",
+			"moves": [
+				"waterpledge",
+				"grasspledge",
+				"firepledge",
+				"machpunch"
+			],
+			"nature": "mild",
+			"evs": {
+				"hp": 32,
+				"atk": 14,
+				"def": 12,
+				"spa": 0,
+				"spd": 10,
+				"spe": 9
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "froslass",
+			"item": "pechaberry",
+			"ability": "ironfist",
+			"moves": [
+				"firepledge",
+				"grasspledge",
+				"waterpledge",
+				"gigadrain"
+			],
+			"nature": "adamant",
+			"evs": {
+				"hp": 32,
+				"atk": 31,
+				"def": 29,
+				"spa": 27,
+				"spd": 13,
+				"spe": 18
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "whimsicott",
+			"item": "dragonfang",
+			"ability": "icebody",
+			"moves": [
+				"waterpledge",
+				"firepledge",
+				"grasspledge",
+				"stompingtantrum"
+			],
+			"nature": "lax",
+			"evs": {
+				"hp": 32,
+				"atk": 17,
+				"def": 30,
+				"spa": 25,
+				"spd": 9,
+				"spe": 5
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 1 2, move 1 1",
+			"p2": "move 2 2, move 2 2"
+		}
+	]
+}

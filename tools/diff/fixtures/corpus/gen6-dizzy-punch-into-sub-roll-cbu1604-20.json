@@ -1,0 +1,308 @@
+{
+	"format": "gen6vgc2016",
+	"seed": "gen5,15641,12378,16858,19045",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Kangaskhan",
+			"item": "Kangaskhanite",
+			"ability": "Early Bird",
+			"moves": [
+				"Dizzy Punch",
+				"Low Kick",
+				"Sucker Punch",
+				"Fire Punch"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 4,
+				"atk": 252,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "Kyurem-White",
+			"item": "Choice Specs",
+			"ability": "Turboblaze",
+			"moves": [
+				"Draco Meteor",
+				"Blizzard",
+				"Earth Power",
+				"Fusion Flare"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 4,
+				"atk": 0,
+				"def": 4,
+				"spa": 252,
+				"spd": 0,
+				"spe": 248
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "Metagross",
+			"item": "Metagrossite",
+			"ability": "Clear Body",
+			"moves": [
+				"Ice Punch",
+				"Meteor Mash",
+				"Iron Head",
+				"Protect"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 4,
+				"atk": 252,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "Landorus-Therian",
+			"item": "Choice Band",
+			"ability": "Intimidate",
+			"moves": [
+				"Earthquake",
+				"Superpower",
+				"Hidden Power Ice",
+				"Rock Slide"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 4,
+				"atk": 252,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 30,
+				"atk": 31,
+				"def": 30,
+				"spe": 31,
+				"spa": 31,
+				"spd": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"hpType": "Ice"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Smeargle",
+			"item": "Focus Sash",
+			"ability": "Own Tempo",
+			"moves": [
+				"Fake Out",
+				"Crafty Shield",
+				"Transform",
+				"Dark Void"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 36,
+				"atk": 0,
+				"def": 220,
+				"spa": 0,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "Mienshao",
+			"item": "Life Orb",
+			"ability": "Inner Focus",
+			"moves": [
+				"Wide Guard",
+				"High Jump Kick",
+				"Low Kick",
+				"Quick Guard"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 4,
+				"atk": 252,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "Thundurus",
+			"item": "Yache Berry",
+			"ability": "Prankster",
+			"moves": [
+				"Substitute",
+				"Thunder Wave",
+				"Taunt",
+				"Hidden Power Ice"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 212,
+				"atk": 0,
+				"def": 100,
+				"spa": 4,
+				"spd": 76,
+				"spe": 108
+			},
+			"ivs": {
+				"hp": 30,
+				"atk": 31,
+				"def": 30,
+				"spe": 31,
+				"spa": 31,
+				"spd": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"hpType": "Ice"
+		},
+		{
+			"name": "Mon3",
+			"species": "Xerneas",
+			"item": "Power Herb",
+			"ability": "Fairy Aura",
+			"moves": [
+				"Dazzling Gleam",
+				"Geomancy",
+				"Protect",
+				"Aromatherapy"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 44,
+				"atk": 0,
+				"def": 12,
+				"spa": 200,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 3 2, move 1 2",
+			"p2": "move 3 -2, move 3 -1"
+		},
+		{
+			"p1": "move 3 1 mega, move 1 2",
+			"p2": "move 1, move 3 -1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 4, switch 3"
+		},
+		{
+			"p1": "move 1 2, switch 4",
+			"p2": "move 3, move 1"
+		},
+		{
+			"p1": "move 2 -2, move 1",
+			"p2": "move 1, move 4 2"
+		},
+		{
+			"p1": "pass, switch 3",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 4 1, move 3 1",
+			"p2": "move 2, move 1"
+		},
+		{
+			"p1": "move 2 -2, move 1 1",
+			"p2": "pass, move 2 2"
+		},
+		{
+			"p1": "move 2 -2, move 3 2",
+			"p2": "pass, move 2 -1"
+		},
+		{
+			"p1": "pass, switch 4",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 4 1, move 1 2",
+			"p2": "pass, move 2 1"
+		}
+	],
+	"teams": [
+		"U16-123",
+		"U16-144"
+	]
+}

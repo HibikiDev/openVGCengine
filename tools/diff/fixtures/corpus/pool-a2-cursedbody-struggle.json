@@ -1,0 +1,322 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,59921,48722,19746,52090",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Incineroar",
+			"item": "Sitrus Berry",
+			"ability": "Mummy",
+			"moves": [
+				"lightscreen",
+				"Throat Chop",
+				"Fake Out",
+				"Parting Shot"
+			],
+			"nature": "Careful",
+			"evs": {
+				"hp": 32,
+				"atk": 32,
+				"def": 2,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "Sirfetch’d",
+			"item": "Leek",
+			"ability": "Screen Cleaner",
+			"moves": [
+				"reflect",
+				"Close Combat",
+				"Quick Guard",
+				"Detect"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 0,
+				"atk": 32,
+				"def": 0,
+				"spa": 0,
+				"spd": 2,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "Dragapult",
+			"item": "Focus Sash",
+			"ability": "Cursed Body",
+			"moves": [
+				"Draco Meteor",
+				"Shadow Ball",
+				"disable",
+				"Dragon Cheer"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 6,
+				"atk": 0,
+				"def": 0,
+				"spa": 32,
+				"spd": 0,
+				"spe": 28
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "Gholdengo",
+			"item": "Life Orb",
+			"ability": "Aroma Veil",
+			"moves": [
+				"Make It Rain",
+				"Shadow Ball",
+				"Nasty Plot",
+				"encore"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 7,
+				"atk": 0,
+				"def": 0,
+				"spa": 27,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Indeedee",
+			"item": "Choice Scarf",
+			"ability": "Screen Cleaner",
+			"moves": [
+				"Expanding Force",
+				"Trick Room",
+				"torment",
+				"Imprison"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 0,
+				"atk": 0,
+				"def": 0,
+				"spa": 32,
+				"spd": 2,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "Milotic",
+			"item": "Leftovers",
+			"ability": "Screen Cleaner",
+			"moves": [
+				"Scald",
+				"encore",
+				"Icy Wind",
+				"Protect"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 20,
+				"atk": 0,
+				"def": 20,
+				"spa": 4,
+				"spd": 8,
+				"spe": 14
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "Metagross",
+			"item": "Metagrossite",
+			"ability": "Mummy",
+			"moves": [
+				"Steel Roller",
+				"Psychic Fangs",
+				"Protect",
+				"torment"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 2,
+				"atk": 32,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "Arcanine-Hisui",
+			"item": "Focus Sash",
+			"ability": "Mummy",
+			"moves": [
+				"Head Smash",
+				"Rock Slide",
+				"torment",
+				"Flare Blitz"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 1,
+				"atk": 32,
+				"def": 0,
+				"spa": 0,
+				"spd": 1,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 2 -2, move 2 2",
+			"p2": "move 3 2, move 3"
+		},
+		{
+			"p1": "switch 4, move 4",
+			"p2": "move 3 2, move 2 2"
+		},
+		{
+			"p1": "move 4 2, move 2 2",
+			"p2": "move 3 -2, move 3"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "pass, switch 4"
+		},
+		{
+			"p1": "move 3, move 3",
+			"p2": "move 3 -2, move 1 1"
+		},
+		{
+			"p1": "switch 3, move 2 2",
+			"p2": "move 3 1, move 3 2"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "pass, switch 3"
+		},
+		{
+			"p1": "switch 3, move 4",
+			"p2": "move 3 2, move 4 -1"
+		},
+		{
+			"p1": "switch 3, move 2 2",
+			"p2": "move 1, move 4 -1"
+		},
+		{
+			"p1": "pass, switch 3",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 1 -2, move 2 -1",
+			"p2": "move 3 2, move 1 -1 mega"
+		},
+		{
+			"p1": "move 2 2, move 4 -1",
+			"p2": "move 1, move 4 1"
+		},
+		{
+			"p1": "switch 4, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 1, move 1",
+			"p2": "move 3 2, move 2 -1"
+		},
+		{
+			"p1": "move 1, move 4 2",
+			"p2": "pass, move 1 -1"
+		}
+	],
+	"teams": [
+		"BA-904",
+		"BA-700"
+	]
+}

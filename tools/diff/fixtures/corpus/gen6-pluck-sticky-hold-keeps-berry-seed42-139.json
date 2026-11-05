@@ -1,0 +1,263 @@
+{
+	"format": "gen6vgc2015",
+	"seed": "gen5,39752,26946,35992,48090",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "cresselia",
+			"item": "latiosite",
+			"ability": "ironbarbs",
+			"moves": [
+				"gust",
+				"fakeout",
+				"dualchop",
+				"hail"
+			],
+			"nature": "lax",
+			"evs": {
+				"hp": 48,
+				"atk": 160,
+				"def": 164,
+				"spa": 136,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 24,
+				"spa": 25,
+				"spd": 7,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "pancham",
+			"item": "babiriberry",
+			"ability": "stickyhold",
+			"moves": [
+				"watersport",
+				"soak",
+				"leafstorm",
+				"sheercold"
+			],
+			"nature": "relaxed",
+			"evs": {
+				"hp": 132,
+				"atk": 244,
+				"def": 96,
+				"spa": 24,
+				"spd": 12,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 9,
+				"atk": 26,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "purrloin",
+			"item": "silkscarf",
+			"ability": "moldbreaker",
+			"moves": [
+				"storedpower",
+				"bulletseed",
+				"harden",
+				"stringshot"
+			],
+			"nature": "serious",
+			"evs": {
+				"hp": 236,
+				"atk": 212,
+				"def": 60,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 21,
+				"spa": 9,
+				"spd": 15,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "sawk",
+			"item": "sachet",
+			"ability": "filter",
+			"moves": [
+				"lovelykiss",
+				"psybeam",
+				"stormthrow",
+				"takedown"
+			],
+			"nature": "serious",
+			"evs": {
+				"hp": 240,
+				"atk": 216,
+				"def": 52,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 2,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 8
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "hitmonlee",
+			"item": "fistplate",
+			"ability": "chlorophyll",
+			"moves": [
+				"pluck",
+				"sketch",
+				"iciclespear",
+				"mirrorshot"
+			],
+			"nature": "naive",
+			"evs": {
+				"hp": 156,
+				"atk": 68,
+				"def": 220,
+				"spa": 64,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "skuntank",
+			"item": "jabocaberry",
+			"ability": "cutecharm",
+			"moves": [
+				"copycat",
+				"dragontail",
+				"mindreader",
+				"softboiled"
+			],
+			"nature": "brave",
+			"evs": {
+				"hp": 12,
+				"atk": 112,
+				"def": 64,
+				"spa": 92,
+				"spd": 4,
+				"spe": 92
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "tornadus",
+			"item": "aerodactylite",
+			"ability": "shadowtag",
+			"moves": [
+				"leer",
+				"bulkup",
+				"geargrind",
+				"pluck"
+			],
+			"nature": "lax",
+			"evs": {
+				"hp": 184,
+				"atk": 188,
+				"def": 32,
+				"spa": 104,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 29,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 21,
+				"spe": 28
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "vaporeon",
+			"item": "liechiberry",
+			"ability": "minus",
+			"moves": [
+				"armthrust",
+				"return",
+				"defog",
+				"metalclaw"
+			],
+			"nature": "mild",
+			"evs": {
+				"hp": 48,
+				"atk": 172,
+				"def": 76,
+				"spa": 84,
+				"spd": 36,
+				"spe": 92
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 21,
+				"spa": 4,
+				"spd": 31,
+				"spe": 13
+			},
+			"level": 50,
+			"gender": "F",
+			"happiness": 255
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 1 2, move 4 1",
+			"p2": "move 1 2, move 3 2"
+		}
+	]
+}

@@ -1,0 +1,286 @@
+{
+	"format": "gen9vgc2024regg",
+	"seed": "gen5,30570,16230,4987,32720",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "alakazam",
+			"item": "babiriberry",
+			"ability": "pressure",
+			"moves": [
+				"sludgebomb",
+				"protect",
+				"poisonpowder",
+				"toxicspikes"
+			],
+			"nature": "sassy",
+			"evs": {
+				"hp": 48,
+				"atk": 40,
+				"def": 84,
+				"spa": 188,
+				"spd": 148,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 11,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Water"
+		},
+		{
+			"name": "Mon1",
+			"species": "dragonite",
+			"item": "marangaberry",
+			"ability": "innerfocus",
+			"moves": [
+				"poisonjab",
+				"confuseray",
+				"toxic",
+				"malignantchain"
+			],
+			"nature": "relaxed",
+			"evs": {
+				"hp": 16,
+				"atk": 112,
+				"def": 124,
+				"spa": 40,
+				"spd": 96,
+				"spe": 120
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 29,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Ghost"
+		},
+		{
+			"name": "Mon2",
+			"species": "gengar",
+			"item": "dawnstone",
+			"ability": "owntempo",
+			"moves": [
+				"malignantchain",
+				"toxicspikes",
+				"mistyterrain",
+				"poisonpowder"
+			],
+			"nature": "brave",
+			"evs": {
+				"hp": 44,
+				"atk": 184,
+				"def": 180,
+				"spa": 100,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 26,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Grass"
+		},
+		{
+			"name": "Mon3",
+			"species": "ironhands",
+			"item": "goldbottlecap",
+			"ability": "pressure",
+			"moves": [
+				"protect",
+				"malignantchain",
+				"toxic",
+				"sludgebomb"
+			],
+			"nature": "sassy",
+			"evs": {
+				"hp": 20,
+				"atk": 244,
+				"def": 204,
+				"spa": 40,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 11,
+				"def": 24,
+				"spa": 22,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N",
+			"teraType": "Fighting"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "ironhands",
+			"item": "ribbonsweet",
+			"ability": "pressure",
+			"moves": [
+				"poisonpowder",
+				"toxic",
+				"protect",
+				"safeguard"
+			],
+			"nature": "bashful",
+			"evs": {
+				"hp": 28,
+				"atk": 132,
+				"def": 84,
+				"spa": 8,
+				"spd": 216,
+				"spe": 24
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 4,
+				"spa": 31,
+				"spd": 17,
+				"spe": 8
+			},
+			"level": 50,
+			"gender": "N",
+			"teraType": "Psychic"
+		},
+		{
+			"name": "Mon1",
+			"species": "dragonite",
+			"item": "redcard",
+			"ability": "pressure",
+			"moves": [
+				"toxic",
+				"sludgebomb",
+				"toxicspikes",
+				"mistyterrain"
+			],
+			"nature": "impish",
+			"evs": {
+				"hp": 40,
+				"atk": 236,
+				"def": 124,
+				"spa": 108,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 9,
+				"atk": 27,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Bug"
+		},
+		{
+			"name": "Mon2",
+			"species": "pecharunt",
+			"item": "rowapberry",
+			"ability": "synchronize",
+			"moves": [
+				"toxic",
+				"toxicspikes",
+				"mistyterrain",
+				"poisonpowder"
+			],
+			"nature": "hasty",
+			"evs": {
+				"hp": 136,
+				"atk": 40,
+				"def": 36,
+				"spa": 196,
+				"spd": 100,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 13
+			},
+			"level": 50,
+			"gender": "N",
+			"teraType": "Ice"
+		},
+		{
+			"name": "Mon3",
+			"species": "dragonite",
+			"item": "powerbelt",
+			"ability": "owntempo",
+			"moves": [
+				"sludgebomb",
+				"toxic",
+				"protect",
+				"malignantchain"
+			],
+			"nature": "mild",
+			"evs": {
+				"hp": 172,
+				"atk": 236,
+				"def": 100,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 29,
+				"def": 5,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Fire"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 3 1, move 4 2 terastallize",
+			"p2": "move 2 1, move 2 2 terastallize"
+		},
+		{
+			"p1": "switch 4, move 3 2",
+			"p2": "move 1 2, move 3"
+		},
+		{
+			"p1": "move 3 1, switch 3",
+			"p2": "move 1 2, move 2 -1"
+		},
+		{
+			"p1": "move 4 -2, move 1 1",
+			"p2": "move 1 1, move 2 -1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 4, pass"
+		}
+	]
+}

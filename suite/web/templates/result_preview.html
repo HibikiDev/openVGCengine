@@ -1,0 +1,106 @@
+{% macro opt(o) %}<b>{{ o.lead|join(' + ') }}</b> <span class="muted">(back: {{ o.back|join(', ') }})</span>{% if o.human_only %} <span class="tag" title="the human preview model's pick; the bot's own preview would not bring it">human pick</span>{% endif %}{% if o.screened %} <span class="tag" title="found by screening all 90 brings - neither preview model lists it">screened</span>{% endif %}{% endmacro %}
+{% set H = r.vs_human is defined %}
+{% set NA = (r.names or {}).a or 'Team A' %}{% set NB = (r.names or {}).b or 'Team B' %}
+{% set B = r.theirs_view %}
+{% macro side(name, other, opts, letter, view, best, best_h, safe, has_h) %}
+  <div class="picks">
+    <h3>{{ name }}</h3>
+    <p class="small muted">What {{ name }} will probably bring</p>
+    <div class="scroll"><div class="optlist">
+    {% for o in opts %}
+    <div class="opt two"><span class="small prob">bot {{ o.head_p|prob }}{% if o.human_p is not none %} · hum. {{ o.human_p|prob }}{% endif %}</span><div class="bar sky"><i style="width: {{ (o.head_p * 100)|round(1) }}%"></i><span>{{ letter }}{{ loop.index }} · {{ o.lead|join(' + ') }} (+{{ o.back|join(', ') }}){% if o.human_only %} · human pick{% endif %}{% if o.screened %} · screened{% endif %}</span></div></div>
+    {% endfor %}
+    </div></div>
+    {% if view %}
+    <p><span class="chip t-agree">best vs {{ other }}'s likely bring (bot's view)</span><br>{{ opt(opts[best]) }} · wins {{ view.vs_predicted[best]|pct }}</p>
+    {% if has_h %}<p><span class="chip t-agree">best vs a human-like {{ other }}</span><br>{{ opt(opts[best_h]) }} · wins {{ view.vs_human[best_h]|pct }}</p>{% endif %}
+    <p><span class="chip t-close">safest whatever {{ other }} brings</span><br>{{ opt(opts[safe]) }} · at least {{ view.worst_case[safe]|pct }}</p>
+    {% endif %}
+  </div>
+{% endmacro %}
+<div class="card">
+  <h1>Preview plan: {{ NA }} vs {{ NB }}{% if r.format_name %} <span class="tag">{{ r.format_name }}</span>{% endif %}</h1>
+  {% if r.format and r.format != current_format %}<p class="small muted">{{ r.format_name }}{{ " (closed team sheets: at team preview each side sees only the other's six Pokémon, not their moves, items or spreads)" if not format_open[r.format] }}.
+    The human preview model learned from Reg M-C / M-B ladder players: its "hum." picks here are a guess from another metagame.</p>{% endif %}
+  {% from "_team_export.html" import team_export %}{% if team_paste is defined and job is defined and job %}<div style="display:flex; gap:18px; flex-wrap:wrap">{{ team_export(team_paste(job.params.mine), "show " ~ NA) }}{{ team_export(team_paste(job.params.theirs), "show " ~ NB) }}</div>{% endif %}
+  <p class="muted small"><span class="tag mx-alt" title="raw self-play: the policy without search - wrong in about half of the hard matchups checked">quick read</span> model {{ r.model }} · {{ r.games_per_cell }} raw self-play games per pairing (no search - a first look; check the matchups that matter in Head-to-head's deep mode) (±{{ (r.matrix_se * 100)|round|int }}% at worst) · <a href="/preview">another matchup</a></p>
+  {% if r.summary %}{% from "_brings_summary.html" import brings_summary %}{{ brings_summary(r.summary, NA) }}{% endif %}
+  <div class="grid2">
+    {{ side(NA, NB, r.my_options, 'A', {'vs_predicted': r.vs_predicted, 'vs_human': r.vs_human if H else none, 'worst_case': r.worst_case}, r.best_response, r.best_vs_human if H else 0, r.safest, H) }}
+    {% if B %}{{ side(NB, NA, r.their_options, 'B', B, B.best_response, B.best_vs_human if B.best_vs_human is defined else 0, B.safest, B.vs_human is defined) }}
+    {% else %}{{ side(NB, NA, r.their_options, 'B', none, 0, 0, 0, false) }}{% endif %}
+  </div>
+  <p class="small muted"><b>bot</b>: the bot's own preview{% if H %}; <b>hum.</b>: the human preview model (ladder players' brings){% endif %}. If both sides keep adapting, it settles around {{ r.equilibrium.value|pct }} for {{ NA }}.</p>
+</div>
+
+
+{% macro stack(o, letter, n) %}<div class="stack" title="{{ o.lead|join(' + ') }} (back: {{ o.back|join(', ') }}){% if o.human_only %} - human pick{% endif %}"><span class="stack-id">{{ letter }}{{ n }}{% if o.human_only %}*{% endif %}{% if o.screened %}◆{% endif %}</span><div class="stack-lead">{{ o.lead|join(' ') }}</div><div class="stack-back">{{ o.back|join(' ') }}</div></div>{% endmacro %}
+{% macro pairtable(name, other, rows, cols, rl, cl, view, flip, best, best_h, safe, has_h) %}
+<div class="card flat">
+  <h3>Every pairing, {{ name }}'s view</h3>
+  <div class="scroll"><table class="tbl pairs">
+    <tr><th>{{ name }} brings</th><th class="num">bot</th>{% if has_h %}<th class="num">hum.</th>{% endif %}<th class="num">vs likely</th>{% if has_h %}<th class="num">vs human-like</th>{% endif %}<th class="num">worst</th>
+      {% for o in cols %}<th class="num">{{ stack(o, cl, loop.index) }}</th>{% endfor %}</tr>
+    {% for o in rows %}{% set i = loop.index0 %}
+    <tr><td><div class="rowhead">{{ stack(o, rl, loop.index) }}{% if i == best or (has_h and i == best_h) or i == safe %}<div class="tags">{% if i == best %}<span class="tag">best</span>{% endif %}{% if has_h and i == best_h %}<span class="tag">best vs human</span>{% endif %}{% if i == safe %}<span class="tag">safest</span>{% endif %}</div>{% endif %}</div></td>
+      <td class="num">{{ o.head_p|prob }}</td>{% if has_h %}<td class="num">{{ o.human_p|prob }}</td>{% endif %}<td class="num"><b>{{ view.vs_predicted[i]|pct }}</b></td>{% if has_h %}<td class="num"><b>{{ view.vs_human[i]|pct }}</b></td>{% endif %}<td class="num">{{ view.worst_case[i]|pct }}</td>
+      {% for o2 in cols %}{% set j = loop.index0 %}{% set v = (1 - r.matrix[j][i]) if flip else r.matrix[i][j] %}<td class="cell pick" data-ai="{{ (j if flip else i) + 1 }}" data-bi="{{ (i if flip else j) + 1 }}" title="click: play turn 1 of this pairing with search" style="background: {{ v|heat }}">{{ v|pct }}</td>{% endfor %}</tr>
+    {% endfor %}
+  </table></div>
+  <p class="small muted">{{ name }}'s bring (row) vs {{ other }}'s (column); click a cell to play its turn 1 below. * = a human pick the bot leaves out; ◆ = found by screening all fours.</p>
+</div>
+{% endmacro %}
+{{ pairtable(NA, NB, r.my_options, r.their_options, 'A', 'B', {'vs_predicted': r.vs_predicted, 'vs_human': r.vs_human if H else none, 'worst_case': r.worst_case}, false, r.best_response, r.best_vs_human if H else -1, r.safest, H) }}
+{% if B %}{{ pairtable(NB, NA, r.their_options, r.my_options, 'B', 'A', B, true, B.best_response, B.best_vs_human if B.best_vs_human is defined else -1, B.safest, B.vs_human is defined) }}{% endif %}
+
+{% if r.opener_tree %}{% set t = r.opener_tree %}
+<div class="card">
+  <h2>Opener tree</h2>
+  <p class="muted small">{{ t.confirm }} confirming games a value.</p>
+  <p>{{ NA }}'s main bring: {{ opt(t.main) }} - vs {{ NB }}'s usual {{ t.usual.lead|join(' + ') }} <span class="muted">(back: {{ t.usual.back|join(', ') }})</span>: <b>{{ t.main.vs_usual|pct }}</b></p>
+  <div class="scroll"><table class="tbl">
+    <tr><th>{{ NB }}'s best answers to it</th><th class="num">main bring wins</th><th>{{ NA }}'s counter</th><th class="num">counter wins</th></tr>
+    {% for a in t.answers %}<tr><td><b>{{ a.lead|join(' + ') }}</b> <span class="muted">(back: {{ a.back|join(', ') }})</span></td><td class="num">{{ a.vs_main|pct }}</td>
+      <td>{% if a.counter.is_main %}<span class="muted">the main bring stays best</span>{% else %}<b>{{ a.counter.lead|join(' + ') }}</b> <span class="muted">(back: {{ a.counter.back|join(', ') }})</span>{% endif %}</td>
+      <td class="num">{{ a.counter.value|pct }}</td></tr>{% endfor %}
+  </table></div>
+  <p class="muted small">Answers assume they know your bring: a ceiling on what reading it is worth, not what they will usually do.</p>
+</div>
+{% endif %}
+<div class="card flat" id="turn1">
+  <h3>Play a pairing with search (turn 1, or whole games)</h3>
+  <p class="small muted">The bot plays both sides with its live search, each seeing only the open sheets. Click a cell above, or pick "Custom" to set leads and back.</p>
+  <form method="post" action="/turn1">
+    <input type="hidden" name="src" value="{{ job.id }}">
+    {% macro custom(side, team, opts) %}{% if sheets and sheets[side] %}
+      <div class="custom-bring" id="t1{{ side }}c" hidden><span class="small muted">leads</span>
+        {% for k in (1, 2, 3, 4) %}{% if k == 3 %}<span class="small muted">back</span>{% endif %}
+        <select name="{{ side }}{{ k }}" aria-label="{{ 'lead' if k < 3 else 'back' }} {{ k if k < 3 else k - 2 }}">{% for m in sheets[side] %}<option value="{{ loop.index0 }}"{% if loop.index0 == opts[0].bring[k - 1] %} selected{% endif %}>{{ m }}</option>{% endfor %}</select>{% endfor %}
+      </div>{% endif %}{% endmacro %}
+    <div class="row">
+      <div><label for="t1a">{{ NA }} brings</label><select id="t1a" name="ai">{% for o in r.my_options %}<option value="{{ loop.index }}"{% if loop.index0 == r.best_response %} selected{% endif %}>A{{ loop.index }} · {{ o.lead|join(' + ') }} (+{{ o.back|join(', ') }})</option>{% endfor %}{% if sheets %}<option value="c">Custom: pick the leads and the back</option>{% endif %}</select>
+        {{ custom('a', NA, r.my_options) }}</div>
+      <div><label for="t1b">{{ NB }} brings</label><select id="t1b" name="bi">{% for o in r.their_options %}<option value="{{ loop.index }}"{% if B and loop.index0 == B.best_response %} selected{% endif %}>B{{ loop.index }} · {{ o.lead|join(' + ') }} (+{{ o.back|join(', ') }})</option>{% endfor %}{% if sheets %}<option value="c">Custom: pick the leads and the back</option>{% endif %}</select>
+        {{ custom('b', NB, r.their_options) }}</div>
+      <div><label for="t1n">Samples</label><input id="t1n" name="n" type="number" min="1" max="{{ LIMITS.turn1_n }}" value="12"></div>
+    </div>
+    <p><label><input type="checkbox" name="full" value="1"> <b>Play whole games</b> (who won after each turn-1 line)</label></p>
+    <button class="btn" type="submit">Play turn 1</button>
+  </form>
+</div>
+<script>
+
+
+const t1sync = () => ["a", "b"].forEach(side => {
+  const box = document.getElementById("t1" + side + "c");
+  if (box) box.hidden = document.getElementById("t1" + side).value !== "c";
+});
+["t1a", "t1b"].forEach(id => document.getElementById(id).addEventListener("change", t1sync));
+t1sync();
+document.querySelectorAll("td.cell.pick").forEach(td => td.addEventListener("click", () => {
+  document.getElementById("t1a").value = td.dataset.ai;
+  document.getElementById("t1b").value = td.dataset.bi;
+  t1sync();
+  document.getElementById("turn1").scrollIntoView({behavior: "smooth", block: "center"});
+}));
+</script>

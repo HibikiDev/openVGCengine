@@ -1,0 +1,262 @@
+{
+	"format": "gen6vgc2015",
+	"seed": "gen5,60314,2470,38946,9524",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "rotomheat",
+			"item": "shockdrive",
+			"ability": "trace",
+			"moves": [
+				"toxic",
+				"brickbreak",
+				"hurricane",
+				"bulletseed"
+			],
+			"nature": "hardy",
+			"evs": {
+				"hp": 76,
+				"atk": 120,
+				"def": 48,
+				"spa": 160,
+				"spd": 104,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 18,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "vivillontundra",
+			"item": "waterstone",
+			"ability": "drought",
+			"moves": [
+				"toxic",
+				"venoshock",
+				"waterpulse",
+				"feint"
+			],
+			"nature": "docile",
+			"evs": {
+				"hp": 76,
+				"atk": 212,
+				"def": 44,
+				"spa": 168,
+				"spd": 8,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "unown",
+			"item": "jabocaberry",
+			"ability": "aromaveil",
+			"moves": [
+				"toxic",
+				"sunnyday",
+				"rapidspin",
+				"paraboliccharge"
+			],
+			"nature": "relaxed",
+			"evs": {
+				"hp": 252,
+				"atk": 24,
+				"def": 60,
+				"spa": 164,
+				"spd": 8,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 12,
+				"atk": 8,
+				"def": 26,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "stunky",
+			"item": "razorclaw",
+			"ability": "download",
+			"moves": [
+				"toxic",
+				"circlethrow",
+				"magnetbomb",
+				"electricterrain"
+			],
+			"nature": "lax",
+			"evs": {
+				"hp": 116,
+				"atk": 4,
+				"def": 48,
+				"spa": 232,
+				"spd": 44,
+				"spe": 40
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 3,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "klinklang",
+			"item": "pidgeotite",
+			"ability": "solidrock",
+			"moves": [
+				"toxic",
+				"sacredfire",
+				"bind",
+				"mistyterrain"
+			],
+			"nature": "careful",
+			"evs": {
+				"hp": 24,
+				"atk": 84,
+				"def": 128,
+				"spa": 252,
+				"spd": 20,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "vivillonpokeball",
+			"item": "seaincense",
+			"ability": "stickyhold",
+			"moves": [
+				"toxic",
+				"knockoff",
+				"sludge",
+				"snarl"
+			],
+			"nature": "serious",
+			"evs": {
+				"hp": 12,
+				"atk": 104,
+				"def": 64,
+				"spa": 100,
+				"spd": 20,
+				"spe": 164
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "tropius",
+			"item": "charizarditex",
+			"ability": "levitate",
+			"moves": [
+				"toxic",
+				"slam",
+				"sludgewave",
+				"jumpkick"
+			],
+			"nature": "adamant",
+			"evs": {
+				"hp": 80,
+				"atk": 132,
+				"def": 24,
+				"spa": 8,
+				"spd": 244,
+				"spe": 20
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 19
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "magnezone",
+			"item": "ironplate",
+			"ability": "tangledfeet",
+			"moves": [
+				"toxic",
+				"sandattack",
+				"mudshot",
+				"rockclimb"
+			],
+			"nature": "naive",
+			"evs": {
+				"hp": 132,
+				"atk": 224,
+				"def": 152,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 7,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 3 2, move 4 1",
+			"p2": "move 3 1, move 2 1"
+		}
+	]
+}

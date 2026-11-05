@@ -1,0 +1,312 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,38921,7027,6713,42311",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Ditto",
+			"item": "Choice Scarf",
+			"ability": "Imposter",
+			"moves": [
+				"Transform"
+			],
+			"nature": "Brave",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 2,
+				"spa": 0,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "Kingambit",
+			"item": "Chople Berry",
+			"ability": "Defiant",
+			"moves": [
+				"Kowtow Cleave",
+				"Low Kick",
+				"Sucker Punch",
+				"Protect"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 32,
+				"atk": 25,
+				"def": 2,
+				"spa": 0,
+				"spd": 6,
+				"spe": 1
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "Raichu",
+			"item": "Raichunite Y",
+			"ability": "Static",
+			"moves": [
+				"Fake Out",
+				"Zap Cannon",
+				"Focus Blast",
+				"Protect"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 10,
+				"spa": 0,
+				"spd": 0,
+				"spe": 24
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "Salamence",
+			"item": "Salamencite",
+			"ability": "Intimidate",
+			"moves": [
+				"Hyper Voice",
+				"Protect",
+				"Draco Meteor",
+				"Flamethrower"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 1,
+				"atk": 21,
+				"def": 0,
+				"spa": 15,
+				"spd": 0,
+				"spe": 29
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Rillaboom",
+			"item": "Miracle Seed",
+			"ability": "Grassy Surge",
+			"moves": [
+				"Fake Out",
+				"Wood Hammer",
+				"Grassy Glide",
+				"U-turn"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 2,
+				"atk": 32,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "Salamence",
+			"item": "Salamencite",
+			"ability": "Intimidate",
+			"moves": [
+				"Hyper Voice",
+				"Protect",
+				"Draco Meteor",
+				"Tailwind"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 0,
+				"atk": 20,
+				"def": 0,
+				"spa": 14,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "Absol",
+			"item": "Absolite Z",
+			"ability": "Super Luck",
+			"moves": [
+				"Night Slash",
+				"Close Combat",
+				"Sucker Punch",
+				"Protect"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 4,
+				"atk": 32,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 30
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "Ditto",
+			"item": "Choice Scarf",
+			"ability": "Imposter",
+			"moves": [
+				"Transform"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 0,
+				"spa": 0,
+				"spd": 2,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 3 2, move 2 1",
+			"p2": "move 1 2, move 1 mega"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "pass, switch 4"
+		},
+		{
+			"p1": "switch 4, move 4",
+			"p2": "move 3 1, move 1 2"
+		},
+		{
+			"p1": "move 4 1 mega, move 1 -1",
+			"p2": "move 3 2, move 3 -1"
+		},
+		{
+			"p1": "switch 3, move 3 1",
+			"p2": "move 3 -2, move 3 -1"
+		},
+		{
+			"p1": "move 1 1, move 1 -1",
+			"p2": "move 2 1, switch 3"
+		},
+		{
+			"p1": "switch 3, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "switch 4, move 3 2",
+			"p2": "move 3 1, move 1 1"
+		},
+		{
+			"p1": "move 3 1, move 2 2",
+			"p2": "move 3 -2, move 1 1"
+		},
+		{
+			"p1": "switch 4, pass",
+			"p2": "switch 3, pass"
+		},
+		{
+			"p1": "move 3 -2, move 2 -1",
+			"p2": "move 2 2, pass"
+		},
+		{
+			"p1": "move 3 1, pass",
+			"p2": "move 2 -2, pass"
+		},
+		{
+			"p1": "move 1, pass",
+			"p2": "move 2 1, pass"
+		},
+		{
+			"p1": "move 1, pass",
+			"p2": "move 2 1, pass"
+		}
+	],
+	"teams": [
+		"FR-683",
+		"BR-247"
+	]
+}

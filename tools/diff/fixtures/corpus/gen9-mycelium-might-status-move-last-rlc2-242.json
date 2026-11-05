@@ -1,0 +1,262 @@
+{
+	"format": "gen9vgc2023regc",
+	"seed": "gen5,40685,35111,38913,36944",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "pawniard",
+			"item": "quickball",
+			"ability": "leafguard",
+			"moves": [
+				"phantomforce",
+				"trickroom",
+				"flamewheel",
+				"forcepalm"
+			],
+			"nature": "naive",
+			"evs": {
+				"hp": 56,
+				"atk": 140,
+				"def": 244,
+				"spa": 68,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 4,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "greattusk",
+			"item": "bignugget",
+			"ability": "myceliummight",
+			"moves": [
+				"tropkick",
+				"crosschop",
+				"focusenergy",
+				"sweetkiss"
+			],
+			"nature": "bashful",
+			"evs": {
+				"hp": 60,
+				"atk": 240,
+				"def": 208,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 6,
+				"def": 31,
+				"spa": 31,
+				"spd": 24,
+				"spe": 20
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "indeedeef",
+			"item": "adamantorb",
+			"ability": "poisonpoint",
+			"moves": [
+				"waterpulse",
+				"worryseed",
+				"incinerate",
+				"takedown"
+			],
+			"nature": "naive",
+			"evs": {
+				"hp": 60,
+				"atk": 68,
+				"def": 172,
+				"spa": 8,
+				"spd": 140,
+				"spe": 60
+			},
+			"ivs": {
+				"hp": 11,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "kirlia",
+			"item": "moonball",
+			"ability": "cutecharm",
+			"moves": [
+				"pluck",
+				"bite",
+				"electroweb",
+				"infernalparade"
+			],
+			"nature": "jolly",
+			"evs": {
+				"hp": 172,
+				"atk": 84,
+				"def": 192,
+				"spa": 60,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 6,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "brambleghast",
+			"item": "assaultvest",
+			"ability": "snowcloak",
+			"moves": [
+				"icepunch",
+				"memento",
+				"firelash",
+				"dragontail"
+			],
+			"nature": "jolly",
+			"evs": {
+				"hp": 100,
+				"atk": 184,
+				"def": 120,
+				"spa": 104,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 2
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "rellor",
+			"item": "destinyknot",
+			"ability": "moody",
+			"moves": [
+				"frenzyplant",
+				"headbutt",
+				"quash",
+				"triplearrows"
+			],
+			"nature": "modest",
+			"evs": {
+				"hp": 72,
+				"atk": 52,
+				"def": 0,
+				"spa": 40,
+				"spd": 24,
+				"spe": 172
+			},
+			"ivs": {
+				"hp": 24,
+				"atk": 31,
+				"def": 29,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "krokorok",
+			"item": "rawstberry",
+			"ability": "snowcloak",
+			"moves": [
+				"reversal",
+				"crushclaw",
+				"powerswap",
+				"fierydance"
+			],
+			"nature": "lax",
+			"evs": {
+				"hp": 96,
+				"atk": 88,
+				"def": 244,
+				"spa": 80,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 23,
+				"spa": 31,
+				"spd": 18,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "sneasler",
+			"item": "choicespecs",
+			"ability": "damp",
+			"moves": [
+				"darkpulse",
+				"powergem",
+				"bonerush",
+				"destinybond"
+			],
+			"nature": "naive",
+			"evs": {
+				"hp": 192,
+				"atk": 104,
+				"def": 96,
+				"spa": 116,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 21,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 3 2, move 4 2",
+			"p2": "move 4 1, move 4 2"
+		}
+	]
+}

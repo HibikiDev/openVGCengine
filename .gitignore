@@ -1,0 +1,11 @@
+vendor/
+target/
+node_modules/
+.venv/
+__pycache__/
+*.pyc
+models/
+runtime/
+sprites/
+replays/
+trainer/runs/

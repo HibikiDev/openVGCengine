@@ -1,0 +1,262 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,14562,30103,13861,34199",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "thievul",
+			"item": "fairyfeather",
+			"ability": "opportunist",
+			"moves": [
+				"spikes",
+				"bugbite",
+				"ragefist",
+				"nightslash"
+			],
+			"nature": "lonely",
+			"evs": {
+				"hp": 32,
+				"atk": 32,
+				"def": 31,
+				"spa": 15,
+				"spd": 25,
+				"spe": 17
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "pyroar",
+			"item": "whiteherb",
+			"ability": "battlebond",
+			"moves": [
+				"hex",
+				"finalgambit",
+				"healpulse",
+				"alluringvoice"
+			],
+			"nature": "timid",
+			"evs": {
+				"hp": 32,
+				"atk": 31,
+				"def": 11,
+				"spa": 9,
+				"spd": 25,
+				"spe": 27
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "maushold",
+			"item": "grassyseed",
+			"ability": "berserk",
+			"moves": [
+				"encore",
+				"stockpile",
+				"calmmind",
+				"doubleedge"
+			],
+			"nature": "naive",
+			"evs": {
+				"hp": 32,
+				"atk": 13,
+				"def": 27,
+				"spa": 7,
+				"spd": 13,
+				"spe": 23
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "gallade",
+			"item": "choicescarf",
+			"ability": "poisontouch",
+			"moves": [
+				"auroraveil",
+				"firstimpression",
+				"vacuumwave",
+				"risingvoltage"
+			],
+			"nature": "serious",
+			"evs": {
+				"hp": 32,
+				"atk": 15,
+				"def": 21,
+				"spa": 6,
+				"spd": 26,
+				"spe": 19
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "politoed",
+			"item": "scopelens",
+			"ability": "speedboost",
+			"moves": [
+				"protect",
+				"dragondance",
+				"xscissor",
+				"heavyslam"
+			],
+			"nature": "lax",
+			"evs": {
+				"hp": 32,
+				"atk": 31,
+				"def": 4,
+				"spa": 12,
+				"spd": 18,
+				"spe": 6
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "pincurchin",
+			"item": "charcoal",
+			"ability": "liquidvoice",
+			"moves": [
+				"imprison",
+				"perishsong",
+				"doubleshock",
+				"electroshot"
+			],
+			"nature": "careful",
+			"evs": {
+				"hp": 32,
+				"atk": 6,
+				"def": 9,
+				"spa": 14,
+				"spd": 18,
+				"spe": 2
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "toxtricity",
+			"item": "tangaberry",
+			"ability": "embodyaspectcornerstone",
+			"moves": [
+				"spikes",
+				"detect",
+				"leechlife",
+				"risingvoltage"
+			],
+			"nature": "quiet",
+			"evs": {
+				"hp": 32,
+				"atk": 27,
+				"def": 9,
+				"spa": 27,
+				"spd": 3,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "maushold",
+			"item": "mistyseed",
+			"ability": "plus",
+			"moves": [
+				"temperflare",
+				"coil",
+				"darkestlariat",
+				"healingwish"
+			],
+			"nature": "serious",
+			"evs": {
+				"hp": 32,
+				"atk": 16,
+				"def": 18,
+				"spa": 17,
+				"spd": 4,
+				"spe": 31
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 1, move 2 1",
+			"p2": "move 3 2, move 4 1"
+		}
+	]
+}

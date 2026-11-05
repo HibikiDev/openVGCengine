@@ -1,0 +1,290 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,52760,57281,33107,21199",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Sylveon",
+			"item": "redcard",
+			"ability": "Pixilate",
+			"moves": [
+				"Hyper Voice",
+				"Hyper Beam",
+				"Quick Attack",
+				"Detect"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 21,
+				"atk": 0,
+				"def": 6,
+				"spa": 24,
+				"spd": 0,
+				"spe": 15
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "Raichu",
+			"item": "Raichunite Y",
+			"ability": "pickpocket",
+			"moves": [
+				"Zap Cannon",
+				"Focus Blast",
+				"Fake Out",
+				"Protect"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 30,
+				"atk": 0,
+				"def": 12,
+				"spa": 0,
+				"spd": 0,
+				"spe": 24
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "Gholdengo",
+			"item": "ejectbutton",
+			"ability": "Good as Gold",
+			"moves": [
+				"Make It Rain",
+				"Shadow Ball",
+				"Nasty Plot",
+				"Protect"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 2,
+				"atk": 0,
+				"def": 0,
+				"spa": 32,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "Rillaboom",
+			"item": "ejectbutton",
+			"ability": "pickpocket",
+			"moves": [
+				"Wood Hammer",
+				"Grassy Glide",
+				"U-turn",
+				"Fake Out"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 21,
+				"atk": 25,
+				"def": 6,
+				"spa": 0,
+				"spd": 6,
+				"spe": 8
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Sneasler",
+			"item": "Grassy Seed",
+			"ability": "pickpocket",
+			"moves": [
+				"Dire Claw",
+				"Close Combat",
+				"Fake Out",
+				"Protect"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 18,
+				"atk": 21,
+				"def": 9,
+				"spa": 0,
+				"spd": 0,
+				"spe": 18
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "Salamence",
+			"item": "Salamencite",
+			"ability": "Intimidate",
+			"moves": [
+				"Double-Edge",
+				"Hyper Voice",
+				"Tailwind",
+				"Protect"
+			],
+			"nature": "Naive",
+			"evs": {
+				"hp": 11,
+				"atk": 13,
+				"def": 1,
+				"spa": 9,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "Milotic",
+			"item": "Sitrus Berry",
+			"ability": "pickpocket",
+			"moves": [
+				"Scald",
+				"Icy Wind",
+				"Life Dew",
+				"Protect"
+			],
+			"nature": "Bold",
+			"evs": {
+				"hp": 30,
+				"atk": 0,
+				"def": 21,
+				"spa": 13,
+				"spd": 0,
+				"spe": 2
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "Gholdengo",
+			"item": "Life Orb",
+			"ability": "pickpocket",
+			"moves": [
+				"Make It Rain",
+				"Shadow Ball",
+				"Nasty Plot",
+				"Protect"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 14,
+				"atk": 0,
+				"def": 0,
+				"spa": 17,
+				"spd": 5,
+				"spe": 30
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 1, move 1 1",
+			"p2": "move 2 -2, move 1 -1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 3, switch 4"
+		},
+		{
+			"p1": "move 2 -2, move 1 -1 mega",
+			"p2": "move 1 1, move 2 2"
+		},
+		{
+			"p1": "pass, switch 4",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 2 2, move 2 1",
+			"p2": "move 1 2, move 3"
+		},
+		{
+			"p1": "move 1, move 2 2",
+			"p2": "move 4, move 3"
+		},
+		{
+			"p1": "move 3 2, move 1 -1",
+			"p2": "move 1 -2, move 2 -1"
+		}
+	],
+	"teams": [
+		"MC271",
+		"MC194"
+	]
+}

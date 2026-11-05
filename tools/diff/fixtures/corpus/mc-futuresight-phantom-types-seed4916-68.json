@@ -1,0 +1,322 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,14219,585,25699,17394",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Gengar",
+			"item": "Gengarite",
+			"ability": "Cursed Body",
+			"moves": [
+				"Protect",
+				"futuresight",
+				"Sludge Bomb",
+				"Shadow Ball"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 30,
+				"atk": 0,
+				"def": 1,
+				"spa": 1,
+				"spd": 28,
+				"spe": 6
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "Politoed",
+			"item": "Sitrus Berry",
+			"ability": "Drizzle",
+			"moves": [
+				"Protect",
+				"Weather Ball",
+				"futuresight",
+				"Encore"
+			],
+			"nature": "Calm",
+			"evs": {
+				"hp": 31,
+				"atk": 0,
+				"def": 23,
+				"spa": 0,
+				"spd": 12,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "Incineroar",
+			"item": "Passho Berry",
+			"ability": "Intimidate",
+			"moves": [
+				"futuresight",
+				"Fake Out",
+				"Throat Chop",
+				"Parting Shot"
+			],
+			"nature": "Careful",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 22,
+				"spa": 0,
+				"spd": 12,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "Golisopod",
+			"item": "Golisopite",
+			"ability": "Emergency Exit",
+			"moves": [
+				"futuresight",
+				"Leech Life",
+				"Sucker Punch",
+				"Swords Dance"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 32,
+				"atk": 32,
+				"def": 0,
+				"spa": 0,
+				"spd": 2,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Armarouge",
+			"item": "Twisted Spoon",
+			"ability": "Flash Fire",
+			"moves": [
+				"futuresight",
+				"Expanding Force",
+				"Armor Cannon",
+				"Ally Switch"
+			],
+			"nature": "Sassy",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 0,
+				"spa": 32,
+				"spd": 2,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "Grapploct",
+			"item": "Expert Belt",
+			"ability": "Technician",
+			"moves": [
+				"Storm Throw",
+				"Sucker Punch",
+				"Bulk Up",
+				"futuresight"
+			],
+			"nature": "Brave",
+			"evs": {
+				"hp": 32,
+				"atk": 32,
+				"def": 0,
+				"spa": 0,
+				"spd": 2,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "Golisopod",
+			"item": "Golisopite",
+			"ability": "Emergency Exit",
+			"moves": [
+				"Protect",
+				"Bulk Up",
+				"futuresight",
+				"Iron Head"
+			],
+			"nature": "Brave",
+			"evs": {
+				"hp": 32,
+				"atk": 32,
+				"def": 0,
+				"spa": 0,
+				"spd": 2,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "Hatterene",
+			"item": "Life Orb",
+			"ability": "Magic Bounce",
+			"moves": [
+				"Expanding Force",
+				"Dazzling Gleam",
+				"futuresight",
+				"Magic Powder"
+			],
+			"nature": "Quiet",
+			"evs": {
+				"hp": 27,
+				"atk": 0,
+				"def": 7,
+				"spa": 32,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 3 2 mega, move 3 1",
+			"p2": "move 1 2, switch 3"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "pass, switch 3"
+		},
+		{
+			"p1": "move 3 -2, move 4 1",
+			"p2": "move 1 -2, move 2 1"
+		},
+		{
+			"p1": "move 4 -2, move 1",
+			"p2": "move 1 1, move 3"
+		},
+		{
+			"p1": "move 2 2, move 4 2",
+			"p2": "move 1 2, move 1 2"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "pass, switch 4"
+		},
+		{
+			"p1": "move 4 1, move 3 2",
+			"p2": "move 1 2, move 4 1"
+		},
+		{
+			"p1": "switch 4, pass",
+			"p2": "switch 3, pass"
+		},
+		{
+			"p1": "move 3 1, move 3 1",
+			"p2": "move 3 1 mega, move 4 -1"
+		},
+		{
+			"p1": "pass, switch 3",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 3 -2, move 2 1",
+			"p2": "move 4 1, move 3 1"
+		},
+		{
+			"p1": "move 1 2, move 4 1",
+			"p2": "pass, move 1 -1"
+		},
+		{
+			"p1": "move 1 2, move 3 2",
+			"p2": "pass, move 4 1"
+		},
+		{
+			"p1": "move 3 2, move 4 -1",
+			"p2": "pass, move 1 1"
+		},
+		{
+			"p1": "move 3 -2, move 4 1",
+			"p2": "pass, move 1 -1"
+		}
+	],
+	"teams": [
+		"MC400",
+		"MC281"
+	]
+}

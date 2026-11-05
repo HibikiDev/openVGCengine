@@ -1,0 +1,322 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,12731,52360,30400,29642",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Toxapex",
+			"item": "Leftovers",
+			"ability": "Regenerator",
+			"moves": [
+				"Baneful Bunker",
+				"Toxic",
+				"Infestation",
+				"Wide Guard"
+			],
+			"nature": "Bold",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 18,
+				"spa": 0,
+				"spd": 16,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "Kingambit",
+			"item": "Life Orb",
+			"ability": "Defiant",
+			"moves": [
+				"Protect",
+				"Swords Dance",
+				"Sucker Punch",
+				"Kowtow Cleave"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 32,
+				"atk": 32,
+				"def": 0,
+				"spa": 0,
+				"spd": 1,
+				"spe": 1
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "Charizard",
+			"item": "Charizardite Y",
+			"ability": "Blaze",
+			"moves": [
+				"Protect",
+				"Weather Ball",
+				"Heat Wave",
+				"Ancient Power"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 28,
+				"atk": 0,
+				"def": 26,
+				"spa": 1,
+				"spd": 0,
+				"spe": 11
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "Incineroar",
+			"item": "Sitrus Berry",
+			"ability": "Intimidate",
+			"moves": [
+				"Fake Out",
+				"Darkest Lariat",
+				"Flare Blitz",
+				"Parting Shot"
+			],
+			"nature": "Impish",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 12,
+				"spa": 0,
+				"spd": 21,
+				"spe": 1
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Arcanine-Hisui",
+			"item": "Focus Sash",
+			"ability": "Shield Dust",
+			"moves": [
+				"Head Smash",
+				"Flare Blitz",
+				"Extreme Speed",
+				"Protect"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 2,
+				"atk": 32,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "Farigiraf",
+			"item": "Sitrus Berry",
+			"ability": "Shield Dust",
+			"moves": [
+				"Psychic",
+				"Thunderbolt",
+				"Trick Room",
+				"Protect"
+			],
+			"nature": "Relaxed",
+			"evs": {
+				"hp": 31,
+				"atk": 0,
+				"def": 21,
+				"spa": 0,
+				"spd": 14,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "Sylveon",
+			"item": "Fairy Feather",
+			"ability": "Rivalry",
+			"moves": [
+				"Hyper Voice",
+				"Hyper Beam",
+				"Quick Attack",
+				"Detect"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 20,
+				"atk": 0,
+				"def": 29,
+				"spa": 10,
+				"spd": 0,
+				"spe": 7
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "Salamence",
+			"item": "Salamencite",
+			"ability": "Rivalry",
+			"moves": [
+				"Hyper Voice",
+				"Draco Meteor",
+				"Tailwind",
+				"Protect"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 21,
+				"atk": 0,
+				"def": 3,
+				"spa": 20,
+				"spd": 5,
+				"spe": 17
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"turns": [
+		{
+			"p1": "switch 4, move 3 1",
+			"p2": "move 2 2, switch 3"
+		},
+		{
+			"p1": "move 4 2, move 4 2",
+			"p2": "switch 4, move 2 -1"
+		},
+		{
+			"p1": "switch 4, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "switch 4, move 3 1",
+			"p2": "move 2 2 mega, move 1"
+		},
+		{
+			"p1": "pass, switch 4",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 1 2, move 1",
+			"p2": "move 1, move 1"
+		},
+		{
+			"p1": "move 3 1, switch 3",
+			"p2": "move 1, move 3 1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 4, pass"
+		},
+		{
+			"p1": "move 2 1, move 1 mega",
+			"p2": "move 3 -2, move 3 -1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 3, pass"
+		},
+		{
+			"p1": "move 4 1, switch 3",
+			"p2": "move 2 2, move 2 -1"
+		},
+		{
+			"p1": "switch 3, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 4 -2, move 1",
+			"p2": "move 1 2, move 1"
+		},
+		{
+			"p1": "move 2 1, move 3 1",
+			"p2": "move 2 2, move 2 -1"
+		},
+		{
+			"p1": "move 1, move 3 1",
+			"p2": "pass, move 1"
+		}
+	],
+	"teams": [
+		"MC67",
+		"MC311"
+	]
+}

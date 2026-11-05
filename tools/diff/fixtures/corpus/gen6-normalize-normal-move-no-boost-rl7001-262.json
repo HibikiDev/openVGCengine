@@ -1,0 +1,262 @@
+{
+	"format": "gen6vgc2015",
+	"seed": "gen5,47094,26792,57755,4067",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "gothita",
+			"item": "chestoberry",
+			"ability": "shedskin",
+			"moves": [
+				"bugbite",
+				"kinesis",
+				"gust",
+				"eggbomb"
+			],
+			"nature": "hardy",
+			"evs": {
+				"hp": 136,
+				"atk": 28,
+				"def": 140,
+				"spa": 204,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "smeargle",
+			"item": "redcard",
+			"ability": "swiftswim",
+			"moves": [
+				"tailwind",
+				"watershuriken",
+				"retaliate",
+				"swordsdance"
+			],
+			"nature": "quirky",
+			"evs": {
+				"hp": 244,
+				"atk": 64,
+				"def": 172,
+				"spa": 28,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 29,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 13,
+				"spe": 29
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "smeargle",
+			"item": "laxincense",
+			"ability": "strongjaw",
+			"moves": [
+				"quickguard",
+				"scaryface",
+				"paraboliccharge",
+				"skullbash"
+			],
+			"nature": "timid",
+			"evs": {
+				"hp": 44,
+				"atk": 60,
+				"def": 4,
+				"spa": 244,
+				"spd": 156,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 5,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 25
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "starmie",
+			"item": "armorfossil",
+			"ability": "bulletproof",
+			"moves": [
+				"powerswap",
+				"bravebird",
+				"hyperfang",
+				"wideguard"
+			],
+			"nature": "serious",
+			"evs": {
+				"hp": 216,
+				"atk": 160,
+				"def": 120,
+				"spa": 12,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 28,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "venonat",
+			"item": "expertbelt",
+			"ability": "magicguard",
+			"moves": [
+				"stealthrock",
+				"phantomforce",
+				"screech",
+				"twister"
+			],
+			"nature": "modest",
+			"evs": {
+				"hp": 148,
+				"atk": 96,
+				"def": 16,
+				"spa": 152,
+				"spd": 96,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 16,
+				"def": 31,
+				"spa": 2,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "quilava",
+			"item": "sunstone",
+			"ability": "normalize",
+			"moves": [
+				"sandattack",
+				"boomburst",
+				"volttackle",
+				"swagger"
+			],
+			"nature": "quirky",
+			"evs": {
+				"hp": 132,
+				"atk": 208,
+				"def": 20,
+				"spa": 104,
+				"spd": 0,
+				"spe": 44
+			},
+			"ivs": {
+				"hp": 22,
+				"atk": 19,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "larvitar",
+			"item": "assaultvest",
+			"ability": "whitesmoke",
+			"moves": [
+				"shadowball",
+				"babydolleyes",
+				"weatherball",
+				"blueflare"
+			],
+			"nature": "serious",
+			"evs": {
+				"hp": 152,
+				"atk": 184,
+				"def": 128,
+				"spa": 44,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "smeargle",
+			"item": "durinberry",
+			"ability": "torrent",
+			"moves": [
+				"bounce",
+				"powertrick",
+				"spite",
+				"shadowpunch"
+			],
+			"nature": "modest",
+			"evs": {
+				"hp": 144,
+				"atk": 104,
+				"def": 100,
+				"spa": 160,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 12,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 3 2, move 2 1",
+			"p2": "move 4, move 2"
+		}
+	]
+}

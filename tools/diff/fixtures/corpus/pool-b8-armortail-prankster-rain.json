@@ -1,0 +1,322 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,110,61569,54480,39078",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Golisopod",
+			"item": "Golisopite",
+			"ability": "Emergency Exit",
+			"moves": [
+				"swallow",
+				"Iron Head",
+				"Close Combat",
+				"fakeout"
+			],
+			"nature": "Brave",
+			"evs": {
+				"hp": 32,
+				"atk": 32,
+				"def": 0,
+				"spa": 0,
+				"spd": 2,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "Farigiraf",
+			"item": "Sitrus Berry",
+			"ability": "Armor Tail",
+			"moves": [
+				"fakeout",
+				"upperhand",
+				"Trick Room",
+				"Psychic Terrain"
+			],
+			"nature": "Relaxed",
+			"evs": {
+				"hp": 31,
+				"atk": 0,
+				"def": 20,
+				"spa": 0,
+				"spd": 15,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "Dragalge",
+			"item": "Dragalgite",
+			"ability": "Adaptability",
+			"moves": [
+				"Sludge Bomb",
+				"Flip Turn",
+				"earthquake",
+				"pluck"
+			],
+			"nature": "Quiet",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 2,
+				"spa": 32,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "Torkoal",
+			"item": "Charcoal",
+			"ability": "Drought",
+			"moves": [
+				"upperhand",
+				"smackdown",
+				"Earth Power",
+				"Protect"
+			],
+			"nature": "Quiet",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 1,
+				"spa": 32,
+				"spd": 1,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Klefki",
+			"item": "Focus Sash",
+			"ability": "Prankster",
+			"moves": [
+				"Dazzling Gleam",
+				"machpunch",
+				"Rain Dance",
+				"swallow"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 1,
+				"spa": 32,
+				"spd": 1,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "Aggron",
+			"item": "Life Orb",
+			"ability": "Rock Head",
+			"moves": [
+				"Blizzard",
+				"gravity",
+				"Protect",
+				"upperhand"
+			],
+			"nature": "Quiet",
+			"evs": {
+				"hp": 0,
+				"atk": 18,
+				"def": 0,
+				"spa": 32,
+				"spd": 0,
+				"spe": 16
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "Golisopod",
+			"item": "Golisopite",
+			"ability": "Emergency Exit",
+			"moves": [
+				"Protect",
+				"Leech Life",
+				"rest",
+				"bugbite"
+			],
+			"nature": "Brave",
+			"evs": {
+				"hp": 32,
+				"atk": 32,
+				"def": 2,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "Chimecho",
+			"item": "Chimechite",
+			"ability": "Levitate",
+			"moves": [
+				"Psychic",
+				"Trick Room",
+				"yawn",
+				"rest"
+			],
+			"nature": "Quiet",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 2,
+				"spa": 32,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 3 -2, move 4",
+			"p2": "move 3, move 4 1"
+		},
+		{
+			"p1": "move 2 2 mega, move 4",
+			"p2": "move 2 -2, move 1"
+		},
+		{
+			"p1": "switch 3, move 4",
+			"p2": "move 2 2, switch 4"
+		},
+		{
+			"p1": "move 2 -2, move 2 -1",
+			"p2": "move 4, move 1 1"
+		},
+		{
+			"p1": "switch 4, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 3 -2, switch 3",
+			"p2": "switch 3, switch 4"
+		},
+		{
+			"p1": "move 1 -2, move 4 1",
+			"p2": "move 1, switch 3"
+		},
+		{
+			"p1": "move 1 1, move 3 -1",
+			"p2": "move 4 -2 mega, move 2 -1"
+		},
+		{
+			"p1": "move 3 -2, move 2 2",
+			"p2": "switch 3, move 2 2"
+		},
+		{
+			"p1": "move 1 2, move 3 2",
+			"p2": "move 2, move 2 2"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 4, switch 3"
+		},
+		{
+			"p1": "move 1 2, switch 4",
+			"p2": "move 2, move 2 1"
+		},
+		{
+			"p1": "move 2 -2, move 1 2",
+			"p2": "move 3 -2, move 2 1"
+		},
+		{
+			"p1": "switch 3, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 1 2, move 1 -1",
+			"p2": "move 2, move 2 2"
+		}
+	],
+	"teams": [
+		"MC75",
+		"MC123"
+	]
+}

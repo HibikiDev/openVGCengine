@@ -1,0 +1,322 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,40780,17498,55367,23571",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Incineroar",
+			"item": "quickclaw",
+			"ability": "Intimidate",
+			"moves": [
+				"uturn",
+				"Parting Shot",
+				"Fake Out",
+				"Snarl"
+			],
+			"nature": "Careful",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 16,
+				"spa": 0,
+				"spd": 18,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "Sirfetch’d",
+			"item": "Focus Sash",
+			"ability": "Scrappy",
+			"moves": [
+				"heatwave",
+				"Meteor Assault",
+				"Feint",
+				"Detect"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 0,
+				"atk": 32,
+				"def": 32,
+				"spa": 0,
+				"spd": 2,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "Garchomp",
+			"item": "kingsrock",
+			"ability": "Rough Skin",
+			"moves": [
+				"Draco Meteor",
+				"encore",
+				"Flamethrower",
+				"Protect"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 2,
+				"atk": 0,
+				"def": 0,
+				"spa": 32,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "Sylveon",
+			"item": "ejectbutton",
+			"ability": "Pixilate",
+			"moves": [
+				"earthquake",
+				"Hyper Beam",
+				"Yawn",
+				"Detect"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 9,
+				"atk": 0,
+				"def": 22,
+				"spa": 20,
+				"spd": 0,
+				"spe": 15
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Garchomp",
+			"item": "airballoon",
+			"ability": "Rough Skin",
+			"moves": [
+				"Dragon Claw",
+				"Earthquake",
+				"heatwave",
+				"Stomping Tantrum"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 2,
+				"atk": 32,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "Farigiraf",
+			"item": "Sitrus Berry",
+			"ability": "Armor Tail",
+			"moves": [
+				"Psychic",
+				"Thunderbolt",
+				"Trick Room",
+				"earthquake"
+			],
+			"nature": "Bold",
+			"evs": {
+				"hp": 25,
+				"atk": 0,
+				"def": 26,
+				"spa": 0,
+				"spd": 15,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "Charizard",
+			"item": "Charizardite Y",
+			"ability": "Blaze",
+			"moves": [
+				"Heat Wave",
+				"Weather Ball",
+				"Solar Beam",
+				"rockslide"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 2,
+				"atk": 0,
+				"def": 0,
+				"spa": 32,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "Sylveon",
+			"item": "kingsrock",
+			"ability": "Pixilate",
+			"moves": [
+				"Hyper Voice",
+				"Hyper Beam",
+				"uturn",
+				"Detect"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 2,
+				"spa": 32,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 2 -2, switch 4",
+			"p2": "move 1 -2, move 1 1"
+		},
+		{
+			"p1": "switch 4, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "switch 3, move 4",
+			"p2": "move 1 -2, move 1 1"
+		},
+		{
+			"p1": "move 1 -2, move 3 2",
+			"p2": "switch 4, move 2 2"
+		},
+		{
+			"p1": "pass, switch 3",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "switch 3, move 1",
+			"p2": "move 2 1, move 2 -1"
+		},
+		{
+			"p1": "move 2 -2, move 3 2",
+			"p2": "move 1, switch 4"
+		},
+		{
+			"p1": "pass, switch 4",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 1, move 4",
+			"p2": "move 2 1, move 4 1"
+		},
+		{
+			"p1": "switch 3, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 1 2, move 2 1",
+			"p2": "move 1, move 2"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "pass, switch 4"
+		},
+		{
+			"p1": "move 2 1, move 4",
+			"p2": "move 3 2, move 1 -1"
+		},
+		{
+			"p1": "move 3 2, pass",
+			"p2": "move 1, switch 3"
+		},
+		{
+			"p1": "move 3 2, pass",
+			"p2": "move 2 2, move 3 -1 mega"
+		}
+	],
+	"teams": [
+		"FR-947",
+		"BA-242"
+	]
+}

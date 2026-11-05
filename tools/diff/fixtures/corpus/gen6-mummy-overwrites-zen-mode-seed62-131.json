@@ -1,0 +1,262 @@
+{
+	"format": "gen6vgc2015",
+	"seed": "gen5,14591,58770,18023,20636",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "nosepass",
+			"item": "berryjuice",
+			"ability": "moldbreaker",
+			"moves": [
+				"pursuit",
+				"nobleroar",
+				"selfdestruct",
+				"defensecurl"
+			],
+			"nature": "calm",
+			"evs": {
+				"hp": 20,
+				"atk": 60,
+				"def": 136,
+				"spa": 172,
+				"spd": 120,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 5,
+				"atk": 31,
+				"def": 31,
+				"spa": 22,
+				"spd": 22,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "houndoom",
+			"item": "focussash",
+			"ability": "mummy",
+			"moves": [
+				"pursuit",
+				"forcepalm",
+				"stormthrow",
+				"waterspout"
+			],
+			"nature": "mild",
+			"evs": {
+				"hp": 148,
+				"atk": 172,
+				"def": 164,
+				"spa": 24,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 1,
+				"atk": 4,
+				"def": 30,
+				"spa": 4,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "omanyte",
+			"item": "seaincense",
+			"ability": "flashfire",
+			"moves": [
+				"pursuit",
+				"razorshell",
+				"acid",
+				"focusblast"
+			],
+			"nature": "sassy",
+			"evs": {
+				"hp": 156,
+				"atk": 100,
+				"def": 36,
+				"spa": 48,
+				"spd": 112,
+				"spe": 56
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "espeon",
+			"item": "metalcoat",
+			"ability": "voltabsorb",
+			"moves": [
+				"pursuit",
+				"transform",
+				"amnesia",
+				"fireblast"
+			],
+			"nature": "relaxed",
+			"evs": {
+				"hp": 60,
+				"atk": 12,
+				"def": 32,
+				"spa": 164,
+				"spd": 216,
+				"spe": 24
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "toxicroak",
+			"item": "grepaberry",
+			"ability": "zenmode",
+			"moves": [
+				"pursuit",
+				"leechseed",
+				"dragonclaw",
+				"focusblast"
+			],
+			"nature": "gentle",
+			"evs": {
+				"hp": 120,
+				"atk": 184,
+				"def": 136,
+				"spa": 68,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 24,
+				"spa": 31,
+				"spd": 30,
+				"spe": 25
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "chingling",
+			"item": "pidgeotite",
+			"ability": "stall",
+			"moves": [
+				"pursuit",
+				"eerieimpulse",
+				"cut",
+				"nightmare"
+			],
+			"nature": "serious",
+			"evs": {
+				"hp": 72,
+				"atk": 92,
+				"def": 180,
+				"spa": 156,
+				"spd": 8,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 27,
+				"spe": 12
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "swirlix",
+			"item": "iapapaberry",
+			"ability": "megalauncher",
+			"moves": [
+				"pursuit",
+				"dragonrush",
+				"flameburst",
+				"sludge"
+			],
+			"nature": "gentle",
+			"evs": {
+				"hp": 176,
+				"atk": 36,
+				"def": 108,
+				"spa": 20,
+				"spd": 168,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 20,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "slaking",
+			"item": "redcard",
+			"ability": "strongjaw",
+			"moves": [
+				"pursuit",
+				"withdraw",
+				"metalclaw",
+				"paraboliccharge"
+			],
+			"nature": "impish",
+			"evs": {
+				"hp": 244,
+				"atk": 20,
+				"def": 244,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 3,
+				"atk": 31,
+				"def": 7,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 2 1, move 3 2",
+			"p2": "move 1 2, move 2 1"
+		}
+	]
+}

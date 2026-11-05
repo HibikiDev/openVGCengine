@@ -1,0 +1,322 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,58886,7316,28522,16961",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Staraptor",
+			"item": "Staraptite",
+			"ability": "Intimidate",
+			"moves": [
+				"metalburst",
+				"uturn",
+				"Roost",
+				"Protect"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 22,
+				"atk": 12,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "Indeedee-F",
+			"item": "Chesto Berry",
+			"ability": "Psychic Surge",
+			"moves": [
+				"Follow Me",
+				"closecombat",
+				"bulletseed",
+				"Trick Room"
+			],
+			"nature": "Bold",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 32,
+				"spa": 0,
+				"spd": 2,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "Whimsicott",
+			"item": "Focus Sash",
+			"ability": "Prankster",
+			"moves": [
+				"substitute",
+				"earthquake",
+				"Encore",
+				"Charm"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 2,
+				"atk": 0,
+				"def": 0,
+				"spa": 32,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "Gardevoir",
+			"item": "Gardevoirite",
+			"ability": "Telepathy",
+			"moves": [
+				"substitute",
+				"Expanding Force",
+				"metalburst",
+				"Protect"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 14,
+				"atk": 0,
+				"def": 0,
+				"spa": 32,
+				"spd": 0,
+				"spe": 20
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Floette-Eternal",
+			"item": "Floettite",
+			"ability": "Flower Veil",
+			"moves": [
+				"Moonblast",
+				"closecombat",
+				"Calm Mind",
+				"ragepowder"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 28,
+				"atk": 0,
+				"def": 1,
+				"spa": 5,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "Gholdengo",
+			"item": "Leftovers",
+			"ability": "Good as Gold",
+			"moves": [
+				"closecombat",
+				"Nasty Plot",
+				"Substitute",
+				"earthquake"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 30,
+				"atk": 0,
+				"def": 0,
+				"spa": 7,
+				"spd": 0,
+				"spe": 29
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "Incineroar",
+			"item": "Sitrus Berry",
+			"ability": "Intimidate",
+			"moves": [
+				"Flare Blitz",
+				"Helping Hand",
+				"icywind",
+				"dazzlinggleam"
+			],
+			"nature": "Impish",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 20,
+				"spa": 0,
+				"spd": 13,
+				"spe": 1
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "Garchomp",
+			"item": "Garchompite Z",
+			"ability": "Rough Skin",
+			"moves": [
+				"Protect",
+				"Draco Meteor",
+				"comeuppance",
+				"uturn"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 0,
+				"atk": 0,
+				"def": 0,
+				"spa": 32,
+				"spd": 2,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 1, switch 3",
+			"p2": "move 2 -2 mega, move 2"
+		},
+		{
+			"p1": "move 2 2, move 3 -1",
+			"p2": "move 2 1, move 3"
+		},
+		{
+			"p1": "move 1, move 4 2",
+			"p2": "move 1 -2, move 2"
+		},
+		{
+			"p1": "switch 4, move 4 -1",
+			"p2": "move 1 1, switch 3"
+		},
+		{
+			"p1": "move 2 2 mega, move 1",
+			"p2": "move 1 -2, move 1 1"
+		},
+		{
+			"p1": "switch 3, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 2 -2, move 3 -1",
+			"p2": "move 2 -2, move 3"
+		},
+		{
+			"p1": "switch 4, move 3 -1",
+			"p2": "switch 4, move 1 2"
+		},
+		{
+			"p1": "pass, switch 4",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 4, move 3 1",
+			"p2": "move 4 2, move 2 -1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 3, pass"
+		},
+		{
+			"p1": "move 4, move 3 2",
+			"p2": "switch 4, move 1 2"
+		},
+		{
+			"p1": "move 2 2, move 3 -1",
+			"p2": "move 2 1, switch 3"
+		},
+		{
+			"p1": "move 2 2, move 2 2",
+			"p2": "move 2 2, switch 3"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "pass, switch 3"
+		}
+	],
+	"teams": [
+		"MC121",
+		"MC267"
+	]
+}

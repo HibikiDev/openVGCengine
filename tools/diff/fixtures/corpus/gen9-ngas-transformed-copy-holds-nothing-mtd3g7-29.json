@@ -1,0 +1,318 @@
+{
+	"format": "gen9vgc2024regg",
+	"seed": "gen5,31342,23645,3385,64968",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "hooh",
+			"item": "splashplate",
+			"ability": "toxicdebris",
+			"moves": [
+				"recover",
+				"roar",
+				"slackoff",
+				"volttackle"
+			],
+			"nature": "docile",
+			"evs": {
+				"hp": 124,
+				"atk": 92,
+				"def": 196,
+				"spa": 24,
+				"spd": 72,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 7,
+				"spd": 31,
+				"spe": 21
+			},
+			"level": 50,
+			"gender": "N",
+			"teraType": "Dragon"
+		},
+		{
+			"name": "Mon1",
+			"species": "piplup",
+			"item": "sportball",
+			"ability": "neutralizinggas",
+			"moves": [
+				"simplebeam",
+				"hydropump",
+				"roleplay",
+				"lastresort"
+			],
+			"nature": "adamant",
+			"evs": {
+				"hp": 160,
+				"atk": 184,
+				"def": 8,
+				"spa": 28,
+				"spd": 100,
+				"spe": 28
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 22,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Rock"
+		},
+		{
+			"name": "Mon2",
+			"species": "sneasler",
+			"item": "spelltag",
+			"ability": "pressure",
+			"moves": [
+				"transform",
+				"iceburn",
+				"charge",
+				"slash"
+			],
+			"nature": "hardy",
+			"evs": {
+				"hp": 56,
+				"atk": 24,
+				"def": 52,
+				"spa": 92,
+				"spd": 192,
+				"spe": 76
+			},
+			"ivs": {
+				"hp": 9,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 28,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Fire"
+		},
+		{
+			"name": "Mon3",
+			"species": "tornadus",
+			"item": "choicescarf",
+			"ability": "intimidate",
+			"moves": [
+				"snore",
+				"meteormash",
+				"roar",
+				"playrough"
+			],
+			"nature": "docile",
+			"evs": {
+				"hp": 220,
+				"atk": 48,
+				"def": 144,
+				"spa": 96,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Grass"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "virizion",
+			"item": "boosterenergy",
+			"ability": "toxicboost",
+			"moves": [
+				"uturn",
+				"poisontail",
+				"heatwave",
+				"shockwave"
+			],
+			"nature": "impish",
+			"evs": {
+				"hp": 252,
+				"atk": 36,
+				"def": 116,
+				"spa": 104,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 15,
+				"spd": 31,
+				"spe": 27
+			},
+			"level": 50,
+			"gender": "N",
+			"teraType": "Ice"
+		},
+		{
+			"name": "Mon1",
+			"species": "sneasler",
+			"item": "liechiberry",
+			"ability": "neutralizinggas",
+			"moves": [
+				"scald",
+				"poisonpowder",
+				"circlethrow",
+				"entrainment"
+			],
+			"nature": "rash",
+			"evs": {
+				"hp": 240,
+				"atk": 20,
+				"def": 160,
+				"spa": 88,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 24,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Water"
+		},
+		{
+			"name": "Mon2",
+			"species": "skwovet",
+			"item": "boosterenergy",
+			"ability": "neutralizinggas",
+			"moves": [
+				"transform",
+				"uproar",
+				"acid",
+				"covet"
+			],
+			"nature": "sassy",
+			"evs": {
+				"hp": 0,
+				"atk": 184,
+				"def": 216,
+				"spa": 108,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Water"
+		},
+		{
+			"name": "Mon3",
+			"species": "electivire",
+			"item": "boosterenergy",
+			"ability": "intimidate",
+			"moves": [
+				"aquatail",
+				"entrainment",
+				"grassknot",
+				"leafstorm"
+			],
+			"nature": "quiet",
+			"evs": {
+				"hp": 200,
+				"atk": 36,
+				"def": 84,
+				"spa": 172,
+				"spd": 16,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 19,
+				"spd": 31,
+				"spe": 0
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Psychic"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 4 1 terastallize, move 1 -1",
+			"p2": "move 4 2 terastallize, move 1 1"
+		},
+		{
+			"p1": "move 3, move 2 2",
+			"p2": "move 2 1, move 2 -1"
+		},
+		{
+			"p1": "move 2 1, move 3 2",
+			"p2": "switch 3, move 3 -1"
+		},
+		{
+			"p1": "switch 4, move 1 -1",
+			"p2": "move 4 -2, move 1 2"
+		},
+		{
+			"p1": "move 3 2, switch 3",
+			"p2": "move 1 -2, move 1 1"
+		},
+		{
+			"p1": "switch 3, switch 4",
+			"p2": "move 1 1, move 2 -1"
+		},
+		{
+			"p1": "move 1 2, move 4 -1",
+			"p2": "switch 4, move 2 2"
+		},
+		{
+			"p1": "switch 4, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 4 -2, move 2 1",
+			"p2": "switch 4, move 3 2"
+		},
+		{
+			"p1": "move 4 -2, move 4 1",
+			"p2": "move 2 2, move 2 2"
+		},
+		{
+			"p1": "move 1 1, switch 3",
+			"p2": "switch 4, move 3 2"
+		},
+		{
+			"p1": "move 3, move 3 2",
+			"p2": "switch 4, move 2 2"
+		}
+	],
+	"teams": [
+		"scenario-216b",
+		"scenario-299b"
+	]
+}

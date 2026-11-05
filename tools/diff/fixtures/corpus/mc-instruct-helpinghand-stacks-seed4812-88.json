@@ -1,0 +1,306 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,25769,26589,28493,39762",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Charizard-Mega-Y",
+			"item": "Charizardite Y",
+			"ability": "Solar Power",
+			"moves": [
+				"Protect",
+				"Heat Wave",
+				"Ancient Power",
+				"instruct"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 6,
+				"atk": 0,
+				"def": 2,
+				"spa": 21,
+				"spd": 5,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "Clefable",
+			"item": "quickclaw",
+			"ability": "Magic Guard",
+			"moves": [
+				"instruct",
+				"Follow Me",
+				"Skill Swap",
+				"Moonblast"
+			],
+			"nature": "Bold",
+			"evs": {
+				"hp": 29,
+				"atk": 0,
+				"def": 27,
+				"spa": 0,
+				"spd": 10,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "Indeedee-F",
+			"item": "quickclaw",
+			"ability": "Psychic Surge",
+			"moves": [
+				"instruct",
+				"Trick Room",
+				"Helping Hand",
+				"Psychic"
+			],
+			"nature": "Relaxed",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 25,
+				"spa": 4,
+				"spd": 5,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "Lucario-Mega-Z",
+			"item": "Lucarionite Z",
+			"ability": "Inner Focus",
+			"moves": [
+				"Protect",
+				"Nasty Plot",
+				"Steel Beam",
+				"instruct"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 8,
+				"atk": 0,
+				"def": 5,
+				"spa": 16,
+				"spd": 5,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Raichu",
+			"item": "Raichunite Y",
+			"ability": "Lightning Rod",
+			"moves": [
+				"Zap Cannon",
+				"instruct",
+				"Fake Out",
+				"Focus Blast"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 0,
+				"atk": 0,
+				"def": 2,
+				"spa": 32,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "Rillaboom",
+			"item": "Life Orb",
+			"ability": "Grassy Surge",
+			"moves": [
+				"Wood Hammer",
+				"Grassy Glide",
+				"U-turn",
+				"instruct"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 18,
+				"atk": 32,
+				"def": 3,
+				"spa": 0,
+				"spd": 12,
+				"spe": 1
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "Kingambit",
+			"item": "Black Glasses",
+			"ability": "Defiant",
+			"moves": [
+				"instruct",
+				"Kowtow Cleave",
+				"Sucker Punch",
+				"Protect"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 32,
+				"atk": 15,
+				"def": 0,
+				"spa": 0,
+				"spd": 19,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "Milotic",
+			"item": "Leftovers",
+			"ability": "Competitive",
+			"moves": [
+				"Scald",
+				"Ice Beam",
+				"Protect",
+				"instruct"
+			],
+			"nature": "Calm",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 32,
+				"spa": 0,
+				"spd": 2,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 4 -2, move 1 2",
+			"p2": "move 1 1, switch 3"
+		},
+		{
+			"p1": "switch 4, move 1 1",
+			"p2": "move 1 1 mega, move 4"
+		},
+		{
+			"p1": "switch 3, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 1 1, switch 4",
+			"p2": "move 1 -2, move 1 -1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "pass, switch 4"
+		},
+		{
+			"p1": "move 3 -2, move 2",
+			"p2": "move 2 1, move 4 -1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 3, pass"
+		},
+		{
+			"p1": "move 4 -2, move 4 2",
+			"p2": "move 3 2, move 1 -1"
+		},
+		{
+			"p1": "pass, switch 4",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 1 -2, move 1 1",
+			"p2": "move 2 -2, move 2 2"
+		},
+		{
+			"p1": "move 1 1, move 1 2",
+			"p2": "move 1 1, pass"
+		}
+	],
+	"teams": [
+		"MC295",
+		"MC215"
+	]
+}

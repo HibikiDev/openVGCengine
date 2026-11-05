@@ -1,0 +1,6 @@
+
+
+{% macro team_export(paste, label="show team", note=none) %}{% if paste %}<details class="sheet team-export"><summary class="small">{{ label }}</summary>
+  {% if note %}<p class="small muted" style="margin: 4px 0">{{ note }}</p>{% endif %}
+  <button type="button" class="copybtn" onclick="copyExport(this)">Copy</button>
+  <pre class="sheettext">{{ paste }}</pre></details>{% endif %}{% endmacro %}

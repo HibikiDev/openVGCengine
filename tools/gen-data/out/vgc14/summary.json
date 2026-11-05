@@ -1,0 +1,22 @@
+{
+	"format": "gen6vgc2014",
+	"formatName": "[Gen 6] VGC 2014",
+	"mod": "gen6xy",
+	"gameType": "doubles",
+	"minSourceGen": 6,
+	"ruleset": [
+		"Flat Rules",
+		"Kalos Pokedex",
+		"Min Source Gen = 6"
+	],
+	"banlist": [],
+	"counts": {
+		"species": 766,
+		"megaForms": 26,
+		"moves": 613,
+		"abilities": 179,
+		"items": 259,
+		"types": 19
+	},
+	"generatedAt": "2026-10-24T13:41:12.112Z"
+}

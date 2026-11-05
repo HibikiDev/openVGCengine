@@ -1,0 +1,242 @@
+{
+ "seed": "gen5,1,2,3,4",
+ "format": "gen9championsvgc2026regmc",
+ "team1": [
+  {
+   "name": "a",
+   "species": "talonflame",
+   "item": "",
+   "ability": "pressure",
+   "moves": [
+    "whirlwind",
+    "protect"
+   ],
+   "nature": "hardy",
+   "evs": {
+    "hp": 0,
+    "atk": 0,
+    "def": 0,
+    "spa": 0,
+    "spd": 0,
+    "spe": 0
+   },
+   "ivs": {
+    "hp": 31,
+    "atk": 31,
+    "def": 31,
+    "spa": 31,
+    "spd": 31,
+    "spe": 31
+   },
+   "level": 50,
+   "gender": "M"
+  },
+  {
+   "name": "b",
+   "species": "garchomp",
+   "item": "",
+   "ability": "pressure",
+   "moves": [
+    "protect",
+    "tackle"
+   ],
+   "nature": "hardy",
+   "evs": {
+    "hp": 0,
+    "atk": 0,
+    "def": 0,
+    "spa": 0,
+    "spd": 0,
+    "spe": 0
+   },
+   "ivs": {
+    "hp": 31,
+    "atk": 31,
+    "def": 31,
+    "spa": 31,
+    "spd": 31,
+    "spe": 31
+   },
+   "level": 50,
+   "gender": "M"
+  },
+  {
+   "name": "c",
+   "species": "snorlax",
+   "item": "",
+   "ability": "pressure",
+   "moves": [
+    "tackle"
+   ],
+   "nature": "hardy",
+   "evs": {
+    "hp": 0,
+    "atk": 0,
+    "def": 0,
+    "spa": 0,
+    "spd": 0,
+    "spe": 0
+   },
+   "ivs": {
+    "hp": 31,
+    "atk": 31,
+    "def": 31,
+    "spa": 31,
+    "spd": 31,
+    "spe": 31
+   },
+   "level": 50,
+   "gender": "M"
+  },
+  {
+   "name": "d",
+   "species": "slowking",
+   "item": "",
+   "ability": "pressure",
+   "moves": [
+    "tackle"
+   ],
+   "nature": "hardy",
+   "evs": {
+    "hp": 0,
+    "atk": 0,
+    "def": 0,
+    "spa": 0,
+    "spd": 0,
+    "spe": 0
+   },
+   "ivs": {
+    "hp": 31,
+    "atk": 31,
+    "def": 31,
+    "spa": 31,
+    "spd": 31,
+    "spe": 31
+   },
+   "level": 50,
+   "gender": "M"
+  }
+ ],
+ "team2": [
+  {
+   "name": "e",
+   "species": "porygon2",
+   "item": "",
+   "ability": "pressure",
+   "moves": [
+    "tackle",
+    "trickroom"
+   ],
+   "nature": "hardy",
+   "evs": {
+    "hp": 0,
+    "atk": 0,
+    "def": 0,
+    "spa": 0,
+    "spd": 0,
+    "spe": 0
+   },
+   "ivs": {
+    "hp": 31,
+    "atk": 31,
+    "def": 31,
+    "spa": 31,
+    "spd": 31,
+    "spe": 31
+   },
+   "level": 50,
+   "gender": "M"
+  },
+  {
+   "name": "f",
+   "species": "amoonguss",
+   "item": "",
+   "ability": "pressure",
+   "moves": [
+    "protect",
+    "tackle"
+   ],
+   "nature": "hardy",
+   "evs": {
+    "hp": 0,
+    "atk": 0,
+    "def": 0,
+    "spa": 0,
+    "spd": 0,
+    "spe": 0
+   },
+   "ivs": {
+    "hp": 31,
+    "atk": 31,
+    "def": 31,
+    "spa": 31,
+    "spd": 31,
+    "spe": 31
+   },
+   "level": 50,
+   "gender": "M"
+  },
+  {
+   "name": "g",
+   "species": "incineroar",
+   "item": "",
+   "ability": "pressure",
+   "moves": [
+    "tackle"
+   ],
+   "nature": "hardy",
+   "evs": {
+    "hp": 0,
+    "atk": 0,
+    "def": 0,
+    "spa": 0,
+    "spd": 0,
+    "spe": 0
+   },
+   "ivs": {
+    "hp": 31,
+    "atk": 31,
+    "def": 31,
+    "spa": 31,
+    "spd": 31,
+    "spe": 31
+   },
+   "level": 50,
+   "gender": "M"
+  },
+  {
+   "name": "h",
+   "species": "milotic",
+   "item": "",
+   "ability": "pressure",
+   "moves": [
+    "tackle"
+   ],
+   "nature": "hardy",
+   "evs": {
+    "hp": 0,
+    "atk": 0,
+    "def": 0,
+    "spa": 0,
+    "spd": 0,
+    "spe": 0
+   },
+   "ivs": {
+    "hp": 31,
+    "atk": 31,
+    "def": 31,
+    "spa": 31,
+    "spd": 31,
+    "spe": 31
+   },
+   "level": 50,
+   "gender": "M"
+  }
+ ],
+ "turns": [
+  {
+   "p1": "move 1 1, move 1",
+   "p2": "move 2, move 1"
+  }
+ ]
+}

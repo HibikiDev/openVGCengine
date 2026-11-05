@@ -1,0 +1,282 @@
+{
+	"seed": "gen5,1,2,3,4",
+	"format": "gen9championsvgc2026regmc",
+	"team1": [
+		{
+			"name": "singer",
+			"species": "milotic",
+			"item": "",
+			"ability": "Pressure",
+			"moves": [
+				"perishsong",
+				"protect",
+				"tackle",
+				"quickattack"
+			],
+			"nature": "Hardy",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "tantrum",
+			"species": "sylveon",
+			"item": "",
+			"ability": "Pressure",
+			"moves": [
+				"stompingtantrum",
+				"protect",
+				"tackle",
+				"quickattack"
+			],
+			"nature": "Hardy",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 20
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "bench1",
+			"species": "snorlax",
+			"item": "",
+			"ability": "Pressure",
+			"moves": [
+				"tackle",
+				"protect",
+				"quickattack",
+				"aquajet"
+			],
+			"nature": "Hardy",
+			"evs": {
+				"hp": 32,
+				"atk": 32,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "bench2",
+			"species": "slowking",
+			"item": "",
+			"ability": "Pressure",
+			"moves": [
+				"tackle",
+				"protect",
+				"quickattack",
+				"aquajet"
+			],
+			"nature": "Hardy",
+			"evs": {
+				"hp": 32,
+				"atk": 32,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"team2": [
+		{
+			"name": "wall1",
+			"species": "clefable",
+			"item": "",
+			"ability": "Pressure",
+			"moves": [
+				"protect",
+				"tackle",
+				"quickattack",
+				"aquajet"
+			],
+			"nature": "Hardy",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "wall2",
+			"species": "snorlax",
+			"item": "",
+			"ability": "Pressure",
+			"moves": [
+				"protect",
+				"tackle",
+				"quickattack",
+				"aquajet"
+			],
+			"nature": "Hardy",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "bench3",
+			"species": "slowking",
+			"item": "",
+			"ability": "Pressure",
+			"moves": [
+				"tackle",
+				"protect",
+				"quickattack",
+				"aquajet"
+			],
+			"nature": "Hardy",
+			"evs": {
+				"hp": 32,
+				"atk": 32,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "bench4",
+			"species": "milotic",
+			"item": "",
+			"ability": "Pressure",
+			"moves": [
+				"tackle",
+				"protect",
+				"quickattack",
+				"aquajet"
+			],
+			"nature": "Hardy",
+			"evs": {
+				"hp": 32,
+				"atk": 32,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 1, move 1 1",
+			"p2": "move 1, move 1"
+		},
+		{
+			"p1": "move 3 1, move 1 1",
+			"p2": "move 2 1, move 2 1"
+		},
+		{
+			"p1": "move 3 1, move 1 1",
+			"p2": "move 2 1, move 2 1"
+		},
+		{
+			"p1": "move 3 1, move 3 1",
+			"p2": "move 2 1, move 2 1"
+		},
+		{
+			"p1": "switch 3, switch 4",
+			"p2": "switch 3, switch 4"
+		},
+		{
+			"p1": "move 3 1, move 3 2",
+			"p2": "move 1 1, move 1 1"
+		}
+	]
+}

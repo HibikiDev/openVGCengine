@@ -1,0 +1,262 @@
+{
+	"format": "gen6vgc2016",
+	"seed": "gen5,29358,59651,43154,11140",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "carbink",
+			"item": "rockincense",
+			"ability": "primordialsea",
+			"moves": [
+				"sandstorm",
+				"flamethrower",
+				"waterspout",
+				"sunnyday"
+			],
+			"nature": "calm",
+			"evs": {
+				"hp": 40,
+				"atk": 212,
+				"def": 248,
+				"spa": 8,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 4,
+				"spe": 6
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "mantine",
+			"item": "bindingband",
+			"ability": "primordialsea",
+			"moves": [
+				"sunnyday",
+				"heatwave",
+				"hail",
+				"sandstorm"
+			],
+			"nature": "gentle",
+			"evs": {
+				"hp": 92,
+				"atk": 120,
+				"def": 36,
+				"spa": 20,
+				"spd": 240,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 1,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "golurk",
+			"item": "masterball",
+			"ability": "airlock",
+			"moves": [
+				"weatherball",
+				"hail",
+				"earthquake",
+				"skillswap"
+			],
+			"nature": "bashful",
+			"evs": {
+				"hp": 188,
+				"atk": 20,
+				"def": 236,
+				"spa": 40,
+				"spd": 24,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 2,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "aerodactyl",
+			"item": "spelltag",
+			"ability": "airlock",
+			"moves": [
+				"weatherball",
+				"sandstorm",
+				"sunnyday",
+				"protect"
+			],
+			"nature": "bold",
+			"evs": {
+				"hp": 224,
+				"atk": 212,
+				"def": 72,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 4,
+				"atk": 31,
+				"def": 31,
+				"spa": 8,
+				"spd": 28,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "goomy",
+			"item": "poweranklet",
+			"ability": "cloudnine",
+			"moves": [
+				"sunnyday",
+				"scald",
+				"waterspout",
+				"protect"
+			],
+			"nature": "quirky",
+			"evs": {
+				"hp": 200,
+				"atk": 172,
+				"def": 112,
+				"spa": 24,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 13,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "beheeyem",
+			"item": "fullincense",
+			"ability": "cloudnine",
+			"moves": [
+				"sunnyday",
+				"fireblast",
+				"thunderbolt",
+				"surf"
+			],
+			"nature": "modest",
+			"evs": {
+				"hp": 0,
+				"atk": 84,
+				"def": 196,
+				"spa": 180,
+				"spd": 48,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 25,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "dewgong",
+			"item": "ampharosite",
+			"ability": "airlock",
+			"moves": [
+				"weatherball",
+				"gastroacid",
+				"hail",
+				"eruption"
+			],
+			"nature": "bold",
+			"evs": {
+				"hp": 100,
+				"atk": 60,
+				"def": 172,
+				"spa": 176,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 28,
+				"atk": 13,
+				"def": 0,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "trubbish",
+			"item": "banettite",
+			"ability": "primordialsea",
+			"moves": [
+				"hurricane",
+				"waterspout",
+				"heatwave",
+				"skillswap"
+			],
+			"nature": "brave",
+			"evs": {
+				"hp": 60,
+				"atk": 160,
+				"def": 176,
+				"spa": 56,
+				"spd": 56,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 3,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 4, move 1",
+			"p2": "move 2 1, move 1"
+		}
+	]
+}

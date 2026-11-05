@@ -1,0 +1,262 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,23754,43707,7951,1602",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "rillaboom",
+			"item": "shedshell",
+			"ability": "defeatist",
+			"moves": [
+				"attackorder",
+				"selfdestruct",
+				"agility",
+				"moonlight"
+			],
+			"nature": "naive",
+			"evs": {
+				"hp": 32,
+				"atk": 27,
+				"def": 15,
+				"spa": 21,
+				"spd": 21,
+				"spe": 6
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "weavile",
+			"item": "oranberry",
+			"ability": "toxicboost",
+			"moves": [
+				"honeclaws",
+				"fellstinger",
+				"powergem",
+				"zenheadbutt"
+			],
+			"nature": "jolly",
+			"evs": {
+				"hp": 32,
+				"atk": 13,
+				"def": 10,
+				"spa": 31,
+				"spd": 23,
+				"spe": 19
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "hydreigon",
+			"item": "cheriberry",
+			"ability": "ironbarbs",
+			"moves": [
+				"syrupbomb",
+				"drainpunch",
+				"armthrust",
+				"storedpower"
+			],
+			"nature": "quirky",
+			"evs": {
+				"hp": 32,
+				"atk": 21,
+				"def": 18,
+				"spa": 22,
+				"spd": 4,
+				"spe": 5
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "gardevoir",
+			"item": "heatrock",
+			"ability": "toxicboost",
+			"moves": [
+				"mistyexplosion",
+				"bulletpunch",
+				"trailblaze",
+				"powertrip"
+			],
+			"nature": "quiet",
+			"evs": {
+				"hp": 32,
+				"atk": 21,
+				"def": 1,
+				"spa": 12,
+				"spd": 9,
+				"spe": 1
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "staraptor",
+			"item": "miracleseed",
+			"ability": "magnetpull",
+			"moves": [
+				"stringshot",
+				"drainpunch",
+				"skyuppercut",
+				"firstimpression"
+			],
+			"nature": "lonely",
+			"evs": {
+				"hp": 32,
+				"atk": 24,
+				"def": 18,
+				"spa": 32,
+				"spd": 28,
+				"spe": 28
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "vanilluxe",
+			"item": "widelens",
+			"ability": "magnetpull",
+			"moves": [
+				"psychicterrain",
+				"psyshieldbash",
+				"venoshock",
+				"aircutter"
+			],
+			"nature": "relaxed",
+			"evs": {
+				"hp": 32,
+				"atk": 2,
+				"def": 5,
+				"spa": 26,
+				"spd": 13,
+				"spe": 16
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "floetteeternal",
+			"item": "pechaberry",
+			"ability": "waterveil",
+			"moves": [
+				"afteryou",
+				"steelwing",
+				"solarblade",
+				"gust"
+			],
+			"nature": "quirky",
+			"evs": {
+				"hp": 32,
+				"atk": 13,
+				"def": 21,
+				"spa": 30,
+				"spd": 6,
+				"spe": 8
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "manectric",
+			"item": "payapaberry",
+			"ability": "stormdrain",
+			"moves": [
+				"iceshard",
+				"razorshell",
+				"poisonpowder",
+				"guardswap"
+			],
+			"nature": "docile",
+			"evs": {
+				"hp": 32,
+				"atk": 8,
+				"def": 9,
+				"spa": 27,
+				"spd": 22,
+				"spe": 1
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 2, move 4 2",
+			"p2": "move 2 2, move 2 2"
+		}
+	]
+}

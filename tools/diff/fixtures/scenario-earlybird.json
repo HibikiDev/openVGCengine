@@ -1,0 +1,278 @@
+{
+	"seed": "gen5,1,2,3,4",
+	"format": "gen9championsvgc2026regmc",
+	"team1": [
+		{
+			"name": "a",
+			"species": "milotic",
+			"item": "",
+			"ability": "Pressure",
+			"moves": [
+				"yawn",
+				"tackle",
+				"protect",
+				"aquajet"
+			],
+			"nature": "Hardy",
+			"evs": {
+				"hp": 32,
+				"atk": 16,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "b",
+			"species": "milotic",
+			"item": "",
+			"ability": "Pressure",
+			"moves": [
+				"tackle",
+				"protect",
+				"quickattack",
+				"aquajet"
+			],
+			"nature": "Hardy",
+			"evs": {
+				"hp": 32,
+				"atk": 16,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "c",
+			"species": "milotic",
+			"item": "",
+			"ability": "Pressure",
+			"moves": [
+				"tackle",
+				"protect",
+				"quickattack",
+				"aquajet"
+			],
+			"nature": "Hardy",
+			"evs": {
+				"hp": 32,
+				"atk": 16,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "d",
+			"species": "milotic",
+			"item": "",
+			"ability": "Pressure",
+			"moves": [
+				"tackle",
+				"protect",
+				"quickattack",
+				"aquajet"
+			],
+			"nature": "Hardy",
+			"evs": {
+				"hp": 32,
+				"atk": 16,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"team2": [
+		{
+			"name": "a",
+			"species": "kangaskhan",
+			"item": "",
+			"ability": "Early Bird",
+			"moves": [
+				"tackle",
+				"protect",
+				"quickattack",
+				"bodyslam"
+			],
+			"nature": "Hardy",
+			"evs": {
+				"hp": 32,
+				"atk": 16,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "b",
+			"species": "houndoom",
+			"item": "",
+			"ability": "Early Bird",
+			"moves": [
+				"tackle",
+				"protect",
+				"quickattack",
+				"crunch"
+			],
+			"nature": "Hardy",
+			"evs": {
+				"hp": 32,
+				"atk": 16,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "c",
+			"species": "milotic",
+			"item": "",
+			"ability": "Pressure",
+			"moves": [
+				"tackle",
+				"protect",
+				"quickattack",
+				"aquajet"
+			],
+			"nature": "Hardy",
+			"evs": {
+				"hp": 32,
+				"atk": 16,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "d",
+			"species": "milotic",
+			"item": "",
+			"ability": "Pressure",
+			"moves": [
+				"tackle",
+				"protect",
+				"quickattack",
+				"aquajet"
+			],
+			"nature": "Hardy",
+			"evs": {
+				"hp": 32,
+				"atk": 16,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 1 1, move 1 2",
+			"p2": "move 1 1, move 1 2"
+		},
+		{
+			"p1": "move 2 1, move 1 2",
+			"p2": "move 1 1, move 1 2"
+		},
+		{
+			"p1": "move 2 1, move 1 2",
+			"p2": "move 1 1, move 1 2"
+		},
+		{
+			"p1": "move 2 1, move 1 2",
+			"p2": "move 1 1, move 1 2"
+		},
+		{
+			"p1": "move 2 1, move 1 2",
+			"p2": "move 1 1, move 1 2"
+		}
+	]
+}

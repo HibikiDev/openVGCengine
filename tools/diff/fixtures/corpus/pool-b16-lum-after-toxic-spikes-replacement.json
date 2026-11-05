@@ -1,0 +1,318 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,44064,61338,55561,56807",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Metagross",
+			"item": "Metagrossite",
+			"ability": "Clear Body",
+			"moves": [
+				"Iron Head",
+				"mistyterrain",
+				"Iron Defense",
+				"petaldance"
+			],
+			"nature": "Impish",
+			"evs": {
+				"hp": 22,
+				"atk": 0,
+				"def": 12,
+				"spa": 0,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "Glimmora",
+			"item": "Focus Sash",
+			"ability": "Toxic Debris",
+			"moves": [
+				"fakeout",
+				"Sludge Bomb",
+				"Earth Power",
+				"encore"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 1,
+				"atk": 0,
+				"def": 1,
+				"spa": 32,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "Indeedee-F",
+			"item": "Rocky Helmet",
+			"ability": "Psychic Surge",
+			"moves": [
+				"rockslide",
+				"fakeout",
+				"Helping Hand",
+				"Trick Room"
+			],
+			"nature": "Relaxed",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 32,
+				"spa": 0,
+				"spd": 2,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "Armarouge",
+			"item": "Life Orb",
+			"ability": "Flash Fire",
+			"moves": [
+				"Armor Cannon",
+				"whirlwind",
+				"encore",
+				"Protect"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 29,
+				"atk": 0,
+				"def": 4,
+				"spa": 32,
+				"spd": 1,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Indeedee-F",
+			"item": "Rocky Helmet",
+			"ability": "Psychic Surge",
+			"moves": [
+				"Psychic",
+				"Trick Room",
+				"ragepowder",
+				"fakeout"
+			],
+			"nature": "Relaxed",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 32,
+				"spa": 0,
+				"spd": 2,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "Torkoal",
+			"item": "Charcoal",
+			"ability": "Drought",
+			"moves": [
+				"detect",
+				"encore",
+				"Helping Hand",
+				"Weather Ball"
+			],
+			"nature": "Quiet",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 0,
+				"spa": 32,
+				"spd": 2,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "Farigiraf",
+			"item": "Lum Berry",
+			"ability": "Armor Tail",
+			"moves": [
+				"uturn",
+				"Protect",
+				"Helping Hand",
+				"ragepowder"
+			],
+			"nature": "Bold",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 22,
+				"spa": 0,
+				"spd": 12,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "Arcanine-Hisui",
+			"item": "Life Orb",
+			"ability": "Rock Head",
+			"moves": [
+				"Flare Blitz",
+				"roar",
+				"ragingfury",
+				"Flame Charge"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 1,
+				"atk": 32,
+				"def": 1,
+				"spa": 0,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 1 2 mega, switch 4",
+			"p2": "move 2, move 4 1"
+		},
+		{
+			"p1": "switch 3, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 3 -2, move 2 2",
+			"p2": "switch 4, switch 3"
+		},
+		{
+			"p1": "switch 4, move 1 1",
+			"p2": "move 2 -2, move 4 -1"
+		},
+		{
+			"p1": "move 4 -2, move 2 1",
+			"p2": "move 1 1, move 4 2"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "pass, switch 4"
+		},
+		{
+			"p1": "move 4 -2, move 1 -1",
+			"p2": "move 1 -2, move 2 1"
+		},
+		{
+			"p1": "switch 4, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 3 -2, move 1 2",
+			"p2": "move 4 2, move 4 1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "pass, switch 3"
+		},
+		{
+			"p1": "move 1, move 3 2",
+			"p2": "move 2 -2, move 4"
+		},
+		{
+			"p1": "move 4, move 3 2",
+			"p2": "pass, move 4"
+		},
+		{
+			"p1": "move 3 -2, move 3 1",
+			"p2": "pass, move 4"
+		},
+		{
+			"p1": "move 3 -2, move 1 2",
+			"p2": "pass, move 4"
+		}
+	],
+	"teams": [
+		"MC317",
+		"MC140"
+	]
+}

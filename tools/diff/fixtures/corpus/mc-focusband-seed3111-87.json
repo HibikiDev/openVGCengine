@@ -1,0 +1,294 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,11768,23664,54310,3060",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Charizard",
+			"item": "Charizardite Y",
+			"ability": "Blaze",
+			"moves": [
+				"Protect",
+				"Weather Ball",
+				"Ancient Power",
+				"Heat Wave"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 19,
+				"spa": 1,
+				"spd": 0,
+				"spe": 14
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "Sneasler",
+			"item": "Psychic Seed",
+			"ability": "Unburden",
+			"moves": [
+				"Protect",
+				"Close Combat",
+				"Dire Claw",
+				"Rock Slide"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 4,
+				"atk": 32,
+				"def": 2,
+				"spa": 0,
+				"spd": 0,
+				"spe": 28
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "Kingambit",
+			"item": "Chople Berry",
+			"ability": "Defiant",
+			"moves": [
+				"Protect",
+				"Kowtow Cleave",
+				"Iron Head",
+				"Sucker Punch"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 32,
+				"atk": 15,
+				"def": 15,
+				"spa": 0,
+				"spd": 4,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "Kommo-o",
+			"item": "focusband",
+			"ability": "Soundproof",
+			"moves": [
+				"Protect",
+				"Clangorous Soul",
+				"Aura Sphere",
+				"Clanging Scales"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 2,
+				"atk": 0,
+				"def": 1,
+				"spa": 31,
+				"spd": 1,
+				"spe": 31
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Incineroar",
+			"item": "focusband",
+			"ability": "Intimidate",
+			"moves": [
+				"Throat Chop",
+				"Flare Blitz",
+				"Fake Out",
+				"Parting Shot"
+			],
+			"nature": "Impish",
+			"evs": {
+				"hp": 29,
+				"atk": 5,
+				"def": 16,
+				"spa": 0,
+				"spd": 16,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "Floette-Eternal",
+			"item": "Floettite",
+			"ability": "Flower Veil",
+			"moves": [
+				"Moonblast",
+				"Dazzling Gleam",
+				"Light of Ruin",
+				"Protect"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 4,
+				"atk": 0,
+				"def": 8,
+				"spa": 32,
+				"spd": 0,
+				"spe": 22
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "Rillaboom",
+			"item": "focusband",
+			"ability": "Grassy Surge",
+			"moves": [
+				"Wood Hammer",
+				"Fake Out",
+				"Stomping Tantrum",
+				"Grassy Glide"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 21,
+				"atk": 5,
+				"def": 1,
+				"spa": 0,
+				"spd": 32,
+				"spe": 7
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "Kingambit",
+			"item": "Focus Sash",
+			"ability": "Defiant",
+			"moves": [
+				"Sucker Punch",
+				"Low Kick",
+				"Kowtow Cleave",
+				"Iron Head"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 1,
+				"atk": 32,
+				"def": 0,
+				"spa": 0,
+				"spd": 1,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 3 1 mega, move 2 1",
+			"p2": "move 1 2, move 3 2"
+		},
+		{
+			"p1": "pass, switch 3",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 3 1, move 2 1",
+			"p2": "switch 4, move 1 -1 mega"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 3, pass"
+		},
+		{
+			"p1": "move 4, move 1",
+			"p2": "move 2 -2, move 3 -1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "pass, switch 4"
+		},
+		{
+			"p1": "move 3 -2, move 1",
+			"p2": "move 4 1, move 4 1"
+		},
+		{
+			"p1": "move 4, move 2 2",
+			"p2": "move 1 -2, move 1 1"
+		}
+	],
+	"teams": [
+		"MC411",
+		"MC53"
+	]
+}

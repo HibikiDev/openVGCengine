@@ -1,0 +1,286 @@
+{
+	"format": "gen9vgc2025regi",
+	"seed": "gen5,21951,22569,8961,51414",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "tatsugiri",
+			"item": "adrenalineorb",
+			"ability": "commander",
+			"moves": [
+				"scaleshot",
+				"psybeam",
+				"crushgrip",
+				"kowtowcleave"
+			],
+			"nature": "bold",
+			"evs": {
+				"hp": 108,
+				"atk": 172,
+				"def": 216,
+				"spa": 12,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 5,
+				"def": 31,
+				"spa": 2,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Stellar"
+		},
+		{
+			"name": "Mon1",
+			"species": "dondozo",
+			"item": "",
+			"ability": "imposter",
+			"moves": [
+				"fakeout",
+				"photongeyser",
+				"confuseray",
+				"imprison"
+			],
+			"nature": "bashful",
+			"evs": {
+				"hp": 200,
+				"atk": 100,
+				"def": 148,
+				"spa": 40,
+				"spd": 20,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 1,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Grass"
+		},
+		{
+			"name": "Mon2",
+			"species": "ditto",
+			"item": "",
+			"ability": "imposter",
+			"moves": [
+				"fireblast",
+				"sleeppowder",
+				"shoreup",
+				"growl"
+			],
+			"nature": "rash",
+			"evs": {
+				"hp": 144,
+				"atk": 32,
+				"def": 152,
+				"spa": 148,
+				"spd": 4,
+				"spe": 28
+			},
+			"ivs": {
+				"hp": 14,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N",
+			"teraType": "Water"
+		},
+		{
+			"name": "Mon3",
+			"species": "ditto",
+			"item": "adrenalineorb",
+			"ability": "opportunist",
+			"moves": [
+				"dragoncheer",
+				"shadowball",
+				"esperwing",
+				"celebrate"
+			],
+			"nature": "serious",
+			"evs": {
+				"hp": 36,
+				"atk": 88,
+				"def": 40,
+				"spa": 180,
+				"spd": 80,
+				"spe": 84
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 25,
+				"spa": 3,
+				"spd": 13,
+				"spe": 20
+			},
+			"level": 50,
+			"gender": "N",
+			"teraType": "Dragon"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "ditto",
+			"item": "ejectpack",
+			"ability": "opportunist",
+			"moves": [
+				"precipiceblades",
+				"howl",
+				"magnetrise",
+				"imprison"
+			],
+			"nature": "serious",
+			"evs": {
+				"hp": 184,
+				"atk": 92,
+				"def": 28,
+				"spa": 172,
+				"spd": 32,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N",
+			"teraType": "Flying"
+		},
+		{
+			"name": "Mon1",
+			"species": "tatsugiri",
+			"item": "ejectpack",
+			"ability": "commander",
+			"moves": [
+				"dragonpulse",
+				"nuzzle",
+				"seedflare",
+				"glaiverush"
+			],
+			"nature": "naive",
+			"evs": {
+				"hp": 152,
+				"atk": 156,
+				"def": 200,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 18,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Fairy"
+		},
+		{
+			"name": "Mon2",
+			"species": "dondozo",
+			"item": "mirrorherb",
+			"ability": "commander",
+			"moves": [
+				"trailblaze",
+				"nightdaze",
+				"gravapple",
+				"psychup"
+			],
+			"nature": "impish",
+			"evs": {
+				"hp": 108,
+				"atk": 160,
+				"def": 216,
+				"spa": 24,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 2,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Water"
+		},
+		{
+			"name": "Mon3",
+			"species": "tatsugiri",
+			"item": "adrenalineorb",
+			"ability": "imposter",
+			"moves": [
+				"sunsteelstrike",
+				"brine",
+				"pounce",
+				"coaching"
+			],
+			"nature": "bashful",
+			"evs": {
+				"hp": 208,
+				"atk": 224,
+				"def": 76,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 29,
+				"spd": 31,
+				"spe": 0
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Psychic"
+		}
+	],
+	"turns": [
+		{
+			"p1": "pass, move 2",
+			"p2": "move 2, move 1 1 terastallize"
+		},
+		{
+			"p1": "pass, move 2",
+			"p2": "move 4, move 4 2"
+		},
+		{
+			"p1": "pass, move 2 terastallize",
+			"p2": "move 1, move 2 1"
+		},
+		{
+			"p1": "pass, move 2",
+			"p2": "move 4, move 1 2"
+		},
+		{
+			"p1": "pass, switch 4",
+			"p2": "pass, pass"
+		}
+	]
+}

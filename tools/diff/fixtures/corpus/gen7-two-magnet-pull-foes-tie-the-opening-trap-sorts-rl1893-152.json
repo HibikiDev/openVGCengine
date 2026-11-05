@@ -1,0 +1,262 @@
+{
+	"format": "gen7vgc2018",
+	"seed": "gen5,55229,33787,62152,48893",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "purrloin",
+			"item": "darkiniumz",
+			"ability": "stamina",
+			"moves": [
+				"pluck",
+				"brutalswing",
+				"icywind",
+				"willowisp"
+			],
+			"nature": "naughty",
+			"evs": {
+				"hp": 192,
+				"atk": 184,
+				"def": 104,
+				"spa": 28,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "vivillonicysnow",
+			"item": "firiumz",
+			"ability": "oblivious",
+			"moves": [
+				"flamewheel",
+				"bite",
+				"rocksmash",
+				"thundershock"
+			],
+			"nature": "hasty",
+			"evs": {
+				"hp": 100,
+				"atk": 248,
+				"def": 136,
+				"spa": 24,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "tangrowth",
+			"item": "poisoniumz",
+			"ability": "strongjaw",
+			"moves": [
+				"freezeshock",
+				"facade",
+				"slam",
+				"poisontail"
+			],
+			"nature": "naughty",
+			"evs": {
+				"hp": 200,
+				"atk": 224,
+				"def": 56,
+				"spa": 28,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 16,
+				"atk": 31,
+				"def": 31,
+				"spa": 30,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "sawk",
+			"item": "moonstone",
+			"ability": "plus",
+			"moves": [
+				"eggbomb",
+				"lowsweep",
+				"spotlight",
+				"razorleaf"
+			],
+			"nature": "brave",
+			"evs": {
+				"hp": 176,
+				"atk": 220,
+				"def": 112,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 15,
+				"atk": 31,
+				"def": 27,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "sneasel",
+			"item": "psychiumz",
+			"ability": "magnetpull",
+			"moves": [
+				"powersplit",
+				"knockoff",
+				"dualchop",
+				"grassknot"
+			],
+			"nature": "naughty",
+			"evs": {
+				"hp": 184,
+				"atk": 196,
+				"def": 44,
+				"spa": 84,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 12,
+				"spa": 16,
+				"spd": 9,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "floatzel",
+			"item": "spookyplate",
+			"ability": "magnetpull",
+			"moves": [
+				"highhorsepower",
+				"yawn",
+				"dragonhammer",
+				"lunge"
+			],
+			"nature": "mild",
+			"evs": {
+				"hp": 140,
+				"atk": 232,
+				"def": 80,
+				"spa": 56,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 24,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "lycanrocmidnight",
+			"item": "fightiniumz",
+			"ability": "superluck",
+			"moves": [
+				"torment",
+				"detect",
+				"photongeyser",
+				"swagger"
+			],
+			"nature": "rash",
+			"evs": {
+				"hp": 164,
+				"atk": 104,
+				"def": 204,
+				"spa": 16,
+				"spd": 20,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 2,
+				"spa": 2,
+				"spd": 31,
+				"spe": 9
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "quilladin",
+			"item": "mimikiumz",
+			"ability": "filter",
+			"moves": [
+				"weatherball",
+				"spikes",
+				"thundershock",
+				"workup"
+			],
+			"nature": "adamant",
+			"evs": {
+				"hp": 240,
+				"atk": 192,
+				"def": 64,
+				"spa": 12,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 2,
+				"atk": 31,
+				"def": 19,
+				"spa": 10,
+				"spd": 31,
+				"spe": 29
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 2 2 zmove, move 4 2",
+			"p2": "move 1 2 zmove, move 2 1"
+		}
+	]
+}

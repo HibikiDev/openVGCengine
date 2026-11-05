@@ -1,0 +1,262 @@
+{
+	"format": "gen7vgc2019",
+	"seed": "gen5,32072,63560,12423,10409",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "pinsir",
+			"item": "fightiniumz",
+			"ability": "levitate",
+			"moves": [
+				"counter",
+				"disable",
+				"coreenforcer",
+				"transform"
+			],
+			"nature": "quirky",
+			"evs": {
+				"hp": 104,
+				"atk": 220,
+				"def": 128,
+				"spa": 56,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 19,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "simipour",
+			"item": "normaliumz",
+			"ability": "moody",
+			"moves": [
+				"healbell",
+				"counter",
+				"mirrorcoat",
+				"toxic"
+			],
+			"nature": "docile",
+			"evs": {
+				"hp": 196,
+				"atk": 68,
+				"def": 128,
+				"spa": 116,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "blissey",
+			"item": "earthplate",
+			"ability": "pickup",
+			"moves": [
+				"coreenforcer",
+				"transform",
+				"toxic",
+				"mirrorcoat"
+			],
+			"nature": "bold",
+			"evs": {
+				"hp": 68,
+				"atk": 252,
+				"def": 188,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 11,
+				"atk": 3,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "abomasnow",
+			"item": "inciniumz",
+			"ability": "icebody",
+			"moves": [
+				"toxic",
+				"transform",
+				"healbell",
+				"mirrorcoat"
+			],
+			"nature": "naive",
+			"evs": {
+				"hp": 104,
+				"atk": 76,
+				"def": 240,
+				"spa": 52,
+				"spd": 36,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 12,
+				"def": 31,
+				"spa": 31,
+				"spd": 25,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "drowzee",
+			"item": "expertbelt",
+			"ability": "wonderguard",
+			"moves": [
+				"counter",
+				"toxic",
+				"coreenforcer",
+				"mirrorcoat"
+			],
+			"nature": "serious",
+			"evs": {
+				"hp": 88,
+				"atk": 68,
+				"def": 4,
+				"spa": 192,
+				"spd": 156,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 18,
+				"def": 31,
+				"spa": 14,
+				"spd": 31,
+				"spe": 1
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "bruxish",
+			"item": "thunderstone",
+			"ability": "rkssystem",
+			"moves": [
+				"counter",
+				"toxic",
+				"transform",
+				"disable"
+			],
+			"nature": "bold",
+			"evs": {
+				"hp": 12,
+				"atk": 192,
+				"def": 152,
+				"spa": 136,
+				"spd": 8,
+				"spe": 8
+			},
+			"ivs": {
+				"hp": 29,
+				"atk": 31,
+				"def": 7,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "igglybuff",
+			"item": "nevermeltice",
+			"ability": "powerconstruct",
+			"moves": [
+				"transform",
+				"coreenforcer",
+				"toxic",
+				"healbell"
+			],
+			"nature": "brave",
+			"evs": {
+				"hp": 4,
+				"atk": 52,
+				"def": 28,
+				"spa": 196,
+				"spd": 160,
+				"spe": 68
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 3
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "karrablast",
+			"item": "latiasite",
+			"ability": "gooey",
+			"moves": [
+				"transform",
+				"healbell",
+				"toxic",
+				"coreenforcer"
+			],
+			"nature": "mild",
+			"evs": {
+				"hp": 148,
+				"atk": 240,
+				"def": 120,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 12,
+				"atk": 13,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 3, move 2",
+			"p2": "move 1, move 3 2"
+		}
+	]
+}

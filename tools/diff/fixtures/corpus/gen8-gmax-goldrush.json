@@ -1,0 +1,308 @@
+{
+	"format": "gen8vgc2021",
+	"seed": "gen5,11616,3270,48857,43550",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "zweilous",
+			"item": "assaultvest",
+			"ability": "multiscale",
+			"moves": [
+				"skillswap",
+				"stealthrock",
+				"aurasphere",
+				"absorb"
+			],
+			"nature": "quiet",
+			"evs": {
+				"hp": 200,
+				"atk": 108,
+				"def": 200,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "Eevee",
+			"item": "spelltag",
+			"ability": "iceface",
+			"moves": [
+				"powersplit",
+				"megapunch",
+				"dragonpulse",
+				"decorate"
+			],
+			"nature": "serious",
+			"evs": {
+				"hp": 216,
+				"atk": 140,
+				"def": 104,
+				"spa": 48,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 26,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"gigantamax": true
+		},
+		{
+			"name": "Mon2",
+			"species": "greedent",
+			"item": "tr87",
+			"ability": "drought",
+			"moves": [
+				"strangesteam",
+				"clangoroussoul",
+				"seedbomb",
+				"freezedry"
+			],
+			"nature": "serious",
+			"evs": {
+				"hp": 8,
+				"atk": 116,
+				"def": 224,
+				"spa": 104,
+				"spd": 16,
+				"spe": 24
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 4
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "throh",
+			"item": "goldbottlecap",
+			"ability": "merciless",
+			"moves": [
+				"woodhammer",
+				"sparklingaria",
+				"dragondance",
+				"speedswap"
+			],
+			"nature": "quiet",
+			"evs": {
+				"hp": 16,
+				"atk": 132,
+				"def": 56,
+				"spa": 248,
+				"spd": 56,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 28,
+				"spa": 31,
+				"spd": 31,
+				"spe": 1
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Meowth",
+			"item": "metalpowder",
+			"ability": "overcoat",
+			"moves": [
+				"gigaimpact",
+				"heatwave",
+				"moonlight",
+				"guardswap"
+			],
+			"nature": "impish",
+			"evs": {
+				"hp": 32,
+				"atk": 188,
+				"def": 12,
+				"spa": 188,
+				"spd": 88,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 25,
+				"spa": 9,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"gigantamax": true
+		},
+		{
+			"name": "Mon1",
+			"species": "kartana",
+			"item": "greatball",
+			"ability": "longreach",
+			"moves": [
+				"lockon",
+				"octazooka",
+				"sweetkiss",
+				"blazekick"
+			],
+			"nature": "naive",
+			"evs": {
+				"hp": 148,
+				"atk": 68,
+				"def": 120,
+				"spa": 36,
+				"spd": 136,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 29,
+				"atk": 20,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "heatran",
+			"item": "tr08",
+			"ability": "pastelveil",
+			"moves": [
+				"strength",
+				"psyshock",
+				"sheercold",
+				"trickortreat"
+			],
+			"nature": "modest",
+			"evs": {
+				"hp": 200,
+				"atk": 156,
+				"def": 152,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 1,
+				"spe": 10
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "tirtouga",
+			"item": "tr16",
+			"ability": "shadowtag",
+			"moves": [
+				"thunder",
+				"shellsmash",
+				"flamethrower",
+				"fling"
+			],
+			"nature": "docile",
+			"evs": {
+				"hp": 184,
+				"atk": 48,
+				"def": 92,
+				"spa": 184,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 8,
+				"atk": 28,
+				"def": 27,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 4 2, move 1 2",
+			"p2": "move 1 1, move 2 1"
+		},
+		{
+			"p1": "switch 4, move 3 -1",
+			"p2": "move 1 1 dynamax, move 3 -1"
+		},
+		{
+			"p1": "move 4 -2, move 3 1 dynamax",
+			"p2": "move 1 2, move 3 1"
+		},
+		{
+			"p1": "move 2, move 3 1",
+			"p2": "move 2 2, move 1 1"
+		},
+		{
+			"p1": "switch 3, move 3 1",
+			"p2": "switch 4, switch 3"
+		},
+		{
+			"p1": "move 4 1, move 3 -1",
+			"p2": "move 1 -2, move 3 1"
+		},
+		{
+			"p1": "move 4 -2, move 1 -1",
+			"p2": "move 4 1, move 1 1"
+		},
+		{
+			"p1": "move 4 2, move 4 2",
+			"p2": "move 3 1, move 4 -1"
+		},
+		{
+			"p1": "move 4 1, move 4 -1",
+			"p2": "switch 3, move 2 2"
+		},
+		{
+			"p1": "pass, switch 3",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 3 2, move 4 1",
+			"p2": "switch 4, move 1 -1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 4, pass"
+		}
+	]
+}

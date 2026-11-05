@@ -1,0 +1,310 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,33961,30143,54716,56116",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Raichu",
+			"item": "Raichunite Y",
+			"ability": "Lightning Rod",
+			"moves": [
+				"Zap Cannon",
+				"Focus Blast",
+				"Fake Out",
+				"Protect"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 8,
+				"spa": 0,
+				"spd": 1,
+				"spe": 25
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "Gholdengo",
+			"item": "Grassy Seed",
+			"ability": "Good as Gold",
+			"moves": [
+				"Make It Rain",
+				"Shadow Ball",
+				"Nasty Plot",
+				"Protect"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 5,
+				"atk": 0,
+				"def": 5,
+				"spa": 24,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "Basculegion",
+			"item": "Focus Sash",
+			"ability": "Adaptability",
+			"moves": [
+				"Liquidation",
+				"Last Respects",
+				"Aqua Jet",
+				"Protect"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 2,
+				"atk": 32,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "Maushold-Four",
+			"item": "Chople Berry",
+			"ability": "Friend Guard",
+			"moves": [
+				"Super Fang",
+				"Feint",
+				"Follow Me",
+				"Protect"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 32,
+				"atk": 1,
+				"def": 0,
+				"spa": 0,
+				"spd": 1,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Salamence",
+			"item": "Salamencite",
+			"ability": "Intimidate",
+			"moves": [
+				"Draco Meteor",
+				"Hyper Voice",
+				"Tailwind",
+				"Protect"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 2,
+				"atk": 0,
+				"def": 0,
+				"spa": 32,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "Gholdengo",
+			"item": "Life Orb",
+			"ability": "Good as Gold",
+			"moves": [
+				"Make It Rain",
+				"Shadow Ball",
+				"Nasty Plot",
+				"Protect"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 22,
+				"atk": 0,
+				"def": 0,
+				"spa": 12,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "Kingambit",
+			"item": "Chople Berry",
+			"ability": "Defiant",
+			"moves": [
+				"Kowtow Cleave",
+				"Sucker Punch",
+				"Low Kick",
+				"Iron Head"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 32,
+				"atk": 15,
+				"def": 10,
+				"spa": 0,
+				"spd": 0,
+				"spe": 9
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "Raichu",
+			"item": "Raichunite Y",
+			"ability": "Lightning Rod",
+			"moves": [
+				"Focus Blast",
+				"Zap Cannon",
+				"Protect",
+				"Fake Out"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 2,
+				"atk": 0,
+				"def": 32,
+				"spa": 0,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 3 1 mega, move 2 2",
+			"p2": "move 2, switch 4"
+		},
+		{
+			"p1": "switch 4, move 3",
+			"p2": "move 4, move 2 1 mega"
+		},
+		{
+			"p1": "move 2 1, move 1",
+			"p2": "move 4, switch 4"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 3, pass"
+		},
+		{
+			"p1": "move 1 1, move 2 1",
+			"p2": "move 2 2, move 1"
+		},
+		{
+			"p1": "switch 4, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 3 2, move 4",
+			"p2": "move 4 2, move 3"
+		},
+		{
+			"p1": "move 1 1, move 2 2",
+			"p2": "move 2 2, move 4"
+		},
+		{
+			"p1": "pass, switch 3",
+			"p2": "switch 4, pass"
+		},
+		{
+			"p1": "move 2 1, move 3 1",
+			"p2": "move 3, move 4"
+		},
+		{
+			"p1": "move 4, move 4",
+			"p2": "move 2 1, move 2 1"
+		},
+		{
+			"p1": "move 1 1, move 3 2",
+			"p2": "move 3, move 4"
+		}
+	],
+	"teams": [
+		"MC265",
+		"MC364"
+	]
+}

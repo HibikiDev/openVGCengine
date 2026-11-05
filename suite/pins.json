@@ -1,0 +1,22 @@
+{
+ "checkpoint": {
+  "path": "models",
+  "note": "the policy every tool and the practice bot use: the newest models/ckpt_<update>.pt"
+ },
+ "opp_head": {
+  "path": "models/opp_head.pt",
+  "note": "optional: only search arms with an opponent head use one (the shipped arm doesn't); not shipped"
+ },
+ "reply_policy": {
+  "path": "models/reply_policy.pt",
+  "note": "the human-imitation policy: the opponent's replies in every search"
+ },
+ "preview_head": {
+  "path": "models/preview_head.pt",
+  "note": "the human team-preview model: what a human opponent likely brings"
+ },
+ "search_arm": {
+  "name": "S256",
+  "note": "the search settings the bot plays with (vgc_trainer.showdown.live_search.SEARCH_ARMS)"
+ }
+}

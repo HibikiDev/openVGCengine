@@ -1,0 +1,306 @@
+{
+	"format": "gen8vgc2021",
+	"seed": "gen5,27363,39911,63414,65488",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "popplio",
+			"item": "tr81",
+			"ability": "schooling",
+			"moves": [
+				"dragonhammer",
+				"spiritbreak",
+				"crushgrip",
+				"firstimpression"
+			],
+			"nature": "sassy",
+			"evs": {
+				"hp": 156,
+				"atk": 204,
+				"def": 124,
+				"spa": 24,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 3,
+				"atk": 7,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "kabutops",
+			"item": "assaultvest",
+			"ability": "honeygather",
+			"moves": [
+				"cut",
+				"triplekick",
+				"woodhammer",
+				"dragonbreath"
+			],
+			"nature": "adamant",
+			"evs": {
+				"hp": 236,
+				"atk": 56,
+				"def": 88,
+				"spa": 64,
+				"spd": 64,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 18,
+				"atk": 31,
+				"def": 18,
+				"spa": 29,
+				"spd": 21,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "alcremierubycream",
+			"item": "tr46",
+			"ability": "icescales",
+			"moves": [
+				"dragonenergy",
+				"reflect",
+				"bodypress",
+				"smog"
+			],
+			"nature": "naive",
+			"evs": {
+				"hp": 32,
+				"atk": 80,
+				"def": 128,
+				"spa": 216,
+				"spd": 52,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 20,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "meowsticf",
+			"item": "sweetapple",
+			"ability": "curiousmedicine",
+			"moves": [
+				"mudslap",
+				"swift",
+				"spite",
+				"mistyexplosion"
+			],
+			"nature": "brave",
+			"evs": {
+				"hp": 28,
+				"atk": 184,
+				"def": 232,
+				"spa": 64,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 8,
+				"spa": 31,
+				"spd": 31,
+				"spe": 30
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "eevee",
+			"item": "lansatberry",
+			"ability": "heavymetal",
+			"moves": [
+				"futuresight",
+				"focusenergy",
+				"appleacid",
+				"glare"
+			],
+			"nature": "quiet",
+			"evs": {
+				"hp": 152,
+				"atk": 156,
+				"def": 56,
+				"spa": 144,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 0,
+				"def": 18,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "wimpod",
+			"item": "silkscarf",
+			"ability": "overcoat",
+			"moves": [
+				"mistball",
+				"rockthrow",
+				"focusblast",
+				"craftyshield"
+			],
+			"nature": "serious",
+			"evs": {
+				"hp": 44,
+				"atk": 188,
+				"def": 156,
+				"spa": 120,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 7,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "cradily",
+			"item": "ovalstone",
+			"ability": "mirrorarmor",
+			"moves": [
+				"wish",
+				"eruption",
+				"ragepowder",
+				"defendorder"
+			],
+			"nature": "adamant",
+			"evs": {
+				"hp": 108,
+				"atk": 12,
+				"def": 36,
+				"spa": 108,
+				"spd": 44,
+				"spe": 4
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 20,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "azumarill",
+			"item": "qualotberry",
+			"ability": "bigpecks",
+			"moves": [
+				"crosspoison",
+				"thrash",
+				"courtchange",
+				"liquidation"
+			],
+			"nature": "bashful",
+			"evs": {
+				"hp": 244,
+				"atk": 248,
+				"def": 16,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 1,
+				"spd": 31,
+				"spe": 12
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 3 2, move 3 2",
+			"p2": "move 3 2, move 3 1"
+		},
+		{
+			"p1": "switch 4, move 3 2 dynamax",
+			"p2": "move 1 2, move 3 1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "pass, switch 4"
+		},
+		{
+			"p1": "move 3 1, move 1 1",
+			"p2": "move 4 2, move 4 1"
+		},
+		{
+			"p1": "move 2, move 4 1",
+			"p2": "move 3 2, move 1 1 dynamax"
+		},
+		{
+			"p1": "pass, switch 4",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 1 -2, move 4 1",
+			"p2": "move 1 2, move 2 1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 3, pass"
+		},
+		{
+			"p1": "move 1 1, move 2 -1",
+			"p2": "move 3, move 2 1"
+		},
+		{
+			"p1": "move 1 1, move 3 2",
+			"p2": "move 2, move 3"
+		},
+		{
+			"p1": "move 2, move 1 1",
+			"p2": "move 1, move 1 -1"
+		},
+		{
+			"p1": "move 3 2, move 3 2",
+			"p2": "move 1, move 4 -1"
+		}
+	]
+}

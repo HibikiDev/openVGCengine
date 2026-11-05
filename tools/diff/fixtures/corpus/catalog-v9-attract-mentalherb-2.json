@@ -1,0 +1,302 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,64309,11233,54546,63322",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Salamence-Mega",
+			"item": "Salamencite",
+			"ability": "Aerilate",
+			"moves": [
+				"Tailwind",
+				"Hyper Voice",
+				"attract",
+				"Protect"
+			],
+			"nature": "Naive",
+			"evs": {
+				"hp": 2,
+				"atk": 0,
+				"def": 0,
+				"spa": 32,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "Sneasler",
+			"item": "mentalherb",
+			"ability": "Unburden",
+			"moves": [
+				"Fake Out",
+				"Close Combat",
+				"Dire Claw",
+				"attract"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 2,
+				"atk": 32,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "Rillaboom",
+			"item": "Life Orb",
+			"ability": "cutecharm",
+			"moves": [
+				"Fake Out",
+				"attract",
+				"Wood Hammer",
+				"High Horsepower"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 24,
+				"atk": 25,
+				"def": 0,
+				"spa": 0,
+				"spd": 4,
+				"spe": 13
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "Arcanine-Hisui",
+			"item": "mentalherb",
+			"ability": "cutecharm",
+			"moves": [
+				"attract",
+				"Head Smash",
+				"Extreme Speed",
+				"Protect"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 2,
+				"atk": 32,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Pelipper",
+			"item": "destinyknot",
+			"ability": "aromaveil",
+			"moves": [
+				"Wide Guard",
+				"Tailwind",
+				"attract",
+				"Weather Ball"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 31,
+				"atk": 0,
+				"def": 2,
+				"spa": 5,
+				"spd": 16,
+				"spe": 12
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "Incineroar",
+			"item": "mentalherb",
+			"ability": "Intimidate",
+			"moves": [
+				"Fake Out",
+				"Will-O-Wisp",
+				"attract",
+				"Parting Shot"
+			],
+			"nature": "Careful",
+			"evs": {
+				"hp": 32,
+				"atk": 8,
+				"def": 11,
+				"spa": 0,
+				"spd": 12,
+				"spe": 3
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "Sneasler",
+			"item": "destinyknot",
+			"ability": "Unburden",
+			"moves": [
+				"Close Combat",
+				"Dire Claw",
+				"attract",
+				"Quick Guard"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 12,
+				"atk": 32,
+				"def": 0,
+				"spa": 0,
+				"spd": 4,
+				"spe": 18
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "Golisopod",
+			"item": "Golisopite",
+			"ability": "aromaveil",
+			"moves": [
+				"Sucker Punch",
+				"Leech Life",
+				"attract",
+				"Protect"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 32,
+				"atk": 32,
+				"def": 0,
+				"spa": 0,
+				"spd": 2,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 2, switch 4",
+			"p2": "switch 4, move 3 1"
+		},
+		{
+			"p1": "move 2, move 2 -1",
+			"p2": "move 1 -2, move 2 2"
+		},
+		{
+			"p1": "switch 4, pass",
+			"p2": "switch 4, pass"
+		},
+		{
+			"p1": "move 2 -2, move 2 2",
+			"p2": "move 4 1, move 4 1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "pass, switch 3"
+		},
+		{
+			"p1": "pass, switch 3",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 3 -2, move 4 1",
+			"p2": "move 3 -2, move 1 2"
+		},
+		{
+			"p1": "move 2 1, pass",
+			"p2": "switch 3, move 3 2"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 3, pass"
+		},
+		{
+			"p1": "move 3 1, pass",
+			"p2": "move 4 2, move 1 2"
+		}
+	],
+	"teams": [
+		"MC224",
+		"MC15"
+	]
+}

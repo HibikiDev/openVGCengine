@@ -1,0 +1,262 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,5185,5108,4309,26220",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "blastoise",
+			"item": "enigmaberry",
+			"ability": "swiftswim",
+			"moves": [
+				"muddywater",
+				"finalgambit",
+				"shiftgear",
+				"belch"
+			],
+			"nature": "relaxed",
+			"evs": {
+				"hp": 32,
+				"atk": 10,
+				"def": 17,
+				"spa": 21,
+				"spd": 28,
+				"spe": 6
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "torterra",
+			"item": "powerherb",
+			"ability": "illuminate",
+			"moves": [
+				"rockwrecker",
+				"cottonspore",
+				"recycle",
+				"poltergeist"
+			],
+			"nature": "adamant",
+			"evs": {
+				"hp": 32,
+				"atk": 20,
+				"def": 19,
+				"spa": 15,
+				"spd": 22,
+				"spe": 22
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "dragonite",
+			"item": "ringtarget",
+			"ability": "dryskin",
+			"moves": [
+				"poisonpowder",
+				"brickbreak",
+				"meteormash",
+				"machpunch"
+			],
+			"nature": "naughty",
+			"evs": {
+				"hp": 32,
+				"atk": 31,
+				"def": 18,
+				"spa": 2,
+				"spd": 24,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "arcanine",
+			"item": "griseousorb",
+			"ability": "flowerveil",
+			"moves": [
+				"pound",
+				"moonlight",
+				"grassknot",
+				"boomburst"
+			],
+			"nature": "quiet",
+			"evs": {
+				"hp": 32,
+				"atk": 13,
+				"def": 22,
+				"spa": 5,
+				"spd": 6,
+				"spe": 27
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "milotic",
+			"item": "powerherb",
+			"ability": "sandstream",
+			"moves": [
+				"pluck",
+				"wonderroom",
+				"skyattack",
+				"machpunch"
+			],
+			"nature": "serious",
+			"evs": {
+				"hp": 32,
+				"atk": 12,
+				"def": 21,
+				"spa": 30,
+				"spd": 18,
+				"spe": 16
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "mimikyu",
+			"item": "griseousorb",
+			"ability": "whitesmoke",
+			"moves": [
+				"bulkup",
+				"flatter",
+				"trailblaze",
+				"ragepowder"
+			],
+			"nature": "bold",
+			"evs": {
+				"hp": 32,
+				"atk": 27,
+				"def": 23,
+				"spa": 1,
+				"spd": 31,
+				"spe": 17
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "toxapex",
+			"item": "",
+			"ability": "moldbreaker",
+			"moves": [
+				"reflecttype",
+				"trailblaze",
+				"shiftgear",
+				"stealthrock"
+			],
+			"nature": "serious",
+			"evs": {
+				"hp": 32,
+				"atk": 14,
+				"def": 30,
+				"spa": 2,
+				"spd": 24,
+				"spe": 16
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "delphox",
+			"item": "cellbattery",
+			"ability": "soundproof",
+			"moves": [
+				"psyshieldbash",
+				"iceshard",
+				"burningjealousy",
+				"focusenergy"
+			],
+			"nature": "quiet",
+			"evs": {
+				"hp": 32,
+				"atk": 11,
+				"def": 7,
+				"spa": 1,
+				"spd": 28,
+				"spe": 10
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 1, move 3",
+			"p2": "move 1 1, move 2 1"
+		}
+	]
+}

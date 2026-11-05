@@ -1,0 +1,262 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,45599,2016,50707,22131",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "cherrim",
+			"item": "wacanberry",
+			"ability": "flowergift",
+			"moves": [
+				"raindance",
+				"flamethrower",
+				"earthquake",
+				"protect"
+			],
+			"nature": "hasty",
+			"evs": {
+				"hp": 32,
+				"atk": 29,
+				"def": 17,
+				"spa": 23,
+				"spd": 6,
+				"spe": 16
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "castform",
+			"item": "damprock",
+			"ability": "moldbreaker",
+			"moves": [
+				"surf",
+				"psychic",
+				"closecombat",
+				"sunnyday"
+			],
+			"nature": "careful",
+			"evs": {
+				"hp": 32,
+				"atk": 10,
+				"def": 2,
+				"spa": 2,
+				"spd": 4,
+				"spe": 5
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "tyranitar",
+			"item": "muscleband",
+			"ability": "flowergift",
+			"moves": [
+				"protect",
+				"sandstorm",
+				"raindance",
+				"closecombat"
+			],
+			"nature": "gentle",
+			"evs": {
+				"hp": 32,
+				"atk": 3,
+				"def": 17,
+				"spa": 23,
+				"spd": 12,
+				"spe": 28
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "abomasnow",
+			"item": "sitrusberry",
+			"ability": "airlock",
+			"moves": [
+				"flamethrower",
+				"weatherball",
+				"sandstorm",
+				"psychic"
+			],
+			"nature": "bashful",
+			"evs": {
+				"hp": 32,
+				"atk": 16,
+				"def": 9,
+				"spa": 31,
+				"spd": 26,
+				"spe": 14
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "abomasnow",
+			"item": "widelens",
+			"ability": "drizzle",
+			"moves": [
+				"closecombat",
+				"raindance",
+				"sandstorm",
+				"psychic"
+			],
+			"nature": "adamant",
+			"evs": {
+				"hp": 32,
+				"atk": 23,
+				"def": 20,
+				"spa": 28,
+				"spd": 1,
+				"spe": 22
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "abomasnow",
+			"item": "expertbelt",
+			"ability": "snowwarning",
+			"moves": [
+				"sandstorm",
+				"rockslide",
+				"protect",
+				"closecombat"
+			],
+			"nature": "docile",
+			"evs": {
+				"hp": 32,
+				"atk": 32,
+				"def": 29,
+				"spa": 17,
+				"spd": 12,
+				"spe": 8
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "abomasnow",
+			"item": "leftovers",
+			"ability": "zenmode",
+			"moves": [
+				"raindance",
+				"protect",
+				"weatherball",
+				"sunnyday"
+			],
+			"nature": "gentle",
+			"evs": {
+				"hp": 32,
+				"atk": 10,
+				"def": 1,
+				"spa": 2,
+				"spd": 21,
+				"spe": 20
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "tyranitar",
+			"item": "kebiaberry",
+			"ability": "zenmode",
+			"moves": [
+				"sandstorm",
+				"rockslide",
+				"sunnyday",
+				"raindance"
+			],
+			"nature": "lax",
+			"evs": {
+				"hp": 32,
+				"atk": 31,
+				"def": 9,
+				"spa": 25,
+				"spd": 10,
+				"spe": 25
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 4, move 4",
+			"p2": "move 4 1, move 2"
+		}
+	]
+}

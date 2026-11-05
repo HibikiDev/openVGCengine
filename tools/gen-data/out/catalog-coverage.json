@@ -1,0 +1,2010 @@
+{
+	"abilities": [
+		{
+			"id": "airlock",
+			"status": "referenced"
+		},
+		{
+			"id": "angershell",
+			"status": "referenced"
+		},
+		{
+			"id": "arenatrap",
+			"status": "referenced"
+		},
+		{
+			"id": "asoneglastrier",
+			"status": "referenced"
+		},
+		{
+			"id": "asonespectrier",
+			"status": "referenced"
+		},
+		{
+			"id": "aurabreak",
+			"status": "referenced"
+		},
+		{
+			"id": "baddreams",
+			"status": "referenced"
+		},
+		{
+			"id": "ballfetch",
+			"status": "no-effect"
+		},
+		{
+			"id": "battery",
+			"status": "referenced"
+		},
+		{
+			"id": "beadsofruin",
+			"status": "referenced"
+		},
+		{
+			"id": "beastboost",
+			"status": "referenced"
+		},
+		{
+			"id": "chillingneigh",
+			"status": "referenced"
+		},
+		{
+			"id": "colorchange",
+			"status": "referenced"
+		},
+		{
+			"id": "comatose",
+			"status": "referenced"
+		},
+		{
+			"id": "commander",
+			"status": "referenced"
+		},
+		{
+			"id": "costar",
+			"status": "referenced"
+		},
+		{
+			"id": "cottondown",
+			"status": "referenced"
+		},
+		{
+			"id": "dancer",
+			"status": "referenced"
+		},
+		{
+			"id": "darkaura",
+			"status": "referenced"
+		},
+		{
+			"id": "dauntlessshield",
+			"status": "referenced"
+		},
+		{
+			"id": "dazzling",
+			"status": "referenced"
+		},
+		{
+			"id": "defeatist",
+			"status": "referenced"
+		},
+		{
+			"id": "deltastream",
+			"status": "referenced"
+		},
+		{
+			"id": "desolateland",
+			"status": "referenced"
+		},
+		{
+			"id": "download",
+			"status": "referenced"
+		},
+		{
+			"id": "dragonsmaw",
+			"status": "referenced"
+		},
+		{
+			"id": "flareboost",
+			"status": "referenced"
+		},
+		{
+			"id": "flowergift",
+			"status": "referenced"
+		},
+		{
+			"id": "fullmetalbody",
+			"status": "referenced"
+		},
+		{
+			"id": "galvanize",
+			"status": "referenced"
+		},
+		{
+			"id": "gorillatactics",
+			"status": "referenced"
+		},
+		{
+			"id": "grimneigh",
+			"status": "referenced"
+		},
+		{
+			"id": "hadronengine",
+			"status": "referenced"
+		},
+		{
+			"id": "honeygather",
+			"status": "no-effect"
+		},
+		{
+			"id": "icescales",
+			"status": "referenced"
+		},
+		{
+			"id": "intrepidsword",
+			"status": "referenced"
+		},
+		{
+			"id": "ironbarbs",
+			"status": "referenced"
+		},
+		{
+			"id": "lingeringaroma",
+			"status": "referenced"
+		},
+		{
+			"id": "magnetpull",
+			"status": "referenced"
+		},
+		{
+			"id": "mindseye",
+			"status": "referenced"
+		},
+		{
+			"id": "mistysurge",
+			"status": "referenced"
+		},
+		{
+			"id": "multitype",
+			"status": "referenced"
+		},
+		{
+			"id": "myceliummight",
+			"status": "referenced"
+		},
+		{
+			"id": "neuroforce",
+			"status": "referenced"
+		},
+		{
+			"id": "neutralizinggas",
+			"status": "referenced"
+		},
+		{
+			"id": "noability",
+			"status": "no-effect"
+		},
+		{
+			"id": "normalize",
+			"status": "referenced"
+		},
+		{
+			"id": "orichalcumpulse",
+			"status": "referenced"
+		},
+		{
+			"id": "pastelveil",
+			"status": "referenced"
+		},
+		{
+			"id": "perishbody",
+			"status": "referenced"
+		},
+		{
+			"id": "poisonpuppeteer",
+			"status": "referenced"
+		},
+		{
+			"id": "powerconstruct",
+			"status": "referenced"
+		},
+		{
+			"id": "powerofalchemy",
+			"status": "referenced"
+		},
+		{
+			"id": "powerspot",
+			"status": "referenced"
+		},
+		{
+			"id": "primordialsea",
+			"status": "referenced"
+		},
+		{
+			"id": "prismarmor",
+			"status": "referenced"
+		},
+		{
+			"id": "propellertail",
+			"status": "referenced"
+		},
+		{
+			"id": "protosynthesis",
+			"status": "referenced"
+		},
+		{
+			"id": "quarkdrive",
+			"status": "referenced"
+		},
+		{
+			"id": "rkssystem",
+			"status": "referenced"
+		},
+		{
+			"id": "rockypayload",
+			"status": "referenced"
+		},
+		{
+			"id": "schooling",
+			"status": "referenced"
+		},
+		{
+			"id": "serenegrace",
+			"status": "referenced"
+		},
+		{
+			"id": "shadowshield",
+			"status": "referenced"
+		},
+		{
+			"id": "simple",
+			"status": "referenced"
+		},
+		{
+			"id": "slowstart",
+			"status": "referenced"
+		},
+		{
+			"id": "soulheart",
+			"status": "referenced"
+		},
+		{
+			"id": "steamengine",
+			"status": "referenced"
+		},
+		{
+			"id": "steelworker",
+			"status": "referenced"
+		},
+		{
+			"id": "stormdrain",
+			"status": "referenced"
+		},
+		{
+			"id": "swordofruin",
+			"status": "referenced"
+		},
+		{
+			"id": "tabletsofruin",
+			"status": "referenced"
+		},
+		{
+			"id": "tanglinghair",
+			"status": "referenced"
+		},
+		{
+			"id": "teraformzero",
+			"status": "referenced"
+		},
+		{
+			"id": "terashell",
+			"status": "referenced"
+		},
+		{
+			"id": "terashift",
+			"status": "referenced"
+		},
+		{
+			"id": "teravolt",
+			"status": "referenced"
+		},
+		{
+			"id": "tintedlens",
+			"status": "referenced"
+		},
+		{
+			"id": "toxicboost",
+			"status": "referenced"
+		},
+		{
+			"id": "toxicchain",
+			"status": "referenced"
+		},
+		{
+			"id": "transistor",
+			"status": "referenced"
+		},
+		{
+			"id": "triage",
+			"status": "referenced"
+		},
+		{
+			"id": "truant",
+			"status": "referenced"
+		},
+		{
+			"id": "turboblaze",
+			"status": "referenced"
+		},
+		{
+			"id": "vesselofruin",
+			"status": "referenced"
+		},
+		{
+			"id": "victorystar",
+			"status": "referenced"
+		},
+		{
+			"id": "watercompaction",
+			"status": "referenced"
+		},
+		{
+			"id": "waterveil",
+			"status": "referenced"
+		},
+		{
+			"id": "wellbakedbody",
+			"status": "referenced"
+		},
+		{
+			"id": "wimpout",
+			"status": "referenced"
+		},
+		{
+			"id": "windpower",
+			"status": "referenced"
+		},
+		{
+			"id": "windrider",
+			"status": "referenced"
+		},
+		{
+			"id": "wonderguard",
+			"status": "referenced"
+		},
+		{
+			"id": "wonderskin",
+			"status": "referenced"
+		},
+		{
+			"id": "zenmode",
+			"status": "referenced"
+		}
+	],
+	"items": [
+		{
+			"id": "abilityshield",
+			"status": "referenced"
+		},
+		{
+			"id": "absorbbulb",
+			"status": "referenced"
+		},
+		{
+			"id": "adamantcrystal",
+			"status": "referenced"
+		},
+		{
+			"id": "adamantorb",
+			"status": "referenced"
+		},
+		{
+			"id": "adrenalineorb",
+			"status": "referenced"
+		},
+		{
+			"id": "aguavberry",
+			"status": "referenced"
+		},
+		{
+			"id": "aloraichiumz",
+			"status": "zcrystal"
+		},
+		{
+			"id": "apicotberry",
+			"status": "referenced"
+		},
+		{
+			"id": "armorfossil",
+			"status": "no-effect"
+		},
+		{
+			"id": "assaultvest",
+			"status": "referenced"
+		},
+		{
+			"id": "auspiciousarmor",
+			"status": "no-effect"
+		},
+		{
+			"id": "beastball",
+			"status": "no-effect"
+		},
+		{
+			"id": "belueberry",
+			"status": "referenced"
+		},
+		{
+			"id": "berry",
+			"status": "unported"
+		},
+		{
+			"id": "berryjuice",
+			"status": "referenced"
+		},
+		{
+			"id": "berrysweet",
+			"status": "no-effect"
+		},
+		{
+			"id": "berserkgene",
+			"status": "unported"
+		},
+		{
+			"id": "bignugget",
+			"status": "no-effect"
+		},
+		{
+			"id": "bitterberry",
+			"status": "unported"
+		},
+		{
+			"id": "blacksludge",
+			"status": "referenced"
+		},
+		{
+			"id": "blueorb",
+			"status": "referenced"
+		},
+		{
+			"id": "blukberry",
+			"status": "referenced"
+		},
+		{
+			"id": "blunderpolicy",
+			"status": "referenced"
+		},
+		{
+			"id": "boosterenergy",
+			"status": "referenced"
+		},
+		{
+			"id": "bottlecap",
+			"status": "no-effect"
+		},
+		{
+			"id": "buggem",
+			"status": "referenced"
+		},
+		{
+			"id": "buginiumz",
+			"status": "zcrystal"
+		},
+		{
+			"id": "bugmemory",
+			"status": "referenced"
+		},
+		{
+			"id": "burndrive",
+			"status": "referenced"
+		},
+		{
+			"id": "burntberry",
+			"status": "unported"
+		},
+		{
+			"id": "cellbattery",
+			"status": "referenced"
+		},
+		{
+			"id": "chilldrive",
+			"status": "referenced"
+		},
+		{
+			"id": "chippedpot",
+			"status": "no-effect"
+		},
+		{
+			"id": "choiceband",
+			"status": "referenced"
+		},
+		{
+			"id": "choicespecs",
+			"status": "referenced"
+		},
+		{
+			"id": "clawfossil",
+			"status": "no-effect"
+		},
+		{
+			"id": "clearamulet",
+			"status": "referenced"
+		},
+		{
+			"id": "cloversweet",
+			"status": "no-effect"
+		},
+		{
+			"id": "cornerstonemask",
+			"status": "referenced"
+		},
+		{
+			"id": "cornnberry",
+			"status": "referenced"
+		},
+		{
+			"id": "coverfossil",
+			"status": "no-effect"
+		},
+		{
+			"id": "covertcloak",
+			"status": "referenced"
+		},
+		{
+			"id": "crackedpot",
+			"status": "no-effect"
+		},
+		{
+			"id": "custapberry",
+			"status": "referenced"
+		},
+		{
+			"id": "darkgem",
+			"status": "referenced"
+		},
+		{
+			"id": "darkiniumz",
+			"status": "zcrystal"
+		},
+		{
+			"id": "darkmemory",
+			"status": "referenced"
+		},
+		{
+			"id": "dawnstone",
+			"status": "no-effect"
+		},
+		{
+			"id": "decidiumz",
+			"status": "zcrystal"
+		},
+		{
+			"id": "deepseascale",
+			"status": "referenced"
+		},
+		{
+			"id": "deepseatooth",
+			"status": "referenced"
+		},
+		{
+			"id": "destinyknot",
+			"status": "referenced"
+		},
+		{
+			"id": "diancite",
+			"status": "megastone"
+		},
+		{
+			"id": "diveball",
+			"status": "no-effect"
+		},
+		{
+			"id": "domefossil",
+			"status": "no-effect"
+		},
+		{
+			"id": "dousedrive",
+			"status": "referenced"
+		},
+		{
+			"id": "dracoplate",
+			"status": "referenced"
+		},
+		{
+			"id": "dragongem",
+			"status": "referenced"
+		},
+		{
+			"id": "dragoniumz",
+			"status": "zcrystal"
+		},
+		{
+			"id": "dragonmemory",
+			"status": "referenced"
+		},
+		{
+			"id": "dragonscale",
+			"status": "no-effect"
+		},
+		{
+			"id": "dreadplate",
+			"status": "referenced"
+		},
+		{
+			"id": "dreamball",
+			"status": "no-effect"
+		},
+		{
+			"id": "dubiousdisc",
+			"status": "no-effect"
+		},
+		{
+			"id": "durinberry",
+			"status": "referenced"
+		},
+		{
+			"id": "duskball",
+			"status": "no-effect"
+		},
+		{
+			"id": "duskstone",
+			"status": "no-effect"
+		},
+		{
+			"id": "earthplate",
+			"status": "referenced"
+		},
+		{
+			"id": "eeviumz",
+			"status": "zcrystal"
+		},
+		{
+			"id": "ejectpack",
+			"status": "referenced"
+		},
+		{
+			"id": "electirizer",
+			"status": "no-effect"
+		},
+		{
+			"id": "electricgem",
+			"status": "referenced"
+		},
+		{
+			"id": "electricmemory",
+			"status": "referenced"
+		},
+		{
+			"id": "electriumz",
+			"status": "zcrystal"
+		},
+		{
+			"id": "enigmaberry",
+			"status": "referenced"
+		},
+		{
+			"id": "eviolite",
+			"status": "referenced"
+		},
+		{
+			"id": "fairiumz",
+			"status": "zcrystal"
+		},
+		{
+			"id": "fairygem",
+			"status": "referenced"
+		},
+		{
+			"id": "fairymemory",
+			"status": "referenced"
+		},
+		{
+			"id": "fastball",
+			"status": "no-effect"
+		},
+		{
+			"id": "fightinggem",
+			"status": "referenced"
+		},
+		{
+			"id": "fightingmemory",
+			"status": "referenced"
+		},
+		{
+			"id": "fightiniumz",
+			"status": "zcrystal"
+		},
+		{
+			"id": "figyberry",
+			"status": "referenced"
+		},
+		{
+			"id": "firegem",
+			"status": "referenced"
+		},
+		{
+			"id": "firememory",
+			"status": "referenced"
+		},
+		{
+			"id": "firestone",
+			"status": "no-effect"
+		},
+		{
+			"id": "firiumz",
+			"status": "zcrystal"
+		},
+		{
+			"id": "fistplate",
+			"status": "referenced"
+		},
+		{
+			"id": "flameorb",
+			"status": "referenced"
+		},
+		{
+			"id": "flameplate",
+			"status": "referenced"
+		},
+		{
+			"id": "floatstone",
+			"status": "referenced"
+		},
+		{
+			"id": "flowersweet",
+			"status": "no-effect"
+		},
+		{
+			"id": "flyinggem",
+			"status": "referenced"
+		},
+		{
+			"id": "flyingmemory",
+			"status": "referenced"
+		},
+		{
+			"id": "flyiniumz",
+			"status": "zcrystal"
+		},
+		{
+			"id": "fossilizedbird",
+			"status": "no-effect"
+		},
+		{
+			"id": "fossilizeddino",
+			"status": "no-effect"
+		},
+		{
+			"id": "fossilizeddrake",
+			"status": "no-effect"
+		},
+		{
+			"id": "fossilizedfish",
+			"status": "no-effect"
+		},
+		{
+			"id": "friendball",
+			"status": "no-effect"
+		},
+		{
+			"id": "fullincense",
+			"status": "referenced"
+		},
+		{
+			"id": "galaricacuff",
+			"status": "no-effect"
+		},
+		{
+			"id": "galaricawreath",
+			"status": "no-effect"
+		},
+		{
+			"id": "ganlonberry",
+			"status": "referenced"
+		},
+		{
+			"id": "ghostgem",
+			"status": "referenced"
+		},
+		{
+			"id": "ghostiumz",
+			"status": "zcrystal"
+		},
+		{
+			"id": "ghostmemory",
+			"status": "referenced"
+		},
+		{
+			"id": "goldberry",
+			"status": "unported"
+		},
+		{
+			"id": "goldbottlecap",
+			"status": "no-effect"
+		},
+		{
+			"id": "grassgem",
+			"status": "referenced"
+		},
+		{
+			"id": "grassiumz",
+			"status": "zcrystal"
+		},
+		{
+			"id": "grassmemory",
+			"status": "referenced"
+		},
+		{
+			"id": "greatball",
+			"status": "no-effect"
+		},
+		{
+			"id": "grepaberry",
+			"status": "referenced"
+		},
+		{
+			"id": "gripclaw",
+			"status": "referenced"
+		},
+		{
+			"id": "griseouscore",
+			"status": "referenced"
+		},
+		{
+			"id": "griseousorb",
+			"status": "referenced"
+		},
+		{
+			"id": "groundgem",
+			"status": "referenced"
+		},
+		{
+			"id": "groundiumz",
+			"status": "zcrystal"
+		},
+		{
+			"id": "groundmemory",
+			"status": "referenced"
+		},
+		{
+			"id": "healball",
+			"status": "no-effect"
+		},
+		{
+			"id": "hearthflamemask",
+			"status": "referenced"
+		},
+		{
+			"id": "heavyball",
+			"status": "no-effect"
+		},
+		{
+			"id": "heavydutyboots",
+			"status": "referenced"
+		},
+		{
+			"id": "helixfossil",
+			"status": "no-effect"
+		},
+		{
+			"id": "hondewberry",
+			"status": "referenced"
+		},
+		{
+			"id": "iapapaberry",
+			"status": "referenced"
+		},
+		{
+			"id": "iceberry",
+			"status": "unported"
+		},
+		{
+			"id": "icegem",
+			"status": "referenced"
+		},
+		{
+			"id": "icememory",
+			"status": "referenced"
+		},
+		{
+			"id": "icestone",
+			"status": "no-effect"
+		},
+		{
+			"id": "icicleplate",
+			"status": "referenced"
+		},
+		{
+			"id": "iciumz",
+			"status": "zcrystal"
+		},
+		{
+			"id": "inciniumz",
+			"status": "zcrystal"
+		},
+		{
+			"id": "insectplate",
+			"status": "referenced"
+		},
+		{
+			"id": "ironplate",
+			"status": "referenced"
+		},
+		{
+			"id": "jabocaberry",
+			"status": "referenced"
+		},
+		{
+			"id": "jawfossil",
+			"status": "no-effect"
+		},
+		{
+			"id": "keeberry",
+			"status": "referenced"
+		},
+		{
+			"id": "kelpsyberry",
+			"status": "referenced"
+		},
+		{
+			"id": "kommoniumz",
+			"status": "zcrystal"
+		},
+		{
+			"id": "laggingtail",
+			"status": "referenced"
+		},
+		{
+			"id": "lansatberry",
+			"status": "referenced"
+		},
+		{
+			"id": "latiasite",
+			"status": "megastone"
+		},
+		{
+			"id": "latiosite",
+			"status": "megastone"
+		},
+		{
+			"id": "laxincense",
+			"status": "referenced"
+		},
+		{
+			"id": "leafstone",
+			"status": "no-effect"
+		},
+		{
+			"id": "levelball",
+			"status": "no-effect"
+		},
+		{
+			"id": "liechiberry",
+			"status": "referenced"
+		},
+		{
+			"id": "loadeddice",
+			"status": "referenced"
+		},
+		{
+			"id": "loveball",
+			"status": "no-effect"
+		},
+		{
+			"id": "lovesweet",
+			"status": "no-effect"
+		},
+		{
+			"id": "luckypunch",
+			"status": "referenced"
+		},
+		{
+			"id": "luminousmoss",
+			"status": "referenced"
+		},
+		{
+			"id": "lunaliumz",
+			"status": "zcrystal"
+		},
+		{
+			"id": "lureball",
+			"status": "no-effect"
+		},
+		{
+			"id": "lustrousglobe",
+			"status": "referenced"
+		},
+		{
+			"id": "lustrousorb",
+			"status": "referenced"
+		},
+		{
+			"id": "luxuryball",
+			"status": "no-effect"
+		},
+		{
+			"id": "lycaniumz",
+			"status": "zcrystal"
+		},
+		{
+			"id": "machobrace",
+			"status": "referenced"
+		},
+		{
+			"id": "magmarizer",
+			"status": "no-effect"
+		},
+		{
+			"id": "magoberry",
+			"status": "referenced"
+		},
+		{
+			"id": "magostberry",
+			"status": "referenced"
+		},
+		{
+			"id": "mail",
+			"status": "referenced"
+		},
+		{
+			"id": "maliciousarmor",
+			"status": "no-effect"
+		},
+		{
+			"id": "marangaberry",
+			"status": "referenced"
+		},
+		{
+			"id": "marshadiumz",
+			"status": "zcrystal"
+		},
+		{
+			"id": "masterball",
+			"status": "no-effect"
+		},
+		{
+			"id": "masterpieceteacup",
+			"status": "no-effect"
+		},
+		{
+			"id": "meadowplate",
+			"status": "referenced"
+		},
+		{
+			"id": "metalalloy",
+			"status": "no-effect"
+		},
+		{
+			"id": "metalpowder",
+			"status": "referenced"
+		},
+		{
+			"id": "mewniumz",
+			"status": "zcrystal"
+		},
+		{
+			"id": "mewtwonitex",
+			"status": "megastone"
+		},
+		{
+			"id": "mewtwonitey",
+			"status": "megastone"
+		},
+		{
+			"id": "micleberry",
+			"status": "referenced"
+		},
+		{
+			"id": "mimikiumz",
+			"status": "zcrystal"
+		},
+		{
+			"id": "mindplate",
+			"status": "referenced"
+		},
+		{
+			"id": "mintberry",
+			"status": "unported"
+		},
+		{
+			"id": "miracleberry",
+			"status": "unported"
+		},
+		{
+			"id": "mirrorherb",
+			"status": "referenced"
+		},
+		{
+			"id": "moonball",
+			"status": "no-effect"
+		},
+		{
+			"id": "moonstone",
+			"status": "no-effect"
+		},
+		{
+			"id": "mysteryberry",
+			"status": "unported"
+		},
+		{
+			"id": "nanabberry",
+			"status": "referenced"
+		},
+		{
+			"id": "nestball",
+			"status": "no-effect"
+		},
+		{
+			"id": "netball",
+			"status": "no-effect"
+		},
+		{
+			"id": "nomelberry",
+			"status": "referenced"
+		},
+		{
+			"id": "normaliumz",
+			"status": "zcrystal"
+		},
+		{
+			"id": "oddincense",
+			"status": "referenced"
+		},
+		{
+			"id": "oldamber",
+			"status": "no-effect"
+		},
+		{
+			"id": "ovalstone",
+			"status": "no-effect"
+		},
+		{
+			"id": "pamtreberry",
+			"status": "referenced"
+		},
+		{
+			"id": "petayaberry",
+			"status": "referenced"
+		},
+		{
+			"id": "pikaniumz",
+			"status": "zcrystal"
+		},
+		{
+			"id": "pikashuniumz",
+			"status": "zcrystal"
+		},
+		{
+			"id": "pinapberry",
+			"status": "referenced"
+		},
+		{
+			"id": "pinkbow",
+			"status": "unported"
+		},
+		{
+			"id": "pixieplate",
+			"status": "referenced"
+		},
+		{
+			"id": "plumefossil",
+			"status": "no-effect"
+		},
+		{
+			"id": "poisongem",
+			"status": "referenced"
+		},
+		{
+			"id": "poisoniumz",
+			"status": "zcrystal"
+		},
+		{
+			"id": "poisonmemory",
+			"status": "referenced"
+		},
+		{
+			"id": "pokeball",
+			"status": "no-effect"
+		},
+		{
+			"id": "polkadotbow",
+			"status": "unported"
+		},
+		{
+			"id": "pomegberry",
+			"status": "referenced"
+		},
+		{
+			"id": "poweranklet",
+			"status": "referenced"
+		},
+		{
+			"id": "powerband",
+			"status": "referenced"
+		},
+		{
+			"id": "powerbelt",
+			"status": "referenced"
+		},
+		{
+			"id": "powerbracer",
+			"status": "referenced"
+		},
+		{
+			"id": "powerherb",
+			"status": "referenced"
+		},
+		{
+			"id": "powerlens",
+			"status": "referenced"
+		},
+		{
+			"id": "powerweight",
+			"status": "referenced"
+		},
+		{
+			"id": "premierball",
+			"status": "no-effect"
+		},
+		{
+			"id": "prettyfeather",
+			"status": "no-effect"
+		},
+		{
+			"id": "primariumz",
+			"status": "zcrystal"
+		},
+		{
+			"id": "prismscale",
+			"status": "no-effect"
+		},
+		{
+			"id": "protectivepads",
+			"status": "referenced"
+		},
+		{
+			"id": "protector",
+			"status": "no-effect"
+		},
+		{
+			"id": "przcureberry",
+			"status": "unported"
+		},
+		{
+			"id": "psncureberry",
+			"status": "unported"
+		},
+		{
+			"id": "psychicgem",
+			"status": "referenced"
+		},
+		{
+			"id": "psychicmemory",
+			"status": "referenced"
+		},
+		{
+			"id": "psychiumz",
+			"status": "zcrystal"
+		},
+		{
+			"id": "punchingglove",
+			"status": "referenced"
+		},
+		{
+			"id": "qualotberry",
+			"status": "referenced"
+		},
+		{
+			"id": "quickball",
+			"status": "no-effect"
+		},
+		{
+			"id": "quickpowder",
+			"status": "referenced"
+		},
+		{
+			"id": "rabutaberry",
+			"status": "referenced"
+		},
+		{
+			"id": "rarebone",
+			"status": "no-effect"
+		},
+		{
+			"id": "razorclaw",
+			"status": "referenced"
+		},
+		{
+			"id": "razorfang",
+			"status": "referenced"
+		},
+		{
+			"id": "razzberry",
+			"status": "referenced"
+		},
+		{
+			"id": "reapercloth",
+			"status": "no-effect"
+		},
+		{
+			"id": "redorb",
+			"status": "referenced"
+		},
+		{
+			"id": "repeatball",
+			"status": "no-effect"
+		},
+		{
+			"id": "ribbonsweet",
+			"status": "no-effect"
+		},
+		{
+			"id": "ringtarget",
+			"status": "referenced"
+		},
+		{
+			"id": "rockgem",
+			"status": "referenced"
+		},
+		{
+			"id": "rockincense",
+			"status": "referenced"
+		},
+		{
+			"id": "rockiumz",
+			"status": "zcrystal"
+		},
+		{
+			"id": "rockmemory",
+			"status": "referenced"
+		},
+		{
+			"id": "roomservice",
+			"status": "referenced"
+		},
+		{
+			"id": "rootfossil",
+			"status": "no-effect"
+		},
+		{
+			"id": "roseincense",
+			"status": "referenced"
+		},
+		{
+			"id": "rowapberry",
+			"status": "referenced"
+		},
+		{
+			"id": "rustedshield",
+			"status": "referenced"
+		},
+		{
+			"id": "rustedsword",
+			"status": "referenced"
+		},
+		{
+			"id": "sachet",
+			"status": "no-effect"
+		},
+		{
+			"id": "safariball",
+			"status": "no-effect"
+		},
+		{
+			"id": "safetygoggles",
+			"status": "referenced"
+		},
+		{
+			"id": "sailfossil",
+			"status": "no-effect"
+		},
+		{
+			"id": "salacberry",
+			"status": "referenced"
+		},
+		{
+			"id": "seaincense",
+			"status": "referenced"
+		},
+		{
+			"id": "shinystone",
+			"status": "no-effect"
+		},
+		{
+			"id": "shockdrive",
+			"status": "referenced"
+		},
+		{
+			"id": "skullfossil",
+			"status": "no-effect"
+		},
+		{
+			"id": "skyplate",
+			"status": "referenced"
+		},
+		{
+			"id": "snorliumz",
+			"status": "zcrystal"
+		},
+		{
+			"id": "snowball",
+			"status": "referenced"
+		},
+		{
+			"id": "solganiumz",
+			"status": "zcrystal"
+		},
+		{
+			"id": "souldew",
+			"status": "referenced"
+		},
+		{
+			"id": "spelonberry",
+			"status": "referenced"
+		},
+		{
+			"id": "splashplate",
+			"status": "referenced"
+		},
+		{
+			"id": "spookyplate",
+			"status": "referenced"
+		},
+		{
+			"id": "sportball",
+			"status": "no-effect"
+		},
+		{
+			"id": "starfberry",
+			"status": "referenced"
+		},
+		{
+			"id": "starsweet",
+			"status": "no-effect"
+		},
+		{
+			"id": "steelgem",
+			"status": "referenced"
+		},
+		{
+			"id": "steeliumz",
+			"status": "zcrystal"
+		},
+		{
+			"id": "steelmemory",
+			"status": "referenced"
+		},
+		{
+			"id": "stick",
+			"status": "referenced"
+		},
+		{
+			"id": "stickybarb",
+			"status": "referenced"
+		},
+		{
+			"id": "stoneplate",
+			"status": "referenced"
+		},
+		{
+			"id": "strawberrysweet",
+			"status": "no-effect"
+		},
+		{
+			"id": "sunstone",
+			"status": "no-effect"
+		},
+		{
+			"id": "sweetapple",
+			"status": "no-effect"
+		},
+		{
+			"id": "syrupyapple",
+			"status": "no-effect"
+		},
+		{
+			"id": "tamatoberry",
+			"status": "referenced"
+		},
+		{
+			"id": "tapuniumz",
+			"status": "zcrystal"
+		},
+		{
+			"id": "tartapple",
+			"status": "no-effect"
+		},
+		{
+			"id": "thickclub",
+			"status": "referenced"
+		},
+		{
+			"id": "throatspray",
+			"status": "referenced"
+		},
+		{
+			"id": "thunderstone",
+			"status": "no-effect"
+		},
+		{
+			"id": "timerball",
+			"status": "no-effect"
+		},
+		{
+			"id": "toxicorb",
+			"status": "referenced"
+		},
+		{
+			"id": "toxicplate",
+			"status": "referenced"
+		},
+		{
+			"id": "tr00",
+			"status": "no-effect"
+		},
+		{
+			"id": "tr01",
+			"status": "no-effect"
+		},
+		{
+			"id": "tr02",
+			"status": "no-effect"
+		},
+		{
+			"id": "tr03",
+			"status": "no-effect"
+		},
+		{
+			"id": "tr04",
+			"status": "no-effect"
+		},
+		{
+			"id": "tr05",
+			"status": "no-effect"
+		},
+		{
+			"id": "tr06",
+			"status": "no-effect"
+		},
+		{
+			"id": "tr07",
+			"status": "no-effect"
+		},
+		{
+			"id": "tr08",
+			"status": "no-effect"
+		},
+		{
+			"id": "tr09",
+			"status": "no-effect"
+		},
+		{
+			"id": "tr10",
+			"status": "no-effect"
+		},
+		{
+			"id": "tr11",
+			"status": "no-effect"
+		},
+		{
+			"id": "tr12",
+			"status": "no-effect"
+		},
+		{
+			"id": "tr13",
+			"status": "no-effect"
+		},
+		{
+			"id": "tr14",
+			"status": "no-effect"
+		},
+		{
+			"id": "tr15",
+			"status": "no-effect"
+		},
+		{
+			"id": "tr16",
+			"status": "no-effect"
+		},
+		{
+			"id": "tr17",
+			"status": "no-effect"
+		},
+		{
+			"id": "tr18",
+			"status": "no-effect"
+		},
+		{
+			"id": "tr19",
+			"status": "no-effect"
+		},
+		{
+			"id": "tr20",
+			"status": "no-effect"
+		},
+		{
+			"id": "tr21",
+			"status": "no-effect"
+		},
+		{
+			"id": "tr22",
+			"status": "no-effect"
+		},
+		{
+			"id": "tr23",
+			"status": "no-effect"
+		},
+		{
+			"id": "tr24",
+			"status": "no-effect"
+		},
+		{
+			"id": "tr25",
+			"status": "no-effect"
+		},
+		{
+			"id": "tr26",
+			"status": "no-effect"
+		},
+		{
+			"id": "tr27",
+			"status": "no-effect"
+		},
+		{
+			"id": "tr28",
+			"status": "no-effect"
+		},
+		{
+			"id": "tr29",
+			"status": "no-effect"
+		},
+		{
+			"id": "tr30",
+			"status": "no-effect"
+		},
+		{
+			"id": "tr31",
+			"status": "no-effect"
+		},
+		{
+			"id": "tr32",
+			"status": "no-effect"
+		},
+		{
+			"id": "tr33",
+			"status": "no-effect"
+		},
+		{
+			"id": "tr34",
+			"status": "no-effect"
+		},
+		{
+			"id": "tr35",
+			"status": "no-effect"
+		},
+		{
+			"id": "tr36",
+			"status": "no-effect"
+		},
+		{
+			"id": "tr37",
+			"status": "no-effect"
+		},
+		{
+			"id": "tr38",
+			"status": "no-effect"
+		},
+		{
+			"id": "tr39",
+			"status": "no-effect"
+		},
+		{
+			"id": "tr40",
+			"status": "no-effect"
+		},
+		{
+			"id": "tr41",
+			"status": "no-effect"
+		},
+		{
+			"id": "tr42",
+			"status": "no-effect"
+		},
+		{
+			"id": "tr43",
+			"status": "no-effect"
+		},
+		{
+			"id": "tr44",
+			"status": "no-effect"
+		},
+		{
+			"id": "tr45",
+			"status": "no-effect"
+		},
+		{
+			"id": "tr46",
+			"status": "no-effect"
+		},
+		{
+			"id": "tr47",
+			"status": "no-effect"
+		},
+		{
+			"id": "tr48",
+			"status": "no-effect"
+		},
+		{
+			"id": "tr49",
+			"status": "no-effect"
+		},
+		{
+			"id": "tr50",
+			"status": "no-effect"
+		},
+		{
+			"id": "tr51",
+			"status": "no-effect"
+		},
+		{
+			"id": "tr52",
+			"status": "no-effect"
+		},
+		{
+			"id": "tr53",
+			"status": "no-effect"
+		},
+		{
+			"id": "tr54",
+			"status": "no-effect"
+		},
+		{
+			"id": "tr55",
+			"status": "no-effect"
+		},
+		{
+			"id": "tr56",
+			"status": "no-effect"
+		},
+		{
+			"id": "tr57",
+			"status": "no-effect"
+		},
+		{
+			"id": "tr58",
+			"status": "no-effect"
+		},
+		{
+			"id": "tr59",
+			"status": "no-effect"
+		},
+		{
+			"id": "tr60",
+			"status": "no-effect"
+		},
+		{
+			"id": "tr61",
+			"status": "no-effect"
+		},
+		{
+			"id": "tr62",
+			"status": "no-effect"
+		},
+		{
+			"id": "tr63",
+			"status": "no-effect"
+		},
+		{
+			"id": "tr64",
+			"status": "no-effect"
+		},
+		{
+			"id": "tr65",
+			"status": "no-effect"
+		},
+		{
+			"id": "tr66",
+			"status": "no-effect"
+		},
+		{
+			"id": "tr67",
+			"status": "no-effect"
+		},
+		{
+			"id": "tr68",
+			"status": "no-effect"
+		},
+		{
+			"id": "tr69",
+			"status": "no-effect"
+		},
+		{
+			"id": "tr70",
+			"status": "no-effect"
+		},
+		{
+			"id": "tr71",
+			"status": "no-effect"
+		},
+		{
+			"id": "tr72",
+			"status": "no-effect"
+		},
+		{
+			"id": "tr73",
+			"status": "no-effect"
+		},
+		{
+			"id": "tr74",
+			"status": "no-effect"
+		},
+		{
+			"id": "tr75",
+			"status": "no-effect"
+		},
+		{
+			"id": "tr76",
+			"status": "no-effect"
+		},
+		{
+			"id": "tr77",
+			"status": "no-effect"
+		},
+		{
+			"id": "tr78",
+			"status": "no-effect"
+		},
+		{
+			"id": "tr79",
+			"status": "no-effect"
+		},
+		{
+			"id": "tr80",
+			"status": "no-effect"
+		},
+		{
+			"id": "tr81",
+			"status": "no-effect"
+		},
+		{
+			"id": "tr82",
+			"status": "no-effect"
+		},
+		{
+			"id": "tr83",
+			"status": "no-effect"
+		},
+		{
+			"id": "tr84",
+			"status": "no-effect"
+		},
+		{
+			"id": "tr85",
+			"status": "no-effect"
+		},
+		{
+			"id": "tr86",
+			"status": "no-effect"
+		},
+		{
+			"id": "tr87",
+			"status": "no-effect"
+		},
+		{
+			"id": "tr88",
+			"status": "no-effect"
+		},
+		{
+			"id": "tr89",
+			"status": "no-effect"
+		},
+		{
+			"id": "tr90",
+			"status": "no-effect"
+		},
+		{
+			"id": "tr91",
+			"status": "no-effect"
+		},
+		{
+			"id": "tr92",
+			"status": "no-effect"
+		},
+		{
+			"id": "tr93",
+			"status": "no-effect"
+		},
+		{
+			"id": "tr94",
+			"status": "no-effect"
+		},
+		{
+			"id": "tr95",
+			"status": "no-effect"
+		},
+		{
+			"id": "tr96",
+			"status": "no-effect"
+		},
+		{
+			"id": "tr97",
+			"status": "no-effect"
+		},
+		{
+			"id": "tr98",
+			"status": "no-effect"
+		},
+		{
+			"id": "tr99",
+			"status": "no-effect"
+		},
+		{
+			"id": "ultraball",
+			"status": "no-effect"
+		},
+		{
+			"id": "ultranecroziumz",
+			"status": "referenced"
+		},
+		{
+			"id": "unremarkableteacup",
+			"status": "no-effect"
+		},
+		{
+			"id": "upgrade",
+			"status": "no-effect"
+		},
+		{
+			"id": "utilityumbrella",
+			"status": "referenced"
+		},
+		{
+			"id": "watergem",
+			"status": "referenced"
+		},
+		{
+			"id": "wateriumz",
+			"status": "zcrystal"
+		},
+		{
+			"id": "watermemory",
+			"status": "referenced"
+		},
+		{
+			"id": "waterstone",
+			"status": "no-effect"
+		},
+		{
+			"id": "watmelberry",
+			"status": "referenced"
+		},
+		{
+			"id": "waveincense",
+			"status": "referenced"
+		},
+		{
+			"id": "weaknesspolicy",
+			"status": "referenced"
+		},
+		{
+			"id": "wellspringmask",
+			"status": "referenced"
+		},
+		{
+			"id": "wepearberry",
+			"status": "referenced"
+		},
+		{
+			"id": "whippeddream",
+			"status": "no-effect"
+		},
+		{
+			"id": "wikiberry",
+			"status": "referenced"
+		},
+		{
+			"id": "zapplate",
+			"status": "referenced"
+		}
+	]
+}

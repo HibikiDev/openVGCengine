@@ -1,0 +1,310 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,46762,36962,15542,23645",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Salamence",
+			"item": "Salamencite",
+			"ability": "Intimidate",
+			"moves": [
+				"Protect",
+				"Hyper Voice",
+				"Draco Meteor",
+				"Tailwind"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 14,
+				"atk": 0,
+				"def": 0,
+				"spa": 20,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "Sneasler",
+			"item": "Grassy Seed",
+			"ability": "Unburden",
+			"moves": [
+				"Protect",
+				"Close Combat",
+				"Dire Claw",
+				"Rock Slide"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 24,
+				"atk": 20,
+				"def": 0,
+				"spa": 0,
+				"spd": 7,
+				"spe": 15
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "Raichu",
+			"item": "Raichunite Y",
+			"ability": "Lightning Rod",
+			"moves": [
+				"Protect",
+				"Zap Cannon",
+				"Focus Blast",
+				"Encore"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 11,
+				"spa": 0,
+				"spd": 0,
+				"spe": 23
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "Incineroar",
+			"item": "Sitrus Berry",
+			"ability": "Intimidate",
+			"moves": [
+				"Darkest Lariat",
+				"Flare Blitz",
+				"Fake Out",
+				"Parting Shot"
+			],
+			"nature": "Careful",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 14,
+				"spa": 0,
+				"spd": 20,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Salamence",
+			"item": "Salamencite",
+			"ability": "Intimidate",
+			"moves": [
+				"Protect",
+				"Tailwind",
+				"Draco Meteor",
+				"Hyper Voice"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 2,
+				"atk": 0,
+				"def": 0,
+				"spa": 32,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "Kingambit",
+			"item": "Occa Berry",
+			"ability": "Defiant",
+			"moves": [
+				"Protect",
+				"Swords Dance",
+				"Kowtow Cleave",
+				"Sucker Punch"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 30,
+				"atk": 32,
+				"def": 0,
+				"spa": 0,
+				"spd": 1,
+				"spe": 3
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "Ninetales-Alola",
+			"item": "Never-Melt Ice",
+			"ability": "Snow Warning",
+			"moves": [
+				"Protect",
+				"Encore",
+				"Freeze-Dry",
+				"Blizzard"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 2,
+				"atk": 0,
+				"def": 3,
+				"spa": 32,
+				"spd": 3,
+				"spe": 26
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "Metagross",
+			"item": "Metagrossite",
+			"ability": "Clear Body",
+			"moves": [
+				"Protect",
+				"Psychic Fangs",
+				"Bullet Punch",
+				"Iron Head"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 20,
+				"atk": 26,
+				"def": 1,
+				"spa": 0,
+				"spd": 8,
+				"spe": 11
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 3 2 mega, move 4",
+			"p2": "move 1 mega, move 2"
+		},
+		{
+			"p1": "move 2, move 4",
+			"p2": "move 1, move 4 2"
+		},
+		{
+			"p1": "move 1, move 1",
+			"p2": "move 3 2, move 2"
+		},
+		{
+			"p1": "move 2, move 3 2",
+			"p2": "move 1, move 1"
+		},
+		{
+			"p1": "move 1, move 4",
+			"p2": "move 2, move 3 2"
+		},
+		{
+			"p1": "pass, switch 3",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 4, move 2 1",
+			"p2": "move 4, move 1"
+		},
+		{
+			"p1": "move 2, move 2 2",
+			"p2": "move 3 2, move 2"
+		},
+		{
+			"p1": "pass, switch 4",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 2, move 4 1",
+			"p2": "move 4, move 4 1"
+		},
+		{
+			"p1": "pass, move 4 1",
+			"p2": "move 3 2, move 4 2"
+		},
+		{
+			"p1": "pass, move 2 1",
+			"p2": "move 1, move 1"
+		}
+	],
+	"teams": [
+		"MC373",
+		"MC320"
+	]
+}

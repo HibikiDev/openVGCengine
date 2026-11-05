@@ -1,0 +1,286 @@
+{
+	"format": "gen9vgc2024regg",
+	"seed": "gen5,62603,52327,25056,54090",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "ditto",
+			"item": "leftovers",
+			"ability": "opportunist",
+			"moves": [
+				"nobleroar",
+				"tackle",
+				"protect",
+				"dragondance"
+			],
+			"nature": "docile",
+			"evs": {
+				"hp": 104,
+				"atk": 164,
+				"def": 48,
+				"spa": 8,
+				"spd": 20,
+				"spe": 8
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 22,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N",
+			"teraType": "Flying"
+		},
+		{
+			"name": "Mon1",
+			"species": "snorlax",
+			"item": "mirrorherb",
+			"ability": "opportunist",
+			"moves": [
+				"babydolleyes",
+				"charm",
+				"growl",
+				"nobleroar"
+			],
+			"nature": "calm",
+			"evs": {
+				"hp": 220,
+				"atk": 176,
+				"def": 112,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 1,
+				"atk": 18,
+				"def": 22,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Bug"
+		},
+		{
+			"name": "Mon2",
+			"species": "ditto",
+			"item": "leftovers",
+			"ability": "intimidate",
+			"moves": [
+				"charm",
+				"icywind",
+				"dragondance",
+				"swordsdance"
+			],
+			"nature": "hasty",
+			"evs": {
+				"hp": 64,
+				"atk": 96,
+				"def": 44,
+				"spa": 220,
+				"spd": 68,
+				"spe": 16
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 10
+			},
+			"level": 50,
+			"gender": "N",
+			"teraType": "Electric"
+		},
+		{
+			"name": "Mon3",
+			"species": "snorlax",
+			"item": "ejectpack",
+			"ability": "imposter",
+			"moves": [
+				"charm",
+				"nastyplot",
+				"icywind",
+				"nobleroar"
+			],
+			"nature": "quiet",
+			"evs": {
+				"hp": 0,
+				"atk": 200,
+				"def": 16,
+				"spa": 148,
+				"spd": 116,
+				"spe": 28
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 16,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Flying"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "flamigo",
+			"item": "mirrorherb",
+			"ability": "imposter",
+			"moves": [
+				"icywind",
+				"growl",
+				"protect",
+				"charm"
+			],
+			"nature": "bold",
+			"evs": {
+				"hp": 144,
+				"atk": 48,
+				"def": 56,
+				"spa": 16,
+				"spd": 220,
+				"spe": 24
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 26,
+				"def": 31,
+				"spa": 31,
+				"spd": 13,
+				"spe": 28
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Ghost"
+		},
+		{
+			"name": "Mon1",
+			"species": "snorlax",
+			"item": "",
+			"ability": "opportunist",
+			"moves": [
+				"dragondance",
+				"nastyplot",
+				"icywind",
+				"nobleroar"
+			],
+			"nature": "careful",
+			"evs": {
+				"hp": 232,
+				"atk": 224,
+				"def": 52,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 18,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Ghost"
+		},
+		{
+			"name": "Mon2",
+			"species": "snorlax",
+			"item": "",
+			"ability": "rattled",
+			"moves": [
+				"icywind",
+				"charm",
+				"babydolleyes",
+				"tackle"
+			],
+			"nature": "bold",
+			"evs": {
+				"hp": 88,
+				"atk": 240,
+				"def": 168,
+				"spa": 12,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 23,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Flying"
+		},
+		{
+			"name": "Mon3",
+			"species": "espathra",
+			"item": "mirrorherb",
+			"ability": "opportunist",
+			"moves": [
+				"protect",
+				"nobleroar",
+				"swordsdance",
+				"babydolleyes"
+			],
+			"nature": "lax",
+			"evs": {
+				"hp": 12,
+				"atk": 92,
+				"def": 184,
+				"spa": 120,
+				"spd": 20,
+				"spe": 80
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 7,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Fighting"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 3, move 4 1",
+			"p2": "move 3, move 2 terastallize"
+		},
+		{
+			"p1": "move 2 1 terastallize, switch 3",
+			"p2": "move 1 2, switch 3"
+		},
+		{
+			"p1": "switch 3, move 4",
+			"p2": "move 1 2, move 4 -1"
+		},
+		{
+			"p1": "move 4 -2, move 1 1",
+			"p2": "move 1 1, move 3 2"
+		},
+		{
+			"p1": "move 1 -2, move 1 1",
+			"p2": "move 1 2, switch 4"
+		}
+	]
+}

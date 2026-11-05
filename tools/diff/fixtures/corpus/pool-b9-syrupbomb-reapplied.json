@@ -1,0 +1,322 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,51044,15189,25356,21588",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Torkoal",
+			"item": "Charcoal",
+			"ability": "Drought",
+			"moves": [
+				"Eruption",
+				"destinybond",
+				"curse",
+				"Protect"
+			],
+			"nature": "Quiet",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 1,
+				"spa": 32,
+				"spd": 1,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "Sneasler",
+			"item": "White Herb",
+			"ability": "Unburden",
+			"moves": [
+				"powertrick",
+				"Gunk Shot",
+				"Fake Out",
+				"syrupbomb"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 32,
+				"atk": 10,
+				"def": 7,
+				"spa": 0,
+				"spd": 0,
+				"spe": 17
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "Garchomp",
+			"item": "Garchompite Z",
+			"ability": "Rough Skin",
+			"moves": [
+				"syrupbomb",
+				"Flamethrower",
+				"Power Gem",
+				"bodypress"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 5,
+				"atk": 0,
+				"def": 0,
+				"spa": 29,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "Sylveon",
+			"item": "Fairy Feather",
+			"ability": "Pixilate",
+			"moves": [
+				"tailwind",
+				"Hyper Beam",
+				"Yawn",
+				"syrupbomb"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 31,
+				"atk": 0,
+				"def": 25,
+				"spa": 10,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Sneasler",
+			"item": "Focus Sash",
+			"ability": "Poison Touch",
+			"moves": [
+				"curse",
+				"protect",
+				"Close Combat",
+				"Quick Guard"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 2,
+				"atk": 32,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "Delphox",
+			"item": "Delphoxite",
+			"ability": "Blaze",
+			"moves": [
+				"Heat Wave",
+				"uturn",
+				"Nasty Plot",
+				"powertrick"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 23,
+				"atk": 0,
+				"def": 0,
+				"spa": 11,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "Floette-Mega",
+			"item": "Floettite",
+			"ability": "Flower Veil",
+			"moves": [
+				"Protect",
+				"Draining Kiss",
+				"bodypress",
+				"tailwind"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 24,
+				"atk": 0,
+				"def": 10,
+				"spa": 0,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "Indeedee-F",
+			"item": "Rocky Helmet",
+			"ability": "Synchronize",
+			"moves": [
+				"roar",
+				"firespin",
+				"Fake Out",
+				"Protect"
+			],
+			"nature": "Bold",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 26,
+				"spa": 0,
+				"spd": 0,
+				"spe": 8
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"turns": [
+		{
+			"p1": "switch 4, move 4 2",
+			"p2": "move 3 2, move 2 -1 mega"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "pass, switch 3"
+		},
+		{
+			"p1": "move 4 2, switch 3",
+			"p2": "switch 3, move 4"
+		},
+		{
+			"p1": "switch 3, move 1 2",
+			"p2": "move 2 2, move 2 2"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 4, pass"
+		},
+		{
+			"p1": "move 4 1, move 3 2",
+			"p2": "move 4, move 1"
+		},
+		{
+			"p1": "move 4 1, move 4 -1",
+			"p2": "move 4, move 2 -1"
+		},
+		{
+			"p1": "move 4 -2, move 2 1",
+			"p2": "switch 4, move 1"
+		},
+		{
+			"p1": "move 2 -2, move 3 -1",
+			"p2": "switch 4, move 3 2"
+		},
+		{
+			"p1": "pass, switch 4",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "switch 3, move 2",
+			"p2": "move 3 1, switch 4"
+		},
+		{
+			"p1": "move 4 2, move 3",
+			"p2": "move 1 -2, move 2 2"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "pass, switch 4"
+		},
+		{
+			"p1": "switch 3, move 2",
+			"p2": "move 4, move 3 2"
+		},
+		{
+			"p1": "move 2 1, move 2",
+			"p2": "move 2 2, move 4"
+		}
+	],
+	"teams": [
+		"MC428",
+		"MC375"
+	]
+}

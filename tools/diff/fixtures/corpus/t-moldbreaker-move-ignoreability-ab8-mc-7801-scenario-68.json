@@ -1,0 +1,278 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,49137,57982,43691,42541",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "typhlosion",
+			"item": "oranberry",
+			"ability": "mirrorarmor",
+			"moves": [
+				"roleplay",
+				"skillswap",
+				"entrainment",
+				"finalgambit"
+			],
+			"nature": "rash",
+			"evs": {
+				"hp": 32,
+				"atk": 31,
+				"def": 10,
+				"spa": 29,
+				"spd": 8,
+				"spe": 10
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "starmie",
+			"item": "blackbelt",
+			"ability": "teravolt",
+			"moves": [
+				"roleplay",
+				"entrainment",
+				"skillswap",
+				"snipeshot"
+			],
+			"nature": "lax",
+			"evs": {
+				"hp": 32,
+				"atk": 23,
+				"def": 9,
+				"spa": 10,
+				"spd": 10,
+				"spe": 22
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "basculegionf",
+			"item": "rindoberry",
+			"ability": "contrary",
+			"moves": [
+				"roleplay",
+				"entrainment",
+				"skillswap",
+				"gravapple"
+			],
+			"nature": "bashful",
+			"evs": {
+				"hp": 32,
+				"atk": 19,
+				"def": 17,
+				"spa": 22,
+				"spd": 21,
+				"spe": 16
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "weavile",
+			"item": "colburberry",
+			"ability": "teravolt",
+			"moves": [
+				"entrainment",
+				"skillswap",
+				"roleplay",
+				"wish"
+			],
+			"nature": "hasty",
+			"evs": {
+				"hp": 32,
+				"atk": 6,
+				"def": 12,
+				"spa": 10,
+				"spd": 10,
+				"spe": 31
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "gengar",
+			"item": "cheriberry",
+			"ability": "mirrorarmor",
+			"moves": [
+				"entrainment",
+				"roleplay",
+				"skillswap",
+				"roar"
+			],
+			"nature": "quiet",
+			"evs": {
+				"hp": 32,
+				"atk": 10,
+				"def": 22,
+				"spa": 18,
+				"spd": 30,
+				"spe": 13
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "raichualola",
+			"item": "babiriberry",
+			"ability": "intimidate",
+			"moves": [
+				"skillswap",
+				"entrainment",
+				"roleplay",
+				"ancientpower"
+			],
+			"nature": "hasty",
+			"evs": {
+				"hp": 32,
+				"atk": 8,
+				"def": 19,
+				"spa": 32,
+				"spd": 26,
+				"spe": 16
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "blaziken",
+			"item": "passhoberry",
+			"ability": "teravolt",
+			"moves": [
+				"roleplay",
+				"entrainment",
+				"skillswap",
+				"curse"
+			],
+			"nature": "jolly",
+			"evs": {
+				"hp": 32,
+				"atk": 20,
+				"def": 2,
+				"spa": 14,
+				"spd": 10,
+				"spe": 10
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "gallade",
+			"item": "dragonfang",
+			"ability": "mirrorarmor",
+			"moves": [
+				"roleplay",
+				"skillswap",
+				"entrainment",
+				"pound"
+			],
+			"nature": "gentle",
+			"evs": {
+				"hp": 32,
+				"atk": 18,
+				"def": 21,
+				"spa": 27,
+				"spd": 22,
+				"spe": 24
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 2 2, move 3 2",
+			"p2": "move 2 1, move 2 2"
+		},
+		{
+			"p1": "move 4 2, move 2 -1",
+			"p2": "move 2 2, move 4 -1"
+		},
+		{
+			"p1": "switch 4, pass",
+			"p2": "pass, switch 4"
+		},
+		{
+			"p1": "move 3 1, move 1 2",
+			"p2": "move 2 -2, move 2 2"
+		},
+		{
+			"p1": "move 2 1, move 3 1",
+			"p2": "move 2 1, move 4 2"
+		}
+	]
+}

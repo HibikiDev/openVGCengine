@@ -1,0 +1,262 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,1942,37089,63938,53516",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "charizard",
+			"item": "whiteherb",
+			"ability": "magicbounce",
+			"moves": [
+				"cottonspore",
+				"protect",
+				"sweetscent",
+				"stringshot"
+			],
+			"nature": "jolly",
+			"evs": {
+				"hp": 32,
+				"atk": 20,
+				"def": 13,
+				"spa": 29,
+				"spd": 28,
+				"spe": 11
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "garchomp",
+			"item": "chartiberry",
+			"ability": "magicbounce",
+			"moves": [
+				"sweetscent",
+				"cottonspore",
+				"stringshot",
+				"protect"
+			],
+			"nature": "hasty",
+			"evs": {
+				"hp": 32,
+				"atk": 24,
+				"def": 11,
+				"spa": 6,
+				"spd": 12,
+				"spe": 27
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "farigiraf",
+			"item": "shedshell",
+			"ability": "magicbounce",
+			"moves": [
+				"protect",
+				"sweetscent",
+				"stringshot",
+				"cottonspore"
+			],
+			"nature": "hasty",
+			"evs": {
+				"hp": 32,
+				"atk": 1,
+				"def": 3,
+				"spa": 25,
+				"spd": 0,
+				"spe": 10
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "incineroar",
+			"item": "miracleseed",
+			"ability": "magicbounce",
+			"moves": [
+				"protect",
+				"cottonspore",
+				"sweetscent",
+				"stringshot"
+			],
+			"nature": "quirky",
+			"evs": {
+				"hp": 32,
+				"atk": 18,
+				"def": 19,
+				"spa": 19,
+				"spd": 8,
+				"spe": 27
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "dragalge",
+			"item": "muscleband",
+			"ability": "magicbounce",
+			"moves": [
+				"cottonspore",
+				"protect",
+				"sweetscent",
+				"stringshot"
+			],
+			"nature": "quirky",
+			"evs": {
+				"hp": 32,
+				"atk": 10,
+				"def": 18,
+				"spa": 23,
+				"spd": 29,
+				"spe": 31
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "sceptile",
+			"item": "ironball",
+			"ability": "magicbounce",
+			"moves": [
+				"sweetscent",
+				"cottonspore",
+				"stringshot",
+				"protect"
+			],
+			"nature": "serious",
+			"evs": {
+				"hp": 32,
+				"atk": 14,
+				"def": 14,
+				"spa": 32,
+				"spd": 7,
+				"spe": 28
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "altaria",
+			"item": "damprock",
+			"ability": "magicbounce",
+			"moves": [
+				"protect",
+				"sweetscent",
+				"cottonspore",
+				"stringshot"
+			],
+			"nature": "sassy",
+			"evs": {
+				"hp": 32,
+				"atk": 30,
+				"def": 23,
+				"spa": 4,
+				"spd": 14,
+				"spe": 19
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "scovillain",
+			"item": "magnet",
+			"ability": "magicbounce",
+			"moves": [
+				"stringshot",
+				"protect",
+				"sweetscent",
+				"cottonspore"
+			],
+			"nature": "bashful",
+			"evs": {
+				"hp": 32,
+				"atk": 19,
+				"def": 32,
+				"spa": 0,
+				"spd": 5,
+				"spe": 25
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 1, move 1",
+			"p2": "move 2, move 2"
+		}
+	]
+}

@@ -1,0 +1,262 @@
+{
+	"format": "gen7vgc2019",
+	"seed": "gen5,36763,11420,5940,41148",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "magby",
+			"item": "psychiumz",
+			"ability": "aurabreak",
+			"moves": [
+				"earthpower",
+				"lunardance",
+				"worryseed",
+				"cometpunch"
+			],
+			"nature": "hardy",
+			"evs": {
+				"hp": 168,
+				"atk": 212,
+				"def": 128,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 18,
+				"def": 25,
+				"spa": 31,
+				"spd": 31,
+				"spe": 13
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "spheal",
+			"item": "abomasite",
+			"ability": "naturalcure",
+			"moves": [
+				"aquaring",
+				"craftyshield",
+				"spite",
+				"imprison"
+			],
+			"nature": "adamant",
+			"evs": {
+				"hp": 64,
+				"atk": 132,
+				"def": 44,
+				"spa": 204,
+				"spd": 64,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "whiscash",
+			"item": "keeberry",
+			"ability": "minus",
+			"moves": [
+				"mysticalfire",
+				"venomdrench",
+				"waterpledge",
+				"poisonpowder"
+			],
+			"nature": "serious",
+			"evs": {
+				"hp": 112,
+				"atk": 28,
+				"def": 80,
+				"spa": 128,
+				"spd": 0,
+				"spe": 4
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 25,
+				"spa": 31,
+				"spd": 31,
+				"spe": 30
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "phantump",
+			"item": "splashplate",
+			"ability": "flowerveil",
+			"moves": [
+				"hyperfang",
+				"quickattack",
+				"grasswhistle",
+				"covet"
+			],
+			"nature": "mild",
+			"evs": {
+				"hp": 112,
+				"atk": 196,
+				"def": 120,
+				"spa": 80,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 14,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "raichualola",
+			"item": "grassiumz",
+			"ability": "prismarmor",
+			"moves": [
+				"poisonsting",
+				"cottonguard",
+				"heatcrash",
+				"skydrop"
+			],
+			"nature": "jolly",
+			"evs": {
+				"hp": 248,
+				"atk": 96,
+				"def": 120,
+				"spa": 44,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "bellsprout",
+			"item": "electriumz",
+			"ability": "imposter",
+			"moves": [
+				"icefang",
+				"flareblitz",
+				"chargebeam",
+				"odorsleuth"
+			],
+			"nature": "jolly",
+			"evs": {
+				"hp": 184,
+				"atk": 64,
+				"def": 188,
+				"spa": 72,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 16,
+				"def": 31,
+				"spa": 10,
+				"spd": 22,
+				"spe": 21
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "carnivine",
+			"item": "choicespecs",
+			"ability": "stancechange",
+			"moves": [
+				"quickattack",
+				"darkvoid",
+				"calmmind",
+				"oblivionwing"
+			],
+			"nature": "lax",
+			"evs": {
+				"hp": 80,
+				"atk": 80,
+				"def": 240,
+				"spa": 56,
+				"spd": 52,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 1,
+				"def": 0,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "bagon",
+			"item": "roseliberry",
+			"ability": "ironbarbs",
+			"moves": [
+				"secretsword",
+				"wildcharge",
+				"playnice",
+				"mefirst"
+			],
+			"nature": "quirky",
+			"evs": {
+				"hp": 24,
+				"atk": 152,
+				"def": 96,
+				"spa": 144,
+				"spd": 92,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 14,
+				"def": 31,
+				"spa": 29,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 1 1, move 4",
+			"p2": "move 4 2, move 4 1"
+		}
+	]
+}

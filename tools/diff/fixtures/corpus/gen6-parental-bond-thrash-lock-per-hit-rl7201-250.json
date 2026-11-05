@@ -1,0 +1,262 @@
+{
+	"format": "gen6vgc2016",
+	"seed": "gen5,63588,51156,21345,17945",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "vigoroth",
+			"item": "starfberry",
+			"ability": "parentalbond",
+			"moves": [
+				"aerialace",
+				"thrash",
+				"rollout",
+				"sandtomb"
+			],
+			"nature": "impish",
+			"evs": {
+				"hp": 132,
+				"atk": 240,
+				"def": 44,
+				"spa": 92,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 22,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "slowpoke",
+			"item": "blukberry",
+			"ability": "simple",
+			"moves": [
+				"geargrind",
+				"playrough",
+				"snatch",
+				"rockclimb"
+			],
+			"nature": "lonely",
+			"evs": {
+				"hp": 16,
+				"atk": 132,
+				"def": 116,
+				"spa": 44,
+				"spd": 200,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "mawile",
+			"item": "micleberry",
+			"ability": "immunity",
+			"moves": [
+				"rockclimb",
+				"powersplit",
+				"bulletseed",
+				"spark"
+			],
+			"nature": "bashful",
+			"evs": {
+				"hp": 144,
+				"atk": 76,
+				"def": 196,
+				"spa": 72,
+				"spd": 20,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 8,
+				"spa": 31,
+				"spd": 31,
+				"spe": 9
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "garbodor",
+			"item": "silverpowder",
+			"ability": "poisontouch",
+			"moves": [
+				"roleplay",
+				"hail",
+				"waterpulse",
+				"attract"
+			],
+			"nature": "gentle",
+			"evs": {
+				"hp": 204,
+				"atk": 96,
+				"def": 64,
+				"spa": 144,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 2,
+				"spa": 31,
+				"spd": 23,
+				"spe": 22
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "patrat",
+			"item": "silverpowder",
+			"ability": "pixilate",
+			"moves": [
+				"sweetscent",
+				"firespin",
+				"rockslide",
+				"copycat"
+			],
+			"nature": "impish",
+			"evs": {
+				"hp": 100,
+				"atk": 116,
+				"def": 212,
+				"spa": 80,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "granbull",
+			"item": "dousedrive",
+			"ability": "honeygather",
+			"moves": [
+				"amnesia",
+				"assurance",
+				"camouflage",
+				"bulletpunch"
+			],
+			"nature": "impish",
+			"evs": {
+				"hp": 148,
+				"atk": 84,
+				"def": 32,
+				"spa": 188,
+				"spd": 56,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 28,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "rapidash",
+			"item": "abomasite",
+			"ability": "quickfeet",
+			"moves": [
+				"frostbreath",
+				"muddywater",
+				"magneticflux",
+				"rockslide"
+			],
+			"nature": "bold",
+			"evs": {
+				"hp": 140,
+				"atk": 212,
+				"def": 156,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "illumise",
+			"item": "razorclaw",
+			"ability": "insomnia",
+			"moves": [
+				"zenheadbutt",
+				"trickroom",
+				"closecombat",
+				"clamp"
+			],
+			"nature": "lonely",
+			"evs": {
+				"hp": 16,
+				"atk": 148,
+				"def": 124,
+				"spa": 132,
+				"spd": 40,
+				"spe": 48
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 19,
+				"spd": 31,
+				"spe": 4
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 2, move 1 1",
+			"p2": "move 2 2, move 2 2"
+		}
+	]
+}

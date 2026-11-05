@@ -1,0 +1,306 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,34319,49729,5191,25111",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Talonflame",
+			"item": "Sharp Beak",
+			"ability": "Gale Wings",
+			"moves": [
+				"Feint",
+				"Tailwind",
+				"Brave Bird",
+				"Flare Blitz"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 7,
+				"atk": 32,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 27
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "Basculegion",
+			"item": "Life Orb",
+			"ability": "Adaptability",
+			"moves": [
+				"Last Respects",
+				"Wave Crash",
+				"Aqua Jet",
+				"Protect"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 0,
+				"atk": 18,
+				"def": 30,
+				"spa": 0,
+				"spd": 0,
+				"spe": 18
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "Pawmot",
+			"item": "Focus Sash",
+			"ability": "Iron Fist",
+			"moves": [
+				"Double Shock",
+				"Close Combat",
+				"Revival Blessing",
+				"Fake Out"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 2,
+				"atk": 32,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "Glimmora",
+			"item": "Glimmoranite",
+			"ability": "Toxic Debris",
+			"moves": [
+				"Spiky Shield",
+				"Power Gem",
+				"Sludge Bomb",
+				"Earth Power"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 9,
+				"atk": 0,
+				"def": 0,
+				"spa": 25,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Basculegion",
+			"item": "Life Orb",
+			"ability": "Adaptability",
+			"moves": [
+				"Wave Crash",
+				"Aqua Jet",
+				"Last Respects",
+				"Protect"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 2,
+				"atk": 32,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "Glimmora",
+			"item": "Glimmoranite",
+			"ability": "Toxic Debris",
+			"moves": [
+				"Sludge Bomb",
+				"Power Gem",
+				"Earth Power",
+				"Spiky Shield"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 2,
+				"atk": 0,
+				"def": 0,
+				"spa": 32,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "Baxcalibur",
+			"item": "Baxcalibrite",
+			"ability": "Thermal Exchange",
+			"moves": [
+				"Glaive Rush",
+				"Icicle Crash",
+				"Ice Shard",
+				"Protect"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 2,
+				"atk": 32,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "Rillaboom",
+			"item": "Miracle Seed",
+			"ability": "Grassy Surge",
+			"moves": [
+				"Fake Out",
+				"Grassy Glide",
+				"Wood Hammer",
+				"U-turn"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 32,
+				"atk": 26,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 8
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 1 1, move 1 1",
+			"p2": "move 3 2, move 1 1"
+		},
+		{
+			"p1": "pass, switch 4",
+			"p2": "switch 3, pass"
+		},
+		{
+			"p1": "move 2, move 2 2",
+			"p2": "move 3 1 mega, move 2 1"
+		},
+		{
+			"p1": "switch 3, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 2 2, move 1 mega",
+			"p2": "move 3 2, move 1 2"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "pass, switch 4"
+		},
+		{
+			"p1": "move 3, move 2 2",
+			"p2": "move 3 1, move 2 1"
+		},
+		{
+			"p1": "pass, move 1",
+			"p2": "move 1 1, move 2 1"
+		},
+		{
+			"p1": "pass, move 2 1",
+			"p2": "move 4, move 4 2"
+		},
+		{
+			"p1": "pass, move 1",
+			"p2": "move 1 1, move 2 1"
+		},
+		{
+			"p1": "pass, move 3 1",
+			"p2": "move 3 1, move 3 1"
+		}
+	],
+	"teams": [
+		"MC68",
+		"MC57"
+	]
+}

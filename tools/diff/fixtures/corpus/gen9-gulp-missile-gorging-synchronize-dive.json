@@ -1,0 +1,282 @@
+{
+	"format": "gen9vgc2024regg",
+	"seed": "gen5,11,12,13,14",
+	"team1": [
+		{
+			"name": "Cram",
+			"species": "cramorant",
+			"item": "",
+			"ability": "gulpmissile",
+			"moves": [
+				"bellydrum",
+				"surf",
+				"dive",
+				"protect"
+			],
+			"nature": "serious",
+			"evs": {
+				"hp": 244,
+				"atk": 252,
+				"def": 4,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Normal"
+		},
+		{
+			"name": "Pal",
+			"species": "clefable",
+			"item": "",
+			"ability": "friendguard",
+			"moves": [
+				"protect",
+				"tackle",
+				"calmmind",
+				"moonblast"
+			],
+			"nature": "serious",
+			"evs": {
+				"hp": 252,
+				"atk": 252,
+				"def": 4,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 0
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Normal"
+		},
+		{
+			"name": "Bench",
+			"species": "excadrill",
+			"item": "",
+			"ability": "sandrush",
+			"moves": [
+				"protect",
+				"tackle",
+				"rockslide",
+				"earthquake"
+			],
+			"nature": "serious",
+			"evs": {
+				"hp": 252,
+				"atk": 252,
+				"def": 4,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 0
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Normal"
+		},
+		{
+			"name": "Bench2",
+			"species": "golduck",
+			"item": "",
+			"ability": "damp",
+			"moves": [
+				"protect",
+				"tackle",
+				"rockslide",
+				"earthquake"
+			],
+			"nature": "serious",
+			"evs": {
+				"hp": 252,
+				"atk": 252,
+				"def": 4,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 0
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Normal"
+		}
+	],
+	"team2": [
+		{
+			"name": "Sync",
+			"species": "umbreon",
+			"item": "",
+			"ability": "synchronize",
+			"moves": [
+				"tackle",
+				"protect",
+				"rockslide",
+				"closecombat"
+			],
+			"nature": "serious",
+			"evs": {
+				"hp": 252,
+				"atk": 252,
+				"def": 4,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 0
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Normal"
+		},
+		{
+			"name": "MG",
+			"species": "clefable",
+			"item": "",
+			"ability": "magicguard",
+			"moves": [
+				"tackle",
+				"protect",
+				"rockslide",
+				"closecombat"
+			],
+			"nature": "serious",
+			"evs": {
+				"hp": 252,
+				"atk": 252,
+				"def": 4,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 0
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Normal"
+		},
+		{
+			"name": "C",
+			"species": "abomasnow",
+			"item": "",
+			"ability": "snowwarning",
+			"moves": [
+				"tackle",
+				"protect",
+				"rockslide",
+				"closecombat"
+			],
+			"nature": "serious",
+			"evs": {
+				"hp": 252,
+				"atk": 252,
+				"def": 4,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 0
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Normal"
+		},
+		{
+			"name": "D",
+			"species": "rayquaza",
+			"item": "",
+			"ability": "airlock",
+			"moves": [
+				"tackle",
+				"protect",
+				"rockslide",
+				"closecombat"
+			],
+			"nature": "serious",
+			"evs": {
+				"hp": 252,
+				"atk": 252,
+				"def": 4,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 0
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Normal"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 1, move 1",
+			"p2": "move 2, move 2"
+		},
+		{
+			"p1": "move 2, move 3",
+			"p2": "move 1 1, move 2"
+		},
+		{
+			"p1": "move 3 1, move 1",
+			"p2": "move 2, move 1 1"
+		},
+		{
+			"p1": "move 1, move 3",
+			"p2": "move 2, move 1 1"
+		}
+	]
+}

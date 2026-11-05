@@ -1,0 +1,262 @@
+{
+	"format": "gen8vgc2021",
+	"seed": "gen5,1403,10633,34759,43057",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "silvallyfire",
+			"item": "fairymemory",
+			"ability": "limber",
+			"moves": [
+				"switcheroo",
+				"protect",
+				"magicroom",
+				"knockoff"
+			],
+			"nature": "adamant",
+			"evs": {
+				"hp": 156,
+				"atk": 144,
+				"def": 56,
+				"spa": 152,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 1,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 23
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "silvallyfire",
+			"item": "watermemory",
+			"ability": "analytic",
+			"moves": [
+				"magicroom",
+				"multiattack",
+				"tackle",
+				"thief"
+			],
+			"nature": "careful",
+			"evs": {
+				"hp": 180,
+				"atk": 64,
+				"def": 32,
+				"spa": 32,
+				"spd": 200,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 9,
+				"atk": 31,
+				"def": 25,
+				"spa": 11,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "silvallywater",
+			"item": "steelmemory",
+			"ability": "heavymetal",
+			"moves": [
+				"thief",
+				"protect",
+				"switcheroo",
+				"fling"
+			],
+			"nature": "adamant",
+			"evs": {
+				"hp": 152,
+				"atk": 84,
+				"def": 128,
+				"spa": 144,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 7,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "silvallyfire",
+			"item": "fairymemory",
+			"ability": "magician",
+			"moves": [
+				"multiattack",
+				"thief",
+				"knockoff",
+				"switcheroo"
+			],
+			"nature": "naughty",
+			"evs": {
+				"hp": 72,
+				"atk": 60,
+				"def": 156,
+				"spa": 188,
+				"spd": 32,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "silvallyfire",
+			"item": "firememory",
+			"ability": "drizzle",
+			"moves": [
+				"switcheroo",
+				"knockoff",
+				"tackle",
+				"thief"
+			],
+			"nature": "quiet",
+			"evs": {
+				"hp": 72,
+				"atk": 252,
+				"def": 12,
+				"spa": 172,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 10,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "silvallyfairy",
+			"item": "fairymemory",
+			"ability": "rkssystem",
+			"moves": [
+				"multiattack",
+				"trick",
+				"magicroom",
+				"tackle"
+			],
+			"nature": "lax",
+			"evs": {
+				"hp": 216,
+				"atk": 4,
+				"def": 196,
+				"spa": 32,
+				"spd": 60,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 10,
+				"spa": 31,
+				"spd": 31,
+				"spe": 23
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "silvallywater",
+			"item": "steelmemory",
+			"ability": "honeygather",
+			"moves": [
+				"thief",
+				"fling",
+				"knockoff",
+				"switcheroo"
+			],
+			"nature": "bashful",
+			"evs": {
+				"hp": 108,
+				"atk": 208,
+				"def": 32,
+				"spa": 160,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 25,
+				"atk": 29,
+				"def": 26,
+				"spa": 31,
+				"spd": 31,
+				"spe": 1
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "silvallyfairy",
+			"item": "fairymemory",
+			"ability": "chlorophyll",
+			"moves": [
+				"fling",
+				"tackle",
+				"switcheroo",
+				"multiattack"
+			],
+			"nature": "lonely",
+			"evs": {
+				"hp": 132,
+				"atk": 224,
+				"def": 88,
+				"spa": 64,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 18,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 3, move 2 1",
+			"p2": "move 4 1, move 4 2"
+		}
+	]
+}

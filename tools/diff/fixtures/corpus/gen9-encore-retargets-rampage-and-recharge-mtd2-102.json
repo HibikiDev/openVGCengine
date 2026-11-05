@@ -1,0 +1,318 @@
+{
+	"format": "gen9vgc2023regd",
+	"seed": "gen5,51918,8919,55722,49245",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "muk",
+			"item": "sunstone",
+			"ability": "furcoat",
+			"moves": [
+				"blastburn",
+				"petaldance",
+				"moonlight",
+				"defendorder"
+			],
+			"nature": "calm",
+			"evs": {
+				"hp": 248,
+				"atk": 96,
+				"def": 164,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 23,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Fairy"
+		},
+		{
+			"name": "Mon1",
+			"species": "skiploom",
+			"item": "powerlens",
+			"ability": "justified",
+			"moves": [
+				"thunderwave",
+				"fling",
+				"icespinner",
+				"foulplay"
+			],
+			"nature": "relaxed",
+			"evs": {
+				"hp": 196,
+				"atk": 20,
+				"def": 96,
+				"spa": 100,
+				"spd": 96,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 30,
+				"atk": 31,
+				"def": 31,
+				"spa": 23,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Fighting"
+		},
+		{
+			"name": "Mon2",
+			"species": "grimeralola",
+			"item": "ovalstone",
+			"ability": "friendguard",
+			"moves": [
+				"overdrive",
+				"aquastep",
+				"steelbeam",
+				"razorleaf"
+			],
+			"nature": "impish",
+			"evs": {
+				"hp": 184,
+				"atk": 144,
+				"def": 36,
+				"spa": 0,
+				"spd": 120,
+				"spe": 24
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 11,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Ghost"
+		},
+		{
+			"name": "Mon3",
+			"species": "meowthalola",
+			"item": "rindoberry",
+			"ability": "swarm",
+			"moves": [
+				"luminacrash",
+				"astonish",
+				"chillingwater",
+				"hypnosis"
+			],
+			"nature": "gentle",
+			"evs": {
+				"hp": 140,
+				"atk": 104,
+				"def": 252,
+				"spa": 12,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 20,
+				"atk": 31,
+				"def": 31,
+				"spa": 12,
+				"spd": 25,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Psychic"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "vivillonarchipelago",
+			"item": "rawstberry",
+			"ability": "sweetveil",
+			"moves": [
+				"headlongrush",
+				"sleeppowder",
+				"rest",
+				"smackdown"
+			],
+			"nature": "bold",
+			"evs": {
+				"hp": 176,
+				"atk": 204,
+				"def": 44,
+				"spa": 4,
+				"spd": 44,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 28,
+				"def": 31,
+				"spa": 30,
+				"spd": 10,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Grass"
+		},
+		{
+			"name": "Mon1",
+			"species": "veluza",
+			"item": "kelpsyberry",
+			"ability": "grassysurge",
+			"moves": [
+				"steelroller",
+				"tackle",
+				"rapidspin",
+				"aircutter"
+			],
+			"nature": "relaxed",
+			"evs": {
+				"hp": 72,
+				"atk": 36,
+				"def": 132,
+				"spa": 108,
+				"spd": 84,
+				"spe": 76
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Rock"
+		},
+		{
+			"name": "Mon2",
+			"species": "vivillonmodern",
+			"item": "expertbelt",
+			"ability": "whitesmoke",
+			"moves": [
+				"leafstorm",
+				"breakingswipe",
+				"dragondarts",
+				"headlongrush"
+			],
+			"nature": "gentle",
+			"evs": {
+				"hp": 216,
+				"atk": 52,
+				"def": 160,
+				"spa": 20,
+				"spd": 12,
+				"spe": 40
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 17
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Flying"
+		},
+		{
+			"name": "Mon3",
+			"species": "gothorita",
+			"item": "chartiberry",
+			"ability": "sturdy",
+			"moves": [
+				"teatime",
+				"takedown",
+				"encore",
+				"liquidation"
+			],
+			"nature": "rash",
+			"evs": {
+				"hp": 252,
+				"atk": 172,
+				"def": 84,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 12,
+				"atk": 4,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Psychic"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 4, move 4 1",
+			"p2": "move 1 1, move 2 -1 terastallize"
+		},
+		{
+			"p1": "move 1 2, move 4 -1",
+			"p2": "switch 3, move 3 -1"
+		},
+		{
+			"p1": "move 1, move 3 -1",
+			"p2": "move 4 -2, switch 3"
+		},
+		{
+			"p1": "move 3, move 2 1",
+			"p2": "move 3 1, move 4 2"
+		},
+		{
+			"p1": "move 4, switch 4",
+			"p2": "move 4 2, move 1 1"
+		},
+		{
+			"p1": "move 3, move 3 2",
+			"p2": "move 1 2, move 2 2"
+		},
+		{
+			"p1": "pass, switch 4",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 1 -2, move 2 1 terastallize",
+			"p2": "switch 3, move 3"
+		},
+		{
+			"p1": "move 1, move 4 2",
+			"p2": "move 1 -2, move 4 2"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "pass, switch 4"
+		},
+		{
+			"p1": "move 2, move 2 -1",
+			"p2": "move 1 -2, move 3 1"
+		},
+		{
+			"p1": "move 1, move 3 2",
+			"p2": "move 1 -2, move 4 2"
+		}
+	],
+	"teams": [
+		"scenario-153a",
+		"scenario-53b"
+	]
+}

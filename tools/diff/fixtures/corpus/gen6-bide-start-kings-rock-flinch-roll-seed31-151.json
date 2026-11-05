@@ -1,0 +1,262 @@
+{
+	"format": "gen6vgc2015",
+	"seed": "gen5,39411,21880,62656,63580",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "rattata",
+			"item": "kingsrock",
+			"ability": "effectspore",
+			"moves": [
+				"bide",
+				"firepledge",
+				"sandattack",
+				"round"
+			],
+			"nature": "serious",
+			"evs": {
+				"hp": 64,
+				"atk": 216,
+				"def": 76,
+				"spa": 28,
+				"spd": 116,
+				"spe": 8
+			},
+			"ivs": {
+				"hp": 11,
+				"atk": 31,
+				"def": 31,
+				"spa": 4,
+				"spd": 31,
+				"spe": 27
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "nidoking",
+			"item": "pechaberry",
+			"ability": "anticipation",
+			"moves": [
+				"meteormash",
+				"sludge",
+				"firepledge",
+				"bodyslam"
+			],
+			"nature": "hardy",
+			"evs": {
+				"hp": 64,
+				"atk": 12,
+				"def": 80,
+				"spa": 236,
+				"spd": 28,
+				"spe": 88
+			},
+			"ivs": {
+				"hp": 27,
+				"atk": 31,
+				"def": 22,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "lillipup",
+			"item": "slowbronite",
+			"ability": "imposter",
+			"moves": [
+				"meanlook",
+				"wideguard",
+				"flash",
+				"present"
+			],
+			"nature": "jolly",
+			"evs": {
+				"hp": 212,
+				"atk": 4,
+				"def": 116,
+				"spa": 44,
+				"spd": 68,
+				"spe": 64
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 10,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "camerupt",
+			"item": "gyaradosite",
+			"ability": "poisonpoint",
+			"moves": [
+				"reversal",
+				"smog",
+				"dive",
+				"thrash"
+			],
+			"nature": "mild",
+			"evs": {
+				"hp": 228,
+				"atk": 84,
+				"def": 124,
+				"spa": 72,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 9,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "lapras",
+			"item": "rockyhelmet",
+			"ability": "owntempo",
+			"moves": [
+				"safeguard",
+				"confuseray",
+				"cometpunch",
+				"flyingpress"
+			],
+			"nature": "modest",
+			"evs": {
+				"hp": 116,
+				"atk": 160,
+				"def": 132,
+				"spa": 96,
+				"spd": 4,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "rotommow",
+			"item": "lightball",
+			"ability": "strongjaw",
+			"moves": [
+				"guardsplit",
+				"snore",
+				"acupressure",
+				"curse"
+			],
+			"nature": "impish",
+			"evs": {
+				"hp": 156,
+				"atk": 16,
+				"def": 108,
+				"spa": 132,
+				"spd": 96,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "gourgeistsuper",
+			"item": "thickclub",
+			"ability": "superluck",
+			"moves": [
+				"babydolleyes",
+				"vacuumwave",
+				"torment",
+				"powergem"
+			],
+			"nature": "gentle",
+			"evs": {
+				"hp": 148,
+				"atk": 216,
+				"def": 12,
+				"spa": 124,
+				"spd": 8,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "togetic",
+			"item": "blazikenite",
+			"ability": "sturdy",
+			"moves": [
+				"crosspoison",
+				"recycle",
+				"workup",
+				"hail"
+			],
+			"nature": "rash",
+			"evs": {
+				"hp": 132,
+				"atk": 52,
+				"def": 216,
+				"spa": 108,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 21,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 1, move 4 1",
+			"p2": "move 2 2, move 3 -1"
+		}
+	]
+}

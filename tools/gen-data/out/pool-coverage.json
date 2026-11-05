@@ -1,0 +1,4618 @@
+{
+	"moves": [
+		{
+			"id": "accelerock",
+			"status": "implemented",
+			"corpus": 3
+		},
+		{
+			"id": "acidarmor",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "acidspray",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "acrobatics",
+			"status": "implemented",
+			"corpus": 11
+		},
+		{
+			"id": "acupressure",
+			"status": "implemented",
+			"corpus": 2
+		},
+		{
+			"id": "aerialace",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "afteryou",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "agility",
+			"status": "implemented",
+			"corpus": 1
+		},
+		{
+			"id": "aircutter",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "airslash",
+			"status": "implemented",
+			"corpus": 2
+		},
+		{
+			"id": "alluringvoice",
+			"status": "implemented",
+			"corpus": 5
+		},
+		{
+			"id": "allyswitch",
+			"status": "implemented",
+			"corpus": 2
+		},
+		{
+			"id": "amnesia",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "ancientpower",
+			"status": "implemented",
+			"corpus": 26
+		},
+		{
+			"id": "appleacid",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "aquacutter",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "aquajet",
+			"status": "implemented",
+			"corpus": 97
+		},
+		{
+			"id": "aquaring",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "aquastep",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "aquatail",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "armorcannon",
+			"status": "implemented",
+			"corpus": 28
+		},
+		{
+			"id": "aromaticmist",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "assurance",
+			"status": "implemented",
+			"corpus": 5
+		},
+		{
+			"id": "attract",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "aurasphere",
+			"status": "implemented",
+			"corpus": 62
+		},
+		{
+			"id": "aurawheel",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "auroraveil",
+			"status": "implemented",
+			"corpus": 21
+		},
+		{
+			"id": "avalanche",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "axekick",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "babydolleyes",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "banefulbunker",
+			"status": "implemented",
+			"corpus": 4
+		},
+		{
+			"id": "barbbarrage",
+			"status": "implemented",
+			"corpus": 1
+		},
+		{
+			"id": "batonpass",
+			"status": "implemented",
+			"corpus": 2
+		},
+		{
+			"id": "beakblast",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "beatup",
+			"status": "implemented",
+			"corpus": 2
+		},
+		{
+			"id": "belch",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "bellydrum",
+			"status": "implemented",
+			"corpus": 1
+		},
+		{
+			"id": "bind",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "bite",
+			"status": "implemented",
+			"corpus": 1
+		},
+		{
+			"id": "bitterblade",
+			"status": "implemented",
+			"corpus": 6
+		},
+		{
+			"id": "bittermalice",
+			"status": "implemented",
+			"corpus": 1
+		},
+		{
+			"id": "blastburn",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "blazekick",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "blizzard",
+			"status": "implemented",
+			"corpus": 29
+		},
+		{
+			"id": "block",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "bodypress",
+			"status": "implemented",
+			"corpus": 13
+		},
+		{
+			"id": "bodyslam",
+			"status": "implemented",
+			"corpus": 2
+		},
+		{
+			"id": "bonerush",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "boomburst",
+			"status": "implemented",
+			"corpus": 3
+		},
+		{
+			"id": "bounce",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "bravebird",
+			"status": "implemented",
+			"corpus": 23
+		},
+		{
+			"id": "breakingswipe",
+			"status": "implemented",
+			"corpus": 2
+		},
+		{
+			"id": "brickbreak",
+			"status": "implemented",
+			"corpus": 3
+		},
+		{
+			"id": "brutalswing",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "bugbite",
+			"status": "implemented",
+			"corpus": 3
+		},
+		{
+			"id": "bugbuzz",
+			"status": "implemented",
+			"corpus": 1
+		},
+		{
+			"id": "bulkup",
+			"status": "implemented",
+			"corpus": 15
+		},
+		{
+			"id": "bulldoze",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "bulletpunch",
+			"status": "implemented",
+			"corpus": 5
+		},
+		{
+			"id": "bulletseed",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "burningjealousy",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "burnup",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "calmmind",
+			"status": "implemented",
+			"corpus": 85
+		},
+		{
+			"id": "ceaselessedge",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "celebrate",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "charge",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "chargebeam",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "charm",
+			"status": "implemented",
+			"corpus": 2
+		},
+		{
+			"id": "chillingwater",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "chillyreception",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "circlethrow",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "clangingscales",
+			"status": "implemented",
+			"corpus": 13
+		},
+		{
+			"id": "clangoroussoul",
+			"status": "implemented",
+			"corpus": 12
+		},
+		{
+			"id": "clearsmog",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "closecombat",
+			"status": "implemented",
+			"corpus": 301
+		},
+		{
+			"id": "coaching",
+			"status": "implemented",
+			"corpus": 30
+		},
+		{
+			"id": "coil",
+			"status": "implemented",
+			"corpus": 21
+		},
+		{
+			"id": "comeuppance",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "confuseray",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "copycat",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "corrosivegas",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "cosmicpower",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "cottonguard",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "cottonspore",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "counter",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "courtchange",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "covet",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "crabhammer",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "crosschop",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "crosspoison",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "crunch",
+			"status": "implemented",
+			"corpus": 4
+		},
+		{
+			"id": "crushclaw",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "curse",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "darkestlariat",
+			"status": "implemented",
+			"corpus": 39
+		},
+		{
+			"id": "darkpulse",
+			"status": "implemented",
+			"corpus": 16
+		},
+		{
+			"id": "dazzlinggleam",
+			"status": "implemented",
+			"corpus": 99
+		},
+		{
+			"id": "decorate",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "defensecurl",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "defog",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "destinybond",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "detect",
+			"status": "implemented",
+			"corpus": 78
+		},
+		{
+			"id": "dig",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "direclaw",
+			"status": "implemented",
+			"corpus": 189
+		},
+		{
+			"id": "disable",
+			"status": "implemented",
+			"corpus": 4
+		},
+		{
+			"id": "discharge",
+			"status": "implemented",
+			"corpus": 1
+		},
+		{
+			"id": "dive",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "doubleedge",
+			"status": "implemented",
+			"corpus": 52
+		},
+		{
+			"id": "doublehit",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "doublekick",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "doubleshock",
+			"status": "implemented",
+			"corpus": 14
+		},
+		{
+			"id": "doubleteam",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "dracometeor",
+			"status": "implemented",
+			"corpus": 125
+		},
+		{
+			"id": "dragoncheer",
+			"status": "implemented",
+			"corpus": 1
+		},
+		{
+			"id": "dragonclaw",
+			"status": "implemented",
+			"corpus": 30
+		},
+		{
+			"id": "dragondance",
+			"status": "implemented",
+			"corpus": 21
+		},
+		{
+			"id": "dragondarts",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "dragonpulse",
+			"status": "implemented",
+			"corpus": 78
+		},
+		{
+			"id": "dragonrush",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "dragontail",
+			"status": "implemented",
+			"corpus": 1
+		},
+		{
+			"id": "drainingkiss",
+			"status": "implemented",
+			"corpus": 29
+		},
+		{
+			"id": "drainpunch",
+			"status": "implemented",
+			"corpus": 5
+		},
+		{
+			"id": "drillpeck",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "drillrun",
+			"status": "implemented",
+			"corpus": 6
+		},
+		{
+			"id": "drumbeating",
+			"status": "implemented",
+			"corpus": 6
+		},
+		{
+			"id": "dualwingbeat",
+			"status": "implemented",
+			"corpus": 14
+		},
+		{
+			"id": "dynamicpunch",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "earthpower",
+			"status": "implemented",
+			"corpus": 66
+		},
+		{
+			"id": "earthquake",
+			"status": "implemented",
+			"corpus": 40
+		},
+		{
+			"id": "echoedvoice",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "eerieimpulse",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "eeriespell",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "electricterrain",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "electrify",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "electroball",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "electroshot",
+			"status": "implemented",
+			"corpus": 42
+		},
+		{
+			"id": "electroweb",
+			"status": "implemented",
+			"corpus": 3
+		},
+		{
+			"id": "encore",
+			"status": "implemented",
+			"corpus": 41
+		},
+		{
+			"id": "endeavor",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "endure",
+			"status": "implemented",
+			"corpus": 1
+		},
+		{
+			"id": "energyball",
+			"status": "implemented",
+			"corpus": 9
+		},
+		{
+			"id": "entrainment",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "eruption",
+			"status": "implemented",
+			"corpus": 32
+		},
+		{
+			"id": "expandingforce",
+			"status": "implemented",
+			"corpus": 134
+		},
+		{
+			"id": "explosion",
+			"status": "implemented",
+			"corpus": 1
+		},
+		{
+			"id": "extrasensory",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "extremespeed",
+			"status": "implemented",
+			"corpus": 52
+		},
+		{
+			"id": "facade",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "fairylock",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "fakeout",
+			"status": "implemented",
+			"corpus": 563
+		},
+		{
+			"id": "faketears",
+			"status": "implemented",
+			"corpus": 2
+		},
+		{
+			"id": "falseswipe",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "featherdance",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "feint",
+			"status": "implemented",
+			"corpus": 12
+		},
+		{
+			"id": "fellstinger",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "ficklebeam",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "fierydance",
+			"status": "implemented",
+			"corpus": 4
+		},
+		{
+			"id": "finalgambit",
+			"status": "implemented",
+			"corpus": 2
+		},
+		{
+			"id": "fireblast",
+			"status": "implemented",
+			"corpus": 4
+		},
+		{
+			"id": "firefang",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "firelash",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "firepunch",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "firespin",
+			"status": "implemented",
+			"corpus": 1
+		},
+		{
+			"id": "firstimpression",
+			"status": "implemented",
+			"corpus": 12
+		},
+		{
+			"id": "fissure",
+			"status": "implemented",
+			"corpus": 2
+		},
+		{
+			"id": "flail",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "flamecharge",
+			"status": "implemented",
+			"corpus": 2
+		},
+		{
+			"id": "flamethrower",
+			"status": "implemented",
+			"corpus": 77
+		},
+		{
+			"id": "flareblitz",
+			"status": "implemented",
+			"corpus": 215
+		},
+		{
+			"id": "flashcannon",
+			"status": "implemented",
+			"corpus": 61
+		},
+		{
+			"id": "flatter",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "fling",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "flipturn",
+			"status": "implemented",
+			"corpus": 38
+		},
+		{
+			"id": "flowertrick",
+			"status": "implemented",
+			"corpus": 1
+		},
+		{
+			"id": "fly",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "flyingpress",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "focusblast",
+			"status": "implemented",
+			"corpus": 52
+		},
+		{
+			"id": "focusenergy",
+			"status": "implemented",
+			"corpus": 3
+		},
+		{
+			"id": "focuspunch",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "followme",
+			"status": "implemented",
+			"corpus": 103
+		},
+		{
+			"id": "forestscurse",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "foulplay",
+			"status": "implemented",
+			"corpus": 2
+		},
+		{
+			"id": "freezedry",
+			"status": "implemented",
+			"corpus": 7
+		},
+		{
+			"id": "frenzyplant",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "frostbreath",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "furyattack",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "futuresight",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "gastroacid",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "gigadrain",
+			"status": "implemented",
+			"corpus": 8
+		},
+		{
+			"id": "gigaimpact",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "gigatonhammer",
+			"status": "implemented",
+			"corpus": 1
+		},
+		{
+			"id": "glaiverush",
+			"status": "implemented",
+			"corpus": 27
+		},
+		{
+			"id": "glare",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "grassknot",
+			"status": "implemented",
+			"corpus": 5
+		},
+		{
+			"id": "grassyglide",
+			"status": "implemented",
+			"corpus": 231
+		},
+		{
+			"id": "grassyterrain",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "gravapple",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "gravity",
+			"status": "implemented",
+			"corpus": 2
+		},
+		{
+			"id": "growth",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "guardsplit",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "guardswap",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "guillotine",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "gunkshot",
+			"status": "implemented",
+			"corpus": 8
+		},
+		{
+			"id": "gyroball",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "hammerarm",
+			"status": "implemented",
+			"corpus": 1
+		},
+		{
+			"id": "harden",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "hardpress",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "haze",
+			"status": "implemented",
+			"corpus": 2
+		},
+		{
+			"id": "headbutt",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "headlongrush",
+			"status": "implemented",
+			"corpus": 2
+		},
+		{
+			"id": "headsmash",
+			"status": "implemented",
+			"corpus": 48
+		},
+		{
+			"id": "healbell",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "healingwish",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "healpulse",
+			"status": "implemented",
+			"corpus": 1
+		},
+		{
+			"id": "heatcrash",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "heatwave",
+			"status": "implemented",
+			"corpus": 103
+		},
+		{
+			"id": "heavyslam",
+			"status": "implemented",
+			"corpus": 1
+		},
+		{
+			"id": "helpinghand",
+			"status": "implemented",
+			"corpus": 154
+		},
+		{
+			"id": "hex",
+			"status": "implemented",
+			"corpus": 1
+		},
+		{
+			"id": "highhorsepower",
+			"status": "implemented",
+			"corpus": 144
+		},
+		{
+			"id": "highjumpkick",
+			"status": "implemented",
+			"corpus": 2
+		},
+		{
+			"id": "horndrill",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "hornleech",
+			"status": "implemented",
+			"corpus": 1
+		},
+		{
+			"id": "howl",
+			"status": "implemented",
+			"corpus": 3
+		},
+		{
+			"id": "hurricane",
+			"status": "implemented",
+			"corpus": 56
+		},
+		{
+			"id": "hydrocannon",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "hydropump",
+			"status": "implemented",
+			"corpus": 4
+		},
+		{
+			"id": "hyperbeam",
+			"status": "implemented",
+			"corpus": 40
+		},
+		{
+			"id": "hypervoice",
+			"status": "implemented",
+			"corpus": 249
+		},
+		{
+			"id": "hypnosis",
+			"status": "implemented",
+			"corpus": 23
+		},
+		{
+			"id": "icebeam",
+			"status": "implemented",
+			"corpus": 49
+		},
+		{
+			"id": "icefang",
+			"status": "implemented",
+			"corpus": 4
+		},
+		{
+			"id": "icehammer",
+			"status": "implemented",
+			"corpus": 1
+		},
+		{
+			"id": "icepunch",
+			"status": "implemented",
+			"corpus": 28
+		},
+		{
+			"id": "iceshard",
+			"status": "implemented",
+			"corpus": 30
+		},
+		{
+			"id": "icespinner",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "iciclecrash",
+			"status": "implemented",
+			"corpus": 12
+		},
+		{
+			"id": "iciclespear",
+			"status": "implemented",
+			"corpus": 2
+		},
+		{
+			"id": "icywind",
+			"status": "implemented",
+			"corpus": 35
+		},
+		{
+			"id": "imprison",
+			"status": "implemented",
+			"corpus": 23
+		},
+		{
+			"id": "infernalparade",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "inferno",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "infestation",
+			"status": "implemented",
+			"corpus": 4
+		},
+		{
+			"id": "ingrain",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "instruct",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "irondefense",
+			"status": "implemented",
+			"corpus": 2
+		},
+		{
+			"id": "ironhead",
+			"status": "implemented",
+			"corpus": 203
+		},
+		{
+			"id": "irontail",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "ivycudgel",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "jawlock",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "jetpunch",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "kingsshield",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "knockoff",
+			"status": "implemented",
+			"corpus": 48
+		},
+		{
+			"id": "kowtowcleave",
+			"status": "implemented",
+			"corpus": 124
+		},
+		{
+			"id": "lashout",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "lastresort",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "lastrespects",
+			"status": "implemented",
+			"corpus": 95
+		},
+		{
+			"id": "lavaplume",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "leafblade",
+			"status": "implemented",
+			"corpus": 1
+		},
+		{
+			"id": "leafstorm",
+			"status": "implemented",
+			"corpus": 13
+		},
+		{
+			"id": "leechlife",
+			"status": "implemented",
+			"corpus": 57
+		},
+		{
+			"id": "leechseed",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "lifedew",
+			"status": "implemented",
+			"corpus": 13
+		},
+		{
+			"id": "lightofruin",
+			"status": "implemented",
+			"corpus": 20
+		},
+		{
+			"id": "lightscreen",
+			"status": "implemented",
+			"corpus": 20
+		},
+		{
+			"id": "liquidation",
+			"status": "implemented",
+			"corpus": 22
+		},
+		{
+			"id": "lockon",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "lowkick",
+			"status": "implemented",
+			"corpus": 114
+		},
+		{
+			"id": "lowsweep",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "luminacrash",
+			"status": "implemented",
+			"corpus": 1
+		},
+		{
+			"id": "lunge",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "machpunch",
+			"status": "implemented",
+			"corpus": 3
+		},
+		{
+			"id": "magicalleaf",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "magicpowder",
+			"status": "implemented",
+			"corpus": 1
+		},
+		{
+			"id": "magicroom",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "magneticflux",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "magnetrise",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "makeitrain",
+			"status": "implemented",
+			"corpus": 92
+		},
+		{
+			"id": "matchagotcha",
+			"status": "implemented",
+			"corpus": 21
+		},
+		{
+			"id": "meanlook",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "megahorn",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "megakick",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "memento",
+			"status": "implemented",
+			"corpus": 2
+		},
+		{
+			"id": "metalburst",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "metalsound",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "meteorassault",
+			"status": "implemented",
+			"corpus": 5
+		},
+		{
+			"id": "meteorbeam",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "meteormash",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "milkdrink",
+			"status": "implemented",
+			"corpus": 1
+		},
+		{
+			"id": "minimize",
+			"status": "implemented",
+			"corpus": 1
+		},
+		{
+			"id": "mirrorcoat",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "mist",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "mistyexplosion",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "mistyterrain",
+			"status": "implemented",
+			"corpus": 1
+		},
+		{
+			"id": "moonblast",
+			"status": "implemented",
+			"corpus": 78
+		},
+		{
+			"id": "moonlight",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "morningsun",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "mortalspin",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "mountaingale",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "muddywater",
+			"status": "implemented",
+			"corpus": 30
+		},
+		{
+			"id": "mudshot",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "mudslap",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "mysticalfire",
+			"status": "implemented",
+			"corpus": 12
+		},
+		{
+			"id": "nastyplot",
+			"status": "implemented",
+			"corpus": 92
+		},
+		{
+			"id": "nightdaze",
+			"status": "implemented",
+			"corpus": 1
+		},
+		{
+			"id": "nightshade",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "nightslash",
+			"status": "implemented",
+			"corpus": 12
+		},
+		{
+			"id": "nobleroar",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "noretreat",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "nuzzle",
+			"status": "implemented",
+			"corpus": 1
+		},
+		{
+			"id": "octolock",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "outrage",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "overdrive",
+			"status": "implemented",
+			"corpus": 4
+		},
+		{
+			"id": "overheat",
+			"status": "implemented",
+			"corpus": 21
+		},
+		{
+			"id": "painsplit",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "paraboliccharge",
+			"status": "implemented",
+			"corpus": 3
+		},
+		{
+			"id": "partingshot",
+			"status": "implemented",
+			"corpus": 165
+		},
+		{
+			"id": "payback",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "peck",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "perishsong",
+			"status": "implemented",
+			"corpus": 26
+		},
+		{
+			"id": "petalblizzard",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "petaldance",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "phantomforce",
+			"status": "implemented",
+			"corpus": 2
+		},
+		{
+			"id": "pinmissile",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "playrough",
+			"status": "implemented",
+			"corpus": 9
+		},
+		{
+			"id": "pluck",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "poisonfang",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "poisonjab",
+			"status": "implemented",
+			"corpus": 15
+		},
+		{
+			"id": "poisonpowder",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "pollenpuff",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "poltergeist",
+			"status": "implemented",
+			"corpus": 4
+		},
+		{
+			"id": "populationbomb",
+			"status": "implemented",
+			"corpus": 2
+		},
+		{
+			"id": "pounce",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "pound",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "powdersnow",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "powergem",
+			"status": "implemented",
+			"corpus": 61
+		},
+		{
+			"id": "powersplit",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "powerswap",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "powertrick",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "powertrip",
+			"status": "implemented",
+			"corpus": 3
+		},
+		{
+			"id": "powerwhip",
+			"status": "implemented",
+			"corpus": 4
+		},
+		{
+			"id": "protect",
+			"status": "implemented",
+			"corpus": 1588
+		},
+		{
+			"id": "psychic",
+			"status": "implemented",
+			"corpus": 95
+		},
+		{
+			"id": "psychicfangs",
+			"status": "implemented",
+			"corpus": 20
+		},
+		{
+			"id": "psychicnoise",
+			"status": "implemented",
+			"corpus": 2
+		},
+		{
+			"id": "psychicterrain",
+			"status": "implemented",
+			"corpus": 2
+		},
+		{
+			"id": "psychocut",
+			"status": "implemented",
+			"corpus": 4
+		},
+		{
+			"id": "psychup",
+			"status": "implemented",
+			"corpus": 5
+		},
+		{
+			"id": "psyshieldbash",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "psyshock",
+			"status": "implemented",
+			"corpus": 6
+		},
+		{
+			"id": "pyroball",
+			"status": "implemented",
+			"corpus": 2
+		},
+		{
+			"id": "quash",
+			"status": "implemented",
+			"corpus": 1
+		},
+		{
+			"id": "quickattack",
+			"status": "implemented",
+			"corpus": 40
+		},
+		{
+			"id": "quickguard",
+			"status": "implemented",
+			"corpus": 6
+		},
+		{
+			"id": "quiverdance",
+			"status": "implemented",
+			"corpus": 9
+		},
+		{
+			"id": "ragefist",
+			"status": "implemented",
+			"corpus": 2
+		},
+		{
+			"id": "ragepowder",
+			"status": "implemented",
+			"corpus": 38
+		},
+		{
+			"id": "ragingbull",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "ragingfury",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "raindance",
+			"status": "implemented",
+			"corpus": 6
+		},
+		{
+			"id": "rapidspin",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "razorshell",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "recover",
+			"status": "implemented",
+			"corpus": 19
+		},
+		{
+			"id": "recycle",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "reflect",
+			"status": "implemented",
+			"corpus": 16
+		},
+		{
+			"id": "reflecttype",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "rest",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "retaliate",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "reversal",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "revivalblessing",
+			"status": "implemented",
+			"corpus": 12
+		},
+		{
+			"id": "risingvoltage",
+			"status": "implemented",
+			"corpus": 5
+		},
+		{
+			"id": "roar",
+			"status": "implemented",
+			"corpus": 2
+		},
+		{
+			"id": "rockblast",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "rockpolish",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "rockslide",
+			"status": "implemented",
+			"corpus": 192
+		},
+		{
+			"id": "rocktomb",
+			"status": "implemented",
+			"corpus": 27
+		},
+		{
+			"id": "rockwrecker",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "roleplay",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "rollout",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "roost",
+			"status": "implemented",
+			"corpus": 18
+		},
+		{
+			"id": "round",
+			"status": "implemented",
+			"corpus": 2
+		},
+		{
+			"id": "sacredsword",
+			"status": "implemented",
+			"corpus": 5
+		},
+		{
+			"id": "safeguard",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "saltcure",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "sandstorm",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "sandtomb",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "scald",
+			"status": "implemented",
+			"corpus": 42
+		},
+		{
+			"id": "scaleshot",
+			"status": "implemented",
+			"corpus": 3
+		},
+		{
+			"id": "scaryface",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "scorchingsands",
+			"status": "implemented",
+			"corpus": 2
+		},
+		{
+			"id": "screech",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "seedbomb",
+			"status": "implemented",
+			"corpus": 1
+		},
+		{
+			"id": "seismictoss",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "selfdestruct",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "shadowball",
+			"status": "implemented",
+			"corpus": 142
+		},
+		{
+			"id": "shadowclaw",
+			"status": "implemented",
+			"corpus": 14
+		},
+		{
+			"id": "shadowpunch",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "shadowsneak",
+			"status": "implemented",
+			"corpus": 7
+		},
+		{
+			"id": "shedtail",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "sheercold",
+			"status": "implemented",
+			"corpus": 1
+		},
+		{
+			"id": "shellsidearm",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "shellsmash",
+			"status": "implemented",
+			"corpus": 5
+		},
+		{
+			"id": "shelter",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "shiftgear",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "simplebeam",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "sing",
+			"status": "implemented",
+			"corpus": 4
+		},
+		{
+			"id": "skillswap",
+			"status": "implemented",
+			"corpus": 3
+		},
+		{
+			"id": "skittersmack",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "skyattack",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "slackoff",
+			"status": "implemented",
+			"corpus": 1
+		},
+		{
+			"id": "slam",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "slash",
+			"status": "implemented",
+			"corpus": 1
+		},
+		{
+			"id": "sleeppowder",
+			"status": "implemented",
+			"corpus": 11
+		},
+		{
+			"id": "sleeptalk",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "sludgebomb",
+			"status": "implemented",
+			"corpus": 54
+		},
+		{
+			"id": "sludgewave",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "smackdown",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "smartstrike",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "snaptrap",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "snarl",
+			"status": "implemented",
+			"corpus": 37
+		},
+		{
+			"id": "snipeshot",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "snore",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "snowscape",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "soak",
+			"status": "implemented",
+			"corpus": 7
+		},
+		{
+			"id": "solarbeam",
+			"status": "implemented",
+			"corpus": 13
+		},
+		{
+			"id": "solarblade",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "sparklingaria",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "speedswap",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "spicyextract",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "spikes",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "spikyshield",
+			"status": "implemented",
+			"corpus": 19
+		},
+		{
+			"id": "spiritbreak",
+			"status": "implemented",
+			"corpus": 12
+		},
+		{
+			"id": "spiritshackle",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "spite",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "spitup",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "stealthrock",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "steelbeam",
+			"status": "implemented",
+			"corpus": 7
+		},
+		{
+			"id": "steelroller",
+			"status": "implemented",
+			"corpus": 8
+		},
+		{
+			"id": "steelwing",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "stickyweb",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "stockpile",
+			"status": "implemented",
+			"corpus": 1
+		},
+		{
+			"id": "stompingtantrum",
+			"status": "implemented",
+			"corpus": 27
+		},
+		{
+			"id": "stoneaxe",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "stoneedge",
+			"status": "implemented",
+			"corpus": 1
+		},
+		{
+			"id": "storedpower",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "stormthrow",
+			"status": "implemented",
+			"corpus": 2
+		},
+		{
+			"id": "strengthsap",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "stringshot",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "strugglebug",
+			"status": "implemented",
+			"corpus": 10
+		},
+		{
+			"id": "stuffcheeks",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "stunspore",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "substitute",
+			"status": "implemented",
+			"corpus": 7
+		},
+		{
+			"id": "suckerpunch",
+			"status": "implemented",
+			"corpus": 161
+		},
+		{
+			"id": "sunnyday",
+			"status": "implemented",
+			"corpus": 2
+		},
+		{
+			"id": "supercellslam",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "superfang",
+			"status": "implemented",
+			"corpus": 2
+		},
+		{
+			"id": "superpower",
+			"status": "implemented",
+			"corpus": 11
+		},
+		{
+			"id": "surf",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "swagger",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "swallow",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "sweetkiss",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "sweetscent",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "swift",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "switcheroo",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "swordsdance",
+			"status": "implemented",
+			"corpus": 79
+		},
+		{
+			"id": "synthesis",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "syrupbomb",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "tackle",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "tailslap",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "tailwind",
+			"status": "implemented",
+			"corpus": 232
+		},
+		{
+			"id": "takedown",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "taunt",
+			"status": "implemented",
+			"corpus": 11
+		},
+		{
+			"id": "tearfullook",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "teatime",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "teeterdance",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "temperflare",
+			"status": "implemented",
+			"corpus": 2
+		},
+		{
+			"id": "terablast",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "terrainpulse",
+			"status": "implemented",
+			"corpus": 34
+		},
+		{
+			"id": "thief",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "thrash",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "throatchop",
+			"status": "implemented",
+			"corpus": 98
+		},
+		{
+			"id": "thunder",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "thunderbolt",
+			"status": "implemented",
+			"corpus": 39
+		},
+		{
+			"id": "thunderfang",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "thunderpunch",
+			"status": "implemented",
+			"corpus": 2
+		},
+		{
+			"id": "thunderwave",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "tickle",
+			"status": "implemented",
+			"corpus": 1
+		},
+		{
+			"id": "tidyup",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "topsyturvy",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "torchsong",
+			"status": "implemented",
+			"corpus": 1
+		},
+		{
+			"id": "torment",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "toxic",
+			"status": "implemented",
+			"corpus": 4
+		},
+		{
+			"id": "toxicspikes",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "toxicthread",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "trailblaze",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "transform",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "triattack",
+			"status": "implemented",
+			"corpus": 1
+		},
+		{
+			"id": "trick",
+			"status": "implemented",
+			"corpus": 18
+		},
+		{
+			"id": "trickortreat",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "trickroom",
+			"status": "implemented",
+			"corpus": 209
+		},
+		{
+			"id": "triplearrows",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "tripleaxel",
+			"status": "implemented",
+			"corpus": 6
+		},
+		{
+			"id": "tropkick",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "twinbeam",
+			"status": "implemented",
+			"corpus": 10
+		},
+		{
+			"id": "upperhand",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "uproar",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "uturn",
+			"status": "implemented",
+			"corpus": 123
+		},
+		{
+			"id": "vacuumwave",
+			"status": "implemented",
+			"corpus": 1
+		},
+		{
+			"id": "venoshock",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "vinewhip",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "voltswitch",
+			"status": "implemented",
+			"corpus": 4
+		},
+		{
+			"id": "volttackle",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "waterfall",
+			"status": "implemented",
+			"corpus": 3
+		},
+		{
+			"id": "watergun",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "waterpulse",
+			"status": "implemented",
+			"corpus": 1
+		},
+		{
+			"id": "watershuriken",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "waterspout",
+			"status": "implemented",
+			"corpus": 8
+		},
+		{
+			"id": "wavecrash",
+			"status": "implemented",
+			"corpus": 100
+		},
+		{
+			"id": "weatherball",
+			"status": "implemented",
+			"corpus": 118
+		},
+		{
+			"id": "whirlpool",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "whirlwind",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "wideguard",
+			"status": "implemented",
+			"corpus": 58
+		},
+		{
+			"id": "wildcharge",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "willowisp",
+			"status": "implemented",
+			"corpus": 21
+		},
+		{
+			"id": "wish",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "wonderroom",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "woodhammer",
+			"status": "implemented",
+			"corpus": 211
+		},
+		{
+			"id": "worryseed",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "wrap",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "xscissor",
+			"status": "implemented",
+			"corpus": 1
+		},
+		{
+			"id": "yawn",
+			"status": "implemented",
+			"corpus": 17
+		},
+		{
+			"id": "zapcannon",
+			"status": "implemented",
+			"corpus": 44
+		},
+		{
+			"id": "zenheadbutt",
+			"status": "implemented",
+			"corpus": 0
+		},
+		{
+			"id": "zingzap",
+			"status": "implemented",
+			"corpus": 1
+		}
+	],
+	"abilities": [
+		{
+			"id": "adaptability",
+			"status": "referenced",
+			"corpus": 95
+		},
+		{
+			"id": "aerilate",
+			"status": "referenced",
+			"corpus": 8
+		},
+		{
+			"id": "aftermath",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "analytic",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "angerpoint",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "anticipation",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "armortail",
+			"status": "referenced",
+			"corpus": 46
+		},
+		{
+			"id": "aromaveil",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "auraguard",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "battlearmor",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "battlebond",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "berserk",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "bigpecks",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "blaze",
+			"status": "referenced",
+			"corpus": 47
+		},
+		{
+			"id": "bulletproof",
+			"status": "referenced",
+			"corpus": 1
+		},
+		{
+			"id": "cheekpouch",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "chlorophyll",
+			"status": "referenced",
+			"corpus": 13
+		},
+		{
+			"id": "clearbody",
+			"status": "referenced",
+			"corpus": 18
+		},
+		{
+			"id": "cloudnine",
+			"status": "referenced",
+			"corpus": 4
+		},
+		{
+			"id": "competitive",
+			"status": "referenced",
+			"corpus": 72
+		},
+		{
+			"id": "compoundeyes",
+			"status": "referenced",
+			"corpus": 2
+		},
+		{
+			"id": "contrary",
+			"status": "referenced",
+			"corpus": 1
+		},
+		{
+			"id": "corrosion",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "cudchew",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "curiousmedicine",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "cursedbody",
+			"status": "referenced",
+			"corpus": 30
+		},
+		{
+			"id": "cutecharm",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "damp",
+			"status": "referenced",
+			"corpus": 2
+		},
+		{
+			"id": "defiant",
+			"status": "referenced",
+			"corpus": 135
+		},
+		{
+			"id": "disguise",
+			"status": "referenced",
+			"corpus": 2
+		},
+		{
+			"id": "dragonize",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "drizzle",
+			"status": "referenced",
+			"corpus": 62
+		},
+		{
+			"id": "drought",
+			"status": "referenced",
+			"corpus": 28
+		},
+		{
+			"id": "dryskin",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "earlybird",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "eartheater",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "eelevate",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "effectspore",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "electricsurge",
+			"status": "referenced",
+			"corpus": 3
+		},
+		{
+			"id": "electromorphosis",
+			"status": "referenced",
+			"corpus": 3
+		},
+		{
+			"id": "embodyaspectcornerstone",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "embodyaspecthearthflame",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "embodyaspectteal",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "embodyaspectwellspring",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "emergencyexit",
+			"status": "referenced",
+			"corpus": 66
+		},
+		{
+			"id": "fairyaura",
+			"status": "referenced",
+			"corpus": 4
+		},
+		{
+			"id": "filter",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "firemane",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "flamebody",
+			"status": "referenced",
+			"corpus": 23
+		},
+		{
+			"id": "flashfire",
+			"status": "referenced",
+			"corpus": 40
+		},
+		{
+			"id": "flowerveil",
+			"status": "referenced",
+			"corpus": 72
+		},
+		{
+			"id": "fluffy",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "forecast",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "forewarn",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "friendguard",
+			"status": "referenced",
+			"corpus": 1
+		},
+		{
+			"id": "frisk",
+			"status": "referenced",
+			"corpus": 3
+		},
+		{
+			"id": "furcoat",
+			"status": "referenced",
+			"corpus": 1
+		},
+		{
+			"id": "galewings",
+			"status": "referenced",
+			"corpus": 8
+		},
+		{
+			"id": "gluttony",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "goodasgold",
+			"status": "referenced",
+			"corpus": 93
+		},
+		{
+			"id": "gooey",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "grasspelt",
+			"status": "referenced",
+			"corpus": 1
+		},
+		{
+			"id": "grassysurge",
+			"status": "referenced",
+			"corpus": 233
+		},
+		{
+			"id": "guarddog",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "gulpmissile",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "guts",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "harvest",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "healer",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "heatproof",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "heavymetal",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "hospitality",
+			"status": "referenced",
+			"corpus": 21
+		},
+		{
+			"id": "hugepower",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "hungerswitch",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "hustle",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "hydration",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "hypercutter",
+			"status": "referenced",
+			"corpus": 8
+		},
+		{
+			"id": "icebody",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "iceface",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "illuminate",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "illusion",
+			"status": "referenced",
+			"corpus": 4
+		},
+		{
+			"id": "immunity",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "imposter",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "infiltrator",
+			"status": "referenced",
+			"corpus": 6
+		},
+		{
+			"id": "innardsout",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "innerfocus",
+			"status": "referenced",
+			"corpus": 40
+		},
+		{
+			"id": "insomnia",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "intimidate",
+			"status": "referenced",
+			"corpus": 337
+		},
+		{
+			"id": "ironfist",
+			"status": "referenced",
+			"corpus": 16
+		},
+		{
+			"id": "justified",
+			"status": "referenced",
+			"corpus": 7
+		},
+		{
+			"id": "keeneye",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "klutz",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "leafguard",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "levitate",
+			"status": "referenced",
+			"corpus": 11
+		},
+		{
+			"id": "libero",
+			"status": "referenced",
+			"corpus": 2
+		},
+		{
+			"id": "lightmetal",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "lightningrod",
+			"status": "referenced",
+			"corpus": 46
+		},
+		{
+			"id": "limber",
+			"status": "referenced",
+			"corpus": 1
+		},
+		{
+			"id": "liquidooze",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "liquidvoice",
+			"status": "referenced",
+			"corpus": 6
+		},
+		{
+			"id": "longreach",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "magicbounce",
+			"status": "referenced",
+			"corpus": 11
+		},
+		{
+			"id": "magicguard",
+			"status": "referenced",
+			"corpus": 2
+		},
+		{
+			"id": "magician",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "magmaarmor",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "marvelscale",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "megalauncher",
+			"status": "referenced",
+			"corpus": 3
+		},
+		{
+			"id": "megasol",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "merciless",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "mimicry",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "minus",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "mirrorarmor",
+			"status": "referenced",
+			"corpus": 7
+		},
+		{
+			"id": "moldbreaker",
+			"status": "referenced",
+			"corpus": 3
+		},
+		{
+			"id": "moody",
+			"status": "referenced",
+			"corpus": 2
+		},
+		{
+			"id": "motordrive",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "moxie",
+			"status": "referenced",
+			"corpus": 4
+		},
+		{
+			"id": "multiscale",
+			"status": "referenced",
+			"corpus": 2
+		},
+		{
+			"id": "mummy",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "naturalcure",
+			"status": "referenced",
+			"corpus": 1
+		},
+		{
+			"id": "noguard",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "oblivious",
+			"status": "referenced",
+			"corpus": 1
+		},
+		{
+			"id": "opportunist",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "overcoat",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "overgrow",
+			"status": "referenced",
+			"corpus": 4
+		},
+		{
+			"id": "owntempo",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "parentalbond",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "pickpocket",
+			"status": "referenced",
+			"corpus": 1
+		},
+		{
+			"id": "pickup",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "piercingdrill",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "pixilate",
+			"status": "referenced",
+			"corpus": 47
+		},
+		{
+			"id": "plus",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "poisonheal",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "poisonpoint",
+			"status": "referenced",
+			"corpus": 1
+		},
+		{
+			"id": "poisontouch",
+			"status": "referenced",
+			"corpus": 24
+		},
+		{
+			"id": "prankster",
+			"status": "referenced",
+			"corpus": 32
+		},
+		{
+			"id": "pressure",
+			"status": "referenced",
+			"corpus": 3
+		},
+		{
+			"id": "protean",
+			"status": "referenced",
+			"corpus": 1
+		},
+		{
+			"id": "psychicsurge",
+			"status": "referenced",
+			"corpus": 126
+		},
+		{
+			"id": "punkrock",
+			"status": "referenced",
+			"corpus": 4
+		},
+		{
+			"id": "purepower",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "purifyingsalt",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "queenlymajesty",
+			"status": "referenced",
+			"corpus": 3
+		},
+		{
+			"id": "quickdraw",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "quickfeet",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "raindish",
+			"status": "referenced",
+			"corpus": 2
+		},
+		{
+			"id": "rattled",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "receiver",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "reckless",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "refrigerate",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "regenerator",
+			"status": "referenced",
+			"corpus": 4
+		},
+		{
+			"id": "ripen",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "rivalry",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "rockhead",
+			"status": "referenced",
+			"corpus": 45
+		},
+		{
+			"id": "roughskin",
+			"status": "referenced",
+			"corpus": 64
+		},
+		{
+			"id": "runaway",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "sandforce",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "sandrush",
+			"status": "referenced",
+			"corpus": 33
+		},
+		{
+			"id": "sandspit",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "sandstream",
+			"status": "referenced",
+			"corpus": 42
+		},
+		{
+			"id": "sandveil",
+			"status": "referenced",
+			"corpus": 1
+		},
+		{
+			"id": "sapsipper",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "scrappy",
+			"status": "referenced",
+			"corpus": 6
+		},
+		{
+			"id": "screencleaner",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "seedsower",
+			"status": "referenced",
+			"corpus": 1
+		},
+		{
+			"id": "shadowtag",
+			"status": "referenced",
+			"corpus": 2
+		},
+		{
+			"id": "sharpness",
+			"status": "referenced",
+			"corpus": 7
+		},
+		{
+			"id": "shedskin",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "sheerforce",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "shellarmor",
+			"status": "referenced",
+			"corpus": 1
+		},
+		{
+			"id": "shielddust",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "shieldsdown",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "skilllink",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "slushrush",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "sniper",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "snowcloak",
+			"status": "referenced",
+			"corpus": 1
+		},
+		{
+			"id": "snowwarning",
+			"status": "referenced",
+			"corpus": 16
+		},
+		{
+			"id": "solarpower",
+			"status": "referenced",
+			"corpus": 3
+		},
+		{
+			"id": "solidrock",
+			"status": "referenced",
+			"corpus": 4
+		},
+		{
+			"id": "soundproof",
+			"status": "referenced",
+			"corpus": 12
+		},
+		{
+			"id": "speedboost",
+			"status": "referenced",
+			"corpus": 11
+		},
+		{
+			"id": "spicyspray",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "stakeout",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "stall",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "stalwart",
+			"status": "referenced",
+			"corpus": 1
+		},
+		{
+			"id": "stamina",
+			"status": "referenced",
+			"corpus": 42
+		},
+		{
+			"id": "stancechange",
+			"status": "referenced",
+			"corpus": 3
+		},
+		{
+			"id": "static",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "steadfast",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "steelyspirit",
+			"status": "referenced",
+			"corpus": 1
+		},
+		{
+			"id": "stench",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "stickyhold",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "strongjaw",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "sturdy",
+			"status": "referenced",
+			"corpus": 1
+		},
+		{
+			"id": "suctioncups",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "superluck",
+			"status": "referenced",
+			"corpus": 1
+		},
+		{
+			"id": "supersweetsyrup",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "supremeoverlord",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "surgesurfer",
+			"status": "referenced",
+			"corpus": 2
+		},
+		{
+			"id": "swarm",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "sweetveil",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "swiftswim",
+			"status": "referenced",
+			"corpus": 3
+		},
+		{
+			"id": "symbiosis",
+			"status": "referenced",
+			"corpus": 1
+		},
+		{
+			"id": "synchronize",
+			"status": "referenced",
+			"corpus": 6
+		},
+		{
+			"id": "tangledfeet",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "technician",
+			"status": "referenced",
+			"corpus": 7
+		},
+		{
+			"id": "telepathy",
+			"status": "referenced",
+			"corpus": 6
+		},
+		{
+			"id": "thermalexchange",
+			"status": "referenced",
+			"corpus": 29
+		},
+		{
+			"id": "thickfat",
+			"status": "referenced",
+			"corpus": 2
+		},
+		{
+			"id": "torrent",
+			"status": "referenced",
+			"corpus": 17
+		},
+		{
+			"id": "toughclaws",
+			"status": "referenced",
+			"corpus": 4
+		},
+		{
+			"id": "toxicdebris",
+			"status": "referenced",
+			"corpus": 19
+		},
+		{
+			"id": "trace",
+			"status": "referenced",
+			"corpus": 24
+		},
+		{
+			"id": "unaware",
+			"status": "referenced",
+			"corpus": 1
+		},
+		{
+			"id": "unburden",
+			"status": "referenced",
+			"corpus": 189
+		},
+		{
+			"id": "unnerve",
+			"status": "referenced",
+			"corpus": 11
+		},
+		{
+			"id": "unseenfist",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "vitalspirit",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "voltabsorb",
+			"status": "referenced",
+			"corpus": 3
+		},
+		{
+			"id": "wanderingspirit",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "waterabsorb",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "waterbubble",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "weakarmor",
+			"status": "referenced",
+			"corpus": 6
+		},
+		{
+			"id": "whitesmoke",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "zerotohero",
+			"status": "referenced",
+			"corpus": 0
+		}
+	],
+	"items": [
+		{
+			"id": "abomasite",
+			"status": "megastone",
+			"corpus": 1
+		},
+		{
+			"id": "absolite",
+			"status": "megastone",
+			"corpus": 0
+		},
+		{
+			"id": "absolitez",
+			"status": "megastone",
+			"corpus": 14
+		},
+		{
+			"id": "aerodactylite",
+			"status": "megastone",
+			"corpus": 4
+		},
+		{
+			"id": "aggronite",
+			"status": "megastone",
+			"corpus": 0
+		},
+		{
+			"id": "airballoon",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "alakazite",
+			"status": "megastone",
+			"corpus": 3
+		},
+		{
+			"id": "altarianite",
+			"status": "megastone",
+			"corpus": 1
+		},
+		{
+			"id": "ampharosite",
+			"status": "megastone",
+			"corpus": 0
+		},
+		{
+			"id": "aspearberry",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "audinite",
+			"status": "megastone",
+			"corpus": 0
+		},
+		{
+			"id": "babiriberry",
+			"status": "referenced",
+			"corpus": 1
+		},
+		{
+			"id": "banettite",
+			"status": "megastone",
+			"corpus": 0
+		},
+		{
+			"id": "barbaracite",
+			"status": "megastone",
+			"corpus": 0
+		},
+		{
+			"id": "baxcalibrite",
+			"status": "megastone",
+			"corpus": 23
+		},
+		{
+			"id": "beedrillite",
+			"status": "megastone",
+			"corpus": 0
+		},
+		{
+			"id": "bigroot",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "bindingband",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "blackbelt",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "blackglasses",
+			"status": "referenced",
+			"corpus": 16
+		},
+		{
+			"id": "blastoisinite",
+			"status": "megastone",
+			"corpus": 9
+		},
+		{
+			"id": "blazikenite",
+			"status": "megastone",
+			"corpus": 6
+		},
+		{
+			"id": "brightpowder",
+			"status": "referenced",
+			"corpus": 1
+		},
+		{
+			"id": "cameruptite",
+			"status": "megastone",
+			"corpus": 4
+		},
+		{
+			"id": "chandelurite",
+			"status": "megastone",
+			"corpus": 0
+		},
+		{
+			"id": "charcoal",
+			"status": "referenced",
+			"corpus": 31
+		},
+		{
+			"id": "charizarditex",
+			"status": "megastone",
+			"corpus": 4
+		},
+		{
+			"id": "charizarditey",
+			"status": "megastone",
+			"corpus": 38
+		},
+		{
+			"id": "chartiberry",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "cheriberry",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "chesnaughtite",
+			"status": "megastone",
+			"corpus": 0
+		},
+		{
+			"id": "chestoberry",
+			"status": "referenced",
+			"corpus": 1
+		},
+		{
+			"id": "chilanberry",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "chimechite",
+			"status": "megastone",
+			"corpus": 1
+		},
+		{
+			"id": "choicescarf",
+			"status": "referenced",
+			"corpus": 102
+		},
+		{
+			"id": "chopleberry",
+			"status": "referenced",
+			"corpus": 80
+		},
+		{
+			"id": "clefablite",
+			"status": "megastone",
+			"corpus": 0
+		},
+		{
+			"id": "cobaberry",
+			"status": "referenced",
+			"corpus": 2
+		},
+		{
+			"id": "colburberry",
+			"status": "referenced",
+			"corpus": 42
+		},
+		{
+			"id": "crabominite",
+			"status": "megastone",
+			"corpus": 1
+		},
+		{
+			"id": "damprock",
+			"status": "referenced",
+			"corpus": 1
+		},
+		{
+			"id": "delphoxite",
+			"status": "megastone",
+			"corpus": 5
+		},
+		{
+			"id": "dragalgite",
+			"status": "megastone",
+			"corpus": 2
+		},
+		{
+			"id": "dragonfang",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "dragoninite",
+			"status": "megastone",
+			"corpus": 8
+		},
+		{
+			"id": "drampanite",
+			"status": "megastone",
+			"corpus": 0
+		},
+		{
+			"id": "eelektrossite",
+			"status": "megastone",
+			"corpus": 0
+		},
+		{
+			"id": "ejectbutton",
+			"status": "referenced",
+			"corpus": 13
+		},
+		{
+			"id": "electricseed",
+			"status": "referenced",
+			"corpus": 2
+		},
+		{
+			"id": "emboarite",
+			"status": "megastone",
+			"corpus": 0
+		},
+		{
+			"id": "excadrite",
+			"status": "megastone",
+			"corpus": 0
+		},
+		{
+			"id": "expertbelt",
+			"status": "referenced",
+			"corpus": 9
+		},
+		{
+			"id": "fairyfeather",
+			"status": "referenced",
+			"corpus": 47
+		},
+		{
+			"id": "falinksite",
+			"status": "megastone",
+			"corpus": 0
+		},
+		{
+			"id": "feraligite",
+			"status": "megastone",
+			"corpus": 0
+		},
+		{
+			"id": "floettite",
+			"status": "megastone",
+			"corpus": 77
+		},
+		{
+			"id": "focusband",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "focussash",
+			"status": "referenced",
+			"corpus": 264
+		},
+		{
+			"id": "froslassite",
+			"status": "megastone",
+			"corpus": 14
+		},
+		{
+			"id": "galladite",
+			"status": "megastone",
+			"corpus": 0
+		},
+		{
+			"id": "garchompite",
+			"status": "megastone",
+			"corpus": 1
+		},
+		{
+			"id": "garchompitez",
+			"status": "megastone",
+			"corpus": 42
+		},
+		{
+			"id": "gardevoirite",
+			"status": "megastone",
+			"corpus": 33
+		},
+		{
+			"id": "gengarite",
+			"status": "megastone",
+			"corpus": 19
+		},
+		{
+			"id": "glalitite",
+			"status": "megastone",
+			"corpus": 1
+		},
+		{
+			"id": "glimmoranite",
+			"status": "megastone",
+			"corpus": 11
+		},
+		{
+			"id": "golisopite",
+			"status": "megastone",
+			"corpus": 66
+		},
+		{
+			"id": "golurkite",
+			"status": "megastone",
+			"corpus": 0
+		},
+		{
+			"id": "grassyseed",
+			"status": "referenced",
+			"corpus": 93
+		},
+		{
+			"id": "greninjite",
+			"status": "megastone",
+			"corpus": 0
+		},
+		{
+			"id": "gyaradosite",
+			"status": "megastone",
+			"corpus": 0
+		},
+		{
+			"id": "habanberry",
+			"status": "referenced",
+			"corpus": 5
+		},
+		{
+			"id": "hardstone",
+			"status": "referenced",
+			"corpus": 1
+		},
+		{
+			"id": "hawluchanite",
+			"status": "megastone",
+			"corpus": 0
+		},
+		{
+			"id": "heatrock",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "heracronite",
+			"status": "megastone",
+			"corpus": 0
+		},
+		{
+			"id": "houndoominite",
+			"status": "megastone",
+			"corpus": 0
+		},
+		{
+			"id": "icyrock",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "ironball",
+			"status": "referenced",
+			"corpus": 1
+		},
+		{
+			"id": "kangaskhanite",
+			"status": "megastone",
+			"corpus": 1
+		},
+		{
+			"id": "kasibberry",
+			"status": "referenced",
+			"corpus": 3
+		},
+		{
+			"id": "kebiaberry",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "kingsrock",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "leek",
+			"status": "referenced",
+			"corpus": 3
+		},
+		{
+			"id": "leftovers",
+			"status": "referenced",
+			"corpus": 122
+		},
+		{
+			"id": "leppaberry",
+			"status": "referenced",
+			"corpus": 1
+		},
+		{
+			"id": "lifeorb",
+			"status": "referenced",
+			"corpus": 250
+		},
+		{
+			"id": "lightball",
+			"status": "referenced",
+			"corpus": 1
+		},
+		{
+			"id": "lightclay",
+			"status": "referenced",
+			"corpus": 19
+		},
+		{
+			"id": "lopunnite",
+			"status": "megastone",
+			"corpus": 1
+		},
+		{
+			"id": "lucarionite",
+			"status": "megastone",
+			"corpus": 0
+		},
+		{
+			"id": "lucarionitez",
+			"status": "megastone",
+			"corpus": 27
+		},
+		{
+			"id": "lumberry",
+			"status": "referenced",
+			"corpus": 1
+		},
+		{
+			"id": "magnet",
+			"status": "referenced",
+			"corpus": 1
+		},
+		{
+			"id": "malamarite",
+			"status": "megastone",
+			"corpus": 0
+		},
+		{
+			"id": "manectite",
+			"status": "megastone",
+			"corpus": 1
+		},
+		{
+			"id": "mawilite",
+			"status": "megastone",
+			"corpus": 7
+		},
+		{
+			"id": "medichamite",
+			"status": "megastone",
+			"corpus": 0
+		},
+		{
+			"id": "meganiumite",
+			"status": "megastone",
+			"corpus": 2
+		},
+		{
+			"id": "mentalherb",
+			"status": "referenced",
+			"corpus": 1
+		},
+		{
+			"id": "meowsticite",
+			"status": "megastone",
+			"corpus": 9
+		},
+		{
+			"id": "metagrossite",
+			"status": "megastone",
+			"corpus": 19
+		},
+		{
+			"id": "metalcoat",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "metronome",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "miracleseed",
+			"status": "referenced",
+			"corpus": 159
+		},
+		{
+			"id": "mistyseed",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "muscleband",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "mysticwater",
+			"status": "referenced",
+			"corpus": 9
+		},
+		{
+			"id": "nevermeltice",
+			"status": "referenced",
+			"corpus": 4
+		},
+		{
+			"id": "normalgem",
+			"status": "referenced",
+			"corpus": 1
+		},
+		{
+			"id": "occaberry",
+			"status": "referenced",
+			"corpus": 25
+		},
+		{
+			"id": "oranberry",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "passhoberry",
+			"status": "referenced",
+			"corpus": 11
+		},
+		{
+			"id": "payapaberry",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "pechaberry",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "persimberry",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "pidgeotite",
+			"status": "megastone",
+			"corpus": 0
+		},
+		{
+			"id": "pinsirite",
+			"status": "megastone",
+			"corpus": 0
+		},
+		{
+			"id": "poisonbarb",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "psychicseed",
+			"status": "referenced",
+			"corpus": 86
+		},
+		{
+			"id": "pyroarite",
+			"status": "megastone",
+			"corpus": 3
+		},
+		{
+			"id": "quickclaw",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "raichunitex",
+			"status": "megastone",
+			"corpus": 1
+		},
+		{
+			"id": "raichunitey",
+			"status": "megastone",
+			"corpus": 44
+		},
+		{
+			"id": "rawstberry",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "redcard",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "rindoberry",
+			"status": "referenced",
+			"corpus": 2
+		},
+		{
+			"id": "rockyhelmet",
+			"status": "referenced",
+			"corpus": 66
+		},
+		{
+			"id": "roseliberry",
+			"status": "referenced",
+			"corpus": 3
+		},
+		{
+			"id": "sablenite",
+			"status": "megastone",
+			"corpus": 0
+		},
+		{
+			"id": "salamencite",
+			"status": "megastone",
+			"corpus": 159
+		},
+		{
+			"id": "sceptilite",
+			"status": "megastone",
+			"corpus": 1
+		},
+		{
+			"id": "scizorite",
+			"status": "megastone",
+			"corpus": 2
+		},
+		{
+			"id": "scolipite",
+			"status": "megastone",
+			"corpus": 0
+		},
+		{
+			"id": "scopelens",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "scovillainite",
+			"status": "megastone",
+			"corpus": 1
+		},
+		{
+			"id": "scraftinite",
+			"status": "megastone",
+			"corpus": 1
+		},
+		{
+			"id": "sharpbeak",
+			"status": "referenced",
+			"corpus": 5
+		},
+		{
+			"id": "sharpedonite",
+			"status": "megastone",
+			"corpus": 0
+		},
+		{
+			"id": "shedshell",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "shellbell",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "shucaberry",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "silkscarf",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "silverpowder",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "sitrusberry",
+			"status": "referenced",
+			"corpus": 234
+		},
+		{
+			"id": "skarmorite",
+			"status": "megastone",
+			"corpus": 0
+		},
+		{
+			"id": "slowbronite",
+			"status": "megastone",
+			"corpus": 0
+		},
+		{
+			"id": "smoothrock",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "softsand",
+			"status": "referenced",
+			"corpus": 1
+		},
+		{
+			"id": "spelltag",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "staraptite",
+			"status": "megastone",
+			"corpus": 17
+		},
+		{
+			"id": "starminite",
+			"status": "megastone",
+			"corpus": 0
+		},
+		{
+			"id": "steelixite",
+			"status": "megastone",
+			"corpus": 0
+		},
+		{
+			"id": "swampertite",
+			"status": "megastone",
+			"corpus": 14
+		},
+		{
+			"id": "tangaberry",
+			"status": "referenced",
+			"corpus": 1
+		},
+		{
+			"id": "terrainextender",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "twistedspoon",
+			"status": "referenced",
+			"corpus": 7
+		},
+		{
+			"id": "tyranitarite",
+			"status": "megastone",
+			"corpus": 35
+		},
+		{
+			"id": "venusaurite",
+			"status": "megastone",
+			"corpus": 0
+		},
+		{
+			"id": "victreebelite",
+			"status": "megastone",
+			"corpus": 0
+		},
+		{
+			"id": "wacanberry",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "whiteherb",
+			"status": "referenced",
+			"corpus": 68
+		},
+		{
+			"id": "widelens",
+			"status": "referenced",
+			"corpus": 8
+		},
+		{
+			"id": "wiseglasses",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "yacheberry",
+			"status": "referenced",
+			"corpus": 0
+		},
+		{
+			"id": "zoomlens",
+			"status": "referenced",
+			"corpus": 1
+		}
+	]
+}

@@ -1,0 +1,290 @@
+{
+	"format": "gen9vgc2025regi",
+	"seed": "gen5,23756,27483,42856,59003",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "rellor",
+			"item": "grassyseed",
+			"ability": "intimidate",
+			"moves": [
+				"bubblebeam",
+				"wildcharge",
+				"aerialace",
+				"harden"
+			],
+			"nature": "brave",
+			"evs": {
+				"hp": 8,
+				"atk": 188,
+				"def": 172,
+				"spa": 128,
+				"spd": 12,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 25,
+				"spa": 13,
+				"spd": 6,
+				"spe": 15
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Grass"
+		},
+		{
+			"name": "Mon1",
+			"species": "abomasnow",
+			"item": "electricseed",
+			"ability": "mirrorarmor",
+			"moves": [
+				"pounce",
+				"swallow",
+				"poisonsting",
+				"junglehealing"
+			],
+			"nature": "hasty",
+			"evs": {
+				"hp": 132,
+				"atk": 148,
+				"def": 184,
+				"spa": 44,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Fire"
+		},
+		{
+			"name": "Mon2",
+			"species": "surskit",
+			"item": "mistyseed",
+			"ability": "simple",
+			"moves": [
+				"stringshot",
+				"thunderouskick",
+				"dualwingbeat",
+				"imprison"
+			],
+			"nature": "lonely",
+			"evs": {
+				"hp": 92,
+				"atk": 140,
+				"def": 244,
+				"spa": 32,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 0
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Stellar"
+		},
+		{
+			"name": "Mon3",
+			"species": "ironleaves",
+			"item": "whiteherb",
+			"ability": "guarddog",
+			"moves": [
+				"strangesteam",
+				"dragonenergy",
+				"gigatonhammer",
+				"doodle"
+			],
+			"nature": "sassy",
+			"evs": {
+				"hp": 148,
+				"atk": 136,
+				"def": 148,
+				"spa": 76,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 14,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N",
+			"teraType": "Dragon"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "piplup",
+			"item": "psychicseed",
+			"ability": "opportunist",
+			"moves": [
+				"metalsound",
+				"happyhour",
+				"lunge",
+				"paraboliccharge"
+			],
+			"nature": "impish",
+			"evs": {
+				"hp": 184,
+				"atk": 136,
+				"def": 108,
+				"spa": 80,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 15,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Bug"
+		},
+		{
+			"name": "Mon1",
+			"species": "fidough",
+			"item": "grassyseed",
+			"ability": "competitive",
+			"moves": [
+				"mist",
+				"gastroacid",
+				"acid",
+				"extrasensory"
+			],
+			"nature": "naive",
+			"evs": {
+				"hp": 36,
+				"atk": 132,
+				"def": 84,
+				"spa": 48,
+				"spd": 112,
+				"spe": 84
+			},
+			"ivs": {
+				"hp": 12,
+				"atk": 31,
+				"def": 31,
+				"spa": 8,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Psychic"
+		},
+		{
+			"name": "Mon2",
+			"species": "psyduck",
+			"item": "grassyseed",
+			"ability": "defiant",
+			"moves": [
+				"teeterdance",
+				"earthpower",
+				"nightdaze",
+				"honeclaws"
+			],
+			"nature": "jolly",
+			"evs": {
+				"hp": 152,
+				"atk": 176,
+				"def": 60,
+				"spa": 32,
+				"spd": 88,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 10,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Water"
+		},
+		{
+			"name": "Mon3",
+			"species": "swablu",
+			"item": "ejectpack",
+			"ability": "mirrorarmor",
+			"moves": [
+				"block",
+				"electroweb",
+				"sweetkiss",
+				"finalgambit"
+			],
+			"nature": "bashful",
+			"evs": {
+				"hp": 88,
+				"atk": 140,
+				"def": 196,
+				"spa": 24,
+				"spd": 60,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 25,
+				"def": 31,
+				"spa": 31,
+				"spd": 14,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Bug"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 4 terastallize, move 4",
+			"p2": "move 2, move 1"
+		},
+		{
+			"p1": "move 1 -2, switch 4",
+			"p2": "move 3 -2 terastallize, switch 4"
+		},
+		{
+			"p1": "move 1 2, move 1 -1",
+			"p2": "move 1 -2, switch 3"
+		},
+		{
+			"p1": "move 3 -2, move 1 -1",
+			"p2": "switch 3, move 2 2"
+		},
+		{
+			"p1": "move 1 -2, move 1 1",
+			"p2": "move 1 1, switch 3"
+		},
+		{
+			"p1": "move 3 -2, move 3 2",
+			"p2": "move 1 -2, move 1 -1"
+		}
+	]
+}

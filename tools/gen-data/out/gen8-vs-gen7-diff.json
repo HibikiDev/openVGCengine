@@ -1,0 +1,615 @@
+{
+	"generated": "2026-10-25T07:09:14.435Z",
+	"moves": {
+		"curse": {
+			"target": {
+				"gen8": "randomNormal",
+				"gen7": "normal"
+			}
+		},
+		"defog": {
+			"handlers": [
+				"onHit"
+			]
+		},
+		"dive": {
+			"flags": {
+				"gen8": {
+					"contact": 1,
+					"charge": 1,
+					"protect": 1,
+					"mirror": 1,
+					"nonsky": 1,
+					"allyanim": 1,
+					"metronome": 1,
+					"nosleeptalk": 1,
+					"noassist": 1,
+					"failinstruct": 1
+				},
+				"gen7": {
+					"contact": 1,
+					"charge": 1,
+					"protect": 1,
+					"mirror": 1,
+					"nonsky": 1,
+					"metronome": 1,
+					"nosleeptalk": 1,
+					"noassist": 1,
+					"failinstruct": 1
+				}
+			}
+		},
+		"dragonhammer": {
+			"flags": {
+				"gen8": {
+					"contact": 1,
+					"protect": 1,
+					"mirror": 1
+				},
+				"gen7": {
+					"contact": 1,
+					"protect": 1,
+					"mirror": 1,
+					"metronome": 1
+				}
+			}
+		},
+		"electricterrain": {
+			"handlers": [
+				"condition.onBasePower"
+			]
+		},
+		"floralhealing": {
+			"handlers": [
+				"onHit"
+			]
+		},
+		"fly": {
+			"handlers": [
+				"onTryMove"
+			]
+		},
+		"grassknot": {
+			"handlers": [
+				"onTryHit"
+			]
+		},
+		"grassyterrain": {
+			"handlers": [
+				"condition.onBasePower"
+			]
+		},
+		"healbell": {
+			"handlers": [
+				"onHit"
+			]
+		},
+		"healingwish": {
+			"handlers": [
+				"condition.onSwap",
+				"condition.onSwitchIn"
+			]
+		},
+		"healpulse": {
+			"handlers": [
+				"onHit"
+			]
+		},
+		"heatcrash": {
+			"handlers": [
+				"onTryHit"
+			]
+		},
+		"heavyslam": {
+			"handlers": [
+				"onTryHit"
+			]
+		},
+		"howl": {
+			"target": {
+				"gen8": "allies",
+				"gen7": "self"
+			},
+			"flags": {
+				"gen8": {
+					"snatch": 1,
+					"sound": 1,
+					"metronome": 1
+				},
+				"gen7": {
+					"snatch": 1,
+					"metronome": 1
+				}
+			}
+		},
+		"kingsshield": {
+			"handlers": [
+				"condition.onHit",
+				"condition.onTryHit"
+			]
+		},
+		"lowkick": {
+			"handlers": [
+				"onTryHit"
+			]
+		},
+		"moonlight": {
+			"handlers": [
+				"onHit"
+			]
+		},
+		"morningsun": {
+			"handlers": [
+				"onHit"
+			]
+		},
+		"multiattack": {
+			"basePower": {
+				"gen8": 120,
+				"gen7": 90
+			}
+		},
+		"pollenpuff": {
+			"flags": {
+				"gen8": {
+					"protect": 1,
+					"mirror": 1,
+					"allyanim": 1,
+					"metronome": 1,
+					"bullet": 1
+				},
+				"gen7": {
+					"protect": 1,
+					"mirror": 1,
+					"metronome": 1,
+					"bullet": 1
+				}
+			},
+			"handlers": [
+				"onHit"
+			]
+		},
+		"psychicterrain": {
+			"handlers": [
+				"condition.onBasePower"
+			]
+		},
+		"purify": {
+			"handlers": [
+				"onHit"
+			]
+		},
+		"quash": {
+			"handlers": [
+				"onHit"
+			]
+		},
+		"rapidspin": {
+			"basePower": {
+				"gen8": 50,
+				"gen7": 20
+			},
+			"secondary": {
+				"gen8": {
+					"chance": 100,
+					"self": {
+						"boosts": {
+							"spe": 1
+						}
+					}
+				},
+				"gen7": null
+			}
+		},
+		"shoreup": {
+			"handlers": [
+				"onHit"
+			]
+		},
+		"swallow": {
+			"handlers": [
+				"onHit"
+			]
+		},
+		"switcheroo": {
+			"handlers": [
+				"onHit"
+			]
+		},
+		"synthesis": {
+			"handlers": [
+				"onHit"
+			]
+		},
+		"teleport": {
+			"priority": {
+				"gen8": -6,
+				"gen7": 0
+			},
+			"handlers": [
+				"onTry"
+			]
+		},
+		"toxic": {
+			"handlers": [
+				"onPrepareHit",
+				"condition.onSourceAccuracy",
+				"condition.onSourceInvulnerability"
+			]
+		},
+		"lunardance": {
+			"handlers": [
+				"condition.onSwap",
+				"condition.onSwitchIn"
+			]
+		},
+		"naturesmadness": {
+			"flags": {
+				"gen8": {
+					"protect": 1,
+					"mirror": 1
+				},
+				"gen7": {
+					"protect": 1,
+					"mirror": 1,
+					"metronome": 1
+				}
+			}
+		},
+		"moongeistbeam": {
+			"flags": {
+				"gen8": {
+					"protect": 1,
+					"mirror": 1
+				},
+				"gen7": {
+					"protect": 1,
+					"mirror": 1,
+					"metronome": 1
+				}
+			}
+		},
+		"sunsteelstrike": {
+			"flags": {
+				"gen8": {
+					"contact": 1,
+					"protect": 1,
+					"mirror": 1
+				},
+				"gen7": {
+					"contact": 1,
+					"protect": 1,
+					"mirror": 1,
+					"metronome": 1
+				}
+			}
+		}
+	},
+	"species": {
+		"pumpkaboosmall": {
+			"abilities": {
+				"gen8": {
+					"0": "Pickup",
+					"1": "Frisk",
+					"H": "Insomnia"
+				},
+				"gen7": {
+					"0": "Pickup",
+					"1": "Frisk"
+				}
+			}
+		},
+		"pumpkaboolarge": {
+			"abilities": {
+				"gen8": {
+					"0": "Pickup",
+					"1": "Frisk",
+					"H": "Insomnia"
+				},
+				"gen7": {
+					"0": "Pickup",
+					"1": "Frisk"
+				}
+			}
+		},
+		"gourgeistsmall": {
+			"abilities": {
+				"gen8": {
+					"0": "Pickup",
+					"1": "Frisk",
+					"H": "Insomnia"
+				},
+				"gen7": {
+					"0": "Pickup",
+					"1": "Frisk"
+				}
+			}
+		},
+		"gourgeistlarge": {
+			"abilities": {
+				"gen8": {
+					"0": "Pickup",
+					"1": "Frisk",
+					"H": "Insomnia"
+				},
+				"gen7": {
+					"0": "Pickup",
+					"1": "Frisk"
+				}
+			}
+		},
+		"pikachuoriginal": {
+			"abilities": {
+				"gen8": {
+					"0": "Static",
+					"H": "Lightning Rod"
+				},
+				"gen7": {
+					"0": "Static"
+				}
+			}
+		},
+		"pikachuhoenn": {
+			"abilities": {
+				"gen8": {
+					"0": "Static",
+					"H": "Lightning Rod"
+				},
+				"gen7": {
+					"0": "Static"
+				}
+			}
+		},
+		"pikachusinnoh": {
+			"abilities": {
+				"gen8": {
+					"0": "Static",
+					"H": "Lightning Rod"
+				},
+				"gen7": {
+					"0": "Static"
+				}
+			}
+		},
+		"pikachuunova": {
+			"abilities": {
+				"gen8": {
+					"0": "Static",
+					"H": "Lightning Rod"
+				},
+				"gen7": {
+					"0": "Static"
+				}
+			}
+		},
+		"pikachukalos": {
+			"abilities": {
+				"gen8": {
+					"0": "Static",
+					"H": "Lightning Rod"
+				},
+				"gen7": {
+					"0": "Static"
+				}
+			}
+		},
+		"pikachualola": {
+			"abilities": {
+				"gen8": {
+					"0": "Static",
+					"H": "Lightning Rod"
+				},
+				"gen7": {
+					"0": "Static"
+				}
+			}
+		},
+		"pikachupartner": {
+			"abilities": {
+				"gen8": {
+					"0": "Static",
+					"H": "Lightning Rod"
+				},
+				"gen7": {
+					"0": "Static"
+				}
+			}
+		},
+		"koffing": {
+			"abilities": {
+				"gen8": {
+					"0": "Levitate",
+					"1": "Neutralizing Gas",
+					"H": "Stench"
+				},
+				"gen7": {
+					"0": "Levitate"
+				}
+			}
+		},
+		"weezing": {
+			"abilities": {
+				"gen8": {
+					"0": "Levitate",
+					"1": "Neutralizing Gas",
+					"H": "Stench"
+				},
+				"gen7": {
+					"0": "Levitate"
+				}
+			}
+		},
+		"aegislash": {
+			"baseStats": {
+				"gen8": {
+					"hp": 60,
+					"atk": 50,
+					"def": 140,
+					"spa": 50,
+					"spd": 140,
+					"spe": 60
+				},
+				"gen7": {
+					"hp": 60,
+					"atk": 50,
+					"def": 150,
+					"spa": 50,
+					"spd": 150,
+					"spe": 60
+				}
+			}
+		},
+		"aegislashblade": {
+			"baseStats": {
+				"gen8": {
+					"hp": 60,
+					"atk": 140,
+					"def": 50,
+					"spa": 140,
+					"spd": 50,
+					"spe": 60
+				},
+				"gen7": {
+					"hp": 60,
+					"atk": 150,
+					"def": 50,
+					"spa": 150,
+					"spd": 50,
+					"spe": 60
+				}
+			}
+		},
+		"tapukoko": {
+			"abilities": {
+				"gen8": {
+					"0": "Electric Surge",
+					"H": "Telepathy"
+				},
+				"gen7": {
+					"0": "Electric Surge"
+				}
+			}
+		},
+		"tapulele": {
+			"abilities": {
+				"gen8": {
+					"0": "Psychic Surge",
+					"H": "Telepathy"
+				},
+				"gen7": {
+					"0": "Psychic Surge"
+				}
+			}
+		},
+		"tapubulu": {
+			"abilities": {
+				"gen8": {
+					"0": "Grassy Surge",
+					"H": "Telepathy"
+				},
+				"gen7": {
+					"0": "Grassy Surge"
+				}
+			}
+		},
+		"tapufini": {
+			"abilities": {
+				"gen8": {
+					"0": "Misty Surge",
+					"H": "Telepathy"
+				},
+				"gen7": {
+					"0": "Misty Surge"
+				}
+			}
+		}
+	},
+	"abilities": {
+		"disguise": {
+			"handlers": [
+				"onDamage",
+				"onUpdate"
+			]
+		},
+		"innerfocus": {
+			"handlers": [
+				"onTryBoost"
+			]
+		},
+		"moody": {
+			"handlers": [
+				"onResidual"
+			]
+		},
+		"oblivious": {
+			"handlers": [
+				"onTryBoost"
+			]
+		},
+		"owntempo": {
+			"handlers": [
+				"onTryBoost"
+			]
+		},
+		"rattled": {
+			"handlers": [
+				"onAfterBoost"
+			]
+		},
+		"scrappy": {
+			"handlers": [
+				"onTryBoost"
+			]
+		},
+		"soundproof": {
+			"handlers": [
+				"onTryHit"
+			]
+		},
+		"slowstart": {
+			"handlers": [
+				"onModifyAtk",
+				"onModifySpA"
+			]
+		}
+	},
+	"items": {
+		"aguavberry": {
+			"handlers": [
+				"onEat"
+			]
+		},
+		"bignugget": {
+			"fling": {
+				"gen8": {
+					"basePower": 130
+				},
+				"gen7": {
+					"basePower": 30
+				}
+			}
+		},
+		"figyberry": {
+			"handlers": [
+				"onEat"
+			]
+		},
+		"iapapaberry": {
+			"handlers": [
+				"onEat"
+			]
+		},
+		"magoberry": {
+			"handlers": [
+				"onEat"
+			]
+		},
+		"wikiberry": {
+			"handlers": [
+				"onEat"
+			]
+		}
+	},
+	"conditions": {},
+	"typechart": []
+}

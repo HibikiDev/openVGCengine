@@ -1,0 +1,262 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,57989,23775,63492,9543",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "lycanrocdusk",
+			"item": "kasibberry",
+			"ability": "poisonpoint",
+			"moves": [
+				"steelbeam",
+				"stompingtantrum",
+				"recover",
+				"substitute"
+			],
+			"nature": "serious",
+			"evs": {
+				"hp": 32,
+				"atk": 10,
+				"def": 9,
+				"spa": 13,
+				"spd": 25,
+				"spe": 26
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "archaludon",
+			"item": "",
+			"ability": "protean",
+			"moves": [
+				"dragonpulse",
+				"firepunch",
+				"swallow",
+				"boomburst"
+			],
+			"nature": "calm",
+			"evs": {
+				"hp": 32,
+				"atk": 24,
+				"def": 4,
+				"spa": 13,
+				"spd": 15,
+				"spe": 2
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "pyroar",
+			"item": "terrainextender",
+			"ability": "grassysurge",
+			"moves": [
+				"steelbeam",
+				"acidarmor",
+				"curse",
+				"doubleedge"
+			],
+			"nature": "naive",
+			"evs": {
+				"hp": 32,
+				"atk": 28,
+				"def": 12,
+				"spa": 9,
+				"spd": 5,
+				"spe": 23
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "gyarados",
+			"item": "smoothrock",
+			"ability": "levitate",
+			"moves": [
+				"powergem",
+				"skittersmack",
+				"populationbomb",
+				"steelwing"
+			],
+			"nature": "bashful",
+			"evs": {
+				"hp": 32,
+				"atk": 14,
+				"def": 21,
+				"spa": 13,
+				"spd": 21,
+				"spe": 3
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "arboliva",
+			"item": "habanberry",
+			"ability": "competitive",
+			"moves": [
+				"iciclespear",
+				"bulldoze",
+				"wildcharge",
+				"mudshot"
+			],
+			"nature": "bashful",
+			"evs": {
+				"hp": 32,
+				"atk": 17,
+				"def": 19,
+				"spa": 32,
+				"spd": 29,
+				"spe": 5
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "manectric",
+			"item": "babiriberry",
+			"ability": "grasspelt",
+			"moves": [
+				"firelash",
+				"spite",
+				"clearsmog",
+				"twinbeam"
+			],
+			"nature": "mild",
+			"evs": {
+				"hp": 32,
+				"atk": 20,
+				"def": 24,
+				"spa": 10,
+				"spd": 11,
+				"spe": 9
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "metagross",
+			"item": "softsand",
+			"ability": "lightningrod",
+			"moves": [
+				"irondefense",
+				"covet",
+				"snaptrap",
+				"facade"
+			],
+			"nature": "gentle",
+			"evs": {
+				"hp": 32,
+				"atk": 22,
+				"def": 22,
+				"spa": 32,
+				"spd": 8,
+				"spe": 18
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "archaludon",
+			"item": "smoothrock",
+			"ability": "scrappy",
+			"moves": [
+				"fellstinger",
+				"healingwish",
+				"temperflare",
+				"tailslap"
+			],
+			"nature": "impish",
+			"evs": {
+				"hp": 32,
+				"atk": 30,
+				"def": 22,
+				"spa": 7,
+				"spd": 22,
+				"spe": 10
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 2 2, move 3",
+			"p2": "move 2, move 3 2"
+		}
+	]
+}

@@ -1,0 +1,262 @@
+{
+	"format": "gen6vgc2016",
+	"seed": "gen5,54585,39622,31206,48320",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "aegislash",
+			"item": "prismscale",
+			"ability": "desolateland",
+			"moves": [
+				"sandstorm",
+				"eruption",
+				"skillswap",
+				"hydropump"
+			],
+			"nature": "bashful",
+			"evs": {
+				"hp": 100,
+				"atk": 192,
+				"def": 112,
+				"spa": 76,
+				"spd": 28,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 11,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 11
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "raichu",
+			"item": "custapberry",
+			"ability": "cloudnine",
+			"moves": [
+				"raindance",
+				"sunnyday",
+				"protect",
+				"hail"
+			],
+			"nature": "hasty",
+			"evs": {
+				"hp": 12,
+				"atk": 252,
+				"def": 128,
+				"spa": 116,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 24,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "ninetales",
+			"item": "laxincense",
+			"ability": "deltastream",
+			"moves": [
+				"gastroacid",
+				"flamethrower",
+				"skillswap",
+				"sandstorm"
+			],
+			"nature": "quiet",
+			"evs": {
+				"hp": 112,
+				"atk": 104,
+				"def": 104,
+				"spa": 188,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "porygon2",
+			"item": "shockdrive",
+			"ability": "deltastream",
+			"moves": [
+				"surf",
+				"raindance",
+				"gastroacid",
+				"earthquake"
+			],
+			"nature": "mild",
+			"evs": {
+				"hp": 192,
+				"atk": 168,
+				"def": 148,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 24,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "charizard",
+			"item": "rindoberry",
+			"ability": "desolateland",
+			"moves": [
+				"earthquake",
+				"flamethrower",
+				"gastroacid",
+				"hydropump"
+			],
+			"nature": "hardy",
+			"evs": {
+				"hp": 140,
+				"atk": 216,
+				"def": 56,
+				"spa": 96,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 22,
+				"def": 18,
+				"spa": 16,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "haxorus",
+			"item": "payapaberry",
+			"ability": "desolateland",
+			"moves": [
+				"waterspout",
+				"surf",
+				"hydropump",
+				"fireblast"
+			],
+			"nature": "sassy",
+			"evs": {
+				"hp": 220,
+				"atk": 68,
+				"def": 8,
+				"spa": 28,
+				"spd": 28,
+				"spe": 136
+			},
+			"ivs": {
+				"hp": 8,
+				"atk": 31,
+				"def": 8,
+				"spa": 31,
+				"spd": 23,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "metagross",
+			"item": "cellbattery",
+			"ability": "cloudnine",
+			"moves": [
+				"hail",
+				"skillswap",
+				"fireblast",
+				"flamethrower"
+			],
+			"nature": "docile",
+			"evs": {
+				"hp": 112,
+				"atk": 4,
+				"def": 196,
+				"spa": 188,
+				"spd": 8,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 13,
+				"atk": 3,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "forretress",
+			"item": "poisonbarb",
+			"ability": "desolateland",
+			"moves": [
+				"earthquake",
+				"skillswap",
+				"heatwave",
+				"scald"
+			],
+			"nature": "calm",
+			"evs": {
+				"hp": 188,
+				"atk": 116,
+				"def": 64,
+				"spa": 140,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 2,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 3 1, move 1",
+			"p2": "move 1, move 3 2"
+		}
+	]
+}

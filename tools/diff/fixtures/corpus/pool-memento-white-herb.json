@@ -1,0 +1,262 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,14435,52794,1706,13405",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "zoroarkhisui",
+			"item": "hardstone",
+			"ability": "cloudnine",
+			"moves": [
+				"bonerush",
+				"blazekick",
+				"shadowclaw",
+				"megahorn"
+			],
+			"nature": "lonely",
+			"evs": {
+				"hp": 32,
+				"atk": 10,
+				"def": 31,
+				"spa": 20,
+				"spd": 29,
+				"spe": 29
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "vanilluxe",
+			"item": "whiteherb",
+			"ability": "drizzle",
+			"moves": [
+				"bulldoze",
+				"babydolleyes",
+				"grassknot",
+				"mudslap"
+			],
+			"nature": "docile",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 0,
+				"spa": 23,
+				"spd": 15,
+				"spe": 5
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "blastoise",
+			"item": "electricseed",
+			"ability": "moody",
+			"moves": [
+				"dazzlinggleam",
+				"hornleech",
+				"lowsweep",
+				"faketears"
+			],
+			"nature": "quiet",
+			"evs": {
+				"hp": 32,
+				"atk": 23,
+				"def": 24,
+				"spa": 24,
+				"spd": 24,
+				"spe": 2
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "indeedeef",
+			"item": "mentalherb",
+			"ability": "infiltrator",
+			"moves": [
+				"quickattack",
+				"gravity",
+				"storedpower",
+				"hornleech"
+			],
+			"nature": "sassy",
+			"evs": {
+				"hp": 32,
+				"atk": 25,
+				"def": 21,
+				"spa": 30,
+				"spd": 0,
+				"spe": 2
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "toxtricity",
+			"item": "rockyhelmet",
+			"ability": "solarpower",
+			"moves": [
+				"cottonspore",
+				"sandtomb",
+				"wavecrash",
+				"scaleshot"
+			],
+			"nature": "adamant",
+			"evs": {
+				"hp": 32,
+				"atk": 6,
+				"def": 25,
+				"spa": 11,
+				"spd": 15,
+				"spe": 17
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "toxtricity",
+			"item": "mentalherb",
+			"ability": "keeneye",
+			"moves": [
+				"shadowclaw",
+				"harden",
+				"memento",
+				"shiftgear"
+			],
+			"nature": "hasty",
+			"evs": {
+				"hp": 32,
+				"atk": 6,
+				"def": 20,
+				"spa": 26,
+				"spd": 15,
+				"spe": 22
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "toxapex",
+			"item": "psychicseed",
+			"ability": "stalwart",
+			"moves": [
+				"hypervoice",
+				"nightdaze",
+				"feint",
+				"dragondance"
+			],
+			"nature": "rash",
+			"evs": {
+				"hp": 32,
+				"atk": 16,
+				"def": 20,
+				"spa": 32,
+				"spd": 6,
+				"spe": 4
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "noivern",
+			"item": "chopleberry",
+			"ability": "friendguard",
+			"moves": [
+				"skyattack",
+				"amnesia",
+				"endure",
+				"reflecttype"
+			],
+			"nature": "docile",
+			"evs": {
+				"hp": 32,
+				"atk": 15,
+				"def": 13,
+				"spa": 12,
+				"spd": 26,
+				"spe": 31
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 3 1, move 1",
+			"p2": "move 1, move 3 2"
+		}
+	]
+}

@@ -1,0 +1,1695 @@
+[
+	{
+		"id": "adaptability",
+		"name": "Adaptability",
+		"rating": 4,
+		"flags": []
+	},
+	{
+		"id": "aftermath",
+		"name": "Aftermath",
+		"rating": 2.5,
+		"flags": []
+	},
+	{
+		"id": "airlock",
+		"name": "Air Lock",
+		"rating": 2,
+		"flags": []
+	},
+	{
+		"id": "analytic",
+		"name": "Analytic",
+		"rating": 2.5,
+		"flags": []
+	},
+	{
+		"id": "angerpoint",
+		"name": "Anger Point",
+		"rating": 1.5,
+		"flags": []
+	},
+	{
+		"id": "anticipation",
+		"name": "Anticipation",
+		"rating": 0.5,
+		"flags": []
+	},
+	{
+		"id": "arenatrap",
+		"name": "Arena Trap",
+		"rating": 5,
+		"flags": []
+	},
+	{
+		"id": "aromaveil",
+		"name": "Aroma Veil",
+		"rating": 2,
+		"flags": [
+			"breakable"
+		]
+	},
+	{
+		"id": "asoneglastrier",
+		"name": "As One (Glastrier)",
+		"rating": 3.5,
+		"flags": [
+			"cantsuppress",
+			"failroleplay",
+			"failskillswap",
+			"noentrain",
+			"noreceiver",
+			"notrace"
+		]
+	},
+	{
+		"id": "asonespectrier",
+		"name": "As One (Spectrier)",
+		"rating": 3.5,
+		"flags": [
+			"cantsuppress",
+			"failroleplay",
+			"failskillswap",
+			"noentrain",
+			"noreceiver",
+			"notrace"
+		]
+	},
+	{
+		"id": "aurabreak",
+		"name": "Aura Break",
+		"rating": 1,
+		"flags": [
+			"breakable"
+		]
+	},
+	{
+		"id": "ballfetch",
+		"name": "Ball Fetch",
+		"rating": 0,
+		"flags": []
+	},
+	{
+		"id": "battery",
+		"name": "Battery",
+		"rating": 0,
+		"flags": []
+	},
+	{
+		"id": "battlearmor",
+		"name": "Battle Armor",
+		"rating": 1,
+		"flags": [
+			"breakable"
+		]
+	},
+	{
+		"id": "beastboost",
+		"name": "Beast Boost",
+		"rating": 3.5,
+		"flags": []
+	},
+	{
+		"id": "berserk",
+		"name": "Berserk",
+		"rating": 2,
+		"flags": []
+	},
+	{
+		"id": "bigpecks",
+		"name": "Big Pecks",
+		"rating": 0.5,
+		"flags": [
+			"breakable"
+		]
+	},
+	{
+		"id": "blaze",
+		"name": "Blaze",
+		"rating": 2,
+		"flags": []
+	},
+	{
+		"id": "bulletproof",
+		"name": "Bulletproof",
+		"rating": 3,
+		"flags": [
+			"breakable"
+		]
+	},
+	{
+		"id": "cheekpouch",
+		"name": "Cheek Pouch",
+		"rating": 2,
+		"flags": []
+	},
+	{
+		"id": "chillingneigh",
+		"name": "Chilling Neigh",
+		"rating": 3,
+		"flags": []
+	},
+	{
+		"id": "chlorophyll",
+		"name": "Chlorophyll",
+		"rating": 3,
+		"flags": []
+	},
+	{
+		"id": "clearbody",
+		"name": "Clear Body",
+		"rating": 2,
+		"flags": [
+			"breakable"
+		]
+	},
+	{
+		"id": "cloudnine",
+		"name": "Cloud Nine",
+		"rating": 2,
+		"flags": []
+	},
+	{
+		"id": "competitive",
+		"name": "Competitive",
+		"rating": 2.5,
+		"flags": []
+	},
+	{
+		"id": "compoundeyes",
+		"name": "Compound Eyes",
+		"rating": 3,
+		"flags": []
+	},
+	{
+		"id": "contrary",
+		"name": "Contrary",
+		"rating": 4.5,
+		"flags": [
+			"breakable"
+		]
+	},
+	{
+		"id": "corrosion",
+		"name": "Corrosion",
+		"rating": 2.5,
+		"flags": []
+	},
+	{
+		"id": "cottondown",
+		"name": "Cotton Down",
+		"rating": 2,
+		"flags": []
+	},
+	{
+		"id": "curiousmedicine",
+		"name": "Curious Medicine",
+		"rating": 0,
+		"flags": []
+	},
+	{
+		"id": "cursedbody",
+		"name": "Cursed Body",
+		"rating": 2,
+		"flags": []
+	},
+	{
+		"id": "cutecharm",
+		"name": "Cute Charm",
+		"rating": 0.5,
+		"flags": []
+	},
+	{
+		"id": "damp",
+		"name": "Damp",
+		"rating": 1,
+		"flags": [
+			"breakable"
+		]
+	},
+	{
+		"id": "darkaura",
+		"name": "Dark Aura",
+		"rating": 3,
+		"flags": []
+	},
+	{
+		"id": "dauntlessshield",
+		"name": "Dauntless Shield",
+		"rating": 3.5,
+		"flags": []
+	},
+	{
+		"id": "defeatist",
+		"name": "Defeatist",
+		"rating": -1,
+		"flags": []
+	},
+	{
+		"id": "defiant",
+		"name": "Defiant",
+		"rating": 2.5,
+		"flags": []
+	},
+	{
+		"id": "disguise",
+		"name": "Disguise",
+		"rating": 3.5,
+		"flags": [
+			"breakable",
+			"cantsuppress",
+			"failroleplay",
+			"failskillswap",
+			"noentrain",
+			"noreceiver",
+			"notrace",
+			"notransform"
+		]
+	},
+	{
+		"id": "download",
+		"name": "Download",
+		"rating": 3.5,
+		"flags": []
+	},
+	{
+		"id": "dragonsmaw",
+		"name": "Dragon's Maw",
+		"rating": 3.5,
+		"flags": []
+	},
+	{
+		"id": "drizzle",
+		"name": "Drizzle",
+		"rating": 4,
+		"flags": []
+	},
+	{
+		"id": "drought",
+		"name": "Drought",
+		"rating": 4,
+		"flags": []
+	},
+	{
+		"id": "dryskin",
+		"name": "Dry Skin",
+		"rating": 3,
+		"flags": [
+			"breakable"
+		]
+	},
+	{
+		"id": "earlybird",
+		"name": "Early Bird",
+		"rating": 1.5,
+		"flags": []
+	},
+	{
+		"id": "effectspore",
+		"name": "Effect Spore",
+		"rating": 2,
+		"flags": []
+	},
+	{
+		"id": "electricsurge",
+		"name": "Electric Surge",
+		"rating": 4,
+		"flags": []
+	},
+	{
+		"id": "emergencyexit",
+		"name": "Emergency Exit",
+		"rating": 1,
+		"flags": []
+	},
+	{
+		"id": "fairyaura",
+		"name": "Fairy Aura",
+		"rating": 3,
+		"flags": []
+	},
+	{
+		"id": "filter",
+		"name": "Filter",
+		"rating": 3,
+		"flags": [
+			"breakable"
+		]
+	},
+	{
+		"id": "flamebody",
+		"name": "Flame Body",
+		"rating": 2,
+		"flags": []
+	},
+	{
+		"id": "flareboost",
+		"name": "Flare Boost",
+		"rating": 2,
+		"flags": []
+	},
+	{
+		"id": "flashfire",
+		"name": "Flash Fire",
+		"rating": 3.5,
+		"flags": [
+			"breakable"
+		]
+	},
+	{
+		"id": "flowergift",
+		"name": "Flower Gift",
+		"rating": 1,
+		"flags": [
+			"breakable",
+			"failroleplay",
+			"noentrain",
+			"noreceiver",
+			"notrace"
+		]
+	},
+	{
+		"id": "flowerveil",
+		"name": "Flower Veil",
+		"rating": 0,
+		"flags": [
+			"breakable"
+		]
+	},
+	{
+		"id": "fluffy",
+		"name": "Fluffy",
+		"rating": 3.5,
+		"flags": [
+			"breakable"
+		]
+	},
+	{
+		"id": "forewarn",
+		"name": "Forewarn",
+		"rating": 0.5,
+		"flags": []
+	},
+	{
+		"id": "friendguard",
+		"name": "Friend Guard",
+		"rating": 0,
+		"flags": [
+			"breakable"
+		]
+	},
+	{
+		"id": "frisk",
+		"name": "Frisk",
+		"rating": 1.5,
+		"flags": []
+	},
+	{
+		"id": "fullmetalbody",
+		"name": "Full Metal Body",
+		"rating": 2,
+		"flags": []
+	},
+	{
+		"id": "furcoat",
+		"name": "Fur Coat",
+		"rating": 4,
+		"flags": [
+			"breakable"
+		]
+	},
+	{
+		"id": "galewings",
+		"name": "Gale Wings",
+		"rating": 2.5,
+		"flags": []
+	},
+	{
+		"id": "gluttony",
+		"name": "Gluttony",
+		"rating": 1.5,
+		"flags": []
+	},
+	{
+		"id": "gooey",
+		"name": "Gooey",
+		"rating": 2,
+		"flags": []
+	},
+	{
+		"id": "gorillatactics",
+		"name": "Gorilla Tactics",
+		"rating": 4.5,
+		"flags": []
+	},
+	{
+		"id": "grassysurge",
+		"name": "Grassy Surge",
+		"rating": 4,
+		"flags": []
+	},
+	{
+		"id": "grimneigh",
+		"name": "Grim Neigh",
+		"rating": 3,
+		"flags": []
+	},
+	{
+		"id": "gulpmissile",
+		"name": "Gulp Missile",
+		"rating": 2.5,
+		"flags": [
+			"cantsuppress",
+			"failroleplay",
+			"failskillswap",
+			"noentrain",
+			"noreceiver",
+			"notrace",
+			"notransform"
+		]
+	},
+	{
+		"id": "guts",
+		"name": "Guts",
+		"rating": 3,
+		"flags": []
+	},
+	{
+		"id": "harvest",
+		"name": "Harvest",
+		"rating": 2.5,
+		"flags": []
+	},
+	{
+		"id": "healer",
+		"name": "Healer",
+		"rating": 0,
+		"flags": []
+	},
+	{
+		"id": "heatproof",
+		"name": "Heatproof",
+		"rating": 2,
+		"flags": [
+			"breakable"
+		]
+	},
+	{
+		"id": "heavymetal",
+		"name": "Heavy Metal",
+		"rating": 0,
+		"flags": [
+			"breakable"
+		]
+	},
+	{
+		"id": "honeygather",
+		"name": "Honey Gather",
+		"rating": 0,
+		"flags": []
+	},
+	{
+		"id": "hugepower",
+		"name": "Huge Power",
+		"rating": 5,
+		"flags": []
+	},
+	{
+		"id": "hungerswitch",
+		"name": "Hunger Switch",
+		"rating": 1,
+		"flags": [
+			"failroleplay",
+			"failskillswap",
+			"noentrain",
+			"noreceiver",
+			"notrace",
+			"notransform"
+		]
+	},
+	{
+		"id": "hustle",
+		"name": "Hustle",
+		"rating": 3.5,
+		"flags": []
+	},
+	{
+		"id": "hydration",
+		"name": "Hydration",
+		"rating": 1.5,
+		"flags": []
+	},
+	{
+		"id": "hypercutter",
+		"name": "Hyper Cutter",
+		"rating": 1.5,
+		"flags": [
+			"breakable"
+		]
+	},
+	{
+		"id": "icebody",
+		"name": "Ice Body",
+		"rating": 1,
+		"flags": []
+	},
+	{
+		"id": "iceface",
+		"name": "Ice Face",
+		"rating": 3,
+		"flags": [
+			"breakable",
+			"cantsuppress",
+			"failroleplay",
+			"failskillswap",
+			"noentrain",
+			"noreceiver",
+			"notrace",
+			"notransform"
+		]
+	},
+	{
+		"id": "icescales",
+		"name": "Ice Scales",
+		"rating": 4,
+		"flags": [
+			"breakable"
+		]
+	},
+	{
+		"id": "illuminate",
+		"name": "Illuminate",
+		"rating": 0,
+		"flags": []
+	},
+	{
+		"id": "illusion",
+		"name": "Illusion",
+		"rating": 4.5,
+		"flags": [
+			"failroleplay",
+			"failskillswap",
+			"noentrain",
+			"noreceiver",
+			"notrace"
+		]
+	},
+	{
+		"id": "immunity",
+		"name": "Immunity",
+		"rating": 2,
+		"flags": [
+			"breakable"
+		]
+	},
+	{
+		"id": "imposter",
+		"name": "Imposter",
+		"rating": 5,
+		"flags": [
+			"failroleplay",
+			"noentrain",
+			"noreceiver",
+			"notrace"
+		]
+	},
+	{
+		"id": "infiltrator",
+		"name": "Infiltrator",
+		"rating": 2.5,
+		"flags": []
+	},
+	{
+		"id": "innardsout",
+		"name": "Innards Out",
+		"rating": 4,
+		"flags": []
+	},
+	{
+		"id": "innerfocus",
+		"name": "Inner Focus",
+		"rating": 1.5,
+		"flags": [
+			"breakable"
+		]
+	},
+	{
+		"id": "insomnia",
+		"name": "Insomnia",
+		"rating": 2,
+		"flags": [
+			"breakable"
+		]
+	},
+	{
+		"id": "intimidate",
+		"name": "Intimidate",
+		"rating": 3.5,
+		"flags": []
+	},
+	{
+		"id": "intrepidsword",
+		"name": "Intrepid Sword",
+		"rating": 4,
+		"flags": []
+	},
+	{
+		"id": "ironbarbs",
+		"name": "Iron Barbs",
+		"rating": 2.5,
+		"flags": []
+	},
+	{
+		"id": "ironfist",
+		"name": "Iron Fist",
+		"rating": 3,
+		"flags": []
+	},
+	{
+		"id": "justified",
+		"name": "Justified",
+		"rating": 2.5,
+		"flags": []
+	},
+	{
+		"id": "keeneye",
+		"name": "Keen Eye",
+		"rating": 0.5,
+		"flags": [
+			"breakable"
+		]
+	},
+	{
+		"id": "klutz",
+		"name": "Klutz",
+		"rating": -1,
+		"flags": []
+	},
+	{
+		"id": "leafguard",
+		"name": "Leaf Guard",
+		"rating": 0.5,
+		"flags": [
+			"breakable"
+		]
+	},
+	{
+		"id": "levitate",
+		"name": "Levitate",
+		"rating": 3.5,
+		"flags": [
+			"breakable"
+		]
+	},
+	{
+		"id": "libero",
+		"name": "Libero",
+		"rating": 4.5,
+		"flags": []
+	},
+	{
+		"id": "lightmetal",
+		"name": "Light Metal",
+		"rating": 1,
+		"flags": [
+			"breakable"
+		]
+	},
+	{
+		"id": "lightningrod",
+		"name": "Lightning Rod",
+		"rating": 3,
+		"flags": [
+			"breakable"
+		]
+	},
+	{
+		"id": "limber",
+		"name": "Limber",
+		"rating": 2,
+		"flags": [
+			"breakable"
+		]
+	},
+	{
+		"id": "liquidooze",
+		"name": "Liquid Ooze",
+		"rating": 1.5,
+		"flags": []
+	},
+	{
+		"id": "liquidvoice",
+		"name": "Liquid Voice",
+		"rating": 1.5,
+		"flags": []
+	},
+	{
+		"id": "longreach",
+		"name": "Long Reach",
+		"rating": 1,
+		"flags": []
+	},
+	{
+		"id": "magicbounce",
+		"name": "Magic Bounce",
+		"rating": 4,
+		"flags": [
+			"breakable"
+		]
+	},
+	{
+		"id": "magicguard",
+		"name": "Magic Guard",
+		"rating": 4,
+		"flags": []
+	},
+	{
+		"id": "magician",
+		"name": "Magician",
+		"rating": 1.5,
+		"flags": []
+	},
+	{
+		"id": "magnetpull",
+		"name": "Magnet Pull",
+		"rating": 4,
+		"flags": []
+	},
+	{
+		"id": "marvelscale",
+		"name": "Marvel Scale",
+		"rating": 2.5,
+		"flags": [
+			"breakable"
+		]
+	},
+	{
+		"id": "megalauncher",
+		"name": "Mega Launcher",
+		"rating": 3,
+		"flags": []
+	},
+	{
+		"id": "merciless",
+		"name": "Merciless",
+		"rating": 1.5,
+		"flags": []
+	},
+	{
+		"id": "mimicry",
+		"name": "Mimicry",
+		"rating": 0.5,
+		"flags": []
+	},
+	{
+		"id": "minus",
+		"name": "Minus",
+		"rating": 0,
+		"flags": []
+	},
+	{
+		"id": "mirrorarmor",
+		"name": "Mirror Armor",
+		"rating": 2.5,
+		"flags": [
+			"breakable"
+		]
+	},
+	{
+		"id": "mistysurge",
+		"name": "Misty Surge",
+		"rating": 3.5,
+		"flags": []
+	},
+	{
+		"id": "moldbreaker",
+		"name": "Mold Breaker",
+		"rating": 3.5,
+		"flags": []
+	},
+	{
+		"id": "moody",
+		"name": "Moody",
+		"rating": 5,
+		"flags": []
+	},
+	{
+		"id": "motordrive",
+		"name": "Motor Drive",
+		"rating": 3,
+		"flags": [
+			"breakable"
+		]
+	},
+	{
+		"id": "moxie",
+		"name": "Moxie",
+		"rating": 3,
+		"flags": []
+	},
+	{
+		"id": "multiscale",
+		"name": "Multiscale",
+		"rating": 3.5,
+		"flags": [
+			"breakable"
+		]
+	},
+	{
+		"id": "mummy",
+		"name": "Mummy",
+		"rating": 2,
+		"flags": []
+	},
+	{
+		"id": "naturalcure",
+		"name": "Natural Cure",
+		"rating": 2.5,
+		"flags": []
+	},
+	{
+		"id": "neutralizinggas",
+		"name": "Neutralizing Gas",
+		"rating": 4,
+		"flags": [
+			"failroleplay",
+			"failskillswap",
+			"noentrain",
+			"noreceiver",
+			"notrace",
+			"notransform"
+		]
+	},
+	{
+		"id": "noguard",
+		"name": "No Guard",
+		"rating": 4,
+		"flags": []
+	},
+	{
+		"id": "oblivious",
+		"name": "Oblivious",
+		"rating": 1.5,
+		"flags": [
+			"breakable"
+		]
+	},
+	{
+		"id": "overcoat",
+		"name": "Overcoat",
+		"rating": 2,
+		"flags": [
+			"breakable"
+		]
+	},
+	{
+		"id": "overgrow",
+		"name": "Overgrow",
+		"rating": 2,
+		"flags": []
+	},
+	{
+		"id": "owntempo",
+		"name": "Own Tempo",
+		"rating": 1.5,
+		"flags": [
+			"breakable"
+		]
+	},
+	{
+		"id": "pastelveil",
+		"name": "Pastel Veil",
+		"rating": 2,
+		"flags": [
+			"breakable"
+		]
+	},
+	{
+		"id": "perishbody",
+		"name": "Perish Body",
+		"rating": 1,
+		"flags": []
+	},
+	{
+		"id": "pickpocket",
+		"name": "Pickpocket",
+		"rating": 1,
+		"flags": []
+	},
+	{
+		"id": "pickup",
+		"name": "Pickup",
+		"rating": 0.5,
+		"flags": []
+	},
+	{
+		"id": "pixilate",
+		"name": "Pixilate",
+		"rating": 4,
+		"flags": []
+	},
+	{
+		"id": "plus",
+		"name": "Plus",
+		"rating": 0,
+		"flags": []
+	},
+	{
+		"id": "poisonpoint",
+		"name": "Poison Point",
+		"rating": 1.5,
+		"flags": []
+	},
+	{
+		"id": "poisontouch",
+		"name": "Poison Touch",
+		"rating": 2,
+		"flags": []
+	},
+	{
+		"id": "powerconstruct",
+		"name": "Power Construct",
+		"rating": 5,
+		"flags": [
+			"cantsuppress",
+			"failroleplay",
+			"failskillswap",
+			"noentrain",
+			"noreceiver",
+			"notrace"
+		]
+	},
+	{
+		"id": "powerspot",
+		"name": "Power Spot",
+		"rating": 1,
+		"flags": []
+	},
+	{
+		"id": "prankster",
+		"name": "Prankster",
+		"rating": 4,
+		"flags": []
+	},
+	{
+		"id": "pressure",
+		"name": "Pressure",
+		"rating": 2.5,
+		"flags": []
+	},
+	{
+		"id": "prismarmor",
+		"name": "Prism Armor",
+		"rating": 3,
+		"flags": []
+	},
+	{
+		"id": "propellertail",
+		"name": "Propeller Tail",
+		"rating": 0,
+		"flags": []
+	},
+	{
+		"id": "psychicsurge",
+		"name": "Psychic Surge",
+		"rating": 4,
+		"flags": []
+	},
+	{
+		"id": "punkrock",
+		"name": "Punk Rock",
+		"rating": 3.5,
+		"flags": [
+			"breakable"
+		]
+	},
+	{
+		"id": "queenlymajesty",
+		"name": "Queenly Majesty",
+		"rating": 2.5,
+		"flags": [
+			"breakable"
+		]
+	},
+	{
+		"id": "quickdraw",
+		"name": "Quick Draw",
+		"rating": 2.5,
+		"flags": []
+	},
+	{
+		"id": "quickfeet",
+		"name": "Quick Feet",
+		"rating": 2.5,
+		"flags": []
+	},
+	{
+		"id": "raindish",
+		"name": "Rain Dish",
+		"rating": 1.5,
+		"flags": []
+	},
+	{
+		"id": "rattled",
+		"name": "Rattled",
+		"rating": 1.5,
+		"flags": []
+	},
+	{
+		"id": "receiver",
+		"name": "Receiver",
+		"rating": 0,
+		"flags": [
+			"failroleplay",
+			"noentrain",
+			"noreceiver",
+			"notrace"
+		]
+	},
+	{
+		"id": "reckless",
+		"name": "Reckless",
+		"rating": 3,
+		"flags": []
+	},
+	{
+		"id": "refrigerate",
+		"name": "Refrigerate",
+		"rating": 4,
+		"flags": []
+	},
+	{
+		"id": "regenerator",
+		"name": "Regenerator",
+		"rating": 4.5,
+		"flags": []
+	},
+	{
+		"id": "ripen",
+		"name": "Ripen",
+		"rating": 2,
+		"flags": []
+	},
+	{
+		"id": "rivalry",
+		"name": "Rivalry",
+		"rating": 0,
+		"flags": []
+	},
+	{
+		"id": "rkssystem",
+		"name": "RKS System",
+		"rating": 4,
+		"flags": [
+			"cantsuppress",
+			"failroleplay",
+			"failskillswap",
+			"noentrain",
+			"noreceiver",
+			"notrace"
+		]
+	},
+	{
+		"id": "rockhead",
+		"name": "Rock Head",
+		"rating": 3,
+		"flags": []
+	},
+	{
+		"id": "roughskin",
+		"name": "Rough Skin",
+		"rating": 2.5,
+		"flags": []
+	},
+	{
+		"id": "runaway",
+		"name": "Run Away",
+		"rating": 0,
+		"flags": []
+	},
+	{
+		"id": "sandforce",
+		"name": "Sand Force",
+		"rating": 2,
+		"flags": []
+	},
+	{
+		"id": "sandrush",
+		"name": "Sand Rush",
+		"rating": 3,
+		"flags": []
+	},
+	{
+		"id": "sandspit",
+		"name": "Sand Spit",
+		"rating": 2,
+		"flags": []
+	},
+	{
+		"id": "sandstream",
+		"name": "Sand Stream",
+		"rating": 4,
+		"flags": []
+	},
+	{
+		"id": "sandveil",
+		"name": "Sand Veil",
+		"rating": 1.5,
+		"flags": [
+			"breakable"
+		]
+	},
+	{
+		"id": "sapsipper",
+		"name": "Sap Sipper",
+		"rating": 3,
+		"flags": [
+			"breakable"
+		]
+	},
+	{
+		"id": "schooling",
+		"name": "Schooling",
+		"rating": 3,
+		"flags": [
+			"cantsuppress",
+			"failroleplay",
+			"failskillswap",
+			"noentrain",
+			"noreceiver",
+			"notrace"
+		]
+	},
+	{
+		"id": "scrappy",
+		"name": "Scrappy",
+		"rating": 3,
+		"flags": []
+	},
+	{
+		"id": "screencleaner",
+		"name": "Screen Cleaner",
+		"rating": 2,
+		"flags": []
+	},
+	{
+		"id": "serenegrace",
+		"name": "Serene Grace",
+		"rating": 3.5,
+		"flags": []
+	},
+	{
+		"id": "shadowshield",
+		"name": "Shadow Shield",
+		"rating": 3.5,
+		"flags": []
+	},
+	{
+		"id": "shadowtag",
+		"name": "Shadow Tag",
+		"rating": 5,
+		"flags": []
+	},
+	{
+		"id": "shedskin",
+		"name": "Shed Skin",
+		"rating": 3,
+		"flags": []
+	},
+	{
+		"id": "sheerforce",
+		"name": "Sheer Force",
+		"rating": 3.5,
+		"flags": []
+	},
+	{
+		"id": "shellarmor",
+		"name": "Shell Armor",
+		"rating": 1,
+		"flags": [
+			"breakable"
+		]
+	},
+	{
+		"id": "shielddust",
+		"name": "Shield Dust",
+		"rating": 2,
+		"flags": [
+			"breakable"
+		]
+	},
+	{
+		"id": "simple",
+		"name": "Simple",
+		"rating": 4,
+		"flags": [
+			"breakable"
+		]
+	},
+	{
+		"id": "skilllink",
+		"name": "Skill Link",
+		"rating": 3,
+		"flags": []
+	},
+	{
+		"id": "slowstart",
+		"name": "Slow Start",
+		"rating": -1,
+		"flags": []
+	},
+	{
+		"id": "slushrush",
+		"name": "Slush Rush",
+		"rating": 3,
+		"flags": []
+	},
+	{
+		"id": "sniper",
+		"name": "Sniper",
+		"rating": 2,
+		"flags": []
+	},
+	{
+		"id": "snowcloak",
+		"name": "Snow Cloak",
+		"rating": 1.5,
+		"flags": [
+			"breakable"
+		]
+	},
+	{
+		"id": "snowwarning",
+		"name": "Snow Warning",
+		"rating": 4,
+		"flags": []
+	},
+	{
+		"id": "solarpower",
+		"name": "Solar Power",
+		"rating": 2,
+		"flags": []
+	},
+	{
+		"id": "solidrock",
+		"name": "Solid Rock",
+		"rating": 3,
+		"flags": [
+			"breakable"
+		]
+	},
+	{
+		"id": "soundproof",
+		"name": "Soundproof",
+		"rating": 1.5,
+		"flags": [
+			"breakable"
+		]
+	},
+	{
+		"id": "speedboost",
+		"name": "Speed Boost",
+		"rating": 4.5,
+		"flags": []
+	},
+	{
+		"id": "stakeout",
+		"name": "Stakeout",
+		"rating": 4.5,
+		"flags": []
+	},
+	{
+		"id": "stall",
+		"name": "Stall",
+		"rating": -1,
+		"flags": []
+	},
+	{
+		"id": "stalwart",
+		"name": "Stalwart",
+		"rating": 0,
+		"flags": []
+	},
+	{
+		"id": "stamina",
+		"name": "Stamina",
+		"rating": 3.5,
+		"flags": []
+	},
+	{
+		"id": "stancechange",
+		"name": "Stance Change",
+		"rating": 4,
+		"flags": [
+			"cantsuppress",
+			"failroleplay",
+			"failskillswap",
+			"noentrain",
+			"noreceiver",
+			"notrace"
+		]
+	},
+	{
+		"id": "static",
+		"name": "Static",
+		"rating": 2,
+		"flags": []
+	},
+	{
+		"id": "steadfast",
+		"name": "Steadfast",
+		"rating": 1,
+		"flags": []
+	},
+	{
+		"id": "steamengine",
+		"name": "Steam Engine",
+		"rating": 2,
+		"flags": []
+	},
+	{
+		"id": "steelworker",
+		"name": "Steelworker",
+		"rating": 3.5,
+		"flags": []
+	},
+	{
+		"id": "steelyspirit",
+		"name": "Steely Spirit",
+		"rating": 3.5,
+		"flags": []
+	},
+	{
+		"id": "stench",
+		"name": "Stench",
+		"rating": 0.5,
+		"flags": []
+	},
+	{
+		"id": "stickyhold",
+		"name": "Sticky Hold",
+		"rating": 2,
+		"flags": [
+			"breakable"
+		]
+	},
+	{
+		"id": "stormdrain",
+		"name": "Storm Drain",
+		"rating": 3,
+		"flags": [
+			"breakable"
+		]
+	},
+	{
+		"id": "strongjaw",
+		"name": "Strong Jaw",
+		"rating": 3,
+		"flags": []
+	},
+	{
+		"id": "sturdy",
+		"name": "Sturdy",
+		"rating": 3,
+		"flags": [
+			"breakable"
+		]
+	},
+	{
+		"id": "suctioncups",
+		"name": "Suction Cups",
+		"rating": 1,
+		"flags": [
+			"breakable"
+		]
+	},
+	{
+		"id": "superluck",
+		"name": "Super Luck",
+		"rating": 1.5,
+		"flags": []
+	},
+	{
+		"id": "surgesurfer",
+		"name": "Surge Surfer",
+		"rating": 3,
+		"flags": []
+	},
+	{
+		"id": "swarm",
+		"name": "Swarm",
+		"rating": 2,
+		"flags": []
+	},
+	{
+		"id": "sweetveil",
+		"name": "Sweet Veil",
+		"rating": 2,
+		"flags": [
+			"breakable"
+		]
+	},
+	{
+		"id": "swiftswim",
+		"name": "Swift Swim",
+		"rating": 3,
+		"flags": []
+	},
+	{
+		"id": "symbiosis",
+		"name": "Symbiosis",
+		"rating": 0,
+		"flags": []
+	},
+	{
+		"id": "synchronize",
+		"name": "Synchronize",
+		"rating": 2,
+		"flags": []
+	},
+	{
+		"id": "tangledfeet",
+		"name": "Tangled Feet",
+		"rating": 1,
+		"flags": [
+			"breakable"
+		]
+	},
+	{
+		"id": "tanglinghair",
+		"name": "Tangling Hair",
+		"rating": 2,
+		"flags": []
+	},
+	{
+		"id": "technician",
+		"name": "Technician",
+		"rating": 3.5,
+		"flags": []
+	},
+	{
+		"id": "telepathy",
+		"name": "Telepathy",
+		"rating": 0,
+		"flags": [
+			"breakable"
+		]
+	},
+	{
+		"id": "teravolt",
+		"name": "Teravolt",
+		"rating": 3.5,
+		"flags": []
+	},
+	{
+		"id": "thickfat",
+		"name": "Thick Fat",
+		"rating": 3.5,
+		"flags": [
+			"breakable"
+		]
+	},
+	{
+		"id": "tintedlens",
+		"name": "Tinted Lens",
+		"rating": 4,
+		"flags": []
+	},
+	{
+		"id": "torrent",
+		"name": "Torrent",
+		"rating": 2,
+		"flags": []
+	},
+	{
+		"id": "toughclaws",
+		"name": "Tough Claws",
+		"rating": 3.5,
+		"flags": []
+	},
+	{
+		"id": "trace",
+		"name": "Trace",
+		"rating": 3,
+		"flags": [
+			"failroleplay",
+			"noentrain",
+			"noreceiver",
+			"notrace"
+		]
+	},
+	{
+		"id": "transistor",
+		"name": "Transistor",
+		"rating": 3.5,
+		"flags": []
+	},
+	{
+		"id": "triage",
+		"name": "Triage",
+		"rating": 3.5,
+		"flags": []
+	},
+	{
+		"id": "truant",
+		"name": "Truant",
+		"rating": -1,
+		"flags": []
+	},
+	{
+		"id": "turboblaze",
+		"name": "Turboblaze",
+		"rating": 3.5,
+		"flags": []
+	},
+	{
+		"id": "unaware",
+		"name": "Unaware",
+		"rating": 4,
+		"flags": [
+			"breakable"
+		]
+	},
+	{
+		"id": "unburden",
+		"name": "Unburden",
+		"rating": 3.5,
+		"flags": []
+	},
+	{
+		"id": "unnerve",
+		"name": "Unnerve",
+		"rating": 1.5,
+		"flags": []
+	},
+	{
+		"id": "unseenfist",
+		"name": "Unseen Fist",
+		"rating": 2,
+		"flags": []
+	},
+	{
+		"id": "vitalspirit",
+		"name": "Vital Spirit",
+		"rating": 2,
+		"flags": [
+			"breakable"
+		]
+	},
+	{
+		"id": "voltabsorb",
+		"name": "Volt Absorb",
+		"rating": 3.5,
+		"flags": [
+			"breakable"
+		]
+	},
+	{
+		"id": "wanderingspirit",
+		"name": "Wandering Spirit",
+		"rating": 2.5,
+		"flags": []
+	},
+	{
+		"id": "waterabsorb",
+		"name": "Water Absorb",
+		"rating": 3.5,
+		"flags": [
+			"breakable"
+		]
+	},
+	{
+		"id": "waterbubble",
+		"name": "Water Bubble",
+		"rating": 4.5,
+		"flags": [
+			"breakable"
+		]
+	},
+	{
+		"id": "watercompaction",
+		"name": "Water Compaction",
+		"rating": 1.5,
+		"flags": []
+	},
+	{
+		"id": "waterveil",
+		"name": "Water Veil",
+		"rating": 2,
+		"flags": [
+			"breakable"
+		]
+	},
+	{
+		"id": "weakarmor",
+		"name": "Weak Armor",
+		"rating": 1,
+		"flags": []
+	},
+	{
+		"id": "whitesmoke",
+		"name": "White Smoke",
+		"rating": 2,
+		"flags": [
+			"breakable"
+		]
+	},
+	{
+		"id": "wimpout",
+		"name": "Wimp Out",
+		"rating": 1,
+		"flags": []
+	},
+	{
+		"id": "wonderguard",
+		"name": "Wonder Guard",
+		"rating": 5,
+		"flags": [
+			"breakable",
+			"failroleplay",
+			"failskillswap",
+			"noreceiver"
+		]
+	},
+	{
+		"id": "wonderskin",
+		"name": "Wonder Skin",
+		"rating": 2,
+		"flags": [
+			"breakable"
+		]
+	},
+	{
+		"id": "zenmode",
+		"name": "Zen Mode",
+		"rating": 0,
+		"flags": [
+			"cantsuppress",
+			"failroleplay",
+			"failskillswap",
+			"noentrain",
+			"noreceiver",
+			"notrace"
+		]
+	}
+]

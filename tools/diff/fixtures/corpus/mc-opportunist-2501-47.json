@@ -1,0 +1,262 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,10027,33536,26448,49731",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "typhlosion",
+			"item": "rawstberry",
+			"ability": "opportunist",
+			"moves": [
+				"psychocut",
+				"clangingscales",
+				"headlongrush",
+				"stealthrock"
+			],
+			"nature": "modest",
+			"evs": {
+				"hp": 32,
+				"atk": 6,
+				"def": 26,
+				"spa": 24,
+				"spd": 6,
+				"spe": 12
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "sableye",
+			"item": "choicescarf",
+			"ability": "dragonize",
+			"moves": [
+				"earthquake",
+				"psychicterrain",
+				"armorcannon",
+				"magicpowder"
+			],
+			"nature": "jolly",
+			"evs": {
+				"hp": 32,
+				"atk": 16,
+				"def": 9,
+				"spa": 31,
+				"spd": 32,
+				"spe": 14
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "hatterene",
+			"item": "hardstone",
+			"ability": "shadowtag",
+			"moves": [
+				"gigadrain",
+				"overdrive",
+				"stealthrock",
+				"clangingscales"
+			],
+			"nature": "quiet",
+			"evs": {
+				"hp": 32,
+				"atk": 24,
+				"def": 3,
+				"spa": 2,
+				"spd": 17,
+				"spe": 27
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "torterra",
+			"item": "poisonbarb",
+			"ability": "stancechange",
+			"moves": [
+				"vacuumwave",
+				"healpulse",
+				"raindance",
+				"psychicfangs"
+			],
+			"nature": "lonely",
+			"evs": {
+				"hp": 32,
+				"atk": 17,
+				"def": 1,
+				"spa": 27,
+				"spd": 26,
+				"spe": 5
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "blastoise",
+			"item": "mistyseed",
+			"ability": "forecast",
+			"moves": [
+				"nightslash",
+				"clangingscales",
+				"bitterblade",
+				"nastyplot"
+			],
+			"nature": "quirky",
+			"evs": {
+				"hp": 32,
+				"atk": 7,
+				"def": 26,
+				"spa": 8,
+				"spd": 8,
+				"spe": 19
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "alakazam",
+			"item": "widelens",
+			"ability": "liquidvoice",
+			"moves": [
+				"fakeout",
+				"machpunch",
+				"dragonpulse",
+				"charm"
+			],
+			"nature": "impish",
+			"evs": {
+				"hp": 32,
+				"atk": 8,
+				"def": 11,
+				"spa": 15,
+				"spd": 19,
+				"spe": 16
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "houndstone",
+			"item": "lifeorb",
+			"ability": "liquidvoice",
+			"moves": [
+				"psychocut",
+				"trickroom",
+				"dazzlinggleam",
+				"tailwind"
+			],
+			"nature": "impish",
+			"evs": {
+				"hp": 32,
+				"atk": 6,
+				"def": 6,
+				"spa": 23,
+				"spd": 17,
+				"spe": 1
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "aggron",
+			"item": "expertbelt",
+			"ability": "fairyaura",
+			"moves": [
+				"stickyweb",
+				"beatup",
+				"magicpowder",
+				"faketears"
+			],
+			"nature": "brave",
+			"evs": {
+				"hp": 32,
+				"atk": 30,
+				"def": 28,
+				"spa": 16,
+				"spd": 26,
+				"spe": 2
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 3 1, move 3 1",
+			"p2": "move 4, move 4 1"
+		}
+	]
+}

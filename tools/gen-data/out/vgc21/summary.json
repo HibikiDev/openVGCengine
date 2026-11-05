@@ -1,0 +1,23 @@
+{
+	"format": "gen8vgc2021",
+	"formatName": "[Gen 8] VGC 2021",
+	"mod": "gen8",
+	"gameType": "doubles",
+	"minSourceGen": 8,
+	"ruleset": [
+		"Flat Rules",
+		"!! Adjust Level = 50",
+		"Min Source Gen = 8",
+		"VGC Timer"
+	],
+	"banlist": [],
+	"counts": {
+		"species": 757,
+		"megaForms": 0,
+		"moves": 598,
+		"abilities": 227,
+		"items": 354,
+		"types": 19
+	},
+	"generatedAt": "2026-10-30T13:19:46.327Z"
+}

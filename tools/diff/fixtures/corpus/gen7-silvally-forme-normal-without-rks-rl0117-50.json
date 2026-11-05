@@ -1,0 +1,263 @@
+{
+	"format": "gen7vgc2017",
+	"seed": "gen5,59857,25778,20413,34364",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "brionne",
+			"item": "blacksludge",
+			"ability": "longreach",
+			"moves": [
+				"darkvoid",
+				"coil",
+				"frustration",
+				"electroball"
+			],
+			"nature": "impish",
+			"evs": {
+				"hp": 180,
+				"atk": 176,
+				"def": 152,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 26,
+				"spe": 26
+			},
+			"level": 50,
+			"gender": "M",
+			"happiness": 226
+		},
+		{
+			"name": "Mon1",
+			"species": "sandshrewalola",
+			"item": "poweranklet",
+			"ability": "stormdrain",
+			"moves": [
+				"bonemerang",
+				"powergem",
+				"lavaplume",
+				"doomdesire"
+			],
+			"nature": "serious",
+			"evs": {
+				"hp": 220,
+				"atk": 232,
+				"def": 56,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 14,
+				"def": 31,
+				"spa": 31,
+				"spd": 10,
+				"spe": 6
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "sandshrewalola",
+			"item": "splashplate",
+			"ability": "leafguard",
+			"moves": [
+				"teeterdance",
+				"heatwave",
+				"beatup",
+				"wakeupslap"
+			],
+			"nature": "relaxed",
+			"evs": {
+				"hp": 112,
+				"atk": 124,
+				"def": 144,
+				"spa": 128,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "croagunk",
+			"item": "alakazite",
+			"ability": "flowerveil",
+			"moves": [
+				"disarmingvoice",
+				"rockwrecker",
+				"memento",
+				"payback"
+			],
+			"nature": "bashful",
+			"evs": {
+				"hp": 188,
+				"atk": 188,
+				"def": 120,
+				"spa": 12,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 16,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "silvallysteel",
+			"item": "liechiberry",
+			"ability": "normalize",
+			"moves": [
+				"synthesis",
+				"overheat",
+				"switcheroo",
+				"sketch"
+			],
+			"nature": "mild",
+			"evs": {
+				"hp": 12,
+				"atk": 156,
+				"def": 84,
+				"spa": 124,
+				"spd": 124,
+				"spe": 8
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "grovyle",
+			"item": "spelltag",
+			"ability": "insomnia",
+			"moves": [
+				"secretpower",
+				"dig",
+				"energyball",
+				"falseswipe"
+			],
+			"nature": "naive",
+			"evs": {
+				"hp": 76,
+				"atk": 124,
+				"def": 220,
+				"spa": 64,
+				"spd": 24,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "metang",
+			"item": "wikiberry",
+			"ability": "drizzle",
+			"moves": [
+				"happyhour",
+				"watergun",
+				"healpulse",
+				"belch"
+			],
+			"nature": "adamant",
+			"evs": {
+				"hp": 140,
+				"atk": 4,
+				"def": 220,
+				"spa": 144,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 5,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 2
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "florges",
+			"item": "liechiberry",
+			"ability": "symbiosis",
+			"moves": [
+				"oblivionwing",
+				"beatup",
+				"seedflare",
+				"heartstamp"
+			],
+			"nature": "jolly",
+			"evs": {
+				"hp": 136,
+				"atk": 212,
+				"def": 160,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 4 2, move 3",
+			"p2": "move 3 1, move 2 1"
+		}
+	]
+}

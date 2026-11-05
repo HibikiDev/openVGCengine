@@ -1,0 +1,310 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,25585,3070,45819,29300",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Rillaboom",
+			"item": "mentalherb",
+			"ability": "Grassy Surge",
+			"moves": [
+				"attract",
+				"Wood Hammer",
+				"Fake Out",
+				"U-turn"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 0,
+				"spa": 0,
+				"spd": 25,
+				"spe": 9
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "Garchomp",
+			"item": "Garchompite Z",
+			"ability": "Rough Skin",
+			"moves": [
+				"Dragon Pulse",
+				"attract",
+				"Flamethrower",
+				"Protect"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 16,
+				"atk": 0,
+				"def": 0,
+				"spa": 29,
+				"spd": 1,
+				"spe": 20
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "Aerodactyl",
+			"item": "Aerodactylite",
+			"ability": "Unnerve",
+			"moves": [
+				"Rock Slide",
+				"Dual Wingbeat",
+				"attract",
+				"Protect"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 2,
+				"atk": 32,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "Lucario",
+			"item": "Lucarionite Z",
+			"ability": "Inner Focus",
+			"moves": [
+				"Flash Cannon",
+				"attract",
+				"Terrain Pulse",
+				"Detect"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 6,
+				"atk": 0,
+				"def": 0,
+				"spa": 28,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Sneasler",
+			"item": "mentalherb",
+			"ability": "Unburden",
+			"moves": [
+				"attract",
+				"Close Combat",
+				"Rock Tomb",
+				"Protect"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 28,
+				"atk": 1,
+				"def": 6,
+				"spa": 0,
+				"spd": 1,
+				"spe": 30
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "Floette-Eternal",
+			"item": "Floettite",
+			"ability": "cutecharm",
+			"moves": [
+				"Dazzling Gleam",
+				"Draining Kiss",
+				"Calm Mind",
+				"attract"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 17,
+				"atk": 0,
+				"def": 22,
+				"spa": 5,
+				"spd": 0,
+				"spe": 22
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "Incineroar",
+			"item": "Sitrus Berry",
+			"ability": "cutecharm",
+			"moves": [
+				"Flare Blitz",
+				"Taunt",
+				"attract",
+				"Fake Out"
+			],
+			"nature": "Impish",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 2,
+				"spa": 0,
+				"spd": 4,
+				"spe": 28
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "Rillaboom",
+			"item": "mentalherb",
+			"ability": "cutecharm",
+			"moves": [
+				"Wood Hammer",
+				"attract",
+				"High Horsepower",
+				"Fake Out"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 17,
+				"atk": 32,
+				"def": 5,
+				"spa": 0,
+				"spd": 4,
+				"spe": 8
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 2 -2, move 3 1 mega",
+			"p2": "move 1 1, move 3"
+		},
+		{
+			"p1": "switch 3, move 4",
+			"p2": "move 2 2, move 3 mega"
+		},
+		{
+			"p1": "move 2 2, move 1 1",
+			"p2": "move 2 -2, switch 4"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "pass, switch 4"
+		},
+		{
+			"p1": "move 3 -2, move 3 -1",
+			"p2": "move 1 2, move 1"
+		},
+		{
+			"p1": "pass, switch 3",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "switch 4, move 3 -1",
+			"p2": "move 3 -2, switch 3"
+		},
+		{
+			"p1": "move 1 1, move 2 -1",
+			"p2": "move 1 -2, move 1 1"
+		},
+		{
+			"p1": "switch 4, pass",
+			"p2": "switch 3, pass"
+		},
+		{
+			"p1": "move 3 -2, move 1 2",
+			"p2": "move 2 -2, move 3 1"
+		},
+		{
+			"p1": "move 1, move 1 1",
+			"p2": "move 3, move 1 2"
+		},
+		{
+			"p1": "move 2 1, move 2 1",
+			"p2": "move 2 1, pass"
+		}
+	],
+	"teams": [
+		"MC134",
+		"MC422"
+	]
+}

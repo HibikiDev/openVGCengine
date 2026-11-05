@@ -1,0 +1,262 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,14642,33519,52135,6147",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "gliscor",
+			"item": "nevermeltice",
+			"ability": "imposter",
+			"moves": [
+				"synthesis",
+				"surf",
+				"mountaingale",
+				"furyattack"
+			],
+			"nature": "gentle",
+			"evs": {
+				"hp": 32,
+				"atk": 29,
+				"def": 11,
+				"spa": 23,
+				"spd": 5,
+				"spe": 21
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "gyarados",
+			"item": "sharpbeak",
+			"ability": "forewarn",
+			"moves": [
+				"watershuriken",
+				"metalsound",
+				"flail",
+				"supercellslam"
+			],
+			"nature": "docile",
+			"evs": {
+				"hp": 32,
+				"atk": 26,
+				"def": 20,
+				"spa": 17,
+				"spd": 16,
+				"spe": 5
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "absol",
+			"item": "rindoberry",
+			"ability": "imposter",
+			"moves": [
+				"pounce",
+				"swift",
+				"waterpulse",
+				"powdersnow"
+			],
+			"nature": "lax",
+			"evs": {
+				"hp": 32,
+				"atk": 14,
+				"def": 13,
+				"spa": 20,
+				"spd": 6,
+				"spe": 12
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "alakazam",
+			"item": "wacanberry",
+			"ability": "forewarn",
+			"moves": [
+				"explosion",
+				"xscissor",
+				"stuffcheeks",
+				"snowscape"
+			],
+			"nature": "jolly",
+			"evs": {
+				"hp": 32,
+				"atk": 15,
+				"def": 16,
+				"spa": 2,
+				"spd": 14,
+				"spe": 18
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "meowscarada",
+			"item": "icyrock",
+			"ability": "imposter",
+			"moves": [
+				"wavecrash",
+				"bind",
+				"fellstinger",
+				"psyshock"
+			],
+			"nature": "relaxed",
+			"evs": {
+				"hp": 32,
+				"atk": 15,
+				"def": 17,
+				"spa": 3,
+				"spd": 26,
+				"spe": 3
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "hatterene",
+			"item": "chilanberry",
+			"ability": "trace",
+			"moves": [
+				"slash",
+				"poltergeist",
+				"appleacid",
+				"eerieimpulse"
+			],
+			"nature": "adamant",
+			"evs": {
+				"hp": 32,
+				"atk": 26,
+				"def": 8,
+				"spa": 4,
+				"spd": 14,
+				"spe": 28
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "vanilluxe",
+			"item": "babiriberry",
+			"ability": "forewarn",
+			"moves": [
+				"eerieimpulse",
+				"roar",
+				"nobleroar",
+				"spikes"
+			],
+			"nature": "timid",
+			"evs": {
+				"hp": 32,
+				"atk": 14,
+				"def": 19,
+				"spa": 23,
+				"spd": 23,
+				"spe": 7
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "garchomp",
+			"item": "zoomlens",
+			"ability": "trace",
+			"moves": [
+				"fakeout",
+				"sheercold",
+				"guillotine",
+				"trailblaze"
+			],
+			"nature": "rash",
+			"evs": {
+				"hp": 32,
+				"atk": 32,
+				"def": 6,
+				"spa": 7,
+				"spd": 15,
+				"spe": 15
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 3 2, move 4 2",
+			"p2": "move 3 2, move 1 2"
+		}
+	]
+}

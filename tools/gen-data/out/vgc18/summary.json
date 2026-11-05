@@ -1,0 +1,34 @@
+{
+	"format": "gen7vgc2018",
+	"formatName": "[Gen 7] VGC 2018",
+	"mod": "gen7",
+	"gameType": "doubles",
+	"minSourceGen": 7,
+	"ruleset": [
+		"Flat Rules",
+		"!! Adjust Level = 50",
+		"Min Source Gen = 7",
+		"VGC Timer",
+		"!! Timer Starting = 300"
+	],
+	"banlist": [
+		"Oranguru + Symbiosis",
+		"Passimian + Defiant",
+		"Unown",
+		"Custap Berry",
+		"Enigma Berry",
+		"Jaboca Berry",
+		"Micle Berry",
+		"Rowap Berry",
+		"Battle Bond"
+	],
+	"counts": {
+		"species": 931,
+		"megaForms": 44,
+		"moves": 673,
+		"abilities": 214,
+		"items": 334,
+		"types": 19
+	},
+	"generatedAt": "2026-10-24T20:13:51.514Z"
+}

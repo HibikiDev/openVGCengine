@@ -1,0 +1,298 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,26678,4667,40255,57691",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Blaziken",
+			"item": "Blazikenite",
+			"ability": "Speed Boost",
+			"moves": [
+				"Protect",
+				"Rock Slide",
+				"Close Combat",
+				"Flare Blitz"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 2,
+				"atk": 32,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "Mimikyu",
+			"item": "Spell Tag",
+			"ability": "Disguise",
+			"moves": [
+				"Protect",
+				"Wood Hammer",
+				"Shadow Claw",
+				"Shadow Sneak"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 2,
+				"atk": 32,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "Tinkaton",
+			"item": "Metal Coat",
+			"ability": "Mold Breaker",
+			"moves": [
+				"Fake Out",
+				"Gigaton Hammer",
+				"Protect",
+				"Helping Hand"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 2,
+				"atk": 32,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "Palafin",
+			"item": "Sitrus Berry",
+			"ability": "Zero to Hero",
+			"moves": [
+				"Protect",
+				"Wave Crash",
+				"Ice Punch",
+				"Jet Punch"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 2,
+				"atk": 32,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Rillaboom",
+			"item": "Miracle Seed",
+			"ability": "Grassy Surge",
+			"moves": [
+				"Fake Out",
+				"Grassy Glide",
+				"Wood Hammer",
+				"High Horsepower"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 32,
+				"atk": 32,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 2
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "Pawmot",
+			"item": "Leppa Berry",
+			"ability": "Iron Fist",
+			"moves": [
+				"Double Shock",
+				"Close Combat",
+				"Revival Blessing",
+				"Ice Punch"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 0,
+				"atk": 32,
+				"def": 2,
+				"spa": 0,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "Lucario",
+			"item": "Lucarionite Z",
+			"ability": "Inner Focus",
+			"moves": [
+				"Flash Cannon",
+				"Aura Sphere",
+				"Psychic",
+				"Dragon Pulse"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 24,
+				"atk": 0,
+				"def": 0,
+				"spa": 22,
+				"spd": 0,
+				"spe": 20
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "Zoroark-Hisui",
+			"item": "Life Orb",
+			"ability": "Illusion",
+			"moves": [
+				"Bitter Malice",
+				"Flamethrower",
+				"Dark Pulse",
+				"Sludge Bomb"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 2,
+				"atk": 0,
+				"def": 0,
+				"spa": 32,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 2 mega, move 4 2",
+			"p2": "move 4 1, move 1 -1"
+		},
+		{
+			"p1": "move 4 1, move 3 1",
+			"p2": "move 4 2, move 4 -1"
+		},
+		{
+			"p1": "switch 3, pass",
+			"p2": "switch 3, switch 4"
+		},
+		{
+			"p1": "switch 4, move 3 1",
+			"p2": "move 4 1, move 2 1"
+		},
+		{
+			"p1": "move 1, move 2 2",
+			"p2": "move 4 1, move 3 1"
+		},
+		{
+			"p1": "move 2 2, move 3 1",
+			"p2": "move 3 -2 mega, move 2 2"
+		},
+		{
+			"p1": "move 4 -2, switch 4",
+			"p2": "move 2 1, pass"
+		},
+		{
+			"p1": "switch 4, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 4 1, move 1 -1",
+			"p2": "move 2 2, pass"
+		}
+	],
+	"teams": [
+		"FR-528",
+		"BA-1002"
+	]
+}

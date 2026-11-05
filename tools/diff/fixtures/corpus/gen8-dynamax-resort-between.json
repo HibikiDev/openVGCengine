@@ -1,0 +1,306 @@
+{
+	"format": "gen8vgc2020",
+	"seed": "gen5,26735,30374,19665,20201",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "politoed",
+			"item": "metalcoat",
+			"ability": "soundproof",
+			"moves": [
+				"drillrun",
+				"swagger",
+				"ancientpower",
+				"visegrip"
+			],
+			"nature": "impish",
+			"evs": {
+				"hp": 144,
+				"atk": 116,
+				"def": 148,
+				"spa": 100,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 1,
+				"spa": 31,
+				"spd": 31,
+				"spe": 27
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "snorunt",
+			"item": "netball",
+			"ability": "furcoat",
+			"moves": [
+				"smackdown",
+				"selfdestruct",
+				"aromaticmist",
+				"doubleedge"
+			],
+			"nature": "hardy",
+			"evs": {
+				"hp": 200,
+				"atk": 108,
+				"def": 160,
+				"spa": 40,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 13,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "boltund",
+			"item": "premierball",
+			"ability": "infiltrator",
+			"moves": [
+				"burningjealousy",
+				"gyroball",
+				"bugbite",
+				"brickbreak"
+			],
+			"nature": "hasty",
+			"evs": {
+				"hp": 212,
+				"atk": 80,
+				"def": 176,
+				"spa": 40,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 27,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "alcremiemintcream",
+			"item": "thunderstone",
+			"ability": "magicbounce",
+			"moves": [
+				"perishsong",
+				"bonerush",
+				"allyswitch",
+				"drumbeating"
+			],
+			"nature": "naughty",
+			"evs": {
+				"hp": 72,
+				"atk": 252,
+				"def": 184,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 30,
+				"spa": 27,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "tyranitar",
+			"item": "bottlecap",
+			"ability": "strongjaw",
+			"moves": [
+				"rest",
+				"leer",
+				"thief",
+				"electroball"
+			],
+			"nature": "bold",
+			"evs": {
+				"hp": 108,
+				"atk": 92,
+				"def": 92,
+				"spa": 8,
+				"spd": 152,
+				"spe": 56
+			},
+			"ivs": {
+				"hp": 6,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "trubbish",
+			"item": "rarebone",
+			"ability": "infiltrator",
+			"moves": [
+				"bodypress",
+				"confide",
+				"sandattack",
+				"dragonbreath"
+			],
+			"nature": "docile",
+			"evs": {
+				"hp": 44,
+				"atk": 116,
+				"def": 156,
+				"spa": 68,
+				"spd": 124,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 8,
+				"atk": 16,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 21
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "liepard",
+			"item": "tr39",
+			"ability": "gluttony",
+			"moves": [
+				"poisontail",
+				"raindance",
+				"encore",
+				"earthquake"
+			],
+			"nature": "quirky",
+			"evs": {
+				"hp": 184,
+				"atk": 80,
+				"def": 188,
+				"spa": 56,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "cofagrigus",
+			"item": "tr36",
+			"ability": "trace",
+			"moves": [
+				"pinmissile",
+				"leafstorm",
+				"belch",
+				"playrough"
+			],
+			"nature": "modest",
+			"evs": {
+				"hp": 140,
+				"atk": 100,
+				"def": 216,
+				"spa": 52,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 15,
+				"atk": 31,
+				"def": 7,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 3 1, move 2",
+			"p2": "move 1, move 3 2"
+		},
+		{
+			"p1": "pass, switch 4",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 1 1, move 2 2 dynamax",
+			"p2": "move 3 1, move 1 1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "pass, switch 3"
+		},
+		{
+			"p1": "move 4 1, switch 3",
+			"p2": "move 1, move 1 1 dynamax"
+		},
+		{
+			"p1": "move 1 2, switch 3",
+			"p2": "move 4 2, move 2"
+		},
+		{
+			"p1": "move 3 -2, move 4 2",
+			"p2": "move 4 2, move 4 1"
+		},
+		{
+			"p1": "switch 3, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 4 -2, move 1",
+			"p2": "switch 4, move 1 -1"
+		},
+		{
+			"p1": "move 4 -2, move 4 1",
+			"p2": "move 2 -2, move 3 -1"
+		},
+		{
+			"p1": "move 3 2, move 4 -1",
+			"p2": "move 4 1, move 2"
+		},
+		{
+			"p1": "move 4 1, move 3",
+			"p2": "move 1 -2, move 1 -1"
+		}
+	]
+}

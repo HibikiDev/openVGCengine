@@ -1,0 +1,306 @@
+{
+	"format": "gen8vgc2021",
+	"seed": "gen5,25311,35862,4733,5525",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "garbodor",
+			"item": "tr53",
+			"ability": "steelworker",
+			"moves": [
+				"boltbeak",
+				"leechlife",
+				"bubblebeam",
+				"lovelykiss"
+			],
+			"nature": "relaxed",
+			"evs": {
+				"hp": 96,
+				"atk": 252,
+				"def": 160,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 15,
+				"spa": 31,
+				"spd": 29,
+				"spe": 20
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "pichu",
+			"item": "lustrousorb",
+			"ability": "blaze",
+			"moves": [
+				"minimize",
+				"payday",
+				"steelroller",
+				"bodyslam"
+			],
+			"nature": "lax",
+			"evs": {
+				"hp": 48,
+				"atk": 212,
+				"def": 96,
+				"spa": 96,
+				"spd": 56,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 19,
+				"spa": 31,
+				"spd": 31,
+				"spe": 13
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "ludicolo",
+			"item": "tr78",
+			"ability": "corrosion",
+			"moves": [
+				"forcepalm",
+				"lastresort",
+				"mudslap",
+				"stompingtantrum"
+			],
+			"nature": "sassy",
+			"evs": {
+				"hp": 88,
+				"atk": 216,
+				"def": 132,
+				"spa": 72,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 25,
+				"def": 31,
+				"spa": 0,
+				"spd": 31,
+				"spe": 15
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "kommoo",
+			"item": "magnet",
+			"ability": "bulletproof",
+			"moves": [
+				"healingwish",
+				"beatup",
+				"fling",
+				"takedown"
+			],
+			"nature": "quiet",
+			"evs": {
+				"hp": 128,
+				"atk": 144,
+				"def": 28,
+				"spa": 104,
+				"spd": 104,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 22,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "shellos",
+			"item": "mentalherb",
+			"ability": "propellertail",
+			"moves": [
+				"agility",
+				"smartstrike",
+				"sandstorm",
+				"powerswap"
+			],
+			"nature": "lax",
+			"evs": {
+				"hp": 4,
+				"atk": 56,
+				"def": 0,
+				"spa": 220,
+				"spd": 76,
+				"spe": 152
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 27
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "drizzile",
+			"item": "berryjuice",
+			"ability": "liquidvoice",
+			"moves": [
+				"wideguard",
+				"psyshock",
+				"powerswap",
+				"watergun"
+			],
+			"nature": "docile",
+			"evs": {
+				"hp": 168,
+				"atk": 56,
+				"def": 172,
+				"spa": 112,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 25,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "araquanid",
+			"item": "psychicseed",
+			"ability": "hungerswitch",
+			"moves": [
+				"stickyweb",
+				"shoreup",
+				"snipeshot",
+				"submission"
+			],
+			"nature": "naive",
+			"evs": {
+				"hp": 184,
+				"atk": 160,
+				"def": 0,
+				"spa": 164,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "cleffa",
+			"item": "habanberry",
+			"ability": "earlybird",
+			"moves": [
+				"tarshot",
+				"stockpile",
+				"trick",
+				"wingattack"
+			],
+			"nature": "modest",
+			"evs": {
+				"hp": 176,
+				"atk": 36,
+				"def": 40,
+				"spa": 160,
+				"spd": 96,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 4,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 2 2, move 4 2",
+			"p2": "move 2 2, move 1"
+		},
+		{
+			"p1": "switch 4, move 4 1",
+			"p2": "move 2 1 dynamax, move 3 1"
+		},
+		{
+			"p1": "move 4 1 dynamax, move 2 2",
+			"p2": "switch 4, move 4 2"
+		},
+		{
+			"p1": "move 1, move 2 2",
+			"p2": "move 3 2, switch 4"
+		},
+		{
+			"p1": "move 1, move 3 2",
+			"p2": "move 1 1, move 1"
+		},
+		{
+			"p1": "move 2 1, move 1",
+			"p2": "move 3 1, move 4 1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 4, pass"
+		},
+		{
+			"p1": "move 3 -2, move 4 2",
+			"p2": "switch 3, move 4 1"
+		},
+		{
+			"p1": "pass, switch 4",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 3 2, move 1 2",
+			"p2": "move 4 -2, move 2 1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "pass, switch 3"
+		},
+		{
+			"p1": "move 3 -2, move 3 -1",
+			"p2": "move 4 2, move 1"
+		}
+	]
+}

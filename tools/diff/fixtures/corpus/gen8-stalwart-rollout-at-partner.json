@@ -1,0 +1,308 @@
+{
+	"format": "gen8vgc2021",
+	"seed": "gen5,30090,13861,6630,53219",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "cursola",
+			"item": "berrysweet",
+			"ability": "hydration",
+			"moves": [
+				"zenheadbutt",
+				"waterpledge",
+				"zingzap",
+				"terrainpulse"
+			],
+			"nature": "docile",
+			"evs": {
+				"hp": 0,
+				"atk": 148,
+				"def": 108,
+				"spa": 112,
+				"spd": 140,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 20,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "Snorlax",
+			"item": "powerbelt",
+			"ability": "slushrush",
+			"moves": [
+				"strength",
+				"heatcrash",
+				"gearup",
+				"echoedvoice"
+			],
+			"nature": "docile",
+			"evs": {
+				"hp": 24,
+				"atk": 16,
+				"def": 156,
+				"spa": 196,
+				"spd": 56,
+				"spe": 60
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 1,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"gigantamax": true
+		},
+		{
+			"name": "Mon2",
+			"species": "pumpkaboo",
+			"item": "tr60",
+			"ability": "klutz",
+			"moves": [
+				"confusion",
+				"psychup",
+				"mindblown",
+				"branchpoke"
+			],
+			"nature": "hasty",
+			"evs": {
+				"hp": 176,
+				"atk": 48,
+				"def": 32,
+				"spa": 168,
+				"spd": 84,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 20,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "tornadustherian",
+			"item": "razorclaw",
+			"ability": "stalwart",
+			"moves": [
+				"rollout",
+				"smartstrike",
+				"solarbeam",
+				"gust"
+			],
+			"nature": "jolly",
+			"evs": {
+				"hp": 112,
+				"atk": 64,
+				"def": 220,
+				"spa": 44,
+				"spd": 36,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 10,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "darmanitan",
+			"item": "laggingtail",
+			"ability": "sapsipper",
+			"moves": [
+				"sandattack",
+				"present",
+				"sandtomb",
+				"bodypress"
+			],
+			"nature": "lax",
+			"evs": {
+				"hp": 68,
+				"atk": 192,
+				"def": 196,
+				"spa": 52,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 6,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "Cinderace",
+			"item": "charcoal",
+			"ability": "technician",
+			"moves": [
+				"moonblast",
+				"firefang",
+				"haze",
+				"smokescreen"
+			],
+			"nature": "modest",
+			"evs": {
+				"hp": 236,
+				"atk": 96,
+				"def": 40,
+				"spa": 64,
+				"spd": 72,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 16,
+				"def": 31,
+				"spa": 31,
+				"spd": 8,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"gigantamax": true
+		},
+		{
+			"name": "Mon2",
+			"species": "celesteela",
+			"item": "groundmemory",
+			"ability": "cottondown",
+			"moves": [
+				"confuseray",
+				"painsplit",
+				"shockwave",
+				"pluck"
+			],
+			"nature": "calm",
+			"evs": {
+				"hp": 84,
+				"atk": 184,
+				"def": 108,
+				"spa": 104,
+				"spd": 28,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 4,
+				"atk": 31,
+				"def": 25,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "chandelure",
+			"item": "bottlecap",
+			"ability": "stamina",
+			"moves": [
+				"magicalleaf",
+				"stunspore",
+				"leechlife",
+				"painsplit"
+			],
+			"nature": "calm",
+			"evs": {
+				"hp": 152,
+				"atk": 152,
+				"def": 204,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 15,
+				"spa": 31,
+				"spd": 30,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 4 1, move 2 2",
+			"p2": "move 3 2, move 1 1"
+		},
+		{
+			"p1": "move 3 2 dynamax, move 4 2",
+			"p2": "move 4 2 dynamax, move 4 -1"
+		},
+		{
+			"p1": "move 1 2, move 4 -1",
+			"p2": "move 2 2, move 4 2"
+		},
+		{
+			"p1": "pass, switch 3",
+			"p2": "pass, switch 3"
+		},
+		{
+			"p1": "move 4 2, move 4 -1",
+			"p2": "move 1, move 3 1"
+		},
+		{
+			"p1": "move 2 1, move 1 2",
+			"p2": "switch 4, move 4 1"
+		},
+		{
+			"p1": "move 1 1, move 4 -1",
+			"p2": "move 4 2, switch 4"
+		},
+		{
+			"p1": "move 4 2, move 4 -1",
+			"p2": "move 3 1, move 1 1"
+		},
+		{
+			"p1": "switch 4, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 1 -2, move 2 1",
+			"p2": "move 4 2, switch 4"
+		},
+		{
+			"p1": "move 1, move 4 1",
+			"p2": "move 3 1, move 3 1"
+		},
+		{
+			"p1": "move 1, move 1 2",
+			"p2": "move 1 2, move 3 1"
+		}
+	]
+}

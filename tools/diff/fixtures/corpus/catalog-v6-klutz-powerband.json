@@ -1,0 +1,262 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,49713,8703,28025,29043",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "bellibolt",
+			"item": "machobrace",
+			"ability": "shedskin",
+			"moves": [
+				"tripleaxel",
+				"skittersmack",
+				"calmmind",
+				"closecombat"
+			],
+			"nature": "calm",
+			"evs": {
+				"hp": 32,
+				"atk": 2,
+				"def": 0,
+				"spa": 6,
+				"spd": 32,
+				"spe": 29
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "houndstone",
+			"item": "powerband",
+			"ability": "klutz",
+			"moves": [
+				"beakblast",
+				"astonish",
+				"shellsidearm",
+				"terrainpulse"
+			],
+			"nature": "docile",
+			"evs": {
+				"hp": 32,
+				"atk": 18,
+				"def": 15,
+				"spa": 22,
+				"spd": 12,
+				"spe": 30
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "houndstone",
+			"item": "powerbelt",
+			"ability": "drought",
+			"moves": [
+				"dragontail",
+				"moonlight",
+				"meditate",
+				"spitup"
+			],
+			"nature": "quiet",
+			"evs": {
+				"hp": 32,
+				"atk": 15,
+				"def": 24,
+				"spa": 30,
+				"spd": 14,
+				"spe": 8
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "snorlax",
+			"item": "quickpowder",
+			"ability": "multiscale",
+			"moves": [
+				"foulplay",
+				"furyattack",
+				"torchsong",
+				"glaiverush"
+			],
+			"nature": "modest",
+			"evs": {
+				"hp": 32,
+				"atk": 3,
+				"def": 32,
+				"spa": 3,
+				"spd": 2,
+				"spe": 14
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "sinistcha",
+			"item": "powerbracer",
+			"ability": "prankster",
+			"moves": [
+				"stormthrow",
+				"ragingbull",
+				"reflect",
+				"spark"
+			],
+			"nature": "adamant",
+			"evs": {
+				"hp": 32,
+				"atk": 30,
+				"def": 1,
+				"spa": 15,
+				"spd": 10,
+				"spe": 16
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "golisopod",
+			"item": "quickpowder",
+			"ability": "tangledfeet",
+			"moves": [
+				"aquastep",
+				"swift",
+				"flail",
+				"snaptrap"
+			],
+			"nature": "hardy",
+			"evs": {
+				"hp": 32,
+				"atk": 14,
+				"def": 23,
+				"spa": 20,
+				"spd": 32,
+				"spe": 12
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "toxtricity",
+			"item": "metalpowder",
+			"ability": "adaptability",
+			"moves": [
+				"volttackle",
+				"visegrip",
+				"dragonpulse",
+				"fairylock"
+			],
+			"nature": "quiet",
+			"evs": {
+				"hp": 32,
+				"atk": 5,
+				"def": 6,
+				"spa": 19,
+				"spd": 11,
+				"spe": 9
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "squawkabilly",
+			"item": "berryjuice",
+			"ability": "effectspore",
+			"moves": [
+				"armorcannon",
+				"leechlife",
+				"steelbeam",
+				"leer"
+			],
+			"nature": "modest",
+			"evs": {
+				"hp": 32,
+				"atk": 21,
+				"def": 29,
+				"spa": 18,
+				"spd": 21,
+				"spe": 18
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 2 1, move 3 2",
+			"p2": "move 1 1, move 2"
+		}
+	]
+}

@@ -1,0 +1,322 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,35942,15444,40553,24856",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Rotom-Heat",
+			"item": "Choice Scarf",
+			"ability": "Levitate",
+			"moves": [
+				"Overheat",
+				"Discharge",
+				"focusenergy",
+				"Electroweb"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 0,
+				"atk": 0,
+				"def": 0,
+				"spa": 32,
+				"spd": 2,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "Sceptile",
+			"item": "Sceptilite",
+			"ability": "Overgrow",
+			"moves": [
+				"encore",
+				"Dragon Pulse",
+				"Earth Power",
+				"Detect"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 2,
+				"atk": 0,
+				"def": 0,
+				"spa": 32,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "Excadrill",
+			"item": "Focus Sash",
+			"ability": "Sand Rush",
+			"moves": [
+				"High Horsepower",
+				"focusenergy",
+				"Rock Slide",
+				"Protect"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 0,
+				"atk": 32,
+				"def": 2,
+				"spa": 0,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "Milotic",
+			"item": "Leftovers",
+			"ability": "Imposter",
+			"moves": [
+				"Icy Wind",
+				"Ice Beam",
+				"transform",
+				"Scald"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 31,
+				"atk": 0,
+				"def": 15,
+				"spa": 0,
+				"spd": 12,
+				"spe": 8
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Indeedee-F",
+			"item": "Colbur Berry",
+			"ability": "Imposter",
+			"moves": [
+				"Follow Me",
+				"Psychic",
+				"uturn",
+				"Trick Room"
+			],
+			"nature": "Relaxed",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 32,
+				"spa": 2,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "Sneasler",
+			"item": "Psychic Seed",
+			"ability": "Unburden",
+			"moves": [
+				"Dire Claw",
+				"focusenergy",
+				"Throat Chop",
+				"Protect"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 16,
+				"atk": 20,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 30
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "Torkoal",
+			"item": "Charcoal",
+			"ability": "Imposter",
+			"moves": [
+				"transform",
+				"Weather Ball",
+				"Solar Beam",
+				"Protect"
+			],
+			"nature": "Quiet",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 0,
+				"spa": 32,
+				"spd": 2,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "Gardevoir",
+			"item": "Gardevoirite",
+			"ability": "Synchronize",
+			"moves": [
+				"roost",
+				"Expanding Force",
+				"Mystical Fire",
+				"Protect"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 2,
+				"spa": 32,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 4, move 3 1",
+			"p2": "move 4, move 4"
+		},
+		{
+			"p1": "switch 3, move 2 -1 mega",
+			"p2": "move 2 1, move 4"
+		},
+		{
+			"p1": "move 3, move 3 -1",
+			"p2": "move 1 1, move 2"
+		},
+		{
+			"p1": "switch 3, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 1 2, move 3 -1",
+			"p2": "move 3 -2, switch 4"
+		},
+		{
+			"p1": "move 1 -2, move 3 1",
+			"p2": "switch 4, move 3 -1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 4, pass"
+		},
+		{
+			"p1": "move 1 -2, move 3 -1",
+			"p2": "move 1 2, move 3 2 mega"
+		},
+		{
+			"p1": "pass, switch 4",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 1 1, move 4 1",
+			"p2": "move 1 -2, switch 3"
+		},
+		{
+			"p1": "move 1 2, move 3 1",
+			"p2": "move 1 -2, move 1 1"
+		},
+		{
+			"p1": "move 1 -2, move 4 1",
+			"p2": "move 1 2, switch 3"
+		},
+		{
+			"p1": "move 1 2, move 4 2",
+			"p2": "move 1 2, switch 3"
+		},
+		{
+			"p1": "move 1 -2, move 4 -1",
+			"p2": "move 3 -2, move 2"
+		},
+		{
+			"p1": "move 1, move 4 2",
+			"p2": "move 3 -2, move 1 -1"
+		}
+	],
+	"teams": [
+		"BR-228",
+		"BA-711"
+	]
+}

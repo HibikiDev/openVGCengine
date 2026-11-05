@@ -1,0 +1,314 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,47970,8343,23638,62739",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Rillaboom",
+			"item": "Miracle Seed",
+			"ability": "Wandering Spirit",
+			"moves": [
+				"Wood Hammer",
+				"torment",
+				"High Horsepower",
+				"Fake Out"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 32,
+				"atk": 32,
+				"def": 2,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "Staraptor",
+			"item": "Staraptite",
+			"ability": "Intimidate",
+			"moves": [
+				"Close Combat",
+				"torment",
+				"Protect",
+				"Brave Bird"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 32,
+				"atk": 2,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "Raichu",
+			"item": "Raichunite Y",
+			"ability": "Aroma Veil",
+			"moves": [
+				"Zap Cannon",
+				"Focus Blast",
+				"Fake Out",
+				"psychicnoise"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 2,
+				"atk": 0,
+				"def": 0,
+				"spa": 32,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "Ceruledge",
+			"item": "Grassy Seed",
+			"ability": "Wandering Spirit",
+			"moves": [
+				"Bitter Blade",
+				"taunt",
+				"Swords Dance",
+				"Protect"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 32,
+				"atk": 25,
+				"def": 8,
+				"spa": 0,
+				"spd": 1,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Incineroar",
+			"item": "Sitrus Berry",
+			"ability": "Aroma Veil",
+			"moves": [
+				"Fake Out",
+				"Parting Shot",
+				"Flare Blitz",
+				"psychicnoise"
+			],
+			"nature": "Careful",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 32,
+				"spa": 0,
+				"spd": 2,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "Gholdengo",
+			"item": "Life Orb",
+			"ability": "Good as Gold",
+			"moves": [
+				"encore",
+				"Shadow Ball",
+				"Make It Rain",
+				"Nasty Plot"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 2,
+				"atk": 0,
+				"def": 0,
+				"spa": 32,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "Indeedee-F",
+			"item": "Colbur Berry",
+			"ability": "Psychic Surge",
+			"moves": [
+				"encore",
+				"Psychic",
+				"Helping Hand",
+				"Protect"
+			],
+			"nature": "Calm",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 25,
+				"spa": 0,
+				"spd": 9,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "Salamence",
+			"item": "Salamencite",
+			"ability": "Intimidate",
+			"moves": [
+				"Protect",
+				"lightscreen",
+				"Double-Edge",
+				"Draco Meteor"
+			],
+			"nature": "Naive",
+			"evs": {
+				"hp": 2,
+				"atk": 0,
+				"def": 0,
+				"spa": 32,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 2 2, move 1 -1 mega",
+			"p2": "move 3 -2, switch 3"
+		},
+		{
+			"p1": "move 3 1, switch 3",
+			"p2": "move 2 2, move 1 1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 3, pass"
+		},
+		{
+			"p1": "move 1 -2, move 4 2",
+			"p2": "switch 3, move 2 1"
+		},
+		{
+			"p1": "switch 4, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 1 1, move 1 1",
+			"p2": "switch 4, move 3 -1"
+		},
+		{
+			"p1": "move 2 2, move 1 -1",
+			"p2": "move 4 1 mega, switch 3"
+		},
+		{
+			"p1": "move 4, move 2 1",
+			"p2": "move 2, move 1 2"
+		},
+		{
+			"p1": "move 2 1, move 2 2",
+			"p2": "move 4 1, switch 3"
+		},
+		{
+			"p1": "move 2 2, switch 3",
+			"p2": "move 3 2, switch 3"
+		},
+		{
+			"p1": "pass, switch 3",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 1 -2, move 4 1",
+			"p2": "switch 3, move 1 -1"
+		},
+		{
+			"p1": "move 1 -2, pass",
+			"p2": "switch 3, move 2 1"
+		}
+	],
+	"teams": [
+		"FR-690",
+		"BA-15"
+	]
+}

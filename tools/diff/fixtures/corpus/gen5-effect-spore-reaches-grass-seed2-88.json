@@ -1,0 +1,262 @@
+{
+	"format": "gen5vgc2013",
+	"seed": "gen5,50651,1001,18330,65138",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "tangrowth",
+			"item": "luxuryball",
+			"ability": "cloudnine",
+			"moves": [
+				"curse",
+				"magnetbomb",
+				"gigaimpact",
+				"waterspout"
+			],
+			"nature": "sassy",
+			"evs": {
+				"hp": 200,
+				"atk": 32,
+				"def": 236,
+				"spa": 40,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 30,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "plusle",
+			"item": "lumberry",
+			"ability": "effectspore",
+			"moves": [
+				"grasspledge",
+				"steamroller",
+				"razorshell",
+				"defensecurl"
+			],
+			"nature": "brave",
+			"evs": {
+				"hp": 200,
+				"atk": 192,
+				"def": 116,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "scizor",
+			"item": "metalcoat",
+			"ability": "sandforce",
+			"moves": [
+				"trumpcard",
+				"gastroacid",
+				"willowisp",
+				"rockwrecker"
+			],
+			"nature": "relaxed",
+			"evs": {
+				"hp": 52,
+				"atk": 168,
+				"def": 228,
+				"spa": 60,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 18,
+				"atk": 3,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "abra",
+			"item": "zapplate",
+			"ability": "trace",
+			"moves": [
+				"skyuppercut",
+				"dragonrush",
+				"dive",
+				"watersport"
+			],
+			"nature": "timid",
+			"evs": {
+				"hp": 248,
+				"atk": 112,
+				"def": 88,
+				"spa": 60,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 25,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "espeon",
+			"item": "sunstone",
+			"ability": "overcoat",
+			"moves": [
+				"defensecurl",
+				"waterfall",
+				"bind",
+				"watersport"
+			],
+			"nature": "lonely",
+			"evs": {
+				"hp": 108,
+				"atk": 164,
+				"def": 156,
+				"spa": 44,
+				"spd": 36,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 15
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "jumpluff",
+			"item": "softsand",
+			"ability": "waterveil",
+			"moves": [
+				"spikes",
+				"earthpower",
+				"bulkup",
+				"psywave"
+			],
+			"nature": "lax",
+			"evs": {
+				"hp": 156,
+				"atk": 20,
+				"def": 28,
+				"spa": 192,
+				"spd": 52,
+				"spe": 60
+			},
+			"ivs": {
+				"hp": 27,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 12,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "swalot",
+			"item": "reapercloth",
+			"ability": "wonderskin",
+			"moves": [
+				"selfdestruct",
+				"haze",
+				"earthquake",
+				"strugglebug"
+			],
+			"nature": "naughty",
+			"evs": {
+				"hp": 0,
+				"atk": 172,
+				"def": 16,
+				"spa": 100,
+				"spd": 4,
+				"spe": 164
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "mothim",
+			"item": "sunstone",
+			"ability": "poisonheal",
+			"moves": [
+				"harden",
+				"rockblast",
+				"dualchop",
+				"furycutter"
+			],
+			"nature": "brave",
+			"evs": {
+				"hp": 116,
+				"atk": 92,
+				"def": 184,
+				"spa": 116,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 9,
+				"spd": 21,
+				"spe": 12
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 2 2, move 3 2",
+			"p2": "move 2 2, move 2 1"
+		}
+	]
+}

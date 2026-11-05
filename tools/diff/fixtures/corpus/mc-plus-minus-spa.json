@@ -1,0 +1,262 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,8902,13433,29790,36789",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "gholdengo",
+			"item": "twistedspoon",
+			"ability": "stancechange",
+			"moves": [
+				"coil",
+				"lightscreen",
+				"encore",
+				"clangoroussoul"
+			],
+			"nature": "naughty",
+			"evs": {
+				"hp": 32,
+				"atk": 19,
+				"def": 12,
+				"spa": 25,
+				"spd": 20,
+				"spe": 4
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "meowscarada",
+			"item": "mysticwater",
+			"ability": "zerotohero",
+			"moves": [
+				"iceshard",
+				"round",
+				"temperflare",
+				"spikes"
+			],
+			"nature": "modest",
+			"evs": {
+				"hp": 32,
+				"atk": 25,
+				"def": 21,
+				"spa": 0,
+				"spd": 26,
+				"spe": 17
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "annihilape",
+			"item": "occaberry",
+			"ability": "earlybird",
+			"moves": [
+				"psyshock",
+				"fakeout",
+				"grassyglide",
+				"terrainpulse"
+			],
+			"nature": "rash",
+			"evs": {
+				"hp": 32,
+				"atk": 27,
+				"def": 31,
+				"spa": 14,
+				"spd": 5,
+				"spe": 17
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "dragalge",
+			"item": "chestoberry",
+			"ability": "owntempo",
+			"moves": [
+				"dragondance",
+				"quiverdance",
+				"leechlife",
+				"nightslash"
+			],
+			"nature": "quirky",
+			"evs": {
+				"hp": 32,
+				"atk": 28,
+				"def": 0,
+				"spa": 7,
+				"spd": 15,
+				"spe": 7
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "sneasler",
+			"item": "sitrusberry",
+			"ability": "plus",
+			"moves": [
+				"closecombat",
+				"skillswap",
+				"detect",
+				"stormthrow"
+			],
+			"nature": "bashful",
+			"evs": {
+				"hp": 32,
+				"atk": 31,
+				"def": 26,
+				"spa": 13,
+				"spd": 3,
+				"spe": 10
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "aegislash",
+			"item": "nevermeltice",
+			"ability": "minus",
+			"moves": [
+				"magicpowder",
+				"dazzlinggleam",
+				"explosion",
+				"superpower"
+			],
+			"nature": "impish",
+			"evs": {
+				"hp": 32,
+				"atk": 14,
+				"def": 30,
+				"spa": 20,
+				"spd": 10,
+				"spe": 2
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "meowscarada",
+			"item": "choicescarf",
+			"ability": "stickyhold",
+			"moves": [
+				"swordsdance",
+				"powergem",
+				"seedbomb",
+				"endure"
+			],
+			"nature": "hardy",
+			"evs": {
+				"hp": 32,
+				"atk": 9,
+				"def": 20,
+				"spa": 19,
+				"spd": 31,
+				"spe": 23
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "sableye",
+			"item": "babiriberry",
+			"ability": "regenerator",
+			"moves": [
+				"glaiverush",
+				"woodhammer",
+				"entrainment",
+				"drainpunch"
+			],
+			"nature": "hasty",
+			"evs": {
+				"hp": 32,
+				"atk": 14,
+				"def": 6,
+				"spa": 11,
+				"spd": 21,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 4, move 4",
+			"p2": "move 3, move 2"
+		}
+	]
+}

@@ -1,0 +1,322 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,2202,63202,56297,49791",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Gholdengo",
+			"item": "lifeorb",
+			"ability": "adaptability",
+			"moves": [
+				"Make It Rain",
+				"Shadow Ball",
+				"Protect",
+				"futuresight"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 7,
+				"atk": 0,
+				"def": 0,
+				"spa": 27,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "Sneasler",
+			"item": "Grassy Seed",
+			"ability": "normalize",
+			"moves": [
+				"Close Combat",
+				"Protect",
+				"Dire Claw",
+				"futuresight"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 4,
+				"atk": 32,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 30
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "Milotic",
+			"item": "ejectbutton",
+			"ability": "cursedbody",
+			"moves": [
+				"futuresight",
+				"Ice Beam",
+				"Icy Wind",
+				"Protect"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 9,
+				"spa": 12,
+				"spd": 0,
+				"spe": 13
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "Tyranitar",
+			"item": "Tyranitarite",
+			"ability": "telepathy",
+			"moves": [
+				"Rock Slide",
+				"Protect",
+				"Knock Off",
+				"futuresight"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 9,
+				"atk": 25,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Corviknight",
+			"item": "ejectbutton",
+			"ability": "Mirror Armor",
+			"moves": [
+				"futuresight",
+				"Bulk Up",
+				"Body Press",
+				"Tailwind"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 32,
+				"atk": 1,
+				"def": 1,
+				"spa": 0,
+				"spd": 32,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "Tyranitar",
+			"item": "Tyranitarite",
+			"ability": "Sand Stream",
+			"moves": [
+				"Rock Slide",
+				"Knock Off",
+				"futuresight",
+				"Low Kick"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 12,
+				"atk": 22,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "Garchomp",
+			"item": "Life Orb",
+			"ability": "Rough Skin",
+			"moves": [
+				"Rock Slide",
+				"futuresight",
+				"Earthquake",
+				"Protect"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 5,
+				"atk": 32,
+				"def": 1,
+				"spa": 0,
+				"spd": 1,
+				"spe": 27
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "Indeedee",
+			"item": "lifeorb",
+			"ability": "adaptability",
+			"moves": [
+				"Expanding Force",
+				"futuresight",
+				"Imprison",
+				"Hyper Voice"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 2,
+				"atk": 0,
+				"def": 0,
+				"spa": 32,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 2 1, move 3 1",
+			"p2": "move 1 -2, move 3 -1 mega"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 3, pass"
+		},
+		{
+			"p1": "move 4 2, move 3 2",
+			"p2": "move 2 -2, move 1"
+		},
+		{
+			"p1": "move 1, move 4 -1",
+			"p2": "move 4, move 1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "pass, switch 3"
+		},
+		{
+			"p1": "switch 4, move 2",
+			"p2": "switch 4, move 4"
+		},
+		{
+			"p1": "move 3 2 mega, move 3 -1",
+			"p2": "move 3, move 1 2"
+		},
+		{
+			"p1": "move 3 1, move 2",
+			"p2": "move 1 2, move 1 2"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 4, pass"
+		},
+		{
+			"p1": "move 3 1, move 3 2",
+			"p2": "move 3, move 1 2"
+		},
+		{
+			"p1": "switch 3, switch 4",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 1 -2, move 4 -1",
+			"p2": "pass, move 1 1"
+		},
+		{
+			"p1": "move 4, move 2 -1",
+			"p2": "pass, move 1 -1"
+		},
+		{
+			"p1": "move 1 1, move 2 -1",
+			"p2": "pass, move 3 -1"
+		},
+		{
+			"p1": "move 2 2, move 4 1",
+			"p2": "pass, move 3 1"
+		}
+	],
+	"teams": [
+		"MC382",
+		"MC229"
+	]
+}

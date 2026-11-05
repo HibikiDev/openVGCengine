@@ -1,0 +1,262 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,33435,55218,38368,25220",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "dragapult",
+			"item": "persimberry",
+			"ability": "swarm",
+			"moves": [
+				"naturalgift",
+				"fling",
+				"psyshock",
+				"acrobatics"
+			],
+			"nature": "careful",
+			"evs": {
+				"hp": 32,
+				"atk": 4,
+				"def": 19,
+				"spa": 1,
+				"spd": 3,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "kommoo",
+			"item": "chilanberry",
+			"ability": "naturalcure",
+			"moves": [
+				"fling",
+				"naturalgift",
+				"assurance",
+				"lifedew"
+			],
+			"nature": "jolly",
+			"evs": {
+				"hp": 32,
+				"atk": 29,
+				"def": 0,
+				"spa": 28,
+				"spd": 24,
+				"spe": 10
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "gallade",
+			"item": "twistedspoon",
+			"ability": "guarddog",
+			"moves": [
+				"naturalgift",
+				"fling",
+				"solarbeam",
+				"nastyplot"
+			],
+			"nature": "bashful",
+			"evs": {
+				"hp": 32,
+				"atk": 8,
+				"def": 11,
+				"spa": 9,
+				"spd": 19,
+				"spe": 20
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "arcaninehisui",
+			"item": "metalcoat",
+			"ability": "contrary",
+			"moves": [
+				"naturalgift",
+				"fling",
+				"stompingtantrum",
+				"psychicterrain"
+			],
+			"nature": "mild",
+			"evs": {
+				"hp": 32,
+				"atk": 32,
+				"def": 7,
+				"spa": 13,
+				"spd": 5,
+				"spe": 4
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "clefable",
+			"item": "nevermeltice",
+			"ability": "klutz",
+			"moves": [
+				"naturalgift",
+				"fling",
+				"iceshard",
+				"bulkup"
+			],
+			"nature": "bold",
+			"evs": {
+				"hp": 32,
+				"atk": 2,
+				"def": 9,
+				"spa": 20,
+				"spd": 18,
+				"spe": 14
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "incineroar",
+			"item": "rindoberry",
+			"ability": "rockhead",
+			"moves": [
+				"fling",
+				"naturalgift",
+				"powertrip",
+				"mistyterrain"
+			],
+			"nature": "impish",
+			"evs": {
+				"hp": 32,
+				"atk": 22,
+				"def": 13,
+				"spa": 9,
+				"spd": 5,
+				"spe": 23
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "raichu",
+			"item": "blackbelt",
+			"ability": "grassysurge",
+			"moves": [
+				"fling",
+				"naturalgift",
+				"howl",
+				"grassknot"
+			],
+			"nature": "jolly",
+			"evs": {
+				"hp": 32,
+				"atk": 3,
+				"def": 12,
+				"spa": 27,
+				"spd": 16,
+				"spe": 29
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "sneasler",
+			"item": "habanberry",
+			"ability": "justified",
+			"moves": [
+				"fling",
+				"naturalgift",
+				"shadowclaw",
+				"healingwish"
+			],
+			"nature": "timid",
+			"evs": {
+				"hp": 32,
+				"atk": 29,
+				"def": 2,
+				"spa": 1,
+				"spd": 26,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 3 2, move 4",
+			"p2": "move 2 2, move 2 2"
+		}
+	]
+}

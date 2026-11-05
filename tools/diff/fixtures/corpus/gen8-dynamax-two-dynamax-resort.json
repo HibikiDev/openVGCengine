@@ -1,0 +1,298 @@
+{
+	"format": "gen8vgc2021",
+	"seed": "gen5,48547,30568,29971,39614",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "slowkinggalar",
+			"item": "tr75",
+			"ability": "skilllink",
+			"moves": [
+				"psychicterrain",
+				"closecombat",
+				"gunkshot",
+				"destinybond"
+			],
+			"nature": "naive",
+			"evs": {
+				"hp": 104,
+				"atk": 192,
+				"def": 176,
+				"spa": 36,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 5,
+				"spe": 4
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "rotomheat",
+			"item": "moonball",
+			"ability": "dryskin",
+			"moves": [
+				"watergun",
+				"guillotine",
+				"purify",
+				"wish"
+			],
+			"nature": "hasty",
+			"evs": {
+				"hp": 160,
+				"atk": 124,
+				"def": 188,
+				"spa": 36,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 29,
+				"spa": 31,
+				"spd": 0,
+				"spe": 28
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "sinisteaantique",
+			"item": "wacanberry",
+			"ability": "imposter",
+			"moves": [
+				"snore",
+				"flamewheel",
+				"softboiled",
+				"venomdrench"
+			],
+			"nature": "bashful",
+			"evs": {
+				"hp": 176,
+				"atk": 148,
+				"def": 16,
+				"spa": 168,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 0,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "omanyte",
+			"item": "fightingmemory",
+			"ability": "cheekpouch",
+			"moves": [
+				"featherdance",
+				"wingattack",
+				"detect",
+				"kingsshield"
+			],
+			"nature": "hasty",
+			"evs": {
+				"hp": 248,
+				"atk": 76,
+				"def": 172,
+				"spa": 12,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "armaldo",
+			"item": "powerbelt",
+			"ability": "hustle",
+			"moves": [
+				"reflect",
+				"circlethrow",
+				"venomdrench",
+				"terrainpulse"
+			],
+			"nature": "careful",
+			"evs": {
+				"hp": 32,
+				"atk": 24,
+				"def": 144,
+				"spa": 92,
+				"spd": 196,
+				"spe": 20
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 29,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "sharpedo",
+			"item": "netball",
+			"ability": "beastboost",
+			"moves": [
+				"snore",
+				"cottonguard",
+				"bonerush",
+				"dive"
+			],
+			"nature": "rash",
+			"evs": {
+				"hp": 148,
+				"atk": 68,
+				"def": 144,
+				"spa": 4,
+				"spd": 120,
+				"spe": 24
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "corsolagalar",
+			"item": "cobaberry",
+			"ability": "insomnia",
+			"moves": [
+				"poltergeist",
+				"roleplay",
+				"mindblown",
+				"entrainment"
+			],
+			"nature": "relaxed",
+			"evs": {
+				"hp": 124,
+				"atk": 232,
+				"def": 152,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 16
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "happiny",
+			"item": "electricseed",
+			"ability": "moody",
+			"moves": [
+				"forcepalm",
+				"uproar",
+				"psychicterrain",
+				"spiritbreak"
+			],
+			"nature": "naive",
+			"evs": {
+				"hp": 168,
+				"atk": 224,
+				"def": 96,
+				"spa": 20,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 24,
+				"atk": 27,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 2 2, move 1 1",
+			"p2": "move 2 1, move 4 2"
+		},
+		{
+			"p1": "move 1 2 dynamax, move 3 -1",
+			"p2": "move 4 1 dynamax, move 1"
+		},
+		{
+			"p1": "move 1 1, switch 4",
+			"p2": "move 4 1, move 1 -1"
+		},
+		{
+			"p1": "move 1 1, move 2 2",
+			"p2": "move 3, move 2"
+		},
+		{
+			"p1": "move 1 2, move 3",
+			"p2": "move 2 2, move 1 1"
+		},
+		{
+			"p1": "switch 3, move 2 1",
+			"p2": "switch 3, move 4 1"
+		},
+		{
+			"p1": "switch 3, move 1 -1",
+			"p2": "move 1 1, move 1"
+		},
+		{
+			"p1": "move 4 2, move 4",
+			"p2": "move 1 -2, move 1 1"
+		},
+		{
+			"p1": "move 1, switch 3",
+			"p2": "move 1 -2, move 4 2"
+		},
+		{
+			"p1": "switch 4, move 3 2",
+			"p2": "move 4 -2, move 1"
+		}
+	]
+}

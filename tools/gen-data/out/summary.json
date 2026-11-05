@@ -1,0 +1,22 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"formatName": "[Gen 9 Champions] VGC 2026 Reg M-C",
+	"mod": "champions",
+	"gameType": "doubles",
+	"minSourceGen": 9,
+	"ruleset": [
+		"Flat Rules",
+		"VGC Timer",
+		"Open Team Sheets"
+	],
+	"banlist": [],
+	"counts": {
+		"species": 390,
+		"megaForms": 82,
+		"moves": 533,
+		"abilities": 223,
+		"items": 166,
+		"types": 19
+	},
+	"generatedAt": "2026-10-09T20:50:28.745Z"
+}

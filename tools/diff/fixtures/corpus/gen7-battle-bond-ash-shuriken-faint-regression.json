@@ -1,0 +1,270 @@
+{
+	"format": "gen7vgc2017",
+	"seed": "gen5,31,32,33,34",
+	"team1": [
+		{
+			"name": "Gren",
+			"species": "greninjabond",
+			"item": "",
+			"ability": "battlebond",
+			"moves": [
+				"darkpulse",
+				"watershuriken",
+				"protect",
+				"hydropump"
+			],
+			"nature": "serious",
+			"evs": {
+				"hp": 0,
+				"atk": 252,
+				"def": 0,
+				"spa": 252,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Pika",
+			"species": "pikachu",
+			"item": "",
+			"ability": "static",
+			"moves": [
+				"protect",
+				"thunderbolt",
+				"fakeout",
+				"surf"
+			],
+			"nature": "serious",
+			"evs": {
+				"hp": 252,
+				"atk": 252,
+				"def": 0,
+				"spa": 252,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 0
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Bench",
+			"species": "snorlax",
+			"item": "",
+			"ability": "thickfat",
+			"moves": [
+				"protect",
+				"tackle",
+				"rest",
+				"earthquake"
+			],
+			"nature": "serious",
+			"evs": {
+				"hp": 252,
+				"atk": 252,
+				"def": 0,
+				"spa": 252,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 0
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Bench2",
+			"species": "golduck",
+			"item": "",
+			"ability": "damp",
+			"moves": [
+				"protect",
+				"tackle",
+				"surf",
+				"earthquake"
+			],
+			"nature": "serious",
+			"evs": {
+				"hp": 252,
+				"atk": 252,
+				"def": 0,
+				"spa": 252,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 0
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"team2": [
+		{
+			"name": "Shed",
+			"species": "shedinja",
+			"item": "",
+			"ability": "wonderguard",
+			"moves": [
+				"tackle",
+				"protect",
+				"shadowsneak",
+				"xscissor"
+			],
+			"nature": "serious",
+			"evs": {
+				"hp": 252,
+				"atk": 252,
+				"def": 0,
+				"spa": 252,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 0
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Lax",
+			"species": "snorlax",
+			"item": "lifeorb",
+			"ability": "thickfat",
+			"moves": [
+				"explosion",
+				"protect",
+				"tackle",
+				"earthquake"
+			],
+			"nature": "serious",
+			"evs": {
+				"hp": 252,
+				"atk": 252,
+				"def": 0,
+				"spa": 252,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 0
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "C",
+			"species": "golduck",
+			"item": "",
+			"ability": "swiftswim",
+			"moves": [
+				"tackle",
+				"protect",
+				"surf",
+				"earthquake"
+			],
+			"nature": "serious",
+			"evs": {
+				"hp": 252,
+				"atk": 252,
+				"def": 0,
+				"spa": 252,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 0
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "D",
+			"species": "pikachu",
+			"item": "",
+			"ability": "static",
+			"moves": [
+				"tackle",
+				"protect",
+				"thunderbolt",
+				"surf"
+			],
+			"nature": "serious",
+			"evs": {
+				"hp": 252,
+				"atk": 252,
+				"def": 0,
+				"spa": 252,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 0
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 1 1, move 1",
+			"p2": "move 1 1, move 3 1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 3, pass"
+		},
+		{
+			"p1": "move 2 2, move 1",
+			"p2": "move 1 1, move 1"
+		}
+	]
+}

@@ -1,0 +1,308 @@
+{
+	"format": "gen8vgc2022",
+	"seed": "gen5,15773,16461,9587,45603",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Melmetal",
+			"item": "tr70",
+			"ability": "shadowshield",
+			"moves": [
+				"bulkup",
+				"grudge",
+				"accelerock",
+				"bulletpunch"
+			],
+			"nature": "impish",
+			"evs": {
+				"hp": 192,
+				"atk": 24,
+				"def": 184,
+				"spa": 24,
+				"spd": 12,
+				"spe": 24
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 22,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N",
+			"gigantamax": true
+		},
+		{
+			"name": "Mon1",
+			"species": "melmetal",
+			"item": "groundmemory",
+			"ability": "queenlymajesty",
+			"moves": [
+				"drillpeck",
+				"disarmingvoice",
+				"metalclaw",
+				"painsplit"
+			],
+			"nature": "gentle",
+			"evs": {
+				"hp": 228,
+				"atk": 84,
+				"def": 196,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 13,
+				"spa": 31,
+				"spd": 31,
+				"spe": 21
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "melmetal",
+			"item": "heavydutyboots",
+			"ability": "quickdraw",
+			"moves": [
+				"dragontail",
+				"dazzlinggleam",
+				"branchpoke",
+				"protect"
+			],
+			"nature": "lonely",
+			"evs": {
+				"hp": 44,
+				"atk": 92,
+				"def": 112,
+				"spa": 232,
+				"spd": 28,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "melmetal",
+			"item": "leppaberry",
+			"ability": "technician",
+			"moves": [
+				"photongeyser",
+				"meteorbeam",
+				"headsmash",
+				"psychic"
+			],
+			"nature": "lax",
+			"evs": {
+				"hp": 232,
+				"atk": 24,
+				"def": 168,
+				"spa": 84,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 23,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Melmetal",
+			"item": "tr32",
+			"ability": "hypercutter",
+			"moves": [
+				"sunsteelstrike",
+				"doublekick",
+				"attackorder",
+				"steelroller"
+			],
+			"nature": "hardy",
+			"evs": {
+				"hp": 72,
+				"atk": 8,
+				"def": 228,
+				"spa": 144,
+				"spd": 12,
+				"spe": 44
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 16,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N",
+			"gigantamax": true
+		},
+		{
+			"name": "Mon1",
+			"species": "melmetal",
+			"item": "laxincense",
+			"ability": "plus",
+			"moves": [
+				"focusenergy",
+				"bite",
+				"flamewheel",
+				"bodyslam"
+			],
+			"nature": "hasty",
+			"evs": {
+				"hp": 84,
+				"atk": 48,
+				"def": 164,
+				"spa": 72,
+				"spd": 8,
+				"spe": 36
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "melmetal",
+			"item": "tr10",
+			"ability": "triage",
+			"moves": [
+				"cottonguard",
+				"darkpulse",
+				"tarshot",
+				"snaptrap"
+			],
+			"nature": "hardy",
+			"evs": {
+				"hp": 180,
+				"atk": 232,
+				"def": 76,
+				"spa": 20,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 17,
+				"atk": 31,
+				"def": 5,
+				"spa": 31,
+				"spd": 20,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "melmetal",
+			"item": "fossilizeddrake",
+			"ability": "liquidvoice",
+			"moves": [
+				"focusblast",
+				"scaryface",
+				"dualchop",
+				"mudslap"
+			],
+			"nature": "bashful",
+			"evs": {
+				"hp": 152,
+				"atk": 132,
+				"def": 4,
+				"spa": 136,
+				"spd": 84,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 15,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 4 2, move 3 2",
+			"p2": "move 4 2, move 1"
+		},
+		{
+			"p1": "move 3 1 dynamax, move 4 1",
+			"p2": "move 4 -2, move 2 1"
+		},
+		{
+			"p1": "move 4 1, move 3 1",
+			"p2": "move 4 1, move 4 -1"
+		},
+		{
+			"p1": "move 4 1, move 1 2",
+			"p2": "move 1 1, move 3 1 dynamax"
+		},
+		{
+			"p1": "move 3 2, move 1 2",
+			"p2": "switch 4, move 4 2"
+		},
+		{
+			"p1": "move 3 -2, move 2",
+			"p2": "move 2 2, switch 4"
+		},
+		{
+			"p1": "move 3 2, move 1 2",
+			"p2": "move 1 1, move 3 2"
+		},
+		{
+			"p1": "move 4 -2, move 1 -1",
+			"p2": "move 2 -2, move 4 1"
+		},
+		{
+			"p1": "move 4 2, move 1 1",
+			"p2": "move 1 2, switch 3"
+		},
+		{
+			"p1": "move 4 1, move 4 -1",
+			"p2": "move 2 -2, move 4 -1"
+		},
+		{
+			"p1": "move 2, move 1 2",
+			"p2": "move 4 -2, move 4 -1"
+		},
+		{
+			"p1": "move 3 1, move 3 -1",
+			"p2": "move 4 2, move 2 1"
+		}
+	]
+}

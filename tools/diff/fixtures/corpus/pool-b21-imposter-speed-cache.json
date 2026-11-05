@@ -1,0 +1,316 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,1111,58404,40224,12567",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Whimsicott",
+			"item": "Focus Sash",
+			"ability": "Prankster",
+			"moves": [
+				"Tailwind",
+				"Moonblast",
+				"Encore",
+				"Charm"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 0,
+				"spa": 32,
+				"spd": 0,
+				"spe": 2
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "Ditto",
+			"item": "Leftovers",
+			"ability": "Imposter",
+			"moves": [
+				"Transform"
+			],
+			"nature": "Relaxed",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 1,
+				"spa": 0,
+				"spd": 1,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "Garchomp",
+			"item": "Life Orb",
+			"ability": "Rough Skin",
+			"moves": [
+				"Stomping Tantrum",
+				"Dragon Claw",
+				"Rock Slide",
+				"Protect"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 0,
+				"atk": 32,
+				"def": 2,
+				"spa": 0,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "Sneasler",
+			"item": "Psychic Seed",
+			"ability": "Unburden",
+			"moves": [
+				"Fake Out",
+				"Close Combat",
+				"Dire Claw",
+				"Protect"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 2,
+				"atk": 32,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Ditto",
+			"item": "Choice Scarf",
+			"ability": "Imposter",
+			"moves": [
+				"Transform"
+			],
+			"nature": "Brave",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 2,
+				"spa": 0,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "Gholdengo",
+			"item": "Life Orb",
+			"ability": "Good as Gold",
+			"moves": [
+				"Make It Rain",
+				"Protect",
+				"Shadow Ball",
+				"Nasty Plot"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 27,
+				"atk": 0,
+				"def": 1,
+				"spa": 2,
+				"spd": 22,
+				"spe": 14
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "Kingambit",
+			"item": "Chople Berry",
+			"ability": "Defiant",
+			"moves": [
+				"Kowtow Cleave",
+				"Low Kick",
+				"Sucker Punch",
+				"Protect"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 32,
+				"atk": 25,
+				"def": 2,
+				"spa": 0,
+				"spd": 6,
+				"spe": 1
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "Salamence",
+			"item": "Salamencite",
+			"ability": "Intimidate",
+			"moves": [
+				"Hyper Voice",
+				"Protect",
+				"Draco Meteor",
+				"Flamethrower"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 1,
+				"atk": 21,
+				"def": 0,
+				"spa": 15,
+				"spd": 0,
+				"spe": 29
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 4 -2, move 1 2",
+			"p2": "move 1 2, move 4"
+		},
+		{
+			"p1": "move 2 2, move 1 2",
+			"p2": "switch 3, move 3 2"
+		},
+		{
+			"p1": "move 3 2, switch 3",
+			"p2": "move 2 -2, switch 4"
+		},
+		{
+			"p1": "switch 4, move 2 -1",
+			"p2": "move 4, move 1 mega"
+		},
+		{
+			"p1": "switch 4, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 2 -2, switch 3",
+			"p2": "move 3 -2, move 2"
+		},
+		{
+			"p1": "move 4 2, move 4",
+			"p2": "move 3 2, move 3 -1"
+		},
+		{
+			"p1": "move 3 1, switch 3",
+			"p2": "move 3 1, switch 3"
+		},
+		{
+			"p1": "move 2 2, move 2 -1",
+			"p2": "move 1 -2, move 2 2"
+		},
+		{
+			"p1": "pass, switch 3",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 3 -2, move 1 2",
+			"p2": "move 2 2, move 2 2"
+		},
+		{
+			"p1": "move 4 2, pass",
+			"p2": "move 3 1, move 2 1"
+		},
+		{
+			"p1": "move 4 2, pass",
+			"p2": "switch 3, move 2 -1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 4, pass"
+		},
+		{
+			"p1": "move 2 -2, pass",
+			"p2": "move 3 1, move 2 1"
+		}
+	],
+	"teams": [
+		"BA-1017",
+		"FR-683"
+	]
+}

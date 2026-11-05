@@ -1,0 +1,310 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,12731,52360,30400,29642",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Floette-Eternal",
+			"item": "Floettite",
+			"ability": "Flower Veil",
+			"moves": [
+				"Moonblast",
+				"Dazzling Gleam",
+				"Light of Ruin",
+				"Protect"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 4,
+				"atk": 0,
+				"def": 8,
+				"spa": 32,
+				"spd": 0,
+				"spe": 22
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "Rillaboom",
+			"item": "Occa Berry",
+			"ability": "Grassy Surge",
+			"moves": [
+				"Wood Hammer",
+				"Fake Out",
+				"Stomping Tantrum",
+				"Grassy Glide"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 21,
+				"atk": 5,
+				"def": 1,
+				"spa": 0,
+				"spd": 32,
+				"spe": 7
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "Kingambit",
+			"item": "Focus Sash",
+			"ability": "Defiant",
+			"moves": [
+				"Sucker Punch",
+				"Low Kick",
+				"Kowtow Cleave",
+				"Iron Head"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 1,
+				"atk": 32,
+				"def": 0,
+				"spa": 0,
+				"spd": 1,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "Charizard",
+			"item": "Charizardite X",
+			"ability": "Blaze",
+			"moves": [
+				"Dragon Dance",
+				"Dragon Claw",
+				"Protect",
+				"Flare Blitz"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 4,
+				"atk": 30,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Incineroar",
+			"item": "Sitrus Berry",
+			"ability": "Intimidate",
+			"moves": [
+				"Fake Out",
+				"Throat Chop",
+				"Parting Shot",
+				"Flare Blitz"
+			],
+			"nature": "Careful",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 6,
+				"spa": 0,
+				"spd": 20,
+				"spe": 8
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "Rillaboom",
+			"item": "Miracle Seed",
+			"ability": "Grassy Surge",
+			"moves": [
+				"High Horsepower",
+				"Grassy Glide",
+				"Fake Out",
+				"Protect"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 31,
+				"atk": 5,
+				"def": 18,
+				"spa": 0,
+				"spd": 11,
+				"spe": 1
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "Salamence",
+			"item": "Salamencite",
+			"ability": "Intimidate",
+			"moves": [
+				"Tailwind",
+				"Dragon Pulse",
+				"Hyper Voice",
+				"Protect"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 1,
+				"atk": 0,
+				"def": 0,
+				"spa": 32,
+				"spd": 1,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "Floette-Eternal",
+			"item": "Floettite",
+			"ability": "Flower Veil",
+			"moves": [
+				"Calm Mind",
+				"Draining Kiss",
+				"Light of Ruin",
+				"Protect"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 16,
+				"spa": 15,
+				"spd": 0,
+				"spe": 3
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 3 1 mega, move 2 2",
+			"p2": "move 2 2, move 2 2"
+		},
+		{
+			"p1": "move 4, switch 4",
+			"p2": "move 4 2, move 2 -1"
+		},
+		{
+			"p1": "move 4, move 2 1",
+			"p2": "switch 4, move 2 1"
+		},
+		{
+			"p1": "move 1 -2, move 4 -1",
+			"p2": "move 3 -2 mega, move 1 1"
+		},
+		{
+			"p1": "switch 4, switch 3",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 3 2, move 3 -1",
+			"p2": "move 1, move 2 2"
+		},
+		{
+			"p1": "move 3 -2, move 1 2",
+			"p2": "move 2 2, move 2 -1"
+		},
+		{
+			"p1": "move 1 -2, pass",
+			"p2": "move 3 2, move 1 1"
+		},
+		{
+			"p1": "move 3 1, pass",
+			"p2": "move 3 -2, switch 4"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "pass, switch 4"
+		},
+		{
+			"p1": "move 4 1, pass",
+			"p2": "move 2 2, move 2 -1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 3, pass"
+		}
+	],
+	"teams": [
+		"MC53",
+		"MC52"
+	]
+}

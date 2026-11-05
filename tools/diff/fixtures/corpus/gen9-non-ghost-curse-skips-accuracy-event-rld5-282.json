@@ -1,0 +1,262 @@
+{
+	"format": "gen9vgc2023regd",
+	"seed": "gen5,16135,4891,45036,18632",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "quilladin",
+			"item": "magoberry",
+			"ability": "scrappy",
+			"moves": [
+				"gigadrain",
+				"storedpower",
+				"drillrun",
+				"curse"
+			],
+			"nature": "docile",
+			"evs": {
+				"hp": 52,
+				"atk": 84,
+				"def": 124,
+				"spa": 200,
+				"spd": 20,
+				"spe": 28
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 12,
+				"spd": 31,
+				"spe": 19
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "kubfu",
+			"item": "firestone",
+			"ability": "rivalry",
+			"moves": [
+				"furycutter",
+				"psychic",
+				"closecombat",
+				"transform"
+			],
+			"nature": "calm",
+			"evs": {
+				"hp": 168,
+				"atk": 76,
+				"def": 212,
+				"spa": 52,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 4,
+				"def": 31,
+				"spa": 22,
+				"spd": 4,
+				"spe": 22
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "samurott",
+			"item": "passhoberry",
+			"ability": "leafguard",
+			"moves": [
+				"dazzlinggleam",
+				"meteormash",
+				"powertrip",
+				"lastrespects"
+			],
+			"nature": "adamant",
+			"evs": {
+				"hp": 252,
+				"atk": 120,
+				"def": 136,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 25,
+				"spa": 31,
+				"spd": 31,
+				"spe": 18
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "bramblin",
+			"item": "focussash",
+			"ability": "cloudnine",
+			"moves": [
+				"headsmash",
+				"doubleshock",
+				"frostbreath",
+				"howl"
+			],
+			"nature": "docile",
+			"evs": {
+				"hp": 136,
+				"atk": 16,
+				"def": 152,
+				"spa": 72,
+				"spd": 8,
+				"spe": 124
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 21,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "avalugghisui",
+			"item": "qualotberry",
+			"ability": "dryskin",
+			"moves": [
+				"swallow",
+				"afteryou",
+				"flipturn",
+				"pounce"
+			],
+			"nature": "careful",
+			"evs": {
+				"hp": 4,
+				"atk": 172,
+				"def": 168,
+				"spa": 12,
+				"spd": 16,
+				"spe": 136
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 15,
+				"spd": 31,
+				"spe": 20
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "gulpin",
+			"item": "rawstberry",
+			"ability": "noguard",
+			"moves": [
+				"revivalblessing",
+				"wingattack",
+				"avalanche",
+				"mudshot"
+			],
+			"nature": "mild",
+			"evs": {
+				"hp": 92,
+				"atk": 152,
+				"def": 128,
+				"spa": 100,
+				"spd": 36,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "tatsugiristretchy",
+			"item": "focusband",
+			"ability": "sweetveil",
+			"moves": [
+				"minimize",
+				"thief",
+				"powersplit",
+				"grassyterrain"
+			],
+			"nature": "brave",
+			"evs": {
+				"hp": 172,
+				"atk": 132,
+				"def": 44,
+				"spa": 160,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 28,
+				"spd": 31,
+				"spe": 28
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "gabite",
+			"item": "silverpowder",
+			"ability": "static",
+			"moves": [
+				"avalanche",
+				"flashcannon",
+				"twinbeam",
+				"hurricane"
+			],
+			"nature": "careful",
+			"evs": {
+				"hp": 144,
+				"atk": 56,
+				"def": 124,
+				"spa": 36,
+				"spd": 36,
+				"spe": 16
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 4, move 4 2",
+			"p2": "move 1, move 2 1"
+		}
+	]
+}

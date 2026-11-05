@@ -1,0 +1,262 @@
+{
+ "format": "gen7vgc2019",
+ "seed": "gen5,9,6,9,12",
+ "team1": [
+  {
+   "name": "Mon0",
+   "species": "Garchomp",
+   "item": "Sitrus Berry",
+   "ability": "Rough Skin",
+   "moves": [
+    "Acupressure",
+    "Protect",
+    "Earthquake",
+    "Dragon Claw"
+   ],
+   "nature": "Serious",
+   "evs": {
+    "hp": 0,
+    "atk": 0,
+    "def": 0,
+    "spa": 0,
+    "spd": 0,
+    "spe": 0
+   },
+   "ivs": {
+    "hp": 31,
+    "atk": 31,
+    "def": 31,
+    "spa": 31,
+    "spd": 31,
+    "spe": 31
+   },
+   "level": 50,
+   "gender": "M"
+  },
+  {
+   "name": "Mon1",
+   "species": "Sylveon",
+   "item": "Leftovers",
+   "ability": "Pixilate",
+   "moves": [
+    "Crafty Shield",
+    "Protect",
+    "Hyper Voice",
+    "Moonblast"
+   ],
+   "nature": "Serious",
+   "evs": {
+    "hp": 0,
+    "atk": 0,
+    "def": 0,
+    "spa": 0,
+    "spd": 0,
+    "spe": 0
+   },
+   "ivs": {
+    "hp": 31,
+    "atk": 31,
+    "def": 31,
+    "spa": 31,
+    "spd": 31,
+    "spe": 31
+   },
+   "level": 50,
+   "gender": "M"
+  },
+  {
+   "name": "Mon2",
+   "species": "Snorlax",
+   "item": "Leftovers",
+   "ability": "Thick Fat",
+   "moves": [
+    "Curse",
+    "Body Slam",
+    "Rest",
+    "Protect"
+   ],
+   "nature": "Serious",
+   "evs": {
+    "hp": 0,
+    "atk": 0,
+    "def": 0,
+    "spa": 0,
+    "spd": 0,
+    "spe": 0
+   },
+   "ivs": {
+    "hp": 31,
+    "atk": 31,
+    "def": 31,
+    "spa": 31,
+    "spd": 31,
+    "spe": 31
+   },
+   "level": 50,
+   "gender": "M"
+  },
+  {
+   "name": "Mon3",
+   "species": "Kingambit",
+   "item": "Leftovers",
+   "ability": "Defiant",
+   "moves": [
+    "Sucker Punch",
+    "Protect",
+    "Iron Head",
+    "Kowtow Cleave"
+   ],
+   "nature": "Serious",
+   "evs": {
+    "hp": 0,
+    "atk": 0,
+    "def": 0,
+    "spa": 0,
+    "spd": 0,
+    "spe": 0
+   },
+   "ivs": {
+    "hp": 31,
+    "atk": 31,
+    "def": 31,
+    "spa": 31,
+    "spd": 31,
+    "spe": 31
+   },
+   "level": 50,
+   "gender": "M"
+  }
+ ],
+ "team2": [
+  {
+   "name": "Mon0",
+   "species": "Gyarados",
+   "item": "Sitrus Berry",
+   "ability": "Intimidate",
+   "moves": [
+    "Waterfall",
+    "Protect",
+    "Ice Fang",
+    "Thunder Wave"
+   ],
+   "nature": "Serious",
+   "evs": {
+    "hp": 0,
+    "atk": 0,
+    "def": 0,
+    "spa": 0,
+    "spd": 0,
+    "spe": 0
+   },
+   "ivs": {
+    "hp": 31,
+    "atk": 31,
+    "def": 31,
+    "spa": 31,
+    "spd": 31,
+    "spe": 31
+   },
+   "level": 50,
+   "gender": "M"
+  },
+  {
+   "name": "Mon1",
+   "species": "Incineroar",
+   "item": "Sitrus Berry",
+   "ability": "Intimidate",
+   "moves": [
+    "Fake Out",
+    "Protect",
+    "Snarl",
+    "Flare Blitz"
+   ],
+   "nature": "Serious",
+   "evs": {
+    "hp": 0,
+    "atk": 0,
+    "def": 0,
+    "spa": 0,
+    "spd": 0,
+    "spe": 0
+   },
+   "ivs": {
+    "hp": 31,
+    "atk": 31,
+    "def": 31,
+    "spa": 31,
+    "spd": 31,
+    "spe": 31
+   },
+   "level": 50,
+   "gender": "M"
+  },
+  {
+   "name": "Mon2",
+   "species": "Snorlax",
+   "item": "Leftovers",
+   "ability": "Thick Fat",
+   "moves": [
+    "Curse",
+    "Body Slam",
+    "Rest",
+    "Protect"
+   ],
+   "nature": "Serious",
+   "evs": {
+    "hp": 0,
+    "atk": 0,
+    "def": 0,
+    "spa": 0,
+    "spd": 0,
+    "spe": 0
+   },
+   "ivs": {
+    "hp": 31,
+    "atk": 31,
+    "def": 31,
+    "spa": 31,
+    "spd": 31,
+    "spe": 31
+   },
+   "level": 50,
+   "gender": "M"
+  },
+  {
+   "name": "Mon3",
+   "species": "Kingambit",
+   "item": "Leftovers",
+   "ability": "Defiant",
+   "moves": [
+    "Sucker Punch",
+    "Protect",
+    "Iron Head",
+    "Kowtow Cleave"
+   ],
+   "nature": "Serious",
+   "evs": {
+    "hp": 0,
+    "atk": 0,
+    "def": 0,
+    "spa": 0,
+    "spd": 0,
+    "spe": 0
+   },
+   "ivs": {
+    "hp": 31,
+    "atk": 31,
+    "def": 31,
+    "spa": 31,
+    "spd": 31,
+    "spe": 31
+   },
+   "level": 50,
+   "gender": "M"
+  }
+ ],
+ "turns": [
+  {
+   "p1": "move 1 -1, move 1",
+   "p2": "move 2, move 2"
+  }
+ ]
+}

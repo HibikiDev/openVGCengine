@@ -1,0 +1,262 @@
+{
+	"format": "gen6vgc2016",
+	"seed": "gen5,38482,36641,47471,42904",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "electrike",
+			"item": "clawfossil",
+			"ability": "moldbreaker",
+			"moves": [
+				"sonicboom",
+				"slackoff",
+				"freezedry",
+				"powerwhip"
+			],
+			"nature": "lonely",
+			"evs": {
+				"hp": 188,
+				"atk": 116,
+				"def": 120,
+				"spa": 84,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 6,
+				"atk": 31,
+				"def": 2,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "glameow",
+			"item": "keeberry",
+			"ability": "mummy",
+			"moves": [
+				"eggbomb",
+				"whirlwind",
+				"flail",
+				"venoshock"
+			],
+			"nature": "naive",
+			"evs": {
+				"hp": 168,
+				"atk": 188,
+				"def": 152,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 14,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "lairon",
+			"item": "diveball",
+			"ability": "aerilate",
+			"moves": [
+				"solarbeam",
+				"powergem",
+				"bravebird",
+				"eggbomb"
+			],
+			"nature": "serious",
+			"evs": {
+				"hp": 48,
+				"atk": 4,
+				"def": 24,
+				"spa": 20,
+				"spd": 8,
+				"spe": 12
+			},
+			"ivs": {
+				"hp": 5,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 29,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "pikachucosplay",
+			"item": "shockdrive",
+			"ability": "purepower",
+			"moves": [
+				"whirlpool",
+				"darkvoid",
+				"gust",
+				"flamecharge"
+			],
+			"nature": "jolly",
+			"evs": {
+				"hp": 112,
+				"atk": 16,
+				"def": 204,
+				"spa": 0,
+				"spd": 168,
+				"spe": 8
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 13,
+				"spe": 13
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "fearow",
+			"item": "ampharosite",
+			"ability": "refrigerate",
+			"moves": [
+				"scratch",
+				"psybeam",
+				"foresight",
+				"pluck"
+			],
+			"nature": "hasty",
+			"evs": {
+				"hp": 204,
+				"atk": 40,
+				"def": 172,
+				"spa": 92,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 25,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "thundurus",
+			"item": "mindplate",
+			"ability": "damp",
+			"moves": [
+				"circlethrow",
+				"slash",
+				"incinerate",
+				"zapcannon"
+			],
+			"nature": "docile",
+			"evs": {
+				"hp": 220,
+				"atk": 0,
+				"def": 8,
+				"spa": 104,
+				"spd": 112,
+				"spe": 64
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 20,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "weepinbell",
+			"item": "meadowplate",
+			"ability": "sandstream",
+			"moves": [
+				"nastyplot",
+				"topsyturvy",
+				"flash",
+				"odorsleuth"
+			],
+			"nature": "calm",
+			"evs": {
+				"hp": 16,
+				"atk": 236,
+				"def": 4,
+				"spa": 180,
+				"spd": 20,
+				"spe": 20
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 7,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "poochyena",
+			"item": "kasibberry",
+			"ability": "infiltrator",
+			"moves": [
+				"minimize",
+				"rockclimb",
+				"weatherball",
+				"substitute"
+			],
+			"nature": "naive",
+			"evs": {
+				"hp": 232,
+				"atk": 184,
+				"def": 4,
+				"spa": 88,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 6,
+				"def": 31,
+				"spa": 20,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 2, move 2 2",
+			"p2": "move 3 2, move 1 2"
+		}
+	]
+}

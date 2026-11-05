@@ -1,0 +1,310 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,2811,20736,35650,38734",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Rillaboom",
+			"item": "Life Orb",
+			"ability": "Grassy Surge",
+			"moves": [
+				"Drum Beating",
+				"Grassy Glide",
+				"High Horsepower",
+				"Fake Out"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 24,
+				"atk": 15,
+				"def": 0,
+				"spa": 0,
+				"spd": 1,
+				"spe": 26
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "Metagross-Mega",
+			"item": "Metagrossite",
+			"ability": "Tough Claws",
+			"moves": [
+				"Iron Head",
+				"Psychic Fangs",
+				"Body Press",
+				"Protect"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 2,
+				"atk": 21,
+				"def": 11,
+				"spa": 0,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "Kommo-o",
+			"item": "Grassy Seed",
+			"ability": "Soundproof",
+			"moves": [
+				"Clanging Scales",
+				"Aura Sphere",
+				"Clangorous Soul",
+				"Protect"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 10,
+				"atk": 0,
+				"def": 1,
+				"spa": 20,
+				"spd": 5,
+				"spe": 30
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "Gengar-Mega",
+			"item": "Gengarite",
+			"ability": "Shadow Tag",
+			"moves": [
+				"Shadow Ball",
+				"Sludge Bomb",
+				"Substitute",
+				"Protect"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 20,
+				"atk": 0,
+				"def": 4,
+				"spa": 10,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Swampert",
+			"item": "Swampertite",
+			"ability": "Torrent",
+			"moves": [
+				"Wave Crash",
+				"Earthquake",
+				"Ice Punch",
+				"Protect"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 2,
+				"atk": 32,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "Basculegion",
+			"item": "Choice Scarf",
+			"ability": "Adaptability",
+			"moves": [
+				"Wave Crash",
+				"Flip Turn",
+				"Aqua Jet",
+				"Last Respects"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 0,
+				"atk": 32,
+				"def": 2,
+				"spa": 0,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "Archaludon",
+			"item": "Leftovers",
+			"ability": "Stamina",
+			"moves": [
+				"Dragon Pulse",
+				"Flash Cannon",
+				"Electro Shot",
+				"Protect"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 0,
+				"spa": 25,
+				"spd": 0,
+				"spe": 9
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "Incineroar",
+			"item": "Passho Berry",
+			"ability": "Intimidate",
+			"moves": [
+				"Flare Blitz",
+				"Darkest Lariat",
+				"Parting Shot",
+				"Fake Out"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 31,
+				"atk": 5,
+				"def": 16,
+				"spa": 0,
+				"spd": 10,
+				"spe": 4
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 2 2, move 2 2",
+			"p2": "move 3 2 mega, move 4 1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "pass, switch 4"
+		},
+		{
+			"p1": "move 2 1, move 1 2",
+			"p2": "move 1 2, move 3 2"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "pass, switch 3"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 3, pass"
+		},
+		{
+			"p1": "move 3 2, move 4",
+			"p2": "move 2 2, move 3 2"
+		},
+		{
+			"p1": "move 3 2, move 4",
+			"p2": "move 2 1, move 1"
+		},
+		{
+			"p1": "move 1 2, move 2 2",
+			"p2": "move 1 2, move 3 2"
+		},
+		{
+			"p1": "move 2 1, move 2 1",
+			"p2": "move 2 2, move 1"
+		},
+		{
+			"p1": "switch 4, switch 3",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 3, move 1",
+			"p2": "move 1 1, move 4"
+		},
+		{
+			"p1": "move 3, move 1",
+			"p2": "move 3 2, move 4"
+		}
+	],
+	"teams": [
+		"MC118",
+		"MC214"
+	]
+}

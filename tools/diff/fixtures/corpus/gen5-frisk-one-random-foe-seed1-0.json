@@ -1,0 +1,262 @@
+{
+	"format": "gen5vgc2013",
+	"seed": "gen5,21605,35665,15740,58398",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "slugma",
+			"item": "rockgem",
+			"ability": "unaware",
+			"moves": [
+				"spore",
+				"poisongas",
+				"copycat",
+				"chipaway"
+			],
+			"nature": "bold",
+			"evs": {
+				"hp": 192,
+				"atk": 164,
+				"def": 152,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 21,
+				"spd": 0,
+				"spe": 11
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "rotommow",
+			"item": "griseousorb",
+			"ability": "frisk",
+			"moves": [
+				"snatch",
+				"embargo",
+				"payday",
+				"flamewheel"
+			],
+			"nature": "modest",
+			"evs": {
+				"hp": 24,
+				"atk": 136,
+				"def": 196,
+				"spa": 152,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 8,
+				"atk": 31,
+				"def": 31,
+				"spa": 28,
+				"spd": 31,
+				"spe": 22
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "cofagrigus",
+			"item": "luxuryball",
+			"ability": "stickyhold",
+			"moves": [
+				"muddywater",
+				"quickguard",
+				"withdraw",
+				"guillotine"
+			],
+			"nature": "impish",
+			"evs": {
+				"hp": 196,
+				"atk": 60,
+				"def": 152,
+				"spa": 32,
+				"spd": 68,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "krokorok",
+			"item": "apicotberry",
+			"ability": "prankster",
+			"moves": [
+				"stockpile",
+				"iceball",
+				"uproar",
+				"defog"
+			],
+			"nature": "impish",
+			"evs": {
+				"hp": 20,
+				"atk": 164,
+				"def": 12,
+				"spa": 192,
+				"spd": 88,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 22,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "solrock",
+			"item": "insectplate",
+			"ability": "contrary",
+			"moves": [
+				"sandtomb",
+				"barrage",
+				"acid",
+				"payback"
+			],
+			"nature": "timid",
+			"evs": {
+				"hp": 76,
+				"atk": 196,
+				"def": 236,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 20,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "golbat",
+			"item": "poisonbarb",
+			"ability": "shellarmor",
+			"moves": [
+				"rocksmash",
+				"lastresort",
+				"magicroom",
+				"heatwave"
+			],
+			"nature": "quirky",
+			"evs": {
+				"hp": 152,
+				"atk": 12,
+				"def": 12,
+				"spa": 132,
+				"spd": 56,
+				"spe": 88
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 10,
+				"spa": 4,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "shelmet",
+			"item": "chilldrive",
+			"ability": "scrappy",
+			"moves": [
+				"mudslap",
+				"rollout",
+				"guillotine",
+				"aurorabeam"
+			],
+			"nature": "lonely",
+			"evs": {
+				"hp": 128,
+				"atk": 96,
+				"def": 44,
+				"spa": 84,
+				"spd": 132,
+				"spe": 24
+			},
+			"ivs": {
+				"hp": 0,
+				"atk": 16,
+				"def": 31,
+				"spa": 31,
+				"spd": 14,
+				"spe": 7
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "wobbuffet",
+			"item": "pinapberry",
+			"ability": "plus",
+			"moves": [
+				"gravity",
+				"constrict",
+				"bugbite",
+				"blizzard"
+			],
+			"nature": "gentle",
+			"evs": {
+				"hp": 220,
+				"atk": 196,
+				"def": 56,
+				"spa": 36,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 20,
+				"spd": 9,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 3, move 2 1",
+			"p2": "move 2 2, move 2 1"
+		}
+	]
+}

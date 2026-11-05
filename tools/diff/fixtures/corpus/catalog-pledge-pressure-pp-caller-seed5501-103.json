@@ -1,0 +1,262 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,65317,62935,11289,3830",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "basculegionf",
+			"item": "muscleband",
+			"ability": "telepathy",
+			"moves": [
+				"waterpledge",
+				"grasspledge",
+				"firepledge",
+				"smackdown"
+			],
+			"nature": "lonely",
+			"evs": {
+				"hp": 32,
+				"atk": 18,
+				"def": 12,
+				"spa": 14,
+				"spd": 17,
+				"spe": 11
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "torterra",
+			"item": "smoothrock",
+			"ability": "sandrush",
+			"moves": [
+				"waterpledge",
+				"grasspledge",
+				"firepledge",
+				"soak"
+			],
+			"nature": "bold",
+			"evs": {
+				"hp": 32,
+				"atk": 6,
+				"def": 21,
+				"spa": 31,
+				"spd": 16,
+				"spe": 10
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "gliscor",
+			"item": "terrainextender",
+			"ability": "swarm",
+			"moves": [
+				"waterpledge",
+				"grasspledge",
+				"firepledge",
+				"dazzlinggleam"
+			],
+			"nature": "impish",
+			"evs": {
+				"hp": 32,
+				"atk": 1,
+				"def": 1,
+				"spa": 19,
+				"spd": 22,
+				"spe": 5
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "sirfetchd",
+			"item": "smoothrock",
+			"ability": "immunity",
+			"moves": [
+				"firepledge",
+				"waterpledge",
+				"grasspledge",
+				"gigatonhammer"
+			],
+			"nature": "hasty",
+			"evs": {
+				"hp": 32,
+				"atk": 13,
+				"def": 19,
+				"spa": 0,
+				"spd": 4,
+				"spe": 25
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "meganium",
+			"item": "electricseed",
+			"ability": "leafguard",
+			"moves": [
+				"waterpledge",
+				"grasspledge",
+				"firepledge",
+				"bulkup"
+			],
+			"nature": "quirky",
+			"evs": {
+				"hp": 32,
+				"atk": 23,
+				"def": 30,
+				"spa": 25,
+				"spd": 20,
+				"spe": 2
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "pincurchin",
+			"item": "dragonfang",
+			"ability": "pressure",
+			"moves": [
+				"grasspledge",
+				"waterpledge",
+				"firepledge",
+				"raindance"
+			],
+			"nature": "quirky",
+			"evs": {
+				"hp": 32,
+				"atk": 31,
+				"def": 2,
+				"spa": 25,
+				"spd": 26,
+				"spe": 7
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "armarouge",
+			"item": "muscleband",
+			"ability": "furcoat",
+			"moves": [
+				"firepledge",
+				"grasspledge",
+				"waterpledge",
+				"reflect"
+			],
+			"nature": "serious",
+			"evs": {
+				"hp": 32,
+				"atk": 7,
+				"def": 31,
+				"spa": 18,
+				"spd": 1,
+				"spe": 22
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "golisopod",
+			"item": "choicescarf",
+			"ability": "dryskin",
+			"moves": [
+				"waterpledge",
+				"firepledge",
+				"grasspledge",
+				"bravebird"
+			],
+			"nature": "impish",
+			"evs": {
+				"hp": 32,
+				"atk": 1,
+				"def": 28,
+				"spa": 10,
+				"spd": 15,
+				"spe": 9
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 1 1, move 2 2",
+			"p2": "move 3 2, move 3 1"
+		}
+	]
+}

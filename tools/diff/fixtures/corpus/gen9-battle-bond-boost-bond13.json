@@ -1,0 +1,270 @@
+{
+	"format": "gen9vgc2024regg",
+	"seed": "gen5,63234,44169,51465,11847",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "greninjabond",
+			"item": "wiseglasses",
+			"ability": "battlebond",
+			"moves": [
+				"hydropump",
+				"earthquake",
+				"darkpulse",
+				"protect"
+			],
+			"nature": "adamant",
+			"evs": {
+				"hp": 232,
+				"atk": 132,
+				"def": 108,
+				"spa": 36,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Poison"
+		},
+		{
+			"name": "Mon1",
+			"species": "pikachu",
+			"item": "chilanberry",
+			"ability": "battlebond",
+			"moves": [
+				"protect",
+				"tackle",
+				"icebeam",
+				"watershuriken"
+			],
+			"nature": "adamant",
+			"evs": {
+				"hp": 80,
+				"atk": 36,
+				"def": 156,
+				"spa": 176,
+				"spd": 60,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 21,
+				"def": 31,
+				"spa": 31,
+				"spd": 24,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Stellar"
+		},
+		{
+			"name": "Mon2",
+			"species": "greninjaash",
+			"item": "greatball",
+			"ability": "battlebond",
+			"moves": [
+				"earthquake",
+				"darkpulse",
+				"hydropump",
+				"watershuriken"
+			],
+			"nature": "gentle",
+			"evs": {
+				"hp": 116,
+				"atk": 248,
+				"def": 144,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 17,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Ground"
+		},
+		{
+			"name": "Mon3",
+			"species": "greninjaash",
+			"item": "chippedpot",
+			"ability": "battlebond",
+			"moves": [
+				"darkpulse",
+				"tackle",
+				"icebeam",
+				"watershuriken"
+			],
+			"nature": "calm",
+			"evs": {
+				"hp": 196,
+				"atk": 212,
+				"def": 72,
+				"spa": 28,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 18,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Grass"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "greninjabond",
+			"item": "choicespecs",
+			"ability": "battlebond",
+			"moves": [
+				"icebeam",
+				"earthquake",
+				"tackle",
+				"hydropump"
+			],
+			"nature": "adamant",
+			"evs": {
+				"hp": 144,
+				"atk": 144,
+				"def": 88,
+				"spa": 132,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 22,
+				"def": 31,
+				"spa": 31,
+				"spd": 18,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Dark"
+		},
+		{
+			"name": "Mon1",
+			"species": "pikachu",
+			"item": "spelltag",
+			"ability": "battlebond",
+			"moves": [
+				"hydropump",
+				"icebeam",
+				"earthquake",
+				"protect"
+			],
+			"nature": "timid",
+			"evs": {
+				"hp": 64,
+				"atk": 236,
+				"def": 4,
+				"spa": 172,
+				"spd": 32,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 28,
+				"spa": 19,
+				"spd": 5,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Electric"
+		},
+		{
+			"name": "Mon2",
+			"species": "pikachu",
+			"item": "syrupyapple",
+			"ability": "battlebond",
+			"moves": [
+				"darkpulse",
+				"protect",
+				"hydropump",
+				"earthquake"
+			],
+			"nature": "quiet",
+			"evs": {
+				"hp": 104,
+				"atk": 204,
+				"def": 84,
+				"spa": 16,
+				"spd": 0,
+				"spe": 100
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Ghost"
+		},
+		{
+			"name": "Mon3",
+			"species": "greninjaash",
+			"item": "softsand",
+			"ability": "battlebond",
+			"moves": [
+				"earthquake",
+				"protect",
+				"tackle",
+				"watershuriken"
+			],
+			"nature": "careful",
+			"evs": {
+				"hp": 204,
+				"atk": 80,
+				"def": 52,
+				"spa": 60,
+				"spd": 96,
+				"spe": 16
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 26,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Flying"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 4, move 2 1 terastallize",
+			"p2": "move 2 terastallize, move 3"
+		}
+	]
+}

@@ -1,0 +1,243 @@
+{
+ "seed": "gen5,11,12,13,14",
+ "format": "gen9championsvgc2026regmc",
+ "team1": [
+  {
+   "name": "a",
+   "species": "archaludon",
+   "item": "",
+   "ability": "sturdy",
+   "moves": [
+    "flashcannon",
+    "protect"
+   ],
+   "nature": "hardy",
+   "evs": {
+    "hp": 0,
+    "atk": 0,
+    "def": 0,
+    "spa": 0,
+    "spd": 0,
+    "spe": 0
+   },
+   "ivs": {
+    "hp": 31,
+    "atk": 31,
+    "def": 31,
+    "spa": 31,
+    "spd": 31,
+    "spe": 31
+   },
+   "level": 50,
+   "gender": "M"
+  },
+  {
+   "name": "b",
+   "species": "garchomp",
+   "item": "",
+   "ability": "roughskin",
+   "moves": [
+    "protect",
+    "earthquake"
+   ],
+   "nature": "hardy",
+   "evs": {
+    "hp": 0,
+    "atk": 0,
+    "def": 0,
+    "spa": 0,
+    "spd": 0,
+    "spe": 0
+   },
+   "ivs": {
+    "hp": 31,
+    "atk": 31,
+    "def": 31,
+    "spa": 31,
+    "spd": 31,
+    "spe": 31
+   },
+   "level": 50,
+   "gender": "M"
+  },
+  {
+   "name": "c",
+   "species": "snorlax",
+   "item": "",
+   "ability": "thickfat",
+   "moves": [
+    "tackle"
+   ],
+   "nature": "hardy",
+   "evs": {
+    "hp": 0,
+    "atk": 0,
+    "def": 0,
+    "spa": 0,
+    "spd": 0,
+    "spe": 0
+   },
+   "ivs": {
+    "hp": 31,
+    "atk": 31,
+    "def": 31,
+    "spa": 31,
+    "spd": 31,
+    "spe": 31
+   },
+   "level": 50,
+   "gender": "M"
+  },
+  {
+   "name": "d",
+   "species": "milotic",
+   "item": "",
+   "ability": "competitive",
+   "moves": [
+    "scald"
+   ],
+   "nature": "hardy",
+   "evs": {
+    "hp": 0,
+    "atk": 0,
+    "def": 0,
+    "spa": 0,
+    "spd": 0,
+    "spe": 0
+   },
+   "ivs": {
+    "hp": 31,
+    "atk": 31,
+    "def": 31,
+    "spa": 31,
+    "spd": 31,
+    "spe": 31
+   },
+   "level": 50,
+   "gender": "M"
+  }
+ ],
+ "team2": [
+  {
+   "name": "e",
+   "species": "incineroar",
+   "item": "",
+   "ability": "blaze",
+   "moves": [
+    "tackle",
+    "protect"
+   ],
+   "nature": "hardy",
+   "evs": {
+    "hp": 0,
+    "atk": 0,
+    "def": 0,
+    "spa": 0,
+    "spd": 0,
+    "spe": 32
+   },
+   "ivs": {
+    "hp": 31,
+    "atk": 31,
+    "def": 31,
+    "spa": 31,
+    "spd": 31,
+    "spe": 31
+   },
+   "level": 50,
+   "gender": "M"
+  },
+  {
+   "name": "f",
+   "species": "clefable",
+   "item": "",
+   "ability": "magicguard",
+   "moves": [
+    "allyswitch",
+    "protect",
+    "moonblast"
+   ],
+   "nature": "hardy",
+   "evs": {
+    "hp": 0,
+    "atk": 0,
+    "def": 0,
+    "spa": 0,
+    "spd": 0,
+    "spe": 32
+   },
+   "ivs": {
+    "hp": 31,
+    "atk": 31,
+    "def": 31,
+    "spa": 31,
+    "spd": 31,
+    "spe": 31
+   },
+   "level": 50,
+   "gender": "M"
+  },
+  {
+   "name": "g",
+   "species": "gengar",
+   "item": "",
+   "ability": "cursedbody",
+   "moves": [
+    "shadowball"
+   ],
+   "nature": "hardy",
+   "evs": {
+    "hp": 0,
+    "atk": 0,
+    "def": 0,
+    "spa": 0,
+    "spd": 0,
+    "spe": 0
+   },
+   "ivs": {
+    "hp": 31,
+    "atk": 31,
+    "def": 31,
+    "spa": 31,
+    "spd": 31,
+    "spe": 31
+   },
+   "level": 50,
+   "gender": "M"
+  },
+  {
+   "name": "h",
+   "species": "sinistcha",
+   "item": "",
+   "ability": "hospitality",
+   "moves": [
+    "matchagotcha"
+   ],
+   "nature": "hardy",
+   "evs": {
+    "hp": 0,
+    "atk": 0,
+    "def": 0,
+    "spa": 0,
+    "spd": 0,
+    "spe": 0
+   },
+   "ivs": {
+    "hp": 31,
+    "atk": 31,
+    "def": 31,
+    "spa": 31,
+    "spd": 31,
+    "spe": 31
+   },
+   "level": 50,
+   "gender": "M"
+  }
+ ],
+ "turns": [
+  {
+   "p1": "move 1 1, move 1",
+   "p2": "move 2, move 1"
+  }
+ ]
+}

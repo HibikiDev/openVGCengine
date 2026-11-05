@@ -1,0 +1,318 @@
+{
+	"format": "gen9vgc2024regg",
+	"seed": "gen5,42261,53130,14078,23522",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "clodsire",
+			"item": "choicescarf",
+			"ability": "moldbreaker",
+			"moves": [
+				"gastroacid",
+				"gigatonhammer",
+				"moonlight",
+				"disarmingvoice"
+			],
+			"nature": "jolly",
+			"evs": {
+				"hp": 32,
+				"atk": 68,
+				"def": 144,
+				"spa": 200,
+				"spd": 28,
+				"spe": 36
+			},
+			"ivs": {
+				"hp": 28,
+				"atk": 31,
+				"def": 21,
+				"spa": 30,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Normal"
+		},
+		{
+			"name": "Mon1",
+			"species": "lunala",
+			"item": "choicescarf",
+			"ability": "minus",
+			"moves": [
+				"trick",
+				"recycle",
+				"decorate",
+				"pinmissile"
+			],
+			"nature": "quiet",
+			"evs": {
+				"hp": 92,
+				"atk": 116,
+				"def": 36,
+				"spa": 224,
+				"spd": 40,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 7,
+				"def": 31,
+				"spa": 30,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N",
+			"teraType": "Grass"
+		},
+		{
+			"name": "Mon2",
+			"species": "barboach",
+			"item": "whiteherb",
+			"ability": "pixilate",
+			"moves": [
+				"block",
+				"charge",
+				"worryseed",
+				"rockthrow"
+			],
+			"nature": "careful",
+			"evs": {
+				"hp": 108,
+				"atk": 12,
+				"def": 40,
+				"spa": 16,
+				"spd": 76,
+				"spe": 120
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 1,
+				"spe": 2
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Dark"
+		},
+		{
+			"name": "Mon3",
+			"species": "ogerpon",
+			"item": "",
+			"ability": "opportunist",
+			"moves": [
+				"ivycudgel",
+				"stoneaxe",
+				"expandingforce",
+				"entrainment"
+			],
+			"nature": "quirky",
+			"evs": {
+				"hp": 180,
+				"atk": 84,
+				"def": 148,
+				"spa": 96,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 5,
+				"atk": 14,
+				"def": 31,
+				"spa": 14,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Grass"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "ribombee",
+			"item": "sitrusberry",
+			"ability": "drought",
+			"moves": [
+				"strength",
+				"hex",
+				"flamecharge",
+				"worryseed"
+			],
+			"nature": "serious",
+			"evs": {
+				"hp": 48,
+				"atk": 12,
+				"def": 144,
+				"spa": 168,
+				"spd": 80,
+				"spe": 56
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 30,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 19
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Dragon"
+		},
+		{
+			"name": "Mon1",
+			"species": "garchomp",
+			"item": "firestone",
+			"ability": "drizzle",
+			"moves": [
+				"detect",
+				"spitup",
+				"entrainment",
+				"icywind"
+			],
+			"nature": "rash",
+			"evs": {
+				"hp": 12,
+				"atk": 64,
+				"def": 204,
+				"spa": 112,
+				"spd": 108,
+				"spe": 8
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 23,
+				"def": 12,
+				"spa": 26,
+				"spd": 31,
+				"spe": 25
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Stellar"
+		},
+		{
+			"name": "Mon2",
+			"species": "ogerponwellspring",
+			"item": "wellspringmask",
+			"ability": "opportunist",
+			"moves": [
+				"ivycudgel",
+				"sacredfire",
+				"howl",
+				"worryseed"
+			],
+			"nature": "quirky",
+			"evs": {
+				"hp": 56,
+				"atk": 188,
+				"def": 8,
+				"spa": 252,
+				"spd": 4,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 17,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Water"
+		},
+		{
+			"name": "Mon3",
+			"species": "overqwil",
+			"item": "silverpowder",
+			"ability": "opportunist",
+			"moves": [
+				"skillswap",
+				"aurorabeam",
+				"poisonjab",
+				"dreameater"
+			],
+			"nature": "careful",
+			"evs": {
+				"hp": 220,
+				"atk": 16,
+				"def": 124,
+				"spa": 24,
+				"spd": 124,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 27,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Grass"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 2 -2 terastallize, move 1 2",
+			"p2": "move 2 -2, move 3 2 terastallize"
+		},
+		{
+			"p1": "switch 4, move 2",
+			"p2": "move 2 2, switch 3"
+		},
+		{
+			"p1": "switch 3, switch 4",
+			"p2": "move 3 2, move 4 2"
+		},
+		{
+			"p1": "move 4 -2, move 2 -1",
+			"p2": "move 4 1, switch 4"
+		},
+		{
+			"p1": "move 4 1, move 1",
+			"p2": "move 1 1, move 3 1"
+		},
+		{
+			"p1": "switch 3, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 3 -2, switch 4",
+			"p2": "move 2 1, switch 3"
+		},
+		{
+			"p1": "move 3 2, move 2",
+			"p2": "switch 3, move 2 1"
+		},
+		{
+			"p1": "move 2 -2, move 4 2",
+			"p2": "move 4 2, switch 4"
+		},
+		{
+			"p1": "move 3 2, move 3 1",
+			"p2": "move 3 1, move 4 1"
+		},
+		{
+			"p1": "move 1 2, move 3 -1",
+			"p2": "move 2 2, move 1 -1"
+		},
+		{
+			"p1": "pass, switch 4",
+			"p2": "pass, switch 4"
+		}
+	],
+	"teams": [
+		"scenario-187a",
+		"scenario-32b"
+	]
+}

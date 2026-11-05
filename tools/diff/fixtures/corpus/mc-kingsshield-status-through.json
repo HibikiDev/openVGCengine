@@ -1,0 +1,262 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,15664,46086,48150,53481",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "sinistchamasterpiece",
+			"item": "silkscarf",
+			"ability": "stall",
+			"moves": [
+				"taunt",
+				"kingsshield",
+				"thunderwave",
+				"willowisp"
+			],
+			"nature": "bashful",
+			"evs": {
+				"hp": 32,
+				"atk": 18,
+				"def": 26,
+				"spa": 30,
+				"spd": 5,
+				"spe": 12
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "raichualola",
+			"item": "lifeorb",
+			"ability": "motordrive",
+			"moves": [
+				"kingsshield",
+				"willowisp",
+				"tackle",
+				"protect"
+			],
+			"nature": "naughty",
+			"evs": {
+				"hp": 32,
+				"atk": 26,
+				"def": 23,
+				"spa": 20,
+				"spd": 23,
+				"spe": 1
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "persianalola",
+			"item": "hardstone",
+			"ability": "snowwarning",
+			"moves": [
+				"protect",
+				"willowisp",
+				"thunderwave",
+				"tackle"
+			],
+			"nature": "hasty",
+			"evs": {
+				"hp": 32,
+				"atk": 20,
+				"def": 24,
+				"spa": 16,
+				"spd": 10,
+				"spe": 16
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "malamar",
+			"item": "spelltag",
+			"ability": "rivalry",
+			"moves": [
+				"kingsshield",
+				"taunt",
+				"thunderwave",
+				"willowisp"
+			],
+			"nature": "bashful",
+			"evs": {
+				"hp": 32,
+				"atk": 29,
+				"def": 12,
+				"spa": 27,
+				"spd": 26,
+				"spe": 5
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "torterra",
+			"item": "focussash",
+			"ability": "analytic",
+			"moves": [
+				"kingsshield",
+				"thunderwave",
+				"willowisp",
+				"taunt"
+			],
+			"nature": "quiet",
+			"evs": {
+				"hp": 32,
+				"atk": 23,
+				"def": 30,
+				"spa": 31,
+				"spd": 15,
+				"spe": 27
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "starmie",
+			"item": "poisonbarb",
+			"ability": "pixilate",
+			"moves": [
+				"kingsshield",
+				"tackle",
+				"willowisp",
+				"taunt"
+			],
+			"nature": "brave",
+			"evs": {
+				"hp": 32,
+				"atk": 32,
+				"def": 7,
+				"spa": 8,
+				"spd": 2,
+				"spe": 8
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "lopunny",
+			"item": "lifeorb",
+			"ability": "flashfire",
+			"moves": [
+				"tackle",
+				"willowisp",
+				"thunderwave",
+				"taunt"
+			],
+			"nature": "lax",
+			"evs": {
+				"hp": 32,
+				"atk": 14,
+				"def": 24,
+				"spa": 31,
+				"spd": 9,
+				"spe": 21
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "hydreigon",
+			"item": "smoothrock",
+			"ability": "toxicdebris",
+			"moves": [
+				"thunderwave",
+				"protect",
+				"tackle",
+				"kingsshield"
+			],
+			"nature": "naive",
+			"evs": {
+				"hp": 32,
+				"atk": 14,
+				"def": 8,
+				"spa": 11,
+				"spd": 8,
+				"spe": 9
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 1 1, move 2 2",
+			"p2": "move 4 2, move 1"
+		}
+	]
+}

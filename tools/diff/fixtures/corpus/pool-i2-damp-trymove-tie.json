@@ -1,0 +1,298 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,32938,37140,26466,39368",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Arcanine-Hisui",
+			"item": "Focus Sash",
+			"ability": "Rock Head",
+			"moves": [
+				"earthquake",
+				"Flare Blitz",
+				"Extreme Speed",
+				"Protect"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 2,
+				"atk": 32,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "Salamence",
+			"item": "Salamencite",
+			"ability": "Intimidate",
+			"moves": [
+				"Hyper Voice",
+				"Draco Meteor",
+				"Heat Wave",
+				"dazzlinggleam"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 1,
+				"atk": 0,
+				"def": 1,
+				"spa": 32,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "Indeedee",
+			"item": "ejectbutton",
+			"ability": "Psychic Surge",
+			"moves": [
+				"Expanding Force",
+				"uturn",
+				"Helping Hand",
+				"Trick"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 2,
+				"atk": 0,
+				"def": 0,
+				"spa": 32,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "Metagross",
+			"item": "Metagrossite",
+			"ability": "Clear Body",
+			"moves": [
+				"Steel Roller",
+				"Psychic Fangs",
+				"Body Press",
+				"earthquake"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 24,
+				"atk": 15,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 27
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Pelipper",
+			"item": "kingsrock",
+			"ability": "Drizzle",
+			"moves": [
+				"uturn",
+				"Tailwind",
+				"Hurricane",
+				"Weather Ball"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 2,
+				"atk": 0,
+				"def": 0,
+				"spa": 32,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "Grimmsnarl",
+			"item": "Light Clay",
+			"ability": "Prankster",
+			"moves": [
+				"Spirit Break",
+				"Light Screen",
+				"Reflect",
+				"heatwave"
+			],
+			"nature": "Careful",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 19,
+				"spa": 0,
+				"spd": 15,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "Farigiraf",
+			"item": "Colbur Berry",
+			"ability": "Armor Tail",
+			"moves": [
+				"Protect",
+				"earthquake",
+				"Trick Room",
+				"Psychic"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 32,
+				"spa": 0,
+				"spd": 2,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "Swampert",
+			"item": "Swampertite",
+			"ability": "Damp",
+			"moves": [
+				"Protect",
+				"uturn",
+				"Ice Punch",
+				"Earthquake"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 32,
+				"atk": 32,
+				"def": 2,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 1, switch 4",
+			"p2": "move 3 -2, move 1 2"
+		},
+		{
+			"p1": "move 3 -2, move 2 2",
+			"p2": "move 3 -2, move 2"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "pass, switch 3"
+		},
+		{
+			"p1": "move 1, move 4",
+			"p2": "switch 4, move 4 -1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 4, pass"
+		},
+		{
+			"p1": "move 2 -2, move 2 2 mega",
+			"p2": "move 1 2, move 3"
+		},
+		{
+			"p1": "switch 4, switch 3",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 2 2, move 1 -1",
+			"p2": "move 1 -2, move 1"
+		},
+		{
+			"p1": "move 2 -2, move 1 2",
+			"p2": "move 2, move 4 2"
+		}
+	],
+	"teams": [
+		"BA-821",
+		"FR-193"
+	]
+}

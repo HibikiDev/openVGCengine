@@ -1,0 +1,24 @@
+{
+	"format": "gen6vgc2016",
+	"formatName": "[Gen 6] VGC 2016",
+	"mod": "gen6",
+	"gameType": "doubles",
+	"minSourceGen": 6,
+	"ruleset": [
+		"Flat Rules",
+		"Min Source Gen = 6",
+		"Limit Two Restricted"
+	],
+	"banlist": [
+		"Soul Dew"
+	],
+	"counts": {
+		"species": 813,
+		"megaForms": 47,
+		"moves": 617,
+		"abilities": 188,
+		"items": 283,
+		"types": 19
+	},
+	"generatedAt": "2026-10-24T13:41:13.433Z"
+}

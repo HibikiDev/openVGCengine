@@ -1,0 +1,322 @@
+{
+	"format": "gen6vgc2016",
+	"seed": "gen5,58546,21037,48178,37569",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Kangaskhan",
+			"item": "Kangaskhanite",
+			"ability": "Inner Focus",
+			"moves": [
+				"Fake Out",
+				"Sucker Punch",
+				"Power-Up Punch",
+				"Double-Edge"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 0,
+				"atk": 252,
+				"def": 4,
+				"spa": 0,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "Cresselia",
+			"item": "Sitrus Berry",
+			"ability": "Levitate",
+			"moves": [
+				"Skill Swap",
+				"Safeguard",
+				"Trick Room",
+				"Icy Wind"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 252,
+				"atk": 0,
+				"def": 28,
+				"spa": 4,
+				"spd": 116,
+				"spe": 108
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "Kyogre",
+			"item": "Blue Orb",
+			"ability": "Drizzle",
+			"moves": [
+				"Water Spout",
+				"Thunder",
+				"Ice Beam",
+				"Protect"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 4,
+				"atk": 0,
+				"def": 0,
+				"spa": 252,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "Groudon",
+			"item": "Red Orb",
+			"ability": "Drought",
+			"moves": [
+				"Eruption",
+				"Overheat",
+				"Earth Power",
+				"Protect"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 0,
+				"atk": 0,
+				"def": 0,
+				"spa": 252,
+				"spd": 0,
+				"spe": 204
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Rayquaza",
+			"item": "Focus Sash",
+			"ability": "Air Lock",
+			"moves": [
+				"Dragon Ascent",
+				"Extreme Speed",
+				"Overheat",
+				"Protect"
+			],
+			"nature": "Naive",
+			"evs": {
+				"hp": 0,
+				"atk": 148,
+				"def": 0,
+				"spa": 108,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "Thundurus",
+			"item": "Sitrus Berry",
+			"ability": "Prankster",
+			"moves": [
+				"Thunderbolt",
+				"Swagger",
+				"Taunt",
+				"Thunder Wave"
+			],
+			"nature": "Calm",
+			"evs": {
+				"hp": 236,
+				"atk": 0,
+				"def": 92,
+				"spa": 4,
+				"spd": 108,
+				"spe": 68
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "Kyogre",
+			"item": "Blue Orb",
+			"ability": "Drizzle",
+			"moves": [
+				"Water Spout",
+				"Origin Pulse",
+				"Ice Beam",
+				"Protect"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 4,
+				"atk": 0,
+				"def": 0,
+				"spa": 252,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "Ferrothorn",
+			"item": "Leftovers",
+			"ability": "Iron Barbs",
+			"moves": [
+				"Power Whip",
+				"Gyro Ball",
+				"Leech Seed",
+				"Protect"
+			],
+			"nature": "Brave",
+			"evs": {
+				"hp": 252,
+				"atk": 176,
+				"def": 0,
+				"spa": 0,
+				"spd": 80,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 2 2 mega, move 1 1",
+			"p2": "move 3 -2 mega, move 3 2"
+		},
+		{
+			"p1": "move 4 -2, move 4",
+			"p2": "switch 4, move 4 1"
+		},
+		{
+			"p1": "move 2 -2, switch 4",
+			"p2": "move 2 2, move 1 -1"
+		},
+		{
+			"p1": "move 2 1, move 3 -1",
+			"p2": "switch 4, move 4 1"
+		},
+		{
+			"p1": "move 3 2, move 3 -1",
+			"p2": "move 2 -2, move 3 -1"
+		},
+		{
+			"p1": "switch 4, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 1 1, move 2 2",
+			"p2": "move 1 -2, move 4 1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "pass, switch 4"
+		},
+		{
+			"p1": "move 3, move 2 1",
+			"p2": "move 3 -2, move 2 -1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 3, pass"
+		},
+		{
+			"p1": "move 2, move 3 1",
+			"p2": "move 4, move 4"
+		},
+		{
+			"p1": "move 1 1, move 3 1",
+			"p2": "move 3 2, move 2 2"
+		},
+		{
+			"p1": "move 1 1, move 3 2",
+			"p2": "move 1, move 4"
+		},
+		{
+			"p1": "pass, switch 3",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 3, move 1",
+			"p2": "move 3 -2, move 2 -1"
+		}
+	],
+	"teams": [
+		"V16-11",
+		"V16-17"
+	]
+}

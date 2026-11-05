@@ -1,0 +1,262 @@
+{
+	"format": "gen6vgc2016",
+	"seed": "gen5,1748,15377,37797,42054",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "rayquaza",
+			"item": "",
+			"ability": "normalize",
+			"moves": [
+				"rockslide",
+				"weatherball",
+				"raindance",
+				"precipiceblades"
+			],
+			"nature": "brave",
+			"evs": {
+				"hp": 124,
+				"atk": 164,
+				"def": 220,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 11,
+				"spa": 4,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "groudon",
+			"item": "redorb",
+			"ability": "airlock",
+			"moves": [
+				"rockslide",
+				"thunderbolt",
+				"icebeam",
+				"swordsdance"
+			],
+			"nature": "serious",
+			"evs": {
+				"hp": 196,
+				"atk": 20,
+				"def": 120,
+				"spa": 56,
+				"spd": 100,
+				"spe": 16
+			},
+			"ivs": {
+				"hp": 7,
+				"atk": 17,
+				"def": 31,
+				"spa": 5,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "rayquaza",
+			"item": "",
+			"ability": "heatproof",
+			"moves": [
+				"originpulse",
+				"weatherball",
+				"rockslide",
+				"sunnyday"
+			],
+			"nature": "bashful",
+			"evs": {
+				"hp": 136,
+				"atk": 196,
+				"def": 172,
+				"spa": 4,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 3,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "groudon",
+			"item": "blueorb",
+			"ability": "moxie",
+			"moves": [
+				"raindance",
+				"dragonascent",
+				"thunderbolt",
+				"surf"
+			],
+			"nature": "bold",
+			"evs": {
+				"hp": 68,
+				"atk": 72,
+				"def": 72,
+				"spa": 104,
+				"spd": 80,
+				"spe": 112
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 23
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "rayquaza",
+			"item": "blueorb",
+			"ability": "rockhead",
+			"moves": [
+				"rockslide",
+				"weatherball",
+				"eruption",
+				"waterspout"
+			],
+			"nature": "serious",
+			"evs": {
+				"hp": 100,
+				"atk": 112,
+				"def": 220,
+				"spa": 76,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 22,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 10
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "groudon",
+			"item": "redorb",
+			"ability": "rattled",
+			"moves": [
+				"weatherball",
+				"sunnyday",
+				"eruption",
+				"thunderbolt"
+			],
+			"nature": "bashful",
+			"evs": {
+				"hp": 28,
+				"atk": 208,
+				"def": 116,
+				"spa": 148,
+				"spd": 8,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 11,
+				"spd": 16,
+				"spe": 17
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "rayquaza",
+			"item": "redorb",
+			"ability": "forewarn",
+			"moves": [
+				"weatherball",
+				"raindance",
+				"sunnyday",
+				"precipiceblades"
+			],
+			"nature": "modest",
+			"evs": {
+				"hp": 100,
+				"atk": 196,
+				"def": 156,
+				"spa": 56,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 19,
+				"atk": 22,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "groudon",
+			"item": "redorb",
+			"ability": "parentalbond",
+			"moves": [
+				"precipiceblades",
+				"icebeam",
+				"surf",
+				"sunnyday"
+			],
+			"nature": "bold",
+			"evs": {
+				"hp": 184,
+				"atk": 232,
+				"def": 76,
+				"spa": 16,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 30,
+				"atk": 31,
+				"def": 31,
+				"spa": 5,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 2 1, move 1",
+			"p2": "move 1, move 3"
+		}
+	]
+}

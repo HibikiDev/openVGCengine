@@ -1,0 +1,51 @@
+
+{% set NA = (r.names or {}).a or 'Team A' %}{% set NB = (r.names or {}).b or 'Team B' %}
+{% macro bring(o) %}{% if o.custom %}<span class="tag">custom</span> {% endif %}<b>{{ o.lead|join(' + ') }}</b> <span class="muted">(back: {{ o.back|join(', ') }})</span>{% endmacro %}
+{% macro searched(name, side) %}
+<div class="picks">
+  <h3>{{ name }}'s turn 1</h3>
+  {% set total = r.n %}
+  <p class="small muted">{% if side.forced %}Set by you (the bot plays every later turn){% else %}What the search played, out of {{ total }}{% endif %}</p>
+  {% for line, k in side.chosen %}<div class="opt two"><span class="small prob">{{ k }}/{{ total }}</span><div class="bar sky"><i style="width: {{ (100 * k / total)|round(1) }}%"></i><span>{{ line }}</span></div></div>{% endfor %}
+  {% if side.table %}
+  <details><summary class="small">The search's candidates</summary>
+  <div class="scroll"><table class="tbl">
+    <tr><th>line</th><th class="num" title="the search's score for the line, as a win chance, averaged over the samples it came up in">win value</th><th class="num">came up</th><th class="num">played</th></tr>
+    {% for t in side.table %}<tr><td class="small">{{ t.line }}</td><td class="num">{{ ((t.q + 1) / 2)|pct }}</td><td class="num">{{ t.seen }}</td><td class="num">{{ t.chosen or '' }}</td></tr>{% endfor %}
+  </table></div></details>
+  {% endif %}
+</div>
+{% endmacro %}
+{% macro hp(d) %}{% for m, v in d|dictsort %}<span class="nowrap">{{ m }} {{ v }}%</span>{{ ", " if not loop.last }}{% endfor %}{% endmacro %}
+{% macro kos(lst) %}{% for m, k in lst %}{{ m }}{% if k > 1 %} ×{{ k }}{% endif %}{{ ", " if not loop.last }}{% endfor %}{% if not lst %}<span class="muted">-</span>{% endif %}{% endmacro %}
+<div class="card">
+  <h1>{{ 'Whole games' if r.full else 'Turn 1' }}: {{ NA }}{% if r.src %} {{ ('A' ~ r.ai) if r.ai else '(custom)' }}{% endif %} vs {{ NB }}{% if r.src %} {{ ('B' ~ r.bi) if r.bi else '(custom)' }}{% endif %}{% if r.format_name %} <span class="tag">{{ r.format_name }}</span>{% endif %}</h1>
+  {% from "_team_export.html" import team_export %}{% if team_paste is defined and job is defined and job and job.tool == 'playout' %}<div style="display:flex; gap:18px; flex-wrap:wrap">{{ team_export(team_paste(job.params.a), "show " ~ NA) }}{{ team_export(team_paste(job.params.b), "show " ~ NB) }}</div>{% endif %}
+  <p class="muted small">The bot on both sides, each seeing only the open sheets · {{ r.n }} {{ 'games' if r.full else 'samples, stopped at turn 2' }}
+    · {% if r.src %}<a href="/job/{{ r.src }}">&larr; the preview plan</a>{% else %}<a href="/playout?from={{ job.id }}">play it again</a>{% endif %}</p>
+  <div class="grid2">
+    <p>{{ NA }}: {{ bring(r.opt_a) }}</p>
+    <p>{{ NB }}: {{ bring(r.opt_b) }}</p>
+  </div>
+  {% for key in ('a', 'b') %}{% set nm = NA if key == 'a' else NB %}{% if r.policy and r.policy[key] %}<p class="small"><span class="tag">policy only</span> {{ nm }} played its raw policy (no search).</p>{% endif %}
+  {% if r.turn2 and r.turn2[key] %}<p class="small"><span class="tag">turn 2 set</span> {{ nm }}: {{ r.turn2[key].line }} <span class="muted">(applied in {{ r.turn2[key].applied }} of {{ r.n }})</span></p>{% endif %}{% endfor %}
+  {% if r.full %}<p><span class="chip t-agree">{{ NA }} won {{ r.a_won }} of {{ r.n }}</span> <span class="muted small">({{ (r.a_won / r.n)|pct }})</span></p>{% endif %}
+  {% if not r.src %}{% elif r.cell is not none %}<p class="small">In the preview plan's games, {{ NA }} wins <b>{{ r.cell|pct }}</b> <span class="muted">(a quick read: raw self-play, not searched)</span>.</p>
+  {% endif %}
+  <div class="grid2">
+    {{ searched(NA, r.sides.a) }}
+    {{ searched(NB, r.sides.b) }}
+  </div>
+</div>
+<div class="card flat">
+  <h3>How turn 1 went{% if r.full %}, and who won from there{% endif %}</h3>
+  <div class="scroll"><table class="tbl">
+    <tr><th>{{ NA }} played</th><th>{{ NB }} played</th><th class="num">times</th>{% if r.full %}<th class="num">{{ NA }} won</th><th class="num">turns</th>{% endif %}<th class="num" title="the first move of the turn was {{ NA }}'s">{{ NA }} first</th>
+      <th>{{ NA }} lost</th><th>{{ NB }} lost</th><th>{{ NA }} HP after</th><th>{{ NB }} HP after</th></tr>
+    {% for p in r.pairs %}<tr><td class="small">{{ p.a }}</td><td class="small">{{ p.b }}</td><td class="num">{{ p.n }}</td>{% if r.full %}<td class="num"><b>{{ p.a_won }}/{{ p.n }}</b></td><td class="num">{{ p.turns }}</td>{% endif %}<td class="num">{{ p.a_first|pct }}</td>
+      <td class="small">{{ kos(p.b_kos) }}</td><td class="small">{{ kos(p.a_kos) }}</td><td class="small">{{ hp(p.a_hp) }}</td><td class="small">{{ hp(p.b_hp) }}</td></tr>{% endfor %}
+  </table></div>
+  <p class="small muted">HP: average when out (fainted = 0%).</p>
+  <p class="small"><b>{{ 'Each game' if r.full else 'Each sample' }}, narrated:</b> {% for e in r.examples %}<a href="/job/{{ job.id }}/game/{{ loop.index0 }}">{{ loop.index }}{% if r.full %} ({{ 'W' if e.won else 'L' }}, {{ e.turns }} turns){% endif %}</a>{% if e.trace_b is defined %} <a class="muted" href="/job/{{ job.id }}/game/{{ loop.index0 }}?side=b" title="the same game from {{ NB }}'s side: its search's options each turn">({{ NB }}'s view)</a>{% endif %}{{ " · " if not loop.last }}{% endfor %}</p>
+  
+</div>

@@ -1,0 +1,262 @@
+{
+	"format": "gen6vgc2015",
+	"seed": "gen5,62617,45633,34701,39060",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "omastar",
+			"item": "gyaradosite",
+			"ability": "shellarmor",
+			"moves": [
+				"pursuit",
+				"recycle",
+				"blizzard",
+				"sweetkiss"
+			],
+			"nature": "relaxed",
+			"evs": {
+				"hp": 152,
+				"atk": 112,
+				"def": 8,
+				"spa": 112,
+				"spd": 124,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 10,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "rotomheat",
+			"item": "pinapberry",
+			"ability": "shielddust",
+			"moves": [
+				"pursuit",
+				"magnetrise",
+				"forestscurse",
+				"metalsound"
+			],
+			"nature": "mild",
+			"evs": {
+				"hp": 60,
+				"atk": 228,
+				"def": 156,
+				"spa": 28,
+				"spd": 36,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 23,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "krabby",
+			"item": "stickybarb",
+			"ability": "sandforce",
+			"moves": [
+				"pursuit",
+				"willowisp",
+				"magnitude",
+				"spore"
+			],
+			"nature": "impish",
+			"evs": {
+				"hp": 200,
+				"atk": 228,
+				"def": 80,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "frogadier",
+			"item": "quickpowder",
+			"ability": "lightningrod",
+			"moves": [
+				"pursuit",
+				"takedown",
+				"furyswipes",
+				"calmmind"
+			],
+			"nature": "naughty",
+			"evs": {
+				"hp": 228,
+				"atk": 136,
+				"def": 60,
+				"spa": 84,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 26,
+				"spd": 16,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "bidoof",
+			"item": "twistedspoon",
+			"ability": "filter",
+			"moves": [
+				"pursuit",
+				"avalanche",
+				"nightshade",
+				"disarmingvoice"
+			],
+			"nature": "timid",
+			"evs": {
+				"hp": 24,
+				"atk": 192,
+				"def": 176,
+				"spa": 116,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 11,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "bouffalant",
+			"item": "pixieplate",
+			"ability": "innerfocus",
+			"moves": [
+				"pursuit",
+				"detect",
+				"thrash",
+				"chargebeam"
+			],
+			"nature": "sassy",
+			"evs": {
+				"hp": 188,
+				"atk": 84,
+				"def": 76,
+				"spa": 56,
+				"spd": 104,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 30,
+				"atk": 31,
+				"def": 31,
+				"spa": 18,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "froslass",
+			"item": "brightpowder",
+			"ability": "flashfire",
+			"moves": [
+				"pursuit",
+				"rockwrecker",
+				"woodhammer",
+				"dracometeor"
+			],
+			"nature": "quiet",
+			"evs": {
+				"hp": 116,
+				"atk": 128,
+				"def": 152,
+				"spa": 104,
+				"spd": 8,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 30,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 6
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "graveler",
+			"item": "powerband",
+			"ability": "leafguard",
+			"moves": [
+				"pursuit",
+				"discharge",
+				"raindance",
+				"stoneedge"
+			],
+			"nature": "naive",
+			"evs": {
+				"hp": 112,
+				"atk": 36,
+				"def": 156,
+				"spa": 148,
+				"spd": 56,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 24,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 2, move 3 2",
+			"p2": "move 1 2, move 4 1"
+		}
+	]
+}

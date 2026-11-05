@@ -1,0 +1,262 @@
+{
+	"format": "gen9vgc2024regg",
+	"seed": "gen5,58420,7749,49697,55408",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "poochyena",
+			"item": "spookyplate",
+			"ability": "poisontouch",
+			"moves": [
+				"spicyextract",
+				"topsyturvy",
+				"populationbomb",
+				"flareblitz"
+			],
+			"nature": "bold",
+			"evs": {
+				"hp": 72,
+				"atk": 72,
+				"def": 232,
+				"spa": 132,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 13,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "finneon",
+			"item": "berrysweet",
+			"ability": "flashfire",
+			"moves": [
+				"charge",
+				"partingshot",
+				"infernalparade",
+				"synthesis"
+			],
+			"nature": "docile",
+			"evs": {
+				"hp": 212,
+				"atk": 92,
+				"def": 56,
+				"spa": 8,
+				"spd": 80,
+				"spe": 48
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "alomomola",
+			"item": "silkscarf",
+			"ability": "megalauncher",
+			"moves": [
+				"flareblitz",
+				"kowtowcleave",
+				"confusion",
+				"megadrain"
+			],
+			"nature": "mild",
+			"evs": {
+				"hp": 48,
+				"atk": 232,
+				"def": 108,
+				"spa": 104,
+				"spd": 16,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 29,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "greavard",
+			"item": "spookyplate",
+			"ability": "imposter",
+			"moves": [
+				"ember",
+				"noretreat",
+				"tropkick",
+				"mudslap"
+			],
+			"nature": "mild",
+			"evs": {
+				"hp": 220,
+				"atk": 252,
+				"def": 36,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 6,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "electivire",
+			"item": "charcoal",
+			"ability": "comatose",
+			"moves": [
+				"photongeyser",
+				"speedswap",
+				"protect",
+				"aquastep"
+			],
+			"nature": "naive",
+			"evs": {
+				"hp": 184,
+				"atk": 40,
+				"def": 168,
+				"spa": 8,
+				"spd": 108,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 1,
+				"atk": 25,
+				"def": 23,
+				"spa": 31,
+				"spd": 31,
+				"spe": 4
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "necrozmaduskmane",
+			"item": "unremarkableteacup",
+			"ability": "toxicdebris",
+			"moves": [
+				"absorb",
+				"courtchange",
+				"flipturn",
+				"clangoroussoul"
+			],
+			"nature": "naughty",
+			"evs": {
+				"hp": 60,
+				"atk": 68,
+				"def": 40,
+				"spa": 148,
+				"spd": 192,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 8,
+				"atk": 1,
+				"def": 31,
+				"spa": 8,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "fomantis",
+			"item": "tamatoberry",
+			"ability": "cursedbody",
+			"moves": [
+				"dragonhammer",
+				"matchagotcha",
+				"solarblade",
+				"nastyplot"
+			],
+			"nature": "careful",
+			"evs": {
+				"hp": 204,
+				"atk": 44,
+				"def": 16,
+				"spa": 128,
+				"spd": 52,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 0,
+				"atk": 17,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "frosmoth",
+			"item": "razorclaw",
+			"ability": "embodyaspectteal",
+			"moves": [
+				"reversal",
+				"falseswipe",
+				"fling",
+				"sludgebomb"
+			],
+			"nature": "serious",
+			"evs": {
+				"hp": 252,
+				"atk": 144,
+				"def": 112,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 27,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 4 1, move 3 2",
+			"p2": "move 1 1, move 4"
+		}
+	]
+}

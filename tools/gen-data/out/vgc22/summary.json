@@ -1,0 +1,24 @@
+{
+	"format": "gen8vgc2022",
+	"formatName": "[Gen 8] VGC 2022",
+	"mod": "gen8",
+	"gameType": "doubles",
+	"minSourceGen": 8,
+	"ruleset": [
+		"Flat Rules",
+		"!! Adjust Level = 50",
+		"Min Source Gen = 8",
+		"VGC Timer",
+		"Limit Two Restricted"
+	],
+	"banlist": [],
+	"counts": {
+		"species": 792,
+		"megaForms": 0,
+		"moves": 629,
+		"abilities": 241,
+		"items": 354,
+		"types": 19
+	},
+	"generatedAt": "2026-10-30T13:19:47.059Z"
+}

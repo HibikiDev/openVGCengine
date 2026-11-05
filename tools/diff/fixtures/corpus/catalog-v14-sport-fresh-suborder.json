@@ -1,0 +1,322 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,11184,7483,13827,38899",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Indeedee-F",
+			"item": "Rocky Helmet",
+			"ability": "Psychic Surge",
+			"moves": [
+				"Trick Room",
+				"Psychic",
+				"watersport",
+				"mudsport"
+			],
+			"nature": "Relaxed",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 32,
+				"spa": 0,
+				"spd": 2,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "Sneasler",
+			"item": "White Herb",
+			"ability": "Unburden",
+			"moves": [
+				"furycutter",
+				"razorwind",
+				"Acrobatics",
+				"Protect"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 2,
+				"atk": 32,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "Meganium",
+			"item": "Meganiumite",
+			"ability": "Overgrow",
+			"moves": [
+				"Weather Ball",
+				"teleport",
+				"lunardance",
+				"Solar Beam"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 2,
+				"atk": 0,
+				"def": 0,
+				"spa": 32,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "Aegislash",
+			"item": "Kasib Berry",
+			"ability": "Stance Change",
+			"moves": [
+				"Iron Head",
+				"secretpower",
+				"Sacred Sword",
+				"furycutter"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 2,
+				"atk": 32,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Excadrill",
+			"item": "Focus Sash",
+			"ability": "Sand Rush",
+			"moves": [
+				"High Horsepower",
+				"mudsport",
+				"lunardance",
+				"Protect"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 2,
+				"atk": 32,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "Primarina",
+			"item": "Life Orb",
+			"ability": "Liquid Voice",
+			"moves": [
+				"Moonblast",
+				"Hyper Voice",
+				"watersport",
+				"skullbash"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 26,
+				"atk": 0,
+				"def": 3,
+				"spa": 14,
+				"spd": 0,
+				"spe": 23
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "Tyranitar",
+			"item": "Tyranitarite",
+			"ability": "Sand Stream",
+			"moves": [
+				"Rock Slide",
+				"Knock Off",
+				"embargo",
+				"magnitude"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 12,
+				"atk": 26,
+				"def": 0,
+				"spa": 0,
+				"spd": 1,
+				"spe": 27
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "Sinistcha",
+			"item": "Sitrus Berry",
+			"ability": "Hospitality",
+			"moves": [
+				"furycutter",
+				"Rage Powder",
+				"skullbash",
+				"Protect"
+			],
+			"nature": "Calm",
+			"evs": {
+				"hp": 31,
+				"atk": 0,
+				"def": 10,
+				"spa": 0,
+				"spd": 25,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 2 1, move 1 -1",
+			"p2": "move 4, move 1 2"
+		},
+		{
+			"p1": "pass, switch 4",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 3, switch 3",
+			"p2": "move 2, move 1 -1"
+		},
+		{
+			"p1": "move 1, move 4 -1",
+			"p2": "switch 4, move 2"
+		},
+		{
+			"p1": "move 2 1, move 1",
+			"p2": "move 1 2, move 4 2"
+		},
+		{
+			"p1": "switch 3, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 2 2, move 2 mega",
+			"p2": "move 3 -2, move 1"
+		},
+		{
+			"p1": "move 3 -2, move 2",
+			"p2": "move 1, move 4 -1"
+		},
+		{
+			"p1": "move 4 2, pass",
+			"p2": "switch 3, move 1"
+		},
+		{
+			"p1": "move 4 1, pass",
+			"p2": "move 3 -2 mega, move 1 2"
+		},
+		{
+			"p1": "move 3 2, pass",
+			"p2": "move 2 -2, move 4 2"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 3, switch 4"
+		},
+		{
+			"p1": "move 2 -2, pass",
+			"p2": "move 1 1, move 1 -1"
+		},
+		{
+			"p1": "move 3 -2, pass",
+			"p2": "move 3 -2, move 3"
+		},
+		{
+			"p1": "move 3 1, pass",
+			"p2": "move 1, move 1 1"
+		}
+	],
+	"teams": [
+		"MC330",
+		"MC395"
+	]
+}

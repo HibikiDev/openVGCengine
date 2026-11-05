@@ -1,0 +1,308 @@
+{
+	"format": "gen8vgc2020",
+	"seed": "gen5,26735,30374,19665,20201",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Charizard",
+			"item": "loveball",
+			"ability": "innerfocus",
+			"moves": [
+				"flamewheel",
+				"lowsweep",
+				"sludge",
+				"zingzap"
+			],
+			"nature": "careful",
+			"evs": {
+				"hp": 216,
+				"atk": 36,
+				"def": 16,
+				"spa": 180,
+				"spd": 60,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"gigantamax": true
+		},
+		{
+			"name": "Mon1",
+			"species": "orbeetle",
+			"item": "oranberry",
+			"ability": "whitesmoke",
+			"moves": [
+				"splash",
+				"honeclaws",
+				"torment",
+				"kingsshield"
+			],
+			"nature": "mild",
+			"evs": {
+				"hp": 240,
+				"atk": 20,
+				"def": 28,
+				"spa": 176,
+				"spd": 44,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 28,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "snom",
+			"item": "shellbell",
+			"ability": "battlearmor",
+			"moves": [
+				"payback",
+				"poltergeist",
+				"snore",
+				"flipturn"
+			],
+			"nature": "impish",
+			"evs": {
+				"hp": 232,
+				"atk": 88,
+				"def": 188,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 11,
+				"spd": 31,
+				"spe": 12
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "clawitzer",
+			"item": "aguavberry",
+			"ability": "tangledfeet",
+			"moves": [
+				"nightshade",
+				"aromaticmist",
+				"astonish",
+				"poisonsting"
+			],
+			"nature": "modest",
+			"evs": {
+				"hp": 40,
+				"atk": 104,
+				"def": 204,
+				"spa": 160,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 7,
+				"atk": 31,
+				"def": 31,
+				"spa": 6,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "silvallyghost",
+			"item": "tr99",
+			"ability": "filter",
+			"moves": [
+				"sweetscent",
+				"poisonjab",
+				"dazzlinggleam",
+				"skullbash"
+			],
+			"nature": "timid",
+			"evs": {
+				"hp": 148,
+				"atk": 28,
+				"def": 236,
+				"spa": 92,
+				"spd": 4,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "Eevee",
+			"item": "tr79",
+			"ability": "queenlymajesty",
+			"moves": [
+				"shockwave",
+				"branchpoke",
+				"multiattack",
+				"acidspray"
+			],
+			"nature": "lonely",
+			"evs": {
+				"hp": 240,
+				"atk": 244,
+				"def": 24,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 29,
+				"def": 12,
+				"spa": 31,
+				"spd": 0,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"gigantamax": true
+		},
+		{
+			"name": "Mon2",
+			"species": "grubbin",
+			"item": "strawberrysweet",
+			"ability": "disguise",
+			"moves": [
+				"visegrip",
+				"worryseed",
+				"leafblade",
+				"smog"
+			],
+			"nature": "adamant",
+			"evs": {
+				"hp": 228,
+				"atk": 32,
+				"def": 232,
+				"spa": 16,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "grimmsnarl",
+			"item": "floatstone",
+			"ability": "minus",
+			"moves": [
+				"closecombat",
+				"copycat",
+				"vinewhip",
+				"mindreader"
+			],
+			"nature": "timid",
+			"evs": {
+				"hp": 44,
+				"atk": 16,
+				"def": 52,
+				"spa": 52,
+				"spd": 72,
+				"spe": 112
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 21
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 4 1, move 4",
+			"p2": "move 4 2, move 3 1"
+		},
+		{
+			"p1": "move 4 2, move 3 -1",
+			"p2": "move 1, move 3 1 dynamax"
+		},
+		{
+			"p1": "move 1 1 dynamax, switch 3",
+			"p2": "move 4 2, move 3 2"
+		},
+		{
+			"p1": "move 3 2, move 2 -1",
+			"p2": "move 1, move 3 2"
+		},
+		{
+			"p1": "pass, switch 4",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 3 1, move 3 2",
+			"p2": "move 2 1, move 2 1"
+		},
+		{
+			"p1": "switch 3, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 4, move 3 1",
+			"p2": "move 3, move 2 2"
+		},
+		{
+			"p1": "move 1, move 2 -1",
+			"p2": "move 1, move 3 1"
+		},
+		{
+			"p1": "move 3 -2, move 1 2",
+			"p2": "move 3, move 2 1"
+		},
+		{
+			"p1": "move 1, move 4 -1",
+			"p2": "move 2 2, switch 3"
+		},
+		{
+			"p1": "move 2, move 1 2",
+			"p2": "move 4 2, move 2 2"
+		}
+	]
+}

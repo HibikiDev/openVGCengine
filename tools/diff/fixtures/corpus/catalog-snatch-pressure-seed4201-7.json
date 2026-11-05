@@ -1,0 +1,262 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,6482,18253,18483,1340",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "armarouge",
+			"item": "sitrusberry",
+			"ability": "klutz",
+			"moves": [
+				"snatch",
+				"swordsdance",
+				"recover",
+				"calmmind"
+			],
+			"nature": "modest",
+			"evs": {
+				"hp": 32,
+				"atk": 17,
+				"def": 4,
+				"spa": 20,
+				"spd": 24,
+				"spe": 30
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "espathra",
+			"item": "damprock",
+			"ability": "pressure",
+			"moves": [
+				"calmmind",
+				"snatch",
+				"swordsdance",
+				"recover"
+			],
+			"nature": "rash",
+			"evs": {
+				"hp": 32,
+				"atk": 23,
+				"def": 31,
+				"spa": 29,
+				"spd": 17,
+				"spe": 26
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "hippowdon",
+			"item": "heatrock",
+			"ability": "moldbreaker",
+			"moves": [
+				"recover",
+				"snatch",
+				"swordsdance",
+				"calmmind"
+			],
+			"nature": "modest",
+			"evs": {
+				"hp": 32,
+				"atk": 15,
+				"def": 9,
+				"spa": 6,
+				"spd": 13,
+				"spe": 26
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "klefki",
+			"item": "cobaberry",
+			"ability": "swarm",
+			"moves": [
+				"snatch",
+				"swordsdance",
+				"recover",
+				"calmmind"
+			],
+			"nature": "naive",
+			"evs": {
+				"hp": 32,
+				"atk": 2,
+				"def": 3,
+				"spa": 10,
+				"spd": 3,
+				"spe": 15
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "kingambit",
+			"item": "rockyhelmet",
+			"ability": "soundproof",
+			"moves": [
+				"calmmind",
+				"snatch",
+				"swordsdance",
+				"recover"
+			],
+			"nature": "rash",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 19,
+				"spa": 31,
+				"spd": 19,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "gogoat",
+			"item": "magnet",
+			"ability": "filter",
+			"moves": [
+				"calmmind",
+				"recover",
+				"snatch",
+				"swordsdance"
+			],
+			"nature": "sassy",
+			"evs": {
+				"hp": 32,
+				"atk": 14,
+				"def": 20,
+				"spa": 14,
+				"spd": 19,
+				"spe": 22
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "tyranitar",
+			"item": "rindoberry",
+			"ability": "defiant",
+			"moves": [
+				"recover",
+				"calmmind",
+				"swordsdance",
+				"snatch"
+			],
+			"nature": "impish",
+			"evs": {
+				"hp": 32,
+				"atk": 4,
+				"def": 6,
+				"spa": 19,
+				"spd": 5,
+				"spe": 25
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "kangaskhan",
+			"item": "ironball",
+			"ability": "static",
+			"moves": [
+				"swordsdance",
+				"recover",
+				"calmmind",
+				"snatch"
+			],
+			"nature": "careful",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 31,
+				"spa": 24,
+				"spd": 14,
+				"spe": 1
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 2, move 3",
+			"p2": "move 2, move 4"
+		}
+	]
+}

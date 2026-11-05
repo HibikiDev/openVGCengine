@@ -1,0 +1,262 @@
+{
+	"format": "gen7vgc2019",
+	"seed": "gen5,4224,39935,42130,43890",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "lycanrocdusk",
+			"item": "",
+			"ability": "imposter",
+			"moves": [
+				"rockslide",
+				"psychic",
+				"stoneedge",
+				"closecombat"
+			],
+			"nature": "docile",
+			"evs": {
+				"hp": 36,
+				"atk": 184,
+				"def": 216,
+				"spa": 72,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 22,
+				"atk": 31,
+				"def": 31,
+				"spa": 18,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "lycanroc",
+			"item": "",
+			"ability": "speedboost",
+			"moves": [
+				"substitute",
+				"stoneedge",
+				"closecombat",
+				"psychic"
+			],
+			"nature": "impish",
+			"evs": {
+				"hp": 16,
+				"atk": 160,
+				"def": 120,
+				"spa": 84,
+				"spd": 36,
+				"spe": 92
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 29,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "lycanroc",
+			"item": "lycaniumz",
+			"ability": "galvanize",
+			"moves": [
+				"substitute",
+				"stoneedge",
+				"rockslide",
+				"closecombat"
+			],
+			"nature": "timid",
+			"evs": {
+				"hp": 48,
+				"atk": 60,
+				"def": 232,
+				"spa": 164,
+				"spd": 4,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 6,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "lycanrocmidnight",
+			"item": "",
+			"ability": "oblivious",
+			"moves": [
+				"psychic",
+				"stoneedge",
+				"substitute",
+				"closecombat"
+			],
+			"nature": "impish",
+			"evs": {
+				"hp": 8,
+				"atk": 84,
+				"def": 84,
+				"spa": 200,
+				"spd": 132,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "lycanroc",
+			"item": "",
+			"ability": "blaze",
+			"moves": [
+				"closecombat",
+				"substitute",
+				"rockslide",
+				"psychic"
+			],
+			"nature": "rash",
+			"evs": {
+				"hp": 88,
+				"atk": 176,
+				"def": 132,
+				"spa": 112,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 6,
+				"def": 31,
+				"spa": 8,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "lycanroc",
+			"item": "lycaniumz",
+			"ability": "aurabreak",
+			"moves": [
+				"substitute",
+				"protect",
+				"closecombat",
+				"stoneedge"
+			],
+			"nature": "quiet",
+			"evs": {
+				"hp": 144,
+				"atk": 20,
+				"def": 124,
+				"spa": 68,
+				"spd": 152,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 29,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "lycanrocmidnight",
+			"item": "lycaniumz",
+			"ability": "swarm",
+			"moves": [
+				"psychic",
+				"substitute",
+				"closecombat",
+				"stoneedge"
+			],
+			"nature": "impish",
+			"evs": {
+				"hp": 68,
+				"atk": 120,
+				"def": 120,
+				"spa": 12,
+				"spd": 12,
+				"spe": 64
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 4,
+				"def": 31,
+				"spa": 24,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "lycanrocmidnight",
+			"item": "",
+			"ability": "tintedlens",
+			"moves": [
+				"psychic",
+				"rockslide",
+				"closecombat",
+				"stoneedge"
+			],
+			"nature": "lonely",
+			"evs": {
+				"hp": 248,
+				"atk": 132,
+				"def": 128,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 17,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 2, move 4 2",
+			"p2": "move 3, move 4 1"
+		}
+	]
+}

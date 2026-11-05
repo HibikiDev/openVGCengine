@@ -1,0 +1,318 @@
+{
+	"format": "gen9vgc2023regc",
+	"seed": "gen5,56825,54426,62027,21147",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "vivillonriver",
+			"item": "snowball",
+			"ability": "pickup",
+			"moves": [
+				"watershuriken",
+				"waterpulse",
+				"screech",
+				"acidspray"
+			],
+			"nature": "bashful",
+			"evs": {
+				"hp": 8,
+				"atk": 80,
+				"def": 156,
+				"spa": 12,
+				"spd": 72,
+				"spe": 76
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Ghost"
+		},
+		{
+			"name": "Mon1",
+			"species": "glastrier",
+			"item": "tartapple",
+			"ability": "chlorophyll",
+			"moves": [
+				"futuresight",
+				"tickle",
+				"spiritshackle",
+				"thrash"
+			],
+			"nature": "relaxed",
+			"evs": {
+				"hp": 32,
+				"atk": 216,
+				"def": 236,
+				"spa": 24,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N",
+			"teraType": "Water"
+		},
+		{
+			"name": "Mon2",
+			"species": "quaxly",
+			"item": "habanberry",
+			"ability": "clearbody",
+			"moves": [
+				"poisonpowder",
+				"nobleroar",
+				"jetpunch",
+				"lightscreen"
+			],
+			"nature": "lonely",
+			"evs": {
+				"hp": 80,
+				"atk": 28,
+				"def": 248,
+				"spa": 152,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Steel"
+		},
+		{
+			"name": "Mon3",
+			"species": "shellos",
+			"item": "miracleseed",
+			"ability": "toxicboost",
+			"moves": [
+				"quickattack",
+				"strengthsap",
+				"stoneedge",
+				"endeavor"
+			],
+			"nature": "rash",
+			"evs": {
+				"hp": 172,
+				"atk": 112,
+				"def": 32,
+				"spa": 128,
+				"spd": 64,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 6,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Stellar"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "stantler",
+			"item": "waterstone",
+			"ability": "symbiosis",
+			"moves": [
+				"blizzard",
+				"seedbomb",
+				"wrap",
+				"ragingbull"
+			],
+			"nature": "brave",
+			"evs": {
+				"hp": 192,
+				"atk": 224,
+				"def": 92,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 1,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Fighting"
+		},
+		{
+			"name": "Mon1",
+			"species": "mudbray",
+			"item": "crackedpot",
+			"ability": "sandspit",
+			"moves": [
+				"trickroom",
+				"hypnosis",
+				"weatherball",
+				"honeclaws"
+			],
+			"nature": "careful",
+			"evs": {
+				"hp": 196,
+				"atk": 44,
+				"def": 164,
+				"spa": 104,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 26
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Ice"
+		},
+		{
+			"name": "Mon2",
+			"species": "shelloseast",
+			"item": "rarebone",
+			"ability": "levitate",
+			"moves": [
+				"bodyslam",
+				"crushclaw",
+				"aquaring",
+				"softboiled"
+			],
+			"nature": "lax",
+			"evs": {
+				"hp": 240,
+				"atk": 168,
+				"def": 100,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 25,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Grass"
+		},
+		{
+			"name": "Mon3",
+			"species": "yungoos",
+			"item": "weaknesspolicy",
+			"ability": "drizzle",
+			"moves": [
+				"dragonpulse",
+				"scaleshot",
+				"moonlight",
+				"lowkick"
+			],
+			"nature": "relaxed",
+			"evs": {
+				"hp": 176,
+				"atk": 116,
+				"def": 168,
+				"spa": 48,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 0,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 1
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Ghost"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 4 2 terastallize, move 1 2",
+			"p2": "move 4 1, move 3 -1"
+		},
+		{
+			"p1": "move 2 1, move 3 1",
+			"p2": "move 4 2 terastallize, move 3 -1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 4, pass"
+		},
+		{
+			"p1": "switch 3, move 3 -1",
+			"p2": "move 2 2, move 3 -1"
+		},
+		{
+			"p1": "move 3 -2, move 3 1",
+			"p2": "move 2 2, move 4"
+		},
+		{
+			"p1": "move 1 2, move 2 -1",
+			"p2": "move 4 -2, move 2 1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "pass, switch 3"
+		},
+		{
+			"p1": "move 3 1, move 3 -1",
+			"p2": "move 4 1, move 3"
+		},
+		{
+			"p1": "switch 3, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 2 -2, move 1 2",
+			"p2": "move 4 2, move 2 1"
+		},
+		{
+			"p1": "pass, switch 4",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 3 1, move 3 2",
+			"p2": "move 3, move 1 1"
+		}
+	],
+	"teams": [
+		"scenario-184b",
+		"scenario-22a"
+	]
+}

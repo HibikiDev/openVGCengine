@@ -1,0 +1,308 @@
+{
+	"format": "gen8vgc2022",
+	"seed": "gen5,50944,47394,13520,50048",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Orbeetle",
+			"item": "thunderstone",
+			"ability": "slushrush",
+			"moves": [
+				"zenheadbutt",
+				"poweruppunch",
+				"inferno",
+				"wideguard"
+			],
+			"nature": "bold",
+			"evs": {
+				"hp": 96,
+				"atk": 168,
+				"def": 12,
+				"spa": 0,
+				"spd": 232,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 29,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"gigantamax": true
+		},
+		{
+			"name": "Mon1",
+			"species": "combusken",
+			"item": "heatrock",
+			"ability": "furcoat",
+			"moves": [
+				"octazooka",
+				"landswrath",
+				"poisongas",
+				"magneticflux"
+			],
+			"nature": "docile",
+			"evs": {
+				"hp": 112,
+				"atk": 92,
+				"def": 200,
+				"spa": 84,
+				"spd": 20,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "blipbug",
+			"item": "blacksludge",
+			"ability": "stickyhold",
+			"moves": [
+				"highhorsepower",
+				"mudslap",
+				"counter",
+				"leafstorm"
+			],
+			"nature": "modest",
+			"evs": {
+				"hp": 124,
+				"atk": 148,
+				"def": 180,
+				"spa": 56,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 14,
+				"def": 26,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "cloyster",
+			"item": "tr83",
+			"ability": "snowwarning",
+			"moves": [
+				"dragondance",
+				"weatherball",
+				"steelwing",
+				"magicpowder"
+			],
+			"nature": "relaxed",
+			"evs": {
+				"hp": 36,
+				"atk": 132,
+				"def": 52,
+				"spa": 140,
+				"spd": 148,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 21,
+				"spa": 10,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "slowking",
+			"item": "firestone",
+			"ability": "sandspit",
+			"moves": [
+				"snarl",
+				"irondefense",
+				"brine",
+				"rockwrecker"
+			],
+			"nature": "bold",
+			"evs": {
+				"hp": 156,
+				"atk": 4,
+				"def": 124,
+				"spa": 224,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 12,
+				"def": 18,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "Alcremie-Rainbow-Swirl",
+			"item": "ultraball",
+			"ability": "flashfire",
+			"moves": [
+				"playrough",
+				"lightscreen",
+				"purify",
+				"appleacid"
+			],
+			"nature": "relaxed",
+			"evs": {
+				"hp": 92,
+				"atk": 20,
+				"def": 184,
+				"spa": 96,
+				"spd": 0,
+				"spe": 116
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"gigantamax": true
+		},
+		{
+			"name": "Mon2",
+			"species": "emolga",
+			"item": "liechiberry",
+			"ability": "aftermath",
+			"moves": [
+				"earthpower",
+				"fellstinger",
+				"hyperbeam",
+				"triattack"
+			],
+			"nature": "naive",
+			"evs": {
+				"hp": 108,
+				"atk": 28,
+				"def": 40,
+				"spa": 36,
+				"spd": 56,
+				"spe": 20
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 7,
+				"def": 2,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "cleffa",
+			"item": "bigroot",
+			"ability": "hydration",
+			"moves": [
+				"solarbeam",
+				"dragonbreath",
+				"dragonenergy",
+				"shadowball"
+			],
+			"nature": "hasty",
+			"evs": {
+				"hp": 240,
+				"atk": 252,
+				"def": 16,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 30,
+				"def": 9,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 3 1, move 3",
+			"p2": "move 2, move 4 1"
+		},
+		{
+			"p1": "move 1 1, switch 3",
+			"p2": "move 2, move 1 1 dynamax"
+		},
+		{
+			"p1": "move 3 2 dynamax, move 3",
+			"p2": "move 3 1, move 4 1"
+		},
+		{
+			"p1": "move 1 1, move 2 2",
+			"p2": "switch 3, move 1 1"
+		},
+		{
+			"p1": "switch 3, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 1 -2, move 2 -1",
+			"p2": "move 1 1, move 4 2"
+		},
+		{
+			"p1": "pass, switch 4",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 1 2, move 2 2",
+			"p2": "move 2 2, move 3 1"
+		},
+		{
+			"p1": "move 2, move 2 -1",
+			"p2": "move 3 -2, move 4 2"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 3, switch 4"
+		},
+		{
+			"p1": "move 1 -2, move 3 2",
+			"p2": "move 3 -2, move 2 -1"
+		},
+		{
+			"p1": "move 2, move 2 -1",
+			"p2": "move 4 2, pass"
+		}
+	]
+}

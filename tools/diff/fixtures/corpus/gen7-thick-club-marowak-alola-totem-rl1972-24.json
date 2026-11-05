@@ -1,0 +1,262 @@
+{
+	"format": "gen7vgc2019",
+	"seed": "gen5,6736,62368,31377,65526",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "porygon2",
+			"item": "pikashuniumz",
+			"ability": "innerfocus",
+			"moves": [
+				"stunspore",
+				"reversal",
+				"hornleech",
+				"honeclaws"
+			],
+			"nature": "bashful",
+			"evs": {
+				"hp": 20,
+				"atk": 44,
+				"def": 56,
+				"spa": 244,
+				"spd": 104,
+				"spe": 24
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "escavalier",
+			"item": "grepaberry",
+			"ability": "mistysurge",
+			"moves": [
+				"snore",
+				"bugbuzz",
+				"triattack",
+				"protect"
+			],
+			"nature": "jolly",
+			"evs": {
+				"hp": 176,
+				"atk": 228,
+				"def": 104,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 8,
+				"atk": 31,
+				"def": 31,
+				"spa": 28,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "piloswine",
+			"item": "grassiumz",
+			"ability": "healer",
+			"moves": [
+				"fairywind",
+				"furyattack",
+				"frenzyplant",
+				"woodhammer"
+			],
+			"nature": "careful",
+			"evs": {
+				"hp": 144,
+				"atk": 156,
+				"def": 184,
+				"spa": 24,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 30,
+				"atk": 31,
+				"def": 8,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "nidoranf",
+			"item": "fairiumz",
+			"ability": "klutz",
+			"moves": [
+				"oblivionwing",
+				"agility",
+				"mirrorcoat",
+				"flowershield"
+			],
+			"nature": "sassy",
+			"evs": {
+				"hp": 160,
+				"atk": 196,
+				"def": 152,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 6,
+				"atk": 31,
+				"def": 16,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "marowakalolatotem",
+			"item": "thickclub",
+			"ability": "defeatist",
+			"moves": [
+				"afteryou",
+				"muddywater",
+				"brine",
+				"takedown"
+			],
+			"nature": "rash",
+			"evs": {
+				"hp": 40,
+				"atk": 136,
+				"def": 28,
+				"spa": 124,
+				"spd": 116,
+				"spe": 60
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 10,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "vanilluxe",
+			"item": "normaliumz",
+			"ability": "blaze",
+			"moves": [
+				"luckychant",
+				"sludge",
+				"wrap",
+				"closecombat"
+			],
+			"nature": "sassy",
+			"evs": {
+				"hp": 120,
+				"atk": 24,
+				"def": 224,
+				"spa": 36,
+				"spd": 84,
+				"spe": 20
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "dhelmise",
+			"item": "destinyknot",
+			"ability": "stancechange",
+			"moves": [
+				"darkvoid",
+				"firefang",
+				"vacuumwave",
+				"grudge"
+			],
+			"nature": "timid",
+			"evs": {
+				"hp": 20,
+				"atk": 84,
+				"def": 44,
+				"spa": 16,
+				"spd": 236,
+				"spe": 108
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 27,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "duosion",
+			"item": "normaliumz",
+			"ability": "scrappy",
+			"moves": [
+				"rototiller",
+				"flail",
+				"bellydrum",
+				"thousandarrows"
+			],
+			"nature": "quirky",
+			"evs": {
+				"hp": 248,
+				"atk": 44,
+				"def": 196,
+				"spa": 20,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 20,
+				"spe": 5
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 2 1, move 2 2",
+			"p2": "move 4 1, move 3 1 zmove"
+		}
+	]
+}

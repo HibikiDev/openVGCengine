@@ -1,0 +1,262 @@
+{
+	"format": "gen8vgc2021",
+	"seed": "gen5,54451,52343,26555,45866",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "munchlax",
+			"item": "persimberry",
+			"ability": "pastelveil",
+			"moves": [
+				"poisonjab",
+				"skillswap",
+				"tackle",
+				"sludgebomb"
+			],
+			"nature": "gentle",
+			"evs": {
+				"hp": 224,
+				"atk": 180,
+				"def": 104,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 10,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "aron",
+			"item": "electricseed",
+			"ability": "trace",
+			"moves": [
+				"toxicspikes",
+				"gastroacid",
+				"roleplay",
+				"skillswap"
+			],
+			"nature": "hasty",
+			"evs": {
+				"hp": 96,
+				"atk": 252,
+				"def": 160,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 1,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "sizzlipede",
+			"item": "kasibberry",
+			"ability": "neutralizinggas",
+			"moves": [
+				"protect",
+				"toxicspikes",
+				"poisonjab",
+				"roleplay"
+			],
+			"nature": "quirky",
+			"evs": {
+				"hp": 200,
+				"atk": 28,
+				"def": 44,
+				"spa": 212,
+				"spd": 24,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 17,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 17
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "silvallyelectric",
+			"item": "blackglasses",
+			"ability": "trace",
+			"moves": [
+				"toxicspikes",
+				"tackle",
+				"gastroacid",
+				"poisonjab"
+			],
+			"nature": "modest",
+			"evs": {
+				"hp": 108,
+				"atk": 64,
+				"def": 32,
+				"spa": 48,
+				"spd": 0,
+				"spe": 156
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 1,
+				"spa": 31,
+				"spd": 14,
+				"spe": 27
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "silvallysteel",
+			"item": "rindoberry",
+			"ability": "trace",
+			"moves": [
+				"poisonjab",
+				"gastroacid",
+				"tackle",
+				"protect"
+			],
+			"nature": "hasty",
+			"evs": {
+				"hp": 240,
+				"atk": 8,
+				"def": 120,
+				"spa": 140,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 2,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 8,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "articuno",
+			"item": "mistyseed",
+			"ability": "pastelveil",
+			"moves": [
+				"roleplay",
+				"gastroacid",
+				"poisonjab",
+				"skillswap"
+			],
+			"nature": "bold",
+			"evs": {
+				"hp": 48,
+				"atk": 84,
+				"def": 36,
+				"spa": 72,
+				"spd": 104,
+				"spe": 164
+			},
+			"ivs": {
+				"hp": 4,
+				"atk": 31,
+				"def": 31,
+				"spa": 19,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "helioptile",
+			"item": "mistyseed",
+			"ability": "neutralizinggas",
+			"moves": [
+				"tackle",
+				"toxic",
+				"protect",
+				"toxicspikes"
+			],
+			"nature": "modest",
+			"evs": {
+				"hp": 212,
+				"atk": 88,
+				"def": 172,
+				"spa": 36,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 13,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "silvallyice",
+			"item": "fairyfeather",
+			"ability": "pastelveil",
+			"moves": [
+				"protect",
+				"roleplay",
+				"toxic",
+				"skillswap"
+			],
+			"nature": "docile",
+			"evs": {
+				"hp": 32,
+				"atk": 76,
+				"def": 192,
+				"spa": 40,
+				"spd": 24,
+				"spe": 144
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 12,
+				"def": 31,
+				"spa": 19,
+				"spd": 15,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 2 1, move 1",
+			"p2": "move 1 2, move 3 1"
+		}
+	]
+}

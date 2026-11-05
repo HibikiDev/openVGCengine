@@ -1,0 +1,310 @@
+{
+	"format": "gen6vgc2014",
+	"seed": "gen5,54479,48217,24487,11475",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Tyranitar",
+			"item": "Choice Scarf",
+			"ability": "Sand Stream",
+			"moves": [
+				"Rock Slide",
+				"Ice Beam",
+				"Ancient Power",
+				"skydrop"
+			],
+			"nature": "Impish",
+			"evs": {
+				"hp": 4,
+				"atk": 252,
+				"def": 252,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "Mamoswine",
+			"item": "Life Orb",
+			"ability": "Thick Fat",
+			"moves": [
+				"Ice Shard",
+				"skydrop",
+				"Rock Slide",
+				"Earthquake"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 252,
+				"atk": 60,
+				"def": 0,
+				"spa": 0,
+				"spd": 196,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "Amoonguss",
+			"item": "Black Sludge",
+			"ability": "Regenerator",
+			"moves": [
+				"skydrop",
+				"Giga Drain",
+				"Rage Powder",
+				"Sludge Bomb"
+			],
+			"nature": "Calm",
+			"evs": {
+				"hp": 252,
+				"atk": 0,
+				"def": 180,
+				"spa": 0,
+				"spd": 72,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "Garchomp",
+			"item": "Lum Berry",
+			"ability": "Rough Skin",
+			"moves": [
+				"skydrop",
+				"Earthquake",
+				"Protect",
+				"Rock Slide"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 4,
+				"atk": 252,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Gyarados",
+			"item": "Gyaradosite",
+			"ability": "Intimidate",
+			"moves": [
+				"Protect",
+				"Waterfall",
+				"skydrop",
+				"Dragon Dance"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 4,
+				"atk": 252,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "Kangaskhan",
+			"item": "Kangaskhanite",
+			"ability": "Scrappy",
+			"moves": [
+				"Fake Out",
+				"skydrop",
+				"Power-Up Punch",
+				"Circle Throw"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 4,
+				"atk": 252,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "Talonflame",
+			"item": "Life Orb",
+			"ability": "Gale Wings",
+			"moves": [
+				"Quick Guard",
+				"U-turn",
+				"Flare Blitz",
+				"skydrop"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 4,
+				"atk": 252,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "Azumarill",
+			"item": "Choice Band",
+			"ability": "Huge Power",
+			"moves": [
+				"Play Rough",
+				"skydrop",
+				"Aqua Jet",
+				"Aqua Tail"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 224,
+				"atk": 252,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"turns": [
+		{
+			"p1": "switch 3, move 1 -1",
+			"p2": "move 4, move 2 1 mega"
+		},
+		{
+			"p1": "move 1 1, move 2 -1",
+			"p2": "switch 4, move 1"
+		},
+		{
+			"p1": "move 1, switch 3",
+			"p2": "move 4 -2, move 4 -1"
+		},
+		{
+			"p1": "move 1 1, switch 4",
+			"p2": "move 3 1, switch 4"
+		},
+		{
+			"p1": "move 1 2, switch 4",
+			"p2": "move 1, switch 4"
+		},
+		{
+			"p1": "switch 3, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 4, move 2 1",
+			"p2": "move 1, switch 3"
+		},
+		{
+			"p1": "move 3, move 2 1",
+			"p2": "move 2 2, move 3 -1"
+		},
+		{
+			"p1": "pass, switch 4",
+			"p2": "switch 4, switch 3"
+		},
+		{
+			"p1": "move 1 2, move 1 2",
+			"p2": "move 2 -2, move 1 -1"
+		},
+		{
+			"p1": "move 2 1, move 1",
+			"p2": "move 4 -2, move 4 2"
+		},
+		{
+			"p1": "move 1, move 1 1",
+			"p2": "move 4 1, move 3 2"
+		}
+	],
+	"teams": [
+		"U14-68",
+		"U14-176"
+	]
+}

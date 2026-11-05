@@ -1,0 +1,318 @@
+{
+	"format": "gen9vgc2024regg",
+	"seed": "gen5,38888,48077,49403,53362",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "lanturn",
+			"item": "weaknesspolicy",
+			"ability": "unnerve",
+			"moves": [
+				"supersonic",
+				"entrainment",
+				"perishsong",
+				"horndrill"
+			],
+			"nature": "adamant",
+			"evs": {
+				"hp": 208,
+				"atk": 8,
+				"def": 240,
+				"spa": 52,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Psychic"
+		},
+		{
+			"name": "Mon1",
+			"species": "skiploom",
+			"item": "rarebone",
+			"ability": "neutralizinggas",
+			"moves": [
+				"chillyreception",
+				"growl",
+				"conversion",
+				"gastroacid"
+			],
+			"nature": "bold",
+			"evs": {
+				"hp": 224,
+				"atk": 172,
+				"def": 44,
+				"spa": 68,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 27,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 30,
+				"spe": 16
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Ice"
+		},
+		{
+			"name": "Mon2",
+			"species": "mismagius",
+			"item": "stoneplate",
+			"ability": "supersweetsyrup",
+			"moves": [
+				"xscissor",
+				"guillotine",
+				"secretsword",
+				"transform"
+			],
+			"nature": "hasty",
+			"evs": {
+				"hp": 44,
+				"atk": 120,
+				"def": 200,
+				"spa": 136,
+				"spd": 8,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 16
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Stellar"
+		},
+		{
+			"name": "Mon3",
+			"species": "luxray",
+			"item": "choicescarf",
+			"ability": "drizzle",
+			"moves": [
+				"gravity",
+				"entrainment",
+				"grassyglide",
+				"forestscurse"
+			],
+			"nature": "docile",
+			"evs": {
+				"hp": 20,
+				"atk": 0,
+				"def": 240,
+				"spa": 192,
+				"spd": 56,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Grass"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "wingull",
+			"item": "rarebone",
+			"ability": "noguard",
+			"moves": [
+				"lockon",
+				"heartswap",
+				"healpulse",
+				"entrainment"
+			],
+			"nature": "quirky",
+			"evs": {
+				"hp": 180,
+				"atk": 84,
+				"def": 36,
+				"spa": 208,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Dragon"
+		},
+		{
+			"name": "Mon1",
+			"species": "magikarp",
+			"item": "syrupyapple",
+			"ability": "poisonheal",
+			"moves": [
+				"worryseed",
+				"steameruption",
+				"courtchange",
+				"poisongas"
+			],
+			"nature": "serious",
+			"evs": {
+				"hp": 220,
+				"atk": 0,
+				"def": 84,
+				"spa": 204,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 17,
+				"atk": 31,
+				"def": 31,
+				"spa": 5,
+				"spd": 5,
+				"spe": 3
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Normal"
+		},
+		{
+			"name": "Mon2",
+			"species": "litwick",
+			"item": "sitrusberry",
+			"ability": "telepathy",
+			"moves": [
+				"drillrun",
+				"roleplay",
+				"dragonascent",
+				"switcheroo"
+			],
+			"nature": "brave",
+			"evs": {
+				"hp": 92,
+				"atk": 112,
+				"def": 156,
+				"spa": 148,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 26,
+				"def": 17,
+				"spa": 31,
+				"spd": 31,
+				"spe": 16
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Dragon"
+		},
+		{
+			"name": "Mon3",
+			"species": "slakoth",
+			"item": "sitrusberry",
+			"ability": "protosynthesis",
+			"moves": [
+				"featherdance",
+				"mistyexplosion",
+				"wish",
+				"uturn"
+			],
+			"nature": "impish",
+			"evs": {
+				"hp": 52,
+				"atk": 144,
+				"def": 8,
+				"spa": 104,
+				"spd": 200,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 15,
+				"spd": 31,
+				"spe": 23
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Dragon"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 1 1, move 2",
+			"p2": "move 4 1, move 4"
+		},
+		{
+			"p1": "move 1 2, move 1",
+			"p2": "move 4 -2, move 2 2"
+		},
+		{
+			"p1": "pass, switch 4",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 2 2 terastallize, switch 4",
+			"p2": "move 3 1, switch 3"
+		},
+		{
+			"p1": "move 2 2, switch 3",
+			"p2": "move 2 1, move 2 2 terastallize"
+		},
+		{
+			"p1": "move 2 -2, move 3 2",
+			"p2": "move 2 -2, switch 3"
+		},
+		{
+			"p1": "move 1 -2, move 4 -1",
+			"p2": "move 1 1, move 2 -1"
+		},
+		{
+			"p1": "move 4 2, move 1 1",
+			"p2": "move 1 -2, move 1 2"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "pass, switch 4"
+		},
+		{
+			"p1": "move 4 1, move 1 2",
+			"p2": "move 3 2, move 1 -1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 3, pass"
+		},
+		{
+			"p1": "move 2 -2, move 4 2",
+			"p2": "move 2 1, move 1 -1"
+		}
+	],
+	"teams": [
+		"scenario-85b",
+		"scenario-51b"
+	]
+}

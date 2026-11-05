@@ -1,0 +1,318 @@
+{
+	"format": "gen9vgc2023regd",
+	"seed": "gen5,11906,5535,1566,29499",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "arboliva",
+			"item": "choicescarf",
+			"ability": "icebody",
+			"moves": [
+				"powersplit",
+				"trickroom",
+				"astonish",
+				"hypnosis"
+			],
+			"nature": "timid",
+			"evs": {
+				"hp": 240,
+				"atk": 200,
+				"def": 68,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 21,
+				"def": 24,
+				"spa": 22,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Normal"
+		},
+		{
+			"name": "Mon1",
+			"species": "corviknight",
+			"item": "throatspray",
+			"ability": "magnetpull",
+			"moves": [
+				"hypervoice",
+				"sunnyday",
+				"thunderfang",
+				"bubblebeam"
+			],
+			"nature": "bashful",
+			"evs": {
+				"hp": 176,
+				"atk": 56,
+				"def": 16,
+				"spa": 76,
+				"spd": 84,
+				"spe": 92
+			},
+			"ivs": {
+				"hp": 26,
+				"atk": 22,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Fire"
+		},
+		{
+			"name": "Mon2",
+			"species": "landorus",
+			"item": "loadeddice",
+			"ability": "pixilate",
+			"moves": [
+				"lowsweep",
+				"tidyup",
+				"steelwing",
+				"hypervoice"
+			],
+			"nature": "adamant",
+			"evs": {
+				"hp": 176,
+				"atk": 8,
+				"def": 24,
+				"spa": 88,
+				"spd": 212,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 26
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Fighting"
+		},
+		{
+			"name": "Mon3",
+			"species": "frosmoth",
+			"item": "loadeddice",
+			"ability": "curiousmedicine",
+			"moves": [
+				"dreameater",
+				"aerialace",
+				"torchsong",
+				"populationbomb"
+			],
+			"nature": "careful",
+			"evs": {
+				"hp": 168,
+				"atk": 172,
+				"def": 96,
+				"spa": 72,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Steel"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "screamtail",
+			"item": "clearamulet",
+			"ability": "blaze",
+			"moves": [
+				"boomburst",
+				"liquidation",
+				"spicyextract",
+				"attackorder"
+			],
+			"nature": "lax",
+			"evs": {
+				"hp": 24,
+				"atk": 0,
+				"def": 220,
+				"spa": 248,
+				"spd": 16,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 5,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N",
+			"teraType": "Ice"
+		},
+		{
+			"name": "Mon1",
+			"species": "ceruledge",
+			"item": "lightclay",
+			"ability": "mirrorarmor",
+			"moves": [
+				"sweetscent",
+				"vacuumwave",
+				"spiritshackle",
+				"populationbomb"
+			],
+			"nature": "lax",
+			"evs": {
+				"hp": 124,
+				"atk": 96,
+				"def": 56,
+				"spa": 156,
+				"spd": 76,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Fire"
+		},
+		{
+			"name": "Mon2",
+			"species": "hatterene",
+			"item": "laggingtail",
+			"ability": "eartheater",
+			"moves": [
+				"snore",
+				"populationbomb",
+				"fairywind",
+				"acupressure"
+			],
+			"nature": "jolly",
+			"evs": {
+				"hp": 112,
+				"atk": 84,
+				"def": 0,
+				"spa": 124,
+				"spd": 24,
+				"spe": 164
+			},
+			"ivs": {
+				"hp": 8,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 0,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Fairy"
+		},
+		{
+			"name": "Mon3",
+			"species": "scizor",
+			"item": "smoothrock",
+			"ability": "superluck",
+			"moves": [
+				"rockblast",
+				"growth",
+				"honeclaws",
+				"powertrick"
+			],
+			"nature": "modest",
+			"evs": {
+				"hp": 40,
+				"atk": 216,
+				"def": 212,
+				"spa": 40,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 30,
+				"spa": 31,
+				"spd": 31,
+				"spe": 13
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Ice"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 4 1 terastallize, move 4 2",
+			"p2": "move 2 -2, move 3 1 terastallize"
+		},
+		{
+			"p1": "move 4 -2, switch 3",
+			"p2": "move 2 2, switch 4"
+		},
+		{
+			"p1": "switch 4, move 3 1",
+			"p2": "move 4 -2, move 1 2"
+		},
+		{
+			"p1": "switch 4, move 3 -1",
+			"p2": "move 4 2, move 1 1"
+		},
+		{
+			"p1": "move 4 1, move 1 1",
+			"p2": "move 3 1, move 2"
+		},
+		{
+			"p1": "move 4 2, move 2",
+			"p2": "move 2 1, switch 3"
+		},
+		{
+			"p1": "move 4 2, move 2",
+			"p2": "move 2 -2, switch 4"
+		},
+		{
+			"p1": "move 4 -2, move 1 1",
+			"p2": "move 3 2, move 1"
+		},
+		{
+			"p1": "switch 3, switch 4",
+			"p2": "move 2 2, move 2 2"
+		},
+		{
+			"p1": "switch 4, move 3 2",
+			"p2": "move 4 1, move 3 -1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 3, pass"
+		},
+		{
+			"p1": "switch 4, switch 3",
+			"p2": "move 3, switch 4"
+		}
+	],
+	"teams": [
+		"scenario-168a",
+		"scenario-37b"
+	]
+}

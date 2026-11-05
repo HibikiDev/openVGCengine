@@ -1,0 +1,262 @@
+{
+	"format": "gen6vgc2015",
+	"seed": "gen5,39411,21880,62656,63580",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "dragalge",
+			"item": "powerbelt",
+			"ability": "quickfeet",
+			"moves": [
+				"torment",
+				"magiccoat",
+				"barrage",
+				"seedflare"
+			],
+			"nature": "careful",
+			"evs": {
+				"hp": 212,
+				"atk": 224,
+				"def": 40,
+				"spa": 32,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 13,
+				"atk": 31,
+				"def": 31,
+				"spa": 7,
+				"spd": 31,
+				"spe": 26
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "gorebyss",
+			"item": "zapplate",
+			"ability": "soundproof",
+			"moves": [
+				"snore",
+				"fling",
+				"rototiller",
+				"heatwave"
+			],
+			"nature": "quiet",
+			"evs": {
+				"hp": 12,
+				"atk": 20,
+				"def": 36,
+				"spa": 16,
+				"spd": 132,
+				"spe": 236
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "mothim",
+			"item": "cameruptite",
+			"ability": "hypercutter",
+			"moves": [
+				"kingsshield",
+				"flamewheel",
+				"feint",
+				"conversion"
+			],
+			"nature": "gentle",
+			"evs": {
+				"hp": 24,
+				"atk": 36,
+				"def": 224,
+				"spa": 120,
+				"spd": 104,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 9,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 1
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "basculin",
+			"item": "salamencite",
+			"ability": "heatproof",
+			"moves": [
+				"tailglow",
+				"shadowpunch",
+				"facade",
+				"snarl"
+			],
+			"nature": "quirky",
+			"evs": {
+				"hp": 240,
+				"atk": 252,
+				"def": 16,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 26,
+				"spa": 31,
+				"spd": 4,
+				"spe": 17
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "kakuna",
+			"item": "micleberry",
+			"ability": "guts",
+			"moves": [
+				"sleeppowder",
+				"overheat",
+				"defendorder",
+				"toxic"
+			],
+			"nature": "naughty",
+			"evs": {
+				"hp": 212,
+				"atk": 176,
+				"def": 120,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 9
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "shuppet",
+			"item": "rockyhelmet",
+			"ability": "toughclaws",
+			"moves": [
+				"overheat",
+				"shadowclaw",
+				"flamecharge",
+				"mistball"
+			],
+			"nature": "docile",
+			"evs": {
+				"hp": 16,
+				"atk": 172,
+				"def": 96,
+				"spa": 224,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 4,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "cloyster",
+			"item": "electirizer",
+			"ability": "levitate",
+			"moves": [
+				"pluck",
+				"superpower",
+				"mudshot",
+				"yawn"
+			],
+			"nature": "modest",
+			"evs": {
+				"hp": 212,
+				"atk": 76,
+				"def": 20,
+				"spa": 48,
+				"spd": 152,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 19,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "metang",
+			"item": "dreadplate",
+			"ability": "protean",
+			"moves": [
+				"boneclub",
+				"superpower",
+				"grasswhistle",
+				"bulletpunch"
+			],
+			"nature": "naive",
+			"evs": {
+				"hp": 208,
+				"atk": 152,
+				"def": 8,
+				"spa": 128,
+				"spd": 12,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 18,
+				"atk": 31,
+				"def": 12,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 2, move 3",
+			"p2": "move 4 1, move 2 1"
+		}
+	]
+}

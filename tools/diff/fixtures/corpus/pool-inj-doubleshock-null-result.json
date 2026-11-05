@@ -1,0 +1,298 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,19114,65342,1785,34995",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Sinistcha",
+			"item": "Occa Berry",
+			"ability": "Hospitality",
+			"moves": [
+				"ragefist",
+				"Shadow Ball",
+				"Rage Powder",
+				"magnetrise"
+			],
+			"nature": "Calm",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 14,
+				"spa": 0,
+				"spd": 20,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "Golisopod",
+			"item": "Golisopite",
+			"ability": "Emergency Exit",
+			"moves": [
+				"Leech Life",
+				"glaiverush",
+				"minimize",
+				"Protect"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 32,
+				"atk": 32,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 2
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "Torkoal",
+			"item": "Charcoal",
+			"ability": "Drought",
+			"moves": [
+				"hypnosis",
+				"Weather Ball",
+				"Earth Power",
+				"glaiverush"
+			],
+			"nature": "Quiet",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 1,
+				"spa": 32,
+				"spd": 1,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "Indeedee-F",
+			"item": "Colbur Berry",
+			"ability": "Psychic Surge",
+			"moves": [
+				"Follow Me",
+				"rest",
+				"wish",
+				"Trick Room"
+			],
+			"nature": "Calm",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 15,
+				"spa": 7,
+				"spd": 11,
+				"spe": 1
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Arcanine-Hisui",
+			"item": "Choice Scarf",
+			"ability": "Intimidate",
+			"moves": [
+				"minimize",
+				"Snarl",
+				"wish",
+				"Flare Blitz"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 0,
+				"atk": 32,
+				"def": 1,
+				"spa": 0,
+				"spd": 1,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "Gholdengo",
+			"item": "Life Orb",
+			"ability": "Good as Gold",
+			"moves": [
+				"Shadow Ball",
+				"substitute",
+				"Nasty Plot",
+				"wish"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 7,
+				"atk": 0,
+				"def": 0,
+				"spa": 32,
+				"spd": 0,
+				"spe": 27
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "Pawmot",
+			"item": "Focus Sash",
+			"ability": "Iron Fist",
+			"moves": [
+				"stompingtantrum",
+				"Double Shock",
+				"Close Combat",
+				"hypnosis"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 2,
+				"atk": 32,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "Golisopod",
+			"item": "Golisopite",
+			"ability": "Emergency Exit",
+			"moves": [
+				"Leech Life",
+				"hypnosis",
+				"Bulk Up",
+				"wish"
+			],
+			"nature": "Brave",
+			"evs": {
+				"hp": 30,
+				"atk": 32,
+				"def": 0,
+				"spa": 0,
+				"spd": 4,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 1 -2, switch 3",
+			"p2": "move 4 1, move 1 -1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 3, pass"
+		},
+		{
+			"p1": "move 3, switch 3",
+			"p2": "move 3 2, move 3"
+		},
+		{
+			"p1": "move 1 2, move 1 1",
+			"p2": "move 2 2, move 1 2"
+		},
+		{
+			"p1": "switch 4, switch 3",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 4, move 4 2",
+			"p2": "move 2 2, move 1 -1"
+		},
+		{
+			"p1": "move 2, move 3 2",
+			"p2": "move 1 1, move 1 2"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "pass, switch 4"
+		},
+		{
+			"p1": "move 1, pass",
+			"p2": "move 4 -2, move 1 1"
+		}
+	],
+	"teams": [
+		"MC287",
+		"MC202"
+	]
+}

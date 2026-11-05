@@ -1,0 +1,262 @@
+{
+	"format": "gen8vgc2021",
+	"seed": "gen5,45119,59412,59838,32526",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "grimmsnarl",
+			"item": "chopleberry",
+			"ability": "gorillatactics",
+			"moves": [
+				"trick",
+				"gastroacid",
+				"skillswap",
+				"swordsdance"
+			],
+			"nature": "gentle",
+			"evs": {
+				"hp": 164,
+				"atk": 16,
+				"def": 12,
+				"spa": 192,
+				"spd": 12,
+				"spe": 64
+			},
+			"ivs": {
+				"hp": 0,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "vullaby",
+			"item": "miracleseed",
+			"ability": "gorillatactics",
+			"moves": [
+				"encore",
+				"instruct",
+				"switcheroo",
+				"featherdance"
+			],
+			"nature": "mild",
+			"evs": {
+				"hp": 164,
+				"atk": 96,
+				"def": 192,
+				"spa": 56,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 18,
+				"spa": 31,
+				"spd": 4,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "sirfetchd",
+			"item": "icyrock",
+			"ability": "gorillatactics",
+			"moves": [
+				"swordsdance",
+				"knockoff",
+				"switcheroo",
+				"closecombat"
+			],
+			"nature": "impish",
+			"evs": {
+				"hp": 168,
+				"atk": 12,
+				"def": 108,
+				"spa": 200,
+				"spd": 20,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 11,
+				"atk": 31,
+				"def": 19,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "linoone",
+			"item": "roseliberry",
+			"ability": "neutralizinggas",
+			"moves": [
+				"closecombat",
+				"swordsdance",
+				"gastroacid",
+				"instruct"
+			],
+			"nature": "careful",
+			"evs": {
+				"hp": 248,
+				"atk": 4,
+				"def": 224,
+				"spa": 24,
+				"spd": 8,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 8,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "flygon",
+			"item": "sitrusberry",
+			"ability": "gorillatactics",
+			"moves": [
+				"tackle",
+				"trick",
+				"gastroacid",
+				"switcheroo"
+			],
+			"nature": "quiet",
+			"evs": {
+				"hp": 224,
+				"atk": 4,
+				"def": 204,
+				"spa": 76,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 9,
+				"def": 10,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "heliolisk",
+			"item": "whiteherb",
+			"ability": "dancer",
+			"moves": [
+				"switcheroo",
+				"swordsdance",
+				"knockoff",
+				"closecombat"
+			],
+			"nature": "rash",
+			"evs": {
+				"hp": 60,
+				"atk": 212,
+				"def": 4,
+				"spa": 128,
+				"spd": 104,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "linoone",
+			"item": "psychicseed",
+			"ability": "gorillatactics",
+			"moves": [
+				"featherdance",
+				"protect",
+				"trick",
+				"gastroacid"
+			],
+			"nature": "quiet",
+			"evs": {
+				"hp": 88,
+				"atk": 64,
+				"def": 208,
+				"spa": 148,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 14
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "pikachupartner",
+			"item": "focussash",
+			"ability": "dancer",
+			"moves": [
+				"closecombat",
+				"swordsdance",
+				"protect",
+				"gastroacid"
+			],
+			"nature": "impish",
+			"evs": {
+				"hp": 184,
+				"atk": 164,
+				"def": 52,
+				"spa": 76,
+				"spd": 32,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 15,
+				"atk": 20,
+				"def": 11,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 4, move 1 2",
+			"p2": "move 2 1, move 1 2"
+		}
+	]
+}

@@ -1,0 +1,278 @@
+{
+	"format": "gen8vgc2022",
+	"seed": "gen5,55088,7291,21645,27438",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "lilligant",
+			"item": "tr07",
+			"ability": "serenegrace",
+			"moves": [
+				"tailwind",
+				"fakeout",
+				"doubleironbash",
+				"substitute"
+			],
+			"nature": "relaxed",
+			"evs": {
+				"hp": 76,
+				"atk": 240,
+				"def": 64,
+				"spa": 128,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 24,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 13,
+				"spe": 1
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "mimejr",
+			"item": "pixieplate",
+			"ability": "steadfast",
+			"moves": [
+				"closecombat",
+				"doubleironbash",
+				"ironhead",
+				"fakeout"
+			],
+			"nature": "sassy",
+			"evs": {
+				"hp": 24,
+				"atk": 152,
+				"def": 148,
+				"spa": 124,
+				"spd": 60,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 2,
+				"atk": 17,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "eiscue",
+			"item": "duskball",
+			"ability": "multiscale",
+			"moves": [
+				"ironhead",
+				"tailwind",
+				"protect",
+				"closecombat"
+			],
+			"nature": "quiet",
+			"evs": {
+				"hp": 212,
+				"atk": 112,
+				"def": 92,
+				"spa": 4,
+				"spd": 12,
+				"spe": 68
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "cradily",
+			"item": "starfberry",
+			"ability": "serenegrace",
+			"moves": [
+				"closecombat",
+				"tailwind",
+				"doubleironbash",
+				"fakeout"
+			],
+			"nature": "quirky",
+			"evs": {
+				"hp": 168,
+				"atk": 120,
+				"def": 220,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 22,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "amoonguss",
+			"item": "starfberry",
+			"ability": "innerfocus",
+			"moves": [
+				"ironhead",
+				"tailwind",
+				"followme",
+				"doubleironbash"
+			],
+			"nature": "gentle",
+			"evs": {
+				"hp": 36,
+				"atk": 52,
+				"def": 132,
+				"spa": 128,
+				"spd": 160,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 20
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "reuniclus",
+			"item": "deepseatooth",
+			"ability": "steadfast",
+			"moves": [
+				"fakeout",
+				"tailwind",
+				"substitute",
+				"followme"
+			],
+			"nature": "quiet",
+			"evs": {
+				"hp": 124,
+				"atk": 16,
+				"def": 136,
+				"spa": 0,
+				"spd": 96,
+				"spe": 136
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 2,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "hatenna",
+			"item": "redcard",
+			"ability": "serenegrace",
+			"moves": [
+				"tailwind",
+				"fakeout",
+				"protect",
+				"closecombat"
+			],
+			"nature": "naive",
+			"evs": {
+				"hp": 204,
+				"atk": 104,
+				"def": 32,
+				"spa": 4,
+				"spd": 160,
+				"spe": 4
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 9,
+				"spa": 8,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "golduck",
+			"item": "redcard",
+			"ability": "serenegrace",
+			"moves": [
+				"doubleironbash",
+				"substitute",
+				"closecombat",
+				"fakeout"
+			],
+			"nature": "relaxed",
+			"evs": {
+				"hp": 0,
+				"atk": 124,
+				"def": 56,
+				"spa": 160,
+				"spd": 168,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 21,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 4, move 1 1",
+			"p2": "move 4 1, move 4"
+		},
+		{
+			"p1": "move 2 2, move 1 1",
+			"p2": "move 1 2 dynamax, switch 4"
+		},
+		{
+			"p1": "pass, switch 4",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 2 1 dynamax, move 2",
+			"p2": "move 2, move 1 2"
+		},
+		{
+			"p1": "move 3 1, move 4 -1",
+			"p2": "move 4 2, move 1 1"
+		}
+	]
+}

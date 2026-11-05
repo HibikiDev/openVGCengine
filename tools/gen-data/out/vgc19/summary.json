@@ -1,0 +1,27 @@
+{
+	"format": "gen7vgc2019",
+	"formatName": "[Gen 7] VGC 2019",
+	"mod": "gen7",
+	"gameType": "doubles",
+	"minSourceGen": 7,
+	"ruleset": [
+		"Flat Rules",
+		"!! Adjust Level = 50",
+		"Min Source Gen = 7",
+		"VGC Timer",
+		"Limit Two Restricted"
+	],
+	"banlist": [
+		"Unown",
+		"Battle Bond"
+	],
+	"counts": {
+		"species": 964,
+		"megaForms": 47,
+		"moves": 673,
+		"abilities": 228,
+		"items": 339,
+		"types": 19
+	},
+	"generatedAt": "2026-10-24T20:13:52.308Z"
+}

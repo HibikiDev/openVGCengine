@@ -1,0 +1,274 @@
+{
+ "format": "gen9vgc2024regg",
+ "seed": "gen5,777,888,999,1111",
+ "team1": [
+  {
+   "name": "Mon0",
+   "species": "tatsugiri",
+   "item": "sitrusberry",
+   "ability": "commander",
+   "moves": [
+    "protect",
+    "dracometeor",
+    "muddywater",
+    "icywind"
+   ],
+   "nature": "modest",
+   "evs": {
+    "hp": 252,
+    "atk": 252,
+    "def": 4,
+    "spa": 0,
+    "spd": 0,
+    "spe": 0
+   },
+   "ivs": {
+    "hp": 31,
+    "atk": 31,
+    "def": 31,
+    "spa": 31,
+    "spd": 31,
+    "spe": 31
+   },
+   "level": 50,
+   "gender": "M",
+   "teraType": "Normal"
+  },
+  {
+   "name": "Mon1",
+   "species": "dondozo",
+   "item": "leftovers",
+   "ability": "unaware",
+   "moves": [
+    "protect",
+    "wavecrash",
+    "earthquake",
+    "orderup"
+   ],
+   "nature": "adamant",
+   "evs": {
+    "hp": 252,
+    "atk": 252,
+    "def": 4,
+    "spa": 0,
+    "spd": 0,
+    "spe": 0
+   },
+   "ivs": {
+    "hp": 31,
+    "atk": 31,
+    "def": 31,
+    "spa": 31,
+    "spd": 31,
+    "spe": 31
+   },
+   "level": 50,
+   "gender": "M",
+   "teraType": "Normal"
+  },
+  {
+   "name": "Mon2",
+   "species": "goodra",
+   "item": "leftovers",
+   "ability": "sapsipper",
+   "moves": [
+    "protect",
+    "dracometeor",
+    "flamethrower",
+    "sludgebomb"
+   ],
+   "nature": "adamant",
+   "evs": {
+    "hp": 252,
+    "atk": 252,
+    "def": 4,
+    "spa": 0,
+    "spd": 0,
+    "spe": 0
+   },
+   "ivs": {
+    "hp": 31,
+    "atk": 31,
+    "def": 31,
+    "spa": 31,
+    "spd": 31,
+    "spe": 31
+   },
+   "level": 50,
+   "gender": "M",
+   "teraType": "Normal"
+  },
+  {
+   "name": "Mon3",
+   "species": "lapras",
+   "item": "lifeorb",
+   "ability": "waterabsorb",
+   "moves": [
+    "protect",
+    "icebeam",
+    "hydropump",
+    "sing"
+   ],
+   "nature": "adamant",
+   "evs": {
+    "hp": 252,
+    "atk": 252,
+    "def": 4,
+    "spa": 0,
+    "spd": 0,
+    "spe": 0
+   },
+   "ivs": {
+    "hp": 31,
+    "atk": 31,
+    "def": 31,
+    "spa": 31,
+    "spd": 31,
+    "spe": 31
+   },
+   "level": 50,
+   "gender": "F",
+   "teraType": "Normal"
+  }
+ ],
+ "team2": [
+  {
+   "name": "Mon0",
+   "species": "espathra",
+   "item": "lifeorb",
+   "ability": "opportunist",
+   "moves": [
+    "protect",
+    "psychic",
+    "dazzlinggleam",
+    "calmmind"
+   ],
+   "nature": "modest",
+   "evs": {
+    "hp": 252,
+    "atk": 252,
+    "def": 4,
+    "spa": 0,
+    "spd": 0,
+    "spe": 0
+   },
+   "ivs": {
+    "hp": 31,
+    "atk": 31,
+    "def": 31,
+    "spa": 31,
+    "spd": 31,
+    "spe": 31
+   },
+   "level": 50,
+   "gender": "M",
+   "teraType": "Normal"
+  },
+  {
+   "name": "Mon1",
+   "species": "espathra",
+   "item": "sitrusberry",
+   "ability": "opportunist",
+   "moves": [
+    "protect",
+    "psychic",
+    "dazzlinggleam",
+    "calmmind"
+   ],
+   "nature": "modest",
+   "evs": {
+    "hp": 252,
+    "atk": 252,
+    "def": 4,
+    "spa": 0,
+    "spd": 0,
+    "spe": 0
+   },
+   "ivs": {
+    "hp": 31,
+    "atk": 31,
+    "def": 31,
+    "spa": 31,
+    "spd": 31,
+    "spe": 31
+   },
+   "level": 50,
+   "gender": "M",
+   "teraType": "Normal"
+  },
+  {
+   "name": "Mon2",
+   "species": "goodra",
+   "item": "leftovers",
+   "ability": "sapsipper",
+   "moves": [
+    "protect",
+    "dracometeor",
+    "flamethrower",
+    "sludgebomb"
+   ],
+   "nature": "adamant",
+   "evs": {
+    "hp": 252,
+    "atk": 252,
+    "def": 4,
+    "spa": 0,
+    "spd": 0,
+    "spe": 0
+   },
+   "ivs": {
+    "hp": 31,
+    "atk": 31,
+    "def": 31,
+    "spa": 31,
+    "spd": 31,
+    "spe": 31
+   },
+   "level": 50,
+   "gender": "M",
+   "teraType": "Normal"
+  },
+  {
+   "name": "Mon3",
+   "species": "lapras",
+   "item": "lifeorb",
+   "ability": "waterabsorb",
+   "moves": [
+    "protect",
+    "icebeam",
+    "hydropump",
+    "sing"
+   ],
+   "nature": "adamant",
+   "evs": {
+    "hp": 252,
+    "atk": 252,
+    "def": 4,
+    "spa": 0,
+    "spd": 0,
+    "spe": 0
+   },
+   "ivs": {
+    "hp": 31,
+    "atk": 31,
+    "def": 31,
+    "spa": 31,
+    "spd": 31,
+    "spe": 31
+   },
+   "level": 50,
+   "gender": "F",
+   "teraType": "Normal"
+  }
+ ],
+ "turns": [
+  {
+   "p1": "pass, move 1",
+   "p2": "move 1, move 1"
+  },
+  {
+   "p1": "pass, move 2 1",
+   "p2": "move 2 2, move 2 2"
+  }
+ ]
+}

@@ -1,0 +1,262 @@
+{
+	"format": "gen6vgc2015",
+	"seed": "gen5,49107,35238,62100,57711",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "entei",
+			"item": "apicotberry",
+			"ability": "waterveil",
+			"moves": [
+				"toxic",
+				"guardsplit",
+				"darkvoid",
+				"growl"
+			],
+			"nature": "timid",
+			"evs": {
+				"hp": 200,
+				"atk": 144,
+				"def": 100,
+				"spa": 56,
+				"spd": 8,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "gurdurr",
+			"item": "damprock",
+			"ability": "synchronize",
+			"moves": [
+				"toxic",
+				"extremespeed",
+				"dragonclaw",
+				"twister"
+			],
+			"nature": "serious",
+			"evs": {
+				"hp": 116,
+				"atk": 20,
+				"def": 184,
+				"spa": 140,
+				"spd": 20,
+				"spe": 28
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 6,
+				"spd": 29,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "pikachupopstar",
+			"item": "skullfossil",
+			"ability": "waterabsorb",
+			"moves": [
+				"toxic",
+				"hex",
+				"crosspoison",
+				"bounce"
+			],
+			"nature": "hasty",
+			"evs": {
+				"hp": 236,
+				"atk": 164,
+				"def": 108,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 12,
+				"atk": 21,
+				"def": 31,
+				"spa": 20,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "seel",
+			"item": "chartiberry",
+			"ability": "guts",
+			"moves": [
+				"toxic",
+				"sweetkiss",
+				"smackdown",
+				"aquajet"
+			],
+			"nature": "rash",
+			"evs": {
+				"hp": 212,
+				"atk": 92,
+				"def": 36,
+				"spa": 56,
+				"spd": 112,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 18,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "espeon",
+			"item": "poisonbarb",
+			"ability": "effectspore",
+			"moves": [
+				"toxic",
+				"strength",
+				"memento",
+				"armthrust"
+			],
+			"nature": "docile",
+			"evs": {
+				"hp": 0,
+				"atk": 232,
+				"def": 172,
+				"spa": 104,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "serperior",
+			"item": "spelltag",
+			"ability": "sandstream",
+			"moves": [
+				"toxic",
+				"shadowpunch",
+				"flameburst",
+				"spitup"
+			],
+			"nature": "impish",
+			"evs": {
+				"hp": 188,
+				"atk": 20,
+				"def": 84,
+				"spa": 156,
+				"spd": 40,
+				"spe": 20
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "pancham",
+			"item": "scizorite",
+			"ability": "truant",
+			"moves": [
+				"toxic",
+				"spore",
+				"cottonspore",
+				"machpunch"
+			],
+			"nature": "naive",
+			"evs": {
+				"hp": 76,
+				"atk": 144,
+				"def": 76,
+				"spa": 104,
+				"spd": 108,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "chimecho",
+			"item": "audinite",
+			"ability": "cutecharm",
+			"moves": [
+				"toxic",
+				"rototiller",
+				"knockoff",
+				"sandtomb"
+			],
+			"nature": "hardy",
+			"evs": {
+				"hp": 148,
+				"atk": 236,
+				"def": 124,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 20
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 1 1, move 2 1",
+			"p2": "move 2 2, move 4 2"
+		}
+	]
+}

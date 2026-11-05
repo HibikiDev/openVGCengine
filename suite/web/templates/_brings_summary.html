@@ -1,0 +1,11 @@
+
+
+{% macro brings_summary(b, who='you') %}{% set rec = b.recommended %}
+<div class="note">
+  <p><span class="tag mx-alt" title="raw self-play: the policy without search - wrong in about half of the hard matchups checked">quick read</span> <b>Recommended bring for {{ who }}:</b> {{ rec.lead|join(' + ') }} lead, {{ rec.back|join(' + ') }} back</p>
+  <p class="small"><b>As picked</b> {{ b.as_picked|pct }} · <b>safest</b> {{ b.safest.value|pct }} ({{ b.mine[b.safest.row].lead|join(' + ') }})
+    · <b>both adapt</b> {{ b.equilibrium.value|pct }}{% if b.vs_human %} · <b>vs a human</b> {{ b.vs_human[rec.row]|pct }}
+    <span class="muted">(their model covers {{ b.human_coverage|pct }})</span>{% endif %}
+    <span class="muted">· ±{{ (b.se * 100)|round(0)|int }} points a cell · raw self-play, not searched: a first look</span></p>
+</div>
+{% endmacro %}

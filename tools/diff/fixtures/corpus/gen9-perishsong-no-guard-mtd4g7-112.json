@@ -1,0 +1,318 @@
+{
+	"format": "gen9vgc2024regg",
+	"seed": "gen5,10079,51744,29893,38647",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "dondozo",
+			"item": "chartiberry",
+			"ability": "unaware",
+			"moves": [
+				"orderup",
+				"axekick",
+				"decorate",
+				"helpinghand"
+			],
+			"nature": "docile",
+			"evs": {
+				"hp": 228,
+				"atk": 172,
+				"def": 52,
+				"spa": 56,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 21,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Fighting"
+		},
+		{
+			"name": "Mon1",
+			"species": "tatsugiri",
+			"item": "redcard",
+			"ability": "imposter",
+			"moves": [
+				"muddywater",
+				"uturn",
+				"icywind",
+				"protect"
+			],
+			"nature": "bashful",
+			"evs": {
+				"hp": 152,
+				"atk": 224,
+				"def": 132,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Electric"
+		},
+		{
+			"name": "Mon2",
+			"species": "flygon",
+			"item": "prismscale",
+			"ability": "limber",
+			"moves": [
+				"spikyshield",
+				"batonpass",
+				"electroshot",
+				"icepunch"
+			],
+			"nature": "brave",
+			"evs": {
+				"hp": 176,
+				"atk": 88,
+				"def": 108,
+				"spa": 76,
+				"spd": 12,
+				"spe": 40
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 7,
+				"spa": 28,
+				"spd": 10,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Psychic"
+		},
+		{
+			"name": "Mon3",
+			"species": "lanturn",
+			"item": "cellbattery",
+			"ability": "noguard",
+			"moves": [
+				"perishsong",
+				"stealthrock",
+				"boltstrike",
+				"megakick"
+			],
+			"nature": "bold",
+			"evs": {
+				"hp": 128,
+				"atk": 40,
+				"def": 132,
+				"spa": 104,
+				"spd": 104,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 21
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Dark"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "feebas",
+			"item": "ejectpack",
+			"ability": "neutralizinggas",
+			"moves": [
+				"saltcure",
+				"teatime",
+				"rocksmash",
+				"hydrocannon"
+			],
+			"nature": "rash",
+			"evs": {
+				"hp": 204,
+				"atk": 220,
+				"def": 84,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 28,
+				"def": 31,
+				"spa": 8,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Stellar"
+		},
+		{
+			"name": "Mon1",
+			"species": "tatsugiristretchy",
+			"item": "shedshell",
+			"ability": "commander",
+			"moves": [
+				"uturn",
+				"dracometeor",
+				"icywind",
+				"protect"
+			],
+			"nature": "timid",
+			"evs": {
+				"hp": 12,
+				"atk": 56,
+				"def": 132,
+				"spa": 32,
+				"spd": 124,
+				"spe": 8
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 22,
+				"def": 11,
+				"spa": 20,
+				"spd": 31,
+				"spe": 5
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Rock"
+		},
+		{
+			"name": "Mon2",
+			"species": "dondozo",
+			"item": "powerbracer",
+			"ability": "unaware",
+			"moves": [
+				"uturn",
+				"crosschop",
+				"prismaticlaser",
+				"electricterrain"
+			],
+			"nature": "mild",
+			"evs": {
+				"hp": 228,
+				"atk": 168,
+				"def": 112,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 2,
+				"spa": 31,
+				"spd": 21,
+				"spe": 17
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Ghost"
+		},
+		{
+			"name": "Mon3",
+			"species": "vespiquen",
+			"item": "ejectbutton",
+			"ability": "chlorophyll",
+			"moves": [
+				"shedtail",
+				"powergem",
+				"helpinghand",
+				"bugbite"
+			],
+			"nature": "lonely",
+			"evs": {
+				"hp": 88,
+				"atk": 200,
+				"def": 8,
+				"spa": 212,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 27,
+				"spe": 26
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Grass"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 3 -2 terastallize, move 2 -1",
+			"p2": "move 3 1, move 1 2 terastallize"
+		},
+		{
+			"p1": "pass, switch 3",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "pass, switch 3"
+		},
+		{
+			"p1": "switch 3, move 4 1",
+			"p2": "move 1 -2, move 3 -1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 4, pass"
+		},
+		{
+			"p1": "move 4, switch 4",
+			"p2": "switch 3, move 1"
+		},
+		{
+			"p1": "move 3, move 1",
+			"p2": "pass, move 2 1"
+		},
+		{
+			"p1": "switch 3, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 2 -2, move 4 1",
+			"p2": "pass, move 4"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "pass, switch 3"
+		},
+		{
+			"p1": "move 3 2, move 3 -1",
+			"p2": "move 2 -2, move 2 -1"
+		},
+		{
+			"p1": "switch 4, move 4 1",
+			"p2": "move 4, move 4 -1"
+		}
+	],
+	"teams": [
+		"scenario-37a",
+		"scenario-57a"
+	]
+}

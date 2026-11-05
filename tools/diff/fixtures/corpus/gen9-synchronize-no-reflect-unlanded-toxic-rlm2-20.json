@@ -1,0 +1,286 @@
+{
+	"format": "gen9vgc2024regg",
+	"seed": "gen5,6935,43382,62532,36409",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "doduo",
+			"item": "adamantorb",
+			"ability": "poisonpuppeteer",
+			"moves": [
+				"protect",
+				"sludgebomb",
+				"safeguard",
+				"poisonjab"
+			],
+			"nature": "adamant",
+			"evs": {
+				"hp": 32,
+				"atk": 44,
+				"def": 0,
+				"spa": 80,
+				"spd": 136,
+				"spe": 112
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 27,
+				"def": 31,
+				"spa": 18,
+				"spd": 31,
+				"spe": 28
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Flying"
+		},
+		{
+			"name": "Mon1",
+			"species": "alcremiecaramelswirl",
+			"item": "chopleberry",
+			"ability": "synchronize",
+			"moves": [
+				"poisonpowder",
+				"safeguard",
+				"poisonjab",
+				"mistyterrain"
+			],
+			"nature": "careful",
+			"evs": {
+				"hp": 36,
+				"atk": 180,
+				"def": 200,
+				"spa": 92,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Fire"
+		},
+		{
+			"name": "Mon2",
+			"species": "ogerponcornerstone",
+			"item": "punchingglove",
+			"ability": "owntempo",
+			"moves": [
+				"toxicspikes",
+				"poisonjab",
+				"sludgebomb",
+				"malignantchain"
+			],
+			"nature": "serious",
+			"evs": {
+				"hp": 252,
+				"atk": 72,
+				"def": 184,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 6,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 28,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Rock"
+		},
+		{
+			"name": "Mon3",
+			"species": "palossand",
+			"item": "terrainextender",
+			"ability": "owntempo",
+			"moves": [
+				"poisonjab",
+				"sludgebomb",
+				"toxicspikes",
+				"protect"
+			],
+			"nature": "quiet",
+			"evs": {
+				"hp": 48,
+				"atk": 72,
+				"def": 96,
+				"spa": 156,
+				"spd": 24,
+				"spe": 40
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 3,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Bug"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "oricoriopompom",
+			"item": "loadeddice",
+			"ability": "poisonpuppeteer",
+			"moves": [
+				"protect",
+				"poisonpowder",
+				"malignantchain",
+				"toxic"
+			],
+			"nature": "bold",
+			"evs": {
+				"hp": 112,
+				"atk": 164,
+				"def": 216,
+				"spa": 16,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Poison"
+		},
+		{
+			"name": "Mon1",
+			"species": "wiglett",
+			"item": "lustrousglobe",
+			"ability": "synchronize",
+			"moves": [
+				"toxic",
+				"sludgebomb",
+				"toxicspikes",
+				"protect"
+			],
+			"nature": "docile",
+			"evs": {
+				"hp": 140,
+				"atk": 132,
+				"def": 72,
+				"spa": 8,
+				"spd": 96,
+				"spe": 60
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 25,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Stellar"
+		},
+		{
+			"name": "Mon2",
+			"species": "vivillonhighplains",
+			"item": "blunderpolicy",
+			"ability": "synchronize",
+			"moves": [
+				"safeguard",
+				"poisonpowder",
+				"toxic",
+				"sludgebomb"
+			],
+			"nature": "rash",
+			"evs": {
+				"hp": 124,
+				"atk": 184,
+				"def": 24,
+				"spa": 176,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 21
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Dark"
+		},
+		{
+			"name": "Mon3",
+			"species": "hoppip",
+			"item": "pixieplate",
+			"ability": "synchronize",
+			"moves": [
+				"mistyterrain",
+				"sludgebomb",
+				"safeguard",
+				"poisonpowder"
+			],
+			"nature": "rash",
+			"evs": {
+				"hp": 36,
+				"atk": 12,
+				"def": 40,
+				"spa": 80,
+				"spd": 196,
+				"spe": 100
+			},
+			"ivs": {
+				"hp": 0,
+				"atk": 31,
+				"def": 20,
+				"spa": 31,
+				"spd": 9,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Normal"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 1, move 2 terastallize",
+			"p2": "move 4 2, move 1 2"
+		},
+		{
+			"p1": "move 2 1, move 3 1",
+			"p2": "move 1 terastallize, move 3"
+		},
+		{
+			"p1": "move 1, switch 3",
+			"p2": "move 4 1, move 1 2"
+		},
+		{
+			"p1": "move 4 1, switch 3",
+			"p2": "move 2 -2, switch 4"
+		},
+		{
+			"p1": "move 2 -2, move 3 -1",
+			"p2": "move 2 -2, move 2 1"
+		}
+	]
+}

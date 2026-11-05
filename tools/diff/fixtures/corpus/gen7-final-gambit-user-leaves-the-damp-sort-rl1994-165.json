@@ -1,0 +1,262 @@
+{
+	"format": "gen7vgc2019",
+	"seed": "gen5,33188,14731,35369,7977",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "sandslashalola",
+			"item": "mindplate",
+			"ability": "imposter",
+			"moves": [
+				"nightslash",
+				"spikyshield",
+				"sacredsword",
+				"sparklingaria"
+			],
+			"nature": "calm",
+			"evs": {
+				"hp": 228,
+				"atk": 0,
+				"def": 208,
+				"spa": 72,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 26,
+				"atk": 31,
+				"def": 13,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "carbink",
+			"item": "toxicorb",
+			"ability": "rattled",
+			"moves": [
+				"hyperfang",
+				"sonicboom",
+				"sharpen",
+				"embargo"
+			],
+			"nature": "serious",
+			"evs": {
+				"hp": 240,
+				"atk": 120,
+				"def": 120,
+				"spa": 24,
+				"spd": 4,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 22,
+				"spa": 20,
+				"spd": 31,
+				"spe": 20
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "absol",
+			"item": "beedrillite",
+			"ability": "download",
+			"moves": [
+				"hyperbeam",
+				"cottonguard",
+				"mudbomb",
+				"fairywind"
+			],
+			"nature": "mild",
+			"evs": {
+				"hp": 212,
+				"atk": 80,
+				"def": 216,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "honedge",
+			"item": "wateriumz",
+			"ability": "icebody",
+			"moves": [
+				"copycat",
+				"shockwave",
+				"suckerpunch",
+				"holdback"
+			],
+			"nature": "hasty",
+			"evs": {
+				"hp": 212,
+				"atk": 224,
+				"def": 72,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "feebas",
+			"item": "stickybarb",
+			"ability": "multiscale",
+			"moves": [
+				"constrict",
+				"lockon",
+				"protect",
+				"covet"
+			],
+			"nature": "gentle",
+			"evs": {
+				"hp": 184,
+				"atk": 16,
+				"def": 196,
+				"spa": 76,
+				"spd": 36,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 5,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "politoed",
+			"item": "quickball",
+			"ability": "damp",
+			"moves": [
+				"nuzzle",
+				"dreameater",
+				"synthesis",
+				"finalgambit"
+			],
+			"nature": "rash",
+			"evs": {
+				"hp": 224,
+				"atk": 132,
+				"def": 152,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 0,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "bonsly",
+			"item": "leafstone",
+			"ability": "berserk",
+			"moves": [
+				"darkpulse",
+				"razorleaf",
+				"spite",
+				"lusterpurge"
+			],
+			"nature": "brave",
+			"evs": {
+				"hp": 212,
+				"atk": 20,
+				"def": 152,
+				"spa": 124,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 24,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "thundurustherian",
+			"item": "flameplate",
+			"ability": "mummy",
+			"moves": [
+				"nuzzle",
+				"dragonascent",
+				"ominouswind",
+				"dragonpulse"
+			],
+			"nature": "quiet",
+			"evs": {
+				"hp": 88,
+				"atk": 84,
+				"def": 184,
+				"spa": 36,
+				"spd": 116,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 10,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 2 1, move 4 2",
+			"p2": "move 1 1, move 4 2"
+		}
+	]
+}

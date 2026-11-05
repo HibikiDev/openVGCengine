@@ -1,0 +1,262 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,8999,35453,2896,36684",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "sceptile",
+			"item": "oranberry",
+			"ability": "libero",
+			"moves": [
+				"sleeptalk",
+				"rest",
+				"spore",
+				"slackoff"
+			],
+			"nature": "lonely",
+			"evs": {
+				"hp": 32,
+				"atk": 13,
+				"def": 0,
+				"spa": 29,
+				"spd": 23,
+				"spe": 26
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "tinkaton",
+			"item": "mentalherb",
+			"ability": "goodasgold",
+			"moves": [
+				"rest",
+				"spore",
+				"sleeptalk",
+				"spiritshackle"
+			],
+			"nature": "gentle",
+			"evs": {
+				"hp": 32,
+				"atk": 22,
+				"def": 18,
+				"spa": 32,
+				"spd": 19,
+				"spe": 20
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "aerodactyl",
+			"item": "kebiaberry",
+			"ability": "overgrow",
+			"moves": [
+				"spore",
+				"rest",
+				"sleeptalk",
+				"ragefist"
+			],
+			"nature": "quiet",
+			"evs": {
+				"hp": 32,
+				"atk": 11,
+				"def": 22,
+				"spa": 27,
+				"spd": 7,
+				"spe": 8
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "sinistchamasterpiece",
+			"item": "tangaberry",
+			"ability": "clearbody",
+			"moves": [
+				"sleeptalk",
+				"rest",
+				"spore",
+				"aquaring"
+			],
+			"nature": "modest",
+			"evs": {
+				"hp": 32,
+				"atk": 30,
+				"def": 23,
+				"spa": 7,
+				"spd": 14,
+				"spe": 13
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "tinkaton",
+			"item": "cheriberry",
+			"ability": "heatproof",
+			"moves": [
+				"sleeptalk",
+				"spore",
+				"rest",
+				"aquatail"
+			],
+			"nature": "jolly",
+			"evs": {
+				"hp": 32,
+				"atk": 1,
+				"def": 0,
+				"spa": 17,
+				"spd": 13,
+				"spe": 6
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "tyranitar",
+			"item": "rockyhelmet",
+			"ability": "aerilate",
+			"moves": [
+				"spore",
+				"sleeptalk",
+				"rest",
+				"waterpulse"
+			],
+			"nature": "brave",
+			"evs": {
+				"hp": 32,
+				"atk": 17,
+				"def": 21,
+				"spa": 7,
+				"spd": 15,
+				"spe": 2
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "alakazam",
+			"item": "magnet",
+			"ability": "torrent",
+			"moves": [
+				"rest",
+				"spore",
+				"sleeptalk",
+				"magicroom"
+			],
+			"nature": "brave",
+			"evs": {
+				"hp": 32,
+				"atk": 8,
+				"def": 20,
+				"spa": 23,
+				"spd": 16,
+				"spe": 25
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "gogoat",
+			"item": "spelltag",
+			"ability": "damp",
+			"moves": [
+				"spore",
+				"sleeptalk",
+				"rest",
+				"psychup"
+			],
+			"nature": "calm",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 16,
+				"spa": 21,
+				"spd": 27,
+				"spe": 22
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 2, move 4 1",
+			"p2": "move 3, move 4 1"
+		}
+	]
+}

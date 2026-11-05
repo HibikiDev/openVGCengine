@@ -1,0 +1,318 @@
+{
+	"format": "gen9vgc2024regg",
+	"seed": "gen5,13411,45524,60417,34680",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "grumpig",
+			"item": "whiteherb",
+			"ability": "imposter",
+			"moves": [
+				"worryseed",
+				"lowsweep",
+				"spiritshackle",
+				"aquajet"
+			],
+			"nature": "brave",
+			"evs": {
+				"hp": 60,
+				"atk": 64,
+				"def": 164,
+				"spa": 140,
+				"spd": 52,
+				"spe": 28
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 14,
+				"def": 31,
+				"spa": 31,
+				"spd": 19,
+				"spe": 14
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Normal"
+		},
+		{
+			"name": "Mon1",
+			"species": "jangmoo",
+			"item": "redcard",
+			"ability": "imposter",
+			"moves": [
+				"spiritbreak",
+				"headlongrush",
+				"bugbite",
+				"solarbeam"
+			],
+			"nature": "careful",
+			"evs": {
+				"hp": 48,
+				"atk": 180,
+				"def": 116,
+				"spa": 28,
+				"spd": 96,
+				"spe": 40
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Ice"
+		},
+		{
+			"name": "Mon2",
+			"species": "calyrex",
+			"item": "whiteherb",
+			"ability": "roughskin",
+			"moves": [
+				"trick",
+				"playnice",
+				"bodypress",
+				"swallow"
+			],
+			"nature": "serious",
+			"evs": {
+				"hp": 116,
+				"atk": 12,
+				"def": 72,
+				"spa": 52,
+				"spd": 8,
+				"spe": 80
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N",
+			"teraType": "Fairy"
+		},
+		{
+			"name": "Mon3",
+			"species": "ogerpon",
+			"item": "whiteherb",
+			"ability": "moldbreaker",
+			"moves": [
+				"ivycudgel",
+				"dreameater",
+				"celebrate",
+				"knockoff"
+			],
+			"nature": "rash",
+			"evs": {
+				"hp": 60,
+				"atk": 188,
+				"def": 224,
+				"spa": 28,
+				"spd": 8,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 26,
+				"def": 25,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Grass"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "ogerponhearthflame",
+			"item": "sitrusberry",
+			"ability": "unaware",
+			"moves": [
+				"worryseed",
+				"iceburn",
+				"fireblast",
+				"skillswap"
+			],
+			"nature": "relaxed",
+			"evs": {
+				"hp": 36,
+				"atk": 188,
+				"def": 56,
+				"spa": 64,
+				"spd": 80,
+				"spe": 84
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Fire"
+		},
+		{
+			"name": "Mon1",
+			"species": "miniorviolet",
+			"item": "sitrusberry",
+			"ability": "opportunist",
+			"moves": [
+				"psychicterrain",
+				"bugbite",
+				"barbbarrage",
+				"superpower"
+			],
+			"nature": "brave",
+			"evs": {
+				"hp": 244,
+				"atk": 88,
+				"def": 148,
+				"spa": 28,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 19,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N",
+			"teraType": "Electric"
+		},
+		{
+			"name": "Mon2",
+			"species": "moltres",
+			"item": "adrenalineorb",
+			"ability": "limber",
+			"moves": [
+				"covet",
+				"agility",
+				"gastroacid",
+				"tailslap"
+			],
+			"nature": "careful",
+			"evs": {
+				"hp": 72,
+				"atk": 132,
+				"def": 100,
+				"spa": 124,
+				"spd": 76,
+				"spe": 4
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N",
+			"teraType": "Flying"
+		},
+		{
+			"name": "Mon3",
+			"species": "gholdengo",
+			"item": "electirizer",
+			"ability": "adaptability",
+			"moves": [
+				"celebrate",
+				"bonerush",
+				"powdersnow",
+				"switcheroo"
+			],
+			"nature": "adamant",
+			"evs": {
+				"hp": 20,
+				"atk": 124,
+				"def": 152,
+				"spa": 168,
+				"spd": 44,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 24,
+				"atk": 1,
+				"def": 31,
+				"spa": 28,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N",
+			"teraType": "Stellar"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 2 -2, move 2 -1",
+			"p2": "move 1 2 terastallize, switch 3"
+		},
+		{
+			"p1": "move 4 -2, move 1",
+			"p2": "move 3 1, move 4 1"
+		},
+		{
+			"p1": "switch 4, switch 3",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 1 1, move 3 2",
+			"p2": "move 4 2, move 3 2"
+		},
+		{
+			"p1": "move 4 1, move 2 2 terastallize",
+			"p2": "move 4 1, move 3 2"
+		},
+		{
+			"p1": "move 1 -2, move 2 1",
+			"p2": "move 3 1, move 4 2"
+		},
+		{
+			"p1": "move 3 1, move 3 2",
+			"p2": "move 4 -2, move 4 1"
+		},
+		{
+			"p1": "move 4 -2, move 3 -1",
+			"p2": "switch 4, move 1 2"
+		},
+		{
+			"p1": "move 1 2, move 1 1",
+			"p2": "move 4 2, move 1 1"
+		},
+		{
+			"p1": "move 4 2, move 3 -1",
+			"p2": "move 2 -2, move 3 2"
+		},
+		{
+			"p1": "move 1 -2, move 1 2",
+			"p2": "move 2 -2, move 3 1"
+		},
+		{
+			"p1": "move 4 1, move 3 -1",
+			"p2": "move 4 -2, switch 4"
+		}
+	],
+	"teams": [
+		"scenario-18a",
+		"scenario-119a"
+	]
+}

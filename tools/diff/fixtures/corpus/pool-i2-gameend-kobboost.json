@@ -1,0 +1,302 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,8927,62494,1507,957",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Garchomp",
+			"item": "redcard",
+			"ability": "Rough Skin",
+			"moves": [
+				"Protect",
+				"Earth Power",
+				"Power Gem",
+				"heatwave"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 2,
+				"atk": 32,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "Gengar",
+			"item": "Gengarite",
+			"ability": "Cursed Body",
+			"moves": [
+				"Protect",
+				"Shadow Ball",
+				"Icy Wind",
+				"encore"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 31,
+				"atk": 0,
+				"def": 15,
+				"spa": 0,
+				"spd": 0,
+				"spe": 20
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "Incineroar",
+			"item": "airballoon",
+			"ability": "Intimidate",
+			"moves": [
+				"dragontail",
+				"Throat Chop",
+				"Fake Out",
+				"Parting Shot"
+			],
+			"nature": "Impish",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 20,
+				"spa": 0,
+				"spd": 12,
+				"spe": 2
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "Sneasler",
+			"item": "ejectbutton",
+			"ability": "Unburden",
+			"moves": [
+				"Protect",
+				"Close Combat",
+				"rockslide",
+				"Rock Tomb"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 0,
+				"atk": 32,
+				"def": 0,
+				"spa": 0,
+				"spd": 2,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Indeedee",
+			"item": "Colbur Berry",
+			"ability": "Psychic Surge",
+			"moves": [
+				"Expanding Force",
+				"Protect",
+				"earthquake",
+				"Trick Room"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 2,
+				"atk": 0,
+				"def": 0,
+				"spa": 32,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "Eelektross",
+			"item": "Eelektrossite",
+			"ability": "Levitate",
+			"moves": [
+				"earthquake",
+				"Flamethrower",
+				"Protect",
+				"Grass Knot"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 2,
+				"atk": 32,
+				"def": 0,
+				"spa": 0,
+				"spd": 32,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "Milotic",
+			"item": "airballoon",
+			"ability": "Competitive",
+			"moves": [
+				"Recover",
+				"dragontail",
+				"Scald",
+				"Icy Wind"
+			],
+			"nature": "Bold",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 29,
+				"spa": 0,
+				"spd": 5,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "Metagross",
+			"item": "Metagrossite",
+			"ability": "Clear Body",
+			"moves": [
+				"Steel Roller",
+				"encore",
+				"Body Press",
+				"Protect"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 9,
+				"atk": 32,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 25
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 2 2, move 2 1",
+			"p2": "move 2, move 1 mega"
+		},
+		{
+			"p1": "move 2 1, move 1 mega",
+			"p2": "move 1 -2, move 1 1"
+		},
+		{
+			"p1": "switch 3, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 4 2, move 2 -1",
+			"p2": "move 1 2, move 3 2"
+		},
+		{
+			"p1": "pass, switch 4",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 2 2, move 2 2",
+			"p2": "switch 4, move 3 2"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "pass, switch 3"
+		},
+		{
+			"p1": "move 2 -2, move 1",
+			"p2": "move 2 1, move 2 2"
+		},
+		{
+			"p1": "move 1 2, move 4 -1",
+			"p2": "move 4 -2, move 3 2"
+		},
+		{
+			"p1": "pass, move 2 2",
+			"p2": "move 1, move 2 -1"
+		}
+	],
+	"teams": [
+		"BA-486",
+		"BA-913"
+	]
+}

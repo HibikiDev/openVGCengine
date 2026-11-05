@@ -1,0 +1,262 @@
+{
+	"format": "gen7vgc2019",
+	"seed": "gen5,64831,59920,20817,13411",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "omastar",
+			"item": "normaliumz",
+			"ability": "imposter",
+			"moves": [
+				"hiddenpower",
+				"takedown",
+				"coreenforcer",
+				"transform"
+			],
+			"nature": "adamant",
+			"evs": {
+				"hp": 172,
+				"atk": 12,
+				"def": 8,
+				"spa": 76,
+				"spd": 204,
+				"spe": 36
+			},
+			"ivs": {
+				"hp": 11,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "rotomheat",
+			"item": "grassyseed",
+			"ability": "whitesmoke",
+			"moves": [
+				"flamethrower",
+				"curse",
+				"takedown",
+				"heatwave"
+			],
+			"nature": "timid",
+			"evs": {
+				"hp": 52,
+				"atk": 108,
+				"def": 36,
+				"spa": 168,
+				"spd": 128,
+				"spe": 16
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 0,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "silvallyrock",
+			"item": "sceptilite",
+			"ability": "whitesmoke",
+			"moves": [
+				"coreenforcer",
+				"heatwave",
+				"flamethrower",
+				"curse"
+			],
+			"nature": "careful",
+			"evs": {
+				"hp": 76,
+				"atk": 132,
+				"def": 148,
+				"spa": 152,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 11,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "foongus",
+			"item": "heatrock",
+			"ability": "fairyaura",
+			"moves": [
+				"coreenforcer",
+				"curse",
+				"takedown",
+				"heatwave"
+			],
+			"nature": "impish",
+			"evs": {
+				"hp": 220,
+				"atk": 92,
+				"def": 64,
+				"spa": 96,
+				"spd": 36,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 20,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "lucario",
+			"item": "ringtarget",
+			"ability": "sandstream",
+			"moves": [
+				"flamethrower",
+				"transform",
+				"takedown",
+				"heatwave"
+			],
+			"nature": "mild",
+			"evs": {
+				"hp": 216,
+				"atk": 252,
+				"def": 40,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 21,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "cyndaquil",
+			"item": "firiumz",
+			"ability": "furcoat",
+			"moves": [
+				"takedown",
+				"hiddenpower",
+				"curse",
+				"heatwave"
+			],
+			"nature": "lonely",
+			"evs": {
+				"hp": 48,
+				"atk": 160,
+				"def": 108,
+				"spa": 152,
+				"spd": 40,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "cosmog",
+			"item": "dragoniumz",
+			"ability": "battlearmor",
+			"moves": [
+				"transform",
+				"coreenforcer",
+				"hiddenpower",
+				"heatwave"
+			],
+			"nature": "quirky",
+			"evs": {
+				"hp": 124,
+				"atk": 248,
+				"def": 136,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 14,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "sharpedo",
+			"item": "inciniumz",
+			"ability": "friendguard",
+			"moves": [
+				"coreenforcer",
+				"curse",
+				"hiddenpower",
+				"takedown"
+			],
+			"nature": "rash",
+			"evs": {
+				"hp": 216,
+				"atk": 208,
+				"def": 84,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 28
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 3, move 1 2",
+			"p2": "move 4, move 1 1"
+		}
+	]
+}

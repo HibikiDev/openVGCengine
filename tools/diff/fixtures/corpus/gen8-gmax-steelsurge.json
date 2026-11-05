@@ -1,0 +1,308 @@
+{
+	"format": "gen8vgc2020",
+	"seed": "gen5,10247,13670,18244,7494",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Toxtricity",
+			"item": "psychicseed",
+			"ability": "poisonpoint",
+			"moves": [
+				"firstimpression",
+				"aurawheel",
+				"wickedblow",
+				"flashcannon"
+			],
+			"nature": "relaxed",
+			"evs": {
+				"hp": 112,
+				"atk": 136,
+				"def": 172,
+				"spa": 80,
+				"spd": 8,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 5,
+				"spa": 7,
+				"spd": 19,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"gigantamax": true
+		},
+		{
+			"name": "Mon1",
+			"species": "honedge",
+			"item": "lifeorb",
+			"ability": "steamengine",
+			"moves": [
+				"dragondarts",
+				"endure",
+				"aircutter",
+				"knockoff"
+			],
+			"nature": "mild",
+			"evs": {
+				"hp": 80,
+				"atk": 12,
+				"def": 168,
+				"spa": 136,
+				"spd": 80,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 28
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "flapple",
+			"item": "mysticwater",
+			"ability": "sniper",
+			"moves": [
+				"poisonsting",
+				"playrough",
+				"recover",
+				"roar"
+			],
+			"nature": "bashful",
+			"evs": {
+				"hp": 180,
+				"atk": 44,
+				"def": 224,
+				"spa": 60,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 5,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "kommoo",
+			"item": "bigroot",
+			"ability": "friendguard",
+			"moves": [
+				"sludge",
+				"swift",
+				"rockthrow",
+				"flamethrower"
+			],
+			"nature": "jolly",
+			"evs": {
+				"hp": 228,
+				"atk": 208,
+				"def": 72,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 23,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Copperajah",
+			"item": "tangaberry",
+			"ability": "limber",
+			"moves": [
+				"endeavor",
+				"swagger",
+				"anchorshot",
+				"burnup"
+			],
+			"nature": "lonely",
+			"evs": {
+				"hp": 28,
+				"atk": 136,
+				"def": 224,
+				"spa": 44,
+				"spd": 76,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"gigantamax": true
+		},
+		{
+			"name": "Mon1",
+			"species": "araquanid",
+			"item": "tr41",
+			"ability": "poisontouch",
+			"moves": [
+				"lavaplume",
+				"sandtomb",
+				"iceshard",
+				"stomp"
+			],
+			"nature": "gentle",
+			"evs": {
+				"hp": 148,
+				"atk": 136,
+				"def": 32,
+				"spa": 108,
+				"spd": 28,
+				"spe": 56
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "jangmoo",
+			"item": "blackglasses",
+			"ability": "disguise",
+			"moves": [
+				"helpinghand",
+				"dynamicpunch",
+				"expandingforce",
+				"clangoroussoul"
+			],
+			"nature": "rash",
+			"evs": {
+				"hp": 152,
+				"atk": 0,
+				"def": 176,
+				"spa": 52,
+				"spd": 8,
+				"spe": 100
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "silvallyrock",
+			"item": "magmarizer",
+			"ability": "grassysurge",
+			"moves": [
+				"taunt",
+				"rest",
+				"poisonjab",
+				"tickle"
+			],
+			"nature": "bold",
+			"evs": {
+				"hp": 0,
+				"atk": 216,
+				"def": 236,
+				"spa": 56,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 1 1, move 4 2",
+			"p2": "move 2 1, move 1"
+		},
+		{
+			"p1": "move 3 2, move 2 dynamax",
+			"p2": "switch 4, move 3 2"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "pass, switch 4"
+		},
+		{
+			"p1": "move 2 2, move 3 2",
+			"p2": "move 3 2, move 4 1 dynamax"
+		},
+		{
+			"p1": "move 1 2, switch 4",
+			"p2": "move 1 2, move 1 1"
+		},
+		{
+			"p1": "move 3 1, move 1 1",
+			"p2": "move 1 1, move 3 1"
+		},
+		{
+			"p1": "switch 4, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 3, move 4 2",
+			"p2": "move 3 2, move 4 2"
+		},
+		{
+			"p1": "move 3, switch 3",
+			"p2": "move 3 -2, move 4 2"
+		},
+		{
+			"p1": "move 1 -2, move 1 2",
+			"p2": "move 4 2, move 3 2"
+		},
+		{
+			"p1": "pass, switch 3",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 1 1, move 1 1",
+			"p2": "move 2, move 3 1"
+		}
+	]
+}

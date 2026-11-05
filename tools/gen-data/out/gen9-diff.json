@@ -1,0 +1,962 @@
+{
+	"generated": "2026-10-25T07:12:41.615Z",
+	"moves": {
+		"absorb": {
+			"pp": {
+				"gen9": 25,
+				"champions": 20
+			}
+		},
+		"acid": {
+			"pp": {
+				"gen9": 30,
+				"champions": 20
+			}
+		},
+		"acupressure": {
+			"pp": {
+				"gen9": 30,
+				"champions": 20
+			}
+		},
+		"agility": {
+			"pp": {
+				"gen9": 30,
+				"champions": 20
+			}
+		},
+		"aircutter": {
+			"pp": {
+				"gen9": 25,
+				"champions": 20
+			}
+		},
+		"appleacid": {
+			"basePower": {
+				"gen9": 80,
+				"champions": 90
+			}
+		},
+		"babydolleyes": {
+			"pp": {
+				"gen9": 30,
+				"champions": 20
+			}
+		},
+		"banefulbunker": {
+			"pp": {
+				"gen9": 10,
+				"champions": 5
+			}
+		},
+		"batonpass": {
+			"pp": {
+				"gen9": 40,
+				"champions": 20
+			}
+		},
+		"belch": {
+			"handlers": [
+				"onDisableMove"
+			]
+		},
+		"bite": {
+			"pp": {
+				"gen9": 25,
+				"champions": 20
+			}
+		},
+		"bonerush": {
+			"basePower": {
+				"gen9": 25,
+				"champions": 30
+			}
+		},
+		"branchpoke": {
+			"pp": {
+				"gen9": 40,
+				"champions": 20
+			}
+		},
+		"bulletpunch": {
+			"pp": {
+				"gen9": 30,
+				"champions": 20
+			}
+		},
+		"bulletseed": {
+			"pp": {
+				"gen9": 30,
+				"champions": 20
+			}
+		},
+		"celebrate": {
+			"pp": {
+				"gen9": 40,
+				"champions": 20
+			}
+		},
+		"confusion": {
+			"pp": {
+				"gen9": 25,
+				"champions": 20
+			}
+		},
+		"cottonspore": {
+			"pp": {
+				"gen9": 40,
+				"champions": 20
+			}
+		},
+		"covet": {
+			"pp": {
+				"gen9": 25,
+				"champions": 20
+			}
+		},
+		"crabhammer": {
+			"accuracy": {
+				"gen9": 90,
+				"champions": 95
+			}
+		},
+		"crushclaw": {
+			"flags": {
+				"gen9": {
+					"contact": 1,
+					"protect": 1,
+					"mirror": 1,
+					"metronome": 1
+				},
+				"champions": {
+					"contact": 1,
+					"protect": 1,
+					"mirror": 1,
+					"metronome": 1,
+					"slicing": 1
+				}
+			}
+		},
+		"curse": {
+			"volatileStatus": {
+				"gen9": "curse",
+				"champions": null
+			},
+			"handlers": [
+				"onHit",
+				"onModifyMove",
+				"onTryHit"
+			]
+		},
+		"defensecurl": {
+			"pp": {
+				"gen9": 40,
+				"champions": 20
+			}
+		},
+		"direclaw": {
+			"secondary": {
+				"gen9": {
+					"chance": 50
+				},
+				"champions": {
+					"chance": 30
+				}
+			},
+			"flags": {
+				"gen9": {
+					"contact": 1,
+					"protect": 1,
+					"mirror": 1,
+					"metronome": 1
+				},
+				"champions": {
+					"contact": 1,
+					"protect": 1,
+					"mirror": 1,
+					"metronome": 1,
+					"slicing": 1
+				}
+			}
+		},
+		"disable": {
+			"handlers": [
+				"condition.onBeforeMove"
+			]
+		},
+		"doublekick": {
+			"pp": {
+				"gen9": 30,
+				"champions": 20
+			}
+		},
+		"doubleshock": {
+			"flags": {
+				"gen9": {
+					"contact": 1,
+					"protect": 1,
+					"mirror": 1
+				},
+				"champions": {
+					"contact": 1,
+					"protect": 1,
+					"mirror": 1,
+					"punch": 1
+				}
+			}
+		},
+		"dragonclaw": {
+			"flags": {
+				"gen9": {
+					"contact": 1,
+					"protect": 1,
+					"mirror": 1,
+					"metronome": 1
+				},
+				"champions": {
+					"contact": 1,
+					"protect": 1,
+					"mirror": 1,
+					"metronome": 1,
+					"slicing": 1
+				}
+			}
+		},
+		"ember": {
+			"pp": {
+				"gen9": 25,
+				"champions": 20
+			}
+		},
+		"encore": {
+			"handlers": [
+				"condition.onOverrideAction",
+				"condition.onStart"
+			]
+		},
+		"fairywind": {
+			"pp": {
+				"gen9": 30,
+				"champions": 20
+			}
+		},
+		"fakeout": {
+			"handlers": [
+				"onDisableMove"
+			]
+		},
+		"falseswipe": {
+			"pp": {
+				"gen9": 40,
+				"champions": 20
+			}
+		},
+		"fellstinger": {
+			"pp": {
+				"gen9": 25,
+				"champions": 20
+			}
+		},
+		"firelash": {
+			"basePower": {
+				"gen9": 80,
+				"champions": 90
+			}
+		},
+		"firstimpression": {
+			"basePower": {
+				"gen9": 90,
+				"champions": 100
+			},
+			"handlers": [
+				"onDisableMove"
+			]
+		},
+		"flamewheel": {
+			"pp": {
+				"gen9": 25,
+				"champions": 20
+			}
+		},
+		"focusenergy": {
+			"pp": {
+				"gen9": 30,
+				"champions": 20
+			}
+		},
+		"freezedry": {
+			"secondary": {
+				"gen9": {
+					"chance": 10,
+					"status": "frz"
+				},
+				"champions": null
+			}
+		},
+		"glare": {
+			"pp": {
+				"gen9": 30,
+				"champions": 20
+			}
+		},
+		"gravapple": {
+			"basePower": {
+				"gen9": 80,
+				"champions": 90
+			}
+		},
+		"growl": {
+			"pp": {
+				"gen9": 40,
+				"champions": 20
+			}
+		},
+		"growth": {
+			"type": {
+				"gen9": "Normal",
+				"champions": "Grass"
+			}
+		},
+		"gust": {
+			"pp": {
+				"gen9": 35,
+				"champions": 20
+			}
+		},
+		"harden": {
+			"pp": {
+				"gen9": 30,
+				"champions": 20
+			}
+		},
+		"haze": {
+			"pp": {
+				"gen9": 30,
+				"champions": 20
+			}
+		},
+		"hornattack": {
+			"pp": {
+				"gen9": 25,
+				"champions": 20
+			}
+		},
+		"howl": {
+			"pp": {
+				"gen9": 40,
+				"champions": 20
+			},
+			"flags": {
+				"gen9": {
+					"snatch": 1,
+					"sound": 1,
+					"metronome": 1
+				},
+				"champions": {
+					"snatch": 1,
+					"sound": 1,
+					"bypasssub": 1,
+					"metronome": 1
+				}
+			}
+		},
+		"hyperdrill": {
+			"basePower": {
+				"gen9": 100,
+				"champions": 120
+			}
+		},
+		"iceshard": {
+			"pp": {
+				"gen9": 30,
+				"champions": 20
+			}
+		},
+		"iciclespear": {
+			"pp": {
+				"gen9": 30,
+				"champions": 20
+			}
+		},
+		"infernalparade": {
+			"basePower": {
+				"gen9": 60,
+				"champions": 65
+			}
+		},
+		"ironhead": {
+			"secondary": {
+				"gen9": {
+					"chance": 30,
+					"volatileStatus": "flinch"
+				},
+				"champions": {
+					"chance": 20,
+					"volatileStatus": "flinch"
+				}
+			}
+		},
+		"leafage": {
+			"pp": {
+				"gen9": 40,
+				"champions": 20
+			}
+		},
+		"leer": {
+			"pp": {
+				"gen9": 30,
+				"champions": 20
+			}
+		},
+		"lick": {
+			"pp": {
+				"gen9": 30,
+				"champions": 20
+			}
+		},
+		"lightscreen": {
+			"pp": {
+				"gen9": 30,
+				"champions": 20
+			}
+		},
+		"machpunch": {
+			"pp": {
+				"gen9": 30,
+				"champions": 20
+			}
+		},
+		"makeitrain": {
+			"accuracy": {
+				"gen9": 100,
+				"champions": 95
+			},
+			"self": {
+				"gen9": {
+					"boosts": {
+						"spa": -1
+					}
+				},
+				"champions": {
+					"boosts": {
+						"spa": -2
+					}
+				}
+			}
+		},
+		"metalclaw": {
+			"pp": {
+				"gen9": 35,
+				"champions": 20
+			},
+			"flags": {
+				"gen9": {
+					"contact": 1,
+					"protect": 1,
+					"mirror": 1,
+					"metronome": 1
+				},
+				"champions": {
+					"contact": 1,
+					"protect": 1,
+					"mirror": 1,
+					"metronome": 1,
+					"slicing": 1
+				}
+			}
+		},
+		"metalsound": {
+			"pp": {
+				"gen9": 40,
+				"champions": 20
+			}
+		},
+		"milkdrink": {
+			"target": {
+				"gen9": "self",
+				"champions": "adjacentAllyOrSelf"
+			}
+		},
+		"mist": {
+			"pp": {
+				"gen9": 30,
+				"champions": 20
+			}
+		},
+		"moonblast": {
+			"secondary": {
+				"gen9": {
+					"chance": 30,
+					"boosts": {
+						"spa": -1
+					}
+				},
+				"champions": {
+					"chance": 10,
+					"boosts": {
+						"spa": -1
+					}
+				}
+			}
+		},
+		"nightdaze": {
+			"basePower": {
+				"gen9": 85,
+				"champions": 90
+			}
+		},
+		"nightslash": {
+			"pp": {
+				"gen9": 15,
+				"champions": 20
+			}
+		},
+		"nobleroar": {
+			"pp": {
+				"gen9": 30,
+				"champions": 20
+			}
+		},
+		"peck": {
+			"pp": {
+				"gen9": 35,
+				"champions": 20
+			}
+		},
+		"poisongas": {
+			"pp": {
+				"gen9": 40,
+				"champions": 20
+			}
+		},
+		"poisonpowder": {
+			"pp": {
+				"gen9": 35,
+				"champions": 20
+			}
+		},
+		"poisonsting": {
+			"pp": {
+				"gen9": 35,
+				"champions": 20
+			}
+		},
+		"poisontail": {
+			"pp": {
+				"gen9": 25,
+				"champions": 20
+			}
+		},
+		"pound": {
+			"pp": {
+				"gen9": 35,
+				"champions": 20
+			}
+		},
+		"powdersnow": {
+			"pp": {
+				"gen9": 25,
+				"champions": 20
+			}
+		},
+		"protect": {
+			"pp": {
+				"gen9": 10,
+				"champions": 5
+			}
+		},
+		"psyshieldbash": {
+			"basePower": {
+				"gen9": 70,
+				"champions": 90
+			}
+		},
+		"quickattack": {
+			"pp": {
+				"gen9": 30,
+				"champions": 20
+			}
+		},
+		"rapidspin": {
+			"pp": {
+				"gen9": 40,
+				"champions": 20
+			}
+		},
+		"razorleaf": {
+			"pp": {
+				"gen9": 25,
+				"champions": 20
+			}
+		},
+		"revelationdance": {
+			"basePower": {
+				"gen9": 90,
+				"champions": 100
+			}
+		},
+		"safeguard": {
+			"pp": {
+				"gen9": 25,
+				"champions": 20
+			}
+		},
+		"saltcure": {
+			"handlers": [
+				"condition.onResidual"
+			]
+		},
+		"sandstorm": {
+			"pp": {
+				"gen9": 10,
+				"champions": 5
+			}
+		},
+		"scratch": {
+			"pp": {
+				"gen9": 35,
+				"champions": 20
+			}
+		},
+		"screech": {
+			"pp": {
+				"gen9": 40,
+				"champions": 20
+			}
+		},
+		"shadowclaw": {
+			"flags": {
+				"gen9": {
+					"contact": 1,
+					"protect": 1,
+					"mirror": 1,
+					"metronome": 1
+				},
+				"champions": {
+					"contact": 1,
+					"protect": 1,
+					"mirror": 1,
+					"metronome": 1,
+					"slicing": 1
+				}
+			}
+		},
+		"shadowsneak": {
+			"pp": {
+				"gen9": 30,
+				"champions": 20
+			}
+		},
+		"slash": {
+			"basePower": {
+				"gen9": 70,
+				"champions": 80
+			}
+		},
+		"snipeshot": {
+			"basePower": {
+				"gen9": 80,
+				"champions": 85
+			}
+		},
+		"snowscape": {
+			"pp": {
+				"gen9": 10,
+				"champions": 5
+			}
+		},
+		"spikyshield": {
+			"pp": {
+				"gen9": 10,
+				"champions": 5
+			}
+		},
+		"spinout": {
+			"pp": {
+				"gen9": 5,
+				"champions": 10
+			}
+		},
+		"spiritshackle": {
+			"basePower": {
+				"gen9": 80,
+				"champions": 90
+			}
+		},
+		"splash": {
+			"pp": {
+				"gen9": 40,
+				"champions": 20
+			}
+		},
+		"steelwing": {
+			"pp": {
+				"gen9": 25,
+				"champions": 20
+			}
+		},
+		"strengthsap": {
+			"pp": {
+				"gen9": 10,
+				"champions": 5
+			}
+		},
+		"stringshot": {
+			"pp": {
+				"gen9": 40,
+				"champions": 20
+			}
+		},
+		"stuffcheeks": {
+			"handlers": [
+				"onDisableMove"
+			]
+		},
+		"stunspore": {
+			"pp": {
+				"gen9": 30,
+				"champions": 20
+			}
+		},
+		"tackle": {
+			"pp": {
+				"gen9": 35,
+				"champions": 20
+			}
+		},
+		"tailwhip": {
+			"pp": {
+				"gen9": 30,
+				"champions": 20
+			}
+		},
+		"thief": {
+			"pp": {
+				"gen9": 25,
+				"champions": 20
+			}
+		},
+		"thundershock": {
+			"pp": {
+				"gen9": 30,
+				"champions": 20
+			}
+		},
+		"tripledive": {
+			"basePower": {
+				"gen9": 30,
+				"champions": 35
+			}
+		},
+		"tropkick": {
+			"basePower": {
+				"gen9": 70,
+				"champions": 85
+			}
+		},
+		"vacuumwave": {
+			"pp": {
+				"gen9": 30,
+				"champions": 20
+			}
+		},
+		"vinewhip": {
+			"pp": {
+				"gen9": 25,
+				"champions": 20
+			}
+		},
+		"visegrip": {
+			"pp": {
+				"gen9": 30,
+				"champions": 20
+			}
+		},
+		"watergun": {
+			"pp": {
+				"gen9": 25,
+				"champions": 20
+			}
+		},
+		"wingattack": {
+			"pp": {
+				"gen9": 35,
+				"champions": 20
+			}
+		},
+		"wish": {
+			"pp": {
+				"gen9": 10,
+				"champions": 5
+			}
+		},
+		"withdraw": {
+			"pp": {
+				"gen9": 40,
+				"champions": 20
+			}
+		},
+		"workup": {
+			"pp": {
+				"gen9": 30,
+				"champions": 20
+			}
+		},
+		"happyhour": {
+			"pp": {
+				"gen9": 30,
+				"champions": 20
+			}
+		},
+		"mountaingale": {
+			"basePower": {
+				"gen9": 100,
+				"champions": 120
+			}
+		},
+		"astralbarrage": {
+			"basePower": {
+				"gen9": 120,
+				"champions": 110
+			}
+		},
+		"beakblast": {
+			"basePower": {
+				"gen9": 100,
+				"champions": 120
+			},
+			"pp": {
+				"gen9": 15,
+				"champions": 5
+			}
+		},
+		"bloodmoon": {
+			"basePower": {
+				"gen9": 140,
+				"champions": 130
+			}
+		},
+		"clangoroussoul": {
+			"accuracy": {
+				"gen9": 100,
+				"champions": true
+			}
+		},
+		"conversion": {
+			"pp": {
+				"gen9": 30,
+				"champions": 20
+			}
+		},
+		"conversion2": {
+			"pp": {
+				"gen9": 30,
+				"champions": 20
+			}
+		},
+		"dragoncheer": {
+			"flags": {
+				"gen9": {
+					"bypasssub": 1,
+					"allyanim": 1,
+					"metronome": 1
+				},
+				"champions": {
+					"bypasssub": 1,
+					"allyanim": 1,
+					"metronome": 1,
+					"sound": 1
+				}
+			}
+		},
+		"dragonhammer": {
+			"basePower": {
+				"gen9": 90,
+				"champions": 100
+			}
+		},
+		"syrupbomb": {
+			"accuracy": {
+				"gen9": 85,
+				"champions": 90
+			}
+		},
+		"toxicthread": {
+			"boosts": {
+				"gen9": {
+					"spe": -1
+				},
+				"champions": {
+					"spe": -2
+				}
+			}
+		}
+	},
+	"species": {},
+	"abilities": {
+		"angershell": {
+			"handlers": [
+				"onDamage"
+			]
+		},
+		"berserk": {
+			"handlers": [
+				"onDamage"
+			]
+		},
+		"healer": {
+			"handlers": [
+				"onResidual"
+			]
+		},
+		"naturalcure": {
+			"handlers": [
+				"onCheckShow",
+				"onSwitchOut"
+			]
+		},
+		"regenerator": {
+			"handlers": [
+				"onSwitchOut"
+			]
+		},
+		"runaway": {
+			"handlers": [
+				"onMaybeTrapPokemon",
+				"onTrapPokemon"
+			]
+		},
+		"unseenfist": {
+			"handlers": [
+				"onHitProtect",
+				"onModifyMove"
+			]
+		}
+	},
+	"items": {
+		"ejectbutton": {
+			"handlers": [
+				"onAfterMoveSecondary"
+			]
+		}
+	},
+	"conditions": {
+		"frz": {
+			"handlers": [
+				"onBeforeMove",
+				"onStart"
+			]
+		},
+		"par": {
+			"handlers": [
+				"onBeforeMove"
+			]
+		},
+		"slp": {
+			"handlers": [
+				"onStart"
+			]
+		}
+	},
+	"typechart": []
+}

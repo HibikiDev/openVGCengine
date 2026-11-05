@@ -1,0 +1,278 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,14171,46667,42288,14133",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "metagross",
+			"item": "heatrock",
+			"ability": "intimidate",
+			"moves": [
+				"entrainment",
+				"roleplay",
+				"skillswap",
+				"wish"
+			],
+			"nature": "bashful",
+			"evs": {
+				"hp": 32,
+				"atk": 32,
+				"def": 18,
+				"spa": 32,
+				"spd": 19,
+				"spe": 11
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "starmie",
+			"item": "sitrusberry",
+			"ability": "guarddog",
+			"moves": [
+				"roleplay",
+				"entrainment",
+				"skillswap",
+				"encore"
+			],
+			"nature": "gentle",
+			"evs": {
+				"hp": 32,
+				"atk": 16,
+				"def": 32,
+				"spa": 15,
+				"spd": 28,
+				"spe": 13
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "raichu",
+			"item": "choicescarf",
+			"ability": "hypercutter",
+			"moves": [
+				"entrainment",
+				"skillswap",
+				"roleplay",
+				"furyattack"
+			],
+			"nature": "naughty",
+			"evs": {
+				"hp": 32,
+				"atk": 15,
+				"def": 1,
+				"spa": 23,
+				"spd": 19,
+				"spe": 2
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "gallade",
+			"item": "wacanberry",
+			"ability": "moldbreaker",
+			"moves": [
+				"skillswap",
+				"roleplay",
+				"entrainment",
+				"poisonfang"
+			],
+			"nature": "serious",
+			"evs": {
+				"hp": 32,
+				"atk": 27,
+				"def": 28,
+				"spa": 6,
+				"spd": 5,
+				"spe": 27
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "aggron",
+			"item": "dragonfang",
+			"ability": "teravolt",
+			"moves": [
+				"entrainment",
+				"skillswap",
+				"roleplay",
+				"bellydrum"
+			],
+			"nature": "serious",
+			"evs": {
+				"hp": 32,
+				"atk": 1,
+				"def": 16,
+				"spa": 31,
+				"spd": 14,
+				"spe": 28
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "tyranitar",
+			"item": "psychicseed",
+			"ability": "teravolt",
+			"moves": [
+				"skillswap",
+				"entrainment",
+				"roleplay",
+				"worryseed"
+			],
+			"nature": "impish",
+			"evs": {
+				"hp": 32,
+				"atk": 21,
+				"def": 27,
+				"spa": 27,
+				"spd": 25,
+				"spe": 15
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "floetteeternal",
+			"item": "pechaberry",
+			"ability": "contrary",
+			"moves": [
+				"roleplay",
+				"skillswap",
+				"entrainment",
+				"gigadrain"
+			],
+			"nature": "bashful",
+			"evs": {
+				"hp": 32,
+				"atk": 13,
+				"def": 6,
+				"spa": 20,
+				"spd": 10,
+				"spe": 30
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "gyarados",
+			"item": "metalcoat",
+			"ability": "hypercutter",
+			"moves": [
+				"skillswap",
+				"roleplay",
+				"entrainment",
+				"sludgewave"
+			],
+			"nature": "lonely",
+			"evs": {
+				"hp": 32,
+				"atk": 8,
+				"def": 1,
+				"spa": 23,
+				"spd": 8,
+				"spe": 9
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 1 1, move 4 1",
+			"p2": "move 2 1, move 2 2"
+		},
+		{
+			"p1": "move 2 2, move 4 1",
+			"p2": "move 1 1, move 1 -1"
+		},
+		{
+			"p1": "move 4, move 4 2",
+			"p2": "move 2 -2, switch 3"
+		},
+		{
+			"p1": "move 4, move 2 2",
+			"p2": "switch 4, move 4 1"
+		},
+		{
+			"p1": "move 2 -2, switch 3",
+			"p2": "move 1 1, move 2 -1"
+		}
+	]
+}

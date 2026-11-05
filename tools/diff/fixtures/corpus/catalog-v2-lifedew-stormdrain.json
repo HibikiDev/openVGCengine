@@ -1,0 +1,262 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,63031,33448,44198,17215",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "sceptile",
+			"item": "choicescarf",
+			"ability": "stormdrain",
+			"moves": [
+				"lavaplume",
+				"thunder",
+				"protect",
+				"poisontail"
+			],
+			"nature": "relaxed",
+			"evs": {
+				"hp": 32,
+				"atk": 14,
+				"def": 10,
+				"spa": 16,
+				"spd": 8,
+				"spe": 21
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "venusaur",
+			"item": "",
+			"ability": "defeatist",
+			"moves": [
+				"lifedew",
+				"healorder",
+				"covet",
+				"skyuppercut"
+			],
+			"nature": "bashful",
+			"evs": {
+				"hp": 32,
+				"atk": 15,
+				"def": 3,
+				"spa": 13,
+				"spd": 5,
+				"spe": 2
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "basculegionf",
+			"item": "wacanberry",
+			"ability": "tintedlens",
+			"moves": [
+				"stuffcheeks",
+				"grasswhistle",
+				"muddywater",
+				"waterpulse"
+			],
+			"nature": "modest",
+			"evs": {
+				"hp": 32,
+				"atk": 20,
+				"def": 14,
+				"spa": 9,
+				"spd": 25,
+				"spe": 27
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "scovillain",
+			"item": "poisonbarb",
+			"ability": "defeatist",
+			"moves": [
+				"needlearm",
+				"dragontail",
+				"fly",
+				"geargrind"
+			],
+			"nature": "hardy",
+			"evs": {
+				"hp": 32,
+				"atk": 12,
+				"def": 24,
+				"spa": 13,
+				"spd": 8,
+				"spe": 12
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "hatterene",
+			"item": "",
+			"ability": "flareboost",
+			"moves": [
+				"tailwind",
+				"endure",
+				"mirrorcoat",
+				"stealthrock"
+			],
+			"nature": "lax",
+			"evs": {
+				"hp": 32,
+				"atk": 16,
+				"def": 18,
+				"spa": 28,
+				"spd": 19,
+				"spe": 26
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "tyranitar",
+			"item": "chartiberry",
+			"ability": "defeatist",
+			"moves": [
+				"meanlook",
+				"mirrorshot",
+				"lockon",
+				"doublehit"
+			],
+			"nature": "gentle",
+			"evs": {
+				"hp": 32,
+				"atk": 32,
+				"def": 17,
+				"spa": 5,
+				"spd": 29,
+				"spe": 7
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "corviknight",
+			"item": "heatrock",
+			"ability": "flareboost",
+			"moves": [
+				"megahorn",
+				"mistyexplosion",
+				"stompingtantrum",
+				"meteormash"
+			],
+			"nature": "mild",
+			"evs": {
+				"hp": 32,
+				"atk": 13,
+				"def": 1,
+				"spa": 27,
+				"spd": 3,
+				"spe": 20
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "scovillain",
+			"item": "expertbelt",
+			"ability": "defeatist",
+			"moves": [
+				"psychicterrain",
+				"hyperfang",
+				"bonerush",
+				"perishsong"
+			],
+			"nature": "sassy",
+			"evs": {
+				"hp": 32,
+				"atk": 2,
+				"def": 24,
+				"spa": 30,
+				"spd": 32,
+				"spe": 18
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 3, move 1",
+			"p2": "move 2, move 1 2"
+		}
+	]
+}

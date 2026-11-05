@@ -1,0 +1,25 @@
+{
+	"format": "gen9vgc2023regc",
+	"formatName": "[Gen 9] VGC 2023 Reg C",
+	"mod": "gen9predlc",
+	"gameType": "doubles",
+	"minSourceGen": 9,
+	"ruleset": [
+		"Flat Rules",
+		"!! Adjust Level = 50",
+		"Min Source Gen = 9",
+		"VGC Timer",
+		"Open Team Sheets",
+		"Paldea Pokedex"
+	],
+	"banlist": [],
+	"counts": {
+		"species": 530,
+		"megaForms": 0,
+		"moves": 577,
+		"abilities": 224,
+		"items": 223,
+		"types": 19
+	},
+	"generatedAt": "2026-10-25T07:12:23.977Z"
+}

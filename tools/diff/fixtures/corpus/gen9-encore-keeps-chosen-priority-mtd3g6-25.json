@@ -1,0 +1,318 @@
+{
+	"format": "gen9vgc2024regg",
+	"seed": "gen5,47903,56441,40582,38474",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "sandygast",
+			"item": "boosterenergy",
+			"ability": "toughclaws",
+			"moves": [
+				"rest",
+				"stoneaxe",
+				"simplebeam",
+				"bitterblade"
+			],
+			"nature": "serious",
+			"evs": {
+				"hp": 12,
+				"atk": 12,
+				"def": 152,
+				"spa": 112,
+				"spd": 220,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 26,
+				"spd": 31,
+				"spe": 28
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Electric"
+		},
+		{
+			"name": "Mon1",
+			"species": "sunflora",
+			"item": "dawnstone",
+			"ability": "keeneye",
+			"moves": [
+				"roar",
+				"liquidation",
+				"blueflare",
+				"crunch"
+			],
+			"nature": "lax",
+			"evs": {
+				"hp": 252,
+				"atk": 68,
+				"def": 188,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 20,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 15,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Ice"
+		},
+		{
+			"name": "Mon2",
+			"species": "alcremierubyswirl",
+			"item": "wacanberry",
+			"ability": "intimidate",
+			"moves": [
+				"wideguard",
+				"dragonhammer",
+				"metalburst",
+				"coreenforcer"
+			],
+			"nature": "naive",
+			"evs": {
+				"hp": 20,
+				"atk": 172,
+				"def": 176,
+				"spa": 92,
+				"spd": 48,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Ice"
+		},
+		{
+			"name": "Mon3",
+			"species": "clauncher",
+			"item": "absorbbulb",
+			"ability": "sharpness",
+			"moves": [
+				"encore",
+				"spiritbreak",
+				"gastroacid",
+				"tailslap"
+			],
+			"nature": "impish",
+			"evs": {
+				"hp": 24,
+				"atk": 232,
+				"def": 224,
+				"spa": 28,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Rock"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "snorlax",
+			"item": "choicescarf",
+			"ability": "powerofalchemy",
+			"moves": [
+				"round",
+				"lastresort",
+				"transform",
+				"babydolleyes"
+			],
+			"nature": "jolly",
+			"evs": {
+				"hp": 168,
+				"atk": 208,
+				"def": 132,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Poison"
+		},
+		{
+			"name": "Mon1",
+			"species": "skiddo",
+			"item": "boosterenergy",
+			"ability": "imposter",
+			"moves": [
+				"moonblast",
+				"superpower",
+				"pound",
+				"gastroacid"
+			],
+			"nature": "impish",
+			"evs": {
+				"hp": 184,
+				"atk": 240,
+				"def": 84,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 21,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Bug"
+		},
+		{
+			"name": "Mon2",
+			"species": "noibat",
+			"item": "rindoberry",
+			"ability": "intimidate",
+			"moves": [
+				"roar",
+				"healpulse",
+				"shadowpunch",
+				"blastburn"
+			],
+			"nature": "bashful",
+			"evs": {
+				"hp": 28,
+				"atk": 76,
+				"def": 196,
+				"spa": 152,
+				"spd": 56,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Fire"
+		},
+		{
+			"name": "Mon3",
+			"species": "barboach",
+			"item": "thunderstone",
+			"ability": "stormdrain",
+			"moves": [
+				"skyattack",
+				"harden",
+				"transform",
+				"teatime"
+			],
+			"nature": "gentle",
+			"evs": {
+				"hp": 124,
+				"atk": 64,
+				"def": 212,
+				"spa": 72,
+				"spd": 36,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 14,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Dragon"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 4 -2, move 1 -1",
+			"p2": "move 3 1 terastallize, move 4 2"
+		},
+		{
+			"p1": "move 1 -2, move 3 2",
+			"p2": "move 3 1, move 3 1"
+		},
+		{
+			"p1": "move 1 2, switch 4",
+			"p2": "move 3 2, move 3 1"
+		},
+		{
+			"p1": "move 1 -2, move 2 2",
+			"p2": "switch 4, move 3 -1"
+		},
+		{
+			"p1": "move 2 2 terastallize, move 2 2",
+			"p2": "move 2 -2, move 2 1"
+		},
+		{
+			"p1": "move 4 1, move 2 -1",
+			"p2": "move 1, move 1 -1"
+		},
+		{
+			"p1": "move 2 -2, move 3 -1",
+			"p2": "move 2 1, move 2 2"
+		},
+		{
+			"p1": "move 2 1, move 4 2",
+			"p2": "switch 4, move 2 -1"
+		},
+		{
+			"p1": "switch 4, move 3 -1",
+			"p2": "move 1 2, switch 3"
+		},
+		{
+			"p1": "move 2 -2, move 3 1",
+			"p2": "move 1 1, move 2 -1"
+		},
+		{
+			"p1": "move 3 2, move 4 2",
+			"p2": "switch 4, switch 3"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "pass, switch 3"
+		}
+	],
+	"teams": [
+		"scenario-38b",
+		"scenario-256a"
+	]
+}

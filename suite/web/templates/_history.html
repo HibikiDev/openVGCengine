@@ -1,0 +1,41 @@
+
+
+{% if history or fav_only %}
+<div class="card flat">
+  <h3>{{ 'Your starred runs' if fav_only else ('Every run' if every else 'Recent runs') }} <span class="small" style="font-weight: 400">·
+    {% if fav_only or every %}<a href="?">recent runs</a>{% endif %}{% if not fav_only %}{{ ' · ' if every }}<a href="?fav=1">★ starred only</a>{% endif %}{% if not every %} · <a href="?all=1">show all</a>{% endif %}</span></h3>
+  {% if not history %}<p class="small muted">No starred runs of this tool yet - star one with ☆ on its result page.</p>{% else %}
+  <div class="scroll"><table class="tbl">
+    <tr><th>when</th><th>teams</th><th></th></tr>
+    {% for h in history %}
+    <tr>
+      <td class="small" style="white-space: nowrap">{% if h.fav %}<span title="starred" style="color: var(--sun, #e0a800)">★</span> {% endif %}{{ h.created|ago if h.created else '' }}{% if h.status not in ('done',) %}<br><span class="muted">{{ h.status }}</span>{% endif %}</td>
+      <td>{% if h.fav and h.fav.note %}<div><b>{{ h.fav.note }}</b></div>{% endif %}{% for t in h.teams %}<div class="small"><b>{{ t.label }}</b>{% if t.id %} <span class="muted">{{ t.id }}</span>{% endif %}:
+          {% for s in t.species %}{{ s }}{{ ' · ' if not loop.last }}{% else %}<span class="muted">(no team)</span>{% endfor %}</div>{% endfor %}
+        {% if h.summary %}<div class="small muted">{{ h.summary }}</div>{% endif %}
+        {% if h.params.replay %}<div class="small muted" style="word-break: break-all">{{ h.params.replay[:90] }}{% if h.params.turn %} · turn {{ h.params.turn }}{% endif %}</div>{% endif %}</td>
+      <td class="small" style="white-space: nowrap">{% if h.status == 'done' %}<a href="/job/{{ h.id }}">result</a> · {% elif h.status in ('queued', 'running') %}<a href="/job/{{ h.id }}"><b>open</b></a> <span class="muted">(progress, cancel)</span> · {% endif %}<a href="?from={{ h.id }}">use again</a>{% if can_swap %} · <a href="?from={{ h.id }}&amp;swap=1">swap sides</a>{% endif %}</td>
+    </tr>
+    {% endfor %}
+  </table></div>{% endif %}
+</div>
+{% endif %}
+{% if prefill %}
+<script id="prefill" type="application/json">{{ prefill|tojson }}</script>
+<script>
+
+(() => {
+  const p = JSON.parse(document.getElementById("prefill").textContent);
+  const form = document.querySelector("main form");
+  if (!form) return;
+  form.querySelectorAll("[name]").forEach(el => {
+    if (el.type === "checkbox") { if (p._checks === undefined && form.querySelector('[name="_checks"]')) return;
+      el.checked = p[el.name] !== undefined && p[el.name] !== ""; return; }
+    if (el.type === "radio") { if (p[el.name] !== undefined) el.checked = el.value === p[el.name]; return; }
+    if (p[el.name] !== undefined) el.value = p[el.name];
+  });
+  const det = form.querySelector("details");
+  if (det && Object.keys(p).some(k => det.querySelector(`[name="${k}"]`) && p[k] !== "")) det.open = true;
+})();
+</script>
+{% endif %}

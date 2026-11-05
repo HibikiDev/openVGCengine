@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block title %}openVGCengine{% endblock %}</title>
+{% if not inline_css %}<link rel="stylesheet" href="/static/fonts/fonts.css">{% endif %}
+{% if inline_css %}<style>{{ inline_css|safe }}</style>{% else %}<link rel="stylesheet" href="/static/style.css">{% endif %}
+{% block head %}{% endblock %}
+</head>
+<body data-current-format="{{ current_format }}">
+<header class="top"><div class="wrap">
+  <a class="brand" href="/">
+    <span><span class="s">openVGCengine</span></span>
+  </a>
+  {% if not standalone %}
+
+  {% set team = ['validate', 'muselfplay', 'slot'] %}{% set lab = ['h2h', 'playout', 'fieldplay', 'preview', 'crawler', 'turn1', 'mxcheck'] %}{% set rep = ['analyze'] %}
+  {% set dev = ['prep', 'nice', 'matchups', 'opp', 'meta'] %}
+  <nav>
+    <a class="tab{% if active in team %} on{% endif %}" href="/validate">Team Lab</a>
+    <a class="tab{% if active in lab %} on{% endif %}" href="/h2h">Battle Lab</a>
+    <a class="tab{% if active in rep %} on{% endif %}" href="/analyze">Replays</a>
+    <a class="tab{% if active == 'buddy' %} on{% endif %}" href="/buddy">Buddy</a>
+    <a class="tab{% if active == 'buckets' %} on{% endif %}" href="/buckets">Buckets</a>
+    {% if private %}<a class="tab{% if active == 'status' %} on{% endif %}" href="/status">Status</a>
+    <details class="devmenu"><summary class="tab{% if active in dev %} on{% endif %}">Dev ▾</summary>
+      <div class="devlist"><a href="/prep">Prep</a><a href="/status/matchups">Matchups</a><a href="/status/meta">Metagame</a><a href="/status/opp">Opponents</a><a href="/status/nice">Nice</a></div></details>{% endif %}
+  </nav>{% endif %}
+</div></header>
+<main><div class="wrap">
+{% if not standalone %}{% set sub = [('validate', 'Team Deep Dive'), ('slot', 'Change a slot')] if active in team else [('h2h', 'Head-to-head'), ('playout', 'Play-out'), ('fieldplay', 'Series vs a field'), ('preview', 'Preview Advisor'), ('crawler', 'Line Crawler')] if active in lab
+   else ([('analyze', 'Analyzer')] if active in rep else []) %}
+{% if sub %}<div class="subnav">{% for key, label in sub %}<a class="{{ 'on' if active == key or (key == 'preview' and active == 'turn1') }}" href="/{{ key }}">{{ label }}</a>{% endfor %}
+  <button type="button" class="subclear" data-clear="{{ 'team' if active in team else 'lab' if active in lab else 'rep' }}">{{ 'clear team' if active in team else 'clear teams' if active in lab else 'clear replay' }}</button></div>{% endif %}{% endif %}
+{% if not standalone and gpu is defined and not gpu.on and (active in team or active in lab) %}<div class="card flat cpubar small"><b>Running on the CPU</b> &middot; no GPU the tools can use was found, so searched modes (Search Mode, Deep mode, bring matrices, example games) are off by default or take much longer here; quick modes work as usual.</div>{% endif %}
+{% set _lk = suite_lock() %}{% if _lk %}<div class="card flat lockbar"><b>Tools paused</b> &middot; this PC is busy: {{ _lk.reason }}{% if _lk.until %} (until about {{ _lk.until }}){% endif %}. Status, results and history still work; new runs and the Line Crawler wait until it's done.</div>{% endif %}
+{% block main %}
+{% if missing %}<div class="card"><h2>Hmm, nothing here</h2><p>That result doesn't exist (any more). <a href="/">Back home</a></p></div>{% endif %}
+{% endblock %}
+</div></main>
+<footer>{% block footer %}Everything here is the model's view from self-play, not a verdict{% endblock %}
+  {% if not standalone %}&middot; <a href="/about">About &amp; updates</a> &middot; <a href="/about#bug">Report a bug</a>{% endif %}</footer>
+{% block scripts %}{% endblock %}
+{% if not standalone %}<script src="/static/sprites.js" defer></script><script src="/static/app.js" defer></script>{% endif %}
+<script>
+
+
+function copyExport(btn) {
+  const text = btn.parentElement.querySelector("pre").textContent;
+  const done = ok => { btn.textContent = ok ? "Copied" : "Select + copy by hand"; setTimeout(() => btn.textContent = "Copy", 1800); };
+  if (navigator.clipboard && window.isSecureContext) { navigator.clipboard.writeText(text).then(() => done(true), () => done(false)); return; }
+  const ta = document.createElement("textarea");
+  ta.value = text; ta.setAttribute("readonly", ""); ta.style.position = "fixed"; ta.style.opacity = "0";
+  document.body.appendChild(ta); ta.select();
+  let ok = false;
+  try { ok = document.execCommand("copy"); } catch (e) { ok = false; }
+  document.body.removeChild(ta); done(ok);
+}
+
+
+document.querySelectorAll("table.tbl").forEach(tbl => {
+  const rows = Array.from(tbl.rows);
+  if (!rows.length || !rows[0].querySelector("th")) return;
+  const head = rows[0];
+  Array.from(head.cells).forEach((th, col) => {
+    th.style.cursor = "pointer"; th.title = "sort";
+    th.addEventListener("click", () => {
+      const body = Array.from(tbl.rows).slice(1).filter(r => r.cells.length === head.cells.length);
+      const val = r => {
+        const c = r.cells[col]; if (!c) return "";
+        const d = c.querySelector("[data-v]") || (c.dataset.v !== undefined ? c : null);
+        if (d) return parseFloat(d.dataset.v);
+        const t = c.textContent.trim(); const m = t.match(/^[-+]?\d+(\.\d+)?/);
+        return m ? parseFloat(m[0]) : t.toLowerCase();
+      };
+      const dir = th.dataset.dir === "desc" ? "asc" : "desc";
+      Array.from(head.cells).forEach(h => delete h.dataset.dir); th.dataset.dir = dir;
+      body.sort((a, b) => { const x = val(a), y = val(b);
+        const c = (typeof x === "number" && typeof y === "number") ? x - y : String(x).localeCompare(String(y));
+        return dir === "desc" ? -c : c; });
+      const parent = body.length ? body[0].parentNode : null;
+      if (parent) body.forEach(r => parent.appendChild(r));
+    });
+  });
+});
+</script>
+</body>
+</html>

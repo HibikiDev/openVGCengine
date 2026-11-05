@@ -1,0 +1,29 @@
+
+
+    <div class="row">
+      <div><label for="field">Against</label>
+        <select id="field" name="field">
+          {% if has_meta_field() %}<option value="meta" data-format="{{ current_format }}">Current Metagame</option>{% endif %}
+          {% set bks = team_buckets() %}{% if bks %}<optgroup label="Your team buckets">
+          {% for b in bks %}<option value="bucket:{{ b }}" data-format="{{ bucket_format(b) }}">Bucket: {{ b }}</option>{% endfor %}</optgroup>{% endif %}
+        </select>
+        {% if not bks and not has_meta_field() %}<div class="small"><b>No field yet:</b> make a <a href="/buckets">team bucket</a> of the teams
+          you expect to face, then pick it here.</div>{% endif %}
+        <div class="small muted"><a href="/buckets">Buckets</a> · <a href="/compare">compare past runs</a></div></div>
+      <div><label for="search_games">Games per opponent team <span class="hint">more = steadier, slower</span></label>
+        <input id="search_games" name="search_games" type="number" min="8" max="{{ LIMITS.search_games }}" value="48">
+        <div class="small muted" id="mode-note">Search Mode: 48 searched games a team{{ ', with its bring matrix' if not slot }}</div></div>
+    </div>
+    <p><label><input type="checkbox" name="fast" value="1" id="fast"{{ ' checked' if not gpu.on }}> <b>Fast mode</b> - no search: {{ FAST_FACTOR }}× the games, much quicker,
+      {{ 'no both-adapt pass' if slot else 'no bring matrix' }}. <span class="muted small">Good for ranking; a single matchup can be ~20 points off.</span></label>
+      {% if not gpu.on %}<span class="small cpu-warn">No GPU here, so Fast mode is this PC's default. Search Mode runs the bot's search on the
+      CPU, many times slower than with a GPU.</span>{% endif %}</p>
+    <script>
+    (() => {
+      const f = document.getElementById("fast"), n = document.getElementById("search_games"), note = document.getElementById("mode-note");
+      const upd = () => { const k = +n.value || 48;
+        note.textContent = f.checked ? `Fast mode: {{ FAST_FACTOR }}× the searched games, no search`
+                                     : `Search Mode: ${k} searched games a team{{ ', with its bring matrix' if not slot else ' (per candidate)' }}`; };
+      f.addEventListener("change", upd); n.addEventListener("input", upd); upd(); window.addEventListener("load", upd);
+    })();
+    </script>

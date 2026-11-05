@@ -1,0 +1,322 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,2693,53091,34965,20484",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Rillaboom",
+			"item": "Miracle Seed",
+			"ability": "Grassy Surge",
+			"moves": [
+				"worryseed",
+				"powerswap",
+				"High Horsepower",
+				"Fake Out"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 32,
+				"atk": 31,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 3
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "Kingambit",
+			"item": "Chople Berry",
+			"ability": "Defiant",
+			"moves": [
+				"defog",
+				"Sucker Punch",
+				"Low Kick",
+				"healbell"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 31,
+				"atk": 25,
+				"def": 1,
+				"spa": 0,
+				"spd": 0,
+				"spe": 9
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "Glimmora",
+			"item": "Glimmoranite",
+			"ability": "Toxic Debris",
+			"moves": [
+				"healbell",
+				"Earth Power",
+				"Sludge Bomb",
+				"corrosivegas"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 1,
+				"atk": 0,
+				"def": 0,
+				"spa": 32,
+				"spd": 1,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "Salamence",
+			"item": "Salamencite",
+			"ability": "Intimidate",
+			"moves": [
+				"switcheroo",
+				"Draco Meteor",
+				"spikes",
+				"Protect"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 1,
+				"atk": 0,
+				"def": 0,
+				"spa": 32,
+				"spd": 1,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Sylveon",
+			"item": "Fairy Feather",
+			"ability": "Pixilate",
+			"moves": [
+				"Hyper Voice",
+				"Hyper Beam",
+				"swordsdance",
+				"spikes"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 7,
+				"atk": 0,
+				"def": 24,
+				"spa": 20,
+				"spd": 0,
+				"spe": 15
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "Aegislash",
+			"item": "Focus Sash",
+			"ability": "Stance Change",
+			"moves": [
+				"topsyturvy",
+				"Iron Head",
+				"powerswap",
+				"Wide Guard"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 2,
+				"atk": 32,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "Garchomp-Mega-Z",
+			"item": "Garchompite Z",
+			"ability": "Rough Skin",
+			"moves": [
+				"Draco Meteor",
+				"powerswap",
+				"Power Gem",
+				"spite"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 4,
+				"atk": 0,
+				"def": 3,
+				"spa": 29,
+				"spd": 0,
+				"spe": 30
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "Toxtricity",
+			"item": "Life Orb",
+			"ability": "Punk Rock",
+			"moves": [
+				"Overdrive",
+				"switcheroo",
+				"Boomburst",
+				"worryseed"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 19,
+				"atk": 0,
+				"def": 0,
+				"spa": 26,
+				"spd": 0,
+				"spe": 21
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"turns": [
+		{
+			"p1": "switch 4, move 2 1",
+			"p2": "move 2 1, switch 3"
+		},
+		{
+			"p1": "move 1 2 mega, move 1 -1",
+			"p2": "move 1, move 4 1"
+		},
+		{
+			"p1": "move 4, move 1 1",
+			"p2": "switch 3, move 3 1"
+		},
+		{
+			"p1": "move 1 2, move 1 -1",
+			"p2": "switch 3, move 4 1"
+		},
+		{
+			"p1": "move 3, move 2 1",
+			"p2": "move 2 -2, move 1 2"
+		},
+		{
+			"p1": "pass, switch 4",
+			"p2": "pass, switch 4"
+		},
+		{
+			"p1": "move 2 1, move 4 1",
+			"p2": "move 1, move 4 -1"
+		},
+		{
+			"p1": "move 4, move 3 1",
+			"p2": "move 4, move 3"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 3, pass"
+		},
+		{
+			"p1": "move 4, move 1 1",
+			"p2": "move 2 -2, move 4 1"
+		},
+		{
+			"p1": "switch 3, move 3 2",
+			"p2": "move 4, move 2 2"
+		},
+		{
+			"p1": "move 2 -2, move 2 1",
+			"p2": "move 2 1, pass"
+		},
+		{
+			"p1": "switch 3, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 1 1, move 1 1",
+			"p2": "move 2 2, pass"
+		},
+		{
+			"p1": "move 1 1, pass",
+			"p2": "move 1 1, pass"
+		}
+	],
+	"teams": [
+		"MC339",
+		"MC260"
+	]
+}

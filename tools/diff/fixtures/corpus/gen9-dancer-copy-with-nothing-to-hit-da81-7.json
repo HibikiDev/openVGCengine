@@ -1,0 +1,270 @@
+{
+	"format": "gen9vgc2024regg",
+	"seed": "gen5,319,48969,3770,60923",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "tentacool",
+			"item": "tangaberry",
+			"ability": "dancer",
+			"moves": [
+				"clangoroussoul",
+				"revelationdance",
+				"lunardance",
+				"teeterdance"
+			],
+			"nature": "hasty",
+			"evs": {
+				"hp": 228,
+				"atk": 92,
+				"def": 188,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 26,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Rock"
+		},
+		{
+			"name": "Mon1",
+			"species": "passimian",
+			"item": "muscleband",
+			"ability": "dancer",
+			"moves": [
+				"featherdance",
+				"swordsdance",
+				"dragondance",
+				"followme"
+			],
+			"nature": "lax",
+			"evs": {
+				"hp": 228,
+				"atk": 88,
+				"def": 192,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Poison"
+		},
+		{
+			"name": "Mon2",
+			"species": "quaquaval",
+			"item": "focussash",
+			"ability": "dancer",
+			"moves": [
+				"dig",
+				"clangoroussoul",
+				"quiverdance",
+				"dragondance"
+			],
+			"nature": "careful",
+			"evs": {
+				"hp": 120,
+				"atk": 200,
+				"def": 188,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Stellar"
+		},
+		{
+			"name": "Mon3",
+			"species": "giratinaorigin",
+			"item": "charcoal",
+			"ability": "dancer",
+			"moves": [
+				"followme",
+				"featherdance",
+				"clangoroussoul",
+				"fakeout"
+			],
+			"nature": "brave",
+			"evs": {
+				"hp": 196,
+				"atk": 200,
+				"def": 112,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 4,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N",
+			"teraType": "Ground"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "varoom",
+			"item": "chestoberry",
+			"ability": "dancer",
+			"moves": [
+				"teeterdance",
+				"victorydance",
+				"fierydance",
+				"swordsdance"
+			],
+			"nature": "quirky",
+			"evs": {
+				"hp": 236,
+				"atk": 60,
+				"def": 212,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 0,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Fighting"
+		},
+		{
+			"name": "Mon1",
+			"species": "toxel",
+			"item": "wacanberry",
+			"ability": "dancer",
+			"moves": [
+				"quiverdance",
+				"taunt",
+				"petaldance",
+				"lunardance"
+			],
+			"nature": "adamant",
+			"evs": {
+				"hp": 212,
+				"atk": 64,
+				"def": 176,
+				"spa": 56,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 0,
+				"atk": 6,
+				"def": 12,
+				"spa": 31,
+				"spd": 1,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Bug"
+		},
+		{
+			"name": "Mon2",
+			"species": "drifloon",
+			"item": "fairyfeather",
+			"ability": "dancer",
+			"moves": [
+				"dragondance",
+				"aquastep",
+				"protect",
+				"followme"
+			],
+			"nature": "hardy",
+			"evs": {
+				"hp": 100,
+				"atk": 36,
+				"def": 136,
+				"spa": 108,
+				"spd": 72,
+				"spe": 20
+			},
+			"ivs": {
+				"hp": 8,
+				"atk": 31,
+				"def": 31,
+				"spa": 0,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Rock"
+		},
+		{
+			"name": "Mon3",
+			"species": "smoliv",
+			"item": "wacanberry",
+			"ability": "dancer",
+			"moves": [
+				"followme",
+				"petaldance",
+				"teeterdance",
+				"dragondance"
+			],
+			"nature": "quirky",
+			"evs": {
+				"hp": 108,
+				"atk": 48,
+				"def": 104,
+				"spa": 104,
+				"spd": 12,
+				"spe": 12
+			},
+			"ivs": {
+				"hp": 26,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 16
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Stellar"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 4 terastallize, move 2",
+			"p2": "move 1, move 3 terastallize"
+		}
+	]
+}

@@ -1,0 +1,262 @@
+{
+	"format": "gen7vgc2017",
+	"seed": "gen5,15698,52331,64964,26892",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "minioryellow",
+			"item": "premierball",
+			"ability": "shieldsdown",
+			"moves": [
+				"steelwing",
+				"venoshock",
+				"icepunch",
+				"camouflage"
+			],
+			"nature": "timid",
+			"evs": {
+				"hp": 88,
+				"atk": 84,
+				"def": 244,
+				"spa": 92,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 23,
+				"def": 31,
+				"spa": 31,
+				"spd": 14,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "altaria",
+			"item": "normaliumz",
+			"ability": "infiltrator",
+			"moves": [
+				"sketch",
+				"dive",
+				"lightscreen",
+				"moonlight"
+			],
+			"nature": "serious",
+			"evs": {
+				"hp": 48,
+				"atk": 84,
+				"def": 148,
+				"spa": 220,
+				"spd": 8,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 23
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "venusaur",
+			"item": "whiteherb",
+			"ability": "snowcloak",
+			"moves": [
+				"honeclaws",
+				"gust",
+				"tailglow",
+				"odorsleuth"
+			],
+			"nature": "quirky",
+			"evs": {
+				"hp": 200,
+				"atk": 176,
+				"def": 120,
+				"spa": 12,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 25,
+				"def": 31,
+				"spa": 15,
+				"spd": 4,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "basculin",
+			"item": "sailfossil",
+			"ability": "cursedbody",
+			"moves": [
+				"endure",
+				"rockthrow",
+				"aurorabeam",
+				"shockwave"
+			],
+			"nature": "rash",
+			"evs": {
+				"hp": 224,
+				"atk": 152,
+				"def": 100,
+				"spa": 32,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 12,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "cryogonal",
+			"item": "normaliumz",
+			"ability": "berserk",
+			"moves": [
+				"defog",
+				"amnesia",
+				"captivate",
+				"spite"
+			],
+			"nature": "hardy",
+			"evs": {
+				"hp": 84,
+				"atk": 216,
+				"def": 88,
+				"spa": 8,
+				"spd": 112,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 0,
+				"def": 31,
+				"spa": 31,
+				"spd": 2,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "mantyke",
+			"item": "buginiumz",
+			"ability": "runaway",
+			"moves": [
+				"weatherball",
+				"dig",
+				"pollenpuff",
+				"counter"
+			],
+			"nature": "hasty",
+			"evs": {
+				"hp": 232,
+				"atk": 248,
+				"def": 28,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 23,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "vivillonmonsoon",
+			"item": "grepaberry",
+			"ability": "ironfist",
+			"moves": [
+				"hornattack",
+				"darkestlariat",
+				"psystrike",
+				"haze"
+			],
+			"nature": "bold",
+			"evs": {
+				"hp": 236,
+				"atk": 80,
+				"def": 16,
+				"spa": 48,
+				"spd": 128,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 28,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "salamence",
+			"item": "grassiumz",
+			"ability": "rattled",
+			"moves": [
+				"gigadrain",
+				"rototiller",
+				"lockon",
+				"stomp"
+			],
+			"nature": "gentle",
+			"evs": {
+				"hp": 224,
+				"atk": 184,
+				"def": 100,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 10,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 2 1, move 4",
+			"p2": "move 4 2, move 2 2"
+		}
+	]
+}

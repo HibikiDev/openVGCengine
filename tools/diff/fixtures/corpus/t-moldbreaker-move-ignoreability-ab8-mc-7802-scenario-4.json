@@ -1,0 +1,278 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,14371,39819,9140,29333",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "alakazam",
+			"item": "lightclay",
+			"ability": "moldbreaker",
+			"moves": [
+				"skillswap",
+				"roleplay",
+				"entrainment",
+				"allyswitch"
+			],
+			"nature": "quiet",
+			"evs": {
+				"hp": 32,
+				"atk": 25,
+				"def": 19,
+				"spa": 32,
+				"spd": 19,
+				"spe": 31
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "incineroar",
+			"item": "chopleberry",
+			"ability": "guarddog",
+			"moves": [
+				"roleplay",
+				"entrainment",
+				"skillswap",
+				"chargebeam"
+			],
+			"nature": "impish",
+			"evs": {
+				"hp": 32,
+				"atk": 5,
+				"def": 6,
+				"spa": 21,
+				"spd": 0,
+				"spe": 19
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "vanilluxe",
+			"item": "mentalherb",
+			"ability": "intimidate",
+			"moves": [
+				"skillswap",
+				"entrainment",
+				"roleplay",
+				"scaleshot"
+			],
+			"nature": "bashful",
+			"evs": {
+				"hp": 32,
+				"atk": 5,
+				"def": 12,
+				"spa": 11,
+				"spd": 18,
+				"spe": 4
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "corviknight",
+			"item": "lumberry",
+			"ability": "simple",
+			"moves": [
+				"roleplay",
+				"skillswap",
+				"entrainment",
+				"pound"
+			],
+			"nature": "bold",
+			"evs": {
+				"hp": 32,
+				"atk": 12,
+				"def": 4,
+				"spa": 7,
+				"spd": 7,
+				"spe": 4
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "sylveon",
+			"item": "metalcoat",
+			"ability": "intimidate",
+			"moves": [
+				"entrainment",
+				"roleplay",
+				"skillswap",
+				"safeguard"
+			],
+			"nature": "bashful",
+			"evs": {
+				"hp": 32,
+				"atk": 26,
+				"def": 7,
+				"spa": 0,
+				"spd": 2,
+				"spe": 18
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "glimmora",
+			"item": "persimberry",
+			"ability": "moldbreaker",
+			"moves": [
+				"entrainment",
+				"skillswap",
+				"roleplay",
+				"lifedew"
+			],
+			"nature": "naive",
+			"evs": {
+				"hp": 32,
+				"atk": 20,
+				"def": 7,
+				"spa": 10,
+				"spd": 17,
+				"spe": 30
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "cinderace",
+			"item": "kasibberry",
+			"ability": "simple",
+			"moves": [
+				"entrainment",
+				"roleplay",
+				"skillswap",
+				"stompingtantrum"
+			],
+			"nature": "jolly",
+			"evs": {
+				"hp": 32,
+				"atk": 18,
+				"def": 14,
+				"spa": 21,
+				"spd": 18,
+				"spe": 28
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "meowscarada",
+			"item": "lumberry",
+			"ability": "mirrorarmor",
+			"moves": [
+				"roleplay",
+				"entrainment",
+				"skillswap",
+				"aquastep"
+			],
+			"nature": "quirky",
+			"evs": {
+				"hp": 32,
+				"atk": 31,
+				"def": 16,
+				"spa": 26,
+				"spd": 15,
+				"spe": 8
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 1 1, move 2 2",
+			"p2": "move 1 2, move 4"
+		},
+		{
+			"p1": "move 3 1, move 4 1",
+			"p2": "move 3 1, move 3 -1"
+		},
+		{
+			"p1": "move 1 1, move 1 -1",
+			"p2": "move 2 2, switch 4"
+		},
+		{
+			"p1": "move 2 -2, move 4 -1",
+			"p2": "move 2 1, move 4 -1"
+		},
+		{
+			"p1": "move 3 1, move 3 -1",
+			"p2": "move 3 1, move 2 1"
+		}
+	]
+}

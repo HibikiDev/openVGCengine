@@ -1,0 +1,262 @@
+{
+	"format": "gen7vgc2018",
+	"seed": "gen5,10691,41413,62505,32281",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "slugma",
+			"item": "shellbell",
+			"ability": "cheekpouch",
+			"moves": [
+				"ironhead",
+				"mindblown",
+				"embargo",
+				"curse"
+			],
+			"nature": "rash",
+			"evs": {
+				"hp": 232,
+				"atk": 32,
+				"def": 176,
+				"spa": 68,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "rhydon",
+			"item": "persimberry",
+			"ability": "defeatist",
+			"moves": [
+				"secretpower",
+				"storedpower",
+				"powersplit",
+				"psychoshift"
+			],
+			"nature": "timid",
+			"evs": {
+				"hp": 192,
+				"atk": 32,
+				"def": 60,
+				"spa": 224,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "vivillon",
+			"item": "venusaurite",
+			"ability": "powerofalchemy",
+			"moves": [
+				"flash",
+				"mindreader",
+				"falseswipe",
+				"mirrorcoat"
+			],
+			"nature": "docile",
+			"evs": {
+				"hp": 20,
+				"atk": 20,
+				"def": 200,
+				"spa": 152,
+				"spd": 116,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "hitmonlee",
+			"item": "garchompite",
+			"ability": "whitesmoke",
+			"moves": [
+				"endeavor",
+				"hyperspacefury",
+				"steelwing",
+				"precipiceblades"
+			],
+			"nature": "quirky",
+			"evs": {
+				"hp": 136,
+				"atk": 204,
+				"def": 88,
+				"spa": 80,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 14,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 16,
+				"spe": 28
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "silvallyfire",
+			"item": "swampertite",
+			"ability": "unburden",
+			"moves": [
+				"seismictoss",
+				"waterfall",
+				"stunspore",
+				"shiftgear"
+			],
+			"nature": "adamant",
+			"evs": {
+				"hp": 156,
+				"atk": 148,
+				"def": 204,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "skitty",
+			"item": "helixfossil",
+			"ability": "insomnia",
+			"moves": [
+				"dragonrage",
+				"lunge",
+				"aurasphere",
+				"healpulse"
+			],
+			"nature": "timid",
+			"evs": {
+				"hp": 96,
+				"atk": 252,
+				"def": 160,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 19,
+				"spe": 14
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "beldum",
+			"item": "electirizer",
+			"ability": "innerfocus",
+			"moves": [
+				"psychup",
+				"fleurcannon",
+				"belch",
+				"spiderweb"
+			],
+			"nature": "relaxed",
+			"evs": {
+				"hp": 208,
+				"atk": 52,
+				"def": 204,
+				"spa": 44,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 7,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 11
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "pikipek",
+			"item": "waterstone",
+			"ability": "sandstream",
+			"moves": [
+				"healbell",
+				"psychic",
+				"overheat",
+				"raindance"
+			],
+			"nature": "brave",
+			"evs": {
+				"hp": 120,
+				"atk": 120,
+				"def": 48,
+				"spa": 20,
+				"spd": 200,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 2, move 3 2",
+			"p2": "move 4, move 1 2"
+		}
+	]
+}

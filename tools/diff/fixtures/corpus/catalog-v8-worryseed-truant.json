@@ -1,0 +1,262 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,13453,64266,16842,11151",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "rotommow",
+			"item": "rawstberry",
+			"ability": "slowstart",
+			"moves": [
+				"swift",
+				"worryseed",
+				"overdrive",
+				"defog"
+			],
+			"nature": "naughty",
+			"evs": {
+				"hp": 32,
+				"atk": 25,
+				"def": 16,
+				"spa": 26,
+				"spd": 13,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "sirfetchd",
+			"item": "scopelens",
+			"ability": "slowstart",
+			"moves": [
+				"tailslap",
+				"xscissor",
+				"calmmind",
+				"fairylock"
+			],
+			"nature": "adamant",
+			"evs": {
+				"hp": 32,
+				"atk": 18,
+				"def": 15,
+				"spa": 14,
+				"spd": 27,
+				"spe": 11
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "clefable",
+			"item": "yacheberry",
+			"ability": "slowstart",
+			"moves": [
+				"syrupbomb",
+				"detect",
+				"pollenpuff",
+				"bellydrum"
+			],
+			"nature": "adamant",
+			"evs": {
+				"hp": 32,
+				"atk": 13,
+				"def": 5,
+				"spa": 31,
+				"spd": 30,
+				"spe": 29
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "aerodactyl",
+			"item": "kebiaberry",
+			"ability": "truant",
+			"moves": [
+				"feint",
+				"magnetrise",
+				"appleacid",
+				"gravapple"
+			],
+			"nature": "mild",
+			"evs": {
+				"hp": 32,
+				"atk": 21,
+				"def": 17,
+				"spa": 12,
+				"spd": 4,
+				"spe": 21
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "arboliva",
+			"item": "lumberry",
+			"ability": "truant",
+			"moves": [
+				"charge",
+				"psychup",
+				"stompingtantrum",
+				"kowtowcleave"
+			],
+			"nature": "docile",
+			"evs": {
+				"hp": 32,
+				"atk": 20,
+				"def": 25,
+				"spa": 15,
+				"spd": 27,
+				"spe": 11
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "espathra",
+			"item": "psychicseed",
+			"ability": "truant",
+			"moves": [
+				"flamecharge",
+				"headbutt",
+				"comeuppance",
+				"appleacid"
+			],
+			"nature": "brave",
+			"evs": {
+				"hp": 32,
+				"atk": 6,
+				"def": 29,
+				"spa": 6,
+				"spd": 21,
+				"spe": 17
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "raichu",
+			"item": "cheriberry",
+			"ability": "truant",
+			"moves": [
+				"roar",
+				"recycle",
+				"acidarmor",
+				"blizzard"
+			],
+			"nature": "docile",
+			"evs": {
+				"hp": 32,
+				"atk": 23,
+				"def": 18,
+				"spa": 15,
+				"spd": 9,
+				"spe": 30
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "houndstone",
+			"item": "softsand",
+			"ability": "slowstart",
+			"moves": [
+				"aquatail",
+				"grassyglide",
+				"hydrocannon",
+				"snaptrap"
+			],
+			"nature": "modest",
+			"evs": {
+				"hp": 32,
+				"atk": 9,
+				"def": 8,
+				"spa": 25,
+				"spd": 9,
+				"spe": 7
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 2 1, move 2 2",
+			"p2": "move 3 1, move 1 2"
+		}
+	]
+}

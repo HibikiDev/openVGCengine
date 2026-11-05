@@ -1,0 +1,282 @@
+{
+	"format": "gen5vgc2013",
+	"seed": "gen5,16400,30775,34053,64626",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "lapras",
+			"item": "psychicgem",
+			"ability": "flamebody",
+			"moves": [
+				"blizzard",
+				"triattack",
+				"icebeam",
+				"powdersnow"
+			],
+			"nature": "serious",
+			"evs": {
+				"hp": 156,
+				"atk": 100,
+				"def": 148,
+				"spa": 68,
+				"spd": 36,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "shayminsky",
+			"item": "tamatoberry",
+			"ability": "serenegrace",
+			"moves": [
+				"triattack",
+				"seedflare",
+				"blizzard",
+				"icebeam"
+			],
+			"nature": "hardy",
+			"evs": {
+				"hp": 20,
+				"atk": 124,
+				"def": 196,
+				"spa": 32,
+				"spd": 136,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 20,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "shayminsky",
+			"item": "masterball",
+			"ability": "naturalcure",
+			"moves": [
+				"blizzard",
+				"powdersnow",
+				"icefang",
+				"triattack"
+			],
+			"nature": "lonely",
+			"evs": {
+				"hp": 68,
+				"atk": 36,
+				"def": 76,
+				"spa": 240,
+				"spd": 88,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 17,
+				"spd": 31,
+				"spe": 1
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "shayminsky",
+			"item": "hondewberry",
+			"ability": "flamebody",
+			"moves": [
+				"triattack",
+				"seedflare",
+				"protect",
+				"icefang"
+			],
+			"nature": "careful",
+			"evs": {
+				"hp": 24,
+				"atk": 252,
+				"def": 24,
+				"spa": 112,
+				"spd": 96,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 27,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "lapras",
+			"item": "electricgem",
+			"ability": "serenegrace",
+			"moves": [
+				"powdersnow",
+				"icefang",
+				"icepunch",
+				"triattack"
+			],
+			"nature": "gentle",
+			"evs": {
+				"hp": 204,
+				"atk": 200,
+				"def": 104,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "shayminsky",
+			"item": "steelgem",
+			"ability": "naturalcure",
+			"moves": [
+				"triattack",
+				"protect",
+				"seedflare",
+				"icebeam"
+			],
+			"nature": "quiet",
+			"evs": {
+				"hp": 196,
+				"atk": 44,
+				"def": 140,
+				"spa": 128,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "shayminsky",
+			"item": "spookyplate",
+			"ability": "serenegrace",
+			"moves": [
+				"triattack",
+				"protect",
+				"icefang",
+				"seedflare"
+			],
+			"nature": "naive",
+			"evs": {
+				"hp": 108,
+				"atk": 160,
+				"def": 72,
+				"spa": 88,
+				"spd": 4,
+				"spe": 16
+			},
+			"ivs": {
+				"hp": 24,
+				"atk": 31,
+				"def": 31,
+				"spa": 25,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "gengar",
+			"item": "heatrock",
+			"ability": "serenegrace",
+			"moves": [
+				"triattack",
+				"icefang",
+				"blizzard",
+				"powdersnow"
+			],
+			"nature": "impish",
+			"evs": {
+				"hp": 24,
+				"atk": 164,
+				"def": 152,
+				"spa": 168,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 23,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 1, move 1 2",
+			"p2": "move 1, move 4 1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "pass, switch 3"
+		},
+		{
+			"p1": "switch 4, move 4 2",
+			"p2": "move 2 1, move 3 -1"
+		},
+		{
+			"p1": "switch 4, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 3 -2, move 2 2",
+			"p2": "move 3 1, switch 4"
+		},
+		{
+			"p1": "move 2 2, move 4 1",
+			"p2": "move 2 1, switch 4"
+		}
+	]
+}

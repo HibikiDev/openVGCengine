@@ -1,0 +1,262 @@
+{
+	"format": "gen7vgc2017",
+	"seed": "gen5,4877,27148,53137,62529",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "ledian",
+			"item": "iciumz",
+			"ability": "symbiosis",
+			"moves": [
+				"stringshot",
+				"sunnyday",
+				"iceball",
+				"milkdrink"
+			],
+			"nature": "rash",
+			"evs": {
+				"hp": 28,
+				"atk": 0,
+				"def": 180,
+				"spa": 56,
+				"spd": 140,
+				"spe": 52
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 20
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "paras",
+			"item": "poisoniumz",
+			"ability": "illusion",
+			"moves": [
+				"flamethrower",
+				"belch",
+				"synthesis",
+				"lowsweep"
+			],
+			"nature": "sassy",
+			"evs": {
+				"hp": 88,
+				"atk": 136,
+				"def": 192,
+				"spa": 92,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 16,
+				"spa": 5,
+				"spd": 22,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "wingull",
+			"item": "ringtarget",
+			"ability": "heavymetal",
+			"moves": [
+				"zenheadbutt",
+				"razorwind",
+				"poisonsting",
+				"rest"
+			],
+			"nature": "naive",
+			"evs": {
+				"hp": 128,
+				"atk": 8,
+				"def": 104,
+				"spa": 248,
+				"spd": 20,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "tauros",
+			"item": "grassiumz",
+			"ability": "sweetveil",
+			"moves": [
+				"doubleslap",
+				"grassknot",
+				"rocktomb",
+				"roaroftime"
+			],
+			"nature": "quiet",
+			"evs": {
+				"hp": 184,
+				"atk": 176,
+				"def": 128,
+				"spa": 20,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 6,
+				"atk": 31,
+				"def": 15,
+				"spa": 14,
+				"spd": 31,
+				"spe": 26
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "torracat",
+			"item": "primariumz",
+			"ability": "wonderskin",
+			"moves": [
+				"bulkup",
+				"aurorabeam",
+				"outrage",
+				"clamp"
+			],
+			"nature": "modest",
+			"evs": {
+				"hp": 72,
+				"atk": 216,
+				"def": 208,
+				"spa": 12,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 13,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "porygon",
+			"item": "psychiumz",
+			"ability": "flowerveil",
+			"moves": [
+				"hiddenpower",
+				"shiftgear",
+				"extrasensory",
+				"cut"
+			],
+			"nature": "modest",
+			"evs": {
+				"hp": 104,
+				"atk": 160,
+				"def": 120,
+				"spa": 124,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 11,
+				"atk": 14,
+				"def": 31,
+				"spa": 31,
+				"spd": 21,
+				"spe": 13
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "hoppip",
+			"item": "domefossil",
+			"ability": "flowerveil",
+			"moves": [
+				"sketch",
+				"psychup",
+				"xscissor",
+				"moonblast"
+			],
+			"nature": "lax",
+			"evs": {
+				"hp": 40,
+				"atk": 144,
+				"def": 144,
+				"spa": 164,
+				"spd": 16,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 10,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 17
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "chesnaught",
+			"item": "firiumz",
+			"ability": "swiftswim",
+			"moves": [
+				"mysticalfire",
+				"wideguard",
+				"vcreate",
+				"stockpile"
+			],
+			"nature": "calm",
+			"evs": {
+				"hp": 148,
+				"atk": 76,
+				"def": 0,
+				"spa": 36,
+				"spd": 176,
+				"spe": 56
+			},
+			"ivs": {
+				"hp": 19,
+				"atk": 27,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 4, move 3",
+			"p2": "move 3, move 3 1"
+		}
+	]
+}

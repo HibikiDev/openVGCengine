@@ -1,0 +1,278 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,39807,47289,65429,23598",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "corviknight",
+			"item": "chestoberry",
+			"ability": "imposter",
+			"moves": [
+				"acidarmor",
+				"trick",
+				"sandstorm",
+				"forestscurse"
+			],
+			"nature": "hasty",
+			"evs": {
+				"hp": 32,
+				"atk": 8,
+				"def": 9,
+				"spa": 27,
+				"spd": 5,
+				"spe": 1
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "typhlosion",
+			"item": "roseliberry",
+			"ability": "trace",
+			"moves": [
+				"destinybond",
+				"dazzlinggleam",
+				"spikes",
+				"razorshell"
+			],
+			"nature": "modest",
+			"evs": {
+				"hp": 32,
+				"atk": 11,
+				"def": 14,
+				"spa": 24,
+				"spd": 15,
+				"spe": 11
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "scrafty",
+			"item": "metalcoat",
+			"ability": "imposter",
+			"moves": [
+				"blazekick",
+				"feint",
+				"zenheadbutt",
+				"flyingpress"
+			],
+			"nature": "brave",
+			"evs": {
+				"hp": 32,
+				"atk": 27,
+				"def": 16,
+				"spa": 0,
+				"spd": 15,
+				"spe": 16
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "torkoal",
+			"item": "electricseed",
+			"ability": "trace",
+			"moves": [
+				"mudshot",
+				"finalgambit",
+				"spikes",
+				"nightshade"
+			],
+			"nature": "timid",
+			"evs": {
+				"hp": 32,
+				"atk": 4,
+				"def": 4,
+				"spa": 30,
+				"spd": 25,
+				"spe": 16
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "farigiraf",
+			"item": "wacanberry",
+			"ability": "imposter",
+			"moves": [
+				"lavaplume",
+				"inferno",
+				"superpower",
+				"firespin"
+			],
+			"nature": "quiet",
+			"evs": {
+				"hp": 32,
+				"atk": 17,
+				"def": 31,
+				"spa": 10,
+				"spd": 16,
+				"spe": 17
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "aerodactyl",
+			"item": "cobaberry",
+			"ability": "imposter",
+			"moves": [
+				"scaryface",
+				"electroshot",
+				"grassyterrain",
+				"noretreat"
+			],
+			"nature": "serious",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 24,
+				"spa": 8,
+				"spd": 13,
+				"spe": 30
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "kangaskhan",
+			"item": "rindoberry",
+			"ability": "intimidate",
+			"moves": [
+				"trick",
+				"tackle",
+				"meteormash",
+				"haze"
+			],
+			"nature": "naive",
+			"evs": {
+				"hp": 32,
+				"atk": 8,
+				"def": 23,
+				"spa": 12,
+				"spd": 6,
+				"spe": 21
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "floetteeternal",
+			"item": "fairyfeather",
+			"ability": "forewarn",
+			"moves": [
+				"cottonguard",
+				"cosmicpower",
+				"flail",
+				"tickle"
+			],
+			"nature": "mild",
+			"evs": {
+				"hp": 32,
+				"atk": 31,
+				"def": 16,
+				"spa": 9,
+				"spd": 2,
+				"spe": 27
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 4 1, move 2",
+			"p2": "move 3, move 4 2"
+		},
+		{
+			"p1": "move 4 2, move 4 2",
+			"p2": "switch 3, move 4 -1"
+		},
+		{
+			"p1": "switch 3, move 1",
+			"p2": "move 3 -2, move 3"
+		},
+		{
+			"p1": "switch 4, move 4 2",
+			"p2": "move 3 -2, move 2 1"
+		},
+		{
+			"p1": "move 2 2, move 4 2",
+			"p2": "move 4, move 4 1"
+		}
+	]
+}

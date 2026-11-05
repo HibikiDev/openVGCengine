@@ -1,0 +1,117 @@
+Third-party notices
+===================
+
+openVGCengine is MIT-licensed (see LICENSE). It builds on the following, which
+keep their own terms.
+
+
+1. Pokemon Showdown (MIT)
+-------------------------
+
+https://github.com/smogon/pokemon-showdown
+
+The battle engine (crates/) is a port of Pokemon Showdown's simulator: its
+mechanics, and the data tables generated from its data files (tools/gen-data/).
+The training buddy runs a local copy of the Pokemon Showdown server
+(tools/buddy/make_server.sh builds it from a Showdown checkout; its format list
+is replaced with the buddy formats). The Showdown battle client is not
+included: the buddy is played from Showdown's own client page.
+
+The MIT License (MIT)
+
+Copyright (c) 2011-2026 Guangcong Luo and other contributors http://pokemonshowdown.com/
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+the Software, and to permit persons to whom the Software is furnished to do so,
+subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+2. Smogon usage statistics (not covered by this repository's license)
+--------------------------------------------------------------------
+
+https://www.smogon.com/stats/
+
+data/smogon-usage/ holds Smogon's monthly usage statistics ("chaos" files),
+computed by Smogon from Pokemon Showdown's ladder games: one file per supported
+format, with the long tails of spreads and teammates trimmed
+(data/smogon-usage/manifest.json lists each file's month, source and checksum).
+They are Smogon's data, redistributed with credit so that each user needn't
+download them; they are not licensed by this repository. The app never
+fetches from Smogon: newer months come with a new release.
+
+
+3. Fonts: Fredoka and Nunito (SIL Open Font License 1.1)
+---------------------------------------------------------
+
+suite/web/static/fonts/ holds the dashboard's two typefaces (latin and
+latin-ext subsets, as Google Fonts serves them), so the suite needs no font
+service. Their licence texts are next to them: OFL-Fredoka.txt (Copyright 2016
+The Fredoka Project Authors) and OFL-Nunito.txt (Copyright 2014 The Nunito
+Project Authors).
+
+
+4. The closed-sheet set data (not covered by this repository's license)
+-----------------------------------------------------------------------
+
+The packages and the models zip include tools/corpus/out/dex-tables.json
+(species, moves, abilities and learnsets, generated from Pokemon Showdown's data
+files - see 1.) and trainer/runs/set_prior/*.json: per species, how often each
+set (item, ability, moves, nature) appears, counted from Smogon's usage
+statistics (see 2.) and from public tournament team lists (Limitless). Counts
+only: no
+player names, teams or events.
+
+The starter "Default" bucket (data/default_bucket.json) holds three open team
+sheets from public regional results, as listed on Munchstats. The sheets carry
+no player names.
+
+
+5. In the Windows package only
+------------------------------
+
+The zip carries programs the setup and the app run, each under its own license,
+with the license text beside it:
+
+- Node.js (MIT, with the licenses of the components it bundles): node/LICENSE.
+  https://nodejs.org
+- uv (MIT or Apache-2.0, at your option): bin/uv-LICENSE-MIT and
+  bin/uv-LICENSE-APACHE. https://github.com/astral-sh/uv
+- Pokemon Showdown's runtime dependencies (vendor/pokemon-showdown/node_modules/,
+  development tools removed): each package's license file is in its folder.
+
+The setup downloads the rest from their own sources and installs it inside the
+package's folder: Python (python-build-standalone; the PSF license), and the
+Python packages in requirements/lock-win.txt plus PyTorch (from PyPI and
+PyTorch's package index; each package's license is in its installed metadata,
+.venv/Lib/site-packages/<package>.dist-info/).
+
+
+6. Pokemon
+----------
+
+Pokemon and all related names are trademarks of Nintendo, Game Freak and
+Creatures Inc. / The Pokemon Company. openVGCengine is an unofficial fan
+project, not affiliated with or endorsed by them. No sprites, artwork or sound
+are included; the suite's optional icons come from a folder the user provides.
+The bundled Showdown server carries Showdown's own text data (move, item and
+ability descriptions, battle messages).
+
+
+7. Rust libraries
+-----------------
+
+The libraries linked into the engine, with their licences, are in
+THIRD_PARTY_RUST.txt.

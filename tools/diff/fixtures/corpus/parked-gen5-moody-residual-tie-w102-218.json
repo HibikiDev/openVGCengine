@@ -1,0 +1,262 @@
+{
+	"format": "gen5vgc2013",
+	"seed": "gen5,59200,16425,13412,14298",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "riolu",
+			"item": "mysticwater",
+			"ability": "rattled",
+			"moves": [
+				"worryseed",
+				"cosmicpower",
+				"bulldoze",
+				"furycutter"
+			],
+			"nature": "naughty",
+			"evs": {
+				"hp": 208,
+				"atk": 72,
+				"def": 36,
+				"spa": 156,
+				"spd": 36,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 29,
+				"spe": 18
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "azumarill",
+			"item": "durinberry",
+			"ability": "moody",
+			"moves": [
+				"milkdrink",
+				"iceshard",
+				"megadrain",
+				"sludgebomb"
+			],
+			"nature": "serious",
+			"evs": {
+				"hp": 60,
+				"atk": 248,
+				"def": 88,
+				"spa": 112,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 23,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "lickitung",
+			"item": "pokeball",
+			"ability": "stickyhold",
+			"moves": [
+				"steamroller",
+				"powersplit",
+				"psychoshift",
+				"pinmissile"
+			],
+			"nature": "calm",
+			"evs": {
+				"hp": 4,
+				"atk": 32,
+				"def": 156,
+				"spa": 52,
+				"spd": 208,
+				"spe": 56
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 7,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "mienfoo",
+			"item": "wiseglasses",
+			"ability": "sturdy",
+			"moves": [
+				"crushclaw",
+				"takedown",
+				"focuspunch",
+				"scaryface"
+			],
+			"nature": "quirky",
+			"evs": {
+				"hp": 204,
+				"atk": 16,
+				"def": 120,
+				"spa": 168,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 12,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "delcatty",
+			"item": "toxicplate",
+			"ability": "imposter",
+			"moves": [
+				"rocksmash",
+				"drillrun",
+				"boneclub",
+				"sing"
+			],
+			"nature": "bold",
+			"evs": {
+				"hp": 136,
+				"atk": 156,
+				"def": 124,
+				"spa": 92,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 27,
+				"spa": 31,
+				"spd": 18,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "emboar",
+			"item": "powerband",
+			"ability": "swiftswim",
+			"moves": [
+				"takedown",
+				"magicalleaf",
+				"assist",
+				"flatter"
+			],
+			"nature": "naive",
+			"evs": {
+				"hp": 148,
+				"atk": 40,
+				"def": 76,
+				"spa": 96,
+				"spd": 148,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "sandile",
+			"item": "flyinggem",
+			"ability": "hydration",
+			"moves": [
+				"bulletseed",
+				"sonicboom",
+				"bravebird",
+				"synthesis"
+			],
+			"nature": "gentle",
+			"evs": {
+				"hp": 80,
+				"atk": 100,
+				"def": 224,
+				"spa": 104,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 7,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 12,
+				"spe": 19
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "pansear",
+			"item": "dragonfang",
+			"ability": "limber",
+			"moves": [
+				"captivate",
+				"dragondance",
+				"magnitude",
+				"earthpower"
+			],
+			"nature": "jolly",
+			"evs": {
+				"hp": 204,
+				"atk": 104,
+				"def": 200,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 13,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 2, move 3 1",
+			"p2": "move 3 1, move 2 1"
+		}
+	]
+}

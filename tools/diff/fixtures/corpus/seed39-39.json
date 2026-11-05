@@ -1,0 +1,302 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,50217,20792,52922,369",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Pawmot",
+			"item": "Focus Sash",
+			"ability": "Iron Fist",
+			"moves": [
+				"Double Shock",
+				"Close Combat",
+				"Revival Blessing",
+				"Fake Out"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 2,
+				"atk": 32,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "Kingambit",
+			"item": "Black Glasses",
+			"ability": "Defiant",
+			"moves": [
+				"Kowtow Cleave",
+				"Iron Head",
+				"Sucker Punch",
+				"Protect"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 24,
+				"atk": 32,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 10
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "Talonflame",
+			"item": "Sharp Beak",
+			"ability": "Gale Wings",
+			"moves": [
+				"Feint",
+				"Tailwind",
+				"Brave Bird",
+				"Flare Blitz"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 7,
+				"atk": 32,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 27
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "Froslass",
+			"item": "Froslassite",
+			"ability": "Cursed Body",
+			"moves": [
+				"Blizzard",
+				"Aurora Veil",
+				"Shadow Ball",
+				"Protect"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 14,
+				"atk": 0,
+				"def": 0,
+				"spa": 20,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Salamence",
+			"item": "Salamencite",
+			"ability": "Intimidate",
+			"moves": [
+				"Hyper Voice",
+				"Dragon Pulse",
+				"Tailwind",
+				"Protect"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 15,
+				"atk": 0,
+				"def": 0,
+				"spa": 27,
+				"spd": 3,
+				"spe": 21
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "Lucario",
+			"item": "Lucarionite Z",
+			"ability": "Inner Focus",
+			"moves": [
+				"Flash Cannon",
+				"Aura Sphere",
+				"Brick Break",
+				"Detect"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 2,
+				"atk": 0,
+				"def": 0,
+				"spa": 32,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "Primarina",
+			"item": "Leftovers",
+			"ability": "Liquid Voice",
+			"moves": [
+				"Protect",
+				"Hyper Voice",
+				"Moonblast",
+				"Helping Hand"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 22,
+				"atk": 0,
+				"def": 0,
+				"spa": 32,
+				"spd": 12,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "Farigiraf",
+			"item": "Colbur Berry",
+			"ability": "Armor Tail",
+			"moves": [
+				"Twin Beam",
+				"Thunderbolt",
+				"Protect",
+				"Trick Room"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 15,
+				"atk": 0,
+				"def": 31,
+				"spa": 20,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 4 1, move 4",
+			"p2": "move 2 1, move 2 2 mega"
+		},
+		{
+			"p1": "move 3, move 2 2",
+			"p2": "move 1, move 2 2"
+		},
+		{
+			"p1": "switch 2, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 2 2, move 3 1",
+			"p2": "switch 3, move 3 2"
+		},
+		{
+			"p1": "pass, switch 4",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "switch 3, move 2 mega",
+			"p2": "move 2, move 1 1"
+		},
+		{
+			"p1": "switch 3, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 4 2, move 4",
+			"p2": "switch 4, move 3 1"
+		},
+		{
+			"p1": "move 2 2, move 4",
+			"p2": "move 1 2, move 2 1"
+		},
+		{
+			"p1": "pass, move 3 1",
+			"p2": "move 2 2, move 1 1"
+		}
+	],
+	"teams": [
+		"MC68",
+		"MC168"
+	]
+}

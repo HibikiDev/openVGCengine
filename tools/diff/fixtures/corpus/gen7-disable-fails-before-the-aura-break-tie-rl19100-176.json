@@ -1,0 +1,262 @@
+{
+	"format": "gen7vgc2019",
+	"seed": "gen5,13468,19152,60165,62825",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "sunkern",
+			"item": "miracleseed",
+			"ability": "strongjaw",
+			"moves": [
+				"transform",
+				"disable",
+				"mirrorcoat",
+				"counter"
+			],
+			"nature": "lax",
+			"evs": {
+				"hp": 248,
+				"atk": 236,
+				"def": 24,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 7,
+				"atk": 31,
+				"def": 31,
+				"spa": 8,
+				"spd": 22,
+				"spe": 26
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "sandile",
+			"item": "fightiniumz",
+			"ability": "aurabreak",
+			"moves": [
+				"disable",
+				"counter",
+				"coreenforcer",
+				"toxic"
+			],
+			"nature": "quirky",
+			"evs": {
+				"hp": 68,
+				"atk": 60,
+				"def": 116,
+				"spa": 4,
+				"spd": 252,
+				"spe": 8
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 9,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "rotomfan",
+			"item": "normaliumz",
+			"ability": "primordialsea",
+			"moves": [
+				"healbell",
+				"coreenforcer",
+				"disable",
+				"mirrorcoat"
+			],
+			"nature": "hasty",
+			"evs": {
+				"hp": 4,
+				"atk": 116,
+				"def": 92,
+				"spa": 156,
+				"spd": 140,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 2,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "spoink",
+			"item": "oranberry",
+			"ability": "emergencyexit",
+			"moves": [
+				"toxic",
+				"healbell",
+				"mirrorcoat",
+				"disable"
+			],
+			"nature": "quirky",
+			"evs": {
+				"hp": 104,
+				"atk": 144,
+				"def": 96,
+				"spa": 68,
+				"spd": 96,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 8,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "umbreon",
+			"item": "psychiumz",
+			"ability": "hugepower",
+			"moves": [
+				"mirrorcoat",
+				"counter",
+				"toxic",
+				"coreenforcer"
+			],
+			"nature": "quiet",
+			"evs": {
+				"hp": 132,
+				"atk": 64,
+				"def": 4,
+				"spa": 192,
+				"spd": 116,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "meowsticf",
+			"item": "gardevoirite",
+			"ability": "furcoat",
+			"moves": [
+				"transform",
+				"mirrorcoat",
+				"coreenforcer",
+				"healbell"
+			],
+			"nature": "bashful",
+			"evs": {
+				"hp": 40,
+				"atk": 112,
+				"def": 24,
+				"spa": 220,
+				"spd": 36,
+				"spe": 8
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 17,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "grotle",
+			"item": "pidgeotite",
+			"ability": "stormdrain",
+			"moves": [
+				"healbell",
+				"toxic",
+				"counter",
+				"coreenforcer"
+			],
+			"nature": "adamant",
+			"evs": {
+				"hp": 152,
+				"atk": 188,
+				"def": 168,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 15,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "durant",
+			"item": "reapercloth",
+			"ability": "slowstart",
+			"moves": [
+				"counter",
+				"coreenforcer",
+				"healbell",
+				"toxic"
+			],
+			"nature": "docile",
+			"evs": {
+				"hp": 248,
+				"atk": 228,
+				"def": 32,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 3, move 1 1",
+			"p2": "move 1, move 1 2"
+		}
+	]
+}

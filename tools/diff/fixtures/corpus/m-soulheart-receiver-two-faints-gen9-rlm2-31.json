@@ -1,0 +1,290 @@
+{
+	"format": "gen9vgc2024regg",
+	"seed": "gen5,2579,3894,43305,62950",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "illumise",
+			"item": "icicleplate",
+			"ability": "soulheart",
+			"moves": [
+				"rockslide",
+				"hyperbeam",
+				"earthquake",
+				"finalgambit"
+			],
+			"nature": "gentle",
+			"evs": {
+				"hp": 212,
+				"atk": 72,
+				"def": 224,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 5,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 13,
+				"spe": 17
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Rock"
+		},
+		{
+			"name": "Mon1",
+			"species": "poliwhirl",
+			"item": "liechiberry",
+			"ability": "receiver",
+			"moves": [
+				"dracometeor",
+				"healingwish",
+				"earthquake",
+				"selfdestruct"
+			],
+			"nature": "lax",
+			"evs": {
+				"hp": 204,
+				"atk": 136,
+				"def": 168,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 10,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Bug"
+		},
+		{
+			"name": "Mon2",
+			"species": "electivire",
+			"item": "goldbottlecap",
+			"ability": "soulheart",
+			"moves": [
+				"memento",
+				"finalgambit",
+				"earthquake",
+				"dracometeor"
+			],
+			"nature": "calm",
+			"evs": {
+				"hp": 100,
+				"atk": 140,
+				"def": 216,
+				"spa": 52,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 27,
+				"atk": 10,
+				"def": 31,
+				"spa": 31,
+				"spd": 29,
+				"spe": 29
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Fighting"
+		},
+		{
+			"name": "Mon3",
+			"species": "dodrio",
+			"item": "magoberry",
+			"ability": "soulheart",
+			"moves": [
+				"hyperbeam",
+				"healingwish",
+				"protect",
+				"rockslide"
+			],
+			"nature": "calm",
+			"evs": {
+				"hp": 152,
+				"atk": 164,
+				"def": 192,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 25,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Grass"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "floette",
+			"item": "upgrade",
+			"ability": "receiver",
+			"moves": [
+				"hyperbeam",
+				"memento",
+				"earthquake",
+				"rockslide"
+			],
+			"nature": "sassy",
+			"evs": {
+				"hp": 32,
+				"atk": 188,
+				"def": 124,
+				"spa": 164,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Rock"
+		},
+		{
+			"name": "Mon1",
+			"species": "galvantula",
+			"item": "kingsrock",
+			"ability": "receiver",
+			"moves": [
+				"dracometeor",
+				"earthquake",
+				"selfdestruct",
+				"explosion"
+			],
+			"nature": "careful",
+			"evs": {
+				"hp": 196,
+				"atk": 92,
+				"def": 220,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Rock"
+		},
+		{
+			"name": "Mon2",
+			"species": "mewtwo",
+			"item": "figyberry",
+			"ability": "soulheart",
+			"moves": [
+				"memento",
+				"protect",
+				"earthquake",
+				"hyperbeam"
+			],
+			"nature": "gentle",
+			"evs": {
+				"hp": 172,
+				"atk": 4,
+				"def": 24,
+				"spa": 116,
+				"spd": 100,
+				"spe": 92
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 12,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N",
+			"teraType": "Ground"
+		},
+		{
+			"name": "Mon3",
+			"species": "wattrel",
+			"item": "aspearberry",
+			"ability": "soulheart",
+			"moves": [
+				"earthquake",
+				"finalgambit",
+				"hyperbeam",
+				"rockslide"
+			],
+			"nature": "sassy",
+			"evs": {
+				"hp": 104,
+				"atk": 128,
+				"def": 200,
+				"spa": 56,
+				"spd": 20,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 6,
+				"atk": 5,
+				"def": 31,
+				"spa": 31,
+				"spd": 22,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Fairy"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 4 1, move 3 terastallize",
+			"p2": "move 3, move 2 terastallize"
+		},
+		{
+			"p1": "switch 4, pass",
+			"p2": "switch 4, pass"
+		},
+		{
+			"p1": "move 4, move 4",
+			"p2": "move 3 -2, move 1 2"
+		},
+		{
+			"p1": "pass, switch 3",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 2, move 4 2",
+			"p2": "move 3 2, move 1 1"
+		},
+		{
+			"p1": "move 1 2, move 2 -1",
+			"p2": "move 1, switch 3"
+		}
+	]
+}

@@ -1,0 +1,262 @@
+{
+	"format": "gen8vgc2021",
+	"seed": "gen5,63952,28334,22251,37291",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "mimejr",
+			"item": "kebiaberry",
+			"ability": "moldbreaker",
+			"moves": [
+				"tackle",
+				"roleplay",
+				"toxicspikes",
+				"protect"
+			],
+			"nature": "quiet",
+			"evs": {
+				"hp": 220,
+				"atk": 104,
+				"def": 144,
+				"spa": 40,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 8,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "alcremiecaramelswirl",
+			"item": "muscleband",
+			"ability": "neutralizinggas",
+			"moves": [
+				"toxicspikes",
+				"toxic",
+				"sludgebomb",
+				"tackle"
+			],
+			"nature": "docile",
+			"evs": {
+				"hp": 104,
+				"atk": 180,
+				"def": 136,
+				"spa": 88,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 26,
+				"atk": 16,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 17
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "hitmonchan",
+			"item": "fairyfeather",
+			"ability": "trace",
+			"moves": [
+				"protect",
+				"roleplay",
+				"gastroacid",
+				"sludgebomb"
+			],
+			"nature": "gentle",
+			"evs": {
+				"hp": 164,
+				"atk": 76,
+				"def": 116,
+				"spa": 152,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 4,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "persian",
+			"item": "damprock",
+			"ability": "moldbreaker",
+			"moves": [
+				"sludgebomb",
+				"tackle",
+				"poisonjab",
+				"toxic"
+			],
+			"nature": "impish",
+			"evs": {
+				"hp": 180,
+				"atk": 192,
+				"def": 128,
+				"spa": 8,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 1,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "beartic",
+			"item": "charcoal",
+			"ability": "trace",
+			"moves": [
+				"toxicspikes",
+				"poisonjab",
+				"gastroacid",
+				"roleplay"
+			],
+			"nature": "quiet",
+			"evs": {
+				"hp": 168,
+				"atk": 104,
+				"def": 232,
+				"spa": 4,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 22,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "binacle",
+			"item": "chopleberry",
+			"ability": "neutralizinggas",
+			"moves": [
+				"sludgebomb",
+				"skillswap",
+				"toxicspikes",
+				"gastroacid"
+			],
+			"nature": "adamant",
+			"evs": {
+				"hp": 56,
+				"atk": 0,
+				"def": 164,
+				"spa": 136,
+				"spd": 152,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 21,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "grimmsnarl",
+			"item": "heatrock",
+			"ability": "neutralizinggas",
+			"moves": [
+				"protect",
+				"skillswap",
+				"toxic",
+				"poisonjab"
+			],
+			"nature": "serious",
+			"evs": {
+				"hp": 12,
+				"atk": 80,
+				"def": 152,
+				"spa": 104,
+				"spd": 112,
+				"spe": 48
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 11,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "petilil",
+			"item": "mentalherb",
+			"ability": "trace",
+			"moves": [
+				"sludgebomb",
+				"protect",
+				"tackle",
+				"gastroacid"
+			],
+			"nature": "relaxed",
+			"evs": {
+				"hp": 240,
+				"atk": 132,
+				"def": 136,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 3, move 3 1",
+			"p2": "move 4 2, move 2 2"
+		}
+	]
+}

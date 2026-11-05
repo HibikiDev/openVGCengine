@@ -1,0 +1,262 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,17910,46651,9294,7837",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "lopunny",
+			"item": "enigmaberry",
+			"ability": "aerilate",
+			"moves": [
+				"confuseray",
+				"bulkup",
+				"shellsidearm",
+				"mudshot"
+			],
+			"nature": "bashful",
+			"evs": {
+				"hp": 32,
+				"atk": 6,
+				"def": 3,
+				"spa": 31,
+				"spd": 21,
+				"spe": 5
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "sceptile",
+			"item": "jabocaberry",
+			"ability": "weakarmor",
+			"moves": [
+				"feint",
+				"pollenpuff",
+				"psychup",
+				"petalblizzard"
+			],
+			"nature": "mild",
+			"evs": {
+				"hp": 32,
+				"atk": 29,
+				"def": 28,
+				"spa": 13,
+				"spd": 30,
+				"spe": 9
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "palkia",
+			"item": "jabocaberry",
+			"ability": "levitate",
+			"moves": [
+				"finalgambit",
+				"firelash",
+				"watershuriken",
+				"jetpunch"
+			],
+			"nature": "docile",
+			"evs": {
+				"hp": 32,
+				"atk": 30,
+				"def": 24,
+				"spa": 1,
+				"spd": 9,
+				"spe": 1
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "charizard",
+			"item": "griseousorb",
+			"ability": "surgesurfer",
+			"moves": [
+				"boomburst",
+				"darkestlariat",
+				"aurasphere",
+				"poltergeist"
+			],
+			"nature": "naughty",
+			"evs": {
+				"hp": 32,
+				"atk": 6,
+				"def": 8,
+				"spa": 11,
+				"spd": 28,
+				"spe": 22
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "aegislash",
+			"item": "lustrousorb",
+			"ability": "raindish",
+			"moves": [
+				"fakeout",
+				"supercellslam",
+				"powergem",
+				"seismictoss"
+			],
+			"nature": "brave",
+			"evs": {
+				"hp": 32,
+				"atk": 31,
+				"def": 1,
+				"spa": 6,
+				"spd": 23,
+				"spe": 27
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "sylveon",
+			"item": "mail",
+			"ability": "magmaarmor",
+			"moves": [
+				"auroraveil",
+				"entrainment",
+				"powertrick",
+				"upperhand"
+			],
+			"nature": "bashful",
+			"evs": {
+				"hp": 32,
+				"atk": 24,
+				"def": 27,
+				"spa": 29,
+				"spd": 10,
+				"spe": 13
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "chimecho",
+			"item": "enigmaberry",
+			"ability": "thickfat",
+			"moves": [
+				"waterspout",
+				"endeavor",
+				"destinybond",
+				"noretreat"
+			],
+			"nature": "mild",
+			"evs": {
+				"hp": 32,
+				"atk": 4,
+				"def": 25,
+				"spa": 14,
+				"spd": 22,
+				"spe": 3
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "baxcalibur",
+			"item": "cellbattery",
+			"ability": "grassysurge",
+			"moves": [
+				"acidarmor",
+				"doubleteam",
+				"hypervoice",
+				"dragonrush"
+			],
+			"nature": "careful",
+			"evs": {
+				"hp": 32,
+				"atk": 23,
+				"def": 19,
+				"spa": 31,
+				"spd": 11,
+				"spe": 26
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 3 2, move 1 2",
+			"p2": "move 4 1, move 2 1"
+		}
+	]
+}

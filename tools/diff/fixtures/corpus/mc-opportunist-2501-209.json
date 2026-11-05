@@ -1,0 +1,262 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,10900,6841,38510,63278",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "pelipper",
+			"item": "payapaberry",
+			"ability": "owntempo",
+			"moves": [
+				"coil",
+				"lifedew",
+				"steelroller",
+				"detect"
+			],
+			"nature": "lax",
+			"evs": {
+				"hp": 32,
+				"atk": 25,
+				"def": 7,
+				"spa": 23,
+				"spd": 18,
+				"spe": 26
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "meowscarada",
+			"item": "blackbelt",
+			"ability": "dragonize",
+			"moves": [
+				"taunt",
+				"doubleedge",
+				"slackoff",
+				"bravebird"
+			],
+			"nature": "naughty",
+			"evs": {
+				"hp": 32,
+				"atk": 4,
+				"def": 9,
+				"spa": 31,
+				"spd": 9,
+				"spe": 27
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "vivillon",
+			"item": "pechaberry",
+			"ability": "mummy",
+			"moves": [
+				"sunnyday",
+				"tackle",
+				"psychicterrain",
+				"hornleech"
+			],
+			"nature": "calm",
+			"evs": {
+				"hp": 32,
+				"atk": 8,
+				"def": 11,
+				"spa": 2,
+				"spd": 32,
+				"spe": 8
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "skeledirge",
+			"item": "aspearberry",
+			"ability": "disguise",
+			"moves": [
+				"terrainpulse",
+				"detect",
+				"dragonpulse",
+				"overdrive"
+			],
+			"nature": "hasty",
+			"evs": {
+				"hp": 32,
+				"atk": 21,
+				"def": 12,
+				"spa": 30,
+				"spd": 23,
+				"spe": 13
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "overqwil",
+			"item": "blackbelt",
+			"ability": "opportunist",
+			"moves": [
+				"coil",
+				"quickattack",
+				"knockoff",
+				"nastyplot"
+			],
+			"nature": "naughty",
+			"evs": {
+				"hp": 32,
+				"atk": 9,
+				"def": 31,
+				"spa": 24,
+				"spd": 14,
+				"spe": 30
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "maushold",
+			"item": "expertbelt",
+			"ability": "wanderingspirit",
+			"moves": [
+				"glaiverush",
+				"aquajet",
+				"slash",
+				"psychicnoise"
+			],
+			"nature": "rash",
+			"evs": {
+				"hp": 32,
+				"atk": 32,
+				"def": 10,
+				"spa": 9,
+				"spd": 32,
+				"spe": 21
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "sinistchamasterpiece",
+			"item": "metalcoat",
+			"ability": "forecast",
+			"moves": [
+				"psychup",
+				"slash",
+				"stockpile",
+				"lightscreen"
+			],
+			"nature": "calm",
+			"evs": {
+				"hp": 32,
+				"atk": 18,
+				"def": 23,
+				"spa": 30,
+				"spd": 24,
+				"spe": 21
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "toxapex",
+			"item": "hardstone",
+			"ability": "sniper",
+			"moves": [
+				"flowertrick",
+				"drainingkiss",
+				"calmmind",
+				"alluringvoice"
+			],
+			"nature": "lax",
+			"evs": {
+				"hp": 32,
+				"atk": 26,
+				"def": 10,
+				"spa": 3,
+				"spd": 10,
+				"spe": 15
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 1, move 4 2",
+			"p2": "move 4, move 1 1"
+		}
+	]
+}

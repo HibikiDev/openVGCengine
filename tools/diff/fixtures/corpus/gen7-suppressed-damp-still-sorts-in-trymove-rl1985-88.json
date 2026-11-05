@@ -1,0 +1,262 @@
+{
+	"format": "gen7vgc2019",
+	"seed": "gen5,22186,11749,60338,33829",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "cresselia",
+			"item": "jabocaberry",
+			"ability": "ironbarbs",
+			"moves": [
+				"heatwave",
+				"transform",
+				"curse",
+				"flamethrower"
+			],
+			"nature": "gentle",
+			"evs": {
+				"hp": 156,
+				"atk": 212,
+				"def": 36,
+				"spa": 64,
+				"spd": 40,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 5,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "rockruffdusk",
+			"item": "dragoniumz",
+			"ability": "plus",
+			"moves": [
+				"coreenforcer",
+				"flamethrower",
+				"curse",
+				"heatwave"
+			],
+			"nature": "hardy",
+			"evs": {
+				"hp": 132,
+				"atk": 8,
+				"def": 96,
+				"spa": 192,
+				"spd": 80,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 8,
+				"spa": 31,
+				"spd": 1,
+				"spe": 2
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "dugtrioalola",
+			"item": "ghostiumz",
+			"ability": "compoundeyes",
+			"moves": [
+				"takedown",
+				"curse",
+				"heatwave",
+				"coreenforcer"
+			],
+			"nature": "adamant",
+			"evs": {
+				"hp": 192,
+				"atk": 132,
+				"def": 184,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 19
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "rotom",
+			"item": "normaliumz",
+			"ability": "neuroforce",
+			"moves": [
+				"heatwave",
+				"flamethrower",
+				"takedown",
+				"transform"
+			],
+			"nature": "naive",
+			"evs": {
+				"hp": 188,
+				"atk": 56,
+				"def": 164,
+				"spa": 64,
+				"spd": 36,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 14,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "goodra",
+			"item": "lucarionite",
+			"ability": "damp",
+			"moves": [
+				"transform",
+				"hiddenpower",
+				"curse",
+				"heatwave"
+			],
+			"nature": "adamant",
+			"evs": {
+				"hp": 80,
+				"atk": 172,
+				"def": 168,
+				"spa": 88,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 8,
+				"def": 31,
+				"spa": 15,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "magnezone",
+			"item": "",
+			"ability": "ironfist",
+			"moves": [
+				"takedown",
+				"heatwave",
+				"coreenforcer",
+				"flamethrower"
+			],
+			"nature": "docile",
+			"evs": {
+				"hp": 156,
+				"atk": 84,
+				"def": 220,
+				"spa": 48,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "elekid",
+			"item": "sachet",
+			"ability": "liquidvoice",
+			"moves": [
+				"takedown",
+				"flamethrower",
+				"hiddenpower",
+				"coreenforcer"
+			],
+			"nature": "hardy",
+			"evs": {
+				"hp": 136,
+				"atk": 40,
+				"def": 20,
+				"spa": 136,
+				"spd": 76,
+				"spe": 100
+			},
+			"ivs": {
+				"hp": 17,
+				"atk": 31,
+				"def": 31,
+				"spa": 14,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "salandit",
+			"item": "micleberry",
+			"ability": "superluck",
+			"moves": [
+				"takedown",
+				"flamethrower",
+				"heatwave",
+				"coreenforcer"
+			],
+			"nature": "naive",
+			"evs": {
+				"hp": 196,
+				"atk": 56,
+				"def": 252,
+				"spa": 4,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 6,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 2 1, move 3",
+			"p2": "move 4, move 3"
+		}
+	]
+}

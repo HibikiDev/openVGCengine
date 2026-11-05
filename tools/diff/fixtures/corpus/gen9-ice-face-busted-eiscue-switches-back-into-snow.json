@@ -1,0 +1,282 @@
+{
+	"format": "gen9vgc2024regg",
+	"seed": "gen5,1,2,3,4",
+	"team1": [
+		{
+			"name": "Ice",
+			"species": "eiscue",
+			"item": "",
+			"ability": "iceface",
+			"moves": [
+				"protect",
+				"tackle",
+				"iceshard",
+				"snowscape"
+			],
+			"nature": "serious",
+			"evs": {
+				"hp": 252,
+				"atk": 252,
+				"def": 4,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Normal"
+		},
+		{
+			"name": "Snow",
+			"species": "abomasnow",
+			"item": "",
+			"ability": "snowwarning",
+			"moves": [
+				"protect",
+				"tackle",
+				"iceshard",
+				"blizzard"
+			],
+			"nature": "serious",
+			"evs": {
+				"hp": 252,
+				"atk": 252,
+				"def": 4,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Normal"
+		},
+		{
+			"name": "Bench",
+			"species": "excadrill",
+			"item": "",
+			"ability": "sandrush",
+			"moves": [
+				"protect",
+				"tackle",
+				"rockslide",
+				"earthquake"
+			],
+			"nature": "serious",
+			"evs": {
+				"hp": 252,
+				"atk": 252,
+				"def": 4,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Normal"
+		},
+		{
+			"name": "Bench2",
+			"species": "ninetalesalola",
+			"item": "",
+			"ability": "snowcloak",
+			"moves": [
+				"protect",
+				"tackle",
+				"blizzard",
+				"iceshard"
+			],
+			"nature": "serious",
+			"evs": {
+				"hp": 252,
+				"atk": 252,
+				"def": 4,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Normal"
+		}
+	],
+	"team2": [
+		{
+			"name": "A",
+			"species": "excadrill",
+			"item": "",
+			"ability": "sandrush",
+			"moves": [
+				"tackle",
+				"protect",
+				"rockslide",
+				"closecombat"
+			],
+			"nature": "serious",
+			"evs": {
+				"hp": 252,
+				"atk": 252,
+				"def": 4,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Normal"
+		},
+		{
+			"name": "B",
+			"species": "golduck",
+			"item": "",
+			"ability": "damp",
+			"moves": [
+				"tackle",
+				"protect",
+				"rockslide",
+				"closecombat"
+			],
+			"nature": "serious",
+			"evs": {
+				"hp": 252,
+				"atk": 252,
+				"def": 4,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Normal"
+		},
+		{
+			"name": "C",
+			"species": "abomasnow",
+			"item": "",
+			"ability": "snowwarning",
+			"moves": [
+				"tackle",
+				"protect",
+				"rockslide",
+				"closecombat"
+			],
+			"nature": "serious",
+			"evs": {
+				"hp": 252,
+				"atk": 252,
+				"def": 4,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Normal"
+		},
+		{
+			"name": "D",
+			"species": "eiscue",
+			"item": "",
+			"ability": "iceface",
+			"moves": [
+				"tackle",
+				"protect",
+				"rockslide",
+				"closecombat"
+			],
+			"nature": "serious",
+			"evs": {
+				"hp": 252,
+				"atk": 252,
+				"def": 4,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Normal"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 2 1, move 1",
+			"p2": "move 1 1, move 1 1"
+		},
+		{
+			"p1": "switch 3, move 1",
+			"p2": "move 2, move 2"
+		},
+		{
+			"p1": "switch 3, move 2 1",
+			"p2": "move 1 2, move 1 2"
+		},
+		{
+			"p1": "move 1, move 1",
+			"p2": "move 1 1, move 1 1"
+		}
+	]
+}

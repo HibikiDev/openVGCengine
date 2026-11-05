@@ -1,0 +1,282 @@
+{
+	"format": "gen9vgc2024regg",
+	"seed": "gen5,48870,25450,40538,9168",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "arceussteel",
+			"item": "ironplate",
+			"ability": "download",
+			"moves": [
+				"transform",
+				"judgment",
+				"entrainment",
+				"trick"
+			],
+			"nature": "quiet",
+			"evs": {
+				"hp": 192,
+				"atk": 40,
+				"def": 196,
+				"spa": 80,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N",
+			"teraType": "Ice"
+		},
+		{
+			"name": "Mon1",
+			"species": "arceuswater",
+			"item": "leftovers",
+			"ability": "download",
+			"moves": [
+				"switcheroo",
+				"trick",
+				"transform",
+				"thief"
+			],
+			"nature": "hasty",
+			"evs": {
+				"hp": 152,
+				"atk": 40,
+				"def": 32,
+				"spa": 44,
+				"spd": 124,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 4,
+				"atk": 10,
+				"def": 6,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N",
+			"teraType": "Fire"
+		},
+		{
+			"name": "Mon2",
+			"species": "arceussteel",
+			"item": "ironplate",
+			"ability": "download",
+			"moves": [
+				"soak",
+				"transform",
+				"trick",
+				"judgment"
+			],
+			"nature": "bold",
+			"evs": {
+				"hp": 96,
+				"atk": 208,
+				"def": 172,
+				"spa": 32,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 21,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N",
+			"teraType": "Fairy"
+		},
+		{
+			"name": "Mon3",
+			"species": "arceuswater",
+			"item": "leftovers",
+			"ability": "multitype",
+			"moves": [
+				"judgment",
+				"switcheroo",
+				"skillswap",
+				"trick"
+			],
+			"nature": "sassy",
+			"evs": {
+				"hp": 196,
+				"atk": 196,
+				"def": 116,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N",
+			"teraType": "Electric"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "arceussteel",
+			"item": "flameplate",
+			"ability": "multitype",
+			"moves": [
+				"gastroacid",
+				"skillswap",
+				"trick",
+				"thief"
+			],
+			"nature": "calm",
+			"evs": {
+				"hp": 112,
+				"atk": 36,
+				"def": 60,
+				"spa": 160,
+				"spd": 140,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N",
+			"teraType": "Fire"
+		},
+		{
+			"name": "Mon1",
+			"species": "arceusghost",
+			"item": "",
+			"ability": "multitype",
+			"moves": [
+				"entrainment",
+				"gastroacid",
+				"trick",
+				"soak"
+			],
+			"nature": "gentle",
+			"evs": {
+				"hp": 40,
+				"atk": 8,
+				"def": 120,
+				"spa": 68,
+				"spd": 224,
+				"spe": 48
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 9,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N",
+			"teraType": "Fire"
+		},
+		{
+			"name": "Mon2",
+			"species": "arceuswater",
+			"item": "spookyplate",
+			"ability": "download",
+			"moves": [
+				"switcheroo",
+				"soak",
+				"entrainment",
+				"gastroacid"
+			],
+			"nature": "naive",
+			"evs": {
+				"hp": 76,
+				"atk": 156,
+				"def": 196,
+				"spa": 68,
+				"spd": 12,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 12,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N",
+			"teraType": "Dark"
+		},
+		{
+			"name": "Mon3",
+			"species": "arceussteel",
+			"item": "leftovers",
+			"ability": "download",
+			"moves": [
+				"transform",
+				"judgment",
+				"knockoff",
+				"soak"
+			],
+			"nature": "naive",
+			"evs": {
+				"hp": 240,
+				"atk": 124,
+				"def": 140,
+				"spa": 4,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 4,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N",
+			"teraType": "Electric"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 2 2, move 2 2",
+			"p2": "move 4 2, move 3 1"
+		},
+		{
+			"p1": "move 2 -2, move 2 2",
+			"p2": "move 3 2, move 3 1 terastallize"
+		},
+		{
+			"p1": "move 1 1, move 1 1",
+			"p2": "move 3 -2, move 2 -1"
+		},
+		{
+			"p1": "move 2 1, move 2 1 terastallize",
+			"p2": "move 2 2, move 2 2"
+		}
+	]
+}

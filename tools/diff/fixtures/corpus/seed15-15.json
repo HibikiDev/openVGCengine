@@ -1,0 +1,310 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,58921,32739,49414,42579",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Garchomp",
+			"item": "Choice Scarf",
+			"ability": "Rough Skin",
+			"moves": [
+				"Dragon Claw",
+				"Stomping Tantrum",
+				"Rock Slide",
+				"Rock Tomb"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 6,
+				"atk": 32,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 28
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "Charizard",
+			"item": "Charizardite Y",
+			"ability": "Blaze",
+			"moves": [
+				"Protect",
+				"Heat Wave",
+				"Weather Ball",
+				"Ancient Power"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 14,
+				"atk": 0,
+				"def": 28,
+				"spa": 1,
+				"spd": 0,
+				"spe": 23
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "Incineroar",
+			"item": "Sitrus Berry",
+			"ability": "Intimidate",
+			"moves": [
+				"Parting Shot",
+				"Flare Blitz",
+				"Throat Chop",
+				"Fake Out"
+			],
+			"nature": "Careful",
+			"evs": {
+				"hp": 32,
+				"atk": 1,
+				"def": 23,
+				"spa": 0,
+				"spd": 10,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "Gholdengo",
+			"item": "Life Orb",
+			"ability": "Good as Gold",
+			"moves": [
+				"Protect",
+				"Make It Rain",
+				"Shadow Ball",
+				"Nasty Plot"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 7,
+				"atk": 0,
+				"def": 13,
+				"spa": 10,
+				"spd": 4,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Scizor",
+			"item": "Life Orb",
+			"ability": "Technician",
+			"moves": [
+				"Bullet Punch",
+				"Assurance",
+				"Bug Bite",
+				"Protect"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 32,
+				"atk": 32,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 2
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "Gardevoir",
+			"item": "Gardevoirite",
+			"ability": "Trace",
+			"moves": [
+				"Hyper Voice",
+				"Expanding Force",
+				"Calm Mind",
+				"Protect"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 28,
+				"atk": 0,
+				"def": 17,
+				"spa": 10,
+				"spd": 0,
+				"spe": 11
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "Indeedee-F",
+			"item": "Rocky Helmet",
+			"ability": "Psychic Surge",
+			"moves": [
+				"Follow Me",
+				"Imprison",
+				"Trick Room",
+				"Protect"
+			],
+			"nature": "Relaxed",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 32,
+				"spa": 0,
+				"spd": 2,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "Incineroar",
+			"item": "Sitrus Berry",
+			"ability": "Intimidate",
+			"moves": [
+				"Fake Out",
+				"Parting Shot",
+				"Throat Chop",
+				"Flare Blitz"
+			],
+			"nature": "Careful",
+			"evs": {
+				"hp": 31,
+				"atk": 0,
+				"def": 14,
+				"spa": 0,
+				"spd": 20,
+				"spe": 1
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 2 1, move 3 1",
+			"p2": "switch 4, move 4 mega"
+		},
+		{
+			"p1": "switch 3, move 4 2 mega",
+			"p2": "move 3 1, move 1"
+		},
+		{
+			"p1": "move 2 1, move 1",
+			"p2": "move 3 1, move 3"
+		},
+		{
+			"p1": "move 1 1, move 3 2",
+			"p2": "move 4 2, move 3"
+		},
+		{
+			"p1": "switch 3, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 1 1, move 2",
+			"p2": "move 2 2, move 4"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 4, pass"
+		},
+		{
+			"p1": "move 1 2, move 3 2",
+			"p2": "move 1 1, move 1"
+		},
+		{
+			"p1": "switch 4, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 2, move 4 2",
+			"p2": "move 3 1, move 3"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "pass, switch 3"
+		},
+		{
+			"p1": "move 4, move 1",
+			"p2": "move 2 2, move 2"
+		}
+	],
+	"teams": [
+		"MC386",
+		"MC113"
+	]
+}

@@ -1,0 +1,318 @@
+{
+	"format": "gen9vgc2024regg",
+	"seed": "gen5,51522,15505,18219,43998",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "comfey",
+			"item": "choicescarf",
+			"ability": "imposter",
+			"moves": [
+				"waterfall",
+				"clangoroussoul",
+				"worryseed",
+				"conversion2"
+			],
+			"nature": "quiet",
+			"evs": {
+				"hp": 160,
+				"atk": 140,
+				"def": 60,
+				"spa": 12,
+				"spd": 112,
+				"spe": 24
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 2,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Stellar"
+		},
+		{
+			"name": "Mon1",
+			"species": "haunter",
+			"item": "choicescarf",
+			"ability": "limber",
+			"moves": [
+				"bugbite",
+				"highjumpkick",
+				"extrasensory",
+				"leafage"
+			],
+			"nature": "bold",
+			"evs": {
+				"hp": 176,
+				"atk": 112,
+				"def": 32,
+				"spa": 188,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 22,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Water"
+		},
+		{
+			"name": "Mon2",
+			"species": "ogerponwellspring",
+			"item": "choicescarf",
+			"ability": "moldbreaker",
+			"moves": [
+				"ivycudgel",
+				"aurasphere",
+				"skillswap",
+				"coaching"
+			],
+			"nature": "adamant",
+			"evs": {
+				"hp": 112,
+				"atk": 196,
+				"def": 180,
+				"spa": 20,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 23,
+				"spa": 18,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Water"
+		},
+		{
+			"name": "Mon3",
+			"species": "giratinaorigin",
+			"item": "sitrusberry",
+			"ability": "imposter",
+			"moves": [
+				"bugbuzz",
+				"knockoff",
+				"spiritbreak",
+				"tropkick"
+			],
+			"nature": "serious",
+			"evs": {
+				"hp": 144,
+				"atk": 76,
+				"def": 176,
+				"spa": 40,
+				"spd": 48,
+				"spe": 24
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 3,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N",
+			"teraType": "Fire"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "stantler",
+			"item": "ganlonberry",
+			"ability": "moldbreaker",
+			"moves": [
+				"saltcure",
+				"trick",
+				"fierydance",
+				"crushclaw"
+			],
+			"nature": "serious",
+			"evs": {
+				"hp": 196,
+				"atk": 92,
+				"def": 220,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 2,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Fairy"
+		},
+		{
+			"name": "Mon1",
+			"species": "pikachuhoenn",
+			"item": "lifeorb",
+			"ability": "shadowtag",
+			"moves": [
+				"nightdaze",
+				"boomburst",
+				"entrainment",
+				"grassknot"
+			],
+			"nature": "jolly",
+			"evs": {
+				"hp": 228,
+				"atk": 32,
+				"def": 112,
+				"spa": 8,
+				"spd": 96,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 5,
+				"atk": 31,
+				"def": 31,
+				"spa": 2,
+				"spd": 23,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Stellar"
+		},
+		{
+			"name": "Mon2",
+			"species": "ogerponhearthflame",
+			"item": "sitrusberry",
+			"ability": "moldbreaker",
+			"moves": [
+				"ivycudgel",
+				"switcheroo",
+				"boltstrike",
+				"mortalspin"
+			],
+			"nature": "calm",
+			"evs": {
+				"hp": 204,
+				"atk": 212,
+				"def": 80,
+				"spa": 12,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 6,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Fire"
+		},
+		{
+			"name": "Mon3",
+			"species": "torchic",
+			"item": "choicescarf",
+			"ability": "imposter",
+			"moves": [
+				"switcheroo",
+				"sludgewave",
+				"highjumpkick",
+				"foulplay"
+			],
+			"nature": "timid",
+			"evs": {
+				"hp": 36,
+				"atk": 80,
+				"def": 8,
+				"spa": 224,
+				"spd": 120,
+				"spe": 40
+			},
+			"ivs": {
+				"hp": 4,
+				"atk": 31,
+				"def": 31,
+				"spa": 1,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Ice"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 4 2, move 2 -1 terastallize",
+			"p2": "move 3 1, switch 4"
+		},
+		{
+			"p1": "move 4 1, move 2 1",
+			"p2": "move 2 -2, move 3 -1 terastallize"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 4, pass"
+		},
+		{
+			"p1": "switch 3, move 2 -1",
+			"p2": "move 4 1, move 3 -1"
+		},
+		{
+			"p1": "move 3 2, move 2 2",
+			"p2": "move 3 1, move 3 -1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "pass, switch 3"
+		},
+		{
+			"p1": "move 3 -2, move 2 -1",
+			"p2": "move 3 -2, move 3 1"
+		},
+		{
+			"p1": "move 3 -2, move 2 2",
+			"p2": "move 4 2, move 4"
+		},
+		{
+			"p1": "switch 4, move 2 -1",
+			"p2": "move 4 -2, move 3 2"
+		},
+		{
+			"p1": "pass, switch 3",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 3 2, move 3 -1",
+			"p2": "move 1 1, move 2 1"
+		},
+		{
+			"p1": "move 2 1, move 3 1",
+			"p2": "move 4 1, move 4"
+		}
+	],
+	"teams": [
+		"scenario-260b",
+		"scenario-274a"
+	]
+}

@@ -1,0 +1,270 @@
+{
+	"format": "gen9vgc2024regg",
+	"seed": "gen5,21239,4310,18796,62552",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "ogerponcornerstone",
+			"item": "scopelens",
+			"ability": "hugepower",
+			"moves": [
+				"glare",
+				"mistball",
+				"acidarmor",
+				"expandingforce"
+			],
+			"nature": "lax",
+			"evs": {
+				"hp": 44,
+				"atk": 192,
+				"def": 12,
+				"spa": 80,
+				"spd": 72,
+				"spe": 40
+			},
+			"ivs": {
+				"hp": 7,
+				"atk": 28,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Rock"
+		},
+		{
+			"name": "Mon1",
+			"species": "ogerponhearthflame",
+			"item": "normalgem",
+			"ability": "hugepower",
+			"moves": [
+				"dazzlinggleam",
+				"kowtowcleave",
+				"xscissor",
+				"sacredfire"
+			],
+			"nature": "naive",
+			"evs": {
+				"hp": 80,
+				"atk": 144,
+				"def": 192,
+				"spa": 28,
+				"spd": 64,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Fire"
+		},
+		{
+			"name": "Mon2",
+			"species": "ogerpon",
+			"item": "psychicseed",
+			"ability": "curiousmedicine",
+			"moves": [
+				"milkdrink",
+				"afteryou",
+				"moonblast",
+				"psychup"
+			],
+			"nature": "hasty",
+			"evs": {
+				"hp": 244,
+				"atk": 68,
+				"def": 116,
+				"spa": 80,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 15,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Grass"
+		},
+		{
+			"name": "Mon3",
+			"species": "ogerponwellspring",
+			"item": "smoothrock",
+			"ability": "angerpoint",
+			"moves": [
+				"glaciate",
+				"cosmicpower",
+				"smackdown",
+				"phantomforce"
+			],
+			"nature": "impish",
+			"evs": {
+				"hp": 208,
+				"atk": 140,
+				"def": 32,
+				"spa": 128,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 23,
+				"atk": 28,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Water"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "ogerponwellspring",
+			"item": "magnet",
+			"ability": "punkrock",
+			"moves": [
+				"vinewhip",
+				"overdrive",
+				"grassknot",
+				"beatup"
+			],
+			"nature": "naive",
+			"evs": {
+				"hp": 244,
+				"atk": 84,
+				"def": 180,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 29,
+				"def": 31,
+				"spa": 31,
+				"spd": 19,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Water"
+		},
+		{
+			"name": "Mon1",
+			"species": "ogerpon",
+			"item": "smoothrock",
+			"ability": "insomnia",
+			"moves": [
+				"thief",
+				"flamecharge",
+				"ragefist",
+				"reflecttype"
+			],
+			"nature": "docile",
+			"evs": {
+				"hp": 156,
+				"atk": 204,
+				"def": 148,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 8,
+				"def": 19,
+				"spa": 31,
+				"spd": 12,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Grass"
+		},
+		{
+			"name": "Mon2",
+			"species": "ogerpon",
+			"item": "heatrock",
+			"ability": "dragonsmaw",
+			"moves": [
+				"poltergeist",
+				"glare",
+				"eruption",
+				"closecombat"
+			],
+			"nature": "docile",
+			"evs": {
+				"hp": 132,
+				"atk": 116,
+				"def": 156,
+				"spa": 104,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 15,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Grass"
+		},
+		{
+			"name": "Mon3",
+			"species": "ogerponwellspring",
+			"item": "fairyfeather",
+			"ability": "pixilate",
+			"moves": [
+				"megapunch",
+				"bugbuzz",
+				"relicsong",
+				"reflecttype"
+			],
+			"nature": "bashful",
+			"evs": {
+				"hp": 52,
+				"atk": 120,
+				"def": 252,
+				"spa": 84,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Water"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 1 1 terastallize, move 4 2",
+			"p2": "move 3 1, move 2 1 terastallize"
+		}
+	]
+}

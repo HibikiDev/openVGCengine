@@ -1,0 +1,304 @@
+{
+	"format": "gen8vgc2020",
+	"seed": "gen5,49288,36001,43553,41942",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "lotad",
+			"item": "kasibberry",
+			"ability": "limber",
+			"moves": [
+				"dragonclaw",
+				"thunderpunch",
+				"guillotine",
+				"growl"
+			],
+			"nature": "hardy",
+			"evs": {
+				"hp": 208,
+				"atk": 72,
+				"def": 160,
+				"spa": 68,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "Sandaconda",
+			"item": "destinyknot",
+			"ability": "stall",
+			"moves": [
+				"stomp",
+				"fissure",
+				"drillpeck",
+				"bubblebeam"
+			],
+			"nature": "sassy",
+			"evs": {
+				"hp": 192,
+				"atk": 64,
+				"def": 60,
+				"spa": 16,
+				"spd": 168,
+				"spe": 8
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 20,
+				"spd": 31,
+				"spe": 6
+			},
+			"level": 50,
+			"gender": "F",
+			"gigantamax": true
+		},
+		{
+			"name": "Mon2",
+			"species": "pawniard",
+			"item": "leafstone",
+			"ability": "shadowtag",
+			"moves": [
+				"gravity",
+				"gust",
+				"reflecttype",
+				"flamethrower"
+			],
+			"nature": "hasty",
+			"evs": {
+				"hp": 76,
+				"atk": 168,
+				"def": 200,
+				"spa": 56,
+				"spd": 8,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 20,
+				"atk": 31,
+				"def": 4,
+				"spa": 31,
+				"spd": 20,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "dottler",
+			"item": "normalgem",
+			"ability": "stancechange",
+			"moves": [
+				"guardsplit",
+				"wildcharge",
+				"auroraveil",
+				"disarmingvoice"
+			],
+			"nature": "sassy",
+			"evs": {
+				"hp": 152,
+				"atk": 204,
+				"def": 152,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 14
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Duraludon",
+			"item": "tr69",
+			"ability": "speedboost",
+			"moves": [
+				"dragondarts",
+				"taunt",
+				"afteryou",
+				"pound"
+			],
+			"nature": "modest",
+			"evs": {
+				"hp": 216,
+				"atk": 44,
+				"def": 136,
+				"spa": 112,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 19,
+				"spe": 25
+			},
+			"level": 50,
+			"gender": "F",
+			"gigantamax": true
+		},
+		{
+			"name": "Mon1",
+			"species": "shedinja",
+			"item": "timerball",
+			"ability": "chlorophyll",
+			"moves": [
+				"dragontail",
+				"leafage",
+				"cut",
+				"retaliate"
+			],
+			"nature": "sassy",
+			"evs": {
+				"hp": 68,
+				"atk": 228,
+				"def": 120,
+				"spa": 92,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 7,
+				"def": 31,
+				"spa": 2,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "dottler",
+			"item": "poisonbarb",
+			"ability": "schooling",
+			"moves": [
+				"slash",
+				"scaleshot",
+				"muddywater",
+				"stomp"
+			],
+			"nature": "docile",
+			"evs": {
+				"hp": 100,
+				"atk": 140,
+				"def": 180,
+				"spa": 88,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 27
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "toxtricity",
+			"item": "berrysweet",
+			"ability": "leafguard",
+			"moves": [
+				"slash",
+				"mudslap",
+				"bulldoze",
+				"breakingswipe"
+			],
+			"nature": "adamant",
+			"evs": {
+				"hp": 200,
+				"atk": 116,
+				"def": 36,
+				"spa": 44,
+				"spd": 72,
+				"spe": 40
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 1,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 1 1, move 3 2",
+			"p2": "move 2 1, move 2 2"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "pass, switch 4"
+		},
+		{
+			"p1": "switch 3, move 4 1 dynamax",
+			"p2": "move 2 dynamax, move 2 2"
+		},
+		{
+			"p1": "move 4 1, move 2 1",
+			"p2": "move 1 1, move 1 1"
+		},
+		{
+			"p1": "move 1, move 1 2",
+			"p2": "move 4 2, move 2 -1"
+		},
+		{
+			"p1": "move 2 1, move 3 1",
+			"p2": "move 3 -2, move 1 -1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 3, pass"
+		},
+		{
+			"p1": "move 3 -2, move 1 2",
+			"p2": "move 4 1, move 2 1"
+		},
+		{
+			"p1": "move 1, move 3 -1",
+			"p2": "move 2 -2, pass"
+		},
+		{
+			"p1": "switch 4, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 3, move 2 2",
+			"p2": "move 3, pass"
+		}
+	]
+}

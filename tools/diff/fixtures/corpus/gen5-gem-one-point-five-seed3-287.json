@@ -1,0 +1,262 @@
+{
+	"format": "gen5vgc2013",
+	"seed": "gen5,47094,26792,57755,4067",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "tornadustherian",
+			"item": "stick",
+			"ability": "honeygather",
+			"moves": [
+				"skullbash",
+				"payday",
+				"metalsound",
+				"feintattack"
+			],
+			"nature": "lax",
+			"evs": {
+				"hp": 120,
+				"atk": 16,
+				"def": 228,
+				"spa": 128,
+				"spd": 16,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 27,
+				"atk": 31,
+				"def": 0,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "smoochum",
+			"item": "fightinggem",
+			"ability": "swarm",
+			"moves": [
+				"finalgambit",
+				"refresh",
+				"bulkup",
+				"highjumpkick"
+			],
+			"nature": "calm",
+			"evs": {
+				"hp": 120,
+				"atk": 212,
+				"def": 168,
+				"spa": 8,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 15,
+				"spa": 31,
+				"spd": 19,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "panpour",
+			"item": "fullincense",
+			"ability": "bigpecks",
+			"moves": [
+				"revenge",
+				"twister",
+				"iceball",
+				"gigadrain"
+			],
+			"nature": "impish",
+			"evs": {
+				"hp": 236,
+				"atk": 72,
+				"def": 156,
+				"spa": 44,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "cleffa",
+			"item": "icyrock",
+			"ability": "multiscale",
+			"moves": [
+				"sheercold",
+				"healorder",
+				"wingattack",
+				"helpinghand"
+			],
+			"nature": "hardy",
+			"evs": {
+				"hp": 136,
+				"atk": 180,
+				"def": 36,
+				"spa": 156,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 14,
+				"def": 31,
+				"spa": 15,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "bellossom",
+			"item": "cheriberry",
+			"ability": "competitive",
+			"moves": [
+				"steelwing",
+				"flashcannon",
+				"swift",
+				"defog"
+			],
+			"nature": "quirky",
+			"evs": {
+				"hp": 124,
+				"atk": 4,
+				"def": 140,
+				"spa": 120,
+				"spd": 120,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 28,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "slugma",
+			"item": "ovalstone",
+			"ability": "reckless",
+			"moves": [
+				"leechseed",
+				"fling",
+				"electroweb",
+				"dive"
+			],
+			"nature": "hardy",
+			"evs": {
+				"hp": 128,
+				"atk": 56,
+				"def": 8,
+				"spa": 112,
+				"spd": 204,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 8,
+				"spa": 31,
+				"spd": 31,
+				"spe": 19
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "poliwhirl",
+			"item": "deepseascale",
+			"ability": "ironbarbs",
+			"moves": [
+				"surf",
+				"skyattack",
+				"ominouswind",
+				"darkpulse"
+			],
+			"nature": "quirky",
+			"evs": {
+				"hp": 104,
+				"atk": 40,
+				"def": 184,
+				"spa": 180,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 9,
+				"spe": 28
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "lopunny",
+			"item": "greatball",
+			"ability": "prankster",
+			"moves": [
+				"spark",
+				"swift",
+				"blizzard",
+				"ironhead"
+			],
+			"nature": "brave",
+			"evs": {
+				"hp": 112,
+				"atk": 96,
+				"def": 4,
+				"spa": 144,
+				"spd": 152,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 3 1, move 4 1",
+			"p2": "move 3, move 2 2"
+		}
+	]
+}

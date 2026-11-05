@@ -1,0 +1,15 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/engine-core",
+    "crates/engine-data",
+    "crates/engine-obs",
+    "crates/engine-py",
+    "crates/engine-bench",
+    "crates/engine-fuzz",
+    "tools/diff",
+]
+
+[workspace.package]
+edition = "2021"
+publish = false

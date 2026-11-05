@@ -1,0 +1,290 @@
+{
+	"format": "gen9vgc2025regi",
+	"seed": "gen5,53769,50989,2234,52825",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "flamigo",
+			"item": "mirrorherb",
+			"ability": "angershell",
+			"moves": [
+				"iciclecrash",
+				"forestscurse",
+				"round",
+				"gigaimpact"
+			],
+			"nature": "rash",
+			"evs": {
+				"hp": 80,
+				"atk": 200,
+				"def": 200,
+				"spa": 16,
+				"spd": 12,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Psychic"
+		},
+		{
+			"name": "Mon1",
+			"species": "annihilape",
+			"item": "mirrorherb",
+			"ability": "berserk",
+			"moves": [
+				"doomdesire",
+				"shadowforce",
+				"circlethrow",
+				"eeriespell"
+			],
+			"nature": "bold",
+			"evs": {
+				"hp": 188,
+				"atk": 68,
+				"def": 112,
+				"spa": 140,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 19,
+				"spd": 31,
+				"spe": 7
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Ice"
+		},
+		{
+			"name": "Mon2",
+			"species": "ditto",
+			"item": "starfberry",
+			"ability": "opportunist",
+			"moves": [
+				"furycutter",
+				"drainpunch",
+				"toxic",
+				"pounce"
+			],
+			"nature": "adamant",
+			"evs": {
+				"hp": 168,
+				"atk": 36,
+				"def": 252,
+				"spa": 40,
+				"spd": 4,
+				"spe": 8
+			},
+			"ivs": {
+				"hp": 13,
+				"atk": 31,
+				"def": 31,
+				"spa": 10,
+				"spd": 19,
+				"spe": 17
+			},
+			"level": 50,
+			"gender": "N",
+			"teraType": "Fire"
+		},
+		{
+			"name": "Mon3",
+			"species": "flamigo",
+			"item": "salacberry",
+			"ability": "cudchew",
+			"moves": [
+				"peck",
+				"seedflare",
+				"revelationdance",
+				"worryseed"
+			],
+			"nature": "calm",
+			"evs": {
+				"hp": 180,
+				"atk": 208,
+				"def": 120,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Grass"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "kingambit",
+			"item": "apicotberry",
+			"ability": "imposter",
+			"moves": [
+				"triplearrows",
+				"rockthrow",
+				"photongeyser",
+				"whirlpool"
+			],
+			"nature": "bashful",
+			"evs": {
+				"hp": 80,
+				"atk": 108,
+				"def": 200,
+				"spa": 108,
+				"spd": 12,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 18,
+				"spd": 31,
+				"spe": 12
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Stellar"
+		},
+		{
+			"name": "Mon1",
+			"species": "flamigo",
+			"item": "liechiberry",
+			"ability": "ripen",
+			"moves": [
+				"ancientpower",
+				"floralhealing",
+				"thrash",
+				"surgingstrikes"
+			],
+			"nature": "jolly",
+			"evs": {
+				"hp": 200,
+				"atk": 124,
+				"def": 184,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 5,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Fire"
+		},
+		{
+			"name": "Mon2",
+			"species": "kingambit",
+			"item": "ganlonberry",
+			"ability": "berserk",
+			"moves": [
+				"clearsmog",
+				"mysticalfire",
+				"grassyterrain",
+				"smog"
+			],
+			"nature": "gentle",
+			"evs": {
+				"hp": 76,
+				"atk": 88,
+				"def": 200,
+				"spa": 144,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 9,
+				"atk": 18,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Dark"
+		},
+		{
+			"name": "Mon3",
+			"species": "annihilape",
+			"item": "starfberry",
+			"ability": "opportunist",
+			"moves": [
+				"trickroom",
+				"instruct",
+				"gyroball",
+				"upperhand"
+			],
+			"nature": "lax",
+			"evs": {
+				"hp": 128,
+				"atk": 172,
+				"def": 116,
+				"spa": 92,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 7,
+				"spa": 16,
+				"spd": 31,
+				"spe": 24
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Fighting"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 4 1, move 1 1",
+			"p2": "move 1 2, move 3"
+		},
+		{
+			"p1": "move 1 2, move 2 2",
+			"p2": "move 1 1 terastallize, move 1"
+		},
+		{
+			"p1": "move 2 -2 terastallize, move 1",
+			"p2": "move 4 2, move 4 -1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "pass, switch 3"
+		},
+		{
+			"p1": "move 2 1, move 3 -1",
+			"p2": "move 4 2, move 1 2"
+		},
+		{
+			"p1": "move 2 -2, move 2 -1",
+			"p2": "move 2 2, move 2 -1"
+		}
+	]
+}

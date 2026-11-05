@@ -1,0 +1,262 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,15474,40316,56970,64205",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "dragalge",
+			"item": "heatrock",
+			"ability": "imposter",
+			"moves": [
+				"hyperbeam",
+				"stickyweb",
+				"allyswitch",
+				"fellstinger"
+			],
+			"nature": "impish",
+			"evs": {
+				"hp": 32,
+				"atk": 4,
+				"def": 30,
+				"spa": 24,
+				"spd": 1,
+				"spe": 20
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "baxcalibur",
+			"item": "expertbelt",
+			"ability": "imposter",
+			"moves": [
+				"twinbeam",
+				"extremespeed",
+				"belch",
+				"destinybond"
+			],
+			"nature": "rash",
+			"evs": {
+				"hp": 32,
+				"atk": 2,
+				"def": 27,
+				"spa": 1,
+				"spd": 9,
+				"spe": 15
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "kangaskhan",
+			"item": "rindoberry",
+			"ability": "forewarn",
+			"moves": [
+				"axekick",
+				"magicroom",
+				"tackle",
+				"ragepowder"
+			],
+			"nature": "hasty",
+			"evs": {
+				"hp": 32,
+				"atk": 4,
+				"def": 9,
+				"spa": 5,
+				"spd": 27,
+				"spe": 5
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "arboliva",
+			"item": "softsand",
+			"ability": "imposter",
+			"moves": [
+				"octolock",
+				"eeriespell",
+				"dragonrush",
+				"whirlpool"
+			],
+			"nature": "bold",
+			"evs": {
+				"hp": 32,
+				"atk": 24,
+				"def": 4,
+				"spa": 3,
+				"spd": 11,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "crabominable",
+			"item": "cobaberry",
+			"ability": "imposter",
+			"moves": [
+				"beatup",
+				"comeuppance",
+				"scaleshot",
+				"spitup"
+			],
+			"nature": "hasty",
+			"evs": {
+				"hp": 32,
+				"atk": 21,
+				"def": 15,
+				"spa": 26,
+				"spd": 31,
+				"spe": 30
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "mawile",
+			"item": "chartiberry",
+			"ability": "imposter",
+			"moves": [
+				"chargebeam",
+				"howl",
+				"pounce",
+				"aurawheel"
+			],
+			"nature": "quirky",
+			"evs": {
+				"hp": 32,
+				"atk": 17,
+				"def": 29,
+				"spa": 14,
+				"spd": 17,
+				"spe": 9
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "rotomwash",
+			"item": "babiriberry",
+			"ability": "forewarn",
+			"moves": [
+				"extremespeed",
+				"curse",
+				"drillpeck",
+				"powdersnow"
+			],
+			"nature": "hasty",
+			"evs": {
+				"hp": 32,
+				"atk": 31,
+				"def": 25,
+				"spa": 3,
+				"spd": 21,
+				"spe": 15
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "grapploct",
+			"item": "electricseed",
+			"ability": "forewarn",
+			"moves": [
+				"lavaplume",
+				"encore",
+				"sandstorm",
+				"comeuppance"
+			],
+			"nature": "sassy",
+			"evs": {
+				"hp": 32,
+				"atk": 6,
+				"def": 18,
+				"spa": 6,
+				"spd": 16,
+				"spe": 14
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 1 2, move 1 2",
+			"p2": "move 4 1, move 2"
+		}
+	]
+}

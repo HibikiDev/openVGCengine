@@ -1,0 +1,318 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,10552,55001,32976,12140",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Rillaboom",
+			"item": "Sitrus Berry",
+			"ability": "Grassy Surge",
+			"moves": [
+				"Wood Hammer",
+				"Grassy Glide",
+				"thief",
+				"earthquake"
+			],
+			"nature": "Careful",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 0,
+				"spa": 0,
+				"spd": 30,
+				"spe": 4
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "Incineroar",
+			"item": "Leftovers",
+			"ability": "Intimidate",
+			"moves": [
+				"bugbite",
+				"Roar",
+				"Parting Shot",
+				"thief"
+			],
+			"nature": "Careful",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 0,
+				"spa": 0,
+				"spd": 7,
+				"spe": 27
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "Sneasler",
+			"item": "Grassy Seed",
+			"ability": "Unburden",
+			"moves": [
+				"recycle",
+				"Close Combat",
+				"covet",
+				"Fake Out"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 0,
+				"atk": 32,
+				"def": 2,
+				"spa": 0,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "Kingambit",
+			"item": "Chople Berry",
+			"ability": "Defiant",
+			"moves": [
+				"Kowtow Cleave",
+				"rockslide",
+				"Sucker Punch",
+				"belch"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 32,
+				"atk": 18,
+				"def": 14,
+				"spa": 0,
+				"spd": 1,
+				"spe": 1
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Incineroar",
+			"item": "Sitrus Berry",
+			"ability": "Intimidate",
+			"moves": [
+				"Flare Blitz",
+				"Throat Chop",
+				"pluck",
+				"teatime"
+			],
+			"nature": "Impish",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 10,
+				"spa": 0,
+				"spd": 1,
+				"spe": 23
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "Kingambit",
+			"item": "Chople Berry",
+			"ability": "Defiant",
+			"moves": [
+				"Kowtow Cleave",
+				"Sucker Punch",
+				"thief",
+				"fakeout"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 32,
+				"atk": 15,
+				"def": 0,
+				"spa": 0,
+				"spd": 18,
+				"spe": 1
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "Kommo-o",
+			"item": "Grassy Seed",
+			"ability": "Soundproof",
+			"moves": [
+				"Clanging Scales",
+				"Aura Sphere",
+				"bugbite",
+				"switcheroo"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 10,
+				"atk": 0,
+				"def": 1,
+				"spa": 20,
+				"spd": 5,
+				"spe": 30
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "Gengar-Mega",
+			"item": "Gengarite",
+			"ability": "Shadow Tag",
+			"moves": [
+				"Shadow Ball",
+				"stuffcheeks",
+				"switcheroo",
+				"Protect"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 20,
+				"atk": 0,
+				"def": 4,
+				"spa": 10,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 1 1, switch 3",
+			"p2": "move 2 1, move 3 -1"
+		},
+		{
+			"p1": "move 2 1, move 1",
+			"p2": "move 3 1, move 1 -1"
+		},
+		{
+			"p1": "move 3 -2, move 3 2",
+			"p2": "move 4, switch 3"
+		},
+		{
+			"p1": "move 3 1, move 3 2",
+			"p2": "switch 3, move 4 1"
+		},
+		{
+			"p1": "move 2 1, move 3 -1",
+			"p2": "move 3 1, move 3 -1"
+		},
+		{
+			"p1": "switch 4, move 2 -1",
+			"p2": "switch 4, move 3 2"
+		},
+		{
+			"p1": "move 4 1, move 1",
+			"p2": "move 4, move 2 1"
+		},
+		{
+			"p1": "switch 3, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 1 1, move 3 1",
+			"p2": "move 1 2, move 4 2"
+		},
+		{
+			"p1": "pass, switch 4",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 2 1, move 3 2",
+			"p2": "move 1 2, move 2 1"
+		},
+		{
+			"p1": "move 2 -2, pass",
+			"p2": "move 4 2, move 4 1"
+		},
+		{
+			"p1": "move 4 2, pass",
+			"p2": "move 2 -2, move 1"
+		},
+		{
+			"p1": "move 1 -2, pass",
+			"p2": "move 1 1, move 4 1"
+		}
+	],
+	"teams": [
+		"MC71",
+		"MC118"
+	]
+}

@@ -1,0 +1,262 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,5531,32072,46528,13966",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "toxapex",
+			"item": "choicescarf",
+			"ability": "superluck",
+			"moves": [
+				"rest",
+				"sleeptalk",
+				"spore",
+				"terrainpulse"
+			],
+			"nature": "naughty",
+			"evs": {
+				"hp": 32,
+				"atk": 9,
+				"def": 20,
+				"spa": 9,
+				"spd": 25,
+				"spe": 5
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "cinderace",
+			"item": "smoothrock",
+			"ability": "battlearmor",
+			"moves": [
+				"spore",
+				"sleeptalk",
+				"rest",
+				"tailslap"
+			],
+			"nature": "quirky",
+			"evs": {
+				"hp": 32,
+				"atk": 8,
+				"def": 31,
+				"spa": 19,
+				"spd": 28,
+				"spe": 3
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "metagross",
+			"item": "yacheberry",
+			"ability": "innerfocus",
+			"moves": [
+				"spore",
+				"sleeptalk",
+				"rest",
+				"aurawheel"
+			],
+			"nature": "brave",
+			"evs": {
+				"hp": 32,
+				"atk": 24,
+				"def": 19,
+				"spa": 10,
+				"spd": 20,
+				"spe": 20
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "gogoat",
+			"item": "lifeorb",
+			"ability": "reckless",
+			"moves": [
+				"sleeptalk",
+				"rest",
+				"spore",
+				"reflect"
+			],
+			"nature": "naughty",
+			"evs": {
+				"hp": 32,
+				"atk": 23,
+				"def": 10,
+				"spa": 6,
+				"spd": 30,
+				"spe": 2
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "pawmot",
+			"item": "pechaberry",
+			"ability": "telepathy",
+			"moves": [
+				"sleeptalk",
+				"rest",
+				"spore",
+				"beatup"
+			],
+			"nature": "naive",
+			"evs": {
+				"hp": 32,
+				"atk": 18,
+				"def": 8,
+				"spa": 25,
+				"spd": 4,
+				"spe": 3
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "sableye",
+			"item": "shedshell",
+			"ability": "goodasgold",
+			"moves": [
+				"spore",
+				"sleeptalk",
+				"rest",
+				"hypervoice"
+			],
+			"nature": "timid",
+			"evs": {
+				"hp": 32,
+				"atk": 17,
+				"def": 9,
+				"spa": 17,
+				"spd": 3,
+				"spe": 7
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "chimecho",
+			"item": "blackglasses",
+			"ability": "gluttony",
+			"moves": [
+				"sleeptalk",
+				"spore",
+				"rest",
+				"guardsplit"
+			],
+			"nature": "hardy",
+			"evs": {
+				"hp": 32,
+				"atk": 15,
+				"def": 19,
+				"spa": 15,
+				"spd": 20,
+				"spe": 16
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "aerodactyl",
+			"item": "smoothrock",
+			"ability": "goodasgold",
+			"moves": [
+				"rest",
+				"sleeptalk",
+				"spore",
+				"megahorn"
+			],
+			"nature": "bold",
+			"evs": {
+				"hp": 32,
+				"atk": 8,
+				"def": 24,
+				"spa": 23,
+				"spd": 21,
+				"spe": 10
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 2, move 1 1",
+			"p2": "move 1, move 4"
+		}
+	]
+}

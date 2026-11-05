@@ -1,0 +1,310 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,41622,4023,43888,12806",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Indeedee-F",
+			"item": "Rocky Helmet",
+			"ability": "Psychic Surge",
+			"moves": [
+				"Follow Me",
+				"Helping Hand",
+				"Psychic",
+				"Trick Room"
+			],
+			"nature": "Bold",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 32,
+				"spa": 0,
+				"spd": 2,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "Baxcalibur",
+			"item": "Baxcalibrite",
+			"ability": "Thermal Exchange",
+			"moves": [
+				"Glaive Rush",
+				"Ice Shard",
+				"Iron Head",
+				"Protect"
+			],
+			"nature": "Brave",
+			"evs": {
+				"hp": 32,
+				"atk": 32,
+				"def": 0,
+				"spa": 0,
+				"spd": 2,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "Golisopod",
+			"item": "Golisopite",
+			"ability": "Emergency Exit",
+			"moves": [
+				"Leech Life",
+				"Iron Head",
+				"Close Combat",
+				"Protect"
+			],
+			"nature": "Brave",
+			"evs": {
+				"hp": 32,
+				"atk": 32,
+				"def": 0,
+				"spa": 0,
+				"spd": 2,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "Sinistcha",
+			"item": "Sitrus Berry",
+			"ability": "Hospitality",
+			"moves": [
+				"Rage Powder",
+				"Matcha Gotcha",
+				"Trick Room",
+				"Protect"
+			],
+			"nature": "Bold",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 14,
+				"spa": 0,
+				"spd": 20,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Indeedee-F",
+			"item": "Rocky Helmet",
+			"ability": "Psychic Surge",
+			"moves": [
+				"Psychic",
+				"Helping Hand",
+				"Follow Me",
+				"Trick Room"
+			],
+			"nature": "Bold",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 32,
+				"spa": 0,
+				"spd": 2,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "Pelipper",
+			"item": "Focus Sash",
+			"ability": "Drizzle",
+			"moves": [
+				"Hurricane",
+				"Weather Ball",
+				"Wide Guard",
+				"Protect"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 1,
+				"atk": 0,
+				"def": 1,
+				"spa": 32,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "Metagross",
+			"item": "Metagrossite",
+			"ability": "Clear Body",
+			"moves": [
+				"Steel Roller",
+				"Psychic Fangs",
+				"Body Press",
+				"Protect"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 12,
+				"atk": 18,
+				"def": 3,
+				"spa": 0,
+				"spd": 1,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "Basculegion",
+			"item": "Life Orb",
+			"ability": "Swift Swim",
+			"moves": [
+				"Wave Crash",
+				"Aqua Jet",
+				"Last Respects",
+				"Protect"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 1,
+				"atk": 32,
+				"def": 1,
+				"spa": 0,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 4, switch 3",
+			"p2": "switch 3, move 1 1"
+		},
+		{
+			"p1": "move 4, move 3 1 mega",
+			"p2": "move 2 1 mega, move 4"
+		},
+		{
+			"p1": "move 1, move 1 2",
+			"p2": "move 4, move 3"
+		},
+		{
+			"p1": "switch 4, move 2 -1",
+			"p2": "move 1 1, move 1 -1"
+		},
+		{
+			"p1": "switch 4, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 3 1, move 3 2",
+			"p2": "move 4, move 3"
+		},
+		{
+			"p1": "move 1, switch 3",
+			"p2": "move 1 -2, move 2 2"
+		},
+		{
+			"p1": "switch 3, pass",
+			"p2": "switch 4, pass"
+		},
+		{
+			"p1": "move 2 -2, move 1 1",
+			"p2": "move 1 1, move 4"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 3, pass"
+		},
+		{
+			"p1": "move 3 1, pass",
+			"p2": "move 1 2, move 3"
+		},
+		{
+			"p1": "move 3 -2, pass",
+			"p2": "move 2 -2, move 2 2"
+		}
+	],
+	"teams": [
+		"MC46",
+		"MC307"
+	]
+}

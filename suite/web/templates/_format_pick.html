@@ -1,0 +1,26 @@
+
+
+
+
+
+
+{% set given = (prefill or {}).get("format") if prefill is defined else None %}{% set fmt = given if given in format_open else None %}
+{% set sheets_given = (prefill or {}).get("sheets") if prefill is defined else None %}
+{% set with_sheets = cts_ready and not no_sheets %}
+{% if tool_formats|length > 1 %}<div class="fmt-row" style="margin: 0 0 10px"><p class="small" style="margin: 0; display: flex; flex-wrap: wrap; gap: 4px 16px"><label style="display:inline; font-weight:600">Format
+  <select name="format" class="fmt-pick"{{ ' data-given' if fmt }} style="width:auto">{% for f, short in tool_formats %}<option value="{{ f }}"{{ ' selected' if f == (fmt or current_format) }}{{ ' data-closed' if not format_open[f] }}{{ ' data-no-megas' if not format_megas[f] }}>{{ short }}</option>{% endfor %}</select></label>
+  {% if with_sheets %}<label class="fmt-sheets" style="font-weight:600{{ '; display:none' if format_open[fmt or current_format] }}">Team sheets
+  <select name="sheets" class="sheets-pick"{{ ' data-given' if sheets_given }}{{ ' disabled' if format_open[fmt or current_format] }} style="width:auto"><option value="closed">closed (as played)</option><option value="open"{{ ' selected' if sheets_given == "open" }}>open (OTS information)</option></select></label>{% endif %}</p>
+  <p class="small muted fmt-closed" data-mode="closed" style="margin: 4px 0 0; max-width: 70ch" hidden>Closed team sheets: neither side knows the other's moves, items or spreads until they show up in battle. {% if cts_ready %}When the bot searches (looks ahead), it guesses what it hasn't seen yet, like the practice bot.{% else %}This engine build can't search closed sheets yet, so the bulk games play without search (the bot's look-ahead); the example games do search, guessing what it can't see.{% endif %}</p>
+  <p class="small muted fmt-closed" data-mode="open" style="margin: 4px 0 0; max-width: 70ch" hidden>Open team sheets: each side knows the other's moves, items and abilities from the start, as on an open team sheet. Spreads stay hidden (sheets before Champions show no nature or EVs), so the bot's search guesses those. Example games on the practice server still play with closed sheets.</p>
+  <p class="small muted fmt-ots" style="margin: 4px 0 0; max-width: 70ch" hidden>Open team sheets, as this format is played: both sides see each other's moves, items and abilities from the start. (Closed-sheet play for this format isn't in the tools yet.)</p></div>
+<script>document.querySelectorAll(".fmt-row").forEach(row => {
+  const fp = row.querySelector("select.fmt-pick"), sp = row.querySelector("select.sheets-pick"), lab = row.querySelector(".fmt-sheets");
+  const show = () => {
+    const closed = fp.selectedOptions[0].hasAttribute("data-closed");
+    if (lab) { lab.style.display = closed ? "" : "none"; sp.disabled = !closed; }
+    row.querySelectorAll(".fmt-ots").forEach(n => { n.hidden = closed; });
+    row.querySelectorAll(".fmt-closed").forEach(n => { n.hidden = !closed || n.dataset.mode !== (sp && closed ? sp.value : "closed"); });
+  };
+  fp.addEventListener("change", show); if (sp) sp.addEventListener("change", show); show();
+});</script>{% endif %}

@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block title %}{{ g.opp }} game {{ g.game or '' }} · Status · openVGCengine{% endblock %}
+{% macro hpbar(v) %}<span class="hpbar"><span style="width: {{ v }}%" class="{{ 'low' if v <= 25 else 'mid' if v <= 50 else '' }}"></span></span>{% endmacro %}
+{% block main %}
+<div class="hero">
+  <h1>{{ g.players.p1 }} vs {{ g.players.p2 }}{% if g.game %} <span class="muted small">· game {{ g.game }}</span>{% endif %}</h1>
+  <p class="muted small"><a href="{{ g.back or ('/status' if private else '/') }}">&larr; {{ g.back_label or ('the head-to-head report' if g.example else ('status' if private else 'home')) }}</a>{% if g.series %} · <a href="/status/series/{{ g.series }}">the series</a>{% endif %}
+    {% if g.team %} · the bot's team {% if private %}<a href="/status/team/{{ g.team | urlencode }}">{{ g.team }}</a>{% else %}{{ g.team }}{% endif %}{% endif %}
+    · {% if g.result %}<span class="chip {{ 'won' if g.won else 'lost' }}">{{ 'won' if g.won else 'lost' }}</span>{% endif %}
+    · <a href="?raw=1">raw log</a>
+    {% if g.bot_side and not g.example %} · {% if g.pov_human %}<a href="?">see it from the bot's side</a>{% else %}<a href="?pov=human">see it from {{ g.players[g.human_side] }}'s side</a>{% endif %}{% endif %}</p>
+  {% if g.bot_side and not g.example %}<form method="post" action="/analyze" style="display:flex; gap:10px; align-items:center; flex-wrap:wrap; margin: 6px 0">
+    <input type="hidden" name="replay" value="room:{{ g.room }}"><input type="hidden" name="side" value="{{ g.human_side }}">
+    <button class="btn" type="submit">Open in the Replay Analyzer</button>
+    <span class="small muted">every decision of {{ g.players[g.human_side] }}'s, turn by turn, next to what the bot would have played in their place</span></form>{% endif %}
+  {% for r in g.rating %}<p class="small muted">{{ r }}</p>{% endfor %}
+  {% from "_team_export.html" import team_export %}{% set ev_note = "From the open team sheet in the log. EVs are the bot's guess (open sheets don't show EVs): the most common spread for that species and nature among real tournament pastes and sheets - what the bot's search assumed, not the real spread." %}
+  {% if g.own_paste or g.foe_paste %}<div style="display:flex; gap:18px; flex-wrap:wrap">{{ team_export(g.own_paste, "show " ~ ((g.us ~ "'s") if (g.example or g.pov_human) else "our") ~ " team sheet", ev_note) }}{{ team_export(g.foe_paste, "show " ~ ((g.them ~ "'s") if (g.example or g.pov_human) else "their") ~ " team sheet", ev_note) }}</div>{% endif %}
+  <p class="small conv"><span class="mon us">{{ g.us ~ "'s mons" if (g.example or g.pov_human) else 'our mons' }}</span> / <span class="mon them">{{ g.them ~ "'s" if (g.example or g.pov_human) else 'theirs' }}</span> · HP in % · each turn: the bot's win estimate, what it chose, and what its search expected from the other side.{% if g.example %} "The bot" is the side playing {{ g.us }}.{% endif %}{% if g.pov_human %} <b>Seen from {{ g.us }}'s side:</b> the bot's thinking is your opponent's.{% endif %}</p>
+  <details class="howto small"><summary>Older games</summary><p>Games before 10-14 show only the policy's guess of the opponent's moves, not what the search played against.</p></details>
+</div>
+
+{% for t in g.turns %}{% if t.events %}
+<div class="card turncard">
+  <div class="turnhead"><h2>{{ "Start" if t.turn == 0 else "Turn " ~ t.turn }}</h2>
+    {% if t.bot and t.bot.win is not none %}<span class="tag">bot's win estimate {{ pct0(t.bot.win) }}{% if g.pov_human %} (yours ~{{ pct0(1 - t.bot.win) }}){% endif %}</span>{% endif %}</div>
+  <div class="turnbody">
+    <div class="events">{% for e in t.events %}<div class="ev {{ e.side or '' }} k-{{ e.kind }}">{{ e.text | mons }}</div>{% endfor %}</div>
+    <div class="side">
+      {% if t.bot and t.bot.slots %}<div class="small"><b>Bot chose</b>{% for sl in t.bot.slots %}
+        <div>{{ sl.mon | mons }}: {{ sl.chosen | mons }}{% if sl.policy and not sl.same %} <span class="muted">(policy: {{ sl.policy | mons }})</span>{% elif sl.p is not none %} <span class="muted">{{ pct0(sl.p) }}</span>{% endif %}</div>{% endfor %}</div>{% endif %}
+      {% if t.bot and t.bot.search %}<div class="small"><b>{{ 'The bot expected from you' if g.pov_human else 'Search expected from them' }}</b>{% for r in t.bot.search.replies %}
+        <div>{% for o in r[0] %}{{ o | mons }}{{ " + " if not loop.last }}{% endfor %} <span class="muted">{{ pct0(r[1]) }}</span></div>{% endfor %}</div>
+      <div class="small"><b>{{ "The bot's top options" if g.pov_human else "Search's top options" }}</b> <span class="muted">(win value)</span>{% for c in t.bot.search.cands %}
+        <div{% if c[2] %} class="picked"{% endif %}>{% for o in c[0] %}{{ o | mons }}{{ " + " if not loop.last }}{% endfor %} <span class="muted">{{ pct0((c[1] + 1) / 2) if c[1] is not none else '-' }}{% if c[2] %} · played{% endif %}</span></div>{% endfor %}</div>
+      {% elif t.bot and t.bot.foe_guess %}<div class="small"><b>Aux guess of their moves</b> <span class="muted" title="The policy network's auxiliary opponent guess. Since arm J the search predicts replies with a separate human-imitation model, which these older traces did not record - this panel is not what the search played against.">(not the search's reply model)</span>{% for fg in t.bot.foe_guess %}
+        <div>{{ fg.mon | mons }}: {% for o in fg.options %}{{ o[0] | mons }} <span class="muted">{{ pct0(o[1]) }}</span>{{ "; " if not loop.last }}{% endfor %}</div>{% endfor %}</div>{% endif %}
+      <div class="small hp"><b>HP after the turn</b>
+        {% for m, v in t.ours %}<div class="ev us"><span class="mon us">{{ m }}</span> {{ hpbar(v) }} {{ v }}%</div>{% endfor %}
+        {% for m, v in t.theirs %}<div class="ev them"><span class="mon them">{{ m }}</span> {{ hpbar(v) }} {{ v }}%</div>{% endfor %}</div>
+    </div>
+  </div>
+</div>
+{% endif %}{% endfor %}
+{% if g.result %}<div class="card"><h2>{{ g.result }} won</h2></div>{% endif %}
+{% endblock %}
+{% block footer %}{% if g.example %}A head-to-head example game (the bot on both sides), played on a local Showdown server{% else %}A game of the bot{% endif %}, narrated from the battle protocol (no chat) &middot; Reg M-C doubles{% endblock %}

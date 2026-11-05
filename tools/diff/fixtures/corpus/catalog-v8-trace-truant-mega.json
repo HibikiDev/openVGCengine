@@ -1,0 +1,322 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,40434,44600,62493,45879",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Salamence-Mega",
+			"item": "Salamencite",
+			"ability": "slowstart",
+			"moves": [
+				"Hyper Voice",
+				"Draco Meteor",
+				"Tailwind",
+				"Protect"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 1,
+				"atk": 0,
+				"def": 0,
+				"spa": 32,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "Absol-Mega-Z",
+			"item": "Absolite Z",
+			"ability": "truant",
+			"moves": [
+				"Night Slash",
+				"Sucker Punch",
+				"Rock Slide",
+				"Detect"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 15,
+				"atk": 32,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 19
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "Indeedee-F",
+			"item": "Rocky Helmet",
+			"ability": "slowstart",
+			"moves": [
+				"Psychic",
+				"Helping Hand",
+				"Follow Me",
+				"Trick Room"
+			],
+			"nature": "Relaxed",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 32,
+				"spa": 0,
+				"spd": 2,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "Sneasler",
+			"item": "White Herb",
+			"ability": "Unburden",
+			"moves": [
+				"Close Combat",
+				"Dire Claw",
+				"Fake Out",
+				"Protect"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 2,
+				"atk": 32,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Meowstic-F",
+			"item": "Meowsticite",
+			"ability": "truant",
+			"moves": [
+				"Protect",
+				"Expanding Force",
+				"Fake Out",
+				"Thunderbolt"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 2,
+				"atk": 0,
+				"def": 0,
+				"spa": 32,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "Indeedee",
+			"item": "Focus Sash",
+			"ability": "Psychic Surge",
+			"moves": [
+				"Trick Room",
+				"Energy Ball",
+				"Expanding Force",
+				"Imprison"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 2,
+				"atk": 0,
+				"def": 0,
+				"spa": 32,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "Sneasler",
+			"item": "Psychic Seed",
+			"ability": "slowstart",
+			"moves": [
+				"Protect",
+				"Close Combat",
+				"Dire Claw",
+				"Rock Slide"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 4,
+				"atk": 32,
+				"def": 2,
+				"spa": 0,
+				"spd": 0,
+				"spe": 28
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "Charizard",
+			"item": "Charizardite Y",
+			"ability": "Blaze",
+			"moves": [
+				"Protect",
+				"Weather Ball",
+				"Ancient Power",
+				"Heat Wave"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 19,
+				"spa": 1,
+				"spd": 0,
+				"spe": 14
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"turns": [
+		{
+			"p1": "switch 3, move 2 2",
+			"p2": "move 2 1, move 3 2"
+		},
+		{
+			"p1": "switch 3, move 2 -1",
+			"p2": "move 4 -2 mega, move 3 1"
+		},
+		{
+			"p1": "move 2 2, switch 4",
+			"p2": "switch 4, switch 3"
+		},
+		{
+			"p1": "move 4, switch 3",
+			"p2": "move 2 2, switch 4"
+		},
+		{
+			"p1": "switch 4, switch 3",
+			"p2": "move 1, move 2 2"
+		},
+		{
+			"p1": "pass, switch 4",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "switch 3, move 2 1",
+			"p2": "move 2 1, switch 3"
+		},
+		{
+			"p1": "move 2 -2, move 3",
+			"p2": "move 2 -2, move 3 -1"
+		},
+		{
+			"p1": "pass, switch 3",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 1 1, move 1 -1",
+			"p2": "move 1, move 4"
+		},
+		{
+			"p1": "pass, move 3",
+			"p2": "switch 4, move 3 1"
+		},
+		{
+			"p1": "pass, move 2 1",
+			"p2": "switch 4, move 3 1"
+		},
+		{
+			"p1": "pass, move 2 -1",
+			"p2": "move 2 1, switch 4"
+		},
+		{
+			"p1": "pass, move 2 1",
+			"p2": "move 3 2, switch 3"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 4, pass"
+		}
+	],
+	"teams": [
+		"MC285",
+		"MC411"
+	]
+}

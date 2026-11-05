@@ -1,0 +1,3116 @@
+[
+	{
+		"id": "abilityshield",
+		"name": "Ability Shield",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 30
+		},
+		"boosts": null
+	},
+	{
+		"id": "absorbbulb",
+		"name": "Absorb Bulb",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 30
+		},
+		"boosts": {
+			"spa": 1
+		}
+	},
+	{
+		"id": "adamantcrystal",
+		"name": "Adamant Crystal",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": null,
+		"boosts": null
+	},
+	{
+		"id": "adamantorb",
+		"name": "Adamant Orb",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 60
+		},
+		"boosts": null
+	},
+	{
+		"id": "adrenalineorb",
+		"name": "Adrenaline Orb",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 30
+		},
+		"boosts": {
+			"spe": 1
+		}
+	},
+	{
+		"id": "aguavberry",
+		"name": "Aguav Berry",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": true,
+		"naturalGift": {
+			"basePower": 80,
+			"type": "Dragon"
+		},
+		"fling": {
+			"basePower": 10
+		},
+		"boosts": null
+	},
+	{
+		"id": "airballoon",
+		"name": "Air Balloon",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 10
+		},
+		"boosts": null
+	},
+	{
+		"id": "apicotberry",
+		"name": "Apicot Berry",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": true,
+		"naturalGift": {
+			"basePower": 100,
+			"type": "Ground"
+		},
+		"fling": {
+			"basePower": 10
+		},
+		"boosts": null
+	},
+	{
+		"id": "aspearberry",
+		"name": "Aspear Berry",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": true,
+		"naturalGift": {
+			"basePower": 80,
+			"type": "Ice"
+		},
+		"fling": {
+			"basePower": 10
+		},
+		"boosts": null
+	},
+	{
+		"id": "assaultvest",
+		"name": "Assault Vest",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 80
+		},
+		"boosts": null
+	},
+	{
+		"id": "auspiciousarmor",
+		"name": "Auspicious Armor",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 30
+		},
+		"boosts": null
+	},
+	{
+		"id": "babiriberry",
+		"name": "Babiri Berry",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": true,
+		"naturalGift": {
+			"basePower": 80,
+			"type": "Steel"
+		},
+		"fling": {
+			"basePower": 10
+		},
+		"boosts": null
+	},
+	{
+		"id": "beastball",
+		"name": "Beast Ball",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": null,
+		"boosts": null
+	},
+	{
+		"id": "berrysweet",
+		"name": "Berry Sweet",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 10
+		},
+		"boosts": null
+	},
+	{
+		"id": "bignugget",
+		"name": "Big Nugget",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 130
+		},
+		"boosts": null
+	},
+	{
+		"id": "bigroot",
+		"name": "Big Root",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 10
+		},
+		"boosts": null
+	},
+	{
+		"id": "bindingband",
+		"name": "Binding Band",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 30
+		},
+		"boosts": null
+	},
+	{
+		"id": "blackbelt",
+		"name": "Black Belt",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 30
+		},
+		"boosts": null
+	},
+	{
+		"id": "blackglasses",
+		"name": "Black Glasses",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 30
+		},
+		"boosts": null
+	},
+	{
+		"id": "blacksludge",
+		"name": "Black Sludge",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 30
+		},
+		"boosts": null
+	},
+	{
+		"id": "blunderpolicy",
+		"name": "Blunder Policy",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 80
+		},
+		"boosts": null
+	},
+	{
+		"id": "boosterenergy",
+		"name": "Booster Energy",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 30
+		},
+		"boosts": null
+	},
+	{
+		"id": "bottlecap",
+		"name": "Bottle Cap",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 30
+		},
+		"boosts": null
+	},
+	{
+		"id": "brightpowder",
+		"name": "Bright Powder",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 10
+		},
+		"boosts": null
+	},
+	{
+		"id": "cellbattery",
+		"name": "Cell Battery",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 30
+		},
+		"boosts": {
+			"atk": 1
+		}
+	},
+	{
+		"id": "charcoal",
+		"name": "Charcoal",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 30
+		},
+		"boosts": null
+	},
+	{
+		"id": "chartiberry",
+		"name": "Charti Berry",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": true,
+		"naturalGift": {
+			"basePower": 80,
+			"type": "Rock"
+		},
+		"fling": {
+			"basePower": 10
+		},
+		"boosts": null
+	},
+	{
+		"id": "cheriberry",
+		"name": "Cheri Berry",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": true,
+		"naturalGift": {
+			"basePower": 80,
+			"type": "Fire"
+		},
+		"fling": {
+			"basePower": 10
+		},
+		"boosts": null
+	},
+	{
+		"id": "chestoberry",
+		"name": "Chesto Berry",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": true,
+		"naturalGift": {
+			"basePower": 80,
+			"type": "Water"
+		},
+		"fling": {
+			"basePower": 10
+		},
+		"boosts": null
+	},
+	{
+		"id": "chilanberry",
+		"name": "Chilan Berry",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": true,
+		"naturalGift": {
+			"basePower": 80,
+			"type": "Normal"
+		},
+		"fling": {
+			"basePower": 10
+		},
+		"boosts": null
+	},
+	{
+		"id": "chippedpot",
+		"name": "Chipped Pot",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 80
+		},
+		"boosts": null
+	},
+	{
+		"id": "choiceband",
+		"name": "Choice Band",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 10
+		},
+		"boosts": null
+	},
+	{
+		"id": "choicescarf",
+		"name": "Choice Scarf",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 10
+		},
+		"boosts": null
+	},
+	{
+		"id": "choicespecs",
+		"name": "Choice Specs",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 10
+		},
+		"boosts": null
+	},
+	{
+		"id": "chopleberry",
+		"name": "Chople Berry",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": true,
+		"naturalGift": {
+			"basePower": 80,
+			"type": "Fighting"
+		},
+		"fling": {
+			"basePower": 10
+		},
+		"boosts": null
+	},
+	{
+		"id": "clearamulet",
+		"name": "Clear Amulet",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 30
+		},
+		"boosts": null
+	},
+	{
+		"id": "cloversweet",
+		"name": "Clover Sweet",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 10
+		},
+		"boosts": null
+	},
+	{
+		"id": "cobaberry",
+		"name": "Coba Berry",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": true,
+		"naturalGift": {
+			"basePower": 80,
+			"type": "Flying"
+		},
+		"fling": {
+			"basePower": 10
+		},
+		"boosts": null
+	},
+	{
+		"id": "colburberry",
+		"name": "Colbur Berry",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": true,
+		"naturalGift": {
+			"basePower": 80,
+			"type": "Dark"
+		},
+		"fling": {
+			"basePower": 10
+		},
+		"boosts": null
+	},
+	{
+		"id": "cornerstonemask",
+		"name": "Cornerstone Mask",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 60
+		},
+		"boosts": null
+	},
+	{
+		"id": "covertcloak",
+		"name": "Covert Cloak",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 30
+		},
+		"boosts": null
+	},
+	{
+		"id": "crackedpot",
+		"name": "Cracked Pot",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 80
+		},
+		"boosts": null
+	},
+	{
+		"id": "custapberry",
+		"name": "Custap Berry",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": true,
+		"naturalGift": {
+			"basePower": 100,
+			"type": "Ghost"
+		},
+		"fling": {
+			"basePower": 10
+		},
+		"boosts": null
+	},
+	{
+		"id": "damprock",
+		"name": "Damp Rock",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 60
+		},
+		"boosts": null
+	},
+	{
+		"id": "dawnstone",
+		"name": "Dawn Stone",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 80
+		},
+		"boosts": null
+	},
+	{
+		"id": "destinyknot",
+		"name": "Destiny Knot",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 10
+		},
+		"boosts": null
+	},
+	{
+		"id": "diveball",
+		"name": "Dive Ball",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": null,
+		"boosts": null
+	},
+	{
+		"id": "dracoplate",
+		"name": "Draco Plate",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 90
+		},
+		"boosts": null
+	},
+	{
+		"id": "dragonfang",
+		"name": "Dragon Fang",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 70
+		},
+		"boosts": null
+	},
+	{
+		"id": "dragonscale",
+		"name": "Dragon Scale",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 30
+		},
+		"boosts": null
+	},
+	{
+		"id": "dreadplate",
+		"name": "Dread Plate",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 90
+		},
+		"boosts": null
+	},
+	{
+		"id": "dreamball",
+		"name": "Dream Ball",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": null,
+		"boosts": null
+	},
+	{
+		"id": "dubiousdisc",
+		"name": "Dubious Disc",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 50
+		},
+		"boosts": null
+	},
+	{
+		"id": "duskball",
+		"name": "Dusk Ball",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": null,
+		"boosts": null
+	},
+	{
+		"id": "duskstone",
+		"name": "Dusk Stone",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 80
+		},
+		"boosts": null
+	},
+	{
+		"id": "earthplate",
+		"name": "Earth Plate",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 90
+		},
+		"boosts": null
+	},
+	{
+		"id": "ejectbutton",
+		"name": "Eject Button",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 30
+		},
+		"boosts": null
+	},
+	{
+		"id": "ejectpack",
+		"name": "Eject Pack",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 50
+		},
+		"boosts": null
+	},
+	{
+		"id": "electirizer",
+		"name": "Electirizer",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 80
+		},
+		"boosts": null
+	},
+	{
+		"id": "electricseed",
+		"name": "Electric Seed",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 10
+		},
+		"boosts": {
+			"def": 1
+		}
+	},
+	{
+		"id": "enigmaberry",
+		"name": "Enigma Berry",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": true,
+		"naturalGift": {
+			"basePower": 100,
+			"type": "Bug"
+		},
+		"fling": {
+			"basePower": 10
+		},
+		"boosts": null
+	},
+	{
+		"id": "eviolite",
+		"name": "Eviolite",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 40
+		},
+		"boosts": null
+	},
+	{
+		"id": "expertbelt",
+		"name": "Expert Belt",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 10
+		},
+		"boosts": null
+	},
+	{
+		"id": "fairyfeather",
+		"name": "Fairy Feather",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 10
+		},
+		"boosts": null
+	},
+	{
+		"id": "fastball",
+		"name": "Fast Ball",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": null,
+		"boosts": null
+	},
+	{
+		"id": "figyberry",
+		"name": "Figy Berry",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": true,
+		"naturalGift": {
+			"basePower": 80,
+			"type": "Bug"
+		},
+		"fling": {
+			"basePower": 10
+		},
+		"boosts": null
+	},
+	{
+		"id": "firestone",
+		"name": "Fire Stone",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 30
+		},
+		"boosts": null
+	},
+	{
+		"id": "fistplate",
+		"name": "Fist Plate",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 90
+		},
+		"boosts": null
+	},
+	{
+		"id": "flameorb",
+		"name": "Flame Orb",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 30,
+			"status": "brn"
+		},
+		"boosts": null
+	},
+	{
+		"id": "flameplate",
+		"name": "Flame Plate",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 90
+		},
+		"boosts": null
+	},
+	{
+		"id": "floatstone",
+		"name": "Float Stone",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 30
+		},
+		"boosts": null
+	},
+	{
+		"id": "flowersweet",
+		"name": "Flower Sweet",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 0
+		},
+		"boosts": null
+	},
+	{
+		"id": "focusband",
+		"name": "Focus Band",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 10
+		},
+		"boosts": null
+	},
+	{
+		"id": "focussash",
+		"name": "Focus Sash",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 10
+		},
+		"boosts": null
+	},
+	{
+		"id": "friendball",
+		"name": "Friend Ball",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": null,
+		"boosts": null
+	},
+	{
+		"id": "galaricacuff",
+		"name": "Galarica Cuff",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 30
+		},
+		"boosts": null
+	},
+	{
+		"id": "galaricawreath",
+		"name": "Galarica Wreath",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 30
+		},
+		"boosts": null
+	},
+	{
+		"id": "ganlonberry",
+		"name": "Ganlon Berry",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": true,
+		"naturalGift": {
+			"basePower": 100,
+			"type": "Ice"
+		},
+		"fling": {
+			"basePower": 10
+		},
+		"boosts": null
+	},
+	{
+		"id": "goldbottlecap",
+		"name": "Gold Bottle Cap",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 30
+		},
+		"boosts": null
+	},
+	{
+		"id": "grassyseed",
+		"name": "Grassy Seed",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 10
+		},
+		"boosts": {
+			"def": 1
+		}
+	},
+	{
+		"id": "greatball",
+		"name": "Great Ball",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": null,
+		"boosts": null
+	},
+	{
+		"id": "grepaberry",
+		"name": "Grepa Berry",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": true,
+		"naturalGift": {
+			"basePower": 90,
+			"type": "Flying"
+		},
+		"fling": {
+			"basePower": 10
+		},
+		"boosts": null
+	},
+	{
+		"id": "gripclaw",
+		"name": "Grip Claw",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 90
+		},
+		"boosts": null
+	},
+	{
+		"id": "griseouscore",
+		"name": "Griseous Core",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": null,
+		"boosts": null
+	},
+	{
+		"id": "griseousorb",
+		"name": "Griseous Orb",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 60
+		},
+		"boosts": null
+	},
+	{
+		"id": "habanberry",
+		"name": "Haban Berry",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": true,
+		"naturalGift": {
+			"basePower": 80,
+			"type": "Dragon"
+		},
+		"fling": {
+			"basePower": 10
+		},
+		"boosts": null
+	},
+	{
+		"id": "hardstone",
+		"name": "Hard Stone",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 100
+		},
+		"boosts": null
+	},
+	{
+		"id": "healball",
+		"name": "Heal Ball",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": null,
+		"boosts": null
+	},
+	{
+		"id": "hearthflamemask",
+		"name": "Hearthflame Mask",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 60
+		},
+		"boosts": null
+	},
+	{
+		"id": "heatrock",
+		"name": "Heat Rock",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 60
+		},
+		"boosts": null
+	},
+	{
+		"id": "heavyball",
+		"name": "Heavy Ball",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": null,
+		"boosts": null
+	},
+	{
+		"id": "heavydutyboots",
+		"name": "Heavy-Duty Boots",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 80
+		},
+		"boosts": null
+	},
+	{
+		"id": "hondewberry",
+		"name": "Hondew Berry",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": true,
+		"naturalGift": {
+			"basePower": 90,
+			"type": "Ground"
+		},
+		"fling": {
+			"basePower": 10
+		},
+		"boosts": null
+	},
+	{
+		"id": "iapapaberry",
+		"name": "Iapapa Berry",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": true,
+		"naturalGift": {
+			"basePower": 80,
+			"type": "Dark"
+		},
+		"fling": {
+			"basePower": 10
+		},
+		"boosts": null
+	},
+	{
+		"id": "icestone",
+		"name": "Ice Stone",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 30
+		},
+		"boosts": null
+	},
+	{
+		"id": "icicleplate",
+		"name": "Icicle Plate",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 90
+		},
+		"boosts": null
+	},
+	{
+		"id": "icyrock",
+		"name": "Icy Rock",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 40
+		},
+		"boosts": null
+	},
+	{
+		"id": "insectplate",
+		"name": "Insect Plate",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 90
+		},
+		"boosts": null
+	},
+	{
+		"id": "ironball",
+		"name": "Iron Ball",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 130
+		},
+		"boosts": null
+	},
+	{
+		"id": "ironplate",
+		"name": "Iron Plate",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 90
+		},
+		"boosts": null
+	},
+	{
+		"id": "jabocaberry",
+		"name": "Jaboca Berry",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": true,
+		"naturalGift": {
+			"basePower": 100,
+			"type": "Dragon"
+		},
+		"fling": {
+			"basePower": 10
+		},
+		"boosts": null
+	},
+	{
+		"id": "kasibberry",
+		"name": "Kasib Berry",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": true,
+		"naturalGift": {
+			"basePower": 80,
+			"type": "Ghost"
+		},
+		"fling": {
+			"basePower": 10
+		},
+		"boosts": null
+	},
+	{
+		"id": "kebiaberry",
+		"name": "Kebia Berry",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": true,
+		"naturalGift": {
+			"basePower": 80,
+			"type": "Poison"
+		},
+		"fling": {
+			"basePower": 10
+		},
+		"boosts": null
+	},
+	{
+		"id": "keeberry",
+		"name": "Kee Berry",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": true,
+		"naturalGift": {
+			"basePower": 100,
+			"type": "Fairy"
+		},
+		"fling": {
+			"basePower": 10
+		},
+		"boosts": null
+	},
+	{
+		"id": "kelpsyberry",
+		"name": "Kelpsy Berry",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": true,
+		"naturalGift": {
+			"basePower": 90,
+			"type": "Fighting"
+		},
+		"fling": {
+			"basePower": 10
+		},
+		"boosts": null
+	},
+	{
+		"id": "kingsrock",
+		"name": "King's Rock",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 30,
+			"volatileStatus": "flinch"
+		},
+		"boosts": null
+	},
+	{
+		"id": "laggingtail",
+		"name": "Lagging Tail",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 10
+		},
+		"boosts": null
+	},
+	{
+		"id": "lansatberry",
+		"name": "Lansat Berry",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": true,
+		"naturalGift": {
+			"basePower": 100,
+			"type": "Flying"
+		},
+		"fling": {
+			"basePower": 10
+		},
+		"boosts": null
+	},
+	{
+		"id": "leafstone",
+		"name": "Leaf Stone",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 30
+		},
+		"boosts": null
+	},
+	{
+		"id": "leftovers",
+		"name": "Leftovers",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 10
+		},
+		"boosts": null
+	},
+	{
+		"id": "leppaberry",
+		"name": "Leppa Berry",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": true,
+		"naturalGift": {
+			"basePower": 80,
+			"type": "Fighting"
+		},
+		"fling": {
+			"basePower": 10
+		},
+		"boosts": null
+	},
+	{
+		"id": "levelball",
+		"name": "Level Ball",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": null,
+		"boosts": null
+	},
+	{
+		"id": "liechiberry",
+		"name": "Liechi Berry",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": true,
+		"naturalGift": {
+			"basePower": 100,
+			"type": "Grass"
+		},
+		"fling": {
+			"basePower": 10
+		},
+		"boosts": null
+	},
+	{
+		"id": "lifeorb",
+		"name": "Life Orb",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 30
+		},
+		"boosts": null
+	},
+	{
+		"id": "lightball",
+		"name": "Light Ball",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 30,
+			"status": "par"
+		},
+		"boosts": null
+	},
+	{
+		"id": "lightclay",
+		"name": "Light Clay",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 30
+		},
+		"boosts": null
+	},
+	{
+		"id": "loadeddice",
+		"name": "Loaded Dice",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 30
+		},
+		"boosts": null
+	},
+	{
+		"id": "loveball",
+		"name": "Love Ball",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": null,
+		"boosts": null
+	},
+	{
+		"id": "lovesweet",
+		"name": "Love Sweet",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 10
+		},
+		"boosts": null
+	},
+	{
+		"id": "lumberry",
+		"name": "Lum Berry",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": true,
+		"naturalGift": {
+			"basePower": 80,
+			"type": "Flying"
+		},
+		"fling": {
+			"basePower": 10
+		},
+		"boosts": null
+	},
+	{
+		"id": "luminousmoss",
+		"name": "Luminous Moss",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 30
+		},
+		"boosts": {
+			"spd": 1
+		}
+	},
+	{
+		"id": "lureball",
+		"name": "Lure Ball",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": null,
+		"boosts": null
+	},
+	{
+		"id": "lustrousglobe",
+		"name": "Lustrous Globe",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": null,
+		"boosts": null
+	},
+	{
+		"id": "lustrousorb",
+		"name": "Lustrous Orb",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 60
+		},
+		"boosts": null
+	},
+	{
+		"id": "luxuryball",
+		"name": "Luxury Ball",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": null,
+		"boosts": null
+	},
+	{
+		"id": "magmarizer",
+		"name": "Magmarizer",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 80
+		},
+		"boosts": null
+	},
+	{
+		"id": "magnet",
+		"name": "Magnet",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 30
+		},
+		"boosts": null
+	},
+	{
+		"id": "magoberry",
+		"name": "Mago Berry",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": true,
+		"naturalGift": {
+			"basePower": 80,
+			"type": "Ghost"
+		},
+		"fling": {
+			"basePower": 10
+		},
+		"boosts": null
+	},
+	{
+		"id": "maliciousarmor",
+		"name": "Malicious Armor",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 30
+		},
+		"boosts": null
+	},
+	{
+		"id": "marangaberry",
+		"name": "Maranga Berry",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": true,
+		"naturalGift": {
+			"basePower": 100,
+			"type": "Dark"
+		},
+		"fling": {
+			"basePower": 10
+		},
+		"boosts": null
+	},
+	{
+		"id": "masterball",
+		"name": "Master Ball",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": null,
+		"boosts": null
+	},
+	{
+		"id": "masterpieceteacup",
+		"name": "Masterpiece Teacup",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 80
+		},
+		"boosts": null
+	},
+	{
+		"id": "meadowplate",
+		"name": "Meadow Plate",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 90
+		},
+		"boosts": null
+	},
+	{
+		"id": "mentalherb",
+		"name": "Mental Herb",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 10
+		},
+		"boosts": null
+	},
+	{
+		"id": "metalalloy",
+		"name": "Metal Alloy",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": null,
+		"boosts": null
+	},
+	{
+		"id": "metalcoat",
+		"name": "Metal Coat",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 30
+		},
+		"boosts": null
+	},
+	{
+		"id": "metronome",
+		"name": "Metronome",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 30
+		},
+		"boosts": null
+	},
+	{
+		"id": "micleberry",
+		"name": "Micle Berry",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": true,
+		"naturalGift": {
+			"basePower": 100,
+			"type": "Rock"
+		},
+		"fling": {
+			"basePower": 10
+		},
+		"boosts": null
+	},
+	{
+		"id": "mindplate",
+		"name": "Mind Plate",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 90
+		},
+		"boosts": null
+	},
+	{
+		"id": "miracleseed",
+		"name": "Miracle Seed",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 30
+		},
+		"boosts": null
+	},
+	{
+		"id": "mirrorherb",
+		"name": "Mirror Herb",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 30
+		},
+		"boosts": null
+	},
+	{
+		"id": "mistyseed",
+		"name": "Misty Seed",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 10
+		},
+		"boosts": {
+			"spd": 1
+		}
+	},
+	{
+		"id": "moonball",
+		"name": "Moon Ball",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": null,
+		"boosts": null
+	},
+	{
+		"id": "moonstone",
+		"name": "Moon Stone",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 30
+		},
+		"boosts": null
+	},
+	{
+		"id": "muscleband",
+		"name": "Muscle Band",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 10
+		},
+		"boosts": null
+	},
+	{
+		"id": "mysticwater",
+		"name": "Mystic Water",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 30
+		},
+		"boosts": null
+	},
+	{
+		"id": "nestball",
+		"name": "Nest Ball",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": null,
+		"boosts": null
+	},
+	{
+		"id": "netball",
+		"name": "Net Ball",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": null,
+		"boosts": null
+	},
+	{
+		"id": "nevermeltice",
+		"name": "Never-Melt Ice",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 30
+		},
+		"boosts": null
+	},
+	{
+		"id": "normalgem",
+		"name": "Normal Gem",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": null,
+		"boosts": null
+	},
+	{
+		"id": "occaberry",
+		"name": "Occa Berry",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": true,
+		"naturalGift": {
+			"basePower": 80,
+			"type": "Fire"
+		},
+		"fling": {
+			"basePower": 10
+		},
+		"boosts": null
+	},
+	{
+		"id": "oranberry",
+		"name": "Oran Berry",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": true,
+		"naturalGift": {
+			"basePower": 80,
+			"type": "Poison"
+		},
+		"fling": {
+			"basePower": 10
+		},
+		"boosts": null
+	},
+	{
+		"id": "ovalstone",
+		"name": "Oval Stone",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 80
+		},
+		"boosts": null
+	},
+	{
+		"id": "passhoberry",
+		"name": "Passho Berry",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": true,
+		"naturalGift": {
+			"basePower": 80,
+			"type": "Water"
+		},
+		"fling": {
+			"basePower": 10
+		},
+		"boosts": null
+	},
+	{
+		"id": "payapaberry",
+		"name": "Payapa Berry",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": true,
+		"naturalGift": {
+			"basePower": 80,
+			"type": "Psychic"
+		},
+		"fling": {
+			"basePower": 10
+		},
+		"boosts": null
+	},
+	{
+		"id": "pechaberry",
+		"name": "Pecha Berry",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": true,
+		"naturalGift": {
+			"basePower": 80,
+			"type": "Electric"
+		},
+		"fling": {
+			"basePower": 10
+		},
+		"boosts": null
+	},
+	{
+		"id": "persimberry",
+		"name": "Persim Berry",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": true,
+		"naturalGift": {
+			"basePower": 80,
+			"type": "Ground"
+		},
+		"fling": {
+			"basePower": 10
+		},
+		"boosts": null
+	},
+	{
+		"id": "petayaberry",
+		"name": "Petaya Berry",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": true,
+		"naturalGift": {
+			"basePower": 100,
+			"type": "Poison"
+		},
+		"fling": {
+			"basePower": 10
+		},
+		"boosts": null
+	},
+	{
+		"id": "pixieplate",
+		"name": "Pixie Plate",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 90
+		},
+		"boosts": null
+	},
+	{
+		"id": "poisonbarb",
+		"name": "Poison Barb",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 70,
+			"status": "psn"
+		},
+		"boosts": null
+	},
+	{
+		"id": "pokeball",
+		"name": "Poke Ball",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": null,
+		"boosts": null
+	},
+	{
+		"id": "pomegberry",
+		"name": "Pomeg Berry",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": true,
+		"naturalGift": {
+			"basePower": 90,
+			"type": "Ice"
+		},
+		"fling": {
+			"basePower": 10
+		},
+		"boosts": null
+	},
+	{
+		"id": "poweranklet",
+		"name": "Power Anklet",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 70
+		},
+		"boosts": null
+	},
+	{
+		"id": "powerband",
+		"name": "Power Band",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 70
+		},
+		"boosts": null
+	},
+	{
+		"id": "powerbelt",
+		"name": "Power Belt",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 70
+		},
+		"boosts": null
+	},
+	{
+		"id": "powerbracer",
+		"name": "Power Bracer",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 70
+		},
+		"boosts": null
+	},
+	{
+		"id": "powerherb",
+		"name": "Power Herb",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 10
+		},
+		"boosts": null
+	},
+	{
+		"id": "powerlens",
+		"name": "Power Lens",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 70
+		},
+		"boosts": null
+	},
+	{
+		"id": "powerweight",
+		"name": "Power Weight",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 70
+		},
+		"boosts": null
+	},
+	{
+		"id": "premierball",
+		"name": "Premier Ball",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": null,
+		"boosts": null
+	},
+	{
+		"id": "prettyfeather",
+		"name": "Pretty Feather",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 20
+		},
+		"boosts": null
+	},
+	{
+		"id": "prismscale",
+		"name": "Prism Scale",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 30
+		},
+		"boosts": null
+	},
+	{
+		"id": "protectivepads",
+		"name": "Protective Pads",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 30
+		},
+		"boosts": null
+	},
+	{
+		"id": "protector",
+		"name": "Protector",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 80
+		},
+		"boosts": null
+	},
+	{
+		"id": "psychicseed",
+		"name": "Psychic Seed",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 10
+		},
+		"boosts": {
+			"spd": 1
+		}
+	},
+	{
+		"id": "punchingglove",
+		"name": "Punching Glove",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 30
+		},
+		"boosts": null
+	},
+	{
+		"id": "qualotberry",
+		"name": "Qualot Berry",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": true,
+		"naturalGift": {
+			"basePower": 90,
+			"type": "Poison"
+		},
+		"fling": {
+			"basePower": 10
+		},
+		"boosts": null
+	},
+	{
+		"id": "quickball",
+		"name": "Quick Ball",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": null,
+		"boosts": null
+	},
+	{
+		"id": "quickclaw",
+		"name": "Quick Claw",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 80
+		},
+		"boosts": null
+	},
+	{
+		"id": "rarebone",
+		"name": "Rare Bone",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 100
+		},
+		"boosts": null
+	},
+	{
+		"id": "rawstberry",
+		"name": "Rawst Berry",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": true,
+		"naturalGift": {
+			"basePower": 80,
+			"type": "Grass"
+		},
+		"fling": {
+			"basePower": 10
+		},
+		"boosts": null
+	},
+	{
+		"id": "razorclaw",
+		"name": "Razor Claw",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 80
+		},
+		"boosts": null
+	},
+	{
+		"id": "razorfang",
+		"name": "Razor Fang",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 30,
+			"volatileStatus": "flinch"
+		},
+		"boosts": null
+	},
+	{
+		"id": "reapercloth",
+		"name": "Reaper Cloth",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 10
+		},
+		"boosts": null
+	},
+	{
+		"id": "redcard",
+		"name": "Red Card",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 10
+		},
+		"boosts": null
+	},
+	{
+		"id": "repeatball",
+		"name": "Repeat Ball",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": null,
+		"boosts": null
+	},
+	{
+		"id": "ribbonsweet",
+		"name": "Ribbon Sweet",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 10
+		},
+		"boosts": null
+	},
+	{
+		"id": "rindoberry",
+		"name": "Rindo Berry",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": true,
+		"naturalGift": {
+			"basePower": 80,
+			"type": "Grass"
+		},
+		"fling": {
+			"basePower": 10
+		},
+		"boosts": null
+	},
+	{
+		"id": "ringtarget",
+		"name": "Ring Target",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 10
+		},
+		"boosts": null
+	},
+	{
+		"id": "rockyhelmet",
+		"name": "Rocky Helmet",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 60
+		},
+		"boosts": null
+	},
+	{
+		"id": "roomservice",
+		"name": "Room Service",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 100
+		},
+		"boosts": {
+			"spe": -1
+		}
+	},
+	{
+		"id": "roseliberry",
+		"name": "Roseli Berry",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": true,
+		"naturalGift": {
+			"basePower": 80,
+			"type": "Fairy"
+		},
+		"fling": {
+			"basePower": 10
+		},
+		"boosts": null
+	},
+	{
+		"id": "rowapberry",
+		"name": "Rowap Berry",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": true,
+		"naturalGift": {
+			"basePower": 100,
+			"type": "Dark"
+		},
+		"fling": {
+			"basePower": 10
+		},
+		"boosts": null
+	},
+	{
+		"id": "rustedshield",
+		"name": "Rusted Shield",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": null,
+		"boosts": null
+	},
+	{
+		"id": "rustedsword",
+		"name": "Rusted Sword",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": null,
+		"boosts": null
+	},
+	{
+		"id": "safariball",
+		"name": "Safari Ball",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": null,
+		"boosts": null
+	},
+	{
+		"id": "safetygoggles",
+		"name": "Safety Goggles",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 80
+		},
+		"boosts": null
+	},
+	{
+		"id": "salacberry",
+		"name": "Salac Berry",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": true,
+		"naturalGift": {
+			"basePower": 100,
+			"type": "Fighting"
+		},
+		"fling": {
+			"basePower": 10
+		},
+		"boosts": null
+	},
+	{
+		"id": "scopelens",
+		"name": "Scope Lens",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 30
+		},
+		"boosts": null
+	},
+	{
+		"id": "sharpbeak",
+		"name": "Sharp Beak",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 50
+		},
+		"boosts": null
+	},
+	{
+		"id": "shedshell",
+		"name": "Shed Shell",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 10
+		},
+		"boosts": null
+	},
+	{
+		"id": "shellbell",
+		"name": "Shell Bell",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 30
+		},
+		"boosts": null
+	},
+	{
+		"id": "shinystone",
+		"name": "Shiny Stone",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 80
+		},
+		"boosts": null
+	},
+	{
+		"id": "shucaberry",
+		"name": "Shuca Berry",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": true,
+		"naturalGift": {
+			"basePower": 80,
+			"type": "Ground"
+		},
+		"fling": {
+			"basePower": 10
+		},
+		"boosts": null
+	},
+	{
+		"id": "silkscarf",
+		"name": "Silk Scarf",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 10
+		},
+		"boosts": null
+	},
+	{
+		"id": "silverpowder",
+		"name": "Silver Powder",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 10
+		},
+		"boosts": null
+	},
+	{
+		"id": "sitrusberry",
+		"name": "Sitrus Berry",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": true,
+		"naturalGift": {
+			"basePower": 80,
+			"type": "Psychic"
+		},
+		"fling": {
+			"basePower": 10
+		},
+		"boosts": null
+	},
+	{
+		"id": "skyplate",
+		"name": "Sky Plate",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 90
+		},
+		"boosts": null
+	},
+	{
+		"id": "smoothrock",
+		"name": "Smooth Rock",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 10
+		},
+		"boosts": null
+	},
+	{
+		"id": "snowball",
+		"name": "Snowball",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 30
+		},
+		"boosts": {
+			"atk": 1
+		}
+	},
+	{
+		"id": "softsand",
+		"name": "Soft Sand",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 10
+		},
+		"boosts": null
+	},
+	{
+		"id": "souldew",
+		"name": "Soul Dew",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 30
+		},
+		"boosts": null
+	},
+	{
+		"id": "spelltag",
+		"name": "Spell Tag",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 30
+		},
+		"boosts": null
+	},
+	{
+		"id": "splashplate",
+		"name": "Splash Plate",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 90
+		},
+		"boosts": null
+	},
+	{
+		"id": "spookyplate",
+		"name": "Spooky Plate",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 90
+		},
+		"boosts": null
+	},
+	{
+		"id": "sportball",
+		"name": "Sport Ball",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": null,
+		"boosts": null
+	},
+	{
+		"id": "starfberry",
+		"name": "Starf Berry",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": true,
+		"naturalGift": {
+			"basePower": 100,
+			"type": "Psychic"
+		},
+		"fling": {
+			"basePower": 10
+		},
+		"boosts": null
+	},
+	{
+		"id": "starsweet",
+		"name": "Star Sweet",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 10
+		},
+		"boosts": null
+	},
+	{
+		"id": "stickybarb",
+		"name": "Sticky Barb",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 80
+		},
+		"boosts": null
+	},
+	{
+		"id": "stoneplate",
+		"name": "Stone Plate",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 90
+		},
+		"boosts": null
+	},
+	{
+		"id": "strawberrysweet",
+		"name": "Strawberry Sweet",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 10
+		},
+		"boosts": null
+	},
+	{
+		"id": "sunstone",
+		"name": "Sun Stone",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 30
+		},
+		"boosts": null
+	},
+	{
+		"id": "sweetapple",
+		"name": "Sweet Apple",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 30
+		},
+		"boosts": null
+	},
+	{
+		"id": "syrupyapple",
+		"name": "Syrupy Apple",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 30
+		},
+		"boosts": null
+	},
+	{
+		"id": "tamatoberry",
+		"name": "Tamato Berry",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": true,
+		"naturalGift": {
+			"basePower": 90,
+			"type": "Psychic"
+		},
+		"fling": {
+			"basePower": 10
+		},
+		"boosts": null
+	},
+	{
+		"id": "tangaberry",
+		"name": "Tanga Berry",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": true,
+		"naturalGift": {
+			"basePower": 80,
+			"type": "Bug"
+		},
+		"fling": {
+			"basePower": 10
+		},
+		"boosts": null
+	},
+	{
+		"id": "tartapple",
+		"name": "Tart Apple",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 30
+		},
+		"boosts": null
+	},
+	{
+		"id": "terrainextender",
+		"name": "Terrain Extender",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 60
+		},
+		"boosts": null
+	},
+	{
+		"id": "throatspray",
+		"name": "Throat Spray",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 30
+		},
+		"boosts": {
+			"spa": 1
+		}
+	},
+	{
+		"id": "thunderstone",
+		"name": "Thunder Stone",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 30
+		},
+		"boosts": null
+	},
+	{
+		"id": "timerball",
+		"name": "Timer Ball",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": null,
+		"boosts": null
+	},
+	{
+		"id": "toxicorb",
+		"name": "Toxic Orb",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 30,
+			"status": "tox"
+		},
+		"boosts": null
+	},
+	{
+		"id": "toxicplate",
+		"name": "Toxic Plate",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 90
+		},
+		"boosts": null
+	},
+	{
+		"id": "twistedspoon",
+		"name": "Twisted Spoon",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 30
+		},
+		"boosts": null
+	},
+	{
+		"id": "ultraball",
+		"name": "Ultra Ball",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": null,
+		"boosts": null
+	},
+	{
+		"id": "unremarkableteacup",
+		"name": "Unremarkable Teacup",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 80
+		},
+		"boosts": null
+	},
+	{
+		"id": "upgrade",
+		"name": "Up-Grade",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 30
+		},
+		"boosts": null
+	},
+	{
+		"id": "utilityumbrella",
+		"name": "Utility Umbrella",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 60
+		},
+		"boosts": null
+	},
+	{
+		"id": "wacanberry",
+		"name": "Wacan Berry",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": true,
+		"naturalGift": {
+			"basePower": 80,
+			"type": "Electric"
+		},
+		"fling": {
+			"basePower": 10
+		},
+		"boosts": null
+	},
+	{
+		"id": "waterstone",
+		"name": "Water Stone",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 30
+		},
+		"boosts": null
+	},
+	{
+		"id": "weaknesspolicy",
+		"name": "Weakness Policy",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 80
+		},
+		"boosts": {
+			"atk": 2,
+			"spa": 2
+		}
+	},
+	{
+		"id": "wellspringmask",
+		"name": "Wellspring Mask",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 60
+		},
+		"boosts": null
+	},
+	{
+		"id": "whiteherb",
+		"name": "White Herb",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 10
+		},
+		"boosts": null
+	},
+	{
+		"id": "widelens",
+		"name": "Wide Lens",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 10
+		},
+		"boosts": null
+	},
+	{
+		"id": "wikiberry",
+		"name": "Wiki Berry",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": true,
+		"naturalGift": {
+			"basePower": 80,
+			"type": "Rock"
+		},
+		"fling": {
+			"basePower": 10
+		},
+		"boosts": null
+	},
+	{
+		"id": "wiseglasses",
+		"name": "Wise Glasses",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 10
+		},
+		"boosts": null
+	},
+	{
+		"id": "yacheberry",
+		"name": "Yache Berry",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": true,
+		"naturalGift": {
+			"basePower": 80,
+			"type": "Ice"
+		},
+		"fling": {
+			"basePower": 10
+		},
+		"boosts": null
+	},
+	{
+		"id": "zapplate",
+		"name": "Zap Plate",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 90
+		},
+		"boosts": null
+	},
+	{
+		"id": "zoomlens",
+		"name": "Zoom Lens",
+		"megaStone": null,
+		"megaEvolves": null,
+		"isBerry": false,
+		"naturalGift": null,
+		"fling": {
+			"basePower": 10
+		},
+		"boosts": null
+	}
+]

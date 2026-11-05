@@ -1,0 +1,308 @@
+{
+	"format": "gen8vgc2022",
+	"seed": "gen5,21605,35665,15740,58398",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "larvesta",
+			"item": "scopelens",
+			"ability": "fairyaura",
+			"moves": [
+				"heavyslam",
+				"detect",
+				"encore",
+				"sludge"
+			],
+			"nature": "sassy",
+			"evs": {
+				"hp": 124,
+				"atk": 116,
+				"def": 228,
+				"spa": 40,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 10,
+				"atk": 31,
+				"def": 31,
+				"spa": 7,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "Coalossal",
+			"item": "pixieplate",
+			"ability": "innardsout",
+			"moves": [
+				"smackdown",
+				"mimic",
+				"bravebird",
+				"bite"
+			],
+			"nature": "relaxed",
+			"evs": {
+				"hp": 252,
+				"atk": 8,
+				"def": 100,
+				"spa": 116,
+				"spd": 16,
+				"spe": 16
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 26
+			},
+			"level": 50,
+			"gender": "M",
+			"gigantamax": true
+		},
+		{
+			"name": "Mon2",
+			"species": "nickit",
+			"item": "thickclub",
+			"ability": "powerspot",
+			"moves": [
+				"magicroom",
+				"chargebeam",
+				"waterpledge",
+				"firefang"
+			],
+			"nature": "naughty",
+			"evs": {
+				"hp": 220,
+				"atk": 8,
+				"def": 72,
+				"spa": 152,
+				"spd": 56,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 3,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "blaziken",
+			"item": "tr21",
+			"ability": "iceface",
+			"moves": [
+				"grassyterrain",
+				"snore",
+				"extremespeed",
+				"blueflare"
+			],
+			"nature": "serious",
+			"evs": {
+				"hp": 132,
+				"atk": 188,
+				"def": 36,
+				"spa": 152,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "kommoo",
+			"item": "masterball",
+			"ability": "pixilate",
+			"moves": [
+				"roleplay",
+				"copycat",
+				"rockwrecker",
+				"jawlock"
+			],
+			"nature": "mild",
+			"evs": {
+				"hp": 172,
+				"atk": 120,
+				"def": 136,
+				"spa": 80,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 8,
+				"def": 9,
+				"spa": 9,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "Snorlax",
+			"item": "thickclub",
+			"ability": "wimpout",
+			"moves": [
+				"strangesteam",
+				"spitup",
+				"withdraw",
+				"iceshard"
+			],
+			"nature": "calm",
+			"evs": {
+				"hp": 220,
+				"atk": 36,
+				"def": 92,
+				"spa": 160,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"gigantamax": true
+		},
+		{
+			"name": "Mon2",
+			"species": "rhyhorn",
+			"item": "widelens",
+			"ability": "sandspit",
+			"moves": [
+				"powerwhip",
+				"powerswap",
+				"phantomforce",
+				"solarblade"
+			],
+			"nature": "modest",
+			"evs": {
+				"hp": 248,
+				"atk": 52,
+				"def": 144,
+				"spa": 40,
+				"spd": 24,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 27,
+				"spd": 14,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "skuntank",
+			"item": "pechaberry",
+			"ability": "teravolt",
+			"moves": [
+				"conversion",
+				"headsmash",
+				"paraboliccharge",
+				"slash"
+			],
+			"nature": "lonely",
+			"evs": {
+				"hp": 220,
+				"atk": 112,
+				"def": 56,
+				"spa": 120,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 1,
+				"spa": 31,
+				"spd": 31,
+				"spe": 21
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 4 1, move 1 2",
+			"p2": "move 1 1, move 3"
+		},
+		{
+			"p1": "move 3 -2, move 1 1 dynamax",
+			"p2": "move 3 2, move 4 -1"
+		},
+		{
+			"p1": "move 4 -2, move 3 2",
+			"p2": "move 1 -2, move 1 -1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "pass, switch 3"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 4, pass"
+		},
+		{
+			"p1": "move 4 1, move 4 1",
+			"p2": "move 4 2, move 4 1"
+		},
+		{
+			"p1": "move 3 2, move 3 2",
+			"p2": "move 4 2, move 1"
+		},
+		{
+			"p1": "move 1 1, move 1 -1",
+			"p2": "move 4 2 dynamax, switch 3"
+		},
+		{
+			"p1": "switch 3, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 4 2, move 4 -1",
+			"p2": "move 2 2, switch 3"
+		},
+		{
+			"p1": "pass, switch 4",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 2 -2, move 2 1",
+			"p2": "move 2 2, move 3 -1"
+		}
+	]
+}

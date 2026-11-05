@@ -1,0 +1,318 @@
+{
+	"format": "gen9vgc2023regc",
+	"seed": "gen5,64543,29718,42880,276",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "uxie",
+			"item": "duskball",
+			"ability": "corrosion",
+			"moves": [
+				"skillswap",
+				"irontail",
+				"minimize",
+				"transform"
+			],
+			"nature": "naughty",
+			"evs": {
+				"hp": 80,
+				"atk": 196,
+				"def": 60,
+				"spa": 172,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 10
+			},
+			"level": 50,
+			"gender": "N",
+			"teraType": "Water"
+		},
+		{
+			"name": "Mon1",
+			"species": "zapdosgalar",
+			"item": "netball",
+			"ability": "immunity",
+			"moves": [
+				"watershuriken",
+				"thunderfang",
+				"ragingfury",
+				"firespin"
+			],
+			"nature": "impish",
+			"evs": {
+				"hp": 236,
+				"atk": 48,
+				"def": 100,
+				"spa": 124,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 12,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N",
+			"teraType": "Water"
+		},
+		{
+			"name": "Mon2",
+			"species": "urshifu",
+			"item": "masterball",
+			"ability": "shadowtag",
+			"moves": [
+				"acrobatics",
+				"lunge",
+				"doublehit",
+				"guillotine"
+			],
+			"nature": "docile",
+			"evs": {
+				"hp": 196,
+				"atk": 4,
+				"def": 240,
+				"spa": 68,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 28,
+				"atk": 31,
+				"def": 31,
+				"spa": 27,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Steel"
+		},
+		{
+			"name": "Mon3",
+			"species": "thundurustherian",
+			"item": "liechiberry",
+			"ability": "overcoat",
+			"moves": [
+				"leafblade",
+				"defensecurl",
+				"attackorder",
+				"trickroom"
+			],
+			"nature": "impish",
+			"evs": {
+				"hp": 88,
+				"atk": 44,
+				"def": 52,
+				"spa": 244,
+				"spd": 80,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 22,
+				"def": 10,
+				"spa": 31,
+				"spd": 11,
+				"spe": 27
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Normal"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "zapdos",
+			"item": "electricseed",
+			"ability": "snowcloak",
+			"moves": [
+				"mudshot",
+				"aquacutter",
+				"muddywater",
+				"icepunch"
+			],
+			"nature": "careful",
+			"evs": {
+				"hp": 188,
+				"atk": 148,
+				"def": 152,
+				"spa": 20,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N",
+			"teraType": "Dark"
+		},
+		{
+			"name": "Mon1",
+			"species": "houndour",
+			"item": "bottlecap",
+			"ability": "merciless",
+			"moves": [
+				"whirlpool",
+				"fierydance",
+				"flail",
+				"mistyterrain"
+			],
+			"nature": "naughty",
+			"evs": {
+				"hp": 232,
+				"atk": 248,
+				"def": 28,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 3,
+				"atk": 31,
+				"def": 1,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Grass"
+		},
+		{
+			"name": "Mon2",
+			"species": "raboot",
+			"item": "grepaberry",
+			"ability": "symbiosis",
+			"moves": [
+				"shadowball",
+				"belch",
+				"psychocut",
+				"sandtomb"
+			],
+			"nature": "bold",
+			"evs": {
+				"hp": 228,
+				"atk": 112,
+				"def": 60,
+				"spa": 40,
+				"spd": 68,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Grass"
+		},
+		{
+			"name": "Mon3",
+			"species": "dachsbun",
+			"item": "shedshell",
+			"ability": "imposter",
+			"moves": [
+				"rocktomb",
+				"futuresight",
+				"visegrip",
+				"nuzzle"
+			],
+			"nature": "hardy",
+			"evs": {
+				"hp": 44,
+				"atk": 60,
+				"def": 96,
+				"spa": 56,
+				"spd": 176,
+				"spe": 76
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 16,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Grass"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 4 -2, move 2 1 terastallize",
+			"p2": "move 2 1 terastallize, move 3 -1"
+		},
+		{
+			"p1": "move 1 1, move 4 1",
+			"p2": "move 4 2, move 1 -1"
+		},
+		{
+			"p1": "move 4 2, move 1 1",
+			"p2": "move 4 1, move 2 -1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 3, pass"
+		},
+		{
+			"p1": "move 2 2, move 4 -1",
+			"p2": "move 4 1, move 2 2"
+		},
+		{
+			"p1": "move 1 2, switch 3",
+			"p2": "move 3 -2, move 1 2"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "pass, switch 4"
+		},
+		{
+			"p1": "move 1 -2, move 3 -1",
+			"p2": "move 1 1, move 3 2"
+		},
+		{
+			"p1": "move 1 1, move 2 2",
+			"p2": "move 3 2, move 3 2"
+		},
+		{
+			"p1": "move 2 -2, move 3 -1",
+			"p2": "move 3 1, move 3 2"
+		},
+		{
+			"p1": "switch 3, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "switch 4, move 2 1",
+			"p2": "move 4 1, move 3 -1"
+		}
+	],
+	"teams": [
+		"scenario-16b",
+		"scenario-113b"
+	]
+}

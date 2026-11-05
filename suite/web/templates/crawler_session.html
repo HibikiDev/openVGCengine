@@ -1,0 +1,109 @@
+{% extends "base.html" %}
+{% block title %}Line Crawler · openVGCengine{% endblock %}
+{% macro hpbar(v) %}<span class="hpbar"><span style="width: {{ v }}%" class="{{ 'low' if v <= 25 else 'mid' if v <= 50 else '' }}"></span></span>{% endmacro %}
+{% set st = ev.state %}
+{% set NAMES = [c.names.a or 'Team A', c.names.b or 'Team B'] %}
+{% macro mon(m, active) %}{% set p = ((100 * m.hp / m.max_hp)|round|int) if m.max_hp else 0 %}
+  <div class="cr-mon{% if not m.hp %} fainted{% endif %}{% if active %} active{% endif %}"><b>{{ m.species }}</b>
+    {% if m.hp %}{{ hpbar(p) }} {{ p }}%{% else %}<span class="muted">fainted</span>{% endif %}
+    {% if m.status %}<span class="tag">{{ STATUS[m.status] }}</span>{% endif %}
+    {% for b in m.boosts %}{% if b %}<span class="tag">{{ BOOSTS[loop.index0] }} {{ '%+d'|format(b) }}</span>{% endif %}{% endfor %}
+    <span class="small muted">{{ m.item }}</span></div>
+{% endmacro %}
+{% block main %}
+<div class="card">
+  <h1>{{ NAMES[0] }} vs {{ NAMES[1] }} {% if c.format %}<span class="tag">{{ format_short.get(c.format, c.format) }}</span> {% endif %}<span class="muted small">· {% if st.pending == 'over' %}game over{% elif st.pending == 'forced' %}turn {{ turn }}: replacements{% else %}turn {{ turn + 1 }} to choose{% endif %}</span></h1>
+  <p class="small muted"><a href="/crawler">&larr; all crawls</a> ·
+    {% for k in trail %}{% if not loop.first %} &rsaquo; {% endif %}{% if k == nid %}<b>{{ 'start' if k == '0' else 'here' }}</b>{% else %}<a href="?n={{ k }}">{{ 'start' if k == '0' else ('turn ' ~ (rows|selectattr('id', 'equalto', k)|first).turn ~ ((' replacement') if c.nodes[k].kind == 'replace' else '')) }}</a>{% endif %}{% endfor %}</p>
+  {% if err %}<p class="chip t-strong">{{ err }}</p>{% endif %}
+  <div class="grid2">
+    {% for side in (0, 1) %}{% set s = st.sides[side] %}
+    <div><h3>{{ 'AB'[side] }} · {{ NAMES[side] }}</h3>
+      {% for i in s.active %}{{ mon(s.mons[i], true) }}{% endfor %}
+      <div class="small muted" style="margin-top: 4px">back: {% for m in s.mons %}{% if loop.index0 not in s.active %}{{ m.species }} {{ ((100 * m.hp / m.max_hp)|round|int) if m.hp else 'fainted' }}{{ '%' if m.hp else '' }}{{ ' · ' if not loop.last }}{% endif %}{% endfor %}</div>
+      <div class="small">{% for k, v in s.conds.items() %}{% if v %}<span class="tag">{{ k|replace('_', ' ') }} {{ v }}</span> {% endif %}{% endfor %}{% if s.mega_used %}<span class="tag">Mega used</span>{% endif %}</div>
+    </div>{% endfor %}
+  </div>
+  <p class="small">{% if st.field.weather != 'None' %}<span class="tag">{{ st.field.weather }} {{ st.field.weather_turns }}</span> {% endif %}{% if st.field.terrain != 'None' %}<span class="tag">{{ st.field.terrain }} terrain {{ st.field.terrain_turns }}</span> {% endif %}{% if st.field.trick_room %}<span class="tag">Trick Room {{ st.field.trick_room }}</span>{% endif %}</p>
+</div>
+{% if node.log %}
+<div class="card flat">
+  <h3>What just happened</h3>
+  <ul class="small cr-log">{% for ln in node.log %}<li>{{ ln }}</li>{% endfor %}</ul>
+  {% if dice %}
+  <details class="cr-dice"{% if node.overrides %} open{% endif %}><summary class="small"><b>Dice</b> - set any roll and re-run this turn ({{ dice|length }} rolls{% if node.overrides %}, {{ node.overrides|length }} set by you{% endif %})</summary>
+  <form method="post" action="/crawler/s/{{ c.id }}/play"><input type="hidden" name="n" value="{{ nid }}"><input type="hidden" name="mode" value="dice">
+    <div class="scroll"><table class="tbl">
+      <tr><th>who</th><th>move -> target</th><th>roll</th><th>came out</th><th>set it</th></tr>
+      {% for d in dice %}<tr{% if d.forced %} class="picked"{% endif %}><td class="small">{{ d.who }}</td><td class="small">{{ d.move }} -> {{ d.target }}{% if d.k %} <span class="muted">(#{{ d.k + 1 }})</span>{% endif %}</td>
+        <td class="small">{{ d.site }}{% if d.chance %} <span class="muted">{{ d.chance }}</span>{% endif %}</td>
+        <td class="small">{{ d.outcome }}{% if d.ko is defined and d.ko is not none %} <span class="muted" title="of the 16 damage rolls, how many knock the target out here">· KOs on {{ d.ko }}/16</span>{% endif %}</td>
+        <td>{% if d.options %}<select name="d{{ d.i }}"><option value=""{% if not d.forced %} selected{% endif %}>as the dice fall</option>{% for v, t in d.options %}<option value="{{ v }}"{% if d.forced and v == d.value %} selected{% endif %}>{{ t }}</option>{% endfor %}</select>{% else %}<span class="small muted">fixed</span>{% endif %}</td></tr>{% endfor %}
+    </table></div>
+    <button class="btn alt" type="submit" title="the same choices and the same dice, except the rolls you set: a sibling branch">Re-run this turn with these dice</button>
+    <span class="small muted">Rolls that stop existing (a forced miss has no damage roll) are dropped; later rolls in the turn keep their dice where they can.</span>
+  </form></details>
+  {% endif %}
+  <form method="post" action="/crawler/s/{{ c.id }}/play" style="display: inline"><input type="hidden" name="n" value="{{ nid }}"><input type="hidden" name="mode" value="reroll">
+    <button class="btn alt" type="submit" title="the same choices from the same position, with new dice: a sibling branch">Reroll this turn</button></form>
+  <a class="btn alt" href="?n={{ node.parent }}">Back a step</a>
+</div>
+{% endif %}
+{% if st.pending != 'over' %}
+<form class="card" method="post" action="/crawler/s/{{ c.id }}/play" id="decide">
+  <input type="hidden" name="n" value="{{ nid }}">
+  <h3>{% if st.pending == 'forced' %}Replacements{% else %}Choose turn {{ turn + 1 }}{% endif %}</h3>
+  <div class="grid2">
+  {% for side in (0, 1) %}{% set key = 'ab'[side] %}{% set sd = ev.sides.get(side) %}{% set s = st.sides[side] %}
+    <div>
+      <h4>{{ 'AB'[side] }} · {{ NAMES[side] }}</h4>
+      {% if sd %}
+      {% for slot in (0, 1) %}{% set labs = ev.labels[side][slot] %}{% set pick = sd.pick[slot] if sd.pick else none %}
+        <div class="custom-bring"><span class="small muted">{{ s.mons[s.active[slot]].species }}</span>
+          <select name="{{ key }}{{ slot }}">{% for a, t in labs.items() %}<option value="{{ a }}"{% if pick and a|int == pick[0] %} selected{% endif %}>{{ t }}</option>{% endfor %}</select>
+          {% if ev.mega and ev.mega[side][slot] %}<label class="small"><input type="checkbox" name="{{ key }}{{ slot }}m" value="1"{% if pick and pick[1] %} checked{% endif %}> Mega</label>{% endif %}</div>
+      {% endfor %}
+      <p class="small muted">The bot's instincts (policy, 256 draws):</p>
+      {% for slot in (0, 1) %}<div class="small">{{ s.mons[s.active[slot]].species }}: {% for o in sd.policy[slot] %}{{ o[0] }} <span class="muted">{{ (o[1] * 100)|round|int }}%</span>{{ ' · ' if not loop.last }}{% endfor %}</div>{% endfor %}
+      {% if sd.lines %}
+      <div class="scroll"><table class="tbl" style="margin-top: 6px">
+        <tr><th>the search's lines</th><th class="num" title="win chance after the search (two-turn rollouts on close calls)">win</th><th class="num" title="one-turn score before the rollouts">1-turn</th><th></th></tr>
+        {% for l in sd.lines[:8] %}<tr{% if loop.first %} class="picked"{% endif %}><td class="small">{{ l.label }}</td><td class="num">{{ (l.win * 100)|round|int }}%</td>
+          <td class="num small muted">{{ ((l.win1 * 100)|round|int ~ '%') if l.win1 is not none else '' }}</td>
+          <td><button class="btn alt small use" type="button" data-side="{{ key }}" data-acts='{{ l.actions|tojson }}'>use</button></td></tr>{% endfor %}
+      </table></div>
+      {% endif %}
+      {% else %}
+      <p class="small muted">Nothing to choose this step.</p>
+      {% for slot in (0, 1) %}<input type="hidden" name="{{ key }}{{ slot }}" value="{{ PASS }}">{% endfor %}
+      {% endif %}
+    </div>
+  {% endfor %}
+  </div>
+  <button class="btn" type="submit">Play {{ 'the replacements' if st.pending == 'forced' else 'the turn' }}</button>
+  <span class="small muted">Preset to the search's picks. New dice every time: playing the same choices again makes a sibling branch.</span>
+</form>
+{% endif %}
+<div class="card flat">
+  <h3>Timeline</h3>
+  <div class="cr-tree small">
+  {% for r in rows %}<div class="cr-node{% if r.current %} current{% elif r.on_path %} onpath{% endif %}" style="padding-left: {{ r.depth * 18 }}px">
+    <a href="?n={{ r.id }}">{% if r.id == '0' %}start{% elif r.kind == 'replace' %}turn {{ r.turn }} replacement{% else %}turn {{ r.turn }}{% endif %}</a>
+    {% if r.summary %}<span class="muted">{{ r.summary }}</span>{% endif %}
+    {% for f in r.fainted %}<span class="tag">{{ f }} fainted</span>{% endfor %}{% if r.over %}<span class="tag">game over</span>{% endif %}</div>{% endfor %}
+  </div>
+  <p class="small muted">Branches start where a turn was played differently or rerolled; indented rows are alternatives at that point.</p>
+</div>
+<script>
+
+document.querySelectorAll("button.use").forEach(b => b.addEventListener("click", () => {
+  const acts = JSON.parse(b.dataset.acts), side = b.dataset.side;
+  acts.forEach((a, slot) => {
+    const sel = document.querySelector(`select[name="${side}${slot}"]`);
+    if (sel) sel.value = String(a[0]);
+    const m = document.querySelector(`input[name="${side}${slot}m"]`);
+    if (m) m.checked = !!a[1];
+  });
+}));
+</script>
+{% endblock %}

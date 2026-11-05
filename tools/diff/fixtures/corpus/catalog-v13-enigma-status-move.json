@@ -1,0 +1,262 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,41719,12385,13955,34995",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "kangaskhan",
+			"item": "enigmaberry",
+			"ability": "justified",
+			"moves": [
+				"shadowclaw",
+				"spitup",
+				"powertrip",
+				"confuseray"
+			],
+			"nature": "naughty",
+			"evs": {
+				"hp": 32,
+				"atk": 9,
+				"def": 14,
+				"spa": 26,
+				"spd": 31,
+				"spe": 22
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "archaludon",
+			"item": "griseousorb",
+			"ability": "telepathy",
+			"moves": [
+				"faketears",
+				"magicalleaf",
+				"ragingbull",
+				"machpunch"
+			],
+			"nature": "quiet",
+			"evs": {
+				"hp": 32,
+				"atk": 25,
+				"def": 16,
+				"spa": 7,
+				"spd": 26,
+				"spe": 12
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "zoroark",
+			"item": "gripclaw",
+			"ability": "armortail",
+			"moves": [
+				"reflect",
+				"speedswap",
+				"appleacid",
+				"wonderroom"
+			],
+			"nature": "impish",
+			"evs": {
+				"hp": 32,
+				"atk": 28,
+				"def": 19,
+				"spa": 10,
+				"spd": 24,
+				"spe": 23
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "mudsdale",
+			"item": "gripclaw",
+			"ability": "cloudnine",
+			"moves": [
+				"lightscreen",
+				"guillotine",
+				"snowscape",
+				"aquajet"
+			],
+			"nature": "careful",
+			"evs": {
+				"hp": 32,
+				"atk": 26,
+				"def": 21,
+				"spa": 25,
+				"spd": 21,
+				"spe": 31
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "kommoo",
+			"item": "ringtarget",
+			"ability": "electricsurge",
+			"moves": [
+				"spitup",
+				"pluck",
+				"stompingtantrum",
+				"stuffcheeks"
+			],
+			"nature": "bold",
+			"evs": {
+				"hp": 32,
+				"atk": 16,
+				"def": 3,
+				"spa": 12,
+				"spd": 30,
+				"spe": 25
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "raichualola",
+			"item": "enigmaberry",
+			"ability": "purifyingsalt",
+			"moves": [
+				"iciclespear",
+				"roost",
+				"clangoroussoul",
+				"rockwrecker"
+			],
+			"nature": "impish",
+			"evs": {
+				"hp": 32,
+				"atk": 31,
+				"def": 0,
+				"spa": 4,
+				"spd": 15,
+				"spe": 16
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "dragonite",
+			"item": "lustrousorb",
+			"ability": "magicguard",
+			"moves": [
+				"spicyextract",
+				"protect",
+				"hyperbeam",
+				"soak"
+			],
+			"nature": "lax",
+			"evs": {
+				"hp": 32,
+				"atk": 31,
+				"def": 12,
+				"spa": 1,
+				"spd": 22,
+				"spe": 26
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "floetteeternal",
+			"item": "enigmaberry",
+			"ability": "friendguard",
+			"moves": [
+				"headlongrush",
+				"heavyslam",
+				"sunnyday",
+				"swagger"
+			],
+			"nature": "gentle",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 4,
+				"spa": 20,
+				"spd": 30,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 4 2, move 4 1",
+			"p2": "move 2 2, move 2"
+		}
+	]
+}

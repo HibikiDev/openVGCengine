@@ -1,0 +1,262 @@
+{
+	"format": "gen6vgc2015",
+	"seed": "gen5,3432,40579,22647,34657",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "gogoat",
+			"item": "ironplate",
+			"ability": "sapsipper",
+			"moves": [
+				"hurricane",
+				"skydrop",
+				"thunder",
+				"twister"
+			],
+			"nature": "hasty",
+			"evs": {
+				"hp": 0,
+				"atk": 72,
+				"def": 220,
+				"spa": 200,
+				"spd": 16,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 2,
+				"atk": 31,
+				"def": 31,
+				"spa": 16,
+				"spd": 31,
+				"spe": 2
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "marshtomp",
+			"item": "starfberry",
+			"ability": "multiscale",
+			"moves": [
+				"smackdown",
+				"gust",
+				"hurricane",
+				"twister"
+			],
+			"nature": "modest",
+			"evs": {
+				"hp": 120,
+				"atk": 52,
+				"def": 144,
+				"spa": 192,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 0,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "gligar",
+			"item": "lifeorb",
+			"ability": "protean",
+			"moves": [
+				"thunder",
+				"skydrop",
+				"twister",
+				"smackdown"
+			],
+			"nature": "quiet",
+			"evs": {
+				"hp": 176,
+				"atk": 76,
+				"def": 92,
+				"spa": 108,
+				"spd": 48,
+				"spe": 8
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 10,
+				"spa": 4,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "omanyte",
+			"item": "blukberry",
+			"ability": "reckless",
+			"moves": [
+				"gust",
+				"hurricane",
+				"skydrop",
+				"thunder"
+			],
+			"nature": "mild",
+			"evs": {
+				"hp": 140,
+				"atk": 144,
+				"def": 0,
+				"spa": 176,
+				"spd": 0,
+				"spe": 48
+			},
+			"ivs": {
+				"hp": 7,
+				"atk": 31,
+				"def": 31,
+				"spa": 25,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "noibat",
+			"item": "waterstone",
+			"ability": "unnerve",
+			"moves": [
+				"skydrop",
+				"hurricane",
+				"gust",
+				"twister"
+			],
+			"nature": "brave",
+			"evs": {
+				"hp": 244,
+				"atk": 228,
+				"def": 36,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 10,
+				"spa": 14,
+				"spd": 31,
+				"spe": 8
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "nosepass",
+			"item": "spookyplate",
+			"ability": "voltabsorb",
+			"moves": [
+				"smackdown",
+				"hurricane",
+				"twister",
+				"gust"
+			],
+			"nature": "bold",
+			"evs": {
+				"hp": 80,
+				"atk": 132,
+				"def": 168,
+				"spa": 128,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "servine",
+			"item": "mysticwater",
+			"ability": "roughskin",
+			"moves": [
+				"smackdown",
+				"gust",
+				"thunder",
+				"twister"
+			],
+			"nature": "gentle",
+			"evs": {
+				"hp": 8,
+				"atk": 228,
+				"def": 244,
+				"spa": 28,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 21,
+				"spa": 13,
+				"spd": 31,
+				"spe": 2
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "nidoking",
+			"item": "charizarditey",
+			"ability": "parentalbond",
+			"moves": [
+				"smackdown",
+				"twister",
+				"hurricane",
+				"skydrop"
+			],
+			"nature": "sassy",
+			"evs": {
+				"hp": 184,
+				"atk": 140,
+				"def": 164,
+				"spa": 0,
+				"spd": 20,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 20,
+				"spd": 31,
+				"spe": 12
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 2 1, move 4",
+			"p2": "move 3 1, move 3"
+		}
+	]
+}

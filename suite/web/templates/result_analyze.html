@@ -1,0 +1,96 @@
+{% set players = r.replay.players %}{% from "_team_export.html" import team_export %}
+<div class="card">
+  <h1>{{ players.get('p1', 'Player 1') }} <span class="muted">vs</span> {{ players.get('p2', 'Player 2') }}{% if r.format_name %} <span class="tag">{{ r.format_name }}</span>{% endif %}</h1>
+  <p class="muted small">{{ r.replay.format }}{% if r.replay.ots %} · open team sheets{% endif %} · model {{ r.model.checkpoint }} · <a href="/analyze">analyze another</a></p>
+  {% if r.pastes %}<div style="display:flex; gap:18px; flex-wrap:wrap">{% for s in ('p1', 'p2') %}{% set x = r.pastes[s] %}{% if x and x.text %}{{ team_export(x.text, "show " ~ players.get(s, s) ~ "'s team", "From the open team sheet in the log. EVs are the bot's guess (open sheets don't show EVs)." if x.guessed else none) }}{% endif %}{% endfor %}</div>{% endif %}
+  {% set c = win_curve_svg(r.win_curve, players) %}
+  <h3>How the model rated each side, turn by turn</h3>
+  <div class="legend">{% for l in c.lines %}<span><i style="background: {{ 'var(--lime)' if l.side == 'p1' else 'var(--sky)' }}"></i>{{ l.name }}</span>{% endfor %}</div>
+  <svg class="curve" viewBox="0 0 {{ c.w }} {{ c.h }}" role="img" aria-label="win estimate per turn">
+    <line class="grid" x1="{{ c.pad_l }}" x2="{{ c.right }}" y1="{{ c.y1 }}" y2="{{ c.y1 }}"/>
+    <line class="grid" x1="{{ c.pad_l }}" x2="{{ c.right }}" y1="{{ c.y0 }}" y2="{{ c.y0 }}"/>
+    <line class="mid" x1="{{ c.pad_l }}" x2="{{ c.right }}" y1="{{ c.y50 }}" y2="{{ c.y50 }}"/>
+    <text x="2" y="{{ c.y1 + 4 }}">100%</text><text x="8" y="{{ c.y50 + 4 }}">50%</text><text x="15" y="{{ c.y0 + 4 }}">0%</text>
+    {% for x, t in c.ticks %}<text x="{{ x - 4 }}" y="{{ c.h - 6 }}">{{ t }}</text>{% endfor %}
+    {% for l in c.lines %}<polyline class="l-{{ l.side }}" points="{{ l.points }}"/>
+      {% for x, y, t, v in l.dots %}<circle class="d-{{ l.side }}" cx="{{ x }}" cy="{{ y }}" r="4.5"><title>{{ l.name }}, turn {{ t }}: {{ v|pct }}</title></circle>{% endfor %}{% endfor %}
+  </svg>
+  {% if r.model.calibrated %}
+  <p class="small muted">Each side's win chance at the start of each turn (calibrated on human games).</p>
+  {% else %}
+  <p class="small muted">Each side's raw win estimate at the start of each turn: for spotting swings, not a calibrated probability.</p>
+  {% endif %}
+</div>
+
+{% macro hpbar(v) %}<span class="hpbar"><span style="width: {{ v }}%" class="{{ 'low' if v <= 25 else 'mid' if v <= 50 else '' }}"></span></span>{% endmacro %}
+
+{% macro choice(t, mine_tag) %}
+  {% set foe_tag = 'them' if mine_tag == 'us' else 'us' %}
+  <div class="small"><b>{{ players.get(t.side, t.side) }}'s choice</b> <span class="muted">· model's win estimate {{ t.win|pct }}</span></div>
+  {% if t.field %}<div class="small muted">on the field: {% for m in t.field.mine if m %}<span class="mon {{ mine_tag }}">{{ m }}</span>{{ ' + ' if not loop.last }}{% endfor %}
+    vs {% for m in t.field.foe if m %}<span class="mon {{ foe_tag }}">{{ m }}</span>{{ ' + ' if not loop.last }}{% endfor %}</div>{% endif %}
+  {% for sl in t.slots if sl %}
+  <div class="slot{% if sl.tier == 'agrees' %} agree{% endif %}" style="margin-top: 6px">
+    <div class="small"><b>{{ sl.mon }}</b>: clicked <b>{{ (sl.played or '(not shown in the log)')|replace(' -> ', ' → ') }}</b>
+      {% if sl.tier %}<span class="chip {{ sl.tier|tier_class }}" title="the model gave it {{ sl.played_p|prob }} (its #{{ sl.played_rank }} choice)">{{ sl.tier }} · {{ sl.played_p|prob }}</span>{% endif %}
+      {% if sl.hit %}<br><span class="muted">(hit {{ sl.hit }} - switched in first)</span>{% endif %}</div>
+    {% for label, pr in sl.top %}<div class="opt"><div class="bar{% if loop.index == sl.played_rank %} sun{% endif %}"><i style="width: {{ (pr * 100)|round(1) }}%"></i><span>{{ label|replace(' -> ', ' → ') }}</span></div><span class="small">{{ pr|prob }}</span></div>{% endfor %}
+  </div>
+  {% endfor %}
+{% endmacro %}
+<div class="filters"><span class="small muted">Show</span>
+  <button data-f="all" class="on">every turn</button><button data-f="diff">only where the model would play differently</button></div>
+<div class="small muted" style="margin:-8px 0 16px">
+  <span class="chip t-agree">agrees</span> <span class="chip t-close">close alternative</span>
+  <span class="chip t-other">model prefers another</span> <span class="chip t-strong">model strongly prefers another</span>
+  &nbsp;The click against the model's favourite in that slot, both named by who stood where when the choice was made. At a high level a less-liked play is often a read.</div>
+{% if r.narration %}{% set N = r.narration %}
+<p class="small conv"><span class="mon us">{{ players.get(N.me, N.me) }}'s mons</span> / <span class="mon them">{{ players.get('p2' if N.me == 'p1' else 'p1') }}'s</span> · each turn: the choice going into it (right) and what happened (left), HP after the turn.</p>
+{% if r.guessed %}<p class="note small"><b>This replay has no team sheets.</b> Each player's own set is what the game showed plus a guess; the opponent's is only what had been revealed by that turn, plus a guess, so the percentages are a rough guide. Pasting a player's team under the replay box makes that side exact.</p>{% endif %}
+<div id="turns">
+{% set by_turn = {} %}{% for t in r.turns %}{% set _ = by_turn.setdefault(t.turn, []).append(t) %}{% endfor %}
+{% for nt in N.turns %}{% set dec = by_turn.get(nt.turn, []) %}
+<div class="card turncard turn">
+  <div class="turnhead"><h2>{{ "Start" if nt.turn == 0 else "Turn " ~ nt.turn }}</h2>
+    {% for t in dec %}<span class="tag">{{ players.get(t.side, t.side) }} {{ t.win|pct }}</span> {% endfor %}</div>
+  <div class="turnbody">
+    <div class="events">{% for e in nt.events %}<div class="ev {{ e.side or '' }} k-{{ e.kind }}">{{ e.text | mons }}</div>{% endfor %}</div>
+    <div class="side">
+      {% for t in dec %}<div class="sidecard {{ t.side }}" style="padding: 8px 10px">{{ choice(t, 'us' if t.side == N.me else 'them') }}</div>{% endfor %}
+      <div class="small hp"><b>HP after the turn</b>
+        {% for m, v in nt.ours %}<div class="ev us"><span class="mon us">{{ m }}</span> {{ hpbar(v) }} {{ v }}%</div>{% endfor %}
+        {% for m, v in nt.theirs %}<div class="ev them"><span class="mon them">{{ m }}</span> {{ hpbar(v) }} {{ v }}%</div>{% endfor %}</div>
+    </div>
+  </div>
+</div>
+{% endfor %}
+</div>
+{% if N.result %}<div class="card"><h2>{{ N.result }} won</h2></div>{% endif %}
+{% else %}
+<p class="small muted">An earlier analysis, without the game's narration - run it again for the turn-by-turn view.</p>
+<div id="turns">
+{% for turn, entries in r.turns|groupby('turn') %}
+  <div class="turn">
+    <div class="num">T{{ turn }}</div>
+    <div class="sidecards">
+    {% for t in entries %}
+      <div class="sidecard {{ t.side }}">
+        <header><span>{{ players.get(t.side, t.side) }}</span><span class="small muted">model's view: {{ t.win|pct }}</span></header>
+        {% for s in t.slots if s %}
+        <div class="slot{% if s.tier == 'agrees' %} agree{% endif %}">
+          <div class="who">{{ s.mon }}</div>
+          <div class="played">played <b>{{ s.played or '(not shown in the log)' }}</b>
+            {% if s.tier %}<span class="chip {{ s.tier|tier_class }}" title="the model gave it {{ s.played_p|prob }} (its #{{ s.played_rank }} choice)">{{ s.tier }} · {{ s.played_p|prob }}</span>{% endif %}</div>
+          {% for label, p in s.top %}
+          <div class="opt"><div class="bar{% if loop.index == s.played_rank %} sun{% endif %}"><i style="width: {{ (p * 100)|round(1) }}%"></i><span>{{ label }}</span></div><span class="small">{{ p|prob }}</span></div>
+          {% endfor %}
+        </div>
+        {% endfor %}
+      </div>
+    {% endfor %}
+    </div>
+  </div>
+{% endfor %}
+</div>
+
+{% endif %}

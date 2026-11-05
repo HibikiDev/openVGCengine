@@ -1,0 +1,262 @@
+{
+	"format": "gen6vgc2014",
+	"seed": "gen5,40531,56331,53865,9753",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "chandelure",
+			"item": "gardevoirite",
+			"ability": "swarm",
+			"moves": [
+				"thunderpunch",
+				"growl",
+				"calmmind",
+				"octazooka"
+			],
+			"nature": "bashful",
+			"evs": {
+				"hp": 124,
+				"atk": 168,
+				"def": 216,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 14
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "sandile",
+			"item": "armorfossil",
+			"ability": "arenatrap",
+			"moves": [
+				"grassyterrain",
+				"inferno",
+				"rollingkick",
+				"woodhammer"
+			],
+			"nature": "serious",
+			"evs": {
+				"hp": 16,
+				"atk": 160,
+				"def": 188,
+				"spa": 144,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 17,
+				"def": 10,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "dunsparce",
+			"item": "occaberry",
+			"ability": "flowergift",
+			"moves": [
+				"curse",
+				"rockwrecker",
+				"lusterpurge",
+				"reflecttype"
+			],
+			"nature": "hardy",
+			"evs": {
+				"hp": 232,
+				"atk": 76,
+				"def": 184,
+				"spa": 16,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 19,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "lopunny",
+			"item": "berryjuice",
+			"ability": "innerfocus",
+			"moves": [
+				"lovelykiss",
+				"volttackle",
+				"glaciate",
+				"pursuit"
+			],
+			"nature": "impish",
+			"evs": {
+				"hp": 212,
+				"atk": 176,
+				"def": 44,
+				"spa": 76,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "deerling",
+			"item": "razorfang",
+			"ability": "sheerforce",
+			"moves": [
+				"boneclub",
+				"magnetbomb",
+				"mistyterrain",
+				"falseswipe"
+			],
+			"nature": "careful",
+			"evs": {
+				"hp": 60,
+				"atk": 248,
+				"def": 192,
+				"spa": 8,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 7,
+				"spa": 31,
+				"spd": 28,
+				"spe": 13
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "cherrim",
+			"item": "gardevoirite",
+			"ability": "furcoat",
+			"moves": [
+				"mist",
+				"spite",
+				"extremespeed",
+				"spitup"
+			],
+			"nature": "sassy",
+			"evs": {
+				"hp": 164,
+				"atk": 120,
+				"def": 224,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 7,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "audino",
+			"item": "lansatberry",
+			"ability": "limber",
+			"moves": [
+				"surf",
+				"waterpulse",
+				"darkvoid",
+				"wish"
+			],
+			"nature": "hardy",
+			"evs": {
+				"hp": 88,
+				"atk": 68,
+				"def": 116,
+				"spa": 36,
+				"spd": 88,
+				"spe": 112
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 13,
+				"spa": 11,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "sentret",
+			"item": "stoneplate",
+			"ability": "aftermath",
+			"moves": [
+				"highjumpkick",
+				"echoedvoice",
+				"gust",
+				"psybeam"
+			],
+			"nature": "lax",
+			"evs": {
+				"hp": 68,
+				"atk": 32,
+				"def": 252,
+				"spa": 156,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 2,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 3, move 3 1",
+			"p2": "move 1 1, move 1"
+		}
+	]
+}

@@ -1,0 +1,318 @@
+{
+	"format": "gen9vgc2024regg",
+	"seed": "gen5,44931,15576,54824,32597",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "zacian",
+			"item": "ejectpack",
+			"ability": "slowstart",
+			"moves": [
+				"icywind",
+				"dragondance",
+				"drainingkiss",
+				"boltstrike"
+			],
+			"nature": "hasty",
+			"evs": {
+				"hp": 100,
+				"atk": 212,
+				"def": 112,
+				"spa": 84,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 25,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N",
+			"teraType": "Psychic"
+		},
+		{
+			"name": "Mon1",
+			"species": "snom",
+			"item": "ejectpack",
+			"ability": "moxie",
+			"moves": [
+				"alluringvoice",
+				"megahorn",
+				"triplearrows",
+				"burningbulwark"
+			],
+			"nature": "modest",
+			"evs": {
+				"hp": 80,
+				"atk": 152,
+				"def": 8,
+				"spa": 36,
+				"spd": 92,
+				"spe": 140
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 24
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Dragon"
+		},
+		{
+			"name": "Mon2",
+			"species": "cryogonal",
+			"item": "ejectpack",
+			"ability": "analytic",
+			"moves": [
+				"psychicterrain",
+				"thunderpunch",
+				"iciclecrash",
+				"snarl"
+			],
+			"nature": "careful",
+			"evs": {
+				"hp": 72,
+				"atk": 76,
+				"def": 12,
+				"spa": 172,
+				"spd": 96,
+				"spe": 80
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 18,
+				"def": 31,
+				"spa": 31,
+				"spd": 25,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N",
+			"teraType": "Dark"
+		},
+		{
+			"name": "Mon3",
+			"species": "toucannon",
+			"item": "ejectpack",
+			"ability": "slushrush",
+			"moves": [
+				"slam",
+				"screech",
+				"fakeout",
+				"terrainpulse"
+			],
+			"nature": "gentle",
+			"evs": {
+				"hp": 60,
+				"atk": 20,
+				"def": 240,
+				"spa": 188,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 26,
+				"atk": 12,
+				"def": 31,
+				"spa": 27,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Stellar"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "persian",
+			"item": "assaultvest",
+			"ability": "waterabsorb",
+			"moves": [
+				"peck",
+				"snarl",
+				"roost",
+				"sandtomb"
+			],
+			"nature": "bashful",
+			"evs": {
+				"hp": 88,
+				"atk": 188,
+				"def": 32,
+				"spa": 196,
+				"spd": 4,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 22,
+				"def": 1,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Poison"
+		},
+		{
+			"name": "Mon1",
+			"species": "inkay",
+			"item": "mindplate",
+			"ability": "corrosion",
+			"moves": [
+				"screech",
+				"guardswap",
+				"stoneedge",
+				"counter"
+			],
+			"nature": "hardy",
+			"evs": {
+				"hp": 220,
+				"atk": 28,
+				"def": 216,
+				"spa": 44,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 13,
+				"atk": 31,
+				"def": 31,
+				"spa": 22,
+				"spd": 31,
+				"spe": 25
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Flying"
+		},
+		{
+			"name": "Mon2",
+			"species": "tornadustherian",
+			"item": "ejectpack",
+			"ability": "klutz",
+			"moves": [
+				"wildcharge",
+				"icefang",
+				"auroraveil",
+				"partingshot"
+			],
+			"nature": "lonely",
+			"evs": {
+				"hp": 232,
+				"atk": 180,
+				"def": 84,
+				"spa": 12,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 9,
+				"spd": 28,
+				"spe": 3
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Fighting"
+		},
+		{
+			"name": "Mon3",
+			"species": "swadloon",
+			"item": "ejectpack",
+			"ability": "intimidate",
+			"moves": [
+				"dracometeor",
+				"aquatail",
+				"acidarmor",
+				"solarbeam"
+			],
+			"nature": "adamant",
+			"evs": {
+				"hp": 20,
+				"atk": 28,
+				"def": 232,
+				"spa": 168,
+				"spd": 60,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 15,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Dragon"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 3 2, move 1 1",
+			"p2": "move 4 1 terastallize, switch 3"
+		},
+		{
+			"p1": "move 4 2, move 3 1 terastallize",
+			"p2": "switch 4, switch 3"
+		},
+		{
+			"p1": "switch 4, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 4, pass"
+		},
+		{
+			"p1": "move 2 2, move 1 -1",
+			"p2": "move 2, move 2 2"
+		},
+		{
+			"p1": "switch 4, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 4 1, move 4",
+			"p2": "move 1 -2, move 3 1"
+		},
+		{
+			"p1": "move 4 1, move 2 2",
+			"p2": "move 1 1, move 3 2"
+		},
+		{
+			"p1": "pass, switch 3",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "switch 4, move 1",
+			"p2": "switch 4, move 3 2"
+		},
+		{
+			"p1": "pass, switch 4",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 4 1, move 2 2",
+			"p2": "move 4 -2, move 1 2"
+		}
+	],
+	"teams": [
+		"scenario-133b",
+		"scenario-14b"
+	]
+}

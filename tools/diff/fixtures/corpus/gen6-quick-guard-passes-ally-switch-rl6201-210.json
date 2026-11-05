@@ -1,0 +1,262 @@
+{
+	"format": "gen6vgc2016",
+	"seed": "gen5,46280,26648,45757,26923",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "cranidos",
+			"item": "meadowplate",
+			"ability": "imposter",
+			"moves": [
+				"grudge",
+				"inferno",
+				"revenge",
+				"withdraw"
+			],
+			"nature": "sassy",
+			"evs": {
+				"hp": 40,
+				"atk": 248,
+				"def": 220,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 10,
+				"spd": 31,
+				"spe": 23
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "ekans",
+			"item": "colburberry",
+			"ability": "quickfeet",
+			"moves": [
+				"magicroom",
+				"whirlpool",
+				"leechseed",
+				"drillrun"
+			],
+			"nature": "lonely",
+			"evs": {
+				"hp": 124,
+				"atk": 212,
+				"def": 104,
+				"spa": 68,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 27,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 10,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "munchlax",
+			"item": "figyberry",
+			"ability": "immunity",
+			"moves": [
+				"tickle",
+				"razorleaf",
+				"aquaring",
+				"cottonspore"
+			],
+			"nature": "impish",
+			"evs": {
+				"hp": 104,
+				"atk": 88,
+				"def": 12,
+				"spa": 164,
+				"spd": 20,
+				"spe": 28
+			},
+			"ivs": {
+				"hp": 23,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "lairon",
+			"item": "sharpbeak",
+			"ability": "pixilate",
+			"moves": [
+				"shockwave",
+				"rototiller",
+				"mist",
+				"roaroftime"
+			],
+			"nature": "serious",
+			"evs": {
+				"hp": 232,
+				"atk": 104,
+				"def": 24,
+				"spa": 148,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 23,
+				"def": 31,
+				"spa": 21,
+				"spd": 24,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "kyuremblack",
+			"item": "petayaberry",
+			"ability": "magicbounce",
+			"moves": [
+				"fissure",
+				"iciclespear",
+				"allyswitch",
+				"machpunch"
+			],
+			"nature": "rash",
+			"evs": {
+				"hp": 60,
+				"atk": 132,
+				"def": 160,
+				"spa": 48,
+				"spd": 108,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 12,
+				"def": 31,
+				"spa": 31,
+				"spd": 21,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "quilladin",
+			"item": "rabutaberry",
+			"ability": "shellarmor",
+			"moves": [
+				"powder",
+				"quickguard",
+				"waterpledge",
+				"refresh"
+			],
+			"nature": "mild",
+			"evs": {
+				"hp": 80,
+				"atk": 28,
+				"def": 64,
+				"spa": 56,
+				"spd": 116,
+				"spe": 164
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "wurmple",
+			"item": "shinystone",
+			"ability": "tangledfeet",
+			"moves": [
+				"reflecttype",
+				"echoedvoice",
+				"crunch",
+				"suckerpunch"
+			],
+			"nature": "modest",
+			"evs": {
+				"hp": 100,
+				"atk": 108,
+				"def": 108,
+				"spa": 32,
+				"spd": 160,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 6,
+				"atk": 13,
+				"def": 31,
+				"spa": 31,
+				"spd": 27,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "kricketune",
+			"item": "aguavberry",
+			"ability": "liquidooze",
+			"moves": [
+				"substitute",
+				"entrainment",
+				"forcepalm",
+				"dive"
+			],
+			"nature": "naughty",
+			"evs": {
+				"hp": 120,
+				"atk": 148,
+				"def": 156,
+				"spa": 48,
+				"spd": 36,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 3,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 4, move 4 2",
+			"p2": "move 3, move 2"
+		}
+	]
+}

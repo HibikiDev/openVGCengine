@@ -1,0 +1,322 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,59621,16588,61777,59509",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Incineroar",
+			"item": "redcard",
+			"ability": "Intimidate",
+			"moves": [
+				"Fake Out",
+				"Flare Blitz",
+				"Throat Chop",
+				"Parting Shot"
+			],
+			"nature": "Careful",
+			"evs": {
+				"hp": 18,
+				"atk": 22,
+				"def": 11,
+				"spa": 0,
+				"spd": 12,
+				"spe": 3
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "Pelipper",
+			"item": "Sitrus Berry",
+			"ability": "pickpocket",
+			"moves": [
+				"Wide Guard",
+				"Tailwind",
+				"Hurricane",
+				"Weather Ball"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 31,
+				"atk": 0,
+				"def": 2,
+				"spa": 5,
+				"spd": 16,
+				"spe": 12
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "Farigiraf",
+			"item": "Colbur Berry",
+			"ability": "Armor Tail",
+			"moves": [
+				"Twin Beam",
+				"Thunderbolt",
+				"Trick Room",
+				"Protect"
+			],
+			"nature": "Bold",
+			"evs": {
+				"hp": 30,
+				"atk": 0,
+				"def": 26,
+				"spa": 0,
+				"spd": 10,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "Sneasler",
+			"item": "White Herb",
+			"ability": "pickpocket",
+			"moves": [
+				"Close Combat",
+				"Dire Claw",
+				"Fake Out",
+				"Protect"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 12,
+				"atk": 32,
+				"def": 0,
+				"spa": 0,
+				"spd": 4,
+				"spe": 18
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Mudsdale",
+			"item": "redcard",
+			"ability": "pickpocket",
+			"moves": [
+				"High Horsepower",
+				"Rock Slide",
+				"Heavy Slam",
+				"Protect"
+			],
+			"nature": "Brave",
+			"evs": {
+				"hp": 32,
+				"atk": 32,
+				"def": 0,
+				"spa": 0,
+				"spd": 2,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "Mimikyu",
+			"item": "Mental Herb",
+			"ability": "Disguise",
+			"moves": [
+				"Shadow Claw",
+				"Play Rough",
+				"Trick Room",
+				"Protect"
+			],
+			"nature": "Brave",
+			"evs": {
+				"hp": 32,
+				"atk": 32,
+				"def": 0,
+				"spa": 0,
+				"spd": 2,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "Incineroar",
+			"item": "Sitrus Berry",
+			"ability": "Intimidate",
+			"moves": [
+				"Flare Blitz",
+				"Throat Chop",
+				"Fake Out",
+				"Parting Shot"
+			],
+			"nature": "Impish",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 20,
+				"spa": 0,
+				"spd": 14,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "Abomasnow",
+			"item": "Abomasite",
+			"ability": "Snow Warning",
+			"moves": [
+				"Blizzard",
+				"Energy Ball",
+				"Earth Power",
+				"Ice Shard"
+			],
+			"nature": "Quiet",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 1,
+				"spa": 32,
+				"spd": 1,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"turns": [
+		{
+			"p1": "switch 4, move 4 1",
+			"p2": "move 3 2, move 2 2"
+		},
+		{
+			"p1": "move 1 -2, move 1 -1",
+			"p2": "move 3 -2, move 2 1"
+		},
+		{
+			"p1": "move 1 2, move 3 1",
+			"p2": "move 1 -2, move 2 -1"
+		},
+		{
+			"p1": "move 1 -2, switch 4",
+			"p2": "move 1 -2, move 2 1"
+		},
+		{
+			"p1": "move 4, switch 4",
+			"p2": "move 4 2, move 4"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 3, pass"
+		},
+		{
+			"p1": "switch 3, move 1 1",
+			"p2": "move 1 -2, switch 3"
+		},
+		{
+			"p1": "move 4, move 4 1",
+			"p2": "move 1 1, move 2 -1"
+		},
+		{
+			"p1": "pass, switch 4",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "switch 3, switch 4",
+			"p2": "move 3 1, move 4 2"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "pass, switch 3"
+		},
+		{
+			"p1": "switch 4, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 4 1, move 4 1",
+			"p2": "switch 3, move 2 1"
+		},
+		{
+			"p1": "pass, switch 3",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 4 1, move 1 -1",
+			"p2": "move 3 2, move 3"
+		}
+	],
+	"teams": [
+		"MC45",
+		"MC126"
+	]
+}

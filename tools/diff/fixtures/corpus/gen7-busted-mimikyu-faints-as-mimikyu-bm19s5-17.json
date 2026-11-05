@@ -1,0 +1,322 @@
+{
+	"format": "gen7vgc2019",
+	"seed": "gen5,28516,39203,20860,25252",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Mimikyu",
+			"item": "Mimikium Z",
+			"ability": "Disguise",
+			"moves": [
+				"Protect",
+				"gearup",
+				"Taunt",
+				"laserfocus"
+			],
+			"nature": "Sassy",
+			"evs": {
+				"hp": 252,
+				"atk": 4,
+				"def": 0,
+				"spa": 0,
+				"spd": 252,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "Groudon",
+			"item": "Sitrus Berry",
+			"ability": "Drought",
+			"moves": [
+				"revelationdance",
+				"Precipice Blades",
+				"Protect",
+				"laserfocus"
+			],
+			"nature": "Brave",
+			"evs": {
+				"hp": 252,
+				"atk": 252,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "Salamence",
+			"item": "Salamencite",
+			"ability": "Intimidate",
+			"moves": [
+				"Roar",
+				"Protect",
+				"purify",
+				"revelationdance"
+			],
+			"nature": "Naive",
+			"evs": {
+				"hp": 0,
+				"atk": 156,
+				"def": 0,
+				"spa": 100,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "Tapu Fini",
+			"item": "Wiki Berry",
+			"ability": "Misty Surge",
+			"moves": [
+				"multiattack",
+				"Heal Pulse",
+				"Haze",
+				"revelationdance"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 244,
+				"atk": 0,
+				"def": 4,
+				"spa": 116,
+				"spd": 4,
+				"spe": 140
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Incineroar",
+			"item": "Assault Vest",
+			"ability": "Intimidate",
+			"moves": [
+				"multiattack",
+				"Fake Out",
+				"gearup",
+				"Flare Blitz"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 244,
+				"atk": 40,
+				"def": 156,
+				"spa": 0,
+				"spd": 0,
+				"spe": 68
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "Tapu Lele",
+			"item": "Psychic Seed",
+			"ability": "Psychic Surge",
+			"moves": [
+				"laserfocus",
+				"Moonblast",
+				"gearup",
+				"Magic Room"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 252,
+				"atk": 0,
+				"def": 116,
+				"spa": 100,
+				"spd": 36,
+				"spe": 4
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "Necrozma-Dusk-Mane",
+			"item": "Ultranecrozium Z",
+			"ability": "Prism Armor",
+			"moves": [
+				"gearup",
+				"Rock Slide",
+				"purify",
+				"Protect"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 132,
+				"atk": 108,
+				"def": 4,
+				"spa": 0,
+				"spd": 76,
+				"spe": 188
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "Tapu Fini",
+			"item": "Waterium Z",
+			"ability": "Misty Surge",
+			"moves": [
+				"laserfocus",
+				"Haze",
+				"gearup",
+				"Light Screen"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 204,
+				"atk": 0,
+				"def": 44,
+				"spa": 244,
+				"spd": 12,
+				"spe": 4
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 4, move 1 1",
+			"p2": "move 2 2, move 3"
+		},
+		{
+			"p1": "move 3 1, move 1 -1",
+			"p2": "move 1 2, move 3"
+		},
+		{
+			"p1": "move 3 2, move 3",
+			"p2": "switch 3, move 2 1"
+		},
+		{
+			"p1": "move 1, switch 3",
+			"p2": "move 1, switch 3"
+		},
+		{
+			"p1": "move 2, move 3 1",
+			"p2": "switch 4, switch 3"
+		},
+		{
+			"p1": "move 4, move 3 1 mega",
+			"p2": "switch 4, move 3"
+		},
+		{
+			"p1": "move 2, move 4 1",
+			"p2": "move 3 -2, move 2 2"
+		},
+		{
+			"p1": "pass, switch 4",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 1, move 4 2",
+			"p2": "move 2 ultra, move 2 1"
+		},
+		{
+			"p1": "move 2, move 4 2",
+			"p2": "move 3 -2, move 1"
+		},
+		{
+			"p1": "move 4, move 2 2",
+			"p2": "move 2, switch 4"
+		},
+		{
+			"p1": "move 2, move 2 2",
+			"p2": "move 2, move 4"
+		},
+		{
+			"p1": "switch 3, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 1 2, move 4 2",
+			"p2": "move 1, move 2"
+		},
+		{
+			"p1": "move 2, move 2 1",
+			"p2": "switch 4, switch 3"
+		}
+	],
+	"teams": [
+		"U19-118",
+		"U19-122"
+	]
+}

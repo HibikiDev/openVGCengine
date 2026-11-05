@@ -1,0 +1,27 @@
+{
+	"format": "gen6vgc2015",
+	"formatName": "[Gen 6] VGC 2015",
+	"mod": "gen6",
+	"gameType": "doubles",
+	"minSourceGen": 6,
+	"ruleset": [
+		"Flat Rules",
+		"Min Source Gen = 6"
+	],
+	"banlist": [
+		"Soul Dew",
+		"Articuno + Snow Cloak",
+		"Zapdos + Static",
+		"Moltres + Flame Body",
+		"Dragonite + Barrier"
+	],
+	"counts": {
+		"species": 790,
+		"megaForms": 44,
+		"moves": 617,
+		"abilities": 179,
+		"items": 283,
+		"types": 19
+	},
+	"generatedAt": "2026-10-24T13:41:12.770Z"
+}

@@ -1,0 +1,262 @@
+{
+	"format": "gen6vgc2016",
+	"seed": "gen5,55088,7291,21645,27438",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "aerodactyl",
+			"item": "duskstone",
+			"ability": "sandveil",
+			"moves": [
+				"precipiceblades",
+				"dragonascent",
+				"blueflare",
+				"spacialrend"
+			],
+			"nature": "gentle",
+			"evs": {
+				"hp": 32,
+				"atk": 220,
+				"def": 20,
+				"spa": 236,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 11,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 24,
+				"spe": 19
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "slowpoke",
+			"item": "silverpowder",
+			"ability": "flamebody",
+			"moves": [
+				"roaroftime",
+				"originpulse",
+				"oblivionwing",
+				"spacialrend"
+			],
+			"nature": "quiet",
+			"evs": {
+				"hp": 16,
+				"atk": 152,
+				"def": 0,
+				"spa": 60,
+				"spd": 60,
+				"spe": 136
+			},
+			"ivs": {
+				"hp": 24,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 19
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "ninetales",
+			"item": "leftovers",
+			"ability": "whitesmoke",
+			"moves": [
+				"spacialrend",
+				"blueflare",
+				"psystrike",
+				"landswrath"
+			],
+			"nature": "docile",
+			"evs": {
+				"hp": 112,
+				"atk": 44,
+				"def": 36,
+				"spa": 72,
+				"spd": 144,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 3,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "patrat",
+			"item": "lansatberry",
+			"ability": "moody",
+			"moves": [
+				"landswrath",
+				"originpulse",
+				"aeroblast",
+				"boltstrike"
+			],
+			"nature": "bold",
+			"evs": {
+				"hp": 12,
+				"atk": 80,
+				"def": 108,
+				"spa": 132,
+				"spd": 148,
+				"spe": 28
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 18
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "magmortar",
+			"item": "cheriberry",
+			"ability": "synchronize",
+			"moves": [
+				"boltstrike",
+				"aeroblast",
+				"dragonascent",
+				"oblivionwing"
+			],
+			"nature": "lonely",
+			"evs": {
+				"hp": 96,
+				"atk": 176,
+				"def": 216,
+				"spa": 4,
+				"spd": 16,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 20,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "pikachulibre",
+			"item": "lightball",
+			"ability": "blaze",
+			"moves": [
+				"blueflare",
+				"glaciate",
+				"aeroblast",
+				"spacialrend"
+			],
+			"nature": "relaxed",
+			"evs": {
+				"hp": 64,
+				"atk": 88,
+				"def": 20,
+				"spa": 52,
+				"spd": 216,
+				"spe": 40
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 18,
+				"def": 31,
+				"spa": 23,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "lickilicky",
+			"item": "leafstone",
+			"ability": "purepower",
+			"moves": [
+				"blueflare",
+				"roaroftime",
+				"oblivionwing",
+				"dragonascent"
+			],
+			"nature": "naughty",
+			"evs": {
+				"hp": 40,
+				"atk": 208,
+				"def": 32,
+				"spa": 36,
+				"spd": 132,
+				"spe": 60
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "combee",
+			"item": "apicotberry",
+			"ability": "rattled",
+			"moves": [
+				"dragonascent",
+				"glaciate",
+				"psystrike",
+				"originpulse"
+			],
+			"nature": "gentle",
+			"evs": {
+				"hp": 156,
+				"atk": 120,
+				"def": 148,
+				"spa": 84,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 7,
+				"def": 27,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 4 1, move 1 2",
+			"p2": "move 4 1, move 3 1"
+		}
+	]
+}

@@ -1,0 +1,262 @@
+{
+	"format": "gen5vgc2013",
+	"seed": "gen5,22540,4437,14038,31687",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "mamoswine",
+			"item": "softsand",
+			"ability": "rivalry",
+			"moves": [
+				"powertrick",
+				"surf",
+				"hydropump",
+				"acidarmor"
+			],
+			"nature": "docile",
+			"evs": {
+				"hp": 212,
+				"atk": 184,
+				"def": 112,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 5,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "haunter",
+			"item": "flameplate",
+			"ability": "harvest",
+			"moves": [
+				"stringshot",
+				"foresight",
+				"toxic",
+				"disable"
+			],
+			"nature": "gentle",
+			"evs": {
+				"hp": 252,
+				"atk": 208,
+				"def": 48,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "braviary",
+			"item": "lustrousorb",
+			"ability": "wonderskin",
+			"moves": [
+				"skillswap",
+				"shadowsneak",
+				"cometpunch",
+				"swordsdance"
+			],
+			"nature": "quiet",
+			"evs": {
+				"hp": 48,
+				"atk": 180,
+				"def": 188,
+				"spa": 92,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 12,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "ferrothorn",
+			"item": "quickball",
+			"ability": "frisk",
+			"moves": [
+				"megapunch",
+				"icebeam",
+				"blazekick",
+				"crushgrip"
+			],
+			"nature": "timid",
+			"evs": {
+				"hp": 104,
+				"atk": 80,
+				"def": 76,
+				"spa": 136,
+				"spd": 112,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 6,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "omastar",
+			"item": "rarebone",
+			"ability": "runaway",
+			"moves": [
+				"uproar",
+				"recycle",
+				"finalgambit",
+				"telekinesis"
+			],
+			"nature": "lax",
+			"evs": {
+				"hp": 160,
+				"atk": 168,
+				"def": 28,
+				"spa": 152,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 22,
+				"spe": 9
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "flygon",
+			"item": "pechaberry",
+			"ability": "rattled",
+			"moves": [
+				"shockwave",
+				"minimize",
+				"shadowsneak",
+				"thunderbolt"
+			],
+			"nature": "bashful",
+			"evs": {
+				"hp": 40,
+				"atk": 124,
+				"def": 100,
+				"spa": 244,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 15,
+				"def": 31,
+				"spa": 2,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "armaldo",
+			"item": "leftovers",
+			"ability": "regenerator",
+			"moves": [
+				"amnesia",
+				"psychup",
+				"hurricane",
+				"electroball"
+			],
+			"nature": "naughty",
+			"evs": {
+				"hp": 0,
+				"atk": 12,
+				"def": 192,
+				"spa": 88,
+				"spd": 168,
+				"spe": 48
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 7,
+				"def": 31,
+				"spa": 5,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "donphan",
+			"item": "zoomlens",
+			"ability": "rattled",
+			"moves": [
+				"horndrill",
+				"destinybond",
+				"foresight",
+				"hypnosis"
+			],
+			"nature": "relaxed",
+			"evs": {
+				"hp": 128,
+				"atk": 188,
+				"def": 52,
+				"spa": 64,
+				"spd": 44,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 9,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 2, move 3 1",
+			"p2": "move 2, move 4 1"
+		}
+	]
+}

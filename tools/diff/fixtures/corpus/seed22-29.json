@@ -1,0 +1,310 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,12273,37023,15997,36770",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Klefki",
+			"item": "Focus Sash",
+			"ability": "Prankster",
+			"moves": [
+				"Dazzling Gleam",
+				"Light Screen",
+				"Rain Dance",
+				"Trick Room"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 1,
+				"spa": 32,
+				"spd": 1,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "Gholdengo",
+			"item": "Choice Scarf",
+			"ability": "Good as Gold",
+			"moves": [
+				"Make It Rain",
+				"Psychic",
+				"Shadow Ball",
+				"Power Gem"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 2,
+				"atk": 0,
+				"def": 0,
+				"spa": 32,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "Golisopod",
+			"item": "Golisopite",
+			"ability": "Emergency Exit",
+			"moves": [
+				"Protect",
+				"Leech Life",
+				"Swords Dance",
+				"Close Combat"
+			],
+			"nature": "Brave",
+			"evs": {
+				"hp": 32,
+				"atk": 32,
+				"def": 2,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "Chimecho",
+			"item": "Chimechite",
+			"ability": "Levitate",
+			"moves": [
+				"Psychic",
+				"Trick Room",
+				"Gravity",
+				"Energy Ball"
+			],
+			"nature": "Quiet",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 2,
+				"spa": 32,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Sneasler",
+			"item": "Grassy Seed",
+			"ability": "Unburden",
+			"moves": [
+				"Dire Claw",
+				"Close Combat",
+				"Swords Dance",
+				"Protect"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 22,
+				"atk": 10,
+				"def": 16,
+				"spa": 0,
+				"spd": 1,
+				"spe": 17
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "Absol-Mega-Z",
+			"item": "Absolite Z",
+			"ability": "Sharpness",
+			"moves": [
+				"Shadow Claw",
+				"Close Combat",
+				"Will-O-Wisp",
+				"Detect"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 25,
+				"atk": 1,
+				"def": 13,
+				"spa": 0,
+				"spd": 1,
+				"spe": 26
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "Arcanine-Hisui",
+			"item": "Focus Sash",
+			"ability": "Rock Head",
+			"moves": [
+				"Flare Blitz",
+				"Head Smash",
+				"Extreme Speed",
+				"Protect"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 1,
+				"atk": 32,
+				"def": 0,
+				"spa": 0,
+				"spd": 1,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "Milotic",
+			"item": "Leftovers",
+			"ability": "Competitive",
+			"moves": [
+				"Scald",
+				"Ice Beam",
+				"Life Dew",
+				"Protect"
+			],
+			"nature": "Bold",
+			"evs": {
+				"hp": 29,
+				"atk": 0,
+				"def": 32,
+				"spa": 5,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 2, move 1",
+			"p2": "move 3, move 2 2"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "pass, switch 4"
+		},
+		{
+			"p1": "move 1, move 1",
+			"p2": "move 3, move 3"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 3, pass"
+		},
+		{
+			"p1": "move 3, move 1",
+			"p2": "move 3 1, move 2 2"
+		},
+		{
+			"p1": "move 1, move 1",
+			"p2": "move 3 1, move 2 2"
+		},
+		{
+			"p1": "move 1, move 1",
+			"p2": "move 2 2, move 2 2"
+		},
+		{
+			"p1": "move 4, move 1",
+			"p2": "move 4, move 2 1"
+		},
+		{
+			"p1": "move 3, move 1",
+			"p2": "move 2 1, move 1 1"
+		},
+		{
+			"p1": "switch 3, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 1, move 1",
+			"p2": "move 3 2, move 4"
+		},
+		{
+			"p1": "move 4 2 mega, move 1",
+			"p2": "move 4, move 4"
+		}
+	],
+	"teams": [
+		"MC123",
+		"MC240"
+	]
+}

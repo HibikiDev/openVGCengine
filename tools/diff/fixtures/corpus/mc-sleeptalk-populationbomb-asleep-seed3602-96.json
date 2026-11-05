@@ -1,0 +1,262 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,46064,26566,8199,1061",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "floetteeternal",
+			"item": "leftovers",
+			"ability": "hungerswitch",
+			"moves": [
+				"sleeptalk",
+				"rest",
+				"spore",
+				"steelbeam"
+			],
+			"nature": "adamant",
+			"evs": {
+				"hp": 32,
+				"atk": 25,
+				"def": 3,
+				"spa": 8,
+				"spd": 31,
+				"spe": 14
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "overqwil",
+			"item": "scopelens",
+			"ability": "grassysurge",
+			"moves": [
+				"sleeptalk",
+				"spore",
+				"rest",
+				"tackle"
+			],
+			"nature": "docile",
+			"evs": {
+				"hp": 32,
+				"atk": 21,
+				"def": 21,
+				"spa": 21,
+				"spd": 17,
+				"spe": 13
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "skeledirge",
+			"item": "widelens",
+			"ability": "illusion",
+			"moves": [
+				"spore",
+				"rest",
+				"sleeptalk",
+				"psychicfangs"
+			],
+			"nature": "timid",
+			"evs": {
+				"hp": 32,
+				"atk": 21,
+				"def": 8,
+				"spa": 21,
+				"spd": 13,
+				"spe": 22
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "garchomp",
+			"item": "lifeorb",
+			"ability": "electromorphosis",
+			"moves": [
+				"sleeptalk",
+				"spore",
+				"rest",
+				"bulletseed"
+			],
+			"nature": "lonely",
+			"evs": {
+				"hp": 32,
+				"atk": 32,
+				"def": 16,
+				"spa": 8,
+				"spd": 29,
+				"spe": 3
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "meowscarada",
+			"item": "occaberry",
+			"ability": "pixilate",
+			"moves": [
+				"sleeptalk",
+				"spore",
+				"rest",
+				"guillotine"
+			],
+			"nature": "hasty",
+			"evs": {
+				"hp": 32,
+				"atk": 26,
+				"def": 28,
+				"spa": 6,
+				"spd": 3,
+				"spe": 2
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "vivillon",
+			"item": "cobaberry",
+			"ability": "flowerveil",
+			"moves": [
+				"rest",
+				"sleeptalk",
+				"spore",
+				"populationbomb"
+			],
+			"nature": "docile",
+			"evs": {
+				"hp": 32,
+				"atk": 30,
+				"def": 12,
+				"spa": 9,
+				"spd": 8,
+				"spe": 15
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "floetteeternal",
+			"item": "blackbelt",
+			"ability": "flowerveil",
+			"moves": [
+				"rest",
+				"spore",
+				"sleeptalk",
+				"sheercold"
+			],
+			"nature": "impish",
+			"evs": {
+				"hp": 32,
+				"atk": 17,
+				"def": 13,
+				"spa": 7,
+				"spd": 13,
+				"spe": 17
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "raichu",
+			"item": "lifeorb",
+			"ability": "harvest",
+			"moves": [
+				"rest",
+				"sleeptalk",
+				"spore",
+				"pound"
+			],
+			"nature": "naughty",
+			"evs": {
+				"hp": 32,
+				"atk": 10,
+				"def": 16,
+				"spa": 7,
+				"spd": 11,
+				"spe": 30
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 3 2, move 4 2",
+			"p2": "move 2 2, move 2"
+		}
+	]
+}

@@ -1,0 +1,318 @@
+{
+	"format": "gen9vgc2024regg",
+	"seed": "gen5,48847,54628,54369,40141",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "seel",
+			"item": "rustedsword",
+			"ability": "unnerve",
+			"moves": [
+				"banefulbunker",
+				"ceaselessedge",
+				"swordsdance",
+				"peck"
+			],
+			"nature": "quiet",
+			"evs": {
+				"hp": 112,
+				"atk": 208,
+				"def": 44,
+				"spa": 56,
+				"spd": 88,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 9,
+				"def": 0,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Dark"
+		},
+		{
+			"name": "Mon1",
+			"species": "oricoriopompom",
+			"item": "sitrusberry",
+			"ability": "pressure",
+			"moves": [
+				"sweetkiss",
+				"powerswap",
+				"gastroacid",
+				"dragondance"
+			],
+			"nature": "bold",
+			"evs": {
+				"hp": 184,
+				"atk": 176,
+				"def": 28,
+				"spa": 120,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Poison"
+		},
+		{
+			"name": "Mon2",
+			"species": "piloswine",
+			"item": "rustedshield",
+			"ability": "unnerve",
+			"moves": [
+				"luminacrash",
+				"skillswap",
+				"infernalparade",
+				"happyhour"
+			],
+			"nature": "bashful",
+			"evs": {
+				"hp": 128,
+				"atk": 36,
+				"def": 76,
+				"spa": 76,
+				"spd": 68,
+				"spe": 64
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 6,
+				"spe": 1
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Dragon"
+		},
+		{
+			"name": "Mon3",
+			"species": "pikipek",
+			"item": "tartapple",
+			"ability": "synchronize",
+			"moves": [
+				"dig",
+				"furyattack",
+				"scaleshot",
+				"trick"
+			],
+			"nature": "quirky",
+			"evs": {
+				"hp": 160,
+				"atk": 144,
+				"def": 204,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 9,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Steel"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "slaking",
+			"item": "rustedshield",
+			"ability": "asoneglastrier",
+			"moves": [
+				"teeterdance",
+				"ironhead",
+				"glare",
+				"payday"
+			],
+			"nature": "calm",
+			"evs": {
+				"hp": 224,
+				"atk": 112,
+				"def": 160,
+				"spa": 12,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 0,
+				"spa": 31,
+				"spd": 21,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Stellar"
+		},
+		{
+			"name": "Mon1",
+			"species": "noivern",
+			"item": "whiteherb",
+			"ability": "clearbody",
+			"moves": [
+				"grassknot",
+				"grassyterrain",
+				"soak",
+				"closecombat"
+			],
+			"nature": "hasty",
+			"evs": {
+				"hp": 100,
+				"atk": 232,
+				"def": 116,
+				"spa": 60,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 21,
+				"atk": 20,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Stellar"
+		},
+		{
+			"name": "Mon2",
+			"species": "lunala",
+			"item": "prettyfeather",
+			"ability": "chillingneigh",
+			"moves": [
+				"swordsdance",
+				"lockon",
+				"scaleshot",
+				"healpulse"
+			],
+			"nature": "lonely",
+			"evs": {
+				"hp": 56,
+				"atk": 92,
+				"def": 0,
+				"spa": 152,
+				"spd": 68,
+				"spe": 112
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 30,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N",
+			"teraType": "Steel"
+		},
+		{
+			"name": "Mon3",
+			"species": "eternatus",
+			"item": "rustedsword",
+			"ability": "unnerve",
+			"moves": [
+				"suckerpunch",
+				"electroball",
+				"skillswap",
+				"phantomforce"
+			],
+			"nature": "careful",
+			"evs": {
+				"hp": 24,
+				"atk": 28,
+				"def": 128,
+				"spa": 76,
+				"spd": 208,
+				"spe": 44
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N",
+			"teraType": "Psychic"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 4 2, move 3 -1",
+			"p2": "move 3 2 terastallize, move 3 1"
+		},
+		{
+			"p1": "move 4 -2, move 1 2 terastallize",
+			"p2": "move 3 2, move 4 1"
+		},
+		{
+			"p1": "move 2 1, move 3 -1",
+			"p2": "move 4 2, move 1 2"
+		},
+		{
+			"p1": "move 2 -2, move 4",
+			"p2": "move 1, move 3 2"
+		},
+		{
+			"p1": "switch 4, move 2 -1",
+			"p2": "move 4 -2, move 4 2"
+		},
+		{
+			"p1": "move 1 2, move 1 -1",
+			"p2": "move 2 1, switch 3"
+		},
+		{
+			"p1": "move 2 1, switch 4",
+			"p2": "move 4 -2, move 2 2"
+		},
+		{
+			"p1": "move 2 1, move 2 1",
+			"p2": "move 3 1, move 1"
+		},
+		{
+			"p1": "switch 3, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 2 2, switch 4",
+			"p2": "move 2 -2, move 3 -1"
+		},
+		{
+			"p1": "move 3 1, switch 4",
+			"p2": "move 2 2, switch 4"
+		},
+		{
+			"p1": "move 3 -2, move 2 1",
+			"p2": "move 4 -2, move 3 2"
+		}
+	],
+	"teams": [
+		"scenario-141a",
+		"scenario-269a"
+	]
+}

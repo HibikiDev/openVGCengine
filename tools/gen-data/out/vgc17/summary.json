@@ -1,0 +1,32 @@
+{
+	"format": "gen7vgc2017",
+	"formatName": "[Gen 7] VGC 2017",
+	"mod": "gen7sm",
+	"gameType": "doubles",
+	"minSourceGen": 7,
+	"ruleset": [
+		"Flat Rules",
+		"Old Alola Pokedex",
+		"!! Adjust Level = 50",
+		"Min Source Gen = 7",
+		"VGC Timer",
+		"!! Timer Starting = 900"
+	],
+	"banlist": [
+		"Mega",
+		"Custap Berry",
+		"Enigma Berry",
+		"Jaboca Berry",
+		"Micle Berry",
+		"Rowap Berry"
+	],
+	"counts": {
+		"species": 878,
+		"megaForms": 0,
+		"moves": 670,
+		"abilities": 213,
+		"items": 328,
+		"types": 19
+	},
+	"generatedAt": "2026-10-24T20:13:50.662Z"
+}

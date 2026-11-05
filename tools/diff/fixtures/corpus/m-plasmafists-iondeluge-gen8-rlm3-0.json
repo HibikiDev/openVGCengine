@@ -1,0 +1,274 @@
+{
+	"format": "gen8vgc2022",
+	"seed": "gen5,28053,48266,56847,24177",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "rhyhorn",
+			"item": "qualotberry",
+			"ability": "voltabsorb",
+			"moves": [
+				"earthquake",
+				"hyperbeam",
+				"quickattack",
+				"plasmafists"
+			],
+			"nature": "hardy",
+			"evs": {
+				"hp": 152,
+				"atk": 92,
+				"def": 192,
+				"spa": 72,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 8,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "thwackey",
+			"item": "masterball",
+			"ability": "pixilate",
+			"moves": [
+				"plasmafists",
+				"thunderbolt",
+				"quickattack",
+				"fakeout"
+			],
+			"nature": "docile",
+			"evs": {
+				"hp": 156,
+				"atk": 100,
+				"def": 188,
+				"spa": 64,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 1,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "exeggcute",
+			"item": "brightpowder",
+			"ability": "voltabsorb",
+			"moves": [
+				"bodyslam",
+				"tackle",
+				"plasmafists",
+				"earthquake"
+			],
+			"nature": "quiet",
+			"evs": {
+				"hp": 208,
+				"atk": 8,
+				"def": 56,
+				"spa": 88,
+				"spd": 148,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 12,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 18
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "sceptile",
+			"item": "wacanberry",
+			"ability": "motordrive",
+			"moves": [
+				"extremespeed",
+				"thunderbolt",
+				"tackle",
+				"plasmafists"
+			],
+			"nature": "calm",
+			"evs": {
+				"hp": 244,
+				"atk": 196,
+				"def": 68,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 0,
+				"spd": 31,
+				"spe": 8
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "trevenant",
+			"item": "laggingtail",
+			"ability": "sheerforce",
+			"moves": [
+				"bodyslam",
+				"tackle",
+				"extremespeed",
+				"protect"
+			],
+			"nature": "hasty",
+			"evs": {
+				"hp": 156,
+				"atk": 192,
+				"def": 144,
+				"spa": 16,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 9,
+				"atk": 31,
+				"def": 31,
+				"spa": 11,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "mantine",
+			"item": "loveball",
+			"ability": "sheerforce",
+			"moves": [
+				"extremespeed",
+				"hyperbeam",
+				"fakeout",
+				"tackle"
+			],
+			"nature": "jolly",
+			"evs": {
+				"hp": 56,
+				"atk": 136,
+				"def": 184,
+				"spa": 32,
+				"spd": 16,
+				"spe": 8
+			},
+			"ivs": {
+				"hp": 27,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 14,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "meowsticf",
+			"item": "deepseatooth",
+			"ability": "voltabsorb",
+			"moves": [
+				"thunderbolt",
+				"extremespeed",
+				"quickattack",
+				"plasmafists"
+			],
+			"nature": "modest",
+			"evs": {
+				"hp": 236,
+				"atk": 236,
+				"def": 36,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 14,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "machoke",
+			"item": "kebiaberry",
+			"ability": "motordrive",
+			"moves": [
+				"thunderbolt",
+				"tackle",
+				"hyperbeam",
+				"plasmafists"
+			],
+			"nature": "hardy",
+			"evs": {
+				"hp": 156,
+				"atk": 204,
+				"def": 148,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 4 2, move 2 1",
+			"p2": "move 4, move 3 2"
+		},
+		{
+			"p1": "move 4 -2, move 3 -1",
+			"p2": "move 2 2, move 3 1 dynamax"
+		},
+		{
+			"p1": "move 4 -2, move 2 2 dynamax",
+			"p2": "move 1 1, move 2 2"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "pass, switch 4"
+		}
+	]
+}

@@ -1,0 +1,262 @@
+{
+	"format": "gen7vgc2017",
+	"seed": "gen5,8113,24423,3286,56985",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "hoothoot",
+			"item": "grassiumz",
+			"ability": "simple",
+			"moves": [
+				"skyattack",
+				"nobleroar",
+				"ingrain",
+				"wish"
+			],
+			"nature": "adamant",
+			"evs": {
+				"hp": 64,
+				"atk": 72,
+				"def": 108,
+				"spa": 192,
+				"spd": 72,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 6,
+				"atk": 18,
+				"def": 31,
+				"spa": 18,
+				"spd": 27,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "bouffalant",
+			"item": "toxicplate",
+			"ability": "stancechange",
+			"moves": [
+				"dragonrage",
+				"dragonhammer",
+				"throatchop",
+				"luckychant"
+			],
+			"nature": "quiet",
+			"evs": {
+				"hp": 76,
+				"atk": 248,
+				"def": 172,
+				"spa": 12,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 14,
+				"spa": 21,
+				"spd": 31,
+				"spe": 8
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "mightyena",
+			"item": "firiumz",
+			"ability": "reckless",
+			"moves": [
+				"wringout",
+				"eruption",
+				"confusion",
+				"naturalgift"
+			],
+			"nature": "quiet",
+			"evs": {
+				"hp": 188,
+				"atk": 252,
+				"def": 68,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 5,
+				"spa": 31,
+				"spd": 5,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "vanillite",
+			"item": "normaliumz",
+			"ability": "telepathy",
+			"moves": [
+				"solarblade",
+				"poisonpowder",
+				"healingwish",
+				"lockon"
+			],
+			"nature": "jolly",
+			"evs": {
+				"hp": 28,
+				"atk": 244,
+				"def": 128,
+				"spa": 108,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "gulpin",
+			"item": "darkiniumz",
+			"ability": "symbiosis",
+			"moves": [
+				"throatchop",
+				"magneticflux",
+				"thief",
+				"highjumpkick"
+			],
+			"nature": "mild",
+			"evs": {
+				"hp": 92,
+				"atk": 164,
+				"def": 16,
+				"spa": 100,
+				"spd": 136,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 14,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "swalot",
+			"item": "normaliumz",
+			"ability": "receiver",
+			"moves": [
+				"confuseray",
+				"machpunch",
+				"zenheadbutt",
+				"naturalgift"
+			],
+			"nature": "timid",
+			"evs": {
+				"hp": 160,
+				"atk": 248,
+				"def": 12,
+				"spa": 88,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 15,
+				"def": 21,
+				"spa": 24,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "lurantistotem",
+			"item": "diancite",
+			"ability": "emergencyexit",
+			"moves": [
+				"naturepower",
+				"magicalleaf",
+				"clamp",
+				"frenzyplant"
+			],
+			"nature": "relaxed",
+			"evs": {
+				"hp": 116,
+				"atk": 96,
+				"def": 132,
+				"spa": 140,
+				"spd": 24,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "dewott",
+			"item": "spookyplate",
+			"ability": "regenerator",
+			"moves": [
+				"steelwing",
+				"sludge",
+				"firefang",
+				"transform"
+			],
+			"nature": "lax",
+			"evs": {
+				"hp": 148,
+				"atk": 40,
+				"def": 104,
+				"spa": 48,
+				"spd": 136,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 21,
+				"spa": 25,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 3 zmove, move 1 2",
+			"p2": "move 4 1, move 4 2"
+		}
+	]
+}

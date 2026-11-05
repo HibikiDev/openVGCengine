@@ -1,0 +1,318 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,59352,55785,1901,58862",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Excadrill",
+			"item": "Focus Sash",
+			"ability": "Sand Rush",
+			"moves": [
+				"waterpledge",
+				"grasspledge",
+				"Rock Slide",
+				"Protect"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 0,
+				"atk": 32,
+				"def": 0,
+				"spa": 0,
+				"spd": 2,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "Milotic",
+			"item": "Leftovers",
+			"ability": "Competitive",
+			"moves": [
+				"grasspledge",
+				"Protect",
+				"Recover",
+				"firepledge"
+			],
+			"nature": "Calm",
+			"evs": {
+				"hp": 22,
+				"atk": 0,
+				"def": 28,
+				"spa": 0,
+				"spd": 15,
+				"spe": 1
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "Salamence",
+			"item": "Salamencite",
+			"ability": "Intimidate",
+			"moves": [
+				"firepledge",
+				"Tailwind",
+				"Protect",
+				"waterpledge"
+			],
+			"nature": "Naive",
+			"evs": {
+				"hp": 0,
+				"atk": 2,
+				"def": 0,
+				"spa": 32,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "Tyranitar",
+			"item": "Tyranitarite",
+			"ability": "Sand Stream",
+			"moves": [
+				"Rock Slide",
+				"Knock Off",
+				"grasspledge",
+				"firepledge"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 17,
+				"atk": 18,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 31
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Sylveon",
+			"item": "Fairy Feather",
+			"ability": "Pixilate",
+			"moves": [
+				"waterpledge",
+				"Hyper Voice",
+				"grasspledge",
+				"Quick Attack"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 9,
+				"atk": 0,
+				"def": 22,
+				"spa": 30,
+				"spd": 0,
+				"spe": 5
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "Rillaboom",
+			"item": "Grassy Seed",
+			"ability": "Grassy Surge",
+			"moves": [
+				"grasspledge",
+				"Grassy Glide",
+				"U-turn",
+				"firepledge"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 18,
+				"atk": 25,
+				"def": 5,
+				"spa": 0,
+				"spd": 10,
+				"spe": 8
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "Incineroar",
+			"item": "Sitrus Berry",
+			"ability": "Intimidate",
+			"moves": [
+				"firepledge",
+				"grasspledge",
+				"Throat Chop",
+				"Parting Shot"
+			],
+			"nature": "Impish",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 21,
+				"spa": 0,
+				"spd": 10,
+				"spe": 3
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "Salamence",
+			"item": "Salamencite",
+			"ability": "Intimidate",
+			"moves": [
+				"Hyper Voice",
+				"grasspledge",
+				"Tailwind",
+				"firepledge"
+			],
+			"nature": "Naive",
+			"evs": {
+				"hp": 1,
+				"atk": 21,
+				"def": 0,
+				"spa": 15,
+				"spd": 0,
+				"spe": 29
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 2 1, move 4 -1",
+			"p2": "move 2, move 4 2"
+		},
+		{
+			"p1": "switch 4, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 3 -2 mega, move 1 2",
+			"p2": "move 4 -2, move 4 -1"
+		},
+		{
+			"p1": "move 3 2, move 4 1",
+			"p2": "switch 3, move 4 1"
+		},
+		{
+			"p1": "move 2 2, move 4 1",
+			"p2": "move 2 1, move 3 -1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "pass, switch 4"
+		},
+		{
+			"p1": "move 4 -2, move 1 1",
+			"p2": "move 4 2, move 3"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 4, pass"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 4, pass"
+		},
+		{
+			"p1": "move 4 1, move 1 2",
+			"p2": "move 4 2, move 4 -1 mega"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 3, pass"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "pass, switch 3"
+		},
+		{
+			"p1": "move 3 1, move 1 1",
+			"p2": "move 3 1, move 4 2"
+		},
+		{
+			"p1": "move 3 2, move 4 2",
+			"p2": "move 4 -2, move 1 1"
+		}
+	],
+	"teams": [
+		"MC116",
+		"MC145"
+	]
+}

@@ -1,0 +1,262 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,34928,17024,53878,33534",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "rotomwash",
+			"item": "ringtarget",
+			"ability": "surgesurfer",
+			"moves": [
+				"focuspunch",
+				"hurricane",
+				"nobleroar",
+				"slam"
+			],
+			"nature": "modest",
+			"evs": {
+				"hp": 32,
+				"atk": 8,
+				"def": 29,
+				"spa": 28,
+				"spd": 6,
+				"spe": 14
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "typhlosion",
+			"item": "jabocaberry",
+			"ability": "ripen",
+			"moves": [
+				"rest",
+				"bugbite",
+				"snipeshot",
+				"bonerush"
+			],
+			"nature": "careful",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 18,
+				"spa": 27,
+				"spd": 27,
+				"spe": 12
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "sinistcha",
+			"item": "absorbbulb",
+			"ability": "quickdraw",
+			"moves": [
+				"beatup",
+				"megahorn",
+				"axekick",
+				"dynamicpunch"
+			],
+			"nature": "timid",
+			"evs": {
+				"hp": 32,
+				"atk": 2,
+				"def": 12,
+				"spa": 29,
+				"spd": 3,
+				"spe": 30
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "altaria",
+			"item": "lustrousorb",
+			"ability": "rattled",
+			"moves": [
+				"bulldoze",
+				"firefang",
+				"dragonpulse",
+				"faketears"
+			],
+			"nature": "gentle",
+			"evs": {
+				"hp": 32,
+				"atk": 32,
+				"def": 13,
+				"spa": 29,
+				"spd": 14,
+				"spe": 2
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "archaludon",
+			"item": "absorbbulb",
+			"ability": "sharpness",
+			"moves": [
+				"supercellslam",
+				"drillpeck",
+				"fissure",
+				"skillswap"
+			],
+			"nature": "adamant",
+			"evs": {
+				"hp": 32,
+				"atk": 30,
+				"def": 21,
+				"spa": 19,
+				"spd": 27,
+				"spe": 12
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "palkia",
+			"item": "cellbattery",
+			"ability": "frisk",
+			"moves": [
+				"superpower",
+				"pinmissile",
+				"tailslap",
+				"stunspore"
+			],
+			"nature": "impish",
+			"evs": {
+				"hp": 32,
+				"atk": 21,
+				"def": 27,
+				"spa": 0,
+				"spd": 16,
+				"spe": 9
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "klefki",
+			"item": "enigmaberry",
+			"ability": "levitate",
+			"moves": [
+				"ragingfury",
+				"shiftgear",
+				"bulldoze",
+				"protect"
+			],
+			"nature": "hardy",
+			"evs": {
+				"hp": 32,
+				"atk": 32,
+				"def": 12,
+				"spa": 29,
+				"spd": 31,
+				"spe": 30
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "gardevoir",
+			"item": "adamantorb",
+			"ability": "leafguard",
+			"moves": [
+				"leechseed",
+				"lightscreen",
+				"psyshock",
+				"aquastep"
+			],
+			"nature": "bold",
+			"evs": {
+				"hp": 32,
+				"atk": 19,
+				"def": 26,
+				"spa": 18,
+				"spd": 0,
+				"spe": 3
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 3 1, move 1",
+			"p2": "move 2 2, move 3 1"
+		}
+	]
+}

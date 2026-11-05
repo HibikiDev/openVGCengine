@@ -1,0 +1,262 @@
+{
+	"format": "gen7vgc2018",
+	"seed": "gen5,54536,58895,14980,10184",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "pelipper",
+			"item": "repeatball",
+			"ability": "moody",
+			"moves": [
+				"slash",
+				"confuseray",
+				"sheercold",
+				"venoshock"
+			],
+			"nature": "naughty",
+			"evs": {
+				"hp": 244,
+				"atk": 64,
+				"def": 104,
+				"spa": 96,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 18,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "zubat",
+			"item": "groundiumz",
+			"ability": "suctioncups",
+			"moves": [
+				"spotlight",
+				"slash",
+				"sandattack",
+				"lusterpurge"
+			],
+			"nature": "calm",
+			"evs": {
+				"hp": 192,
+				"atk": 88,
+				"def": 36,
+				"spa": 84,
+				"spd": 108,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 10,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "duosion",
+			"item": "softsand",
+			"ability": "hustle",
+			"moves": [
+				"highhorsepower",
+				"hornleech",
+				"reflecttype",
+				"sandstorm"
+			],
+			"nature": "adamant",
+			"evs": {
+				"hp": 32,
+				"atk": 112,
+				"def": 136,
+				"spa": 120,
+				"spd": 12,
+				"spe": 96
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "grubbin",
+			"item": "luminousmoss",
+			"ability": "filter",
+			"moves": [
+				"recycle",
+				"fierydance",
+				"safeguard",
+				"mirrorshot"
+			],
+			"nature": "lonely",
+			"evs": {
+				"hp": 248,
+				"atk": 36,
+				"def": 212,
+				"spa": 12,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 20,
+				"spe": 11
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "deino",
+			"item": "psychiumz",
+			"ability": "wonderskin",
+			"moves": [
+				"clamp",
+				"drillrun",
+				"highhorsepower",
+				"mistball"
+			],
+			"nature": "gentle",
+			"evs": {
+				"hp": 232,
+				"atk": 4,
+				"def": 88,
+				"spa": 184,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 30,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "whismur",
+			"item": "flyiniumz",
+			"ability": "imposter",
+			"moves": [
+				"grasswhistle",
+				"armthrust",
+				"pluck",
+				"pound"
+			],
+			"nature": "calm",
+			"evs": {
+				"hp": 16,
+				"atk": 248,
+				"def": 16,
+				"spa": 88,
+				"spd": 140,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 10,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "mantine",
+			"item": "ringtarget",
+			"ability": "anticipation",
+			"moves": [
+				"copycat",
+				"ironhead",
+				"assurance",
+				"naturalgift"
+			],
+			"nature": "naughty",
+			"evs": {
+				"hp": 180,
+				"atk": 224,
+				"def": 68,
+				"spa": 36,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 15,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "quilladin",
+			"item": "normaliumz",
+			"ability": "speedboost",
+			"moves": [
+				"relicsong",
+				"supersonic",
+				"charm",
+				"flatter"
+			],
+			"nature": "adamant",
+			"evs": {
+				"hp": 176,
+				"atk": 232,
+				"def": 100,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 18,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 2 1, move 2 2",
+			"p2": "move 3 2, move 1 1"
+		}
+	]
+}
