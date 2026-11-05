@@ -17,6 +17,7 @@ import shutil
 import subprocess
 import sys
 import time
+import traceback
 from pathlib import Path
 
 KEEP = {".venv", "runtime", "sprites", "replays"}
@@ -29,6 +30,19 @@ RETRY_S = 30
 
 class Failed(Exception):
     pass
+
+
+def say(text: str) -> None:
+
+
+    try:
+        print(text, flush=True)
+    except (OSError, ValueError):
+        try:
+            sys.stdout = open("CONOUT$", "w", encoding="utf8", buffering=1)
+            print(text, flush=True)
+        except (OSError, ValueError):
+            pass
 
 
 def moves_of(stage: Path) -> list[str]:
@@ -58,7 +72,7 @@ class Swap:
         self.result = self.dir / "result.json"
 
     def log(self, text: str) -> None:
-        print(text, flush=True)
+        say(text)
         with open(self.dir / "apply.log", "a", encoding="utf8") as f:
             f.write(time.strftime("%H:%M:%S ") + text + "\n")
 
@@ -202,9 +216,9 @@ class Swap:
 
     def start_app(self) -> None:
         if WIN:
-            subprocess.Popen(["cmd", "/c", str(self.root / "openVGCengine.cmd")], cwd=self.root, stdin=subprocess.DEVNULL, creationflags=subprocess.CREATE_NO_WINDOW)
+            subprocess.Popen(["cmd", "/c", str(self.root / "openVGCengine.cmd")], cwd=self.root, stdin=subprocess.DEVNULL, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, creationflags=subprocess.CREATE_NO_WINDOW)
         else:
-            subprocess.Popen(["open", str(self.root / "openVGCengine.command")], cwd=self.root, stdin=subprocess.DEVNULL)
+            subprocess.Popen(["open", str(self.root / "openVGCengine.command")], cwd=self.root, stdin=subprocess.DEVNULL, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
 
 
 def wait_exit(pid: int, seconds: float) -> None:
@@ -269,15 +283,20 @@ def main() -> int:
             sw.go(sw.state())
         held.close()
         return 0
-    print("Updating openVGCengine. This window closes when it's done; the app then reopens.", flush=True)
-    if a.pid:
-        wait_exit(a.pid, 60)
-    sw.stop_others()
-    sw.begin()
-    moves = moves_of(sw.stage)
-    st = {"version": a.version, "phase": "swap", "moves": moves, "fresh": [m for m in moves if not (sw.root / m).exists()]}
-    sw.write_json(sw.journal, st)
-    sw.go(st)
+    try:
+        say("Updating openVGCengine. This window closes when it's done; the app then reopens.")
+        if a.pid:
+            wait_exit(a.pid, 60)
+        sw.stop_others()
+        sw.begin()
+        moves = moves_of(sw.stage)
+        st = {"version": a.version, "phase": "swap", "moves": moves, "fresh": [m for m in moves if not (sw.root / m).exists()]}
+        sw.write_json(sw.journal, st)
+        sw.go(st)
+    except Exception as e:
+        sw.log("the update stopped: " + traceback.format_exc()[-800:])
+        if not sw.journal.exists():
+            sw.write_json(sw.result, {"ok": False, "version": a.version, "error": str(e) or type(e).__name__})
     held.close()
     sw.start_app()
     return 0

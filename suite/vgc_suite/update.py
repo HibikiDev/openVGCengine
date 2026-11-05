@@ -142,6 +142,13 @@ def start() -> dict:
     if info.get("error") or not info.get("newer") or not info.get("asset"):
         return {"phase": "error", "error": info.get("error") or "There's no update to install here."}
     platform_id = about.bundle_info().get("platform")
+    s = status()
+    if s["phase"] == "ready" and s.get("version") == info["latest"]:
+        try:
+            check_stage(DIR / "stage" / TOP, info["latest"], platform_id)
+            return s
+        except Refused:
+            pass
     _set(phase="download", version=info["latest"], done=0, total=info["asset"]["size"])
     threading.Thread(target=_run, args=(info["asset"], info["latest"], platform_id), daemon=True).start()
     return status()
@@ -157,7 +164,7 @@ def apply(pid: int) -> None:
     py = base / "python.exe" if sys.platform == "win32" else base / "bin/python3"
     cmd = [str(py), str(helper), "--root", str(ROOT), "--pid", str(pid), "--version", str(status()["version"])]
     if sys.platform == "win32":
-        subprocess.Popen(cmd, cwd=DIR, stdin=subprocess.DEVNULL, creationflags=subprocess.CREATE_NEW_CONSOLE)
+        subprocess.Popen(cmd, cwd=DIR, creationflags=subprocess.CREATE_NEW_CONSOLE)
     else:
         subprocess.Popen(cmd, cwd=DIR, stdin=subprocess.DEVNULL, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, start_new_session=True)
 

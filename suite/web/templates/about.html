@@ -71,6 +71,11 @@ function addUpdate(out, r) {
     if (s.phase === "error") return fail(s.error);
     poll();
   };
+  post("/api/update-status").then((s) => {
+    if (s.version !== r.latest) return;
+    if (s.phase === "ready") restart();
+    else if (s.phase === "download" || s.phase === "check") { b.disabled = true; poll(); }
+  });
 }
 document.getElementById("check").addEventListener("click", async () => {
   const out = document.getElementById("upd"), btn = document.getElementById("check");
