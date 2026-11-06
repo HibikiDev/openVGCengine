@@ -1,3 +1,9 @@
 
 
-__version__ = "0.1.2"
+try:
+    import truststore
+    truststore.inject_into_ssl()
+except Exception:
+    pass
+
+__version__ = "0.1.3"
