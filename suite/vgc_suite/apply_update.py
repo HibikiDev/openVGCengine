@@ -148,10 +148,10 @@ class Swap:
         me, prefix = os.getpid(), str(self.root).rstrip("\\/") + os.sep
         if WIN:
             ps = "Get-CimInstance Win32_Process | Where-Object { $_.ExecutablePath } | ForEach-Object { \"$($_.ProcessId)`t$($_.ExecutablePath)\" }"
-            out = subprocess.run(["powershell", "-NoProfile", "-Command", ps], capture_output=True, text=True, timeout=60).stdout
+            out = subprocess.run(["powershell", "-NoProfile", "-Command", ps], capture_output=True, text=True, errors="replace", timeout=60).stdout
         else:
-            out = subprocess.run(["ps", "-axo", "pid=,command="], capture_output=True, text=True, timeout=60).stdout
-        for line in out.splitlines():
+            out = subprocess.run(["ps", "-axo", "pid=,command="], capture_output=True, text=True, errors="replace", timeout=60).stdout
+        for line in (out or "").splitlines():
             pid, _, exe = line.strip().replace("\t", " ").partition(" ")
             if pid.isdigit() and int(pid) != me and exe.strip().lower().startswith(prefix.lower()):
                 self.log(f"stopping {exe.strip()[:80]}")
@@ -173,7 +173,7 @@ class Swap:
 
         py = self.root / (".venv/Scripts/python.exe" if WIN else ".venv/bin/python")
         code = "import sys; sys.path[:0] = ['suite', 'suite/web', 'trainer']; import server"
-        r = subprocess.run([str(py), "-c", code], cwd=self.root, capture_output=True, text=True, timeout=300)
+        r = subprocess.run([str(py), "-c", code], cwd=self.root, capture_output=True, text=True, errors="replace", timeout=300)
         if r.returncode:
             raise Failed("the new version doesn't start: " + r.stderr.strip()[-300:])
 

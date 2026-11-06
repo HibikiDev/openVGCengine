@@ -582,8 +582,8 @@ def stop_server(root: Path) -> str:
 def _pid_alive(pid: int) -> bool:
     import subprocess
     if os.name == "nt":
-        out = subprocess.run(["tasklist", "/FI", f"PID eq {pid}", "/NH"], capture_output=True, text=True, **NO_WINDOW).stdout
-        return str(pid) in out
+        out = subprocess.run(["tasklist", "/FI", f"PID eq {pid}", "/NH"], capture_output=True, text=True, errors="replace", **NO_WINDOW).stdout
+        return str(pid) in (out or "")
     try:
         os.kill(pid, 0)
         return True
