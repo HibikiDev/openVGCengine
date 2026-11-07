@@ -169,7 +169,7 @@ class Agent:
             back[:, n:] = float("-inf")
 
 
-        s = lead[0].double()
+        s = lead[0].float().cpu().double()
         p = torch.softmax(s, -1)
         rest = [torch.softmax(s.masked_fill(torch.arange(6, device=s.device) == i, float("-inf")), -1) for i in range(n)]
         pairs = {(i, j): float(p[i] * rest[i][j]) for i in range(n) for j in range(n) if i != j}
@@ -186,7 +186,7 @@ class Agent:
             if n < 6:
                 a_lead[:, n:] = float("-inf")
                 a_back[:, n:] = float("-inf")
-            sa = a_lead[0].double()
+            sa = a_lead[0].cpu().double()
             pa = torch.softmax(sa, -1)
             rest_a = [torch.softmax(sa.masked_fill(torch.arange(6, device=sa.device) == i, float("-inf")), -1) for i in range(n)]
             rank = {(i, j): float(pa[i] * rest_a[i][j]) for i in range(n) for j in range(n) if i != j}
