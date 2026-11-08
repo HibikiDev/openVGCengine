@@ -8,6 +8,8 @@
 
 from __future__ import annotations
 
+import random
+
 from .showdown import belief
 
 
@@ -24,6 +26,7 @@ class BeliefWorlds:
         self.fmt = fmt
         self.prior = belief.SetPrior.load(fmt)
         self._sets: dict[tuple, dict] = {}
+        self.world = 0
         self._teams: dict[tuple, int] = {}
 
     def guess(self, shown: tuple) -> dict:
@@ -31,11 +34,13 @@ class BeliefWorlds:
 
         species, moves, item, gone, holds, ability = shown
         key = (belief.to_id(species), tuple(belief.move_id(m) for m in moves), belief.to_id(item), gone, holds, belief.to_id(ability))
-        s = self._sets.get(key)
+        s = self._sets.get((self.world, key))
         if s is None:
             facts = belief.MonFacts(species=key[0], moves=list(key[1]), item=key[2] if ability else (key[2] or None), holds=holds,
                                     item_gone=gone, ability=key[5] or None)
-            s = self._sets[key] = belief.world_set(self.prior, facts, self.fmt)
+
+            rng = random.Random(f"{self.world}|{key}") if self.world else None
+            s = self._sets[(self.world, key)] = belief.world_set(self.prior, facts, self.fmt, rng, sample=bool(self.world))
         return s
 
     def team_for(self, pool, index: int, side: int, src=None) -> int:
@@ -106,9 +111,12 @@ class ClosedSheetSearch:
 
 
 
-    def __init__(self, env, fmt: str, make, seed: int = 0, worlds: BeliefWorlds | None = None):
+
+
+    def __init__(self, env, fmt: str, make, seed: int = 0, worlds: BeliefWorlds | None = None, worlds_n: int = 1):
         self.world = GuessedWorldEnv(env, worlds or BeliefWorlds(fmt), seed)
         self.inner = make(self.world)
+        self.worlds_n = worlds_n
 
     def __getattr__(self, name):
         return getattr(self.inner, name)
@@ -116,9 +124,27 @@ class ClosedSheetSearch:
     def choose(self, side: int, actions, battles=None, pick=None) -> None:
         import numpy as np
         live = self.world.env.masks.to_move[:, side] & (self.world.env.status == -1)
-        self.world.sync(side, np.flatnonzero(live if battles is None else live & battles))
-        self.inner.choose(side, actions, battles, pick)
+        idx = np.flatnonzero(live if battles is None else live & battles)
+        if self.worlds_n <= 1:
+            self.world.sync(side, idx)
+            self.inner.choose(side, actions, battles, pick)
+        elif len(idx):
+            cand, q, _ = self.evaluate(side, idx)
+            best = q.argmax(-1) if pick is None else np.array([pick(q[r], cand[r]) for r in range(len(idx))])
+            actions[idx, side] = cand[np.arange(len(idx)), best]
 
     def evaluate(self, side: int, idx):
+        worlds = self.world.worlds
+        worlds.world = 0
         self.world.sync(side, idx)
-        return self.inner.evaluate(side, idx)
+        cand, q, prior = self.inner.evaluate(side, idx)
+        for w in range(1, self.worlds_n):
+            worlds.world = w
+            self.world.sync(side, idx)
+            self.inner.forced = (cand, prior)
+            try:
+                q = q + self.inner.evaluate(side, idx)[1]
+            finally:
+                self.inner.forced = None
+        worlds.world = 0
+        return cand, q / self.worlds_n, prior

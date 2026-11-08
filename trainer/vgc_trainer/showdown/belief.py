@@ -1001,7 +1001,19 @@ def hp_ivs(hp_type: str) -> dict:
     return {k: 31 if best[k] else 30 for k in STATS}
 
 
-def world_set(prior: SetPrior, facts: MonFacts, fmt: str | None, rng=None) -> dict:
+def _draw(ranked: list[tuple[str, float]], rng) -> str:
+
+    x = rng.random() * sum(p for _, p in ranked)
+    for k, p in ranked:
+        x -= p
+        if x <= 0:
+            return k
+    return ranked[-1][0]
+
+
+def world_set(prior: SetPrior, facts: MonFacts, fmt: str | None, rng=None, sample: bool = False) -> dict:
+
+
 
 
 
@@ -1013,14 +1025,18 @@ def world_set(prior: SetPrior, facts: MonFacts, fmt: str | None, rng=None) -> di
     others = [m for m, _ in b["moves"] if m not in revealed]
     if rng is not None and others:
         w = {m: p for m, p in b["moves"] if m not in revealed}
-        others = sorted(others, key=lambda m: -(w[m] * (0.5 + rng.random())))
+        if sample:
+            others = sorted(others, key=lambda m: -(rng.random() ** (1.0 / max(w[m], 1e-9))))
+        else:
+            others = sorted(others, key=lambda m: -(w[m] * (0.5 + rng.random())))
+    drawn = sample and rng is not None
     if facts.item is not None:
         item = facts.item
     elif facts.holds is False:
         item = ""
     else:
-        item = b["items"][0][0] if b["items"] else ""
-    ability = facts.ability or (b["abilities"][0][0] if b["abilities"] else "")
+        item = (_draw(b["items"], rng) if drawn else b["items"][0][0]) if b["items"] else ""
+    ability = facts.ability or ((_draw(b["abilities"], rng) if drawn else b["abilities"][0][0]) if b["abilities"] else "")
     if ability == "asone":
         ability = "asonespectrier" if "shadow" in facts.species else "asoneglastrier"
     use = prior.usage.get(facts.species) or {}

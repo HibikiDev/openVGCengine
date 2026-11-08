@@ -23,6 +23,7 @@ import traceback
 import uuid
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
+import urllib.parse
 from urllib.parse import parse_qs, urlparse
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -526,13 +527,15 @@ class Jobs:
         legacy = "fast" not in params and ("search" in params or "games" in params)
         per_team = _int(params, "search_games", 48, LIMITS["search_games"])
         per_team = max(8, per_team + per_team % 2)
-        fast = params.get("fast") == "1" or (legacy and params.get("search") != "1")
+        tier = params.get("tier")
+        fast = tier == "fast" or params.get("fast") == "1" or (legacy and params.get("search") != "1")
+        deep = tier == "deep"
         from vgc_trainer.closed_worlds import supported
         search_games = 0 if fast or (closed and not supported()) else per_team
 
         quick_games = _int(params, "games", 4000, LIMITS["validate_games"]) if legacy else \
             FAST_FACTOR * min(per_team * len(fld), LIMITS["search_total"])
-        with_brings = params.get("brings") == "1" if legacy else not fast
+        with_brings = legacy and params.get("brings") == "1"
         slot_lab = params.get("lab") == "slot"
         if len(team) == 5 and not slot_lab and not legacy:
             raise BadInput("Five Pokémon: find the sixth under Team Lab → Change a slot.")
@@ -541,7 +544,11 @@ class Jobs:
         if len(fld) > buckets.MAX_TEAMS:
             raise BadInput(f"Team Lab plays at most {buckets.MAX_TEAMS} teams, and this field has {len(fld)}: pick a bucket "
                            "(the Buckets page makes one).")
-        if search_games * len(fld) > LIMITS["search_total"]:
+        if deep and (len(team) != 6 or slot_lab):
+            raise BadInput("Deep Mode is for a full team of six in the Deep Dive.")
+        if deep and not search_games:
+            raise BadInput("Deep Mode needs the search, and this format's closed team sheets can't be searched on this engine build.")
+        if search_games * len(fld) > LIMITS["search_total"] and not deep:
             raise BadInput(f"Search Mode plays at most {LIMITS['search_total']} games at once: {search_games} a team x {len(fld)} teams "
                            f"is {search_games * len(fld)} - use {LIMITS['search_total'] // len(fld)} or fewer a team.")
         if closed:
@@ -566,7 +573,10 @@ class Jobs:
         ref_src = (params.get("reference") or "").strip()
         tag = lambda who: (lambda m, d=None, t=None, ph=None: self._progress(f"{who}{m}", d, t, f"{who}{ph}")) if ref_src \
             else self._progress
-        run = lambda t, tid, who="": run_validation(
+        fname = f"bucket {field[7:]}" if field.startswith("bucket:") else "Current Metagame" if field == "meta" else None
+        run_deep_ = lambda t, tid, who="": __import__("vgc_suite.core.deep", fromlist=["run_deep"]).run_deep(
+            t, fld, self._agent()[0], Path(ckpt).name, team_id=tid, weights=weights, field_name=fname, progress=tag(who), fmt=efmt)
+        run = run_deep_ if deep else lambda t, tid, who="": run_validation(
             t, fld, ckpt, games=quick_games, dev=torch.device(self.device), team_id=tid,
             weights=weights, field_name=f"bucket {field[7:]}" if field.startswith("bucket:") else "Current Metagame" if field == "meta" else None,
             brings_agent=self._agent()[0] if with_brings else None,
@@ -662,6 +672,31 @@ class Jobs:
                                "theirs": [b["theirs"][j]["lead"] + b["theirs"][j]["back"] for j in cols]}}
         return {"dd": dd["id"], "opp": opp, "species": row["species"], "team": dd["result"]["team"]["species"], "games": games,
                 "cells": out, "both_adapt": both, "model": dd["result"].get("model"), "gaps": gaps}
+
+    def _run_mxsearch(self, params: dict) -> dict:
+
+        from vgc_suite.core.deep import Matchup
+        from vgc_suite.core.validator import _ready
+        from vgc_suite.formats import FORMATS, engine, tool_format
+        from vgc_trainer.closed_worlds import supported
+        dd, opp = self.get(params.get("dd", "")), params.get("opp", "")
+        pair = _deepdive_matchup(dd, opp)
+        if pair is None:
+            raise BadInput("That Deep Dive run or this team isn't available.")
+        try:
+            fmt = tool_format((dd.get("params") or {}).get("format"))
+        except ValueError as e:
+            raise BadInput(str(e)) from None
+        if not FORMATS[fmt].open_sheets and not supported():
+            raise BadInput("This engine build can't search closed team sheets yet.")
+        mine, theirs = _ready(_read(_team_src(pair[0]), fmt, "Your team"), fmt), _ready(_read(_team_src(pair[1]), fmt, opp), fmt)
+        self._progress("Finding the fours to look at")
+        m = Matchup(self._agent()[0], mine, theirs, 7300, engine(fmt))
+        m.stage1(lambda d, t: self._progress(f"Searched matrix: {d} of {t} games", d, t, "search"))
+        m.stage2(lambda d, t: self._progress(f"Refining the cells that decide it: {d} of {t} games", d, t, "refine"))
+        row = next((o for o in (dd.get("result") or {}).get("opponents") or [] if o.get("id") == opp), {})
+        return {"dd": dd["id"], "opp": opp, "species": row.get("species") or [s["species"] for s in theirs], "team": [s["species"] for s in mine],
+                "model": (dd.get("result") or {}).get("model"), "games": int(m.played.sum()), "brings": m.summary()}
 
     def _progress(self, msg: str, done: float | None = None, total: float | None = None, phase: str | None = None) -> None:
 
@@ -832,6 +867,14 @@ def open_replay_folder() -> None:
         subprocess.Popen(["open" if sys.platform == "darwin" else "xdg-open", str(REPLAY_DIR)])
 
 
+def _line_name(job: dict) -> str:
+
+    if job.get("tool") != "analyze" or job.get("status") != "done":
+        return ""
+    from vgc_suite import lines
+    return lines.default_name()
+
+
 def _replay_src(text: str) -> str:
     text = text.strip()
     if text.startswith("room:"):
@@ -993,6 +1036,24 @@ def mxchecks() -> dict[tuple[str, str], dict]:
             cur = out.get((dd, opp))
             if cur is None or ((st == "done", created) > (cur["status"] == "done", cur["created"])):
                 out[(dd, opp)] = {"id": jid, "status": st, "created": created}
+    return out
+
+
+def mxsearches() -> dict[tuple[str, str], dict]:
+
+    out: dict[tuple[str, str], dict] = {}
+    for f in JOB_DIR.glob("*.json"):
+        if f.stat().st_size > 2_000_000:
+            continue
+        try:
+            j = json.loads(f.read_text(encoding="utf8"))
+        except (OSError, ValueError):
+            continue
+        p = j.get("params") or {}
+        if j.get("tool") == "mxsearch" and j.get("status") in ("done", "queued", "running"):
+            key = (p.get("dd"), p.get("opp"))
+            if key not in out or j["status"] == "done":
+                out[key] = {"id": j["id"], "status": j["status"]}
     return out
 
 
@@ -1749,7 +1810,7 @@ def _has_meta_field() -> bool:
     return META_FIELD.exists()
 
 
-ENV.globals.update(in_app=lambda: OPEN_WINDOW is not None, private=PRIVATE, favorites=favorites, mxchecks=mxchecks, sweep_six_paste=sweep_six_paste, team_paste=team_paste, dd_team_paste=dd_team_paste, has_mxcheck=True, smogon_month=_smogon_month, TOOLS=TOOLS, LIMITS=LIMITS, WAIT=WAIT, win_curve_svg=win_curve_svg, suite_lock=lambda: suite_lock.state(),
+ENV.globals.update(in_app=lambda: OPEN_WINDOW is not None, private=PRIVATE, favorites=favorites, mxchecks=mxchecks, mxsearches=mxsearches, sweep_six_paste=sweep_six_paste, team_paste=team_paste, dd_team_paste=dd_team_paste, has_mxcheck=True, smogon_month=_smogon_month, TOOLS=TOOLS, LIMITS=LIMITS, WAIT=WAIT, win_curve_svg=win_curve_svg, suite_lock=lambda: suite_lock.state(),
                    team_buckets=_bucket_names, has_meta_field=_has_meta_field,
                    has_library=_has_library())
 STATIC = {"style.css": "text/css", "app.js": "text/javascript", "sprites.js": "text/javascript", "fonts/fonts.css": "text/css",
@@ -1835,7 +1896,7 @@ class Handler(BaseHTTPRequestHandler):
                 from urllib.parse import parse_qs
                 pn = parse_qs(urlparse(self.path).query).get("panel", [""])[0]
                 rh = parse_qs(urlparse(self.path).query).get("rep", ["6"])[0]
-                return self._page("status.html", active="status", panel=pn if pn in ("ladder", "ml1", "train", "pc1", "challenge") else None,
+                return self._page("status.html", active="status", panel=pn if pn in ("ladder", "ml1", "train", "pc1", "challenge", "arena") else None,
                                   **status_page(float(rh) if rh in ("2", "6", "24") else 6))
             except Exception as e:
                 return self._send(f"status page error: {type(e).__name__}: {e}", "text/plain; charset=utf-8", 500)
@@ -1938,6 +1999,12 @@ class Handler(BaseHTTPRequestHandler):
                     return self._send("no such game", "text/plain", 404)
                 if not PRIVATE and not g.get("back"):
                     g.update(self._game_back())
+
+
+                from vgc_suite import lines
+                q = parse_qs(urlparse(self.path).query)
+                g.update(line=lines.info(path[12:]) if g.get("bot_side") and self._local() else None,
+                         linemsg=q.get("linemsg", [None])[0])
                 return self._page("game.html", active="status" if PRIVATE else "buddy", g=g, pct=pct, pct0=pct0)
             except Exception as e:
                 return self._send(f"game page error: {type(e).__name__}: {e}", "text/plain; charset=utf-8", 500)
@@ -2007,6 +2074,13 @@ class Handler(BaseHTTPRequestHandler):
             self.send_header("Location", "/buddy?" + urlencode({"msg": msg}))
             self.end_headers()
             return
+        if path == "buddy/latest":
+            from vgc_suite.buddy_sessions import BOTS
+            stamp = []
+            for cfg in BOTS.values():
+                f = ROOT / cfg["results"]
+                stamp.append(f"{f.stat().st_size}-{f.stat().st_mtime_ns}" if f.exists() else "-")
+            return self._send(json.dumps({"stamp": "|".join(stamp)}), "application/json")
         if path == "buddy":
             from urllib.parse import parse_qs as qs
             q = qs(urlparse(self.path).query)
@@ -2128,11 +2202,13 @@ class Handler(BaseHTTPRequestHandler):
         if path.startswith("job/"):
             job = self.jobs.get(path[4:])
 
-            if job is None or (job["tool"] not in TOOLS and job["tool"] not in ("turn1", "muselfplay", "mxcheck")):
+            if job is None or (job["tool"] not in TOOLS and job["tool"] not in ("turn1", "muselfplay", "mxcheck", "mxsearch")):
                 return self._send(ENV.get_template("base.html").render(missing=True), code=404)
             ahead = self.jobs.ahead_of(job["id"]) if job["status"] == "queued" else 0
             sheets = _preview_sheets(job) if job["tool"] == "preview" and job["status"] == "done" else None
             return self._page("job.html", job=job, r=job.get("result"), ahead=ahead, sheets=sheets,
+                              linemsg=urllib.parse.parse_qs(urllib.parse.urlparse(self.path).query).get("linemsg", [None])[0],
+                              local=self._local(), line_name=_line_name(job),
                               active="preview" if job["tool"] == "turn1" else "slot" if job["tool"] == "validate" and is_slot_run(job) else job["tool"])
         if path.startswith("api/job/"):
             job = self.jobs.get(path[8:])
@@ -2319,6 +2395,60 @@ class Handler(BaseHTTPRequestHandler):
             self.send_header("Location", "/buddy?" + urlencode({"msg": msgs[0]}) + "#sessions")
             self.end_headers()
             return
+        elif action == "line":
+            from urllib.parse import urlencode
+            from vgc_suite import lines
+            room, side, me = params.get("room", ""), params.get("side", ""), params.get("me", "").strip()
+            meta = lines.info(room)
+            turn = _int(params, "turn", 1, 999)
+            if not self._local():
+                ok, msg = False, "Reopening a game works only from this PC itself (this page opened at 127.0.0.1)."
+            elif meta is None:
+                ok, msg = False, "This game can't be reopened: it has no saved choices (games before 11-08, or not played on the local server)."
+            elif side not in ("p1", "p2") or not me:
+                ok, msg = False, "Give your side and your Showdown name."
+            elif not 1 <= turn <= meta["turns"]:
+                ok, msg = False, f"Pick a turn from 1 to {meta['turns']}."
+            else:
+                ok, msg = lines.start(room, turn, me, side, params.get("mode") == "same", self.jobs.device)
+                if ok and OPEN_WINDOW is not None:
+                    from vgc_suite.core.h2h_examples import ensure_local_server
+                    if not ensure_local_server():
+                        OPEN_WINDOW(SHOWDOWN_URL, "Showdown - training buddy")
+            self.send_response(303)
+            self.send_header("Location", f"/status/game/{room}?" + urlencode({"pov": "human", "linemsg": msg}))
+            self.end_headers()
+            return
+        elif action == "line-replay":
+            from urllib.parse import urlencode
+            from vgc_suite import lines
+            job = self.jobs.get(params.get("job", ""))
+            side, me = params.get("side", ""), params.get("me", "").strip()
+            turn = _int(params, "turn", 1, 999)
+            turns = [t["turn"] for t in (((job or {}).get("result") or {}).get("narration") or {}).get("turns", []) if t["turn"] >= 1]
+            if not self._local():
+                ok, msg = False, "Opening a position works only from this PC itself (this page opened at 127.0.0.1)."
+            elif job is None or job["tool"] != "analyze" or not turns:
+                ok, msg = False, "That analysis isn't here any more: analyze the replay again."
+            elif side not in ("p1", "p2") or not me:
+                ok, msg = False, "Give your side and your Showdown name."
+            elif turn not in turns:
+                ok, msg = False, f"Pick a turn from {min(turns)} to {max(turns)}."
+            else:
+                try:
+                    src = _replay_src(job["params"]["replay"])
+                except BadInput as e:
+                    ok, msg = False, str(e)
+                else:
+                    ok, msg = lines.start_replay(src, turn, me, side, self.jobs.device)
+                    if ok and OPEN_WINDOW is not None:
+                        from vgc_suite.core.h2h_examples import ensure_local_server
+                        if not ensure_local_server():
+                            OPEN_WINDOW(SHOWDOWN_URL, "Showdown - training buddy")
+            self.send_response(303)
+            self.send_header("Location", f"/job/{(job or {}).get('id', '')}?" + urlencode({"linemsg": msg}))
+            self.end_headers()
+            return
         elif action in ("start", "stop"):
             if not self._local():
                 msgs = ["Start and stop work only from this PC itself (this page opened at 127.0.0.1)."]
@@ -2410,7 +2540,7 @@ class Handler(BaseHTTPRequestHandler):
             self.send_header("Location", f"/job/{dd}#brings")
             self.end_headers()
             return
-        if tool not in TOOLS and tool not in ("turn1", "muselfplay", "mxcheck"):
+        if tool not in TOOLS and tool not in ("turn1", "muselfplay", "mxcheck", "mxsearch"):
             return self._send("not found", "text/plain", 404)
         n = min(int(self.headers.get("Content-Length") or 0), 2_000_000)
         params = {k: v[0] for k, v in parse_qs(self.rfile.read(n).decode("utf8"), keep_blank_values=True).items()}
@@ -2418,6 +2548,13 @@ class Handler(BaseHTTPRequestHandler):
 
             dd = self.jobs.get(params["sheet"]) or {}
             params.update(team=(dd.get("params") or {}).get("team", ""), field=(dd.get("params") or {}).get("field", "meta"))
+        if tool == "mxsearch":
+            hit = mxsearches().get((params.get("dd"), params.get("opp")))
+            if hit:
+                self.send_response(303)
+                self.send_header("Location", f"/job/{hit['id']}")
+                self.end_headers()
+                return None
         if tool == "mxcheck" and params.get("fresh") != "1":
             hit = mxchecks().get((params.get("dd"), params.get("opp")))
             if hit:

@@ -41,6 +41,24 @@ PLAYED = [MC, MC + "bo3", "gen5vgc2013", "gen6vgc2014", "gen6vgc2015", "gen6vgc2
           "gen8vgc2020", "gen8vgc2021", "gen8vgc2022", "gen9vgc2023regc", "gen9vgc2023regd", "gen9vgc2024regg", "gen9vgc2025regi"]
 
 
+LINE_HOST = "openvgchost"
+PENDING = ROOT / "trainer/runs/practise_lines/pending.json"
+
+
+def take_line(fmt: str) -> dict | None:
+
+
+
+    try:
+        d = json.loads(PENDING.read_text(encoding="utf8"))
+    except (OSError, ValueError):
+        return None
+    PENDING.unlink(missing_ok=True)
+    if time.time() - d.get("time", 0) > 1800 or d.get("format") != fmt.partition("@@@")[0] or not d.get("team"):
+        return None
+    return d
+
+
 def group(fmt: str) -> str:
 
 
@@ -48,12 +66,8 @@ def group(fmt: str) -> str:
     return MC if base.startswith(MC) else base
 
 
-async def main(args) -> None:
-    for stream in (sys.stdout, sys.stderr):
-        try:
-            stream.reconfigure(encoding="utf-8", errors="replace")
-        except (AttributeError, ValueError):
-            pass
+def make_client(args):
+
 
 
     team_ids = [t for t in args.team.split(",") if t]
@@ -89,9 +103,22 @@ async def main(args) -> None:
     client.closed_reply_temps = [float(x) for x in args.closed_reply_temps.split(",")]
     client.lead_arms = args.lead_arms.split(",")
     client.teams = list(teams)
+    return client, team_ids, teams, formats
+
+
+async def main(args) -> None:
+    for stream in (sys.stdout, sys.stderr):
+        try:
+            stream.reconfigure(encoding="utf-8", errors="replace")
+        except (AttributeError, ValueError):
+            pass
+
+
+    client, team_ids, teams, formats = make_client(args)
     buddy = Buddy(Path(args.buddy_profiles), formats=tuple(sorted({group(f) for f in formats})), accepted=tuple(formats))
     logs = Path(args.logs) if args.logs else None
     active: set[str] = set()
+    line_marks: dict[int, dict] = {}
     print(f"{args.username} on the local server (port {args.port}): {', '.join(formats)}; teams {', '.join(team_ids) or 'none (each challenger picks one)'}; "
           f"search arms {args.search_arms}, closed sheets {'searched' if client.closed_sheet_search else 'the raw policy'}, lead rule {args.lead_arms}", flush=True)
     await client.connect()
@@ -110,6 +137,8 @@ async def main(args) -> None:
                       "team": team_id(battle.team), "ladder": False, "buddy": True, "ots": battle.ots, "series": battle.series,
                       "game": battle.series_game, "opponent": None, "winner": None, "turns": None, "errors": None,
                       "reply_temp": battle.reply_temp, "search_arm": (battle.search_arm or {}).get("name"), "lead_arm": battle.lead_arm}
+            if id(battle.team) in line_marks:
+                record.update(line=line_marks.pop(id(battle.team)), team="reopened")
             if result is not None:
                 foe = [ln.split("|")[3] for ln in result.raw if ln.startswith("|player|") and len(ln.split("|")) > 3
                        and to_id(ln.split("|")[3]) != to_id(args.username)]
@@ -152,10 +181,26 @@ async def main(args) -> None:
     async def challenges() -> None:
         while True:
             challenger, fmt = await client.challenges.get()
+            line = take_line(fmt) if to_id(challenger) == LINE_HOST else None
+            if to_id(challenger) == LINE_HOST and line is None:
+                await client.send(f"|/reject {challenger}")
+                print(f"rejected an invite from {challenger} ({fmt}): no line handed over", flush=True)
+                continue
             if Path(args.drain_file).exists() or len(active) >= args.max_battles or \
-                    (client.allow and to_id(challenger) not in client.allow):
+                    (client.allow and to_id(challenger) not in client.allow and line is None):
                 await client.send(f"|/reject {challenger}")
                 print(f"rejected a challenge from {challenger} ({fmt})", flush=True)
+                continue
+            if line is not None:
+                client.team = line["team"]
+                client.teams.append(client.team)
+                line_marks[id(client.team)] = line["line"]
+                me = to_id(line["line"].get("me", ""))
+                client.timer_for[me] = False
+                client.bring_for.pop(me, None)
+                client.started = True
+                await client.send(f"|/accept {challenger}")
+                print(f"accepted a line: {line['line']} ({fmt})", flush=True)
                 continue
             g = group(fmt)
             try:
@@ -188,7 +233,7 @@ async def main(args) -> None:
     await asyncio.gather(battles(), challenges())
 
 
-if __name__ == "__main__":
+def make_parser() -> argparse.ArgumentParser:
     ap = argparse.ArgumentParser()
     ap.add_argument("--checkpoint", required=True)
     ap.add_argument("--team", default="", help="comma-separated team ids, paste files or links: the rotation, played when a challenger "
@@ -217,12 +262,16 @@ if __name__ == "__main__":
     ap.add_argument("--search-deadline", type=float, default=None,
                     help="seconds from a request's arrival after which a search still running is dropped for the policy's choice "
                          "(default: battle.SEARCH_DEADLINE, and at most a sixth of the game clock left)")
-    ap.add_argument("--closed-search-arms", default="A,B,C")
+    ap.add_argument("--closed-search-arms", default="A", help="closed-sheet formats: arm A at reply T 1, the setting VGC13's closed-sheet search was tested with (0.593 vs raw, 10-24) and the tools' closed_searcher; the A/B/C x 1/3.42 draw was a leftover of the null 10-08 A/Bs (user 11-08)")
     ap.add_argument("--reply-temps", default="1")
-    ap.add_argument("--closed-reply-temps", default="1,3.42")
+    ap.add_argument("--closed-reply-temps", default="1")
     ap.add_argument("--lead-arms", default="v3")
     ap.add_argument("--reply-policy", default="")
     ap.add_argument("--foe-preview", default="")
     ap.add_argument("--lead-preview", default="")
     ap.add_argument("--opp-head", default="")
-    asyncio.run(main(ap.parse_args()))
+    return ap
+
+
+if __name__ == "__main__":
+    asyncio.run(main(make_parser().parse_args()))

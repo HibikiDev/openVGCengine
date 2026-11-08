@@ -12,6 +12,7 @@
 
 from __future__ import annotations
 
+import copy
 from dataclasses import dataclass, field
 from pathlib import Path
 
@@ -20,7 +21,7 @@ import vgc_engine as ve
 
 from vgc_trainer.search import STATS, guessed_spreads
 from vgc_trainer.showdown.live_search import _corpus_for, _outcome_seq, usage_corpus
-from vgc_trainer.showdown.requests import (PASS_ACTION, SWITCH_BASE, TARGET_ALLY, TARGET_FOE_A, TARGET_FOE_B, TARGET_SELF,
+from vgc_trainer.showdown.requests import (KIND_MEGA, PASS_ACTION, SWITCH_BASE, TARGET_ALLY, TARGET_FOE_A, TARGET_FOE_B, TARGET_SELF,
                                            RequestMasks)
 from vgc_trainer.showdown.sheets import CLOSED_SHEET_FORMATS, base_format, playable_sheet
 from vgc_trainer.showdown.tracker import FORMATS, Tracker, move_type, to_id
@@ -48,6 +49,8 @@ class Decision:
     shown: int = 4
     fill: dict | None = None
     guessed: bool = False
+    tracker: Tracker | None = None
+    sheets: dict | None = None
 
 
 def with_spreads(sheet: list[dict], spreads: list[tuple[str, tuple[int, ...]]]) -> list[dict]:
@@ -262,6 +265,9 @@ class _Masks(RequestMasks):
                     self._allow(slot, i * 4 + tg)
             if usable:
                 self.mega[slot] = bool(a.get("canMegaEvo"))
+                if self.mega[slot]:
+                    self.kind[slot] = KIND_MEGA
+                    self.gimmick[slot] = self.actions[slot] & ((1 << SWITCH_BASE) - 1)
             else:
                 self._allow(slot, 0 * 4 + TARGET_SELF)
         if not a.get("trapped") and not self.shadow_tagged(slot):
@@ -418,7 +424,7 @@ def filled_sets(log: ReplayLog, side: str, fmt: str | None, lines: list[str] | N
     return out
 
 
-def walk(log: ReplayLog, side: str, own_sheet: list[dict] | None = None) -> list[Decision]:
+def walk(log: ReplayLog, side: str, own_sheet: list[dict] | None = None, keep: bool = False) -> list[Decision]:
 
 
 
@@ -496,5 +502,5 @@ def walk(log: ReplayLog, side: str, own_sheet: list[dict] | None = None) -> list
             moves.append([pretty.get(to_id(mv), _spaced(mv)) for mv in (sheets[side][i].get("moves") or [])] if i is not None else [])
         display = [sheets[side][i].get("name") or sheets[side][i]["species"] for i in bring]
         out.append(Decision(turn, side, obs, masks, list(bring), names, req, played, text, act, fact, ctx, moves, display,
-                            shown=len(shown), fill=fill, guessed=guessed))
+                            shown=len(shown), fill=fill, guessed=guessed, tracker=copy.deepcopy(t) if keep else None, sheets=sheets if keep else None))
     return out

@@ -13,6 +13,19 @@
     <input type="hidden" name="replay" value="room:{{ g.room }}"><input type="hidden" name="side" value="{{ g.human_side }}">
     <button class="btn" type="submit">Open in the Replay Analyzer</button>
     <span class="small muted">every decision of {{ g.players[g.human_side] }}'s, turn by turn, next to what the bot would have played in their place</span></form>{% endif %}
+  {% if g.linemsg %}<p class="small"><b>{{ g.linemsg }}</b></p>{% endif %}
+  {% if g.line and g.human_side %}<form method="post" action="/buddy/line" style="margin: 10px 0">
+    <input type="hidden" name="room" value="{{ g.room }}"><input type="hidden" name="side" value="{{ g.human_side }}">
+    <div style="display:flex; gap:10px; align-items:center; flex-wrap:wrap">
+      <button class="btn alt" type="submit">Play from turn</button>
+      <select name="turn" style="width:auto">{% for t in range(1, g.line.turns + 1) %}<option value="{{ t }}"{{ ' selected' if t == 1 }}>{{ t }}</option>{% endfor %}</select>
+      <span class="small muted">the same position, on the local Showdown: you on your side, the bot on its own</span></div>
+    <div style="display:flex; gap:14px; align-items:center; flex-wrap:wrap; margin-top:6px">
+      <label class="small" style="font-weight:400"><input type="radio" name="mode" value="fresh" checked> the bot decides fresh</label>
+      <label class="small" style="font-weight:400"><input type="radio" name="mode" value="same"> the bot repeats its choice on that turn</label></div>
+    <div style="margin-top:6px"><label class="small" style="font-weight:400">Your name on the local Showdown:
+      <input name="me" value="{{ g.line.players[g.human_side] }}" style="width: 10em"></label>
+      <span class="small muted">the invite goes to this name - accept it there</span></div></form>{% endif %}
   {% for r in g.rating %}<p class="small muted">{{ r }}</p>{% endfor %}
   {% from "_team_export.html" import team_export %}{% set ev_note = "From the open team sheet in the log. EVs are the bot's guess (open sheets don't show EVs): the most common spread for that species and nature among real tournament pastes and sheets - what the bot's search assumed, not the real spread." %}
   {% if g.own_paste or g.foe_paste %}<div style="display:flex; gap:18px; flex-wrap:wrap">{{ team_export(g.own_paste, "show " ~ ((g.us ~ "'s") if (g.example or g.pov_human) else "our") ~ " team sheet", ev_note) }}{{ team_export(g.foe_paste, "show " ~ ((g.them ~ "'s") if (g.example or g.pov_human) else "their") ~ " team sheet", ev_note) }}</div>{% endif %}

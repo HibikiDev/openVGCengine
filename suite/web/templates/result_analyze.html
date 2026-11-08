@@ -2,6 +2,21 @@
 <div class="card">
   <h1>{{ players.get('p1', 'Player 1') }} <span class="muted">vs</span> {{ players.get('p2', 'Player 2') }}{% if r.format_name %} <span class="tag">{{ r.format_name }}</span>{% endif %}</h1>
   <p class="muted small">{{ r.replay.format }}{% if r.replay.ots %} · open team sheets{% endif %} · model {{ r.model.checkpoint }} · <a href="/analyze">analyze another</a></p>
+  {% if linemsg %}<p class="small"><b>{{ linemsg }}</b></p>{% endif %}
+  {% set line_turns = (r.narration.turns if r.narration else [])|map(attribute='turn')|select('ge', 1)|list %}
+  {% if local and line_turns %}<form method="post" action="/buddy/line-replay" style="margin: 10px 0">
+    <input type="hidden" name="job" value="{{ job.id }}">
+    <div style="display:flex; gap:10px; align-items:center; flex-wrap:wrap">
+      <button class="btn alt" type="submit">Play from turn</button>
+      <select name="turn" style="width:auto">{% for t in line_turns %}<option value="{{ t }}">{{ t }}</option>{% endfor %}</select>
+      <label class="small" style="font-weight:400">as <select name="side" style="width:auto">{% for s in ('p1', 'p2') %}<option value="{{ s }}">{{ players.get(s, s) }}</option>{% endfor %}</select></label>
+      <span class="small muted">the bot takes the other side, on the local Showdown</span></div>
+    <div style="margin-top:6px"><label class="small" style="font-weight:400">Your name on the local Showdown:
+      <input name="me" value="{{ line_name or '' }}" required style="width: 10em"></label>
+      <span class="small muted">the invite goes to this name - accept it there</span></div>
+    <p class="small muted" style="margin: 6px 0 0">Approximate: a replay doesn't hold the battle's seed or the spreads. The position is rebuilt from what the log shows -
+      HP to the percent, spreads the format's most common ones{% if not r.replay.ots %}, unseen moves, items and abilities the likeliest{% endif %}, a new seed -
+      and the bot decides fresh. The field and the mons already seen come back as the replay showed them, turn by turn.</p></form>{% endif %}
   {% if r.pastes %}<div style="display:flex; gap:18px; flex-wrap:wrap">{% for s in ('p1', 'p2') %}{% set x = r.pastes[s] %}{% if x and x.text %}{{ team_export(x.text, "show " ~ players.get(s, s) ~ "'s team", "From the open team sheet in the log. EVs are the bot's guess (open sheets don't show EVs)." if x.guessed else none) }}{% endif %}{% endfor %}</div>{% endif %}
   {% set c = win_curve_svg(r.win_curve, players) %}
   <h3>How the model rated each side, turn by turn</h3>

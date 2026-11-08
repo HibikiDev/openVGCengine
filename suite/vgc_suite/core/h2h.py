@@ -56,7 +56,13 @@ def make_searcher(pilot, env, dev, seed: int):
 
 
         return ClosedSheetSearch(env, closed[0], lambda world: closed_searcher(pilot.policy, world, dev, seed), seed)
-    return live_searcher(pilot.policy, env, dev, seed, bc)
+
+
+
+
+    if pilot.preview is None:
+        raise ValueError("the tools' search needs the policy's preview head (the client's view samples the opponent's unseen mons)")
+    return live_searcher(pilot.policy, env, dev, seed, bc, hidden="sample", spreads="guess", preview=pilot.preview)
 
 
 def _backs(back: np.ndarray, lead: tuple[int, int], rng) -> list[int]:

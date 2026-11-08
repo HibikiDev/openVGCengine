@@ -12,7 +12,9 @@ from vgc_trainer.batch import Batch, side_actions
 
 
 def play_fixed(policy, sheets: list[list[dict]], cells: list[tuple[list[int], list[int]]], games_per_cell: int, dev: torch.device,
-               seed: int = 0, batch: int = 1024, policy_b=None, search=None, progress=None, fmt: str | None = None) -> tuple[np.ndarray, np.ndarray]:
+               seed: int = 0, batch: int = 1024, policy_b=None, search=None, progress=None, fmt: str | None = None,
+               watch=None) -> tuple[np.ndarray, np.ndarray]:
+
 
 
 
@@ -41,6 +43,13 @@ def play_fixed(policy, sheets: list[list[dict]], cells: list[tuple[list[int], li
         env.refresh()
         searcher = search(env, seed + start) if search is not None else None
         done = np.zeros(n, bool)
+        if watch is not None:
+            watch.start(n, cell_of)
+
+        def on_finish(st, done=done):
+            fin = np.flatnonzero((st >= 0) & ~done)
+            if len(fin):
+                watch.on_done(env, fin, np.where(st[fin] == 0, 1.0, np.where(st[fin] == 1, 0.0, 0.5)))
         for _ in range(400):
             b = Batch(env, dev)
             with torch.inference_mode(), torch.autocast(dev.type, dtype=torch.float16, enabled=amp):
@@ -52,7 +61,9 @@ def play_fixed(policy, sheets: list[list[dict]], cells: list[tuple[list[int], li
             if searcher is not None:
                 for side in (0, 1):
                     searcher.choose(side, acts, (env.masks.min_switches[:, side] == 0) & ~done)
-            status = env.step(acts)
+            if watch is not None:
+                watch.on_step(env, acts)
+            status = env.step(acts, on_finish if watch is not None else None)
             for i in np.flatnonzero((status >= 0) & ~done):
                 done[i] = True
                 c = cell_of[i]

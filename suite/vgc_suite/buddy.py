@@ -713,6 +713,7 @@ def page_data(root: Path, who: str = "") -> dict:
                       "team": r.get("team") if r.get("team") not in (None, "?") else "their pick",
                       "result": "-" if r["won"] is None else (f"{r['opponent']} won" if r["won"] else "bot won"),
                       "turns": r.get("turns"), "notes": notes.get(r["room"], None), "series": r.get("series"), "game": r.get("game"),
+                      "line": r.get("line"),
                       "sessions": r["sessions"], "other_sessions": r["other_sessions"]})
     return {"sessions": buddy_sessions.listing(root), "session_bots": buddy_sessions.BOTS, "session_users": users,
             "who": who, "players": buddy_sessions.players(root),

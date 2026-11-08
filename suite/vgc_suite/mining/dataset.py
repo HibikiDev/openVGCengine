@@ -55,12 +55,12 @@ def own_sheet(spec: str) -> list[dict] | None:
     scripts = str(ROOT / "trainer/scripts")
     if scripts not in sys.path:
         sys.path.insert(0, scripts)
-    from vgc_trainer.showdown.teams import load_team
+    from vgc_trainer.showdown.teams import UnknownTeam, load_team
 
     path = ROOT / spec
     try:
         return load_team(str(path) if path.exists() else spec)
-    except SystemExit:
+    except (SystemExit, UnknownTeam):
         return None
 
 

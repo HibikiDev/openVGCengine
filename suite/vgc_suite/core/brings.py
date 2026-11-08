@@ -59,7 +59,8 @@ def _flip(seq) -> list[int]:
 
 
 def play_cells(agent, mine: list[dict], theirs: list[dict], cells: list[tuple[list[int], list[int]]], games: int, seed: int,
-               search=None, progress=None, fmt: str | None = None) -> np.ndarray:
+               search=None, progress=None, fmt: str | None = None, watch=None, tally: bool = False) -> np.ndarray:
+
 
 
 
@@ -68,12 +69,16 @@ def play_cells(agent, mine: list[dict], theirs: list[dict], cells: list[tuple[li
     variants = [(fa, fb) for fa in (False, True) for fb in (False, True)]
     seat0 = [(_flip(a) if fa else list(a), _flip(b) if fb else list(b)) for a, b in cells for fa, fb in variants]
     half = len(seat0) * per
+    if watch is not None:
+        watch.mine_side = 0
     pts, n = play_fixed(agent.policy, [mine, theirs], seat0, per, agent.dev, seed=seed, search=search,
-                        progress=None if progress is None else lambda d, t: progress(d, 2 * half), fmt=fmt)
+                        progress=None if progress is None else lambda d, t: progress(d, 2 * half), fmt=fmt, watch=watch)
+    if watch is not None:
+        watch.mine_side = 1
     pts2, n2 = play_fixed(agent.policy, [theirs, mine], [(b, a) for a, b in seat0], per, agent.dev, seed=seed + 500, search=search,
-                          progress=None if progress is None else lambda d, t: progress(half + d, 2 * half), fmt=fmt)
+                          progress=None if progress is None else lambda d, t: progress(half + d, 2 * half), fmt=fmt, watch=watch)
     won, played = (pts + (n2 - pts2)).reshape(len(cells), 4).sum(1), (n + n2).reshape(len(cells), 4).sum(1)
-    return won / np.maximum(played, 1)
+    return (won, played) if tally else won / np.maximum(played, 1)
 
 
 def play_matrix(agent, mine: list[dict], theirs: list[dict], o: Options, games: int, seed: int) -> np.ndarray:
@@ -142,6 +147,19 @@ def derive(agent, mine: list[dict], theirs: list[dict], o: Options, m: np.ndarra
         "human_coverage": None if o.h_foe is None else round(float(o.h_foe[o.top_foe].sum()), 3),
         "recommended": {"row": rec, **rec_names},
     }
+
+
+def screen_options(agent, mine: list[dict], theirs: list[dict], k: int, seed: int, fmt: str | None, screen_games: int = 64, keep_me: int = 3,
+                   keep_foe: int = 4) -> Options:
+
+
+    o = Options(agent, mine, theirs, k, k, trim=True, fmt=fmt)
+    o.n_head_foe, o.n_head_me = len(o.top_foe), len(o.top_me)
+    extra = [oc for oc in screen_answers(agent, mine, theirs, o, screen_games, seed + 2000, keep_foe) if oc not in o.top_foe]
+    o.top_foe = np.concatenate([o.top_foe, np.array(extra, dtype=o.top_foe.dtype)]) if extra else o.top_foe
+    extra = [oc for oc in screen_counters(agent, mine, theirs, o, screen_games, seed + 3000, keep_me) if oc not in o.top_me]
+    o.top_me = np.concatenate([o.top_me, np.array(extra, dtype=o.top_me.dtype)]) if extra else o.top_me
+    return o
 
 
 def summary(agent, mine: list[dict], theirs: list[dict], k: int = 3, games: int = 256, seed: int = 0,

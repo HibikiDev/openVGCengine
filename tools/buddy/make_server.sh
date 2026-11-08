@@ -26,5 +26,24 @@ rm -f "$C.bak"
 grep -qE "^exports\.noguestsecurity = true;" "$C" || echo "exports.noguestsecurity = true;" >> "$C"
 grep -qE "^exports\.bindaddress = '127.0.0.1';" "$C" || echo "exports.bindaddress = '127.0.0.1';" >> "$C"
 grep -qE "^exports\.backdoor = false;" "$C" || echo "exports.backdoor = false;" >> "$C"
+
+
+
+
+sed -i.bak -E "s/^exports\.logchallenges = .*/exports.logchallenges = true;/" "$C"
+rm -f "$C.bak"
+grep -qE "^exports\.logchallenges = true;" "$C" || echo "exports.logchallenges = true;" >> "$C"
+if ! grep -q "importinputlog for every local user" "$C"; then
+  echo "// importinputlog for every local user (tools/buddy/make_server.sh, user 11-08)" >> "$C"
+  echo "for (const g of exports.grouplist) if (g.symbol === ' ') g.importinputlog = true;" >> "$C"
+fi
+
+
+cp "$HERE/position-plugin.js" "$DEST/dist/server/chat-plugins/openvgc-position.js"
+cp "$HERE/position-plugin.js" "$DEST/dist/sim/openvgc-position.js"
+mkdir -p "$DEST/logs/positions"
+
+node -e "const c = require(process.argv[1]); if (!c.logchallenges || !c.grouplist.find(g => g.symbol === ' ').importinputlog) process.exit(3)" "$C" \
+  || { echo "make_server.sh: $C doesn't load, or lacks logchallenges / importinputlog"; exit 1; }
 node -e "const {Dex} = require(require('path').resolve(process.argv[1], 'dist/sim')); const f = Dex.formats.all(); console.log(f.length + ' formats, all buddy: ' + f.every(x => x.id.endsWith('buddy')) + ' - ' + f.map(x => x.id).join(' '))" "$DEST"
 echo "make_server.sh: $DEST ready (127.0.0.1 only, buddy formats only)"

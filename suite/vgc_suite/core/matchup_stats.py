@@ -29,6 +29,7 @@ CATS = 5
 TGT = 8
 EV_MOVE, EV_FAINT = 1, 3
 MEGA_STONE = re.compile(r"ite( [XY])?$")
+COUNTS = ("choice", "used", "tgt", "mega", "brought", "led", "fainted", "ko", "own_faint", "points_brought", "games", "points", "turns")
 
 
 class MatchupStats:
@@ -40,14 +41,7 @@ class MatchupStats:
         nt = len(teams)
         self.teams, self.focus = teams, focus
 
-        self.run = np.zeros((n, 2, 6, CATS), np.int32)
-        self.run_tgt = np.zeros((n, 2, 6, 4, TGT), np.int32)
-        self.run_mega = np.zeros((n, 2, 6), bool)
-        self.run_ko = np.zeros((n, 2, 6, 6), np.int32)
-        self.run_own = np.zeros((n, 2, 6, 2), np.int32)
-        self.credited = np.zeros((n, 2, 6), bool)
-        self.prev_faint = np.zeros((n, 2, 6), bool)
-        self.seed = np.full(n, -1, np.int64)
+        self._slots(n)
         self.choice = np.zeros((nt, 2, 6, CATS), np.int64)
         self.used = np.zeros((nt, 2, 6, CATS), np.int64)
         self.tgt = np.zeros((nt, 2, 6, 4, TGT), np.int64)
@@ -63,6 +57,24 @@ class MatchupStats:
         self.turns = np.zeros(nt, np.int64)
         self.leads: dict = defaultdict(lambda: [0, 0.0])
         self.pairings: dict = defaultdict(lambda: [0, 0.0])
+
+    def _slots(self, n: int) -> None:
+        self.run = np.zeros((n, 2, 6, CATS), np.int32)
+        self.run_tgt = np.zeros((n, 2, 6, 4, TGT), np.int32)
+        self.run_mega = np.zeros((n, 2, 6), bool)
+        self.run_ko = np.zeros((n, 2, 6, 6), np.int32)
+        self.run_own = np.zeros((n, 2, 6, 2), np.int32)
+        self.credited = np.zeros((n, 2, 6), bool)
+        self.prev_faint = np.zeros((n, 2, 6), bool)
+        self.seed = np.full(n, -1, np.int64)
+
+    def _who(self, env, i: int) -> tuple[int, int] | None:
+
+        a, b = env.pairs[i]
+        if a == b:
+            return None
+        fs = 0 if a == self.focus else 1
+        return fs, int(env.pairs[i, 1 - fs])
 
     def on_step(self, env, actions: np.ndarray) -> None:
         new = env.seeds != self.seed
@@ -122,11 +134,10 @@ class MatchupStats:
 
     def on_done(self, env, done: np.ndarray, result: np.ndarray) -> None:
         for j, i in enumerate(done):
-            a, b = env.pairs[i]
-            if a == b:
+            who = self._who(env, i)
+            if who is None:
                 continue
-            fs = 0 if a == self.focus else 1
-            opp = int(env.pairs[i, 1 - fs])
+            fs, opp = who
             pts = float(result[j] if fs == 0 else 1 - result[j])
             st = env.pool.inspect(int(i))
             self.games[opp] += 1
@@ -222,3 +233,40 @@ class MatchupStats:
     def brought_by_team(self) -> np.ndarray:
 
         return self.brought[:, 0] / np.maximum(self.games, 1)[:, None]
+
+    def absorb(self, opp: int, cells: "CellStats", w: np.ndarray, scale: int) -> None:
+
+
+        f = np.zeros(len(w) + 1)
+        played = cells.games[1:]
+        f[1:] = np.where(played > 0, np.asarray(w, float) / np.maximum(played, 1), 0.0) * scale
+        total = f[1:] @ played
+        if total > 0:
+            f *= scale / total
+        for name in COUNTS:
+            mine, theirs = getattr(self, name), getattr(cells, name)
+            mine[opp] += np.rint(np.tensordot(f, theirs, axes=(0, 0))).astype(mine.dtype)
+        for src, dst in ((cells.leads, self.leads), (cells.pairings, self.pairings)):
+            for (c, a, b), (n, p) in src.items():
+                if f[c] > 0:
+                    rec = dst[(opp, a, b)]
+                    rec[0] += n * float(f[c])
+                    rec[1] += p * float(f[c])
+
+
+class CellStats(MatchupStats):
+
+
+
+    fold = 4
+
+    def __init__(self, mine: list[dict], theirs: list[dict], cells: int):
+        super().__init__(1, [mine] + [theirs] * cells)
+        self.mine_side, self.cell_map, self.cell_of = 0, list(range(cells)), np.zeros(0, np.int64)
+
+    def start(self, n: int, cell_of: np.ndarray) -> None:
+        self._slots(n)
+        self.cell_of = cell_of
+
+    def _who(self, env, i: int) -> tuple[int, int]:
+        return self.mine_side, self.cell_map[int(self.cell_of[i]) // self.fold] + 1

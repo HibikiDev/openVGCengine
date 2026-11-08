@@ -526,6 +526,7 @@ class OneStepSearch:
 
         cands, qs, priors, full, wts, reps = [], [], [], [], [], []
         for a in range(0, len(idx), self.max_roots):
+            self._forced_rows = slice(a, a + self.max_roots)
             c, q, pr = self._evaluate(side, idx[a : a + self.max_roots])
             cands.append(c)
             qs.append(q)
@@ -544,7 +545,11 @@ class OneStepSearch:
         env, k, m, S = self.env, self.k, self.m, self.seeds
         mb = self.mb
         foe = 1 - side
-        cand, prior = self._candidates(side, idx)
+
+
+        forced = getattr(self, "forced", None)
+        cand, prior = ((forced[0][self._forced_rows], forced[1][self._forced_rows]) if forced is not None
+                       else self._candidates(side, idx))
         replies = np.zeros((len(idx), m, 2, 2), np.int32)
         weights = np.full((len(idx), m), 1.0 / m)
         foe_moves = env.masks.to_move[idx, foe]

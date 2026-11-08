@@ -154,6 +154,9 @@ class Battle:
             self._resync()
         self.raw.append("#chunk")
         self.raw.extend(lines)
+
+
+        past_preview = any(ln.startswith("|turn|") for ln in lines)
         for line in lines:
             if not line.startswith("|"):
                 continue
@@ -182,7 +185,7 @@ class Battle:
                 m = re.search(r'Game (\d+)</strong> of <a href="/(game-bestof\d+-[^"]+)"', line)
                 if m:
                     self.series_game, self.series = int(m.group(1)), m.group(2)
-            elif kind == "uhtml" and len(parts) > 2 and parts[2] == "otsrequest" and not self.ots_sent:
+            elif kind == "uhtml" and len(parts) > 2 and parts[2] == "otsrequest" and not self.ots_sent and not past_preview:
                 self.ots_sent = True
 
                 accept = self.client.ots_for.get(self.foe_name or "", True)
@@ -301,6 +304,30 @@ class Battle:
     def _preview_waits_mine(self) -> int:
         self._waits_mine = getattr(self, "_waits_mine", 0) + 1
         return self._waits_mine
+
+    def _draw_search_arms(self) -> None:
+
+
+
+
+        closed = self.fmt is not None
+        temps = (self.client.closed_reply_temps if closed else None) or self.client.reply_temps
+        arms = (self.client.closed_search_arms if closed else None) or self.client.search_arms
+        self.reply_temp = self.client.reply_arm.setdefault(self.series or self.room, random.choice(temps))
+        self.search_arm = self.client.search_arm.setdefault(self.series or self.room, random.choice(arms))
+
+    async def _late_join_sheets(self) -> None:
+
+
+
+        self.foe_sheet = playable_sheet([{"name": s, "species": s, "item": "", "ability": "", "moves": []}
+                                         for s in self.foe_species], self.room, self.engine_fmt)
+        self.ots = False
+        if self.fmt is None:
+            log.warning("%s: joined past team preview with no open sheet for the opponent - species only", self.room)
+            self.errors.append("late join: no open sheet for the opponent (species only)")
+        else:
+            log.info("%s: joined past team preview on closed sheets - species and what the battle has shown", self.room)
 
     def _resync(self) -> None:
 
@@ -580,11 +607,7 @@ class Battle:
                     if not recoverable(e):
                         raise
                     self.errors.append("counter-bring: " + traceback.format_exc(limit=2))
-            closed = self.fmt is not None
-            temps = (self.client.closed_reply_temps if closed else None) or self.client.reply_temps
-            arms = (self.client.closed_search_arms if closed else None) or self.client.search_arms
-            self.reply_temp = self.client.reply_arm.setdefault(self.series or self.room, random.choice(temps))
-            self.search_arm = self.client.search_arm.setdefault(self.series or self.room, random.choice(arms))
+            self._draw_search_arms()
             if pv:
                 log.warning("%s: preview lead %s (p %.2f, head's top pair p %.2f)%s", self.room,
                          "/".join(self.my_sheet[i]["species"] for i in self.bring[:2]), pv["lead_p"], pv["top_p"],
@@ -603,12 +626,21 @@ class Battle:
             self.decided_rqid = req.get("rqid")
             await self.send("/forfeit")
             return
-        if self.bring is None:
+        late = self.bring is None
+        if late:
 
             self.bring = list(range(4))
+            if self.search_arm is None:
+                self._draw_search_arms()
+        if self.foe_sheet is None and self.me:
+            await self._late_join_sheets()
         names = [to_id(self.my_sheet[i].get("name") or self.my_sheet[i]["species"]) for i in self.bring]
         actual = self._bring_from_request(req, names)
-        if actual is not None:
+        if actual is not None and late:
+            self.bring = actual
+            names = [to_id(self.my_sheet[i].get("name") or self.my_sheet[i]["species"]) for i in self.bring]
+            self.tracker = None
+        elif actual is not None:
 
 
             log.warning("%s: the request's party is not our bring %s - using %s", self.room, self.bring, actual)

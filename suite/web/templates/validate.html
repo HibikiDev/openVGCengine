@@ -17,9 +17,9 @@
     <details class="howto small"><summary>How this works</summary>
       <p>The bot pilots both teams, thinking every turn through the way it plays a real game (<b>Search Mode</b>), so this measures how well
         <em>the bot</em> plays your team - one that needs a human touch may rate lower than it deserves. Each team's score is good to about
-        ±{{ (98 / 48 ** 0.5)|round|int }} points at 48 games. The <b>bring matrix</b> then plays your likeliest fours against theirs, plus all
-        15 fours of each side screened for answers: <b>both adapt</b> is your score when both sides pick their brings well.</p>
-      <p><b>Fast mode</b> plays {{ FAST_FACTOR }}× the games on instinct, without search or bring matrix: good for ranking teams, but a single
+        ±{{ (98 / 48 ** 0.5)|round|int }} points at 48 games.</p>
+      <p><b>Deep Mode</b> plays your likeliest fours against theirs, plus the fours that answer them, all with search, and scores each matchup with both sides bringing well: the page then says what to bring. It takes hours for a full field, so <b>search this matchup</b> does the same for one team of a Search Mode run.</p>
+      <p><b>Fast mode</b> plays {{ FAST_FACTOR }}× the games on instinct, without search: good for ranking teams, but a single
         matchup can be ~20 points off the searched bot.</p></details>
   </form>
 </div>

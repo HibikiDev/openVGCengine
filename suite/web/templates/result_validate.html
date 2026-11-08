@@ -9,15 +9,16 @@
 <div class="card">
   <h1>{{ r.team.species|join(' · ') }}{% if r.format_name %} <span class="tag">{{ r.format_name }}</span>{% endif %}</h1>{% if jid %}
   <p class="small" style="float:right; margin:0"><a href="/compare?{{ {'field': job.params.field, 'run': jid}|urlencode }}">compare with other runs on this field →</a></p>{% endif %}
-  <p class="muted small">model {{ r.model }} · {{ r.games }} self-play games {% if r.search %}<b title="Every game played the way the bot plays a real game, thinking each turn through">in Search Mode</b> ({{ r.search.games_per_team }} a team){% else %}<b title="Played on instinct, no thinking ahead: much faster, but a matchup can read quite differently from how the bot really plays it">quick mode</b>{% endif %} against {% if r.field.name %}<b>{{ r.field.name }}</b> ({{ r.field.teams }} teams{{ ', weighted' if r.field.weighted }}){% else %}{{ r.field.teams }} teams{% endif %} · <a href="/validate">validate another</a></p>
+  <p class="muted small">model {{ r.model }} · {{ r.games }} self-play games {% if r.search %}<b title="Every game played the way the bot plays a real game, thinking each turn through">in {{ "Deep Mode" if r.search.deep else "Search Mode" }}</b> ({{ "about " if r.search.deep }}{{ r.search.games_per_team }} a team){% else %}<b title="Played on instinct, no thinking ahead: much faster, but a matchup can read quite differently from how the bot really plays it">quick mode</b>{% endif %} against {% if r.field.name %}<b>{{ r.field.name }}</b> ({{ r.field.teams }} teams{{ ', weighted' if r.field.weighted }}){% else %}{{ r.field.teams }} teams{% endif %} · <a href="/validate">validate another</a></p>
   {% if px %}{{ team_export(team_paste(job.params.team), "show your team") }}{% endif %}
   <div class="stats">
     <div><div class="big">{{ o.score|pct }}</div><div class="small muted">score vs the field (95%: {{ o.ci[0]|pct }}–{{ o.ci[1]|pct }})</div></div>
     <div><div class="big" style="font-size:2rem">{{ "%+d"|format(o.elo_vs_field|int) }}</div><div class="small muted">Elo vs the field</div></div>
   </div>
-  {% if r.search %}<p class="small muted">Search Mode, {{ r.search.games_per_team }} games a team: each team's score ±{{ (98 / (r.search.games_per_team ** 0.5))|round|int }} points.{% if r.search.unfinished %}
+  {% if r.search and r.search.deep %}<p class="small muted">Deep Mode: every team's bring matrix was searched first, and each score is that matrix's value with both sides bringing well. {{ r.search.stage1 }} games a cell{% if r.search.refined %}, up to {{ r.search.stage2 }} on the cells that decide the {{ r.search.refined|length }} hard, nearly hard or heavily weighted matchup{{ 's' if r.search.refined|length != 1 }}{% endif %}.</p>
+  {% elif r.search %}<p class="small muted">Search Mode, {{ r.search.games_per_team }} games a team: each team's score ±{{ (98 / (r.search.games_per_team ** 0.5))|round|int }} points.{% if r.search.unfinished %}
   {{ r.search.unfinished }} overlong game{{ 's' if r.search.unfinished != 1 }} left out{% if r.search.unfinished_by %} ({% for t, k in r.search.unfinished_by.items() %}{{ t }} {{ k }}{{ ', ' if not loop.last }}{% endfor %}){% endif %}.{% endif %}</p>
-  {% else %}<p class="small muted">A quick read without search - good for ranking; a single matchup can be ~20 points off. Check the ones that matter in <b>Search Mode</b>.</p>{% endif %}
+  {% else %}<p class="small muted">A quick read without search - good for ranking; a single matchup can be ~20 points off. Check the ones that matter in <b>Search Mode</b> or <b>Deep Mode</b>.</p>{% endif %}
 </div>
 {% if r.reference %}{% set R = r.reference %}{% set d0 = o.score - R.overall.score %}
 <div class="card">
@@ -42,7 +43,8 @@
 </div>
 {% endif %}
 <div class="card flat">
-    <h3>How the bot uses your team</h3>
+    {% set dm = r.search and r.search.deep %}<h3>{{ "How your team is used when both sides bring well" if dm else "How the bot uses your team" }}</h3>
+    {% if dm %}<p class="small muted">"Brought" and "led" are shares of the recommended mix, not counts of the bot's own picks. Scores and moves are measured in the searched games, weighted the same way.</p>{% endif %}
     <div class="scroll"><table class="tbl"><tr><th></th><th>brought</th><th>led</th><th class="num">score when brought</th></tr>
     {% for m in r.mons %}<tr><td><b>{{ m.mon }}</b></td>
       <td><div class="bar" style="min-width:70px"><i style="width: {{ (m.brought * 100)|round(1) }}%"></i><span>{{ m.brought|pct }}</span></div></td>
@@ -57,7 +59,7 @@
   {% set n = r.opponents|length %}{% set h = [6, n // 2]|min %}
   <div class="grid2">
     <div><h3>Hardest matchups</h3>
-    {% for m in r.opponents[:h] %}<div class="mline"><div class="who"><span>{{ m.species|join(' · ') }}</span><b>{{ m.score|pct }}</b></div><div class="bar pink"><i style="width: {{ (m.score * 100)|round(1) }}%"></i></div></div>{% endfor %}</div>
+    {% for m in r.opponents[:h] %}<div class="mline"><div class="who"><span>{{ m.species|join(' · ') }}</span><b>{{ m.score|pct }}</b></div><div class="bar pink"><i style="width: {{ (m.score * 100)|round(1) }}%"></i></div>{% if dm %}<div class="small muted">bring <b>{{ m.my_bring.lead|join(' + ') }}</b>, {{ m.my_bring.back|join(' + ') }}{% if m.brings.near|length > 1 %} · <a href="#mx-{{ m.id }}">{{ m.brings.near|length - 1 }} more about as good</a>{% endif %}</div>{% endif %}</div>{% endfor %}</div>
     <div><h3>Best matchups</h3>
     {% for m in (r.opponents|reverse|list)[:[6, n - h]|min] %}<div class="mline"><div class="who"><span>{{ m.species|join(' · ') }}</span><b>{{ m.score|pct }}</b></div><div class="bar"><i style="width: {{ (m.score * 100)|round(1) }}%"></i></div></div>{% endfor %}</div>
   </div>
@@ -65,7 +67,7 @@
 {% if r.opponents and r.opponents[0].my_brought is defined %}{% set with_mix = r.opponents[0].brings and r.opponents[0].brings.mon_share is defined %}
 <div class="card">
   <h2>Who you bring against whom</h2>
-  <p class="muted small">How often the bot brings each of your Pokémon, hardest matchups first{% if with_mix %}; below, its share of the both-adapt mix (a quick read: raw self-play){% endif %}.</p>
+  <p class="muted small">{% if dm %}Each Pokémon's share of the recommended mix, hardest matchups first.{% else %}How often the bot brings each of your Pokémon, hardest matchups first{% if with_mix %}; below, its share of the both-adapt mix (a quick read: raw self-play){% endif %}.{% endif %}</p>
   <div class="scroll"><table class="tbl small">
     <tr><th></th>{% for m in r.opponents %}<th class="num six-head" title="{{ m.id }}">{{ m.species[:3]|join(' ') }}<br>{{ m.species[3:]|join(' ') }}<br><span class="muted" style="font-weight: 400">{{ m.score|pct }}{% if m.share is not none %} · share {{ m.share|pct }}{% endif %}</span></th>{% endfor %}<th class="num">overall</th></tr>
     {% for mon in r.mons %}{% set k = loop.index0 %}<tr><td><b>{{ mon.mon }}</b></td>
@@ -77,11 +79,12 @@
 <div class="card">
   {% if r.field.name %}<h2>Every team in {{ r.field.name }}</h2>{% else %}<details><summary>Every opponent ({{ r.opponents|length }})</summary>{% endif %}
   <div class="scroll"><table class="tbl">
-    <tr><th>team</th>{% if r.field.weighted %}<th class="num">share</th>{% endif %}<th class="num">games</th><th class="num">your score</th><th class="num">95%</th><th>your usual bring</th><th>their usual bring</th>{% if jid %}<th>take it further</th>{% endif %}</tr>
+    <tr><th>team</th>{% if r.field.weighted %}<th class="num">share</th>{% endif %}<th class="num">games</th><th class="num">your score</th><th class="num">95%</th><th>{{ "recommended bring" if dm else "your pick" if r.search else "your usual bring" }}</th><th>{{ "their likeliest bring" if dm else "their pick" if r.search else "their usual bring" }}</th>{% if jid %}<th>take it further</th>{% endif %}</tr>
     {% for m in r.opponents %}<tr><td class="small"><b>{{ m.id }}</b><br><span class="six-head">{{ m.species[:3]|join(' ') }}<br>{{ m.species[3:]|join(' ') }}</span>{% if px %}{{ team_export(dd_team_paste(job, m.id)) }}{% endif %}</td>
       {% if r.field.weighted %}<td class="num">{{ m.share|pct }}</td>{% endif %}<td class="num">{{ m.games }}</td><td class="num"><b>{{ m.score|pct }}</b></td>
       <td class="num small">{{ m.ci[0]|pct }}–{{ m.ci[1]|pct }}</td>{% for bb, ll in ((m.my_bring, m.my_lead), (m.their_bring, m.their_lead)) %}<td class="small">{% if bb %}<div class="mx-opt"><div><span class="mx-k">lead</span> <b>{{ bb.lead|join(' + ') }}</b></div><div><span class="mx-k">back</span> {{ bb.back|join(' + ') }}</div></div>{% else %}<span class="mx-k">lead</span> <b>{{ ll.split(' (')[0]|replace('/', ' + ') }}</b>{% endif %}</td>{% endfor %}
-      {% if jid %}<td class="small" style="white-space: nowrap"><a href="/h2h?{{ {'dd': jid, 'opp': m.id}|urlencode }}">head-to-head</a><br><a href="/preview?{{ {'dd': jid, 'opp': m.id}|urlencode }}">preview advisor</a><br><a href="/playout?{{ {'dd': jid, 'opp': m.id}|urlencode }}" title="{{ 'whole games with each side on its both-adapt bring' if m.brings else 'whole games, the bots picking their own four' }}">play-out{{ ' (quick-read bring)' if m.brings }}</a></td>{% endif %}</tr>
+      {% if jid %}<td class="small" style="white-space: nowrap"><a href="/h2h?{{ {'dd': jid, 'opp': m.id}|urlencode }}">head-to-head</a><br><a href="/preview?{{ {'dd': jid, 'opp': m.id}|urlencode }}">preview advisor</a><br><a href="/playout?{{ {'dd': jid, 'opp': m.id}|urlencode }}" title="{{ 'whole games with each side on its both-adapt bring' if m.brings else 'whole games, the bots picking their own four' }}">play-out{{ ' (quick-read bring)' if m.brings and not dm }}</a>{% if r.search and not dm %}{% set sx = mxsearches().get((jid, m.id)) if mxsearches is defined else none %}<br>{% if sx %}<a href="/job/{{ sx.id }}"><b>{{ 'its searched matrix' if sx.status == 'done' else 'being searched' }}</b></a>{% else %}<form method="post" action="/mxsearch" style="display: inline"><input type="hidden" name="dd" value="{{ jid }}"><input type="hidden" name="opp" value="{{ m.id }}"><button class="btn alt" style="padding: 2px 8px; margin-top: 4px" type="submit" title="Every bring of this matchup searched, as in Deep Mode: what to bring, about 16 minutes">search this matchup</button></form>{% endif %}{% endif %}</td>{% endif %}</tr>
+    {% if r.search and not dm and m.detail and m.detail.pairings|length > 1 %}<tr><td colspan="{{ (7 if r.field.weighted else 6) + (1 if jid else 0) }}" class="small muted" style="border-top: none; padding-top: 0">The bot's picks split here: {% for p in m.detail.pairings[:3] %}{{ p.mine }} vs {{ p.theirs }}: <b>{{ p.score|pct }}</b> ({{ p.games }} games){{ ' · ' if not loop.last }}{% endfor %}</td></tr>{% endif %}
     {% if m.detail %}{% set d = m.detail %}<tr><td colspan="{{ (7 if r.field.weighted else 6) + (1 if jid else 0) }}" style="border-top: none; padding-top: 0"><details><summary class="small muted">what happens in these games ({{ d.games }} games, {{ d.turns }} turns on average)</summary>
       {{ side_table(d.mine, 'Your team') }}
       {{ side_table(d.theirs, 'Their team') }}
@@ -102,8 +105,8 @@
 {% if r.brings %}
 
 
-<details class="card" id="brings-card">
-  <summary><b>Bring advice per opponent</b> <span class="tag mx-alt" title="raw self-play: the policy without search - wrong in about half of the hard matchups checked; searched cells carry a ✓">quick read</span> <span class="small muted">- raw self-play, not the searched games above: a first look, not a result. Searched cells carry a ✓.</span></summary>
+<details class="card" id="brings-card"{{ " open" if dm }}>
+  {% if dm %}<summary><b>Bring advice per opponent</b> <span class="small muted">- every cell searched</span></summary>{% else %}<summary><b>Bring advice per opponent</b> <span class="tag mx-alt" title="raw self-play: the policy without search - wrong in about half of the hard matchups checked; searched cells carry a ✓">quick read</span> <span class="small muted">- raw self-play, not the searched games above: a first look, not a result. Searched cells carry a ✓.</span></summary>{% endif %}
   <div style="display:flex; justify-content:space-between; align-items:baseline; gap:12px; flex-wrap:wrap; margin-top:10px">
     <h2 style="margin:0" id="brings">Brings per opponent</h2>
 
@@ -150,23 +153,23 @@
   </table></div>
 
   <h3 style="margin-top:18px">The matrices</h3>
-  {% if jid and has_mxcheck is defined and check_gaps is defined %}{% set gp = check_gaps(jid, r) %}{% set nt = gp.teams|length %}{% set nc = gp.teams.values()|sum %}
+  {% if jid and not dm and has_mxcheck is defined and check_gaps is defined %}{% set gp = check_gaps(jid, r) %}{% set nt = gp.teams|length %}{% set nc = gp.teams.values()|sum %}
   {% if nt %}<form method="post" action="/mxcheck-all" style="margin: 0 0 10px" onsubmit="return confirm('Search the {{ nc }} cells the quick references still rest on unsearched, over {{ nt }} teams? One search check per team - together this keeps the tools busy for a long while, and other runs wait behind them.')">
     <input type="hidden" name="dd" value="{{ jid }}"><button class="btn alt" type="submit" style="padding: 4px 12px">search the missing cells ({{ nc }} cells, {{ nt }} teams)</button>
     <span class="small muted">a long queue; press again after it if the picks moved{% if gp.pending %} · {{ gp.pending }} team{{ 's' if gp.pending != 1 }} still being checked{% endif %}</span></form>
   {% elif gp.pending %}<p class="small muted">{{ gp.pending }} team{{ 's' if gp.pending != 1 }} being checked - the rest is searched.</p>
   {% else %}<p class="small muted">Every cell the quick references rest on is searched ✓</p>{% endif %}
-  {% elif jid and has_mxcheck is defined %}{% set chk = mxchecks() %}{% set left = [] %}{% for o in r.opponents if o.brings and (jid, o.id) not in chk %}{% set _ = left.append(o) %}{% endfor %}
+  {% elif jid and not dm and has_mxcheck is defined %}{% set chk = mxchecks() %}{% set left = [] %}{% for o in r.opponents if o.brings and (jid, o.id) not in chk %}{% set _ = left.append(o) %}{% endfor %}
   {% if left %}<form method="post" action="/mxcheck-all" style="margin: 0 0 10px" onsubmit="return confirm('Queue a search check for all {{ left|length }} teams not checked yet? Each replays its key cells with search - together this keeps the tools busy for a long while, and other runs wait behind them.')">
     <input type="hidden" name="dd" value="{{ jid }}"><button class="btn alt" type="submit" style="padding: 4px 12px">check all with search ({{ left|length }} left)</button>
     <span class="small muted">a long queue: one search check per team, each the same as its own button</span></form>
   {% else %}<p class="small muted">Every matrix here has a search check.</p>{% endif %}{% endif %}
-  <p class="small muted" style="margin: 0 0 8px">Your bring (row) vs theirs (column). <b>bot % · human %</b>: how likely the bot / a human picks it; <span class="tag mx-alt">screened</span> found by trying all fours. <b>vs a human</b>: that bring against what humans usually bring. Click a cell to play it out. Cells are quick reads - <b>check with search</b> replays the ones that matter.</p>
+  <p class="small muted" style="margin: 0 0 8px">Your bring (row) vs theirs (column). <b>bot % · human %</b>: how likely the bot / a human picks it; <span class="tag mx-alt">screened</span> found by trying all fours. <b>vs a human</b>: that bring against what humans usually bring. Click a cell to play it out. {% if dm %}Every cell is searched: 8 games, up to 32 where it decides the answer.{% else %}Cells are quick reads - <b>check with search</b> replays the ones that matter.{% endif %}</p>
   {% for m in r.opponents if m.brings %}{% set b = checked_brings(jid, m.id, m.brings) if checked_brings is defined else m.brings %}{% set rec = b.recommended %}
-  {% set tt = their_tags(b) %}<details class="mx-block" id="mx-{{ m.id }}"><summary><b>{{ m.id }}</b> <span class="muted small">{{ m.species|join(' · ') }} · both adapt {{ b.equilibrium.value|pct }}</span></summary>
+  {% set tt = their_tags(b) %}<details class="mx-block" id="mx-{{ m.id }}"><summary><b>{{ m.id }}</b> <span class="muted small">{{ m.species|join(' · ') }} · both adapt {{ b.equilibrium.value|pct }}</span></summary>{% if b.near is defined and b.near|length > 1 %}<p class="small muted" style="margin: 6px 0">About as good as the recommended four, within 3 points against their mix: {% for i in b.near if i != b.recommended.row %}<b>{{ b.mine[i].lead|join(' + ') }}</b>, {{ b.mine[i].back|join(' + ') }}{{ ' · ' if not loop.last }}{% endfor %}</p>{% endif %}
       {% if px %}{{ team_export(dd_team_paste(job, m.id), "show their team") }}{% endif %}
       {% set sc = b.screened if b.screened is defined else none %}
-      {% if jid and has_mxcheck is defined %}<form method="post" action="/mxcheck" style="display:flex; gap:10px; align-items:center; flex-wrap:wrap; margin: 8px 0">
+      {% if jid and not dm and has_mxcheck is defined %}<form method="post" action="/mxcheck" style="display:flex; gap:10px; align-items:center; flex-wrap:wrap; margin: 8px 0">
         <input type="hidden" name="dd" value="{{ jid }}"><input type="hidden" name="opp" value="{{ m.id }}">
         {% set done_ = (mxchecks() if mxchecks is defined else {}).get((jid, m.id)) %}
         <button class="btn alt" type="submit" style="padding: 4px 12px">{{ 'see the search check' if done_ else 'check with search' }}</button>

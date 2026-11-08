@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% block title %}{{ (TOOLS.get(job.tool) or (('Matchup self-play',) if job.tool == 'muselfplay' else ('Matrix checked with search',) if job.tool == 'mxcheck' else ('Turn-1 lab',)))[0] }} · openVGCengine{% endblock %}
+{% block title %}{{ (TOOLS.get(job.tool) or (('Matchup self-play',) if job.tool == 'muselfplay' else ('Matrix checked with search',) if job.tool == 'mxcheck' else ('Matchup searched',) if job.tool == 'mxsearch' else ('Turn-1 lab',)))[0] }} · openVGCengine{% endblock %}
 {% block main %}
 {% if job.status in ('queued', 'running') %}
 <div class="card wait" data-job="{{ job.id }}">

@@ -61,10 +61,17 @@ def main() -> int:
     def open_window(u: str, title: str) -> None:
         w = play.get("w")
         if w is not None and w in webview.windows:
-            w.restore()
+
+
+            if play.get("minimized"):
+                w.restore()
             w.show()
             return
-        play["w"] = webview.create_window(title, u, width=1280, height=860, min_size=(800, 600), text_select=True)
+        play["w"] = w = webview.create_window(title, u, width=1280, height=860, min_size=(800, 600), text_select=True)
+        play["minimized"] = False
+        w.events.minimized += lambda: play.__setitem__("minimized", True)
+        w.events.restored += lambda: play.__setitem__("minimized", False)
+        w.events.maximized += lambda: play.__setitem__("minimized", False)
     server.OPEN_WINDOW = open_window
     server.QUIT_APP = window.destroy
 
