@@ -165,7 +165,10 @@ class Swap:
         log = open(self.dir / "setup.out", "w", encoding="utf8")
         cmd = ["powershell", "-NoProfile", "-ExecutionPolicy", "Bypass", "-File", str(self.root / "setup.ps1")] if WIN else ["bash", str(self.root / "setup.command")]
         with log:
-            code = subprocess.run(cmd, cwd=self.root, stdin=subprocess.DEVNULL, stdout=log, stderr=subprocess.STDOUT, timeout=7200).returncode
+
+
+            env = dict(os.environ, OPENVGC_UPDATING="1")
+            code = subprocess.run(cmd, cwd=self.root, stdin=subprocess.DEVNULL, stdout=log, stderr=subprocess.STDOUT, timeout=7200, env=env).returncode
         if code:
             raise Failed(f"setup failed (exit {code}): see trainer/runs/update/setup.out")
 
