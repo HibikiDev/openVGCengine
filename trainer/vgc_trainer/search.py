@@ -44,6 +44,20 @@ def _spread(s: dict) -> tuple[str, tuple[int, ...]]:
     return (s.get("nature") or "Hardy", tuple(int(evs.get(k, 0) or 0) for k in STATS))
 
 
+def spread_corpus(env) -> list[list[dict]]:
+
+
+
+    from .env import DEFAULT_TEAMS
+    if DEFAULT_TEAMS.exists():
+        return load_teams()
+    from .showdown.live_search import _corpus_for
+    out: list[list[dict]] = []
+    for fmt in dict.fromkeys(getattr(env, "formats", None) or [None]):
+        out += _corpus_for(fmt)
+    return out
+
+
 def guessed_spreads(teams: list[list[dict]], corpus: list[list[dict]]) -> list[list[tuple[str, tuple[int, ...]]]]:
 
 
@@ -179,7 +193,7 @@ class OneStepSearch:
             raise ValueError("br_column scores its column one turn deep: not with depth2 rollouts (yet)")
         self.mb = m * seeds
         self.max_roots = env.n if max_roots is None else max_roots
-        self.guesses = guessed_spreads(env.teams, load_teams()) if spreads == "guess" else None
+        self.guesses = guessed_spreads(env.teams, spread_corpus(env)) if spreads == "guess" else None
         if hidden == "sample" and preview is None:
             raise ValueError('hidden="sample" needs a preview net')
         self.hidden, self.preview = hidden, preview
