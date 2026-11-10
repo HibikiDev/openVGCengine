@@ -1,43 +1,43 @@
 {% extends "base.html" %}
-{% block title %}Line Crawler · openVGCengine{% endblock %}
+{% block title %}{{ _("Line Crawler") }} · openVGCengine{% endblock %}
 {% block main %}
 <div class="card">
-  <h1>Line Crawler</h1>
-  <p>One game, one turn at a time: you pick both sides' moves, with the bot's read beside them. Every different choice or roll becomes a branch you can return to.</p>
-  <p class="small muted">The bot sees both full sheets here (in a real game, only the open ones).</p>
+  <h1>{{ _("Line Crawler") }}</h1>
+  <p>{{ _("One game, one turn at a time: you pick both sides' moves, with the bot's read beside them. Every different choice or roll becomes a branch you can return to.") }}</p>
+  <p class="small muted">{{ _("The bot sees both full sheets here (in a real game, only the open ones).") }}</p>
   <form method="post" action="/crawler">
     {% set no_sheets = true %}{% include "_format_pick.html" %}
     <div class="row">
-      <div><label for="a">Team A {% include "_team_help.html" %}</label><textarea id="a" name="a" required data-team></textarea>
-        <div class="custom-bring" id="pa"><span class="small muted">leads</span>
-          {% for k in (1, 2, 3, 4) %}{% if k == 3 %}<span class="small muted">back</span>{% endif %}<select name="a{{ k }}" aria-label="team A {{ 'lead' if k < 3 else 'back' }} {{ k if k < 3 else k - 2 }}" required><option value="">-</option></select>{% endfor %}
+      <div><label for="a">{{ _("Team A") }} {% include "_team_help.html" %}</label><textarea id="a" name="a" required data-team></textarea>
+        <div class="custom-bring" id="pa"><span class="small muted">{{ _("leads") }}</span>
+          {% for k in (1, 2, 3, 4) %}{% if k == 3 %}<span class="small muted">{{ _("back") }}</span>{% endif %}<select name="a{{ k }}" aria-label="{{ _('Team A') }} {{ _('lead {n}', n=k) if k < 3 else _('back {n}', n=k - 2) }}" required><option value="">-</option></select>{% endfor %}
         </div></div>
-      <div><label for="b">Team B</label><textarea id="b" name="b" required data-team></textarea>
-        <div class="custom-bring" id="pb"><span class="small muted">leads</span>
-          {% for k in (1, 2, 3, 4) %}{% if k == 3 %}<span class="small muted">back</span>{% endif %}<select name="b{{ k }}" aria-label="team B {{ 'lead' if k < 3 else 'back' }} {{ k if k < 3 else k - 2 }}" required><option value="">-</option></select>{% endfor %}
+      <div><label for="b">{{ _("Team B") }}</label><textarea id="b" name="b" required data-team></textarea>
+        <div class="custom-bring" id="pb"><span class="small muted">{{ _("leads") }}</span>
+          {% for k in (1, 2, 3, 4) %}{% if k == 3 %}<span class="small muted">{{ _("back") }}</span>{% endif %}<select name="b{{ k }}" aria-label="{{ _('Team B') }} {{ _('lead {n}', n=k) if k < 3 else _('back {n}', n=k - 2) }}" required><option value="">-</option></select>{% endfor %}
         </div></div>
     </div>
     <div class="row">
-      <div><label for="name_a">Name for team A (optional)</label><input id="name_a" name="name_a" maxlength="40"></div>
-      <div><label for="name_b">Name for team B (optional)</label><input id="name_b" name="name_b" maxlength="40"></div>
+      <div><label for="name_a">{{ _("Name for team A (optional)") }}</label><input id="name_a" name="name_a" maxlength="40"></div>
+      <div><label for="name_b">{{ _("Name for team B (optional)") }}</label><input id="name_b" name="name_b" maxlength="40"></div>
     </div>
-    <button class="btn" type="submit">Start the game</button>
+    <button class="btn" type="submit">{{ _("Start the game") }}</button>
   </form>
 </div>
 {% if sessions %}
 <div class="card flat">
-  <h3>Recent crawls</h3>
+  <h3>{{ _("Recent crawls") }}</h3>
   <div class="scroll"><table class="tbl">
-    <tr><th>when</th><th>leads and back</th><th class="num">positions</th><th></th></tr>
+    <tr><th>{{ _("when") }}</th><th>{{ _("leads and back") }}</th><th class="num">{{ _("positions") }}</th><th></th></tr>
     {% for s in sessions %}<tr><td class="small">{{ s.created|ago if s.created else '' }}</td>
-      <td class="small"><b>{{ s.names.a or 'A' }}</b>: {{ s.leads[0][:2]|join(' + ') }} <span class="muted">({{ s.leads[0][2:]|join(', ') }})</span><br>
-        <b>{{ s.names.b or 'B' }}</b>: {{ s.leads[1][:2]|join(' + ') }} <span class="muted">({{ s.leads[1][2:]|join(', ') }})</span></td>
-      <td class="num">{{ s.nodes }}</td><td class="small"><a href="/crawler/s/{{ s.id }}">open</a></td></tr>{% endfor %}
+      <td class="small"><b>{{ _(s.names.a) if s.names.a else 'A' }}</b>: {{ s.leads[0][:2]|names(' + ') }} <span class="muted">({{ s.leads[0][2:]|names }})</span><br>
+        <b>{{ _(s.names.b) if s.names.b else 'B' }}</b>: {{ s.leads[1][:2]|names(' + ') }} <span class="muted">({{ s.leads[1][2:]|names }})</span></td>
+      <td class="num">{{ s.nodes }}</td><td class="small"><a href="/crawler/s/{{ s.id }}">{{ _("open") }}</a></td></tr>{% endfor %}
   </table></div>
 </div>
 {% endif %}
 <script>
-
+// The pickers list each team's six (sheet order, read by the server: pastes and library ids alike); leads default to the first two.
 (() => {
   const timers = {};
   async function fill(side) {
@@ -52,7 +52,7 @@
     [1, 2, 3, 4].forEach((k, i) => {
       const sel = document.querySelector(`select[name="${side}${k}"]`), keep = sel.value || String(i);
       sel.innerHTML = names.length ? names.map((m, j) => `<option value="${j}">${m.replace(/</g, "&lt;")}</option>`).join("")
-                                   : '<option value="">(team not readable yet)</option>';
+                                   : `<option value="">${ {{ _("(team not readable yet)")|tojson }} }</option>`;
       if (names.length) sel.value = Number(keep) < names.length ? keep : String(i);
     });
   }
@@ -62,7 +62,7 @@
   document.querySelector('form[action="/crawler"]').addEventListener("submit", ev => {
     for (const side of ["a", "b"]) {
       const v = [1, 2, 3, 4].map(k => document.querySelector(`select[name="${side}${k}"]`).value);
-      if (new Set(v).size !== 4) { ev.preventDefault(); alert(`Team ${side.toUpperCase()}: pick four different Pokemon.`); return; }
+      if (new Set(v).size !== 4) { ev.preventDefault(); alert({{ _("Team {side}: pick four different Pokémon.")|tojson }}.replace("{side}", side.toUpperCase())); return; }
     }
   });
 })();

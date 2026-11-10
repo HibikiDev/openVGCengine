@@ -19,12 +19,14 @@
 
 from __future__ import annotations
 
+from vgc_trainer import i18n
+
 import json
 import re
 import time
 from pathlib import Path
 
-from vgc_suite.formats import MC, get as get_format
+from vgc_suite.formats import CURRENT, MC, get as get_format
 
 ROOT = Path(__file__).resolve().parents[3]
 STORE = ROOT / "trainer/runs/team_buckets.json"
@@ -73,7 +75,7 @@ def names(fmt: str | None = None) -> list[str]:
     return sorted((k for k in d if fmt is None or d[k].get("format", MC) == fmt), key=str.lower)
 
 
-def default_spec(fmt: str = MC) -> str | None:
+def default_spec(fmt: str = CURRENT) -> str | None:
 
 
     return f"bucket:{DEFAULT}" if SEED.is_file() and DEFAULT in names(fmt) else None
@@ -142,13 +144,13 @@ def parse(text: str) -> list[dict]:
             out.append({"label": label, "spec": "\n".join(body).strip() + "\n", "weight": weight, "link": None})
     for e in out:
         if not (0 < e["weight"] <= 100):
-            raise ValueError(f"weight {e['weight']:g} for {e['label'] or 'a team'}: use a number above 0 (at most 100)")
+            raise ValueError(i18n.t("weight {w} for {team}: use a number above 0 (at most 100)", w=f"{e['weight']:g}", team=e['label'] or i18n.t('a team')))
     if len(out) > MAX_TEAMS:
-        raise ValueError(f"{len(out)} teams: a bucket holds at most {MAX_TEAMS}")
+        raise ValueError(i18n.t("{n} teams: a bucket holds at most {max}", n=len(out), max=MAX_TEAMS))
     return out
 
 
-def _resolve(spec: str, fmt: str = MC) -> tuple[str, list[dict]]:
+def _resolve(spec: str, fmt: str = CURRENT) -> tuple[str, list[dict]]:
 
 
     from .teams import read_team
@@ -163,7 +165,7 @@ def _resolve(spec: str, fmt: str = MC) -> tuple[str, list[dict]]:
     return src, sets
 
 
-def save(name: str, text: str, note: str = "", old_name: str | None = None, fmt: str = MC) -> tuple[dict, list[str]]:
+def save(name: str, text: str, note: str = "", old_name: str | None = None, fmt: str = CURRENT) -> tuple[dict, list[str]]:
 
     name = (name or "").strip()
     try:
@@ -194,10 +196,10 @@ def save(name: str, text: str, note: str = "", old_name: str | None = None, fmt:
                 src, sets = _resolve(e["spec"], fmt)
                 species = [s["species"] for s in sets]
         except SystemExit:
-            problems.append(f"team {k} ({e['label'] or e['spec'][:30]}): no library team with that id")
+            problems.append(i18n.t("team {k} ({team}): no library team with that id", k=k, team=e['label'] or e['spec'][:30]))
             continue
         except Exception as ex:
-            problems.append(f"team {k} ({e['label'] or e['spec'][:30].strip()}): {type(ex).__name__}: {str(ex)[:160]}")
+            problems.append(i18n.t("team {k} ({team}): {error}", k=k, team=e['label'] or e['spec'][:30].strip(), error=f"{type(ex).__name__}: {str(ex)[:160]}"))
             continue
         label = e["label"] or (e["spec"] if "\n" not in e["spec"] and not e["spec"].startswith("paste:") else "/".join(species[:3]) + "/...")
         teams.append({"label": label, "src": src, "link": e.get("link"), "weight": e["weight"], "species": species})

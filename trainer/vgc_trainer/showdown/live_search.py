@@ -20,6 +20,7 @@ import vgc_engine as ve
 
 from ..canonical import bare
 from ..env import Masks, Observation, load_teams, read_masks
+from ..formats import newest_first
 from ..model import load_weights
 from ..preview import N_OUTCOMES, outcome_probs
 from ..search import OneStepSearch, guessed_spreads
@@ -37,6 +38,19 @@ _SV_CORPUS: dict[str, list[list[dict]]] = {}
 
 
 USAGE = Path(__file__).resolve().parents[3] / "data/smogon-usage"
+
+
+def _which_mon(want: str, ids: list[set[str]]) -> int | None:
+
+
+
+    if not want:
+        return None
+    exact = [i for i, ns in enumerate(ids) if want in ns]
+    if exact:
+        return exact[0]
+    forme = [i for i, ns in enumerate(ids) if any(n.startswith(want) or want.startswith(n) for n in ns if n)]
+    return forme[0] if len(forme) == 1 else None
 
 
 def _corpus_for(fmt: str | None) -> list[list[dict]]:
@@ -59,7 +73,7 @@ def _corpus() -> list[list[dict]]:
     if _CORPUS is None:
         from ..env import DEFAULT_TEAMS
         _CORPUS = (load_teams() + load_teams(STANDINGS) if DEFAULT_TEAMS.exists() and STANDINGS.exists()
-                   else usage_corpus("gen9championsvgc2026regmc"))
+                   else next((c for c in map(usage_corpus, newest_first()) if c and c[0]), []))
     return _CORPUS
 
 
@@ -185,7 +199,7 @@ class LiveSearch:
 
     @torch.inference_mode()
     def foe_bring(self, t: Tracker, my_sheet: list[dict], foe_sheet: list[dict], memory: dict | None = None,
-                  fmt: str | None = None) -> list[int]:
+                  fmt: str | None = None, also: list[int] | None = None) -> list[int]:
 
 
 
@@ -194,6 +208,7 @@ class LiveSearch:
 
         foe = t.foe
         seen = [i for i, m in enumerate(t.mons[foe]) if m.revealed]
+        seen += [i for i in (also or []) if i not in seen and i < len(foe_sheet)]
         if len(seen) >= 4 or self.agent.preview is None:
             rest = [i for i in range(len(foe_sheet)) if i not in seen]
             return (seen + self.rng.sample(rest, 4 - len(seen)))[:4] if len(seen) < 4 else seen[:4]
@@ -223,7 +238,12 @@ class LiveSearch:
                masks: RequestMasks, ctx: dict | None = None, value: float | None = None,
                memory: dict | None = None, reply_temp: float = 1.0, arm: dict | None = None,
                explain: dict | None = None, foe_world: list[dict] | None = None,
-               fmt: str | None = None) -> list[tuple[int, bool]]:
+               fmt: str | None = None, score_also: list[tuple[int, bool]] | None = None) -> list[tuple[int, bool]]:
+
+
+
+
+
 
 
 
@@ -332,7 +352,20 @@ class LiveSearch:
             adjust = lambda logits, idx: (logits / reply_temp if memory_adjust is None
                                           else memory_adjust(logits / reply_temp, idx))
         search.reply_adjust = adjust
+        played_index = replaced = None
+        if score_also is not None:
+
+            c0, p0 = search._candidates(side, np.array([0]))
+            played = np.array([[a, int(mg)] for a, mg in score_also], np.int32)
+            played_index = next((i for i in range(c0.shape[1]) if np.array_equal(c0[0, i], played)), None)
+            if played_index is None:
+                dup = next((i for i in range(1, c0.shape[1]) if any(np.array_equal(c0[0, i], c0[0, j]) for j in range(i))), None)
+                played_index = dup if dup is not None else c0.shape[1] - 1
+                replaced = "padding" if dup is not None else "candidate"
+                c0[0, played_index], p0[0, played_index] = played, p0[0].min()
+            search.forced = (c0, p0)
         cand, q, _ = search.evaluate(side, np.array([0]))
+        search.forced = None
         q = q[0]
         acts = [[(int(cand[0, i, s, 0]), bool(cand[0, i, s, 1])) for s in (0, 1)] for i in range(len(q))]
         ok = np.array([_legal(a, masks) for a in acts])
@@ -364,6 +397,8 @@ class LiveSearch:
             i = int(self.np_rng.choice(len(q), p=w))
         self.last = {"q": [round(float(v), 3) for v in q], "chosen": i, "mode": mode, "foe_bring": brings[foe], "foe_seen": seen,
                      "reply_temp": reply_temp, "arm": arm.get("name"), "held": held, "deepen": tier}
+        if score_also is not None:
+            self.last["played_index"], self.last["played_replaced"] = played_index, replaced
         if getattr(search, "_last_trigger", None) is not None:
             self.last["rolled_out"] = bool(search._last_trigger[0])
         q1 = getattr(search, "_last_q1", None)
@@ -383,6 +418,137 @@ class LiveSearch:
         if cover is not None and len(cover):
             self.last["cover"] = round(float(cover[0]), 3)
         return acts[i]
+
+    def _review_root(self, t: Tracker, req: dict, my_sheet: list[dict], foe_sheet: list[dict], bring: list[int],
+                     masks: RequestMasks, foe_also: list[int] | None = None) -> tuple[RootEnv, int]:
+
+
+        if not t.open_sheets:
+            raise Unsupported("closed sheets")
+        if req.get("forceSwitch") or not req.get("active") or masks.min_switches:
+            raise ValueError("not a Turn request")
+        me, foe = t.me, t.foe
+        side = 0 if me == "p1" else 1
+        sheets = {me: my_sheet, foe: foe_sheet}
+        env = RootEnv([sheets["p1"], sheets["p2"]], t.fmt)
+        brings = {me: list(bring), foe: self.foe_bring(t, my_sheet, foe_sheet, None, t.fmt, also=foe_also)}
+        snap = snapshot(t, {"p1": env.team_ids[0], "p2": env.team_ids[1]}, brings, party_order(t, req, bring), None, self.rng)
+        env.load(snap, self.rng.getrandbits(62))
+        if not env.masks.to_move[0, side]:
+            raise ValueError("the rebuilt battle has no decision for me")
+        key = json.dumps(env.teams, sort_keys=True)
+        if key not in self._guesses:
+            if len(self._guesses) > 64:
+                self._guesses.clear()
+            self._guesses[key] = guessed_spreads(env.teams, _corpus_for(t.fmt))
+        return env, side
+
+    @staticmethod
+    def remap_foe_actions(env, foe: int, theirs: list[tuple[int, bool]], foe_names: list[str] | None,
+                          foe_moves: list[list[str]] | None = None) -> list[tuple[int, bool]]:
+
+
+
+
+
+
+
+        if foe_names is None and foe_moves is None:
+            return theirs
+        from .tracker import to_id
+        team = env.teams[int(env.pairs[0, foe])]
+        names = [{to_id(team[r].get("name") or ""), to_id(team[r].get("species") or "")} - {""} for r in env.bring[0, foe]]
+        side = env.pool.inspect(0)["sides"][foe] if foe_moves is not None else None
+        out = []
+        for slot, (a, m) in enumerate(theirs):
+            if a >= SWITCH_BASE and a != PASS_ACTION and foe_names is not None:
+                k = a - SWITCH_BASE
+                want = to_id(foe_names[k]) if k < len(foe_names) else ""
+                k2 = _which_mon(want, names)
+                if k2 is None:
+                    raise ValueError(f"the opponent switched to {want or '?'}, not among the rebuilt battle's four")
+                a = SWITCH_BASE + k2
+            elif a < SWITCH_BASE and side is not None and slot < len(foe_moves) and a // 4 < len(foe_moves[slot]):
+                want = to_id(foe_moves[slot][a // 4])
+                k = side["active"][slot]
+                have = [to_id(x) for x in side["mons"][k]["moves"]] if k < len(side["mons"]) else []
+                if want not in have:
+                    raise ValueError(f"the opponent used {want}, not among its moves in the rebuilt battle")
+                a = have.index(want) * 4 + a % 4
+            out.append((a, m))
+        return out
+
+    def turn_rolls(self, t: Tracker, req: dict, my_sheet: list[dict], foe_sheet: list[dict], bring: list[int],
+                   masks: RequestMasks, mine: list[tuple[int, bool]], theirs: list[tuple[int, bool]] | None,
+                   seeds: int = 64, force: list[tuple] | None = None, foe_names: list[str] | None = None,
+                   foe_moves: list[list[str]] | None = None) -> dict:
+
+
+
+
+
+
+        from .tracker import to_id
+        sheet_ids = [{to_id(s_.get("name") or ""), to_id(s_.get("species") or "")} for s_ in foe_sheet]
+        foe_also = [i for i in (_which_mon(to_id(foe_names[a - SWITCH_BASE]), sheet_ids) for a, _ in (theirs or [])
+                                if a >= SWITCH_BASE and a != PASS_ACTION and foe_names and a - SWITCH_BASE < len(foe_names))
+                    if i is not None]
+        env, side = self._review_root(t, req, my_sheet, foe_sheet, bring, masks, foe_also=foe_also)
+        foe = 1 - side
+        work = ve.BattlePool(seeds)
+        work.copy_from(env.pool, [0] * seeds, list(range(seeds)), [int(self.rng.getrandbits(62)) for _ in range(seeds)])
+        guesses = self._guesses[json.dumps(env.teams, sort_keys=True)]
+        per_root = [guesses[env.pairs[0, foe]][r] for r in env.bring[0, foe]]
+        work.set_spreads(list(range(seeds)), foe, [per_root] * seeds)
+        acts = [[[int(ve.PASS_ACTION), 0], [int(ve.PASS_ACTION), 0]] for _ in (0, 1)]
+        acts[side] = [[int(a), int(mg)] for a, mg in mine]
+        if env.masks.to_move[0, foe]:
+            if theirs is None:
+                raise ValueError("the opponent's choice isn't known")
+            acts[foe] = [[int(a), int(mg)] for a, mg in self.remap_foe_actions(env, foe, theirs, foe_names, foe_moves)]
+        draws: dict = {}
+        for i in range(seeds):
+            res = work.step_scripted(i, acts, [tuple(int(x) for x in o) for o in (force or [])])
+            for d in res["draws"]:
+                site, actor, move_id, move, target, k, bound, num, rolled, result, forced = d
+                if num is None or not (0 < num < bound) or site in (3, 9):
+                    continue
+                key = (site, actor, move_id, target, k)
+                e = draws.setdefault(key, [site, actor, move_id, move, target, k, bound, num, 0, 0])
+                e[8] += int(result < num)
+                e[9] += 1
+        o = Observation.empty(seeds)
+        work.observe(side, o.field, o.mon_ids, o.mon_features, o.history)
+        status = np.full(seeds, -1, np.int8)
+        work.status(status)
+        bring_t = np.repeat(env.bring[0:1, side], seeds, axis=0)
+        x = [torch.from_numpy(a).to(self.agent.dev) for a in (o.field, o.mon_ids, o.mon_features, o.history, bring_t)]
+        with torch.inference_mode():
+            v = self.agent.policy.values(*x).float().cpu().numpy()
+        v = np.where(status == side, 1.0, np.where(status == foe, -1.0, np.where(status == 2, 0.0, v)))
+        st = env.pool.inspect(0)
+        names = {2 * s + j: st["sides"][s]["mons"][st["sides"][s]["active"][j]]["species"]
+                 for s in (0, 1) for j in (0, 1) if j < len(st["sides"][s]["active"]) and st["sides"][s]["active"][j] is not None}
+        return {"value": float(v.mean()), "draws": draws, "names": names, "side": side}
+
+    def turn_expectation(self, t: Tracker, req: dict, my_sheet: list[dict], foe_sheet: list[dict], bring: list[int],
+                         masks: RequestMasks, mine: list[tuple[int, bool]], theirs: list[tuple[int, bool]] | None,
+                         seeds: int = 64) -> float:
+
+
+
+
+        env, side = self._review_root(t, req, my_sheet, foe_sheet, bring, masks)
+        search = OneStepSearch(self.agent.policy, env, self.agent.dev, k=1, m=1, samples=1, seed=self.rng.getrandbits(62),
+                               replies="self", score="value", finish_switch=False, greedy_column=False, seeds=seeds)
+        search.guesses = self._guesses[json.dumps(env.teams, sort_keys=True)]
+        search.forced = (np.array([[[[a, int(mg)] for a, mg in mine]]], np.int32), np.zeros((1, 1), np.float32))
+        if env.masks.to_move[0, 1 - side]:
+            if theirs is None:
+                raise ValueError("the opponent's choice isn't known")
+            search.forced_replies = np.array([[[[a, int(mg)] for a, mg in theirs]]], np.int32)
+        _, q, _ = search.evaluate(side, np.array([0]))
+        return float(q[0, 0])
 
 
 def soft_pick(q: np.ndarray, ok: np.ndarray, acts: list, margin: float, temp: float, distinct: bool = False) -> np.ndarray:

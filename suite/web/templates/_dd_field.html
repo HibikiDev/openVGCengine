@@ -2,32 +2,28 @@
 
 
     <div class="row">
-      <div><label for="field">Against</label>
+      <div><label for="field">{{ _("Against") }}</label>
         <select id="field" name="field">
-          {% if has_meta_field() %}<option value="meta" data-format="{{ current_format }}">Current Metagame</option>{% endif %}
-          {% set bks = team_buckets() %}{% if bks %}<optgroup label="Your team buckets">
-          {% for b in bks %}<option value="bucket:{{ b }}" data-format="{{ bucket_format(b) }}">Bucket: {{ b }}</option>{% endfor %}</optgroup>{% endif %}
+          {% if has_meta_field() %}<option value="meta" data-format="{{ current_format }}">{{ _("Current Metagame") }}</option>{% endif %}
+          {% set bks = team_buckets() %}{% if bks %}<optgroup label="{{ _('Your team buckets') }}">
+          {% for b in bks %}<option value="bucket:{{ b }}" data-format="{{ bucket_format(b) }}">{{ _("Bucket: {name}", name=b) }}</option>{% endfor %}</optgroup>{% endif %}
         </select>
-        {% if not bks and not has_meta_field() %}<div class="small"><b>No field yet:</b> make a <a href="/buckets">team bucket</a> of the teams
-          you expect to face, then pick it here.</div>{% endif %}
-        <div class="small muted"><a href="/buckets">Buckets</a> · <a href="/compare">compare past runs</a></div></div>
-      <div><label for="search_games">Games per opponent team <span class="hint">more = steadier, slower</span></label>
+        {% if not bks and not has_meta_field() %}<div class="small">{{ _("<b>No field yet:</b> make a <a href=\"/buckets\">team bucket</a> of the teams you expect to face, then pick it here.")|safe }}</div>{% endif %}
+        <div class="small muted"><a href="/buckets">{{ _("Buckets") }}</a> · <a href="/compare">{{ _("compare past runs") }}</a></div></div>
+      <div><label for="search_games">{{ _("Games per opponent team") }} <span class="hint">{{ _("more = steadier, slower") }}</span></label>
         <input id="search_games" name="search_games" type="number" min="8" max="{{ LIMITS.search_games }}" value="48">
-        <div class="small muted" id="mode-note">Search Mode: 48 searched games a team</div></div>
+        <div class="small muted" id="mode-note">{{ _("Search Mode: {n} searched games a team", n=48) }}</div></div>
     </div>
-    {% if slot %}<p><label><input type="checkbox" name="fast" value="1" id="fast"{{ ' checked' if not gpu.on }}> <b>Fast mode</b> - no search: {{ FAST_FACTOR }}× the games, much quicker,
-      {{ 'no both-adapt pass' if slot else 'no bring matrix' }}. <span class="muted small">Good for ranking; a single matchup can be ~20 points off.</span></label>
-      {% if not gpu.on %}<span class="small cpu-warn">No GPU here, so Fast mode is this PC's default. Search Mode runs the bot's search on the
-      CPU, many times slower than with a GPU.</span>{% endif %}</p>
+    {% if slot %}<p><label><input type="checkbox" name="fast" value="1" id="fast"{{ ' checked' if not gpu.on }}> {{ _("<b>Fast mode</b> - no search: {n}× the games, much quicker, no both-adapt pass.", n=FAST_FACTOR)|safe }} <span class="muted small">{{ _("Good for ranking; a single matchup can be ~20 points off.") }}</span></label>
+      {% if not gpu.on %}<span class="small cpu-warn">{{ _("No GPU here, so Fast mode is this PC's default. Search Mode runs the bot's search on the CPU, many times slower than with a GPU.") }}</span>{% endif %}</p>
     {% else %}<div class="tiers">
-      <p style="margin: 4px 0"><label><input type="radio" name="tier" value="deep"{{ ' disabled' if not gpu.on }}> <b>Deep Mode</b> - every team's bring matrix searched, and every number comes from those games.
-        <span class="muted small">What you should actually bring. About 6 minutes a team, 16 for the hard or close ones: a few hours for a full field.</span>{% if not gpu.on %} <span class="small cpu-warn">Needs a GPU.</span>{% endif %}</label></p>
-      <p style="margin: 4px 0"><label><input type="radio" name="tier" value="search"{{ ' checked' if gpu.on }}> <b>Search Mode</b> - searched games with the bot's own picks.
-        <span class="muted small">How the bot does with your team. Any matchup can then be searched in depth on its own.</span></label></p>
-      <p style="margin: 4px 0"><label><input type="radio" name="tier" value="fast"{{ ' checked' if not gpu.on }}> <b>Fast mode</b> - no search: {{ FAST_FACTOR }}× the games, much quicker, no bring matrix.
-        <span class="muted small">Good for ranking; a single matchup can be ~20 points off.</span></label></p>
-      {% if not gpu.on %}<span class="small cpu-warn">No GPU here, so Fast mode is this PC's default. Search Mode runs the bot's search on the
-      CPU, many times slower than with a GPU.</span>{% endif %}</div>{% endif %}
+      <p style="margin: 4px 0"><label><input type="radio" name="tier" value="deep"{{ ' disabled' if not gpu.on }}> {{ _("<b>Deep Mode</b> - every team's bring matrix searched, and every number comes from those games.")|safe }}
+        <span class="muted small">{{ _("What you should actually bring. The slowest tier by far: a full field is a long run, the hard or close matchups longest.") }}</span>{% if not gpu.on %} <span class="small cpu-warn">{{ _("Needs a GPU.") }}</span>{% endif %}</label></p>
+      <p style="margin: 4px 0"><label><input type="radio" name="tier" value="search"{{ ' checked' if gpu.on }}> {{ _("<b>Search Mode</b> - searched games with the bot's own picks.")|safe }}
+        <span class="muted small">{{ _("How the bot does with your team. Any matchup can then be searched in depth on its own.") }}</span></label></p>
+      <p style="margin: 4px 0"><label><input type="radio" name="tier" value="fast"{{ ' checked' if not gpu.on }}> {{ _("<b>Fast mode</b> - no search: {n}× the games, much quicker, no bring matrix.", n=FAST_FACTOR)|safe }}
+        <span class="muted small">{{ _("Good for ranking; a single matchup can be ~20 points off.") }}</span></label></p>
+      {% if not gpu.on %}<span class="small cpu-warn">{{ _("No GPU here, so Fast mode is this PC's default. Search Mode runs the bot's search on the CPU, many times slower than with a GPU.") }}</span>{% endif %}</div>{% endif %}
     <script>
     (() => {
       const f = document.getElementById("fast"), n = document.getElementById("search_games"), note = document.getElementById("mode-note");
@@ -35,9 +31,9 @@
       const tier = () => (tiers.find((x) => x.checked) || {}).value || (f && f.checked ? "fast" : "search");
       const upd = () => { const k = +n.value || 48, t = tier();
         n.disabled = t === "deep";
-        note.textContent = t === "deep" ? "Deep Mode sets its own games: 8 a matrix cell, up to 32 where it matters"
-          : t === "fast" ? `Fast mode: {{ FAST_FACTOR }}× the searched games, no search`
-          : `Search Mode: ${k} searched games a team{{ ' (per candidate)' if slot }}`; };
+        note.textContent = t === "deep" ? {{ _("Deep Mode sets its own games: 8 a matrix cell, up to 32 where it matters")|tojson }}
+          : t === "fast" ? {{ _("Fast mode: {n}× the searched games, no search", n=FAST_FACTOR)|tojson }}
+          : ({{ (_("Search Mode: {n} searched games a team (per candidate)") if slot else _("Search Mode: {n} searched games a team"))|tojson }}).replace("{n}", k); };
       [f, ...tiers].forEach((x) => x && x.addEventListener("change", upd)); n.addEventListener("input", upd); upd(); window.addEventListener("load", upd);
     })();
     </script>

@@ -1,29 +1,29 @@
 {% from "_team_export.html" import team_export %}
 
-{% if r.mode == 'bots' %}
+{% if r.mode == 'bots' %}{% set NA, NB = _(r.names.a), _(r.names.b) %}
 <div class="card">
-  <h1>{{ r.names.a }} vs {{ r.names.b }}{% if r.format_name %} <span class="tag">{{ r.format_name }}</span>{% endif %}</h1>
-  {% if team_paste is defined and job is defined and job %}<div style="display:flex; gap:18px; flex-wrap:wrap">{{ team_export(team_paste(job.params.a), "show " ~ r.names.a) }}{{ team_export(team_paste(job.params.b), "show " ~ r.names.b) }}</div>{% endif %}
-  <p class="muted small">The bot on both sides{% if not r.deep %}, raw policy (no search){% endif %}, picking its own fours{% if r.bo3 %}; Bo3 lead changes by the bot's rule{% endif %} · <a href="/playout">play out another</a></p>
+  <h1>{{ _("{a} vs {b}", a=NA, b=NB) }}{% if r.format_name %} <span class="tag">{{ r.format_name }}</span>{% endif %}</h1>
+  {% if team_paste is defined and job is defined and job %}<div style="display:flex; gap:18px; flex-wrap:wrap">{{ team_export(team_paste(job.params.a), _("show {name}", name=NA)) }}{{ team_export(team_paste(job.params.b), _("show {name}", name=NB)) }}</div>{% endif %}
+  <p class="muted small">{{ _("The bot on both sides, picking its own fours") if r.deep else _("The bot on both sides, raw policy (no search), picking its own fours") }}{% if r.bo3 %}{{ _("; Bo3 lead changes by the bot's rule") }}{% endif %} · <a href="/playout">{{ _("play out another") }}</a></p>
   <div class="stats">
-    {% if r.bo3 and r.series %}<div><div class="big">{{ r.a_series }}–{{ r.series|length - r.a_series }}</div><div class="small muted">series ({{ r.names.a }} – {{ r.names.b }})</div></div>{% endif %}
-    <div><div class="big">{{ r.a_wins }}–{{ r.games - r.a_wins }}</div><div class="small muted">games ({{ r.names.a }} – {{ r.names.b }})</div></div>
+    {% if r.bo3 and r.series %}<div><div class="big">{{ r.a_series }}–{{ r.series|length - r.a_series }}</div><div class="small muted">{{ _("series ({a} – {b})", a=NA, b=NB) }}</div></div>{% endif %}
+    <div><div class="big">{{ r.a_wins }}–{{ r.games - r.a_wins }}</div><div class="small muted">{{ _("games ({a} – {b})", a=NA, b=NB) }}</div></div>
   </div>
-  <p class="small muted">A handful of games: how it plays, not how often it wins.</p>
+  <p class="small muted">{{ _("A handful of games: how it plays, not how often it wins.") }}</p>
 </div>
 <div class="card flat">
-  <h3>{% if r.bo3 %}Series and games{% else %}Games{% endif %}</h3>
+  <h3>{{ _("Series and games") if r.bo3 else _("Games") }}</h3>
   <div class="scroll"><table class="tbl">
-    <tr><th>{% if r.bo3 %}series · game{% else %}game{% endif %}</th><th>winner</th><th class="num">turns</th><th>{{ r.names.a }}: leads · back</th><th>{{ r.names.b }}: leads · back</th><th></th></tr>
+    <tr><th>{{ _("series · game") if r.bo3 else _("game") }}</th><th>{{ _("winner") }}</th><th class="num">{{ _("turns") }}</th><th>{{ _("{name}: leads · back", name=NA) }}</th><th>{{ _("{name}: leads · back", name=NB) }}</th><th></th></tr>
     {% for e in r.examples %}{% if e.lines is defined %}
     <tr><td class="small nowrap">{% if e.series %}{{ e.series }} · {{ e.game }}{% else %}{{ loop.index }}{% endif %}</td>
-      <td><span class="chip {{ 'won' if e.won else 'lost' }}">{{ r.names.a if e.won else r.names.b }}</span></td>
+      <td><span class="chip {{ 'won' if e.won else 'lost' }}">{{ NA if e.won else NB }}</span></td>
       <td class="num">{{ e.turns }}</td>
-      {% for s in ('a', 'b') %}<td class="small"><b>{{ e.leads[s]|join(' + ') }}</b>{% set back = e.brought[s][2:] %}{% if back %} <span class="muted">· {{ back|join(', ') }}</span>{% endif %}</td>{% endfor %}
-      <td class="small"><a href="/job/{{ job.id }}/game/{{ loop.index0 }}">open</a></td></tr>
+      {% for s in ('a', 'b') %}<td class="small"><b>{{ e.leads[s]|names(' + ') }}</b>{% set back = e.brought[s][2:] %}{% if back %} <span class="muted">· {{ back|names }}</span>{% endif %}</td>{% endfor %}
+      <td class="small"><a href="/job/{{ job.id }}/game/{{ loop.index0 }}">{{ _("open") }}</a></td></tr>
     {% else %}<tr><td colspan="6" class="small muted">{{ e.error }}</td></tr>{% endif %}{% endfor %}
   </table></div>
-  <p class="small muted">"Back" shows only benched mons that came in.</p>
+  <p class="small muted">{{ _('"Back" shows only benched mons that came in.') }}</p>
 </div>
 {% else %}
 {% include "result_turn1.html" %}

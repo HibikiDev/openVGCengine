@@ -9,7 +9,7 @@
   try { mode = MODES.includes(localStorage.getItem(KEY)) ? localStorage.getItem(KEY) : "only"; } catch (e) {   }
   let names;
   try {
-    const r = await fetch("/sprites/index.json");
+    const r = await fetch("/sprites/index.json?lang=" + (document.documentElement.lang || "en"));
     if (!r.ok) return;
     names = await r.json();
   } catch (e) { return; }
@@ -70,7 +70,8 @@
   if (foot) {
     const b = document.createElement("button");
     b.type = "button"; b.className = "icons-toggle";
-    const label = () => { b.textContent = "Pokémon icons: " + LABEL[mode]; };
+    const T = s => (window.T && window.T[s]) || s;
+    const label = () => { b.textContent = T("Pokémon icons: {mode}").replace("{mode}", T(LABEL[mode])); };
     label();
     b.addEventListener("click", () => {
       mode = MODES[(MODES.indexOf(mode) + 1) % MODES.length];

@@ -28,6 +28,7 @@ for p in (ROOT / "trainer", ROOT / "suite", ROOT / "trainer/scripts"):
 import show_trace
 from vgc_suite.buddy import Buddy, disagreements, log_notes
 from vgc_suite.core.teams import lookup_team
+from vgc_trainer.formats import REGULATIONS
 from vgc_trainer.showdown.agent import Agent
 from vgc_trainer.showdown.buddy_client import BuddyClient
 from vgc_trainer.showdown.live_search import SEARCH_ARMS, LiveSearch
@@ -35,10 +36,11 @@ from vgc_trainer.showdown.sheets import base_format, buddy_format
 from vgc_trainer.showdown.teams import pack
 from vgc_trainer.showdown.tracker import to_id
 
-MC = "gen9championsvgc2026regmc"
 
-PLAYED = [MC, MC + "bo3", "gen5vgc2013", "gen6vgc2014", "gen6vgc2015", "gen6vgc2016", "gen7vgc2017", "gen7vgc2018", "gen7vgc2019",
-          "gen8vgc2020", "gen8vgc2021", "gen8vgc2022", "gen9vgc2023regc", "gen9vgc2023regd", "gen9vgc2024regg", "gen9vgc2025regi"]
+
+PLAYED = [f for reg in REGULATIONS for f in (reg, reg + "bo3")] + [
+    "gen5vgc2013", "gen6vgc2014", "gen6vgc2015", "gen6vgc2016", "gen7vgc2017", "gen7vgc2018", "gen7vgc2019",
+    "gen8vgc2020", "gen8vgc2021", "gen8vgc2022", "gen9vgc2023regc", "gen9vgc2023regd", "gen9vgc2024regg", "gen9vgc2025regi"]
 
 
 LINE_HOST = "openvgchost"
@@ -63,7 +65,7 @@ def group(fmt: str) -> str:
 
 
     base = base_format(fmt.partition("@@@")[0])
-    return MC if base.startswith(MC) else base
+    return next((reg for reg in REGULATIONS if base.startswith(reg)), base)
 
 
 def make_client(args):
@@ -106,6 +108,25 @@ def make_client(args):
     return client, team_ids, teams, formats
 
 
+_COACH_LS: list = []
+
+
+async def _coach(args, agent, user: str, room: str | None = None) -> None:
+
+
+    from vgc_suite import coach
+    from vgc_suite.core.bundle import path as pinned
+    try:
+        if not _COACH_LS:
+            ls = LiveSearch(agent, 8, 8, seed=0, score="value", cand_temp=2.0)
+            ls.load_reply_policy(str(pinned("reply_policy")))
+            ls.load_foe_preview(str(pinned("preview_head")))
+            _COACH_LS.append(ls)
+        await coach.watch(args.port, user, agent, _COACH_LS[0], str(args.checkpoint), room=room)
+    except Exception as e:
+        print(f"coach for {user} stopped ({type(e).__name__}: {e})", flush=True)
+
+
 async def main(args) -> None:
     for stream in (sys.stdout, sys.stderr):
         try:
@@ -118,6 +139,7 @@ async def main(args) -> None:
     buddy = Buddy(Path(args.buddy_profiles), formats=tuple(sorted({group(f) for f in formats})), accepted=tuple(formats))
     logs = Path(args.logs) if args.logs else None
     active: set[str] = set()
+    coach_for: list[str] = []
     line_marks: dict[int, dict] = {}
     print(f"{args.username} on the local server (port {args.port}): {', '.join(formats)}; teams {', '.join(team_ids) or 'none (each challenger picks one)'}; "
           f"search arms {args.search_arms}, closed sheets {'searched' if client.closed_sheet_search else 'the raw policy'}, lead rule {args.lead_arms}", flush=True)
@@ -177,6 +199,8 @@ async def main(args) -> None:
         while True:
             battle = await client.new_battle.get()
             asyncio.get_running_loop().create_task(watch(battle))
+            if coach_for:
+                asyncio.get_running_loop().create_task(_coach(args, client.agent, coach_for.pop(0), battle.room))
 
     async def challenges() -> None:
         while True:
@@ -229,6 +253,10 @@ async def main(args) -> None:
             await client.send(f"|/utm {pack(client.team)}")
             await client.send(f"|/accept {challenger}")
             print(f"accepted a {fmt} challenge from {challenger} (team {team_id(client.team)})", flush=True)
+            if p.coach and client.agent.policy is not None:
+
+
+                coach_for.append(challenger)
 
     await asyncio.gather(battles(), challenges())
 

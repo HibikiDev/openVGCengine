@@ -1,64 +1,74 @@
 {% extends "base.html" %}
-{% block title %}Play-out · openVGCengine{% endblock %}
+{% block title %}{{ _("Play-out") }} · openVGCengine{% endblock %}
 {% block main %}
 <div class="card">
-  <h1>Play-out</h1>
-  <p>Two teams played by the bot on both sides, with its search. Pick the fours yourself to study an opening, or let the bots pick and play whole games or Bo3s.</p>
+  <h1>{{ _("Play-out") }}</h1>
+  <p>{{ _("Two teams played by the bot on both sides, with its search. Pick the fours yourself to study an opening, or let the bots pick and play whole games or Bo3s.") }}</p>
   <form method="post" action="/playout">
     {% include "_format_pick.html" %}
     <fieldset style="border:0; padding:0; margin:0 0 10px">
-      <legend style="font-weight:700">Who picks the four</legend>
-      <label class="small" style="display:block"><input type="radio" name="pick" value="you" checked> <b>You</b>: each side's leads and back (and optionally turn 1)</label>
-      <label class="small" style="display:block"><input type="radio" name="pick" value="bots"> <b>The bots</b>: team preview as in a real game</label>
+      <legend style="font-weight:700">{{ _("Who picks the four") }}</legend>
+      <label class="small" style="display:block"><input type="radio" name="pick" value="you" checked> {{ _("<b>You</b>: each side's leads and back (and optionally turn 1)")|safe }}</label>
+      <label class="small" style="display:block"><input type="radio" name="pick" value="bots"> {{ _("<b>The bots</b>: team preview as in a real game")|safe }}</label>
     </fieldset>
     <div class="row">
-      <div><label for="a">Team A {% include "_team_help.html" %}</label><textarea id="a" name="a" required data-team></textarea>
-        <div class="custom-bring manual-only" id="pa"><span class="small muted">leads</span>
-          {% for k in (1, 2, 3, 4) %}{% if k == 3 %}<span class="small muted">back</span>{% endif %}<select name="a{{ k }}" aria-label="team A {{ 'lead' if k < 3 else 'back' }} {{ k if k < 3 else k - 2 }}" required><option value="">-</option></select>{% endfor %}
+      <div><label for="a">{{ _("Team A") }} {% include "_team_help.html" %}</label><textarea id="a" name="a" required data-team></textarea>
+        <div class="custom-bring manual-only" id="pa"><span class="small muted">{{ _("leads") }}</span>
+          {% for k in (1, 2, 3, 4) %}{% if k == 3 %}<span class="small muted">{{ _("back") }}</span>{% endif %}<select name="a{{ k }}" aria-label="{{ _('Team A') }} {{ _('lead {n}', n=k) if k < 3 else _('back {n}', n=k - 2) }}" required><option value="">-</option></select>{% endfor %}
         </div>
-        <details class="force manual-only" id="fa"><summary class="small">Turn 1 for team A: the bot decides <span class="muted">(or set it)</span></summary>
-          {% for k in (1, 2) %}<div class="custom-bring"><span class="small muted fl" id="fal{{ k }}">lead {{ k }}</span>
-            <select name="af{{ k }}" aria-label="team A lead {{ k }} turn 1"><option value="">the bot decides</option></select>
-            <label class="small mega" hidden><input type="checkbox" name="am{{ k }}" value="1"> Mega</label></div>{% endfor %}
-          <p class="small muted">Set both leads or neither.</p>
-          <p class="small"><b>Turn 2</b> <span class="muted">(optional; if another mon is in the slot, the bot decides)</span></p>
-          {% for k in (1, 2) %}<div class="custom-bring"><span class="small muted">slot {{ k }}</span>
-            <select name="a2f{{ k }}" aria-label="team A slot {{ k }} turn 2"><option value="">the bot decides</option></select>
-            <label class="small t2mega"><input type="checkbox" name="a2m{{ k }}" value="1"> Mega</label></div>{% endfor %}
+        <details class="force manual-only" id="fa"><summary class="small">{{ _("Turn 1 for team {side}:", side="A") }} {{ _("the bot decides") }} <span class="muted">{{ _("(or set it)") }}</span></summary>
+          {% for k in (1, 2) %}<div class="custom-bring"><span class="small muted fl" id="fal{{ k }}">{{ _("lead {n}", n=k) }}</span>
+            <select name="af{{ k }}" aria-label="{{ _('Team A') }} {{ _('lead {n}', n=k) }} {{ _('turn 1') }}"><option value="">{{ _("the bot decides") }}</option></select>
+            <label class="small mega" hidden><input type="checkbox" name="am{{ k }}" value="1"> {{ _("Mega") }}</label></div>{% endfor %}
+          <p class="small muted">{{ _("Set both leads or neither.") }}</p>
+          <p class="small"><b>{{ _("Turn 2") }}</b> <span class="muted">{{ _("(optional; if another mon is in the slot, the bot decides)") }}</span></p>
+          {% for k in (1, 2) %}<div class="custom-bring"><span class="small muted">{{ _("slot {n}", n=k) }}</span>
+            <select name="a2f{{ k }}" aria-label="{{ _('Team A') }} {{ _('slot {n}', n=k) }} {{ _('turn 2') }}"><option value="">{{ _("the bot decides") }}</option></select>
+            <label class="small t2mega"><input type="checkbox" name="a2m{{ k }}" value="1"> {{ _("Mega") }}</label></div>{% endfor %}
         </details>
-        <p class="small manual-only"><label><input type="checkbox" name="pa" value="1"> Team A plays its <b>raw policy</b> (no search)</label></p></div>
-      <div><label for="b">Team B</label><textarea id="b" name="b" required data-team></textarea>
-        <div class="custom-bring manual-only" id="pb"><span class="small muted">leads</span>
-          {% for k in (1, 2, 3, 4) %}{% if k == 3 %}<span class="small muted">back</span>{% endif %}<select name="b{{ k }}" aria-label="team B {{ 'lead' if k < 3 else 'back' }} {{ k if k < 3 else k - 2 }}" required><option value="">-</option></select>{% endfor %}
+        <p class="small manual-only"><label><input type="checkbox" name="pa" value="1"> {{ _("Team {side} plays its <b>raw policy</b> (no search)", side="A")|safe }}</label></p></div>
+      <div><label for="b">{{ _("Team B") }}</label><textarea id="b" name="b" required data-team></textarea>
+        <div class="custom-bring manual-only" id="pb"><span class="small muted">{{ _("leads") }}</span>
+          {% for k in (1, 2, 3, 4) %}{% if k == 3 %}<span class="small muted">{{ _("back") }}</span>{% endif %}<select name="b{{ k }}" aria-label="{{ _('Team B') }} {{ _('lead {n}', n=k) if k < 3 else _('back {n}', n=k - 2) }}" required><option value="">-</option></select>{% endfor %}
         </div>
-        <details class="force manual-only" id="fb"><summary class="small">Turn 1 for team B: the bot decides <span class="muted">(or set it)</span></summary>
-          {% for k in (1, 2) %}<div class="custom-bring"><span class="small muted fl" id="fbl{{ k }}">lead {{ k }}</span>
-            <select name="bf{{ k }}" aria-label="team B lead {{ k }} turn 1"><option value="">the bot decides</option></select>
-            <label class="small mega" hidden><input type="checkbox" name="bm{{ k }}" value="1"> Mega</label></div>{% endfor %}
-          <p class="small muted">Set both leads or neither.</p>
-          <p class="small"><b>Turn 2</b> <span class="muted">(optional; if another mon is in the slot, the bot decides)</span></p>
-          {% for k in (1, 2) %}<div class="custom-bring"><span class="small muted">slot {{ k }}</span>
-            <select name="b2f{{ k }}" aria-label="team B slot {{ k }} turn 2"><option value="">the bot decides</option></select>
-            <label class="small t2mega"><input type="checkbox" name="b2m{{ k }}" value="1"> Mega</label></div>{% endfor %}
+        <details class="force manual-only" id="fb"><summary class="small">{{ _("Turn 1 for team {side}:", side="B") }} {{ _("the bot decides") }} <span class="muted">{{ _("(or set it)") }}</span></summary>
+          {% for k in (1, 2) %}<div class="custom-bring"><span class="small muted fl" id="fbl{{ k }}">{{ _("lead {n}", n=k) }}</span>
+            <select name="bf{{ k }}" aria-label="{{ _('Team B') }} {{ _('lead {n}', n=k) }} {{ _('turn 1') }}"><option value="">{{ _("the bot decides") }}</option></select>
+            <label class="small mega" hidden><input type="checkbox" name="bm{{ k }}" value="1"> {{ _("Mega") }}</label></div>{% endfor %}
+          <p class="small muted">{{ _("Set both leads or neither.") }}</p>
+          <p class="small"><b>{{ _("Turn 2") }}</b> <span class="muted">{{ _("(optional; if another mon is in the slot, the bot decides)") }}</span></p>
+          {% for k in (1, 2) %}<div class="custom-bring"><span class="small muted">{{ _("slot {n}", n=k) }}</span>
+            <select name="b2f{{ k }}" aria-label="{{ _('Team B') }} {{ _('slot {n}', n=k) }} {{ _('turn 2') }}"><option value="">{{ _("the bot decides") }}</option></select>
+            <label class="small t2mega"><input type="checkbox" name="b2m{{ k }}" value="1"> {{ _("Mega") }}</label></div>{% endfor %}
         </details>
-        <p class="small manual-only"><label><input type="checkbox" name="pb" value="1"> Team B plays its <b>raw policy</b> (no search)</label></p></div>
+        <p class="small manual-only"><label><input type="checkbox" name="pb" value="1"> {{ _("Team {side} plays its <b>raw policy</b> (no search)", side="B")|safe }}</label></p></div>
     </div>
     <div class="row">
-      <div><label for="n">Games <span class="muted small">(turn 1 only is much quicker)</span></label><input id="n" name="n" type="number" min="1" max="{{ LIMITS.turn1_n }}" value="8"></div>
-      <div><label for="name_a">Name for team A (optional)</label><input id="name_a" name="name_a" maxlength="40"></div>
-      <div><label for="name_b">Name for team B (optional)</label><input id="name_b" name="name_b" maxlength="40"></div>
+      <div><label for="n">{{ _("Games") }} <span class="muted small">{{ _("(turn 1 only is much quicker)") }}</span></label><input id="n" name="n" type="number" min="1" max="{{ LIMITS.turn1_n }}" value="8"></div>
+      <div><label for="name_a">{{ _("Name for team A (optional)") }}</label><input id="name_a" name="name_a" maxlength="40"></div>
+      <div><label for="name_b">{{ _("Name for team B (optional)") }}</label><input id="name_b" name="name_b" maxlength="40"></div>
     </div>
     <div class="bots-only" hidden>
-      <p><label><input type="checkbox" name="bo3" value="1"> <b>Best-of-three series</b> <span class="muted small">(Games = series, up to {{ LIMITS.playout_series }})</span></label></p>
-      <p class="small"><label><input type="checkbox" name="raw" value="1"> Both sides play their <b>raw policy</b> (no search: much faster)</label></p>
+      <p><label><input type="checkbox" name="bo3" value="1"> <b>{{ _("Best-of-three series") }}</b> <span class="muted small">{{ _("(Games = series, up to {n})", n=LIMITS.playout_series) }}</span></label></p>
+      <p class="small"><label><input type="checkbox" name="raw" value="1"> {{ _("Both sides play their <b>raw policy</b> (no search: much faster)")|safe }}</label></p>
       
     </div>
-    <p class="manual-only"><label><input type="checkbox" name="full" value="1" checked> <b>Whole games</b> <span class="muted small">(unticked: turn 1 only)</span></label></p>
-    <button class="btn" type="submit">Play it out</button>
+    <p class="manual-only"><label><input type="checkbox" name="full" value="1" checked> <b>{{ _("Whole games") }}</b> <span class="muted small">{{ _("(unticked: turn 1 only)") }}</span></label></p>
+    <button class="btn" type="submit">{{ _("Play it out") }}</button>
   </form>
 </div>
 {% include "_history.html" %}
 <script>
+// (the script's words in the app's language; the pickers show the API's labels - names in that language - and send the English)
+const L = {lead: {{ _("lead {n}")|tojson }}, theirLead: {{ _("their lead {n}")|tojson }}, ally: {{ _("ally")|tojson }},
+  allyTag: {{ _("(ally)")|tojson }}, left: {{ _("their left")|tojson }}, right: {{ _("their right")|tojson }},
+  botDecides: {{ _("the bot decides")|tojson }}, setByYou: {{ _("set by you")|tojson }}, switchTo: {{ _("switch ->")|tojson }},
+  inSlot: {{ _("{mon} in slot {n}")|tojson }}, turn1: {{ _("Turn 1 for team {side}:")|tojson }},
+  four: {{ _("Team {side}: pick four different Pokémon.")|tojson }}, both1: {{ _("Team {side}: set both leads' turn 1, or neither.")|tojson }},
+  both2: {{ _("Team {side}: set both slots' turn 2, or neither.")|tojson }}, need1: {{ _("Team {side}: a forced turn 2 needs a forced turn 1.")|tojson }},
+  unreadable: {{ _("(team not readable yet)")|tojson }}};
+const F = (t, o) => t.replace(/\{(\w+)\}/g, (m, k) => k in o ? o[k] : m);
+const N = m => m.label || m.name, MV = mv => mv.label || mv.name;
 // Turn-1 pickers (forced line): each lead's moves (a target where the move takes one: the other side's two leads, or the ally),
 // or a switch to one of its two in the back; rebuilt when the picks change.
 const MONS = {a: [], b: []};
@@ -69,39 +79,39 @@ function buildForce(side) {
   const mons = MONS[side], foe = MONS[other];
   if (!mons.length) return;
   const esc = t => String(t).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/"/g, "&quot;");
-  const foeName = k => (foe[pick(other, k)] || {}).name || `their lead ${k}`;
+  const foeName = k => N(foe[pick(other, k)] || {}) || F(L.theirLead, {n: k});
   [1, 2].forEach(k => {
     const me = mons[pick(side, k)], ally = mons[pick(side, 3 - k)];
     const sel = document.querySelector(`select[name="${side}f${k}"]`), keep = WANT[sel.name] !== undefined ? WANT[sel.name] : sel.value;
-    document.getElementById(`f${side}l${k}`).textContent = me ? me.name : `lead ${k}`;
-    let opts = '<option value="">the bot decides</option>';
+    document.getElementById(`f${side}l${k}`).textContent = me ? N(me) : F(L.lead, {n: k});
+    let opts = `<option value="">${esc(L.botDecides)}</option>`;
     (me ? me.moves : []).forEach(mv => {
       const t = mv.t;
-      if (t === "adjacentAlly") opts += `<option value="move|${esc(mv.name)}|ally">${esc(mv.name)} -> ${esc(ally ? ally.name : "ally")}</option>`;
+      if (t === "adjacentAlly") opts += `<option value="move|${esc(mv.name)}|ally">${esc(MV(mv))} -> ${esc(ally ? N(ally) : L.ally)}</option>`;
       else if (TARGETED.has(t)) {
-        opts += `<option value="move|${esc(mv.name)}|foe1">${esc(mv.name)} -> ${esc(foeName(1))}</option>`;
-        opts += `<option value="move|${esc(mv.name)}|foe2">${esc(mv.name)} -> ${esc(foeName(2))}</option>`;
-        if (t === "normal" || t === "adjacentAllyOrSelf") opts += `<option value="move|${esc(mv.name)}|ally">${esc(mv.name)} -> ${esc(ally ? ally.name : "ally")} (ally)</option>`;
-      } else opts += `<option value="move|${esc(mv.name)}|">${esc(mv.name)}</option>`;
+        opts += `<option value="move|${esc(mv.name)}|foe1">${esc(MV(mv))} -> ${esc(foeName(1))}</option>`;
+        opts += `<option value="move|${esc(mv.name)}|foe2">${esc(MV(mv))} -> ${esc(foeName(2))}</option>`;
+        if (t === "normal" || t === "adjacentAllyOrSelf") opts += `<option value="move|${esc(mv.name)}|ally">${esc(MV(mv))} -> ${esc(ally ? N(ally) : L.ally)} ${esc(L.allyTag)}</option>`;
+      } else opts += `<option value="move|${esc(mv.name)}|">${esc(MV(mv))}</option>`;
     });
-    [3, 4].forEach(b => { const m = mons[pick(side, b)]; if (m) opts += `<option value="switch|${pick(side, b)}">switch -> ${esc(m.name)}</option>`; });
+    [3, 4].forEach(b => { const m = mons[pick(side, b)]; if (m) opts += `<option value="switch|${pick(side, b)}">${esc(L.switchTo)} ${esc(N(m))}</option>`; });
     sel.innerHTML = opts;
     // Turn 2, this slot: any of the four brought mons' moves (labelled by mon), or a switch between two of them.
     const sel2 = document.querySelector(`select[name="${side}2f${k}"]`), keep2 = WANT[sel2.name] !== undefined ? WANT[sel2.name] : sel2.value;
-    let o2 = '<option value="">the bot decides</option>';
+    let o2 = `<option value="">${esc(L.botDecides)}</option>`;
     const four = [1, 2, 3, 4].map(b => pick(side, b));
     four.forEach(i => {
       const m = mons[i]; if (!m) return;
-      o2 += `<optgroup label="${esc(m.name)} in slot ${k}">`;
+      o2 += `<optgroup label="${esc(F(L.inSlot, {mon: N(m), n: k}))}">`;
       m.moves.forEach(mv => {
         const t = mv.t, v = `move|${i}|${esc(mv.name)}`;
-        if (t === "adjacentAlly") o2 += `<option value="${v}|ally">${esc(m.name)}: ${esc(mv.name)} -> ally</option>`;
+        if (t === "adjacentAlly") o2 += `<option value="${v}|ally">${esc(N(m))}: ${esc(MV(mv))} -> ${esc(L.ally)}</option>`;
         else if (TARGETED.has(t)) {
-          o2 += `<option value="${v}|foe1">${esc(m.name)}: ${esc(mv.name)} -> their left</option><option value="${v}|foe2">${esc(m.name)}: ${esc(mv.name)} -> their right</option>`;
-          if (t === "normal" || t === "adjacentAllyOrSelf") o2 += `<option value="${v}|ally">${esc(m.name)}: ${esc(mv.name)} -> ally</option>`;
-        } else o2 += `<option value="${v}|">${esc(m.name)}: ${esc(mv.name)}</option>`;
+          o2 += `<option value="${v}|foe1">${esc(N(m))}: ${esc(MV(mv))} -> ${esc(L.left)}</option><option value="${v}|foe2">${esc(N(m))}: ${esc(MV(mv))} -> ${esc(L.right)}</option>`;
+          if (t === "normal" || t === "adjacentAllyOrSelf") o2 += `<option value="${v}|ally">${esc(N(m))}: ${esc(MV(mv))} -> ${esc(L.ally)}</option>`;
+        } else o2 += `<option value="${v}|">${esc(N(m))}: ${esc(MV(mv))}</option>`;
       });
-      four.filter(j => j !== i).forEach(j => { if (mons[j]) o2 += `<option value="switch|${i}|${j}">${esc(m.name)}: switch -> ${esc(mons[j].name)}</option>`; });
+      four.filter(j => j !== i).forEach(j => { if (mons[j]) o2 += `<option value="switch|${i}|${j}">${esc(N(m))}: ${esc(L.switchTo)} ${esc(N(mons[j]))}</option>`; });
       o2 += "</optgroup>";
     });
     sel2.innerHTML = o2;
@@ -116,7 +126,7 @@ function buildForce(side) {
   const det = document.getElementById(`f${side}`);
   const set = [1, 2].some(k => document.querySelector(`select[name="${side}f${k}"]`).value);
   if (set) det.open = true;
-  det.querySelector("summary").firstChild.textContent = `Turn 1 for team ${side.toUpperCase()}: ${set ? "set by you " : "the bot decides "}`;
+  det.querySelector("summary").firstChild.textContent = F(L.turn1, {side: side.toUpperCase()}) + (set ? L.setByYou : L.botDecides) + " ";
 }
 let WANT = {};
 // The pickers list each team's six (sheet order, read by the server: pastes and library ids alike) once a team is in; leads default
@@ -141,7 +151,7 @@ let WANT = {};
     sels.forEach((sel, k) => {
       const keep = want[sel.name] !== undefined && want[sel.name] !== "" ? want[sel.name] : (sel.value || String(k));
       sel.innerHTML = names.length ? names.map((m, i) => `<option value="${i}">${m.replace(/</g, "&lt;")}</option>`).join("")
-                                   : '<option value="">(team not readable yet)</option>';
+                                   : `<option value="">${L.unreadable}</option>`;
       if (names.length) sel.value = Number(keep) < names.length ? keep : String(k);
       delete want[sel.name];
     });
@@ -157,7 +167,7 @@ let WANT = {};
   document.querySelectorAll('select[name$="f1"],select[name$="f2"]').forEach(sel => sel.addEventListener("change", () => {
     const side = sel.name[0], det = document.getElementById(`f${side}`);
     const set = [1, 2].some(k => document.querySelector(`select[name="${side}f${k}"]`).value);
-    det.querySelector("summary").firstChild.textContent = `Turn 1 for team ${side.toUpperCase()}: ${set ? "set by you " : "the bot decides "}`;
+    det.querySelector("summary").firstChild.textContent = F(L.turn1, {side: side.toUpperCase()}) + (set ? L.setByYou : L.botDecides) + " ";
   }));
   // Who picks the four: "bots" hides the bring / turn-1 pickers (and their `required`) and shows the series options.
   const bringSels = [..."ab"].flatMap(s => [1, 2, 3, 4].map(k => document.querySelector(`select[name="${s}${k}"]`)));
@@ -177,12 +187,12 @@ let WANT = {};
     if (document.querySelector('input[name="pick"]:checked').value === "bots") return;
     for (const side of ["a", "b"]) {
       const v = [1, 2, 3, 4].map(k => document.querySelector(`select[name="${side}${k}"]`).value);
-      if (new Set(v).size !== 4) { ev.preventDefault(); alert(`Team ${side.toUpperCase()}: pick four different Pokemon.`); return; }
+      if (new Set(v).size !== 4) { ev.preventDefault(); alert(F(L.four, {side: side.toUpperCase()})); return; }
       const f = [1, 2].map(k => document.querySelector(`select[name="${side}f${k}"]`).value);
-      if (f.filter(Boolean).length === 1) { ev.preventDefault(); alert(`Team ${side.toUpperCase()}: set both leads' turn 1, or neither.`); return; }
+      if (f.filter(Boolean).length === 1) { ev.preventDefault(); alert(F(L.both1, {side: side.toUpperCase()})); return; }
       const f2 = [1, 2].map(k => document.querySelector(`select[name="${side}2f${k}"]`).value);
-      if (f2.filter(Boolean).length === 1) { ev.preventDefault(); alert(`Team ${side.toUpperCase()}: set both slots' turn 2, or neither.`); return; }
-      if (f2.some(Boolean) && !f.some(Boolean)) { ev.preventDefault(); alert(`Team ${side.toUpperCase()}: a forced turn 2 needs a forced turn 1.`); return; }
+      if (f2.filter(Boolean).length === 1) { ev.preventDefault(); alert(F(L.both2, {side: side.toUpperCase()})); return; }
+      if (f2.some(Boolean) && !f.some(Boolean)) { ev.preventDefault(); alert(F(L.need1, {side: side.toUpperCase()})); return; }
     }
   });
 })();

@@ -15,6 +15,7 @@ import time
 from collections import Counter, defaultdict
 from pathlib import Path
 
+from vgc_trainer import i18n
 from vgc_trainer.showdown.tracker import to_id
 from vgc_trainer.showdown.sheets import base_format
 
@@ -384,7 +385,7 @@ def side_stats(games: list[tuple[list[str], str, bool | None]]) -> list[dict]:
             tot = sum(a["targets"][mv].values()) or 1
             moves.append({"move": mv, "share": round(n / max(dec, 1), 3), "games": round(a["used"][mv] / max(nb, 1), 3),
                           "targets": [{"to": t, "share": round(c / tot, 3)} for t, c in a["targets"][mv].most_common() if c / tot >= 0.05]})
-        rows.append({"mon": sp, "sub": f"on the sheet in {a['sheet']} of {len(games)} games" if a["sheet"] < len(games) else None,
+        rows.append({"mon": sp, "sub": i18n.t("on the sheet in {k} of {n} games", k=a['sheet'], n=len(games)) if a["sheet"] < len(games) else None,
                      "brought": round(nb / max(a["sheet"], 1), 3), "led": round(a["led"] / max(a["sheet"], 1), 3),
                      "fainted": round(a["fainted"] / nb, 3) if nb else None, "mega": round(a["mega"] / nb, 3) if nb and a["mega"] else None,
                      "score_when_brought": round(a["won"] / nb, 3) if nb else None, "decisions": dec, "moves": moves,

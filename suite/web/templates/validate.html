@@ -1,26 +1,23 @@
 {% extends "base.html" %}
-{% block title %}Team Deep Dive · openVGCengine{% endblock %}
+{% block title %}{{ _("Team Deep Dive") }} · openVGCengine{% endblock %}
 {% block main %}
 <div class="card">
-  <h1>Team Deep Dive</h1>
-  <p>Your team against a field of teams: overall score, every matchup, which four to bring against each, and how the bot plays your team.</p>
+  <h1>{{ _("Team Deep Dive") }}</h1>
+  <p>{{ _("Your team against a field of teams: overall score, every matchup, which four to bring against each, and how the bot plays your team.") }}</p>
   <form method="post" action="/validate">
     {% include "_format_pick.html" %}
-    <label for="team">Your team {% include "_team_help.html" %}</label>
+    <label for="team">{{ _("Your team") }} {% include "_team_help.html" %}</label>
     <textarea id="team" name="team" required data-team></textarea>
-    <details style="margin: 8px 0"><summary class="small"><b>Compare with a reference team</b> (optional)</summary>
-      <p class="small muted">Played in the same games as yours, so the difference is steadier than either score. Doubles the run time.</p>
+    <details style="margin: 8px 0"><summary class="small">{{ _("<b>Compare with a reference team</b> (optional)")|safe }}</summary>
+      <p class="small muted">{{ _("Played in the same games as yours, so the difference is steadier than either score. Doubles the run time.") }}</p>
       <textarea id="reference" name="reference" rows="5" data-team></textarea>
     </details>
     {% include "_dd_field.html" %}
-    <button class="btn" type="submit">Run the Deep Dive</button>
-    <details class="howto small"><summary>How this works</summary>
-      <p>The bot pilots both teams, thinking every turn through the way it plays a real game (<b>Search Mode</b>), so this measures how well
-        <em>the bot</em> plays your team - one that needs a human touch may rate lower than it deserves. Each team's score is good to about
-        ±{{ (98 / 48 ** 0.5)|round|int }} points at 48 games.</p>
-      <p><b>Deep Mode</b> plays your likeliest fours against theirs, plus the fours that answer them, all with search, and scores each matchup with both sides bringing well: the page then says what to bring. It takes hours for a full field, so <b>search this matchup</b> does the same for one team of a Search Mode run.</p>
-      <p><b>Fast mode</b> plays {{ FAST_FACTOR }}× the games on instinct, without search: good for ranking teams, but a single
-        matchup can be ~20 points off the searched bot.</p></details>
+    <button class="btn" type="submit">{{ _("Run the Deep Dive") }}</button>
+    <details class="howto small"><summary>{{ _("How this works") }}</summary>
+      <p>{{ _("The bot pilots both teams, thinking every turn through the way it plays a real game (<b>Search Mode</b>), so this measures how well <em>the bot</em> plays your team - one that needs a human touch may rate lower than it deserves. Each team's score is good to about ±{n} points at 48 games.", n=(98 / 48 ** 0.5)|round|int)|safe }}</p>
+      <p>{{ _("<b>Deep Mode</b> plays your likeliest fours against theirs, plus the fours that answer them, all with search, and scores each matchup with both sides bringing well: the page then says what to bring. A full field is a long run, so <b>search this matchup</b> does the same for one team of a Search Mode run.")|safe }}</p>
+      <p>{{ _("<b>Fast mode</b> plays {n}× the games on instinct, without search: good for ranking teams, but a single matchup can be ~20 points off the searched bot.", n=FAST_FACTOR)|safe }}</p></details>
   </form>
 </div>
 {% include "_history.html" %}

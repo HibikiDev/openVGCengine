@@ -43,6 +43,12 @@ cp "$HERE/position-plugin.js" "$DEST/dist/server/chat-plugins/openvgc-position.j
 cp "$HERE/position-plugin.js" "$DEST/dist/sim/openvgc-position.js"
 mkdir -p "$DEST/logs/positions"
 
+cp "$HERE/coach-plugin.js" "$DEST/dist/server/chat-plugins/openvgc-coach.js"
+
+
+cp "$HERE/openvgc-i18n.js" "$DEST/dist/server/openvgc-i18n.js"
+cp "$HERE/lang-plugin.js" "$DEST/dist/server/chat-plugins/openvgc-lang.js"
+
 node -e "const c = require(process.argv[1]); if (!c.logchallenges || !c.grouplist.find(g => g.symbol === ' ').importinputlog) process.exit(3)" "$C" \
   || { echo "make_server.sh: $C doesn't load, or lacks logchallenges / importinputlog"; exit 1; }
 node -e "const {Dex} = require(require('path').resolve(process.argv[1], 'dist/sim')); const f = Dex.formats.all(); console.log(f.length + ' formats, all buddy: ' + f.every(x => x.id.endsWith('buddy')) + ' - ' + f.map(x => x.id).join(' '))" "$DEST"

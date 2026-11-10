@@ -1,36 +1,34 @@
 
 {% from "_team_export.html" import team_export %}
 <div class="card">
-  <h1>{{ r.team|join(' · ') }} <span class="muted">vs</span> {{ r.field }} {% if r.format_name %}<span class="tag">{{ r.format_name }}</span>{% endif %}</h1>
-  {% if team_paste is defined and job is defined and job %}{{ team_export(team_paste(job.params.team), "show your team") }}{% endif %}
-  <p class="muted small">{% if r.model is defined %}model {{ r.model }} · {% endif %}{{ r.series_each }} best-of-three series a team · the bot on both sides{% if not r.deep %}, no search{% endif %} · each side
-    picks its own four, lead rule v3 between games · <a href="/fieldplay?from={{ job.id }}">play again</a></p>
-  {% if r.g1 is defined and r.g1 != 'own' %}<p class="small"><span class="tag mx-alt" title="the Deep Dive's bring advice is raw self-play unless its cells were searched">quick-read bring</span> <b>Game 1 of every series: the <a href="/job/{{ r.sheet }}#brings">Deep Dive</a>'s
-    {{ r.g1 }} bring</b> for that opponent (shown under its name); games 2 and 3 by the bot's lead rule.</p>{% endif %}
+  <h1>{{ r.team|names(' · ') }} <span class="muted">{{ _("vs") }}</span> {{ r.field|field_label }} {% if r.format_name %}<span class="tag">{{ r.format_name }}</span>{% endif %}</h1>
+  {% if team_paste is defined and job is defined and job %}{{ team_export(team_paste(job.params.team), _("show your team")) }}{% endif %}
+  <p class="muted small">{% if r.model is defined %}{{ _("model {model}", model=r.model) }} · {% endif %}{{ _("{n} best-of-three series a team", n=r.series_each) }} · {{ _("the bot on both sides") if r.deep else _("the bot on both sides, no search") }} · {{ _("each side picks its own four, lead rule v3 between games") }} · <a href="/fieldplay?from={{ job.id }}">{{ _("play again") }}</a></p>
+  {% if r.g1 is defined and r.g1 != 'own' %}<p class="small"><span class="tag mx-alt" title="{{ _('the Deep Dive\'s bring advice is raw self-play unless its cells were searched') }}">{{ _("quick-read bring") }}</span> {{ _("<b>Game 1 of every series: the {deep_dive}'s {kind} bring</b> for that opponent (shown under its name); games 2 and 3 by the bot's lead rule.", deep_dive=('<a href="/job/' ~ r.sheet ~ '#brings">' ~ _("Deep Dive") ~ '</a>')|safe, kind=_(r.g1)) }}</p>{% endif %}
   <div class="stats">
-    <div><div class="big">{{ r.series_won }}–{{ r.series_played - r.series_won }}</div><div class="small muted">series won – lost</div></div>
+    <div><div class="big">{{ r.series_won }}–{{ r.series_played - r.series_won }}</div><div class="small muted">{{ _("series won – lost") }}</div></div>
     {% set gw = r.examples|selectattr('lines', 'defined')|selectattr('won')|list|length %}{% set gn = r.examples|selectattr('lines', 'defined')|list|length %}
-    <div><div class="big" style="font-size:2rem">{{ gw }}–{{ gn - gw }}</div><div class="small muted">games</div></div>
+    <div><div class="big" style="font-size:2rem">{{ gw }}–{{ gn - gw }}</div><div class="small muted">{{ _("games") }}</div></div>
   </div>
-  {% for s in r.skipped %}<div class="note">Left out: {{ s }}</div>{% endfor %}
-  <p class="small muted">A handful of series per team shows how the matchups play, not how often they're won - for that, the Team Deep Dive.</p>
+  {% for s in r.skipped %}<div class="note">{{ _("Left out:") }} {{ s }}</div>{% endfor %}
+  <p class="small muted">{{ _("A handful of series per team shows how the matchups play, not how often they're won - for that, the Team Deep Dive.") }}</p>
 </div>
 <div class="card flat">
   <div class="scroll"><table class="tbl small">
-    <tr><th>their team</th><th class="num">series</th><th>games <span class="muted" style="font-weight:400">(click one to replay it)</span></th></tr>
+    <tr><th>{{ _("their team") }}</th><th class="num">{{ _("series") }}</th><th>{{ _("games") }} <span class="muted" style="font-weight:400">{{ _("(click one to replay it)") }}</span></th></tr>
     {% for t in r.teams|sort(attribute='won') %}
-    <tr><td><b>{{ t.short }}</b><br><span class="six-head">{{ t.species[:3]|join(' ') }}<br>{{ t.species[3:]|join(' ') }}</span>
-      {% if t.g1 is defined and t.g1 %}<div class="small muted">G1: {{ t.g1.lead|join(' + ') }} <span>/</span> {{ t.g1.back|join(' + ') }}</div>{% endif %}</td>
+    <tr><td><b>{{ t.short }}</b><br><span class="six-head">{{ t.species[:3]|names(' ') }}<br>{{ t.species[3:]|names(' ') }}</span>
+      {% if t.g1 is defined and t.g1 %}<div class="small muted">G1: {{ t.g1.lead|names(' + ') }} <span>/</span> {{ t.g1.back|names(' + ') }}</div>{% endif %}</td>
       <td class="num"><b>{{ t.won }}–{{ t.series|length - t.won }}</b></td>
       <td>{% for s in t.series %}{% set sn = s.n %}<div class="series-line"><span class="chip {{ 'won' if s.a > s.b else 'lost' }}">{{ s.a }}–{{ s.b }}</span>
         {% for k in range(t.first, t.first + t.count) %}{% set e = r.examples[k] %}{% if e.lines is defined and e.series == sn %}
-          <a class="gm" href="/job/{{ job.id }}/game/{{ k }}" title="game {{ e.game }}: {{ e.turns }} turns">
-            <b class="{{ 'hirec' if e.won else 'lowrec' }}">G{{ e.game }} {{ 'W' if e.won else 'L' }}</b>
-            <span class="small">{{ e.leads.a|join(' + ') }} <span class="muted">vs</span> {{ e.leads.b|join(' + ') }}</span></a>
+          <a class="gm" href="/job/{{ job.id }}/game/{{ k }}" title="{{ _('game {n}: {turns} turns', n=e.game, turns=e.turns) }}">
+            <b class="{{ 'hirec' if e.won else 'lowrec' }}">G{{ e.game }} {{ _('W') if e.won else _('L') }}</b>
+            <span class="small">{{ e.leads.a|names(' + ') }} <span class="muted">{{ _("vs") }}</span> {{ e.leads.b|names(' + ') }}</span></a>
         {% endif %}{% endfor %}</div>{% endfor %}</td></tr>
     {% endfor %}
   </table></div>
-  <p class="small muted">Each game: your lead vs theirs. The game page has the narration, HP by turn and the bot's view every turn - from either side.</p>
+  <p class="small muted">{{ _("Each game: your lead vs theirs. The game page has the narration, HP by turn and the bot's view every turn - from either side.") }}</p>
 </div>
 <style>.series-line { display: flex; flex-wrap: wrap; gap: 6px 12px; align-items: center; margin: 3px 0; }
   .series-line .gm { text-decoration: none; color: inherit; border: 1px solid var(--sand); border-radius: 10px; padding: 2px 8px; }

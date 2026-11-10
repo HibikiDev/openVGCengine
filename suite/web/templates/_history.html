@@ -2,19 +2,19 @@
 
 {% if history or fav_only %}
 <div class="card flat">
-  <h3>{{ 'Your starred runs' if fav_only else ('Every run' if every else 'Recent runs') }} <span class="small" style="font-weight: 400">·
-    {% if fav_only or every %}<a href="?">recent runs</a>{% endif %}{% if not fav_only %}{{ ' · ' if every }}<a href="?fav=1">★ starred only</a>{% endif %}{% if not every %} · <a href="?all=1">show all</a>{% endif %}</span></h3>
-  {% if not history %}<p class="small muted">No starred runs of this tool yet - star one with ☆ on its result page.</p>{% else %}
+  <h3>{{ _('Your starred runs') if fav_only else (_('Every run') if every else _('Recent runs')) }} <span class="small" style="font-weight: 400">·
+    {% if fav_only or every %}<a href="?">{{ _("recent runs") }}</a>{% endif %}{% if not fav_only %}{{ ' · ' if every }}<a href="?fav=1">★ {{ _("starred only") }}</a>{% endif %}{% if not every %} · <a href="?all=1">{{ _("show all") }}</a>{% endif %}</span></h3>
+  {% if not history %}<p class="small muted">{{ _("No starred runs of this tool yet - star one with ☆ on its result page.") }}</p>{% else %}
   <div class="scroll"><table class="tbl">
-    <tr><th>when</th><th>teams</th><th></th></tr>
+    <tr><th>{{ _("when") }}</th><th>{{ _("teams") }}</th><th></th></tr>
     {% for h in history %}
     <tr>
-      <td class="small" style="white-space: nowrap">{% if h.fav %}<span title="starred" style="color: var(--sun, #e0a800)">★</span> {% endif %}{{ h.created|ago if h.created else '' }}{% if h.status not in ('done',) %}<br><span class="muted">{{ h.status }}</span>{% endif %}</td>
-      <td>{% if h.fav and h.fav.note %}<div><b>{{ h.fav.note }}</b></div>{% endif %}{% for t in h.teams %}<div class="small"><b>{{ t.label }}</b>{% if t.id %} <span class="muted">{{ t.id }}</span>{% endif %}:
-          {% for s in t.species %}{{ s }}{{ ' · ' if not loop.last }}{% else %}<span class="muted">(no team)</span>{% endfor %}</div>{% endfor %}
+      <td class="small" style="white-space: nowrap">{% if h.fav %}<span title="{{ _('starred') }}" style="color: var(--sun, #e0a800)">★</span> {% endif %}{{ h.created|ago if h.created else '' }}{% if h.status not in ('done',) %}<br><span class="muted">{{ _(h.status) }}</span>{% endif %}</td>
+      <td>{% if h.fav and h.fav.note %}<div><b>{{ h.fav.note }}</b></div>{% endif %}{% for t in h.teams %}<div class="small"><b>{{ _(t.label) }}</b>{% if t.id %} <span class="muted">{{ t.id }}</span>{% endif %}:
+          {% for s in t.species %}{{ s | dex('species') }}{{ ' · ' if not loop.last }}{% else %}<span class="muted">({{ _("no team") }})</span>{% endfor %}</div>{% endfor %}
         {% if h.summary %}<div class="small muted">{{ h.summary }}</div>{% endif %}
-        {% if h.params.replay %}<div class="small muted" style="word-break: break-all">{{ h.params.replay[:90] }}{% if h.params.turn %} · turn {{ h.params.turn }}{% endif %}</div>{% endif %}</td>
-      <td class="small" style="white-space: nowrap">{% if h.status == 'done' %}<a href="/job/{{ h.id }}">result</a> · {% elif h.status in ('queued', 'running') %}<a href="/job/{{ h.id }}"><b>open</b></a> <span class="muted">(progress, cancel)</span> · {% endif %}<a href="?from={{ h.id }}">use again</a>{% if can_swap %} · <a href="?from={{ h.id }}&amp;swap=1">swap sides</a>{% endif %}</td>
+        {% if h.params.replay %}<div class="small muted" style="word-break: break-all">{{ h.params.replay|replay_label }}{% if h.params.turn %} · {{ _("turn {turn}", turn=h.params.turn) }}{% endif %}</div>{% endif %}</td>
+      <td class="small" style="white-space: nowrap">{% if h.status == 'done' %}<a href="/job/{{ h.id }}">{{ _("result") }}</a> · {% elif h.status in ('queued', 'running') %}<a href="/job/{{ h.id }}"><b>{{ _("open") }}</b></a> <span class="muted">({{ _("progress, cancel") }})</span> · {% endif %}<a href="?from={{ h.id }}">{{ _("use again") }}</a>{% if can_swap %} · <a href="?from={{ h.id }}&amp;swap=1">{{ _("swap sides") }}</a>{% endif %}</td>
     </tr>
     {% endfor %}
   </table></div>{% endif %}

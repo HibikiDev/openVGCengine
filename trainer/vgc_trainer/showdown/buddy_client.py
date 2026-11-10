@@ -24,6 +24,7 @@ from .battle import USER_AGENT, VERSION, BaseClient
 from .sheets import BUDDY_SUFFIX
 from .teams import pack
 from .tracker import to_id
+from ..formats import CURRENT
 
 log = logging.getLogger("showdown")
 
@@ -37,7 +38,7 @@ class BuddyClient(BaseClient):
 
 
 
-    def __init__(self, port: int, username: str, agent, team: list[dict], fmt: str = "gen9championsvgc2026regmcbuddy",
+    def __init__(self, port: int, username: str, agent, team: list[dict], fmt: str = CURRENT + "buddy",
                  formats: list[str] | None = None, allow: set[str] | None = None):
         port = int(port)
         if not 0 < port < 65536:

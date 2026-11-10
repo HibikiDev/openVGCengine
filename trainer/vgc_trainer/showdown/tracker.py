@@ -13,6 +13,8 @@ from dataclasses import dataclass, field
 import numpy as np
 import vgc_engine as ve
 
+from ..formats import engine_format
+
 
 F_WEATHER, F_WEATHER_TURNS, F_TERRAIN, F_TERRAIN_TURNS, F_TR, F_GRAVITY, F_TURN, F_MY_SIDE, F_FOE_SIDE, F_DECISION = 0, 5, 6, 11, 12, 13, 14, 15, 21, 27
 
@@ -25,7 +27,8 @@ F_MY_TERA_USED, F_FOE_TERA_USED = 40, 41
 
 F_MY_DYNAMAX_USED, F_FOE_DYNAMAX_USED, F_MY_GMAX_RESIDUAL, F_FOE_GMAX_RESIDUAL = 42, 43, 44, 45
 
-FORMATS = {None: (0, True), "gen9championsvgc2026regmc": (0, True), "gen9championsvgc2026regmcbo3": (0, True), "gen5vgc2013": (1, False),
+
+FORMATS = {None: (0, True), "gen5vgc2013": (1, False),
            "gen6vgc2014": (2, False), "gen6vgc2015": (2, False), "gen6vgc2016": (2, False),
            "gen7vgc2017": (3, False), "gen7vgc2018": (3, False), "gen7vgc2019": (3, False),
            "gen9vgc2024regg": (4, True), "gen9vgc2025regi": (4, True), "gen9vgc2023regc": (5, True), "gen9vgc2023regd": (5, True),
@@ -283,6 +286,7 @@ class Tracker:
 
 
         self.me = me
+        fmt = engine_format(fmt)
         if fmt not in FORMATS:
             raise ValueError(f"no tracker support for format {fmt!r}")
         self.fmt = None if FORMATS[fmt][0] == 0 else fmt
@@ -603,7 +607,9 @@ class Tracker:
             return
         if kind == "replace":
 
-            side, idx, m = self._mon(a[0], real=False)
+
+
+            side, idx, m = self._mon(a[0], real=False, details=a[1] if len(a) > 1 else None)
             slot = self._slot(a[0])
             shown = next((o for o in self.mons[side] if o.slot == slot and o is not m), None)
             self._take_over(m, shown, slot)

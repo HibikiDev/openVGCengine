@@ -178,6 +178,15 @@ class Evidence:
 
         self.cur_types: dict[tuple, list[str]] = {}
 
+
+
+        self.hp: dict[tuple, float] = {}
+        self.cause: tuple | None = None
+        self.sitrus: set = set()
+        self.lo: list | None = None
+        self.timed: dict = {}
+        self.healblock: set = set()
+
     def know(self, side: str, items: list[str], abilities: list[str], speeds: list[int] | None = None) -> None:
 
 
@@ -475,6 +484,213 @@ class Evidence:
             self._note(key, "not_item", x)
         m.last_used = mid
 
+
+    def _works(self, m: MonFacts) -> bool:
+
+        legal = dex()["abilities"][self.mod].get(m.species) or []
+        return not (m.item_gone or m.item_swapped or self.magic_room or m.embargo or ("Klutz" in legal and m.ability in (None, "klutz")))
+
+    def _might_have(self, m: MonFacts, abilities: tuple) -> bool:
+
+        legal = dex()["abilities"][self.mod].get(m.species) or []
+
+
+        return any(x in legal and (m.ability is None or to_id(x).startswith(m.ability) or m.ability_swapped) for x in abilities)
+
+    def _rule_out(self, key: tuple | None, item: str) -> None:
+        m = self._mon(key)
+        if m and m.item is None and self._works(m) and item not in m.not_items:
+            m.not_items.add(item)
+            self._note(key, "not_item", item)
+
+    def _foe_cause(self, key: tuple | None) -> tuple | None:
+
+        c = self.cause
+        if key is None or c is None:
+            return None
+        if c[0] == "move" and c[1] is not None and c[1][0] != key[0]:
+            return c
+        if c[0] == "intimidate" and c[1] != key[0]:
+            return c
+        return None
+
+    def _damaging(self, mid: str) -> bool:
+        mv = dex()["moves"][self.mod].get(mid)
+        return bool(mv) and mv["cat"] != "Status"
+
+    def _resolve(self, kind: str) -> None:
+
+
+
+        if kind in ("move", "turn"):
+            self._resolve_sitrus()
+        self._resolve_lo()
+
+    def _resolve_sitrus(self) -> None:
+        for k in self.sitrus:
+            m = self.mons[k[0]][k[1]] if k[1] < len(self.mons[k[0]]) else None
+            if m is None or not 0 < self.hp.get(k, 0) or k in self.healblock:
+                continue
+            foe = "p2" if k[0] == "p1" else "p1"
+            unnerve = any(self._might_have(self.mons[foe][i], ("Unnerve", "As One (Glastrier)", "As One (Spectrier)"))
+                          for s, i in self.active.items() if s[:2] == foe and i is not None and i < len(self.mons[foe]))
+            if not unnerve:
+                self._rule_out((k[0], k[1], None), "sitrusberry")
+        self.sitrus = set()
+
+    def _resolve_lo(self) -> None:
+        if self.lo is not None:
+            user, mid, hit = self.lo
+            m = self._mon(user)
+            if (hit and m and self.hp.get(user[:2], 0) > 0 and mid not in ("dragontail", "circlethrow")
+                    and not self._might_have(m, ("Magic Guard", "Sheer Force"))):
+                self._rule_out(user, "lifeorb")
+            self.lo = None
+
+    @staticmethod
+    def _pct(hp: str) -> float | None:
+
+        import re
+        s = hp.split(" ")[0]
+        if s == "0":
+            return 0.0
+        m = re.match(r"(\d+)/(\d+)", s)
+        if not m:
+            return None
+        cur, mx = float(m.group(1)), float(m.group(2))
+        return cur / mx if mx else None
+
+    def _rules(self, kind: str, a: list, frm: str | None, of: tuple | None) -> None:
+
+
+
+
+
+
+
+        if kind == "replace" and a:
+
+
+            shown = self.active.get(a[0][:3])
+            if shown is not None:
+                self.sitrus.discard((a[0][:2], shown))
+                self.hp.pop((a[0][:2], shown), None)
+                if self.lo is not None and self.lo[0] and self.lo[0][:2] == (a[0][:2], shown):
+                    self.lo = None
+        elif kind in ("move", "turn", "upkeep", "switch", "drag"):
+            self._resolve(kind)
+        if kind == "upkeep":
+            for t in self.timed.values():
+                t["ups"] += 1
+                if t["ups"] == 5 and not t["done"]:
+                    m = self._mon(t["setter"])
+                    if m and self._works(m):
+                        self._set_item(t["setter"], t["item"])
+                    t["done"] = True
+        if kind == "move" and len(a) >= 2 and not any(x.startswith("[from]") for x in a[2:]):
+            key, mid = self._key(a[0]), move_id(a[1])
+            self.cause = ("move", key, mid)
+            self.lo = [key, mid, False] if key and self._damaging(mid) else None
+            return
+        if kind == "-ability" and len(a) >= 2:
+            self.cause = ("intimidate", a[0][:2]) if a[1] == "Intimidate" and frm is None else None
+            return
+        if kind in ("-damage", "-heal", "-sethp") and len(a) >= 2:
+            key = self._key(a[0])
+            if key is None:
+                return
+            k, before, after = key[:2], self.hp.get(key[:2]), self._pct(a[1])
+            if after is not None:
+                self.hp[k] = after
+            if kind != "-damage" or after is None:
+                return
+            if frm in ("Stealth Rock", "Spikes"):
+                self._rule_out(key, "heavydutyboots")
+            elif frm in ("Sandstorm", "hail", "Hail"):
+                self._rule_out(key, "safetygoggles")
+            elif frm is None and self._foe_cause(key) and self._foe_cause(key)[0] == "move":
+                if before == 1.0 and after == 0.0:
+                    self._rule_out(key, "focussash")
+            if frm is None and self.lo is not None and self.cause and self.cause[0] == "move" and self.cause[1] == self.lo[0] \
+                    and key[:2] != self.lo[0][:2]:
+                self.lo[2] = True
+            if 0 < after <= 0.49:
+                self.sitrus.add(k)
+            return
+        if kind == "-status" and len(a) >= 2 and frm is None:
+            key = self._key(a[0])
+            c = self._foe_cause(key)
+            if c and c[0] == "move":
+                if c[2] in ("spore", "sleeppowder", "stunspore", "poisonpowder"):
+                    self._rule_out(key, "safetygoggles")
+                elif self._damaging(c[2]):
+                    self._rule_out(key, "covertcloak")
+            return
+        if kind == "cant" and len(a) >= 2 and a[1] == "flinch":
+            self._rule_out(self._key(a[0]), "covertcloak")
+            self.cause = None
+            return
+        if kind == "-start" and len(a) >= 2:
+            key = self._key(a[0])
+            if a[1].endswith("Heal Block") and key:
+                self.healblock.add(key[:2])
+            elif a[1] == "confusion" and frm is None:
+                c = self._foe_cause(key)
+                if c and c[0] == "move" and self._damaging(c[2]):
+                    self._rule_out(key, "covertcloak")
+            return
+        if kind == "-end" and len(a) >= 2 and a[1].endswith("Heal Block") and self._key(a[0]):
+            self.healblock.discard(self._key(a[0])[:2])
+            return
+        if kind == "-unboost" and len(a) >= 2 and frm is None:
+            key = self._key(a[0])
+            c = self._foe_cause(key)
+            if c:
+                self._rule_out(key, "clearamulet")
+                if c[0] == "move" and self._damaging(c[2]):
+                    self._rule_out(key, "covertcloak")
+            return
+
+        setter = of if frm and frm.startswith("ability: ") else (self.cause[1] if self.cause and self.cause[0] == "move" else None)
+        if kind == "-weather" and a and self.mod != "gen5":
+            rock = {"RainDance": "Damp Rock", "SunnyDay": "Heat Rock", "Sandstorm": "Smooth Rock", "Hail": "Icy Rock",
+                    "Snow": "Icy Rock", "Snowscape": "Icy Rock"}
+            if "[upkeep]" in a:
+                pass
+            elif a[0] == "none":
+                t = self.timed.pop("weather", None)
+                if t and t["ups"] == 4 and not t["done"]:
+                    self._rule_out(t["setter"], to_id(t["item"]))
+            elif a[0] in rock and setter:
+                self.timed["weather"] = {"setter": setter, "item": rock[a[0]], "ups": 0, "done": False}
+            else:
+                self.timed.pop("weather", None)
+        elif kind == "-fieldstart" and a and a[0].endswith("Terrain") and self.mod != "gen5":
+            self.timed["terrain"] = {"setter": setter, "item": "Terrain Extender", "ups": 0, "done": False} if setter else None
+            if self.timed["terrain"] is None:
+                self.timed.pop("terrain")
+        elif kind == "-fieldend" and a and a[0].endswith("Terrain"):
+            t = self.timed.pop("terrain", None)
+            broke = self.cause and self.cause[0] == "move" and self.cause[2] in ("steelroller", "icespinner", "defog")
+            if t and frm is None and not broke and t["ups"] == 4 and not t["done"]:
+                self._rule_out(t["setter"], "terrainextender")
+        elif kind == "-sidestart" and len(a) >= 2 and a[1].removeprefix("move: ") in ("Reflect", "Light Screen", "Aurora Veil"):
+            if setter and setter[0] == a[0][:2]:
+                self.timed[("screen", a[0][:2], a[1].removeprefix("move: "))] = {"setter": setter, "item": "Light Clay", "ups": 0,
+                                                                                    "done": False}
+        elif kind == "-sideend" and len(a) >= 2 and a[1].removeprefix("move: ") in ("Reflect", "Light Screen", "Aurora Veil"):
+            t = self.timed.pop(("screen", a[0][:2], a[1].removeprefix("move: ")), None)
+
+
+            broke = self.cause and self.cause[0] == "move" and self.cause[2] in ("brickbreak", "psychicfangs", "ragingbull", "defog")
+            if t and frm is None and not broke and t["ups"] == 4 and not t["done"]:
+                self._rule_out(t["setter"], "lightclay")
+        if kind == "-enditem" and len(a) >= 2 and a[1] == "Red Card":
+            self.lo = None
+        if kind in ("switch", "drag", "replace", "turn", "upkeep", "-activate", "-item", "-enditem", "-sidestart", "-sideend",
+                    "-fieldstart", "-fieldend", "-weather", "-mega", "detailschange", "-terastallize", "-formechange", "faint"):
+            self.cause = None
+
     def _can_have(self, key: tuple | None, ability: str) -> bool:
         m = self._mon(key)
         legal = dex()["abilities"][self.mod].get(m.species) if m else None
@@ -493,6 +709,7 @@ class Evidence:
         kind, a = p[1], p[2:]
         of = next((self._key(x[5:]) for x in a if x.startswith("[of] ")), None)
         frm = next((x[6:].strip() for x in a if x.startswith("[from]")), None)
+        self._rules(kind, a, frm, of)
         self._speed_state(kind, a)
         if self.hp_undo and kind == "replace" and a and a[0][:3] == self.hp_undo[3] and len(a) >= 2:
 
@@ -553,6 +770,9 @@ class Evidence:
                 self.active[a[0][:3]] = idx
                 self.cur_species[(side, idx)] = species
                 self.journal[a[0][:3]] = []
+                if len(a) >= 3 and self._pct(a[2]) is not None:
+                    self.hp[(side, idx)] = self._pct(a[2])
+                self.healblock.discard((side, idx))
                 passed = old is not None and any(x.endswith("Baton Pass") for x in a[2:])
                 self.spe_stage[(side, idx)] = self.spe_stage.get((side, old)) if passed else 0
             return

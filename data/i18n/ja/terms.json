@@ -1,0 +1,179 @@
+{
+	"_about": "Glossary terms by key (docs/i18n/glossary-ja.md). Translations in ui.json write {t:key}; revising a term here changes every string that uses it. 'reviewed' false until the user signs the glossary row off. \"name\": a tool / tab name, not vocabulary (check_i18n does not ask for its token where the same word is used plainly).",
+	"app": {
+		"en": "openVGCengine",
+		"ja": "openVGCengine",
+		"reviewed": true,
+		"name": true
+	},
+	"team_lab": {
+		"en": "Team Lab",
+		"ja": "チーム研究",
+		"reviewed": false,
+		"name": true
+	},
+	"battle_lab": {
+		"en": "Battle Lab",
+		"ja": "対戦研究",
+		"reviewed": false,
+		"name": true
+	},
+	"replays": {
+		"en": "Replays",
+		"ja": "リプレイ",
+		"reviewed": false,
+		"name": true
+	},
+	"buddy": {
+		"en": "Buddy",
+		"ja": "練習相手",
+		"reviewed": false,
+		"name": true
+	},
+	"buckets": {
+		"en": "Buckets",
+		"ja": "仮想敵リスト",
+		"reviewed": false,
+		"name": true
+	},
+	"analyzer": {
+		"en": "Replay Analyzer",
+		"ja": "リプレイ分析",
+		"reviewed": false,
+		"name": true
+	},
+	"preview_advisor": {
+		"en": "Preview Advisor",
+		"ja": "選出アドバイザー",
+		"reviewed": false,
+		"name": true
+	},
+	"validator": {
+		"en": "Validator",
+		"ja": "チームチェック",
+		"reviewed": false,
+		"name": true
+	},
+	"line_crawler": {
+		"en": "Line Crawler",
+		"ja": "局面検討",
+		"reviewed": false,
+		"name": true
+	},
+	"coach": {
+		"en": "coach",
+		"ja": "コーチ",
+		"reviewed": false
+	},
+	"local_server": {
+		"en": "local Showdown server",
+		"ja": "ローカルShowdownサーバー",
+		"reviewed": false,
+		"name": true
+	},
+	"practice_bot": {
+		"en": "practice bot",
+		"ja": "練習用ボット",
+		"reviewed": false,
+		"name": true
+	},
+	"win_estimate": {
+		"en": "win estimate",
+		"ja": "勝率",
+		"reviewed": false
+	},
+	"search": {
+		"en": "search",
+		"ja": "探索",
+		"reviewed": false
+	},
+	"best_line": {
+		"en": "best line",
+		"ja": "最善の選択",
+		"reviewed": false
+	},
+	"played_line": {
+		"en": "line played",
+		"ja": "実戦の選択",
+		"reviewed": false
+	},
+	"costly": {
+		"en": "costly",
+		"ja": "疑問手",
+		"reviewed": false
+	},
+	"swing": {
+		"en": "swing",
+		"ja": "勝率の変動",
+		"reviewed": false
+	},
+	"turning_point": {
+		"en": "biggest swing",
+		"ja": "勝負所",
+		"reviewed": false
+	},
+	"bring": {
+		"en": "bring",
+		"ja": "選出",
+		"reviewed": false
+	},
+	"lead": {
+		"en": "lead",
+		"ja": "初手",
+		"reviewed": false
+	},
+	"back": {
+		"en": "back",
+		"ja": "裏",
+		"reviewed": false
+	},
+	"team_preview": {
+		"en": "team preview",
+		"ja": "選出画面",
+		"reviewed": false
+	},
+	"stat_points": {
+		"en": "stat points",
+		"ja": "能力ポイント",
+		"reviewed": false
+	},
+	"nature": {
+		"en": "nature",
+		"ja": "能力補正",
+		"reviewed": false
+	},
+	"position": {
+		"en": "position",
+		"ja": "局面",
+		"reviewed": false
+	},
+	"guessed": {
+		"en": "guessed",
+		"ja": "推定",
+		"reviewed": false
+	},
+	"deep_dive": {
+		"en": "Team Deep Dive",
+		"ja": "チーム診断",
+		"reviewed": false,
+		"name": true
+	},
+	"h2h": {
+		"en": "Head-to-head",
+		"ja": "対戦シミュレーション",
+		"reviewed": false,
+		"name": true
+	},
+	"playout": {
+		"en": "Play-out",
+		"ja": "選出テスト",
+		"reviewed": false,
+		"name": true
+	},
+	"fieldplay": {
+		"en": "Series vs a field",
+		"ja": "仮想敵との連戦",
+		"reviewed": false,
+		"name": true
+	}
+}

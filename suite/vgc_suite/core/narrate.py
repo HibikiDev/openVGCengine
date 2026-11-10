@@ -11,10 +11,18 @@ from __future__ import annotations
 STATS = {"atk": "Atk", "def": "Def", "spa": "SpA", "spd": "SpD", "spe": "Spe", "accuracy": "accuracy", "evasion": "evasion"}
 STATUS = {"brn": "burned", "par": "paralyzed", "slp": "fell asleep", "psn": "was poisoned", "tox": "was badly poisoned",
           "frz": "was frozen"}
+
+STATUS_MSG = {"brn": "{mon} burned", "par": "{mon} paralyzed", "slp": "{mon} fell asleep", "psn": "{mon} was poisoned",
+              "tox": "{mon} was badly poisoned", "frz": "{mon} was frozen"}
+CURE_MSG = {"brn": "{mon} is no longer burned", "par": "{mon} is no longer paralyzed", "slp": "{mon} is no longer asleep",
+            "psn": "{mon} is no longer poisoned", "tox": "{mon} is no longer badly poisoned", "frz": "{mon} is no longer frozen"}
 CANT = {"flinch": "flinched", "par": "is fully paralyzed", "slp": "is fast asleep", "frz": "is frozen solid",
         "recharge": "must recharge", "Taunt": "can't use that move (Taunt)", "Encore": "is locked by Encore", "nopp": "has no PP left"}
+CANT_MSG = {k: "{mon} " + v for k, v in CANT.items()}
 WEATHER = {"SunnyDay": "harsh sunlight", "RainDance": "rain", "Sandstorm": "a sandstorm", "Snowscape": "snow", "Snow": "snow",
            "DesolateLand": "extremely harsh sunlight", "PrimordialSea": "heavy rain", "DeltaStream": "strong winds"}
+WEATHER_MSG = {k: v + " started" for k, v in WEATHER.items()}
+MOVE_FLAGS = {"spread": "spread", "miss": "missed", "notarget": "no target"}
 SKIP = {"j", "J", "l", "L", "n", "N", "c", "c:", "pm", "raw", "html", "uhtml", "uhtmlchange", "request", "inactive", "inactiveoff",
         "t:", "gametype", "gen", "tier", "rule", "rated", "title", "init", "teamsize", "teampreview", "showteam", "poke", "clearpoke",
         "tempnotify", "tempnotifyoff", "-anim", "-hint", "upkeep", "detailschange", "chat", "timestamp", "badge", "", "split",
@@ -74,8 +82,25 @@ def narrate(lines: list[str], me: str | None = None) -> dict:
     def key(ident: str) -> str:
         return f"{ident[:2]}:{bare(ident)}"
 
-    def add(text: str, ident: str = "", kind: str = "event") -> None:
-        turns[-1]["events"].append({"side": side_of(ident) if ident else None, "text": text, "kind": kind})
+    def add(msg: str, ident: str = "", kind: str = "event", *, src: str = "", hp_note: float | None = None,
+            flags: list[str] | None = None, raw: bool = False, **slots) -> None:
+
+
+
+
+        ev = {"side": side_of(ident) if ident else None, "kind": kind}
+        if raw:
+            ev["text"] = msg
+        else:
+            ev.update(msg=msg, slots=slots)
+            if src:
+                ev["src"] = src
+            if hp_note is not None:
+                ev["hp"] = hp_note
+            if flags:
+                ev["flags"] = flags
+            ev["text"] = render_event(ev, "en")
+        turns[-1]["events"].append(ev)
 
     def tags(p: list[str]) -> dict[str, str]:
         out = {}
@@ -102,7 +127,7 @@ def narrate(lines: list[str], me: str | None = None) -> dict:
                               .replace("<br />", " ").strip())
             continue
         t = tags(p[2:])
-        src = f" ({_clean(t['from'])})" if t.get("from") else ""
+        src = _clean(t["from"]) if t.get("from") else ""
         if cmd == "player" and len(p) > 3 and p[3]:
             players[p[2]] = p[3]
         elif cmd == "turn":
@@ -120,25 +145,23 @@ def narrate(lines: list[str], me: str | None = None) -> dict:
                 hp[key(p[2])] = pc
             label = name(p[2])
             who = players.get(p[2][:2], p[2][:2])
-            hp_note = f" ({pc:.0f}%)" if pc is not None and pc < 100 else ""
+            hp_note = round(pc) if pc is not None and pc < 100 else None
             if out and out != nm:
                 out_tag = name(f"{pos}: {out}")
-                text = (f"{who} withdrew {out_tag}, sent out {label}" if cmd == "switch"
-                        else f"{out_tag} was dragged out; {label} came in")
+                if cmd == "switch":
+                    add("{who} withdrew {out}, sent out {mon}", p[2], "switch", hp_note=hp_note, who=who, out=out_tag, mon=label)
+                else:
+                    add("{out} was dragged out; {mon} came in", p[2], "switch", hp_note=hp_note, out=out_tag, mon=label)
             else:
-                text = f"{who} " + {"switch": "sent out", "drag": "had dragged in", "replace": "revealed"}[cmd] + f" {label}"
-            add(text + hp_note, p[2], "switch")
+                add({"switch": "{who} sent out {mon}", "drag": "{who} had dragged in {mon}", "replace": "{who} revealed {mon}"}[cmd],
+                    p[2], "switch", hp_note=hp_note, who=who, mon=label)
         elif cmd == "move":
             target = name(p[4]) if len(p) > 4 and p[4] and not p[4].startswith("[") else ""
-            extra = []
-            if "spread" in t:
-                extra.append("spread")
-            if "miss" in t:
-                extra.append("missed")
-            if "notarget" in t:
-                extra.append("no target")
-            text = f"{name(p[2])} used {p[3]}" + (f" → {target}" if target and target != name(p[2]) else "")
-            add(text + (f" [{', '.join(extra)}]" if extra else "") + src, p[2], "move")
+            extra = [MOVE_FLAGS[f] for f in ("spread", "miss", "notarget") if f in t]
+            if target and target != name(p[2]):
+                add("{mon} used {move} → {target}", p[2], "move", src=src, flags=extra, mon=name(p[2]), move=["move", p[3]], target=target)
+            else:
+                add("{mon} used {move}", p[2], "move", src=src, flags=extra, mon=name(p[2]), move=["move", p[3]])
         elif cmd in ("-damage", "-heal", "-sethp"):
             k = key(p[2])
             new = _pct(p[3]) if len(p) > 3 else None
@@ -147,102 +170,137 @@ def narrate(lines: list[str], me: str | None = None) -> dict:
                 hp[k] = new
             if new is None:
                 continue
-            if old is None:
-                delta = ""
+            kind_ = "damage" if cmd == "-damage" else "heal"
+            d = None if old is None else new - old
+            if d is not None and abs(d) >= 0.5:
+                add("{mon} {delta}% → {hp}%", p[2], kind_, src=src, mon=name(p[2]), delta=f"{'+' if d >= 0 else '−'}{abs(d):.0f}",
+                    hp=f"{new:.0f}")
             else:
-                d = new - old
-                delta = f"{'+' if d >= 0 else '−'}{abs(d):.0f}% " if abs(d) >= 0.5 else ""
-            add(f"{name(p[2])} {delta}→ {new:.0f}%{src}", p[2], "damage" if cmd == "-damage" else "heal")
+                add("{mon} → {hp}%", p[2], kind_, src=src, mon=name(p[2]), hp=f"{new:.0f}")
         elif cmd == "faint":
             hp[key(p[2])] = 0.0
             if active.get(p[2][:3]) == bare(p[2]):
                 active[p[2][:3]] = None
-            add(f"{name(p[2])} fainted", p[2], "faint")
+            add("{mon} fainted", p[2], "faint", mon=name(p[2]))
         elif cmd == "-supereffective":
-            add("  super effective" + (f" on {name(p[2])}" if len(p) > 2 else ""), p[2], "note")
+            add("  super effective on {mon}", p[2], "note", mon=name(p[2])) if len(p) > 2 else add("  super effective", "", "note")
         elif cmd == "-resisted":
-            add("  resisted" + (f" by {name(p[2])}" if len(p) > 2 else ""), p[2], "note")
+            add("  resisted by {mon}", p[2], "note", mon=name(p[2])) if len(p) > 2 else add("  resisted", "", "note")
         elif cmd == "-crit":
-            add(f"  critical hit on {name(p[2])}", p[2], "note")
+            add("  critical hit on {mon}", p[2], "note", mon=name(p[2]))
         elif cmd == "-immune":
-            add(f"  {name(p[2])} is immune{src}", p[2], "note")
+            add("  {mon} is immune", p[2], "note", src=src, mon=name(p[2]))
         elif cmd == "-miss":
-            add(f"  {name(p[2])} missed" + (f" {name(p[3])}" if len(p) > 3 and p[3] else ""), p[2], "note")
+            if len(p) > 3 and p[3]:
+                add("  {mon} missed {target}", p[2], "note", mon=name(p[2]), target=name(p[3]))
+            else:
+                add("  {mon} missed", p[2], "note", mon=name(p[2]))
         elif cmd == "-fail":
-            add(f"  it failed ({name(p[2])}{', ' + _clean(p[3]) if len(p) > 3 and p[3] and not p[3].startswith('[') else ''})", p[2], "note")
+            if len(p) > 3 and p[3] and not p[3].startswith("["):
+                add("  it failed ({mon}, {effect})", p[2], "note", mon=name(p[2]), effect=["effect", _clean(p[3])])
+            else:
+                add("  it failed ({mon})", p[2], "note", mon=name(p[2]))
         elif cmd in ("-boost", "-unboost"):
             n = int(p[4]) if len(p) > 4 and p[4].lstrip("-").isdigit() else 1
-            add(f"{name(p[2])} {STATS.get(p[3], p[3])} {'+' if cmd == '-boost' else '−'}{n}{src}", p[2], "boost")
+            add("{mon} {stat} {change}", p[2], "boost", src=src, mon=name(p[2]), stat=["stat", p[3]],
+                change=f"{'+' if cmd == '-boost' else '−'}{n}")
         elif cmd == "-clearnegativeboost":
-            add(f"{name(p[2])}'s lowered stats were restored{src}", p[2], "boost")
+            add("{mon}'s lowered stats were restored", p[2], "boost", src=src, mon=name(p[2]))
         elif cmd == "-status":
-            add(f"{name(p[2])} {STATUS.get(p[3], p[3])}{src}", p[2], "status")
+            if p[3] in STATUS_MSG:
+                add(STATUS_MSG[p[3]], p[2], "status", src=src, mon=name(p[2]))
+            else:
+                add("{mon} {effect}", p[2], "status", src=src, mon=name(p[2]), effect=["effect", p[3]])
         elif cmd == "-curestatus":
-            add(f"{name(p[2])} is no longer {STATUS.get(p[3], p[3]).replace('was ', '').replace('fell ', '')}{src}", p[2], "status")
+            if p[3] in CURE_MSG:
+                add(CURE_MSG[p[3]], p[2], "status", src=src, mon=name(p[2]))
+            else:
+                add("{mon} is no longer {effect}", p[2], "status", src=src, mon=name(p[2]), effect=["effect", p[3]])
         elif cmd == "-weather":
             if "upkeep" in t:
                 continue
             w = p[2]
-            add("the weather cleared" if w == "none" else f"{WEATHER.get(w, w)} started{src}", t.get("of", ""), "field")
+            if w == "none":
+                add("the weather cleared", t.get("of", ""), "field")
+            elif w in WEATHER_MSG:
+                add(WEATHER_MSG[w], t.get("of", ""), "field", src=src)
+            else:
+                add("{effect} started", t.get("of", ""), "field", src=src, effect=["effect", w])
         elif cmd in ("-fieldstart", "-fieldend"):
-            add(f"{_clean(p[2])} {'started' if cmd == '-fieldstart' else 'ended'}{src}", t.get("of", ""), "field")
+            add("{effect} started" if cmd == "-fieldstart" else "{effect} ended", t.get("of", ""), "field", src=src,
+                effect=["effect", _clean(p[2])])
         elif cmd in ("-sidestart", "-sideend"):
             who = players.get(p[2][:2], p[2][:2])
-            add(f"{_clean(p[3])} {'up' if cmd == '-sidestart' else 'ended'} on {who}'s side", p[2][:2] + "a: x", "field")
+            add("{effect} up on {who}'s side" if cmd == "-sidestart" else "{effect} ended on {who}'s side", p[2][:2] + "a: x", "field",
+                effect=["effect", _clean(p[3])], who=who)
         elif cmd == "-singleturn":
             continue
         elif cmd == "-activate":
             what = _clean(p[3]) if len(p) > 3 else ""
             if what == "Protect":
-                add(f"  {name(p[2])} protected itself", p[2], "note")
+                add("  {mon} protected itself", p[2], "note", mon=name(p[2]))
+            elif what and len(p) > 4 and p[4] and not p[4].startswith("["):
+                add("  {effect} ({mon}): {detail}", p[2], "note", effect=["effect", what], mon=name(p[2]), detail=["effect", _clean(p[4])])
             elif what:
-                add(f"  {what} ({name(p[2])})" + (f": {_clean(p[4])}" if len(p) > 4 and p[4] and not p[4].startswith("[") else ""), p[2], "note")
+                add("  {effect} ({mon})", p[2], "note", effect=["effect", what], mon=name(p[2]))
         elif cmd in ("-start", "-end"):
             what = _clean(p[3]) if len(p) > 3 else ""
             if what.startswith("perish"):
-                add(f"{name(p[2])}: Perish count {what[6:]}", p[2], "note")
+                add("{mon}: Perish count {n}", p[2], "note", mon=name(p[2]), n=what[6:])
             else:
-                add(f"{name(p[2])}: {what} {'started' if cmd == '-start' else 'ended'}{src}", p[2], "note")
+                add("{mon}: {effect} started" if cmd == "-start" else "{mon}: {effect} ended", p[2], "note", src=src, mon=name(p[2]),
+                    effect=["effect", what])
         elif cmd == "-ability":
-            add(f"{name(p[2])}'s {p[3]}{src}", p[2], "ability")
+            add("{mon}'s {ability}", p[2], "ability", src=src, mon=name(p[2]), ability=["ability", p[3]])
         elif cmd in ("-item", "-enditem"):
             if "weaken" in t:
-                add(f"  {p[3]} weakened the hit", p[2], "note")
+                add("  {item} weakened the hit", p[2], "note", item=["item", p[3]])
                 continue
-            verb = "has" if cmd == "-item" else ("ate its" if "eat" in t else "used up its")
-            add(f"{name(p[2])} {verb} {p[3]}{src}", p[2], "item")
+            msg = "{mon} has {item}" if cmd == "-item" else ("{mon} ate its {item}" if "eat" in t else "{mon} used up its {item}")
+            add(msg, p[2], "item", src=src, mon=name(p[2]), item=["item", p[3]])
         elif cmd == "-mega":
 
-            add(f"{name(p[2], base=True)} Mega Evolved ({p[4] if len(p) > 4 else ''})", p[2], "mega")
+            add("{mon} Mega Evolved ({item})", p[2], "mega", mon=name(p[2], base=True), item=["item", p[4] if len(p) > 4 else ""])
         elif cmd == "-formechange":
-            add(f"{name(p[2])} changed form: {p[3]}", p[2], "note")
+            add("{mon} changed form: {form}", p[2], "note", mon=name(p[2]), form=["species", p[3]])
         elif cmd == "cant":
             why = _clean(p[3]) if len(p) > 3 else ""
-            add(f"{name(p[2])} " + CANT.get(why, f"can't move ({why})" if why else "can't move"), p[2], "note")
+            if why in CANT_MSG:
+                add(CANT_MSG[why], p[2], "note", mon=name(p[2]))
+            elif why:
+                add("{mon} can't move ({effect})", p[2], "note", mon=name(p[2]), effect=["effect", why])
+            else:
+                add("{mon} can't move", p[2], "note", mon=name(p[2]))
         elif cmd == "-prepare":
-            add(f"{name(p[2])} is charging {p[3]}", p[2], "note")
+            add("{mon} is charging {move}", p[2], "note", mon=name(p[2]), move=["move", p[3]])
         elif cmd == "-mustrecharge":
-            add(f"{name(p[2])} must recharge", p[2], "note")
+            add("{mon} must recharge", p[2], "note", mon=name(p[2]))
         elif cmd == "-hitcount":
-            add(f"  hit {p[3]} times", p[2], "note")
+            add("  hit {n} times", p[2], "note", n=p[3])
         elif cmd == "-transform":
-            add(f"{name(p[2])} transformed into {name(p[3])}", p[2], "note")
+            add("{mon} transformed into {target}", p[2], "note", mon=name(p[2]), target=name(p[3]))
         elif cmd == "-fieldactivate":
-            add(f"{_clean(p[2])} affects the field", "", "field")
+            add("{effect} affects the field", "", "field", effect=["effect", _clean(p[2])])
         elif cmd == "-copyboost":
-            add(f"{name(p[2])} copied {name(p[3])}'s stat changes{src}", p[2], "boost")
+            add("{mon} copied {target}'s stat changes", p[2], "boost", src=src, mon=name(p[2]), target=name(p[3]))
+        elif cmd == "-clearboost":
+            add("{mon}'s stat changes were cleared", p[2], "boost", mon=name(p[2]))
+        elif cmd == "-setboost" and len(p) > 4:
+            add("{mon} {stat} set to {n}", p[2], "boost", mon=name(p[2]), stat=["stat", p[3]],
+                n=f"+{p[4]}" if p[4].lstrip("-").isdigit() and int(p[4]) > 0 else p[4])
         elif cmd == "-clearallboost":
             add("all stat changes were cleared", "", "boost")
         elif cmd == "-block":
-            add(f"  {name(p[2])} blocked it ({_clean(p[3]) if len(p) > 3 else ''})", p[2], "note")
+            add("  {mon} blocked it ({effect})", p[2], "note", mon=name(p[2]), effect=["effect", _clean(p[3]) if len(p) > 3 else ""])
         elif cmd == "-message":
-            add(p[2], "", "message")
+            add(p[2], "", "message", raw=True)
         elif cmd == "win":
             result = p[2]
         elif cmd == "tie":
             result = "tie"
         elif cmd.startswith("-"):
-            add(f"{cmd[1:]}: " + " ".join(_clean(x) for x in p[2:] if x and not x.startswith("[")), p[2] if len(p) > 2 else "", "other")
+            add(f"{cmd[1:]}: " + " ".join(_clean(x) for x in p[2:] if x and not x.startswith("[")), p[2] if len(p) > 2 else "", "other",
+                raw=True)
 
         turns[-1]["hp"] = {k: round(v) for k, v in hp.items()}
 
@@ -251,12 +309,76 @@ def narrate(lines: list[str], me: str | None = None) -> dict:
     return {"players": players, "turns": turns, "result": result, "rating": rating, "preview": preview}
 
 
-def tagged_html(text: str) -> str:
+def templates() -> list[str]:
+
+
+    import re
+    from pathlib import Path
+    src = Path(__file__).read_text(encoding="utf8")
+    body = src[src.index("def narrate("):src.index("def templates(")]
+    out = re.findall(r'(?<![\w.])add\(\s*"((?:[^"\\]|\\.)*)"', body)
+    out += re.findall(r'(?:if [^"]+ else |else )"((?:[^"\\]|\\.)*\{[a-z_]+\}(?:[^"\\]|\\.)*)"', body)
+    out += [m for d in (STATUS_MSG, CURE_MSG, CANT_MSG, WEATHER_MSG) for m in d.values()]
+    out += list(MOVE_FLAGS.values()) + list(STATS.values()) + [" ({hp}%)", " [{flags}]", " ({source})"]
+    out += ["{who} sent out {mon}", "{who} had dragged in {mon}", "{who} revealed {mon}", "{mon} has {item}",
+            "{mon} ate its {item}", "{mon} used up its {item}"]
+    return sorted({x.encode().decode("unicode_escape") if "\\" in x else x for x in out})
+
+
+def _game_name(kind: str, raw: str, lang: str) -> str:
+
+
+    if lang == "en" or not raw:
+        return STATS.get(raw, raw) if kind == "stat" else raw
+    from vgc_trainer import i18n
+    if kind == "stat":
+        return i18n.t(STATS.get(raw, raw), lang)
+    if kind == "effect":
+
+        if i18n.has(raw):
+            return i18n.t(raw, lang)
+        for k in ("move", "ability", "item"):
+            ja = i18n.name_ja(k, raw)
+            if ja:
+                return ja
+        return raw
+    return i18n.name_ja(kind, raw) or raw
+
+
+def render_event(ev: dict, lang: str | None = None) -> str:
+
+
+
+    if "msg" not in ev:
+        return ev.get("text", "")
+    if lang is None:
+        from vgc_trainer.i18n import language
+        lang = language()
+    if lang == "en":
+        fill = lambda m, **kw: m.format(**kw)
+    else:
+        from vgc_trainer.i18n import t
+        fill = lambda m, **kw: t(m, lang, **kw)
+    slots = {k: _game_name(v[0], v[1], lang) if isinstance(v, list) else v for k, v in (ev.get("slots") or {}).items()}
+    out = fill(ev["msg"], **slots)
+    if ev.get("hp") is not None:
+        out += fill(" ({hp}%)", hp=ev["hp"])
+    if ev.get("flags"):
+        out += fill(" [{flags}]", flags=(", " if lang == "en" else "、").join(fill(f) for f in ev["flags"]))
+    if ev.get("src"):
+        out += fill(" ({source})", source=_game_name("effect", ev["src"], lang))
+    return out
+
+
+def tagged_html(text: str, name=None) -> str:
+
 
     import html
     import re
     out = html.escape(text)
-    return re.sub(r"⟦(us|them|p1|p2)\|(.*?)⟧", lambda m: f'<span class="mon {m.group(1)}">{m.group(2)}</span>', out)
+    show = name or (lambda n: n)
+    return re.sub(r"⟦(us|them|p1|p2)\|(.*?)⟧",
+                  lambda m: f'<span class="mon {m.group(1)}">{html.escape(show(html.unescape(m.group(2))))}</span>', out)
 
 
 def plain(text: str) -> str:

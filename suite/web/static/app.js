@@ -1,10 +1,12 @@
 
 (function () {
+
+  var T = function (s) { return (window.T && window.T[s]) || s; };
   var w = document.querySelector("[data-job]");
   if (w) {
     var t0 = Date.now(), el = document.getElementById("elapsed");
     var tick = function () {
-      if (el) el.textContent = Math.round((Date.now() - t0) / 1000) + "s";
+      if (el) el.textContent = (w.dataset.tSec || "{n}s").replace("{n}", Math.round((Date.now() - t0) / 1000));
       fetch("/api/job/" + w.dataset.job).then(function (r) { return r.json(); }).then(function (j) {
         if (j.status === "done" || j.status === "error" || j.status === "missing") location.reload(); else setTimeout(tick, 2000);
         var pg = document.getElementById("progress");
@@ -17,7 +19,8 @@
           bar.querySelector("i").style.width = j.bar.busy ? "" : (100 * j.bar.frac).toFixed(1) + "%";
           bar.querySelector("span").textContent = j.bar.busy ? "" : Math.round(100 * j.bar.frac) + "%";
           if (eta) eta.textContent = j.bar.busy ? "" : j.bar.left == null ? ""
-            : "· ~" + (j.bar.left < 90 ? j.bar.left + " s" : Math.round(j.bar.left / 60) + " min") + " left";
+            : (w.dataset.tLeft || "· about {time} left").replace("{time}", j.bar.left < 90 ? (w.dataset.tS || "{n} s").replace("{n}", j.bar.left)
+                                                                     : (w.dataset.tMin || "{n} min").replace("{n}", Math.round(j.bar.left / 60)));
         } else if (bar) { bar.hidden = true; if (eta) eta.textContent = ""; }
       }).catch(function () { setTimeout(tick, 4000); });
     };
@@ -108,7 +111,7 @@
           var fmt = fsel ? fsel.value : document.body.dataset.currentFormat;
           sel.textContent = "";
           var head = document.createElement("option");
-          head.value = ""; head.textContent = "fill from a bucket…";
+          head.value = ""; head.textContent = T("fill from a bucket…");
           sel.appendChild(head);
           var n = 0;
           bks.forEach(function (b, i) {
@@ -118,7 +121,7 @@
             g.label = b.name;
             if (ta.dataset.team === "whole") {
               var w = document.createElement("option");
-              w.value = "bucket:" + b.name; w.textContent = "the whole bucket (a team drawn per game)";
+              w.value = "bucket:" + b.name; w.textContent = T("the whole bucket (a team drawn per game)");
               g.appendChild(w);
             }
             b.teams.forEach(function (t, j) {

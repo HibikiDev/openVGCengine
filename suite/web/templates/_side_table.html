@@ -3,15 +3,15 @@
 <h3 style="margin-top:14px">{{ title }}</h3>
 <div class="scroll"><table class="tbl small">
   {% set has_ko = mons|selectattr('kos', 'defined')|list %}
-  <tr><th></th><th class="num">brought</th><th class="num">led</th><th class="num">fainted</th>{% if has_ko %}<th class="num">KOs<br>a game</th>{% endif %}<th class="num">your score<br>when brought</th><th>what it clicks <span class="muted">(share of its decisions · games it used it in{{ ' · what it aimed at' if has_ko }})</span></th></tr>
+  <tr><th></th><th class="num">{{ _("brought") }}</th><th class="num">{{ _("led") }}</th><th class="num">{{ _("fainted") }}</th>{% if has_ko %}<th class="num">{{ _("KOs<br>a game")|safe }}</th>{% endif %}<th class="num">{{ _("your score<br>when brought")|safe }}</th><th>{{ _("what it clicks") }} <span class="muted">{{ _("(share of its decisions · games it used it in · what it aimed at)") if has_ko else _("(share of its decisions · games it used it in)") }}</span></th></tr>
   {% for m in mons|sort(attribute='brought', reverse=true) if m.brought > 0 %}<tr>
-    <td><b>{{ m.mon }}</b>{% if m.sub %}<br><span class="muted">{{ m.sub }}</span>{% endif %}{% if m.mega is not none %}<br><span class="muted">Mega Evolves in {{ m.mega|pct }}</span>{% endif %}</td>
-    <td class="num">{{ m.brought|pct }}</td><td class="num">{{ m.led|pct }}</td><td class="num">{{ m.fainted|pct }}{% if m.own_faint %}<br><span class="muted">own side {{ "%.2f"|format(m.own_faint) }}</span>{% endif %}</td>
-    {% if has_ko %}<td class="num">{% if m.kos is defined %}<b>{{ "%.2f"|format(m.kos) }}</b>{% for v in m.ko_list or [] %}<br><span class="muted">{{ v.victim }} {{ "%.2f"|format(v.per_game) }}</span>{% endfor %}{% endif %}</td>{% endif %}
+    <td><b>{{ m.mon|dex('species') }}</b>{% if m.sub %}<br><span class="muted">{{ m.sub }}</span>{% endif %}{% if m.mega is not none %}<br><span class="muted">{{ _("Mega Evolves in {pct}", pct=m.mega|pct) }}</span>{% endif %}</td>
+    <td class="num">{{ m.brought|pct }}</td><td class="num">{{ m.led|pct }}</td><td class="num">{{ m.fainted|pct }}{% if m.own_faint %}<br><span class="muted">{{ _("own side {n}", n="%.2f"|format(m.own_faint)) }}</span>{% endif %}</td>
+    {% if has_ko %}<td class="num">{% if m.kos is defined %}<b>{{ "%.2f"|format(m.kos) }}</b>{% for v in m.ko_list or [] %}<br><span class="muted">{{ v.victim|dex('species') }} {{ "%.2f"|format(v.per_game) }}</span>{% endfor %}{% endif %}</td>{% endif %}
     <td class="num">{{ m.score_when_brought|pct }}</td>
-    <td class="mvcell">{% for x in m.moves if x.share > 0 %}<div class="mline"><div class="who"><span>{{ x.move }}</span><span><b>{{ x.share|prob }}</b> <span class="muted">· {{ x.games|pct }}</span></span></div><div class="bar sky"><i style="width: {{ (x.share * 100)|round(1) }}%"></i></div>{% if x.targets and (x.targets|length > 1 or x.targets[0].to != 'no target') %}<div class="muted" style="font-size: .75rem">→ {% for t in x.targets %}{{ t.to }} {{ t.share|pct }}{{ " · " if not loop.last }}{% endfor %}</div>{% endif %}</div>{% endfor %}
-      {% if m.switch > 0 %}<div class="mline"><div class="who"><span class="muted">switches out</span><b>{{ m.switch|prob }}</b></div><div class="bar sun"><i style="width: {{ (m.switch * 100)|round(1) }}%"></i></div></div>{% endif %}
-      {% if not m.decisions %}<span class="muted">no choices made</span>{% endif %}</td></tr>{% endfor %}
+    <td class="mvcell">{% for x in m.moves if x.share > 0 %}<div class="mline"><div class="who"><span>{{ x.move|dex('move') }}</span><span><b>{{ x.share|prob }}</b> <span class="muted">· {{ x.games|pct }}</span></span></div><div class="bar sky"><i style="width: {{ (x.share * 100)|round(1) }}%"></i></div>{% if x.targets and (x.targets|length > 1 or x.targets[0].to != 'no target') %}<div class="muted" style="font-size: .75rem">→ {% for t in x.targets %}{{ t.to|target_label }} {{ t.share|pct }}{{ " · " if not loop.last }}{% endfor %}</div>{% endif %}</div>{% endfor %}
+      {% if m.switch > 0 %}<div class="mline"><div class="who"><span class="muted">{{ _("switches out") }}</span><b>{{ m.switch|prob }}</b></div><div class="bar sun"><i style="width: {{ (m.switch * 100)|round(1) }}%"></i></div></div>{% endif %}
+      {% if not m.decisions %}<span class="muted">{{ _("no choices made") }}</span>{% endif %}</td></tr>{% endfor %}
 </table></div>
-{% set nb = mons|selectattr('brought', 'equalto', 0)|map(attribute='mon')|list %}{% if nb %}<p class="small muted">Never brought: {{ nb|join(', ') }}</p>{% endif %}
+{% set nb = mons|selectattr('brought', 'equalto', 0)|map(attribute='mon')|list %}{% if nb %}<p class="small muted">{{ _("Never brought: {mons}", mons=nb|names) }}</p>{% endif %}
 {% endmacro %}

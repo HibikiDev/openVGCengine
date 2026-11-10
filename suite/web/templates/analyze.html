@@ -1,40 +1,64 @@
 {% extends "base.html" %}
-{% block title %}Replay Analyzer · openVGCengine{% endblock %}
+{% block title %}{{ _("Replay Analyzer") }} · openVGCengine{% endblock %}
 {% block main %}
 <div class="card">
-  <h1>Replay Analyzer</h1>
-  <p>A replay turn by turn: how the model rates each side, and what it would have clicked next to what was played.</p>
+  <h1>{{ _("Replay Analyzer") }}</h1>
+  <p>{{ _("A replay turn by turn: how the model rates each side, and what it would have clicked next to what was played.") }}</p>
   <form method="post" action="/analyze">
-    <label for="replay">Replay <span class="hint">a replay link, or a replay you downloaded</span></label>
-    <textarea id="replay" name="replay" required placeholder="https://replay.pokemonshowdown.com/gen9championsvgc2026regmcbo3-..." style="min-height:70px"></textarea>
-    <p class="small" style="margin: 4px 0 8px"><label class="small" style="display:inline"><b>Or open a downloaded replay:</b> <input type="file" id="replay-file" accept=".html,.htm,.log,.txt" style="width:auto"></label>
+    <label for="replay">{{ _("Replay") }} <span class="hint">{{ _("a replay link or id (private ones too), a battle's psim.us link once its replay is uploaded, or a replay you downloaded - drop the file here") }}</span></label>
+    <textarea id="replay" name="replay" required placeholder="https://replay.pokemonshowdown.com/gen9championsvgc2026regmcbo3-..." style="min-height:70px">{{ prefill.replay if prefill and prefill.replay else '' }}</textarea>
+    <p class="small" style="margin: 4px 0 8px"><label class="small" style="display:inline"><b>{{ _("Or open a downloaded replay") }}</b> {{ _("(or a report file to run again)") }}<b>:</b> <input type="file" id="replay-file" accept=".html,.htm,.log,.txt,.json" style="width:auto"></label>
       <span id="replay-file-note" class="muted"></span></p>
     {% set rf = replay_files() %}
-    <p class="small" style="margin: 0 0 6px"><b>Or keep them in the replays folder:</b> drop downloaded replays there and they show up here. <button type="button" class="btn alt" id="open-replays" style="padding: 2px 10px">Open the folder</button></p>
-    {% if rf %}<div class="row" style="gap: 6px; margin-bottom: 10px">{% for f in rf %}<button type="button" class="btn alt small" data-replay="{{ f.name }}" title="added {{ f.when }}" style="padding: 2px 10px">{{ f.name }}</button>{% endfor %}</div>{% endif %}
+    <p class="small" style="margin: 0 0 6px"><b>{{ _("Or keep them in the replays folder:") }}</b> {{ _("drop downloaded replays there and they show up here.") }} <button type="button" class="btn alt" id="open-replays" style="padding: 2px 10px">{{ _("Open the folder") }}</button></p>
+    {% if rf %}<div class="row" style="gap: 6px; margin-bottom: 10px">{% for f in rf %}<button type="button" class="btn alt small" data-replay="{{ f.name }}" title="{{ _('added {when}', when=f.when) }}" style="padding: 2px 10px">{{ f.name }}</button>{% endfor %}</div>{% endif %}
     <script>
+      // (#19: a report file - only what a re-run needs goes in the box: its replay, settings and teams, not the old result)
+      const boxText = (t) => {
+        if (!t.trimStart().startsWith("{") || !t.includes("openvgc-report")) return t;
+        try {
+          const r = JSON.parse(t);
+          return JSON.stringify({kind: r.kind, version: r.version, job: {params: (r.job || {}).params}, replay_log: r.replay_log});
+        } catch (err) { return t; }
+      };
       document.getElementById("replay-file").addEventListener("change", async (e) => {
         const f = e.target.files[0];
         if (!f) return;
-        document.getElementById("replay").value = await f.text();
-        document.getElementById("replay-file-note").textContent = "Loaded " + f.name + ".";
+        document.getElementById("replay").value = boxText(await f.text());
+        document.getElementById("replay-file-note").textContent = {{ _("Loaded {file}.")|tojson }}.replace("{file}", f.name);
+      });
+      // (#17, 11-09: a downloaded replay dropped onto the box is read like the file picker's)
+      const box = document.getElementById("replay");
+      box.addEventListener("dragover", (e) => { if (e.dataTransfer.types.includes("Files")) e.preventDefault(); });
+      box.addEventListener("drop", async (e) => {
+        const f = e.dataTransfer.files[0];
+        if (!f) return;
+        e.preventDefault();
+        box.value = boxText(await f.text());
+        document.getElementById("replay-file-note").textContent = {{ _("Loaded {file}.")|tojson }}.replace("{file}", f.name);
       });
       document.getElementById("open-replays").addEventListener("click", () => fetch("/api/replay-folder", {method: "POST"}));
       document.querySelectorAll("[data-replay]").forEach((b) => b.addEventListener("click", () => { document.getElementById("replay").value = "file:" + b.dataset.replay; }));
     </script>
     <div class="row">
-      <div><label for="side">Whose decisions?</label>
-        <select id="side" name="side"><option value="both">Both players</option><option value="p1">Player 1</option><option value="p2">Player 2</option></select></div>
+      <div><label for="side">{{ _("Whose decisions?") }}</label>
+        <select id="side" name="side"><option value="both">{{ _("Both players") }}</option><option value="p1">{{ _("Player 1") }}</option><option value="p2">{{ _("Player 2") }}</option></select></div>
+      <div><label for="depth">{{ _("How deep?") }}</label>
+        <select id="depth" name="depth"><option value="fast">{{ _("Quick: the model's first read") }}</option><option value="standard">{{ _("Searched: 4 searches a turn") }}</option><option value="deep">{{ _("Deep: 8 searches a turn (the slowest)") }}</option></select></div>
     </div>
-    <details>
-      <summary>Team exports (optional)</summary>
-      <p class="small muted">Exact spreads instead of usage guesses.</p>
+    <p class="small muted" style="margin-top: -4px">{{ _("Searched and Deep look ahead on every turn the way the bot does when it plays, and score the line that was played next to the best one they find. One search alone often changes its mind, so a turn only reads as costly when most of them agree.") }}</p>
+    <details{% if prefill and (prefill.paste_p1 or prefill.paste_p2) %} open{% endif %}>
+      <summary>{{ _("Team exports (optional)") }}</summary>
+      <p class="small muted">{% if prefill and (prefill.paste_p1 or prefill.paste_p2) %}{{ _("Exact spreads instead of usage guesses - the sets the last analysis played with: change any of them and analyze again.") }}{% else %}{{ _("Exact spreads instead of usage guesses.") }}{% endif %}</p>
       <div class="row">
-        <div><label for="paste_p1">Player 1's team</label><textarea id="paste_p1" name="paste_p1" placeholder="Garchomp @ ..."></textarea></div>
-        <div><label for="paste_p2">Player 2's team</label><textarea id="paste_p2" name="paste_p2"></textarea></div>
+        <div><label for="paste_p1">{{ _("Player 1's team") }}</label><textarea id="paste_p1" name="paste_p1" placeholder="Garchomp @ ...">{{ prefill.paste_p1 if prefill and prefill.paste_p1 else '' }}</textarea></div>
+        <div><label for="paste_p2">{{ _("Player 2's team") }}</label><textarea id="paste_p2" name="paste_p2">{{ prefill.paste_p2 if prefill and prefill.paste_p2 else '' }}</textarea></div>
       </div>
     </details>
-    <button class="btn" type="submit">Analyze</button>
+    <button class="btn" type="submit">{{ _("Analyze") }}</button>
+    {% if prefill and (prefill.side or prefill.depth) %}<script>  // (a deep link's choices, #18)
+      {% for k in ('side', 'depth') if prefill[k] %}document.getElementById("{{ k }}").value = {{ prefill[k]|tojson }};{% endfor %}
+    </script>{% endif %}
   </form>
 </div>
 {% include "_history.html" %}

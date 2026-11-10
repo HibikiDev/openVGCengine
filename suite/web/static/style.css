@@ -8,8 +8,8 @@
   --line: 3px solid var(--bark);
   --round: 22px;
   --lift: 0 5px 0 rgba(124, 95, 74, .22);
-  --head: "Fredoka", "Nunito", system-ui, sans-serif;
-  --body: "Nunito", system-ui, sans-serif;
+  --head: "Fredoka", "Nunito", "M PLUS Rounded 1c", system-ui, sans-serif;
+  --body: "Nunito", "M PLUS Rounded 1c", system-ui, sans-serif;
 }
 
 * { box-sizing: border-box; }
@@ -268,6 +268,7 @@ table.matrix td.mcell { text-align: center; min-width: 46px; font-size: .85rem; 
 
 .opt.two { grid-template-columns: minmax(0, 1fr) max-content; }
 .picks .chip { white-space: normal; }
+.chip.wrap { white-space: normal; max-width: 100%; border-radius: 12px; }
 .picks p { margin: 6px 0 10px; }
 
 .optlist { min-width: max-content; }
@@ -375,3 +376,11 @@ input[type=number].num-inline { display: inline-block; width: 5.5em; padding: 4p
 details.howto { margin: 6px 0 10px; color: var(--stone); }
 details.howto summary { cursor: pointer; }
 details.howto p { margin: 6px 0; }
+
+
+.langswitch { margin: 0 0 0 10px; display: flex; align-items: center; }
+.langbtn { font-family: var(--head); font-weight: 600; font-size: .95rem; padding: 5px 12px; border-radius: 999px; cursor: pointer;
+  border: 2px solid var(--bark); background: var(--honey); color: var(--bark); }
+.langbtn:hover { filter: brightness(1.06); }
+
+html:lang(ja) body { line-break: strict; word-break: auto-phrase; }

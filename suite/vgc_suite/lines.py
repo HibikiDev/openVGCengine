@@ -83,8 +83,8 @@ def start(room: str, turn: int, me: str, side: str, same_first: bool, device: st
         return False, "Start the practice bot on the Buddy page first: it plays the reopened game."
     OUT.mkdir(parents=True, exist_ok=True)
     _remember(me)
-    _launch(f"{room}-t{turn}", [str(f), "--turn", str(turn), "--me", me, "--side", side, "--device", device]
-            + (["--force-first"] if same_first else []))
+    _launch(f"{room}-t{turn}", [str(f), "--turn", str(turn), "--me", me, "--side", side, "--device", device,
+                                "--kind", "game", "--back", f"/status/game/{room}?pov=human"] + (["--force-first"] if same_first else []))
     how = "repeats its original choice on that turn, then decides fresh" if same_first else "decides fresh from that turn"
     return True, (f"Turn {turn} is opening on the local Showdown: accept the invite from openvgchost there, signed in as {me}. "
                   f"The bot {how}.")
@@ -130,7 +130,67 @@ def _remember(name: str) -> None:
         pass
 
 
-def start_replay(src: str, turn: int, me: str, side: str, device: str) -> tuple[bool, str]:
+def replay_key(src: str) -> str:
+
+    if src.startswith(("http://", "https://")):
+        return src
+    import hashlib
+    return f"{hashlib.sha1(src.encode('utf8')).hexdigest()[:16]}.log"
+
+
+def crawl_key(crawl_id: str, nid: str) -> str:
+
+    return f"crawl-{crawl_id}-{nid}.spec.json"
+
+
+def branches(key: str) -> list[dict]:
+
+
+    from .buddy_sessions import BOTS, _results
+    from vgc_trainer.showdown.tracker import to_id
+    out = []
+    for bot in BOTS:
+        for r in _results(ROOT, bot):
+            ln = r.get("line") or {}
+            if ln.get("from") != key:
+                continue
+            won = None if not r.get("winner") else to_id(r["winner"]) == to_id(r.get("opponent") or "")
+            out.append({"room": r["room"], "time": r["time"][5:16], "turn": ln.get("turn"), "mode": ln.get("mode"),
+                        "side": ln.get("side"), "me": r.get("opponent"), "won": won, "turns": r.get("turns")})
+    return sorted(out, key=lambda b: b["time"])
+
+
+def line_of(room: str) -> dict | None:
+
+    from .buddy_sessions import BOTS, _results
+    for bot in BOTS:
+        for r in _results(ROOT, bot):
+            if r["room"] == room and r.get("line"):
+                return r["line"]
+    return None
+
+
+def origin(line: dict | None) -> dict | None:
+
+
+    if not line:
+        return None
+    src = line.get("from") or ""
+    kind = line.get("kind") or ("crawl" if src.startswith("crawl-") else "replay" if line.get("replay") else "game")
+    href = line.get("back")
+    if href is None:
+        if kind == "game":
+            href = f"/status/game/{src}?pov=human"
+        elif kind == "crawl":
+            cid, _, nid = src.removeprefix("crawl-").removesuffix(".spec.json").rpartition("-")
+            href = f"/crawler/s/{cid}?n={nid}"
+        elif src.startswith(("http://", "https://")):
+            href = src
+    label = {"game": "a practice game", "replay": "a replay", "crawl": "a Line Crawler position"}[kind]
+    return {"kind": kind, "href": href, "label": label, "turn": line.get("turn")}
+
+
+def start_replay(src: str, turn: int, me: str, side: str, device: str, back: str | None = None) -> tuple[bool, str]:
 
 
 
@@ -140,13 +200,39 @@ def start_replay(src: str, turn: int, me: str, side: str, device: str) -> tuple[
     if practice_pid(ROOT) is None:
         return False, "Start the practice bot on the Buddy page first: it plays the position."
     if not src.startswith(("http://", "https://")):
-        import hashlib
         REPLAYS.mkdir(parents=True, exist_ok=True)
-        f = REPLAYS / f"{hashlib.sha1(src.encode('utf8')).hexdigest()[:16]}.log"
+        f = REPLAYS / replay_key(src)
         f.write_text(src, encoding="utf8")
         src = str(f)
     _remember(me)
-    _launch(f"replay-t{turn}", [src, "--replay", "--turn", str(turn), "--me", me, "--side", side, "--device", device])
-    return True, (f"Turn {turn} is being rebuilt from the replay and opened on the local Showdown (a few seconds): accept the invite "
+    _launch(f"replay-t{turn}", [src, "--replay", "--turn", str(turn), "--me", me, "--side", side, "--device", device, "--kind", "replay"]
+            + (["--back", back] if back else []))
+    return True, (f"Turn {turn} is being rebuilt from the replay and opened on the local Showdown (it takes a moment): accept the invite "
                   f"from openvgchost there, signed in as {me}. Approximate - guessed spreads and unseen sets, HP to the percent, a new "
                   f"seed. The bot decides fresh.")
+
+
+def start_crawl(crawl, nid: str, me: str, side: str, device: str) -> tuple[bool, str]:
+
+
+
+    if not shutil.which("node"):
+        return False, "Opening a position needs Node.js on this PC's PATH (the local Showdown runs on it)."
+    from .buddy import practice_pid
+    if practice_pid(ROOT) is None:
+        return False, "Start the practice bot on the Buddy page first: it plays the position."
+    import json
+    from .core.crawl_position import build
+    try:
+        spec, notes = build(crawl, nid, {"p1": "p1", "p2": "p2"})
+    except ValueError as e:
+        return False, str(e)
+    OUT.mkdir(parents=True, exist_ok=True)
+    f = OUT / crawl_key(crawl.data["id"], nid)
+    f.write_text(json.dumps({"spec": spec, "notes": notes}), encoding="utf8")
+    _remember(me)
+    _launch(f"crawl-{nid}", [str(f), "--replay", "--turn", str(spec["turn"]), "--me", me, "--side", side, "--device", device,
+                             "--kind", "crawl", "--back", f"/crawler/s/{crawl.data['id']}?n={nid}"])
+    return True, (f"This position is being opened on the local Showdown (it takes a moment): accept the invite from openvgchost "
+                  f"there, signed in as {me}. The engine's own state - HP, status, boosts, PP, items, the field - with a new seed; "
+                  f"the bot decides fresh.")

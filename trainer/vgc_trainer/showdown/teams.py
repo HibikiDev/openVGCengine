@@ -143,6 +143,10 @@ def to_paste(sets: list[dict], level: int = 50) -> str:
 def parse_paste(text: str) -> list[dict]:
 
 
+
+    from ..i18n import is_japanese, parse_ja
+    if is_japanese(text):
+        return [base_megas(s) for s in parse_ja(text)]
     sets: list[dict] = []
     for block in [b for b in text.replace("\r", "").split("\n\n") if b.strip()]:
         lines = [ln.strip() for ln in block.split("\n") if ln.strip()]

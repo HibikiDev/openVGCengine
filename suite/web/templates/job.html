@@ -1,28 +1,29 @@
 {% extends "base.html" %}
-{% block title %}{{ (TOOLS.get(job.tool) or (('Matchup self-play',) if job.tool == 'muselfplay' else ('Matrix checked with search',) if job.tool == 'mxcheck' else ('Matchup searched',) if job.tool == 'mxsearch' else ('Turn-1 lab',)))[0] }} · openVGCengine{% endblock %}
+{% block title %}{{ tool_title(job.tool) }} · openVGCengine{% endblock %}
 {% block main %}
 {% if job.status in ('queued', 'running') %}
-<div class="card wait" data-job="{{ job.id }}">
-  <h2>{{ "Thinking it over" if job.status == "running" else "In the queue" }}</h2>
+<div class="card wait" data-job="{{ job.id }}" data-t-sec="{{ _('{n}s') }}" data-t-left="{{ _('· about {time} left') }}"
+     data-t-s="{{ _('{n} s') }}" data-t-min="{{ _('{n} min') }}">
+  <h2>{{ _("Thinking it over") if job.status == "running" else _("In the queue") }}</h2>
   <div class="dots"><i></i><i></i><i></i><i></i></div>
-  <p class="muted">{% if ahead %}{{ ahead }} run(s) ahead of yours. {% endif %}{{ WAIT.get(job.tool, '') }} <span id="elapsed"></span></p>
+  <p class="muted">{% if ahead %}{{ _("{n} run(s) ahead of yours.", n=ahead) }} {% endif %}{{ WAIT.get(job.tool, '') }} <span id="elapsed"></span></p>
   <div id="pbar" class="bar sky" style="max-width: 520px; margin: 10px auto 4px" hidden><i style="width: 0%"></i><span></span></div>
   <p class="small"><b id="progress">{{ job.progress or '' }}</b> <span id="eta" class="muted"></span></p>
-  {% if job.cancel %}<p class="small"><b>Cancelling</b> - stops at its next step.</p>
-  {% else %}<form method="post" action="/api/cancel" onsubmit="return confirm('Cancel this run? What it has played so far is discarded.')">
-    <input type="hidden" name="id" value="{{ job.id }}"><button class="btn alt" type="submit" style="padding: 4px 14px">Cancel this run</button></form>{% endif %}
+  {% if job.cancel %}<p class="small">{{ _("<b>Cancelling</b> - stops at its next step.")|safe }}</p>
+  {% else %}<form method="post" action="/api/cancel" onsubmit="return confirm({{ _('Cancel this run? What it has played so far is discarded.')|tojson|e }})">
+    <input type="hidden" name="id" value="{{ job.id }}"><button class="btn alt" type="submit" style="padding: 4px 14px">{{ _("Cancel this run") }}</button></form>{% endif %}
 </div>
 {% elif job.status == 'error' %}
 <div class="card">
-  <h2>That didn't work</h2>
+  <h2>{{ _("That didn't work") }}</h2>
   <div class="note pink">{{ job.error }}</div>
-  <p><a class="btn alt" href="{{ ('/job/' ~ job.params.src) if job.tool == 'turn1' else ('/' ~ job.tool) }}">Try again</a></p>
+  <p><a class="btn alt" href="{{ ('/job/' ~ job.params.src) if job.tool == 'turn1' else ('/' ~ job.tool) }}">{{ _("Try again") }}</a></p>
 </div>
 {% else %}
 {% if favorites is defined %}{% set fv = favorites().get(job.id) %}
 <div class="favbar small" style="display:flex; gap:8px; align-items:center; justify-content:flex-end; margin: 0 0 6px">
-  <input id="fav-note" placeholder="name this run (optional)" value="{{ fv.note if fv else '' }}" style="width: 16em; padding: 3px 8px">
-  <button type="button" id="fav-btn" class="btn alt" style="padding: 3px 12px" data-on="{{ '1' if fv else '0' }}">{{ '★ starred' if fv else '☆ star this run' }}</button>
+  <input id="fav-note" placeholder="{{ _('name this run (optional)') }}" value="{{ fv.note if fv else '' }}" style="width: 16em; padding: 3px 8px">
+  <button type="button" id="fav-btn" class="btn alt" style="padding: 3px 12px" data-on="{{ '1' if fv else '0' }}">{{ _('★ starred') if fv else _('☆ star this run') }}</button>
 </div>
 <script>
 (() => {  // (star / unstar; the name is saved with the star, and again when it changes while starred)
@@ -30,7 +31,7 @@
   const send = async on => {
     const j = await (await fetch("/api/fav", {method: "POST", body: new URLSearchParams({id: "{{ job.id }}", on: on ? "1" : "0", note: note.value})})).json();
     if (j.error) { b.textContent = j.error; return; }
-    b.dataset.on = on ? "1" : "0"; b.textContent = on ? "★ starred" : "☆ star this run";
+    b.dataset.on = on ? "1" : "0"; b.textContent = on ? {{ _('★ starred')|tojson }} : {{ _('☆ star this run')|tojson }};
   };
   b.addEventListener("click", () => send(b.dataset.on !== "1"));
   note.addEventListener("change", () => { if (b.dataset.on === "1") send(true); });

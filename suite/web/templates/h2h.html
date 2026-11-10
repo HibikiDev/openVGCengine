@@ -1,39 +1,35 @@
 {% extends "base.html" %}
-{% block title %}Head-to-head · openVGCengine{% endblock %}
+{% block title %}{{ _("Head-to-head") }} · openVGCengine{% endblock %}
 {% block main %}
 <div class="card">
-  <h1>Head-to-head</h1>
-  <p>Two teams against each other: who wins, what each brings and leads, and how turn 1 goes.</p>
+  <h1>{{ _("Head-to-head") }}</h1>
+  <p>{{ _("Two teams against each other: who wins, what each brings and leads, and how turn 1 goes.") }}</p>
   <form method="post" action="/h2h">
     {% include "_format_pick.html" %}
     <div class="row">
-      <div><label for="a">Team A {% include "_team_help.html" %}</label><textarea id="a" name="a" required data-team></textarea></div>
-      <div><label for="b">Team B</label><textarea id="b" name="b" required data-team></textarea></div>
+      <div><label for="a">{{ _("Team A") }} {% include "_team_help.html" %}</label><textarea id="a" name="a" required data-team></textarea></div>
+      <div><label for="b">{{ _("Team B") }}</label><textarea id="b" name="b" required data-team></textarea></div>
     </div>
     <details>
-      <summary>Settings</summary>
+      <summary>{{ _("Settings") }}</summary>
       <div class="row">
-        <div><label for="games">Games</label><input id="games" name="games" type="number" min="200" max="{{ LIMITS.h2h_games }}" placeholder="4000 (400 in deep mode)"></div>
-        <div><label for="examples">Example games (in real Showdown)</label>
-          <select id="examples" name="examples"><option value="0">none</option><option value="1">1</option><option value="3">3</option><option value="5">5</option></select></div>
-        <div><label for="vary">Team preview</label>
-          <select id="vary" name="vary"><option value="1">as the bot plays it</option><option value="3">varied (other leads too; the score is then not the bot's)</option></select></div>
+        <div><label for="games">{{ _("Games") }}</label><input id="games" name="games" type="number" min="200" max="{{ LIMITS.h2h_games }}" placeholder="{{ _('4000 (400 in deep mode)') }}"></div>
+        <div><label for="examples">{{ _("Example games (in real Showdown)") }}</label>
+          <select id="examples" name="examples"><option value="0">{{ _("none") }}</option><option value="1">1</option><option value="3">3</option><option value="5">5</option></select></div>
+        <div><label for="vary">{{ _("Team preview") }}</label>
+          <select id="vary" name="vary"><option value="1">{{ _("as the bot plays it") }}</option><option value="3">{{ _("varied (other leads too; the score is then not the bot's)") }}</option></select></div>
       </div>
     </details>
     <input type="hidden" name="_checks" value="1">
-    <p><label><input type="checkbox" name="deep" value="1"{{ ' checked' if gpu.on }}> <b>Deep mode</b> - both sides search every turn
-      <span class="muted small">Unticked: much faster, but a rough screen that can be far off.</span></label>
-      {% if not gpu.on %}<span class="small cpu-warn">No GPU here, so Deep mode is off by default on this PC: it runs the bot's search on the
-      CPU, many times slower than with a GPU.</span>{% endif %}</p>
-    <p><label><input type="checkbox" name="matrix" value="1"{{ ' checked' if gpu.on }}> <b>Bring matrix</b> - each side's likely fours played
-      against each other, as in the Preview Advisor.</label>
-      {% if not gpu.on %}<span class="small cpu-warn">No GPU here, so the bring matrix is off by default on this PC: it plays thousands of
-      extra games, much slower on the CPU.</span>{% endif %}</p>
-    <p><label><input type="checkbox" name="bo3" value="1" checked> <b>Best-of-three</b> - series, each side changing its lead between games
-      by the bot's rule.</label></p>
-    <p><label><input type="checkbox" name="luck" value="1"> <b>Luck</b> - how much the matchup rides on the dice.
-      <span class="muted small">Adds a little time.</span></label></p>
-    <button class="btn" type="submit">Play it out</button>
+    <p><label><input type="checkbox" name="deep" value="1"{{ ' checked' if gpu.on }}> {{ _("<b>Deep mode</b> - both sides search every turn")|safe }}
+      <span class="muted small">{{ _("Unticked: much faster, but a rough screen that can be far off.") }}</span></label>
+      {% if not gpu.on %}<span class="small cpu-warn">{{ _("No GPU here, so Deep mode is off by default on this PC: it runs the bot's search on the CPU, many times slower than with a GPU.") }}</span>{% endif %}</p>
+    <p><label><input type="checkbox" name="matrix" value="1"{{ ' checked' if gpu.on }}> {{ _("<b>Bring matrix</b> - each side's likely fours played against each other, as in the Preview Advisor.")|safe }}</label>
+      {% if not gpu.on %}<span class="small cpu-warn">{{ _("No GPU here, so the bring matrix is off by default on this PC: it plays thousands of extra games, much slower on the CPU.") }}</span>{% endif %}</p>
+    <p><label><input type="checkbox" name="bo3" value="1" checked> {{ _("<b>Best-of-three</b> - series, each side changing its lead between games by the bot's rule.")|safe }}</label></p>
+    <p><label><input type="checkbox" name="luck" value="1"> {{ _("<b>Luck</b> - how much the matchup rides on the dice.")|safe }}
+      <span class="muted small">{{ _("Adds a little time.") }}</span></label></p>
+    <button class="btn" type="submit">{{ _("Play it out") }}</button>
   </form>
 </div>
 {% include "_history.html" %}

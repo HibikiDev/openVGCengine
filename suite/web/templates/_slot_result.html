@@ -3,23 +3,27 @@
 
 {% set base = r.rows|selectattr('source', 'equalto', 'current')|first %}
 <div class="card">
-  <h1>Replacing {{ r.slot.replaced }}</h1>
-  <p class="muted small">{{ r.five|join(' · ') }} + each candidate · model {{ r.model }} · {{ r.games_each }} {% if r.search %}games each in <b>Search Mode</b> ({{ r.search.games_per_team }} a team){% else %}quick games each{% endif %} against {% if r.field.name %}<b>{{ r.field.name }}</b>{% else %}{{ r.field.teams }} teams{% endif %} · the current team ("{{ r.slot.baseline }}") played the same games · <a href="/validate">run another</a></p>
-  <p class="small"><b>Your targets</b> <span class="muted">(ticked: the teams your current team scores under 50% against{{ ' when both adapt' if base.robust }})</span></p>
+  <h1>{{ _("Replacing {mon}", mon=r.slot.replaced|dex('species')) }}</h1>
+  <p class="muted small">{{ _("{five} + each candidate", five=r.five|names(' · ')) }} · {{ _("model {model}", model=r.model) }} · {% if r.search %}{{ _("{n} games each in Search Mode ({k} a team)", n=r.games_each, k=r.search.games_per_team) }}{% else %}{{ _("{n} quick self-play games each", n=r.games_each) }}{% endif %} · {{ _("against {field}", field=_(r.field.name) if r.field.name else _("{n} teams", n=r.field.teams)) }} · {{ _('the current team ("{label}") played the same games', label=r.slot.baseline|cand_label) }} · <a href="/validate">{{ _("run another") }}</a></p>
+  <p class="small"><b>{{ _("Your targets") }}</b> <span class="muted">{{ _("(ticked: the teams your current team scores under 50% against when both adapt)") if base.robust else _("(ticked: the teams your current team scores under 50% against)") }}</span></p>
   <div class="slot-targets" id="slot-targets">
     {% for o in r.opponents %}{% set v = base.robust.per[o.id].equilibrium if base.robust else base.opponents[o.id] %}
     <label class="tag mx-alt"><input type="checkbox" value="{{ o.id }}" {{ 'checked' if v < 0.5 }}> {{ o.id }} <span class="muted">{{ v|pct }}</span></label>{% endfor %}
   </div>
-  <p class="small">Flag a drop of more than <input id="slot-guard" class="num-inline" type="number" min="1" max="30" value="5"> points on any other team, or a team that falls under 50%.</p>
+  <p class="small">{{ _("Flag a drop of more than") }} <input id="slot-guard" class="num-inline" type="number" min="1" max="30" value="5"> {{ _("points on any other team, or a team that falls under 50%.") }}</p>
   <div class="scroll"><table class="tbl" id="slot-table"></table></div>
-  <p class="small muted">Points vs your current team, as picked ({{ 'searched' if r.search else 'quick mode' }}; the both-adapt pass is a raw quick read and doesn't rank here). Single-team changes under ~{{ (139 / (r.search.games_per_team ** 0.5))|round|int if r.search else 8 }} points are noise; read the averages.</p>
+  <p class="small muted">{{ (_("Points vs your current team, as picked (searched; the both-adapt pass is a raw quick read and doesn't rank here).") if r.search else _("Points vs your current team, as picked (quick mode; the both-adapt pass is a raw quick read and doesn't rank here).")) }} {{ _("Single-team changes under ~{n} points are noise; read the averages.", n=(139 / (r.search.games_per_team ** 0.5))|round|int if r.search else 8) }}</p>
 </div>
 <script type="application/json" id="slot-data">{{ {"teams": r.opponents|map(attribute='id')|list, "share": r.opponents|map(attribute='share')|list} | tojson }}</script>
-<script type="application/json" id="slot-rows">[{% for c in r.rows %}{{ {"label": c.label, "source": c.source, "set": c.set, "fast": c.opponents,
+<script type="application/json" id="slot-rows">[{% for c in r.rows %}{{ {"label": c.label, "shown": c.label|cand_label, "source": c.source, "set": c.set|set_text, "fast": c.opponents,
   "eqm": c.robust.eq_by_team if c.robust and c.robust.eq_by_team is defined else none,
   "brought": c.mon.brought, "mix": c.robust.sixth_share if c.robust else none} | tojson }}{{ "," if not loop.last }}{% endfor %}]</script>
 <script>
 (() => {
+  const L = {{ {"candidate": _("candidate"), "targets": _("on your targets"), "worst": _("worst elsewhere"), "guardrail": _("guardrail"),
+    "overall": _("overall"), "brought": _("brought"), "mix": _("in mix"), "measured": _("measured"), "current": _("current"),
+    "both": _("both adapt"), "picked": _("as picked"), "field": _("from the field"), "usage": _("from ladder usage"),
+    "under": _("{team} under 50%"), "clear": _("clear")}|tojson }};
   const D = JSON.parse(document.getElementById("slot-data").textContent), rows = JSON.parse(document.getElementById("slot-rows").textContent);
   const base = rows.find(r => r.source === "current"), table = document.getElementById("slot-table");
   const w = Object.fromEntries(D.teams.map((t, i) => [t, D.share[i] == null ? 1 : D.share[i]]));
@@ -31,23 +35,23 @@
     const others = D.teams.filter(t => !targets.includes(t));
     const guard = (+document.getElementById("slot-guard").value || 5) / 100;
     const out = rows.filter(r => r !== base).map(r => {
-      const key = "fast";
+      const key = "fast";  // (11-01: as picked - searched in Search Mode; the raw both-adapt pass doesn't rank, it's a quick read)
       const d = t => (r[key][t] ?? null) == null || (base[key][t] ?? null) == null ? null : r[key][t] - base[key][t];
       const dt = targets.length ? avg({x: Object.fromEntries(targets.map(t => [t, d(t)]))}, targets, "x") : null;
       let worst = null, wt = null, flags = [];
       for (const t of others) { const v = d(t); if (v == null) continue; if (worst == null || v < worst) { worst = v; wt = t; }
-        if (v < -guard) flags.push(`${t} ${pts(v)}`); else if (r[key][t] < 0.5 && base[key][t] >= 0.5) flags.push(`${t} under 50%`); }
+        if (v < -guard) flags.push(`${t} ${pts(v)}`); else if (r[key][t] < 0.5 && base[key][t] >= 0.5) flags.push(L.under.replace("{team}", t)); }
       return {r, key, dt, worst, wt, flags, dAll: avg(r, D.teams, key) - avg(base, D.teams, key)};
     }).sort((a, b) => (b.dt ?? -9) - (a.dt ?? -9));
-    const head = `<tr><th>candidate</th><th class="num">on your targets</th><th class="num">worst elsewhere</th><th>guardrail</th><th class="num">overall</th><th class="num">brought</th><th class="num">in mix</th><th class="num">measured</th></tr>`;
-    const b0 = `<tr><td><b>${esc(base.label)}</b> <span class="tag">current</span><br><span class="small muted">${esc(base.set)}</span></td><td class="num">${pct(avg(base, targets, base.eqm ? "eqm" : "fast"))}</td><td></td><td></td><td class="num">${pct(avg(base, D.teams, base.eqm ? "eqm" : "fast"))}</td><td class="num">${pct(base.brought)}</td><td class="num">${pct(base.mix)}</td><td class="num small muted">${base.eqm ? "both adapt" : "as picked"}</td></tr>`;
+    const head = `<tr><th>${L.candidate}</th><th class="num">${L.targets}</th><th class="num">${L.worst}</th><th>${L.guardrail}</th><th class="num">${L.overall}</th><th class="num">${L.brought}</th><th class="num">${L.mix}</th><th class="num">${L.measured}</th></tr>`;
+    const b0 = `<tr><td><b>${esc(base.shown || base.label)}</b> <span class="tag">${L.current}</span><br><span class="small muted">${esc(base.set)}</span></td><td class="num">${pct(avg(base, targets, base.eqm ? "eqm" : "fast"))}</td><td></td><td></td><td class="num">${pct(avg(base, D.teams, base.eqm ? "eqm" : "fast"))}</td><td class="num">${pct(base.brought)}</td><td class="num">${pct(base.mix)}</td><td class="num small muted">${base.eqm ? L.both : L.picked}</td></tr>`;
     table.innerHTML = head + b0 + out.map(x => `<tr${x.key === "fast" ? ' class="muted"' : ""}>
-      <td><b>${esc(x.r.label)}</b>${x.r.source === "field" ? ' <span class="small muted">from the field</span>' : x.r.source === "usage" ? ' <span class="small muted">from ladder usage</span>' : ""}<br><span class="small muted">${esc(x.r.set)}</span></td>
+      <td><b>${esc(x.r.shown || x.r.label)}</b>${x.r.source === "field" ? ` <span class="small muted">${L.field}</span>` : x.r.source === "usage" ? ` <span class="small muted">${L.usage}</span>` : ""}<br><span class="small muted">${esc(x.r.set)}</span></td>
       <td class="num ${x.dt > 0 ? "hirec" : x.dt < 0 ? "lowrec" : ""}"><b>${pts(x.dt)}</b></td>
       <td class="num ${x.worst < 0 ? "lowrec" : ""}">${pts(x.worst)}${x.wt ? `<br><span class="small muted">${esc(x.wt)}</span>` : ""}</td>
-      <td class="small">${x.flags.length ? '<span class="lowrec">' + x.flags.map(esc).join("<br>") + "</span>" : '<span class="hirec">clear</span>'}</td>
+      <td class="small">${x.flags.length ? '<span class="lowrec">' + x.flags.map(esc).join("<br>") + "</span>" : `<span class="hirec">${L.clear}</span>`}</td>
       <td class="num">${pts(x.dAll)}</td><td class="num">${pct(x.r.brought)}</td><td class="num">${pct(x.r.mix)}</td>
-      <td class="num small muted">${x.key === "eqm" ? "both adapt" : "as picked"}</td></tr>`).join("");
+      <td class="num small muted">${x.key === "eqm" ? L.both : L.picked}</td></tr>`).join("");
   }
   document.querySelectorAll("#slot-targets input, #slot-guard").forEach(el => el.addEventListener("input", draw));
   draw();

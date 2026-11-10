@@ -1,11 +1,11 @@
 
 
-{% macro brings_summary(b, who='you') %}{% set rec = b.recommended %}
+{% macro brings_summary(b, who=none) %}{% set who = who or _('you') %}{% set rec = b.recommended %}
 <div class="note">
-  <p><span class="tag mx-alt" title="raw self-play: the policy without search - wrong in about half of the hard matchups checked">quick read</span> <b>Recommended bring for {{ who }}:</b> {{ rec.lead|join(' + ') }} lead, {{ rec.back|join(' + ') }} back</p>
-  <p class="small"><b>As picked</b> {{ b.as_picked|pct }} · <b>safest</b> {{ b.safest.value|pct }} ({{ b.mine[b.safest.row].lead|join(' + ') }})
-    · <b>both adapt</b> {{ b.equilibrium.value|pct }}{% if b.vs_human %} · <b>vs a human</b> {{ b.vs_human[rec.row]|pct }}
-    <span class="muted">(their model covers {{ b.human_coverage|pct }})</span>{% endif %}
-    <span class="muted">· ±{{ (b.se * 100)|round(0)|int }} points a cell · raw self-play, not searched: a first look</span></p>
+  <p><span class="tag mx-alt" title="{{ _("Fast estimate from games the model plays without search") }}">{{ _("quick read") }}</span> {{ _("<b>Recommended bring for {who}:</b> {lead} lead, {back} back", who=who|e, lead=rec.lead|names(' + '), back=rec.back|names(' + '))|safe }}</p>
+  <p class="small"><b>{{ _("As picked") }}</b> {{ b.as_picked|pct }} · <b>{{ _("safest") }}</b> {{ b.safest.value|pct }} ({{ b.mine[b.safest.row].lead|names(' + ') }})
+    · <b>{{ _("both adapt") }}</b> {{ b.equilibrium.value|pct }}{% if b.vs_human %} · <b>{{ _("vs a human") }}</b> {{ b.vs_human[rec.row]|pct }}
+    <span class="muted">{{ _("(their model covers {pct})", pct=b.human_coverage|pct) }}</span>{% endif %}
+    <span class="muted">· {{ _("±{n} points a cell · raw self-play, not searched: a first look", n=(b.se * 100)|round(0)|int) }}</span></p>
 </div>
 {% endmacro %}

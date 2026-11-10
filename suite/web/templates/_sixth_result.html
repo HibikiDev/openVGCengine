@@ -2,56 +2,56 @@
 {% from "_team_export.html" import team_export %}{% macro pts(x) %}{{ "%+.1f"|format(x * 100) }}{% endmacro %}
 {% if r.slot %}{% include "_slot_result.html" %}{% endif %}
 <div class="card">
-  {% if r.slot %}<h2>Every candidate, as picked</h2>{% else %}<h1>The sixth for {{ r.five|join(' · ') }}</h1>{% endif %}
-  <p class="muted small">model {{ r.model }} · {{ r.rows|length }} candidates, {{ r.games_each }} {% if r.search %}games each in <b>Search Mode</b> ({{ r.search.games_per_team }} a team){% else %}quick self-play games each{% endif %} against {% if r.field.name %}<b>{{ r.field.name }}</b> ({{ r.field.teams }} teams{{ ', weighted' if r.field.weighted }}){% else %}{{ r.field.teams }} teams{% endif %} · <a href="/validate">run another</a></p>
+  {% if r.slot %}<h2>{{ _("Every candidate, as picked") }}</h2>{% else %}<h1>{{ _("The sixth for {five}", five=r.five|names(' · ')) }}</h1>{% endif %}
+  <p class="muted small">{{ _("model {model}", model=r.model) }} · {{ _("{n} candidates", n=r.rows|length) }}, {% if r.search %}{{ _("{n} games each in Search Mode ({k} a team)", n=r.games_each, k=r.search.games_per_team) }}{% else %}{{ _("{n} quick self-play games each", n=r.games_each) }}{% endif %} · {% if r.field.name %}{{ _("against {field}", field=_(r.field.name)) }} ({{ _("{n} teams, weighted", n=r.field.teams) if r.field.weighted else _("{n} teams", n=r.field.teams) }}){% else %}{{ _("against {field}", field=_("{n} teams", n=r.field.teams)) }}{% endif %} · <a href="/validate">{{ _("run another") }}</a></p>
   <div class="scroll"><table class="tbl">
-    <tr><th></th><th>candidate</th><th class="num">score vs the field</th><th class="num">vs the average<br>candidate</th><th class="num">brought</th><th class="num">led</th><th class="num">your score<br>when brought</th><th>what it clicks</th></tr>
+    <tr><th></th><th>{{ _("candidate") }}</th><th class="num">{{ _("score vs the field") }}</th><th class="num">{{ _("vs the average<br>candidate")|safe }}</th><th class="num">{{ _("brought") }}</th><th class="num">{{ _("led") }}</th><th class="num">{{ _("your score<br>when brought")|safe }}</th><th>{{ _("what it clicks") }}</th></tr>
     {% for c in r.rows %}{% set m = c.mon %}<tr>
       <td class="num muted">{{ loop.index }}</td>
-      <td><b>{{ c.label }}</b> <span class="muted small">{{ {'yours': 'your set', 'usage': 'from ladder usage', 'current': 'current'}.get(c.source, 'from the field') }}</span><br><span class="small muted">{{ c.set }}</span>{{ team_export(c.six_paste or (sweep_six_paste(job, c) if sweep_six_paste is defined and job is defined else none), "show the six") }}</td>
+      <td><b>{{ c.label|cand_label }}</b> <span class="muted small">{{ _({'yours': 'your set', 'usage': 'from ladder usage', 'current': 'current'}.get(c.source, 'from the field')) }}</span><br><span class="small muted">{{ c.set|set_text }}</span>{{ team_export(c.six_paste or (sweep_six_paste(job, c) if sweep_six_paste is defined and job is defined else none), _("show the six")) }}</td>
       <td class="num"><b>{{ c.overall.score|pct }}</b><br><span class="small muted">{{ c.overall.ci[0]|pct }}–{{ c.overall.ci[1]|pct }}</span></td>
       <td class="num {{ 'hirec' if c.vs_mean > 0 else 'lowrec' if c.vs_mean < 0 }}">{{ pts(c.vs_mean) }}</td>
       <td class="num">{{ m.brought|pct }}</td><td class="num">{{ m.led|pct }}</td><td class="num">{{ m.score_when_brought|pct }}</td>
-      <td class="small">{% for x in (m.moves or [])[:3] if x.share > 0 %}{{ x.move }} <b>{{ x.share|prob }}</b>{{ " · " if not loop.last }}{% endfor %}{% if m.mega is not none %}<br><span class="muted">Mega Evolves in {{ m.mega|pct }}</span>{% endif %}</td></tr>{% endfor %}
+      <td class="small">{% for x in (m.moves or [])[:3] if x.share > 0 %}{{ x.move|dex('move') }} <b>{{ x.share|prob }}</b>{{ " · " if not loop.last }}{% endfor %}{% if m.mega is not none %}<br><span class="muted">{{ _("Mega Evolves in {pct}", pct=m.mega|pct) }}</span>{% endif %}</td></tr>{% endfor %}
   </table></div>
-  <p class="small muted">Same games for every candidate: gaps under ~{{ 2 if not r.search else (130 / (r.games_each ** 0.5))|round|int }} points are ties.{% if not r.search %} Quick mode - rerun the top few in Search Mode.{% endif %} <b>Brought</b>: how often the bot brings it at all.</p>
+  <p class="small muted">{{ _("Same games for every candidate: gaps under ~{n} points are ties.", n=2 if not r.search else (130 / (r.games_each ** 0.5))|round|int) }}{% if not r.search %} {{ _("Quick mode - rerun the top few in Search Mode.") }}{% endif %} {{ _("<b>Brought</b>: how often the bot brings it at all.")|safe }}</p>
 </div>
 {% if r.robust %}{% set R = r.robust %}
 {% set by = {} %}{% for c in r.rows if c.robust %}{% set _ = by.update({c.label: c}) %}{% endfor %}
 <div class="card">
-  <h2>When both sides bring well: the best {{ R.order|length }} <span class="tag mx-alt" title="raw self-play: the policy without search - wrong in about half of the hard matchups checked">quick read</span></h2>
-  <p class="muted small">Ordered by <b>as picked</b>{{ ' (searched)' if r.search }}. <b>Both adapt</b> - each six's score when both sides bring well, averaged over the field - comes from raw self-play: a first look, not a ranking.</p>
-  <details class="howto small"><summary>How this pass works</summary><p>Each six plays a bring matrix against every team: the brings the preview models list, plus their best answers to your usual four and your most robust fours from all 15 of each side; {{ R.games_per_cell }} games a cell, from both sides of the board. <b>If they know your four</b>: how exploitable always bringing it is. <b>Vs human-style</b>: against what a human preview model brings vs this sheet (a weak model - a hint).</p></details>
+  <h2>{{ _("When both sides bring well: the best {n}", n=R.order|length) }} <span class="tag mx-alt" title="{{ _('Fast estimate from games the model plays without search') }}">{{ _("quick read") }}</span></h2>
+  <p class="muted small">{{ (_("Ordered by <b>as picked</b> (searched).") if r.search else _("Ordered by <b>as picked</b>."))|safe }} {{ _("<b>Both adapt</b> - each six's score when both sides bring well, averaged over the field - comes from raw self-play: a first look, not a ranking.")|safe }}</p>
+  <details class="howto small"><summary>{{ _("How this pass works") }}</summary><p>{{ _("Each six plays a bring matrix against every team: the brings the preview models list, plus their best answers to your usual four and your most robust fours from all 15 of each side; {n} games a cell, from both sides of the board. <b>If they know your four</b>: how exploitable always bringing it is. <b>Vs human-style</b>: against what a human preview model brings vs this sheet (a weak model - a hint).", n=R.games_per_cell)|safe }}</p></details>
   <div class="scroll"><table class="tbl">
-    <tr><th></th><th>candidate</th><th class="num">both adapt</th><th class="num">if they know<br>your four</th><th class="num">vs a human</th><th class="num">as picked</th><th class="num">in your mix<br>when both adapt</th></tr>
+    <tr><th></th><th>{{ _("candidate") }}</th><th class="num">{{ _("both adapt") }}</th><th class="num">{{ _("if they know<br>your four")|safe }}</th><th class="num">{{ _("vs a human") }}</th><th class="num">{{ _("as picked") }}</th><th class="num">{{ _("in your mix<br>when both adapt")|safe }}</th></tr>
     {% for c in r.rows|selectattr('robust')|sort(attribute='overall.score', reverse=true) if c.label in R.order %}{% set x = c.robust %}<tr>
       <td class="num muted">{{ loop.index }}</td>
-      <td><b>{{ c.label }}</b><br><span class="small muted">{{ c.set }}</span></td>
+      <td><b>{{ c.label|cand_label }}</b><br><span class="small muted">{{ c.set|set_text }}</span></td>
       <td class="num"><b>{{ x.equilibrium|pct }}</b></td><td class="num">{{ x.best_answer|pct }}</td><td class="num">{{ x.vs_human|pct }}</td><td class="num muted">{{ c.overall.score|pct }}</td>
       <td class="num">{{ x.sixth_share|pct }}</td></tr>{% endfor %}
   </table></div>
-  <p class="small muted">Far above its both-adapt number "as picked" = it wins by its effect on their preview. <b>In your mix</b> near 0% = its value is sheet presence. Single teams are ±6 points: read the averages.</p>
-  <h3 style="margin-top:14px">Team by team, both adapt <span class="tag mx-alt" title="raw self-play: the policy without search - wrong in about half of the hard matchups checked">quick read</span></h3>
+  <p class="small muted">{{ _('Far above its both-adapt number "as picked" = it wins by its effect on their preview. <b>In your mix</b> near 0% = its value is sheet presence. Single teams are ±6 points: read the averages.')|safe }}</p>
+  <h3 style="margin-top:14px">{{ _("Team by team, both adapt") }} <span class="tag mx-alt" title="{{ _('Fast estimate from games the model plays without search') }}">{{ _("quick read") }}</span></h3>
   <div class="scroll"><table class="tbl small">
-    <tr><th>team</th>{% for lab in R.order %}<th class="num">{{ lab }}</th>{% endfor %}</tr>
-    {% for o in r.opponents %}<tr><td><b>{{ o.id }}</b><br><span class="muted">{{ o.species|join(' · ') }}</span></td>
-      {% for lab in R.order %}{% set p = by[lab].robust.per[o.id] %}<td class="cell" style="background: {{ p.equilibrium|heat }}" title="your both-adapt lean: {{ p.my_bring|join(', ') }}">{{ p.equilibrium|pct }} <span class="muted" style="font-weight: 400">(as picked {{ p.as_picked|pct }})</span><br><span class="muted" style="font-weight: 400">if they know your four: {{ p.best_answer|pct }} to {{ p.answer_bring[:2]|join(' + ') }} + {{ p.answer_bring[2:]|join(' + ') }}{{ ' *' if p.outside_heads }}</span></td>{% endfor %}</tr>{% endfor %}
+    <tr><th>{{ _("team") }}</th>{% for lab in R.order %}<th class="num">{{ lab|cand_label }}</th>{% endfor %}</tr>
+    {% for o in r.opponents %}<tr><td><b>{{ o.id }}</b><br><span class="muted">{{ o.species|names(' · ') }}</span></td>
+      {% for lab in R.order %}{% set p = by[lab].robust.per[o.id] %}<td class="cell" style="background: {{ p.equilibrium|heat }}" title="{{ _('your both-adapt lean: {mons}', mons=p.my_bring|names) }}">{{ p.equilibrium|pct }} <span class="muted" style="font-weight: 400">({{ _("as picked {pct}", pct=p.as_picked|pct) }})</span><br><span class="muted" style="font-weight: 400">{{ _("if they know your four: {pct} to {bring}", pct=p.best_answer|pct, bring=p.answer_bring[:2]|names(' + ') ~ ' + ' ~ p.answer_bring[2:]|names(' + ')) }}{{ ' *' if p.outside_heads }}</span></td>{% endfor %}</tr>{% endfor %}
   </table></div>
-  <p class="small muted">* an answer no preview model lists.</p>
+  <p class="small muted">{{ _("* an answer no preview model lists.") }}</p>
 </div>
 {% endif %}
 <div class="card">
-  <h2>Matchup by matchup, as picked</h2>
-  <p class="muted small">Your score per team with each candidate, hardest first; the best per team on the right.{% if jid %} Click a cell for a deep head-to-head.{% endif %}</p>
+  <h2>{{ _("Matchup by matchup, as picked") }}</h2>
+  <p class="muted small">{{ _("Your score per team with each candidate, hardest first; the best per team on the right.") }}{% if jid %} {{ _("Click a cell for a deep head-to-head.") }}{% endif %}</p>
   <div class="scroll"><table class="tbl small">
-    <tr><th>team</th>{% if r.field.weighted %}<th class="num">share</th>{% endif %}{% for c in r.rows %}<th class="num">{{ c.label }}</th>{% endfor %}<th>best</th></tr>
-    {% for o in r.opponents %}<tr><td><b>{{ o.id }}</b><br><span class="muted">{{ o.species|join(' · ') }}</span></td>
+    <tr><th>{{ _("team") }}</th>{% if r.field.weighted %}<th class="num">{{ _("share") }}</th>{% endif %}{% for c in r.rows %}<th class="num">{{ c.label|cand_label }}</th>{% endfor %}<th>{{ _("best") }}</th></tr>
+    {% for o in r.opponents %}<tr><td><b>{{ o.id }}</b><br><span class="muted">{{ o.species|names(' · ') }}</span></td>
       {% if r.field.weighted %}<td class="num">{{ o.share|pct }}</td>{% endif %}
-      {% for c in r.rows %}{% set v = c.opponents[o.id] %}<td class="cell" style="background: {{ v|heat }}">{% if jid and c.paste %}<a href="/h2h?{{ {'dd': jid, 'opp': o.id, 'sixth': c.label}|urlencode }}" title="head-to-head: five + {{ c.label }} vs {{ o.id }}" style="color: inherit">{{ v|pct }}</a>{% else %}{{ v|pct }}{% endif %}</td>{% endfor %}
-      <td>{{ o.best }}</td></tr>{% endfor %}
-    <tr><td><b>overall</b></td>{% if r.field.weighted %}<td></td>{% endif %}{% for c in r.rows %}<td class="num"><b>{{ c.overall.score|pct }}</b></td>{% endfor %}<td></td></tr>
+      {% for c in r.rows %}{% set v = c.opponents[o.id] %}<td class="cell" style="background: {{ v|heat }}">{% if jid and c.paste %}<a href="/h2h?{{ {'dd': jid, 'opp': o.id, 'sixth': c.label}|urlencode }}" title="{{ _('head-to-head: five + {label} vs {team}', label=c.label|cand_label, team=o.id) }}" style="color: inherit">{{ v|pct }}</a>{% else %}{{ v|pct }}{% endif %}</td>{% endfor %}
+      <td>{{ o.best|cand_label }}</td></tr>{% endfor %}
+    <tr><td><b>{{ _("overall") }}</b></td>{% if r.field.weighted %}<td></td>{% endif %}{% for c in r.rows %}<td class="num"><b>{{ c.overall.score|pct }}</b></td>{% endfor %}<td></td></tr>
   </table></div>
 </div>
-{% if r.skipped %}<div class="note">Left out: {% for x in r.skipped %}<b>{{ x.label }}</b> ({{ x.why }}){{ "; " if not loop.last }}{% endfor %}.</div>{% endif %}
-{% if r.usage_note %}<p class="small muted">"From ladder usage": {{ r.usage_note }} - thanks to Smogon and Pokémon Showdown.</p>{% endif %}
-<details class="howto small"><summary>Caveats</summary><p>{% for c in r.caveats %}{{ c[0]|upper }}{{ c[1:] }}.{{ " " if not loop.last }}{% endfor %}</p></details>
+{% if r.skipped %}<div class="note">{{ _("Left out:") }} {% for x in r.skipped %}<b>{{ x.label|cand_label }}</b> ({{ x.why }}){{ _("; ") if not loop.last }}{% endfor %}</div>{% endif %}
+{% if r.usage_note %}<p class="small muted">{{ _('"From ladder usage": {note} - thanks to Smogon and Pokémon Showdown.', note=r.usage_note) }}</p>{% endif %}
+<details class="howto small"><summary>{{ _("Caveats") }}</summary><p>{% for c in r.caveats %}{% set c = c|caveat %}{{ c[0]|upper }}{{ c[1:] }}{{ "." if lang() == "en" else "。" }}{{ " " if not loop.last and lang() == "en" }}{% endfor %}</p></details>

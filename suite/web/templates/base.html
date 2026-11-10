@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="{{ lang() if lang() in languages else 'en' }}">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,37 +18,45 @@
   {% set team = ['validate', 'muselfplay', 'slot'] %}{% set lab = ['h2h', 'playout', 'fieldplay', 'preview', 'crawler', 'turn1', 'mxcheck'] %}{% set rep = ['analyze'] %}
   {% set dev = ['prep', 'nice', 'matchups', 'opp', 'meta'] %}
   <nav>
-    <a class="tab{% if active in team %} on{% endif %}" href="/validate">Team Lab</a>
-    <a class="tab{% if active in lab %} on{% endif %}" href="/h2h">Battle Lab</a>
-    <a class="tab{% if active in rep %} on{% endif %}" href="/analyze">Replays</a>
-    <a class="tab{% if active == 'buddy' %} on{% endif %}" href="/buddy">Buddy</a>
-    <a class="tab{% if active == 'buckets' %} on{% endif %}" href="/buckets">Buckets</a>
+    <a class="tab{% if active in team %} on{% endif %}" href="/validate">{{ _("Team Lab") }}</a>
+    <a class="tab{% if active in lab %} on{% endif %}" href="/h2h">{{ _("Battle Lab") }}</a>
+    <a class="tab{% if active in rep %} on{% endif %}" href="/analyze">{{ _("Replays") }}</a>
+    <a class="tab{% if active == 'buddy' %} on{% endif %}" href="/buddy">{{ _("Buddy") }}</a>
+    <a class="tab{% if active == 'buckets' %} on{% endif %}" href="/buckets">{{ _("Buckets") }}</a>
     {% if private %}<a class="tab{% if active == 'status' %} on{% endif %}" href="/status">Status</a>
     <details class="devmenu"><summary class="tab{% if active in dev %} on{% endif %}">Dev ▾</summary>
       <div class="devlist"><a href="/prep">Prep</a><a href="/status/matchups">Matchups</a><a href="/status/meta">Metagame</a><a href="/status/opp">Opponents</a><a href="/status/nice">Nice</a></div></details>{% endif %}
   </nav>{% endif %}
+
+  <form class="langswitch" method="post" action="/lang" onsubmit="this.back.value = location.pathname + location.search">
+    <input type="hidden" name="back" value="/"><input type="hidden" name="to" value="{{ 'en' if lang() == 'ja' else 'ja' }}">
+    <button type="submit" class="langbtn" lang="{{ 'en' if lang() == 'ja' else 'ja' }}" title="{{ 'Switch to English' if lang() == 'ja' else '日本語に切り替える' }}">{{ 'English' if lang() == 'ja' else '日本語' }}</button></form>
 </div></header>
 <main><div class="wrap">
-{% if not standalone %}{% set sub = [('validate', 'Team Deep Dive'), ('slot', 'Change a slot')] if active in team else [('h2h', 'Head-to-head'), ('playout', 'Play-out'), ('fieldplay', 'Series vs a field'), ('preview', 'Preview Advisor'), ('crawler', 'Line Crawler')] if active in lab
-   else ([('analyze', 'Analyzer')] if active in rep else []) %}
+{% if not standalone %}{% set sub = [('validate', _('Team Deep Dive')), ('slot', _('Change a slot'))] if active in team else [('h2h', _('Head-to-head')), ('playout', _('Play-out')), ('fieldplay', _('Series vs a field')), ('preview', _('Preview Advisor')), ('crawler', _('Line Crawler'))] if active in lab
+   else ([('analyze', _('Analyzer'))] if active in rep else []) %}
 {% if sub %}<div class="subnav">{% for key, label in sub %}<a class="{{ 'on' if active == key or (key == 'preview' and active == 'turn1') }}" href="/{{ key }}">{{ label }}</a>{% endfor %}
-  <button type="button" class="subclear" data-clear="{{ 'team' if active in team else 'lab' if active in lab else 'rep' }}">{{ 'clear team' if active in team else 'clear teams' if active in lab else 'clear replay' }}</button></div>{% endif %}{% endif %}
-{% if not standalone and gpu is defined and not gpu.on and (active in team or active in lab) %}<div class="card flat cpubar small"><b>Running on the CPU</b> &middot; no GPU the tools can use was found, so searched modes (Search Mode, Deep mode, bring matrices, example games) are off by default or take much longer here; quick modes work as usual.</div>{% endif %}
-{% set _lk = suite_lock() %}{% if _lk %}<div class="card flat lockbar"><b>Tools paused</b> &middot; this PC is busy: {{ _lk.reason }}{% if _lk.until %} (until about {{ _lk.until }}){% endif %}. Status, results and history still work; new runs and the Line Crawler wait until it's done.</div>{% endif %}
+  <button type="button" class="subclear" data-clear="{{ 'team' if active in team else 'lab' if active in lab else 'rep' }}">{{ _('clear team') if active in team else _('clear teams') if active in lab else _('clear replay') }}</button></div>{% endif %}{% endif %}
+{% if not standalone and gpu is defined and not gpu.on and (active in team or active in lab) %}<div class="card flat cpubar small">{{ _("<b>Running on the CPU</b> &middot; no GPU the tools can use was found, so searched modes (Search Mode, Deep mode, bring matrices, example games) are off by default or take much longer here; quick modes work as usual.")|safe }}</div>{% endif %}
+{% set _lk = suite_lock() %}{% if _lk %}<div class="card flat lockbar"><b>{{ _("Tools paused") }}</b> &middot; {{ _("this PC is busy:") }} {{ _lk.reason }}{% if _lk.until %} ({{ _("until about {time}", time=_lk.until) }}){% endif %}. {{ _("Status, results and history still work; new runs and the Line Crawler wait until it's done.") }}</div>{% endif %}
 {% block main %}
-{% if missing %}<div class="card"><h2>Hmm, nothing here</h2><p>That result doesn't exist (any more). <a href="/">Back home</a></p></div>{% endif %}
+{% if missing %}<div class="card"><h2>{{ _("Hmm, nothing here") }}</h2><p>{{ _("That result doesn't exist (any more).") }} <a href="/">{{ _("Back home") }}</a></p></div>{% endif %}
 {% endblock %}
 </div></main>
-<footer>{% block footer %}Everything here is the model's view from self-play, not a verdict{% endblock %}
-  {% if not standalone %}&middot; <a href="/about">About &amp; updates</a> &middot; <a href="/about#bug">Report a bug</a>{% endif %}</footer>
+<footer>{% block footer %}{{ _("Everything here is the model's view from self-play, not a verdict") }}{% endblock %}
+  {% if not standalone %}&middot; <a href="/about">{{ _("About & updates") }}</a> &middot; <a href="/about#bug">{{ _("Report a bug") }}</a>{% endif %}</footer>
 {% block scripts %}{% endblock %}
 {% if not standalone %}<script src="/static/sprites.js" defer></script><script src="/static/app.js" defer></script>{% endif %}
 <script>
-
-
+window.T = {"fill from a bucket…": {{ _("fill from a bucket…")|tojson }},  // (app.js's strings)
+            "the whole bucket (a team drawn per game)": {{ _("the whole bucket (a team drawn per game)")|tojson }},
+            "Pokémon icons: {mode}": {{ _("Pokémon icons: {mode}")|tojson }}, "icons only": {{ _("icons only")|tojson }},  // (sprites.js's)
+            "icons with names": {{ _("icons with names")|tojson }}, "off": {{ _("off")|tojson }}};
+// (The "show team" exports' Copy button, `_team_export.html`: over plain http on the LAN the async clipboard API is missing - fall back
+// to selecting the text and execCommand.)
 function copyExport(btn) {
   const text = btn.parentElement.querySelector("pre").textContent;
-  const done = ok => { btn.textContent = ok ? "Copied" : "Select + copy by hand"; setTimeout(() => btn.textContent = "Copy", 1800); };
+  const done = ok => { btn.textContent = ok ? {{ _("Copied")|tojson }} : {{ _("Select + copy by hand")|tojson }}; setTimeout(() => btn.textContent = {{ _("Copy")|tojson }}, 1800); };
   if (navigator.clipboard && window.isSecureContext) { navigator.clipboard.writeText(text).then(() => done(true), () => done(false)); return; }
   const ta = document.createElement("textarea");
   ta.value = text; ta.setAttribute("readonly", ""); ta.style.position = "fixed"; ta.style.opacity = "0";
@@ -57,14 +65,14 @@ function copyExport(btn) {
   try { ok = document.execCommand("copy"); } catch (e) { ok = false; }
   document.body.removeChild(ta); done(ok);
 }
-
-
+// Click a column header to sort any table (numbers by their data-v or the first number in the cell; text otherwise); a second
+// click reverses. Nothing is stored: a reload brings back each table's default order (user, 10-14).
 document.querySelectorAll("table.tbl").forEach(tbl => {
   const rows = Array.from(tbl.rows);
   if (!rows.length || !rows[0].querySelector("th")) return;
   const head = rows[0];
   Array.from(head.cells).forEach((th, col) => {
-    th.style.cursor = "pointer"; th.title = "sort";
+    th.style.cursor = "pointer"; th.title = {{ _("sort")|tojson }};
     th.addEventListener("click", () => {
       const body = Array.from(tbl.rows).slice(1).filter(r => r.cells.length === head.cells.length);
       const val = r => {

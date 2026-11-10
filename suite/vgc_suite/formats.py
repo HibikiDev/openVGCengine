@@ -4,9 +4,14 @@
 
 
 
+
 from __future__ import annotations
 
+from vgc_trainer import i18n
+
 from dataclasses import dataclass
+
+from vgc_trainer.formats import CURRENT as _CURRENT, REGULATIONS, STANDIN, is_champions
 
 MC = "gen9championsvgc2026regmc"
 
@@ -40,11 +45,18 @@ FORMATS = {f.id: f for f in (
     Format("gen9vgc2024regg", "[Gen 9] VGC 2024 Reg G", "SV Reg G", 9, True, False, False, "Tera"),
     Format("gen9vgc2025regi", "[Gen 9] VGC 2025 Reg I", "SV Reg I", 9, True, False, False, "Tera"),
 )}
-CURRENT = MC
 
 
-IN_TOOLS = (MC, "gen9vgc2025regi", "gen9vgc2024regg", "gen9vgc2023regd", "gen9vgc2023regc", "gen8vgc2022", "gen8vgc2021",
-            "gen8vgc2020", "gen7vgc2019", "gen7vgc2018", "gen7vgc2017", "gen6vgc2016", "gen6vgc2015", "gen6vgc2014", "gen5vgc2013")
+CURRENT = _CURRENT
+if STANDIN in REGULATIONS:
+    FORMATS[STANDIN] = Format(STANDIN, "[Gen 9 Champions] VGC 2026 Reg Z-Z (stand-in)", "Reg Z-Z", 9, True, True, True, "Mega")
+assert all(r in FORMATS for r in REGULATIONS), "a Champions regulation without a suite Format entry"
+
+
+
+IN_TOOLS = (*reversed(REGULATIONS), "gen9vgc2025regi", "gen9vgc2024regg", "gen9vgc2023regd", "gen9vgc2023regc", "gen8vgc2022",
+            "gen8vgc2021", "gen8vgc2020", "gen7vgc2019", "gen7vgc2018", "gen7vgc2017", "gen6vgc2016", "gen6vgc2015", "gen6vgc2014",
+            "gen5vgc2013")
 
 
 
@@ -61,12 +73,13 @@ def get(fmt: str | None) -> Format:
 
 def engine(fmt: str | None) -> str | None:
 
-    return None if fmt in (None, MC) else get(fmt).id
+
+    return None if is_champions(fmt) else get(fmt).id
 
 
 def tool_format(value: str | None) -> str:
 
     fmt = value or CURRENT
     if fmt not in IN_TOOLS:
-        raise ValueError(f"the tools don't play {FORMATS[fmt].short if fmt in FORMATS else fmt} yet")
+        raise ValueError(i18n.t("the tools don't play {value} yet", value=FORMATS[fmt].short if fmt in FORMATS else fmt))
     return fmt

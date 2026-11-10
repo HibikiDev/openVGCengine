@@ -22,11 +22,12 @@ import re
 import subprocess
 from pathlib import Path
 from vgc_trainer.winproc import NO_WINDOW
+from vgc_trainer.formats import CURRENT
 
 ROOT = Path(__file__).resolve().parents[3]
 CACHE = ROOT / "tools/corpus/.cache/smogon-stats/chaos"
 SNAPSHOT = ROOT / "data/smogon-usage"
-FORMAT = "gen9championsvgc2026regmc"
+FORMAT = CURRENT
 _DEX: dict = {}
 
 

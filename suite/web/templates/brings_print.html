@@ -3,8 +3,8 @@
 
 
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8">
-<title>Brings · {{ r.team.species|join(' · ') }}</title>
+<html lang="{{ lang() if lang() in languages else 'en' }}"><head><meta charset="utf-8">
+<title>{{ _("Brings") }} · {{ r.team.species|names(' · ') }}</title>
 <link rel="stylesheet" href="/static/fonts/fonts.css">
 <link rel="stylesheet" href="/static/style.css">
 <style>
@@ -39,74 +39,70 @@
   .glance .tbl td:first-child { width: 12%; }
 </style></head>
 <body><main>
-<div class="printbar"><button class="btn" onclick="window.print()">Print / Save as PDF</button>
-  <span class="meta">In the print dialog, pick <b>Save as PDF</b> (or "Microsoft Print to PDF") as the printer; landscape A4 is set.</span></div>
-{% macro four(o) %}<div class="mx-opt"><div><span class="mx-k">lead</span> <b>{{ o.lead|join(' + ') }}</b></div><div><span class="mx-k">back</span> {{ o.back|join(' + ') }}</div></div>{% endmacro %}
-<h1>Brings per opponent</h1>
-<p class="meta">Your team: {{ r.team.species|join(' · ') }} · against {{ r.field.name or (r.field.teams ~ ' teams') }}
-  · {% if r.search %}Search Mode, {{ r.search.games_per_team }} games a team{% else %}quick mode{% endif %}
-  · {{ r.brings.games_per_cell }} games a matrix cell · model {{ r.model }} · {{ job.created|ago if job.created else '' }}</p>
-<p class="meta"><b>Quick read:</b> these fours come from raw self-play (no search) except cells a search check covered - a first look, not a result (wrong in about half of the hard matchups checked).</p>
+<div class="printbar"><button class="btn" onclick="window.print()">{{ _("Print / Save as PDF") }}</button>
+  <span class="meta">{{ _('In the print dialog, pick <b>Save as PDF</b> (or "Microsoft Print to PDF") as the printer; landscape A4 is set.')|safe }}</span></div>
+{% macro four(o) %}<div class="mx-opt"><div><span class="mx-k">{{ _("lead") }}</span> <b>{{ o.lead|names(' + ') }}</b></div><div><span class="mx-k">{{ _("back") }}</span> {{ o.back|names(' + ') }}</div></div>{% endmacro %}
+<h1>{{ _("Brings per opponent") }}</h1>
+<p class="meta">{{ _("Your team: {team}", team=r.team.species|names(' · ')) }} · {{ _("against {field}", field=_(r.field.name) if r.field.name else _("{n} teams", n=r.field.teams)) }}
+  · {% if r.search %}{{ _("Search Mode, {n} games a team", n=r.search.games_per_team) }}{% else %}{{ _("quick mode") }}{% endif %}
+  · {{ _("{n} games a matrix cell", n=r.brings.games_per_cell) }} · {{ _("model {model}", model=r.model) }} · {{ job.created|ago if job.created else '' }}</p>
+<p class="meta">{{ _("<b>Quick read:</b> these fours come from raw self-play (no search) except cells a search check covered - a first look, not a result.")|safe }}</p>
 {% if r.brings.best_answer is defined and r.brings.best_answer is not none %}
 {% set fb = checked_field(job.id, r) if checked_field is defined else dict(r.brings, checked=0, teams=r.opponents|selectattr('brings')|list|length) %}
-<div class="stats-line"><span><b>{{ fb.equilibrium|pct }}</b> both adapt</span><span><b>{{ fb.as_picked|pct }}</b> as picked</span>
-  <span><b>{{ fb.checked }}/{{ fb.teams }}</b> teams searched</span>
-  <span class="meta">(over the field)</span></div>{% endif %}
+<div class="stats-line"><span><b>{{ fb.equilibrium|pct }}</b> {{ _("both adapt") }}</span><span><b>{{ fb.as_picked|pct }}</b> {{ _("as picked") }}</span>
+  <span><b>{{ fb.checked }}/{{ fb.teams }}</b> {{ _("teams searched") }}</span>
+  <span class="meta">{{ _("(over the field)") }}</span></div>{% endif %}
 <table class="tbl">
-  <thead><tr><th>team</th><th class="num">score</th><th class="num">as picked</th><th class="num">both adapt</th>
-    <th>recommended</th><th class="num">worst</th><th>safest</th><th class="num">worst</th><th>counter-switch</th><th class="num">vs their answer</th></tr></thead>
+  <thead><tr><th>{{ _("team") }}</th><th class="num">{{ _("score") }}</th><th class="num">{{ _("as picked") }}</th><th class="num">{{ _("both adapt") }}</th>
+    <th>{{ _("recommended") }}</th><th class="num">{{ _("worst") }}</th><th>{{ _("safest") }}</th><th class="num">{{ _("worst") }}</th><th>{{ _("counter-switch") }}</th><th class="num">{{ _("vs their answer") }}</th></tr></thead>
   <tbody>
-{% macro ck(b, i, j) %}{% if b.searched is defined and [i, j] in b.searched %}<span class="ck" title="searched">✓</span>{% endif %}{% endmacro %}
+{% macro ck(b, i, j) %}{% if b.searched is defined and [i, j] in b.searched %}<span class="ck" title="{{ _('searched') }}">✓</span>{% endif %}{% endmacro %}
 
 
   {% set ents = [] %}{% for m in r.opponents if m.brings %}{% set b = checked_brings(job.id, m.id, m.brings) if checked_brings is defined else m.brings %}
     {% set _ = ents.append({'m': m, 'b': b, 'lead': b.recommended.lead|sort|join(' + '), 'back': b.recommended.back|sort|join(' + '), 'adapt': b.equilibrium.value}) %}{% endfor %}
   {% set groups = [] %}{% for grp in ents|groupby('lead') %}{% set _ = groups.append({'lead': grp.grouper, 'rows': grp.list|sort(attribute='adapt', reverse=true)|sort(attribute='back'), 'n': grp.list|length}) %}{% endfor %}
   {% for g in groups|sort(attribute='n', reverse=true) %}
-  <tr class="lead-group"><td colspan="10"><span class="mx-k">lead</span> <b>{{ g.lead }}</b> <span class="muted">· {{ g.n }} team{{ 's' if g.n != 1 }}</span></td></tr>
+  <tr class="lead-group"><td colspan="10"><span class="mx-k">{{ _("lead") }}</span> <b>{{ g.lead|mons_text }}</b> <span class="muted">· {{ _("{n} teams", n=g.n) }}</span></td></tr>
   {% for e in g.rows %}{% set m = e.m %}{% set b = e.b %}{% set rec = b.recommended %}{% set sf = b.mine[b.safest.row] %}
-  <tr><td><b>{{ m.id.split(' (')[0] }}</b><br><span class="six-head">{{ m.species[:3]|join(' ') }}<br>{{ m.species[3:]|join(' ') }}</span></td>
+  <tr><td><b>{{ m.id.split(' (')[0] }}</b><br><span class="six-head">{{ m.species[:3]|names(' ') }}<br>{{ m.species[3:]|names(' ') }}</span></td>
     <td class="num"><b>{{ m.score|pct }}</b></td>
     <td class="num">{{ b.as_picked|pct }}{{ ck(b, 0, 0) }}</td>
     <td class="num">{{ b.equilibrium.value|pct }}{% if b.eq_searched is defined and b.eq_searched %}<span class="ck">✓</span>{% endif %}</td>
     <td>{{ four(rec) }}</td><td class="num wc-col">{{ (b.rec_worst.value if b.rec_worst is defined else b.matrix[rec.row]|min)|pct }}{{ ck(b, rec.row, b.rec_worst.col if b.rec_worst is defined else none) }}</td>
-    <td>{% if b.safest.row == rec.row %}<span class="same">= recommended</span>{% else %}{{ four(sf) }}{% endif %}</td><td class="num wc-col">{{ (b.safe_worst.value if b.safe_worst is defined else b.safest.value)|pct }}{{ ck(b, b.safest.row, b.safe_worst.col if b.safe_worst is defined else none) }}</td>
+    <td>{% if b.safest.row == rec.row %}<span class="same">= {{ _("recommended") }}</span>{% else %}{{ four(sf) }}{% endif %}</td><td class="num wc-col">{{ (b.safe_worst.value if b.safe_worst is defined else b.safest.value)|pct }}{{ ck(b, b.safest.row, b.safe_worst.col if b.safe_worst is defined else none) }}</td>
     {% set cs = counter_switch(b) %}
-    <td>{% if not cs.needed %}<span class="same">not needed</span>{% elif cs.row is none %}<span class="same">none clearly better</span>{% else %}{{ four(cs.mine) }}{% endif %}
-      {% if cs.needed %}<div class="ans">if they bring {{ cs.answer.lead|join(' + ') }}</div>{% endif %}</td>
-    <td class="num">{% if cs.needed and cs.row is not none %}<b>{{ cs.value|pct }}</b>{{ ck(b, cs.row, cs.col) }}<br><span class="wc">rec. {{ cs.rec_value|pct }}</span>{% else %}-{% endif %}</td></tr>
+    <td>{% if not cs.needed %}<span class="same">{{ _("not needed") }}</span>{% elif cs.row is none %}<span class="same">{{ _("none clearly better") }}</span>{% else %}{{ four(cs.mine) }}{% endif %}
+      {% if cs.needed %}<div class="ans">{{ _("if they bring {lead}", lead=cs.answer.lead|names(' + ')) }}</div>{% endif %}</td>
+    <td class="num">{% if cs.needed and cs.row is not none %}<b>{{ cs.value|pct }}</b>{{ ck(b, cs.row, cs.col) }}<br><span class="wc">{{ _("rec. {pct}", pct=cs.rec_value|pct) }}</span>{% else %}-{% endif %}</td></tr>
   {% endfor %}{% endfor %}
   </tbody>
 </table>
 <ul class="defs">
-  <li><b>Both adapt</b>: your score when both sides pick their brings well. <b>As picked</b>: your usual four against their usual four.
-    <b>Counter-switch</b>: if they bring their best answer to your recommended four (its lead shown), the four that beats it - with its score there and the recommended four's; "not needed" when the recommended four's worst case is already 50%+.</li>
-  <li><b>Recommended</b>: the four both-adapt play brings most. <b>Safest</b>: the four with the best worst case. <b>Worst case</b>: that four's
-    lowest score over their brings. ✓ = searched (the team's search check replayed that cell); the rest are quick reads.
-    Self-play numbers: how the bot plays these teams, not a verdict.</li>
+  <li>{{ _('<b>Both adapt</b>: your score when both sides pick their brings well. <b>As picked</b>: your usual four against their usual four. <b>Counter-switch</b>: if they bring their best answer to your recommended four (its lead shown), the four that beats it - with its score there and the recommended four\'s; "not needed" when the recommended four\'s worst case is already 50%+.')|safe }}</li>
+  <li>{{ _("<b>Recommended</b>: the four both-adapt play brings most. <b>Safest</b>: the four with the best worst case. <b>Worst case</b>: that four's lowest score over their brings. ✓ = searched (the team's search check replayed that cell); the rest are quick reads. Self-play numbers: how the bot plays these teams, not a verdict.")|safe }}</li>
 </ul>
 
 
 <section class="glance">
-<h1>At a glance: what your brings face</h1>
-<p class="meta">Same teams and order as the table before.</p>
+<h1>{{ _("At a glance: what your brings face") }}</h1>
+<p class="meta">{{ _("Same teams and order as the table before.") }}</p>
 <table class="tbl">
-  <thead><tr><th>team</th><th>their recommended</th><th>your recommended</th><th>your safest</th><th>your counter-switch</th></tr></thead>
+  <thead><tr><th>{{ _("team") }}</th><th>{{ _("their recommended") }}</th><th>{{ _("your recommended") }}</th><th>{{ _("your safest") }}</th><th>{{ _("your counter-switch") }}</th></tr></thead>
   <tbody>
   {% for g in groups|sort(attribute='n', reverse=true) %}
-  <tr class="lead-group"><td colspan="5"><span class="mx-k">lead</span> <b>{{ g.lead }}</b> <span class="muted">· {{ g.n }} team{{ 's' if g.n != 1 }}</span></td></tr>
+  <tr class="lead-group"><td colspan="5"><span class="mx-k">{{ _("lead") }}</span> <b>{{ g.lead|mons_text }}</b> <span class="muted">· {{ _("{n} teams", n=g.n) }}</span></td></tr>
   {% for e in g.rows %}{% set m = e.m %}{% set b = e.b %}{% set rec = b.recommended %}{% set cs = counter_switch(b) %}
-  <tr><td><b>{{ m.id.split(' (')[0] }}</b><br><span class="six-head">{{ m.species[:3]|join(' ') }}<br>{{ m.species[3:]|join(' ') }}</span></td>
+  <tr><td><b>{{ m.id.split(' (')[0] }}</b><br><span class="six-head">{{ m.species[:3]|names(' ') }}<br>{{ m.species[3:]|names(' ') }}</span></td>
     <td>{{ four(their_recommended(b)) }}</td>
     <td>{{ four(rec) }}</td>
-    <td>{% if b.safest.row == rec.row %}<span class="same">= recommended</span>{% else %}{{ four(b.mine[b.safest.row]) }}{% endif %}</td>
-    <td>{% if not cs.needed %}<span class="same">not needed</span>{% elif cs.row is none %}<span class="same">none clearly better</span>{% else %}{{ four(cs.mine) }}<div class="ans">if they bring {{ cs.answer.lead|join(' + ') }}</div>{% endif %}</td></tr>
+    <td>{% if b.safest.row == rec.row %}<span class="same">= {{ _("recommended") }}</span>{% else %}{{ four(b.mine[b.safest.row]) }}{% endif %}</td>
+    <td>{% if not cs.needed %}<span class="same">{{ _("not needed") }}</span>{% elif cs.row is none %}<span class="same">{{ _("none clearly better") }}</span>{% else %}{{ four(cs.mine) }}<div class="ans">{{ _("if they bring {lead}", lead=cs.answer.lead|names(' + ')) }}</div>{% endif %}</td></tr>
   {% endfor %}{% endfor %}
   </tbody>
 </table>
 <ul class="defs">
-  <li><b>Their recommended</b>: the four their side brings most when both sides pick well (the mirror of your recommended). <b>Your
-    counter-switch</b>: the four to switch to if they answer your recommended four with the lead shown.</li>
+  <li>{{ _("<b>Their recommended</b>: the four their side brings most when both sides pick well (the mirror of your recommended). <b>Your counter-switch</b>: the four to switch to if they answer your recommended four with the lead shown.")|safe }}</li>
 </ul>
 </section>
 </main>

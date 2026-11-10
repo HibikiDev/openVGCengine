@@ -12,6 +12,8 @@
 
 from __future__ import annotations
 
+from vgc_trainer import i18n
+
 import copy
 from dataclasses import dataclass, field
 from pathlib import Path
@@ -372,6 +374,17 @@ def replay_format(log: ReplayLog) -> str | None:
     return base if base in FORMATS and FORMATS[base][0] != 0 else None
 
 
+def replay_regulation(log: ReplayLog) -> str:
+
+
+    from vgc_trainer.formats import CURRENT, REGULATIONS, base_id
+    past = replay_format(log)
+    if past is not None:
+        return past
+    base = base_id(base_format((log.fmt or "").partition("@@@")[0]))
+    return base if base in REGULATIONS else CURRENT
+
+
 def _spread_corpus(fmt: str | None) -> list[list[dict]]:
 
     if fmt is None or fmt not in CLOSED_SHEET_FORMATS:
@@ -424,6 +437,35 @@ def filled_sets(log: ReplayLog, side: str, fmt: str | None, lines: list[str] | N
     return out
 
 
+def set_sources(log: ReplayLog, side: str, fmt: str | None) -> list[dict] | None:
+
+
+
+    from vgc_trainer.showdown import belief
+    sets = filled_sets(log, side, fmt)
+    if sets is None:
+        return None
+    ev = belief.Evidence(fmt)
+    for ln in log.lines:
+        if ln.startswith("|"):
+            ev.feed(ln)
+    out = []
+    for s, f in zip(sets, ev.mons[side]):
+        shown = set(f.moves)
+        moves = [{"name": belief.name("moves", belief.move_id(m)), "src": "shown" if belief.move_id(m) in shown else "guess"}
+                 for m in s.get("moves") or []]
+        item = belief.to_id(s.get("item") or "")
+        ability = belief.to_id(s.get("ability") or "")
+        out.append({"species": s["species"], "moves": moves,
+                    "item": {"name": belief.name("items", item) if item else "no item",
+                             "src": "shown" if f.item is not None and not f.item_swapped else "guess"},
+                    "ability": {"name": belief.name("abilities", ability) if ability else "?",
+                                "src": "shown" if f.ability is not None and not f.ability_swapped else "guess"},
+
+                    "not_items": sorted(belief.name("items", x) for x in f.not_items if x in _PRIORS[fmt].items) if f.item is None else []})
+    return out
+
+
 def walk(log: ReplayLog, side: str, own_sheet: list[dict] | None = None, keep: bool = False) -> list[Decision]:
 
 
@@ -450,7 +492,7 @@ def walk(log: ReplayLog, side: str, own_sheet: list[dict] | None = None, keep: b
         sheets[side] = with_spreads(sheets[side], guessed_spreads([sheets[side]], _spread_corpus(fmt))[0])
     unknown = [s["species"] for sh in (sheets[side], sheets[foe]) for s in sh if not ve.lookup("species", s["species"])]
     if unknown:
-        raise ValueError(f"species not in the engine: {', '.join(sorted(set(unknown)))}")
+        raise ValueError(i18n.t("species not in the engine: {list}", list=', '.join(sorted(set(unknown)))))
     shown = side_bring(log, side, sheets[side])
     bring, fill = fill_bring(sheets[side], sheets[foe], shown, fmt)
     t = Tracker(side, sheets[side], sheets[foe], fmt)
@@ -504,3 +546,21 @@ def walk(log: ReplayLog, side: str, own_sheet: list[dict] | None = None, keep: b
         out.append(Decision(turn, side, obs, masks, list(bring), names, req, played, text, act, fact, ctx, moves, display,
                             shown=len(shown), fill=fill, guessed=guessed, tracker=copy.deepcopy(t) if keep else None, sheets=sheets if keep else None))
     return out
+
+
+def tracked_request(d, side: str) -> dict:
+
+    from vgc_trainer.showdown.tracker import to_id as _to_id
+
+    t, sheet = d.tracker, d.sheets[side]
+    by_id = {_to_id(s_.get("name") or s_["species"]): i for i, s_ in enumerate(sheet)}
+    party = [dict(p, ident=f"{side}: {t.names[side][by_id[_to_id(p['ident'].split(': ', 1)[1])]]}") for p in d.request["side"]["pokemon"]]
+    return dict(d.request, side=dict(d.request["side"], pokemon=party))
+
+
+def closed_world(d, foe: str) -> dict:
+
+
+
+    t = d.tracker
+    return {} if t.open_sheets else {"foe_world": d.sheets[foe], "fmt": t.fmt}

@@ -572,6 +572,12 @@ class OneStepSearch:
                 env.pool.greedy_actions(foe, int(self.rng.integers(1 << 62)), out)
                 replies[foe_moves, -1] = out[idx[foe_moves]]
 
+
+        forced_replies = getattr(self, "forced_replies", None)
+        if forced_replies is not None:
+            replies = np.array(forced_replies[self._forced_rows], np.int32)
+            weights = np.full((len(idx), m), 1.0 / m)
+
         dst = (np.arange(len(idx))[:, None] * k * mb + np.arange(k * mb)[None]).reshape(-1)
         src = np.repeat(idx, k * mb)
         self.scratch.drop_battles(list(range(len(idx) * k * mb, self.branches)))

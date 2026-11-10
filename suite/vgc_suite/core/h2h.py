@@ -8,6 +8,7 @@
 
 from __future__ import annotations
 
+from vgc_trainer import i18n
 import math
 import sys
 import time
@@ -264,7 +265,8 @@ def play_h2h(pilot, teams: list[list[dict]], games: int, seed: int, dev: torch.d
 
 
             est = finished + float(np.minimum(turns[live] / 7.0, 0.95).sum())
-            progress(f"{'Searched games' if deep else 'Games'}: {finished} of {games}", min(est, games), games, "games")
+            progress(i18n.t("Searched games: {done} of {total}", done=finished, total=games) if deep
+                     else i18n.t("Games: {done} of {total}", done=finished, total=games), min(est, games), games, "games")
         first = (turns == 0) & ~have_t1 & (env.status == -1)
         t1[first] = actions[first]
         have_t1 |= first

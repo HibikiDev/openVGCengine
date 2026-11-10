@@ -73,11 +73,17 @@ async def run_replay(args) -> int:
     from vgc_suite.buddy import PRACTICE
     bot_side = "p2" if args.side == "p1" else "p1"
     names = {args.side: args.me, bot_side: BOT if args.own_bot else PRACTICE["username"]}
-    try:
-        spec, notes = build(load(args.game), args.turn, names)
-    except ValueError as e:
-        print(f"practise_line: {e}", flush=True)
-        return 1
+    if args.game.endswith(".spec.json"):
+        d = json.loads(Path(args.game).read_text(encoding="utf8"))
+        spec, notes = d["spec"], d.get("notes", [])
+        for s in ("p1", "p2"):
+            spec[s]["name"] = names[s]
+    else:
+        try:
+            spec, notes = build(load(args.game), args.turn, names)
+        except ValueError as e:
+            print(f"practise_line: {e}", flush=True)
+            return 1
     for n in notes:
         print("approximate: " + n, flush=True)
     command = "/openposition " + json.dumps(spec, separators=(",", ":"))
@@ -86,7 +92,8 @@ async def run_replay(args) -> int:
     if args.own_bot:
         return await own_bot(args, args.game, spec["format"], team, bot_side, "", order, command)
     src = args.game if args.game.startswith(("http://", "https://")) else Path(args.game).name
-    line = {"from": src, "turn": args.turn, "mode": "fresh", "me": args.me, "side": args.side, "replay": True}
+    line = {"from": src, "turn": args.turn, "mode": "fresh", "me": args.me, "side": args.side, "replay": True,
+            **({"kind": args.kind} if args.kind else {}), **({"back": args.back} if args.back else {})}
     PENDING.parent.mkdir(parents=True, exist_ok=True)
     PENDING.write_text(json.dumps({"team": team, "format": spec["format"], "line": line, "time": time.time()}),
                        encoding="utf8")
@@ -115,7 +122,8 @@ async def run(args) -> int:
 
         from vgc_suite.buddy import PRACTICE
         line = {"from": d.get("roomid") or game.name.removesuffix(".log.json"), "turn": args.turn,
-                "mode": "same" if args.force_first else "fresh", "me": args.me, "side": args.side}
+                "mode": "same" if args.force_first else "fresh", "me": args.me, "side": args.side,
+                **({"kind": args.kind} if args.kind else {}), **({"back": args.back} if args.back else {})}
         PENDING.parent.mkdir(parents=True, exist_ok=True)
         PENDING.write_text(json.dumps({"team": d[f"{bot_side}team"], "format": d["format"], "line": line, "time": time.time()}),
                            encoding="utf8")
@@ -200,6 +208,8 @@ def main() -> None:
     ap.add_argument("--stop-after", type=int, help="with --own-bot: the bot forfeits after this turn (read its decisions without playing on)")
     ap.add_argument("--force-first", action="store_true",
                     help="the bot plays its original choice on the start turn (locked in by the cut), then decides fresh; default: fresh from the start")
+    ap.add_argument("--kind", choices=["game", "replay", "crawl"], help="where the position came from (recorded with the game: the branch lists)")
+    ap.add_argument("--back", help="the dashboard page it was opened from (recorded with the game: its link back)")
     args = ap.parse_args()
     logging.basicConfig(level=logging.WARNING, format="%(levelname)s %(name)s: %(message)s")
     sys.stdout.reconfigure(errors="replace")

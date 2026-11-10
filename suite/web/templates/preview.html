@@ -1,31 +1,31 @@
 {% extends "base.html" %}
-{% block title %}Preview Advisor · openVGCengine{% endblock %}
+{% block title %}{{ _("Preview Advisor") }} · openVGCengine{% endblock %}
 {% block main %}
 <div class="card">
-  <h1>Preview Advisor</h1>
-  <p>Your team and theirs: which four to bring and lead, what they will likely bring, and how every pairing plays out.</p>
+  <h1>{{ _("Preview Advisor") }}</h1>
+  <p>{{ _("Your team and theirs: which four to bring and lead, what they will likely bring, and how every pairing plays out.") }}</p>
   <form method="post" action="/preview">
     {% include "_format_pick.html" %}
     <div class="row">
-      <div><label for="mine">Your team {% include "_team_help.html" %}</label><textarea id="mine" name="mine" required data-team></textarea></div>
-      <div><label for="theirs">Their team</label><textarea id="theirs" name="theirs" required data-team></textarea></div>
+      <div><label for="mine">{{ _("Your team") }} {% include "_team_help.html" %}</label><textarea id="mine" name="mine" required data-team></textarea></div>
+      <div><label for="theirs">{{ _("Their team") }}</label><textarea id="theirs" name="theirs" required data-team></textarea></div>
     </div>
     <details>
-      <summary>Settings</summary>
+      <summary>{{ _("Settings") }}</summary>
       <div class="row">
-        <div><label for="name_a">Name for team A (optional)</label><input id="name_a" name="name_a" maxlength="40"></div>
-        <div><label for="name_b">Name for team B (optional)</label><input id="name_b" name="name_b" maxlength="40"></div>
+        <div><label for="name_a">{{ _("Name for team A (optional)") }}</label><input id="name_a" name="name_a" maxlength="40"></div>
+        <div><label for="name_b">{{ _("Name for team B (optional)") }}</label><input id="name_b" name="name_b" maxlength="40"></div>
       </div>
       <div class="row">
-        <div><label for="k">Options per side </label><input id="k" name="k" type="number" min="2" max="{{ LIMITS.preview_k }}" value="5"></div>
-        <div><label for="games">Games per pairing</label><input id="games" name="games" type="number" min="16" max="{{ LIMITS.preview_games }}" value="96"></div>
+        <div><label for="k">{{ _("Options per side") }}</label><input id="k" name="k" type="number" min="2" max="{{ LIMITS.preview_k }}" value="5"></div>
+        <div><label for="games">{{ _("Games per pairing") }}</label><input id="games" name="games" type="number" min="16" max="{{ LIMITS.preview_games }}" value="96"></div>
       </div>
       <div class="row">
-        <div><label><input type="checkbox" name="all_rows" value="1" checked> Screen all fours, both sides <span class="muted small">(their best answers and your counters that neither model lists)</span></label></div>
-        <div><label><input type="checkbox" name="answers" value="1"> Opener tree <span class="muted small">(their best answers to your main bring, and your counters; slower)</span></label></div>
+        <div><label><input type="checkbox" name="all_rows" value="1" checked> {{ _("Screen all fours, both sides") }} <span class="muted small">{{ _("(their best answers and your counters that neither model lists)") }}</span></label></div>
+        <div><label><input type="checkbox" name="answers" value="1"> {{ _("Opener tree") }} <span class="muted small">{{ _("(their best answers to your main bring, and your counters; slower)") }}</span></label></div>
       </div>
     </details>
-    <button class="btn" type="submit">Advise me</button>
+    <button class="btn" type="submit">{{ _("Advise me") }}</button>
   </form>
 </div>
 {% include "_history.html" %}

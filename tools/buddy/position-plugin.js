@@ -224,6 +224,18 @@ function apply(battle, S) {
 		}
 	} else {
 		battle.log.push(...fieldLines);
+
+
+
+		let weather = '', terrain = '';
+		for (const ln of battle.log) {
+			const w = /^\|-weather\|([^|]*)/.exec(ln);
+			if (w) weather = w[1] === 'none' ? '' : toID(w[1]);
+			const t = /^\|-field(start|end)\|(?:move: )?([^|]*)/.exec(ln);
+			if (t && toID(t[2]).endsWith('terrain')) terrain = t[1] === 'start' ? toID(t[2]) : '';
+		}
+		if (battle.field.weather && weather !== battle.field.weather) battle.add('-weather', battle.field.getWeather().name);
+		if (battle.field.terrain && terrain !== battle.field.terrain) battle.add('-fieldstart', `move: ${battle.field.getTerrain().name}`);
 	}
 
 	for (const sid of ['p1', 'p2']) {
@@ -362,9 +374,12 @@ exports.commands = {
 		void battleRoom.battle.stream.write(`>eval require('./openvgc-position').patch(battle, '${token}')`);
 		this.parse(`/join ${battleRoom.roomid}`);
 		setTimeout(() => {
-			battleRoom.add(`|uhtmlchange|invites|<div class="broadcast broadcast-blue"><strong>A position rebuilt from a replay</strong><br />` +
-				`HP from the replay's percentages, guessed spreads and unseen sets, a new seed. Turns 1 to now replay the field ` +
-				`and the mons already seen as the log showed them.</div>`);
+			const {t} = (() => {
+				try { return require(require('path').join(__dirname.split(/[\\/]dist[\\/]/)[0], 'dist', 'server', 'openvgc-i18n.js')); } catch { return require('./openvgc-i18n.js'); }
+			})();
+			battleRoom.add(`|uhtmlchange|invites|<div class="broadcast broadcast-blue"><strong>${t('A position rebuilt from a replay')}</strong><br />` +
+				t("HP from the replay's percentages, guessed spreads and unseen sets, a new seed. Turns 1 to now replay the field and the mons already seen as the log showed them.") +
+				`</div>`);
 			battleRoom.add(`|uhtml|invites|`).update();
 			battleRoom.battle.sendInviteForm(user);
 		}, 500);

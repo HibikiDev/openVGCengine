@@ -1,29 +1,29 @@
 {% extends "base.html" %}
-{% block title %}Team buckets · openVGCengine{% endblock %}
+{% block title %}{{ _("Team buckets") }} · openVGCengine{% endblock %}
 {% block main %}
 <div class="card">
-  <h1>Team buckets</h1>
-  <p>A named set of teams - say the field you expect at an event - each weighted by how often you expect to face it.</p>
-  <p class="small">Use it in:</p>
+  <h1>{{ _("Team buckets") }}</h1>
+  <p>{{ _("A named set of teams - say the field you expect at an event - each weighted by how often you expect to face it.") }}</p>
+  <p class="small">{{ _("Use it in:") }}</p>
   <ul class="small">
-    <li><b>Team Deep Dive:</b> pick it under "Against".</li>
-    <li><b>Every team box:</b> "fill from a bucket".</li>
-    <li><b>Buddy:</b> the bot plays a team drawn by weight each game.</li>
+    <li>{{ _('<b>Team Deep Dive:</b> pick it under "Against".')|safe }}</li>
+    <li>{{ _('<b>Every team box:</b> "fill from a bucket".')|safe }}</li>
+    <li>{{ _("<b>Buddy:</b> the bot plays a team drawn by weight each game.")|safe }}</li>
   </ul>
   {% for m in msgs %}<div class="note{{ '' if ok else ' pink' }}">{{ m }}</div>{% endfor %}
 </div>
 
 <div class="card">
-  <h2>{% if edit %}Edit bucket {{ edit }}{% else %}New bucket{% endif %}</h2>
+  <h2>{% if edit %}{{ _("Edit bucket {name}", name=edit) }}{% else %}{{ _("New bucket") }}{% endif %}</h2>
   <form method="post" action="/buckets/save">
     <input type="hidden" name="old" value="{{ edit }}">
     <div class="row">
-      <div><label for="name">Name</label><input id="name" name="name" maxlength="40" required value="{{ edit }}" placeholder="e.g. Gdansk"></div>
-      <div><label for="note">Note <span class="hint">optional</span></label><input id="note" name="note" maxlength="300" value="{{ note }}" placeholder="e.g. what I expect on day 1"></div>
-      <div><label for="format">Format</label><select id="format" name="format">{% for f, short in tool_formats %}<option value="{{ f }}"{{ ' selected' if f == fmt }}>{{ short }}</option>{% endfor %}</select></div>
+      <div><label for="name">{{ _("Name") }}</label><input id="name" name="name" maxlength="40" required value="{{ edit }}" placeholder="{{ _('e.g. Gdansk') }}"></div>
+      <div><label for="note">{{ _("Note") }} <span class="hint">{{ _("optional") }}</span></label><input id="note" name="note" maxlength="300" value="{{ note }}" placeholder="{{ _('e.g. what I expect on day 1') }}"></div>
+      <div><label for="format">{{ _("Format") }}</label><select id="format" name="format">{% for f, short in tool_formats %}<option value="{{ f }}"{{ ' selected' if f == fmt }}>{{ short }}</option>{% endfor %}</select></div>
     </div>
-    <label for="text">Teams <span class="hint">up to 20</span></label>
-    <div class="note small"><b>Open team sheets work as they are.</b> Your field's teams need no EVs: paste what the sheet shows, and each set without a spread gets its species' most used one from the usage stats. A nature, if the paste has one, is kept.</div>
+    <label for="text">{{ _("Teams") }} <span class="hint">{{ _("up to 20") }}</span></label>
+    <div class="note small">{{ _("<b>Open team sheets work as they are.</b> Your field's teams need no EVs: paste what the sheet shows, and each set without a spread gets its species' most used one from the usage stats. A nature, if the paste has one, is kept.")|safe }}</div>
     <textarea id="text" name="text" required style="min-height:260px; font-family: ui-monospace, Consolas, monospace; font-size:.85rem" placeholder="{% if has_library %}BR-111 x2
 NI-1
 {% endif %}https://pokepast.es/0123abcd x1.5
@@ -32,45 +32,44 @@ NI-1
 Charizard @ Charizardite Y
 Ability: Blaze
 ...">{{ text }}</textarea>
-    <details><summary class="small">How to write the teams</summary>
+    <details><summary class="small">{{ _("How to write the teams") }}</summary>
       <ul class="small">
-        <li>One {% if has_library %}<b>library id</b> (BR-111, NI-1, LO-25) or {% endif %}<b>pokepast.es link</b> per line: each line is one team.</li>
-        <li>For a <b>pasted Showdown export</b>, separate teams with a line of <code>---</code>.</li>
-        <li>A <b>weight</b> goes at the end of a line or a header: <code>{{ 'BR-111' if has_library else 'https://pokepast.es/0123abcd' }} x2</code> means faced twice as often as a team at x1. No weight means x1.</li>
-        <li>An optional <b>header line</b> <code># Label x3</code> above a team names it and sets its weight.</li>
-        <li>pokepast.es links are read once, when you save. The bucket keeps the team itself, so later edits on pokepast don't change it.</li>
-        <li>A bucket holds one format's teams; the tools offer it in that format.</li>
-        <li><b>Spreads are optional.</b> A set without EVs (stat points in Reg M-C) gets its species' most used spread from the usage stats, under its nature if the paste shows one, so an open team
-          sheet is all a team needs. A set with its own spread keeps it, even next to sets without one. Real spreads are more exact when you know them.</li>
-        <li>Every team is checked when you save. If any team fails, nothing is saved and the problems are listed.</li>
+        <li>{{ (_("One <b>library id</b> (BR-111, NI-1, LO-25) or <b>pokepast.es link</b> per line: each line is one team.") if has_library else _("One <b>pokepast.es link</b> per line: each line is one team."))|safe }}</li>
+        <li>{{ _("For a <b>pasted Showdown export</b>, separate teams with a line of <code>---</code>.")|safe }}</li>
+        <li>{{ _("A <b>weight</b> goes at the end of a line or a header: <code>{example} x2</code> means faced twice as often as a team at x1. No weight means x1.", example='BR-111' if has_library else 'https://pokepast.es/0123abcd')|safe }}</li>
+        <li>{{ _("An optional <b>header line</b> <code># Label x3</code> above a team names it and sets its weight.")|safe }}</li>
+        <li>{{ _("pokepast.es links are read once, when you save. The bucket keeps the team itself, so later edits on pokepast don't change it.") }}</li>
+        <li>{{ _("A bucket holds one format's teams; the tools offer it in that format.") }}</li>
+        <li>{{ _("<b>Spreads are optional.</b> A set without EVs (stat points in Reg M-C) gets its species' most used spread from the usage stats, under its nature if the paste shows one, so an open team sheet is all a team needs. A set with its own spread keeps it, even next to sets without one. Real spreads are more exact when you know them.")|safe }}</li>
+        <li>{{ _("Every team is checked when you save. If any team fails, nothing is saved and the problems are listed.") }}</li>
       </ul>
     </details>
     <div style="display:flex; gap:10px; margin-top:12px; flex-wrap: wrap">
-      <button class="btn" type="submit">Save bucket</button>
-      {% if edit %}<a class="btn alt" href="/buckets" style="text-decoration:none">New bucket instead</a>{% endif %}
+      <button class="btn" type="submit">{{ _("Save bucket") }}</button>
+      {% if edit %}<a class="btn alt" href="/buckets" style="text-decoration:none">{{ _("New bucket instead") }}</a>{% endif %}
     </div>
   </form>
 </div>
 
 <div class="card">
-  <h2>Saved buckets</h2>
+  <h2>{{ _("Saved buckets") }}</h2>
   {% if buckets %}
   {% for b in buckets %}
   {% set tot = b.teams|sum(attribute='weight') %}
-  <h3 style="margin-bottom:4px">{{ b.name }} <span class="tag">{{ format_short.get(b.format, b.format) }}</span> <span class="muted small">· {{ b.teams|length }} teams · updated {{ b.updated }}</span></h3>
+  <h3 style="margin-bottom:4px">{{ b.name }} <span class="tag">{{ format_short.get(b.format, b.format) }}</span> <span class="muted small">· {{ _("{n} teams", n=b.teams|length) }} · {{ _("updated {when}", when=b.updated) }}</span></h3>
   {% if b.note %}<p class="small muted" style="margin-top:0">{{ b.note }}</p>{% endif %}
   <div class="scroll"><table class="tbl">
-    <tr><th>team</th><th class="num">weight</th><th class="num">share</th><th>six</th></tr>
-    {% for t in b.teams %}<tr><td class="small">{{ t.label }}</td><td class="num">x{{ '%g'|format(t.weight) }}</td>
-      <td class="num">{{ (t.weight / tot)|pct }}</td><td class="small">{{ t.species|join(' · ') }}</td></tr>{% endfor %}
+    <tr><th>{{ _("team") }}</th><th class="num">{{ _("weight") }}</th><th class="num">{{ _("share") }}</th><th>{{ _("six") }}</th></tr>
+    {% for t in b.teams %}<tr><td class="small">{{ _(t.label) }}</td><td class="num">x{{ '%g'|format(t.weight) }}</td>
+      <td class="num">{{ (t.weight / tot)|pct }}</td><td class="small">{{ t.species|names(' · ') }}</td></tr>{% endfor %}
   </table></div>
   <div style="display:flex; gap:10px; margin:8px 0 18px; flex-wrap: wrap; align-items: center">
-    <a href="/buckets?edit={{ b.name|urlencode }}">edit</a>
-    <a href="/validate?field={{ ('bucket:' ~ b.name)|urlencode }}">Deep Dive against it</a>
-    <form method="post" action="/buckets/delete" onsubmit="return confirm('Delete bucket {{ b.name }}?')" style="margin:0">
-      <input type="hidden" name="name" value="{{ b.name }}"><button class="btn alt" type="submit" style="padding:2px 12px; font-size:.85rem">delete</button></form>
+    <a href="/buckets?edit={{ b.name|urlencode }}">{{ _("edit") }}</a>
+    <a href="/validate?field={{ ('bucket:' ~ b.name)|urlencode }}">{{ _("Deep Dive against it") }}</a>
+    <form method="post" action="/buckets/delete" onsubmit="return confirm({{ _('Delete bucket {name}?', name=b.name)|tojson|e }})" style="margin:0">
+      <input type="hidden" name="name" value="{{ b.name }}"><button class="btn alt" type="submit" style="padding:2px 12px; font-size:.85rem">{{ _("delete") }}</button></form>
   </div>
   {% endfor %}
-  {% else %}<p class="muted">No buckets yet.</p>{% endif %}
+  {% else %}<p class="muted">{{ _("No buckets yet.") }}</p>{% endif %}
 </div>
 {% endblock %}

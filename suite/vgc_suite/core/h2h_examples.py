@@ -8,6 +8,7 @@
 
 from __future__ import annotations
 
+from vgc_trainer import i18n
 import asyncio
 import logging
 import random
@@ -30,20 +31,20 @@ BC_POLICY = None
 PREVIEW_HEAD = None
 
 
-BO3 = "gen9championsvgc2026regmcbo3buddy"
-
-
 async def _play(a: list[dict], b: list[dict], ckpt: Path, n: int, deep: bool, device: str, seed: int, port: int,
                 bo3: bool = False, progress=None, g1_bring_a: list[int] | None = None, fmt: str | None = None) -> list[dict]:
-    from vgc_suite.formats import FORMATS, MC, engine
+    from vgc_suite.formats import CURRENT, FORMATS, engine
     from vgc_trainer.showdown.agent import Agent
     from vgc_trainer.showdown.buddy_client import BuddyClient
     from vgc_trainer.showdown.live_search import SEARCH_ARMS, LiveSearch
 
 
+
     efmt = engine(fmt)
-    bfmt = (efmt or MC) + "buddy"
-    series_fmt = BO3 if efmt is None else f"{bfmt}@@@Best Of = 3"
+    reg = fmt or CURRENT
+    bfmt = (efmt or reg) + "buddy"
+    bo3_twin = reg + "bo3buddy"
+    series_fmt = bo3_twin if efmt is None else f"{bfmt}@@@Best Of = 3"
 
     tag = f"{random.Random(seed + time.time_ns()).randrange(100000):05d}"
     clients = []
@@ -53,7 +54,7 @@ async def _play(a: list[dict], b: list[dict], ckpt: Path, n: int, deep: bool, de
         c.request_timer = False
         if bo3:
             c.format = series_fmt
-            c.formats = {BO3 if efmt is None else bfmt}
+            c.formats = {bo3_twin if efmt is None else bfmt}
 
             from .bundle import path as pinned_
             c.lead_arms = ["v3"]
@@ -76,7 +77,8 @@ async def _play(a: list[dict], b: list[dict], ckpt: Path, n: int, deep: bool, de
     try:
         for g in range(n):
             if progress is not None:
-                progress(f"Example {'series' if bo3 else 'game'} {g + 1} of {n}", g, n, "examples")
+                progress(i18n.t("Example series {n} of {total}", n=g + 1, total=n) if bo3
+                         else i18n.t("Example game {n} of {total}", n=g + 1, total=n), g, n, "examples")
             wait = 10.5 - (time.monotonic() - last)
             if wait > 0:
                 await asyncio.sleep(wait)

@@ -96,7 +96,7 @@ def _search_rows(trace: list[dict]) -> tuple[list | None, list[str] | None]:
 
 async def _pair(a, b, bring_a, bring_b, ckpt, n, device, seed, port, tag, full=False, force=(None, None), policy=(False, False),
                 fmt: str | None = None) -> list[dict]:
-    from vgc_suite.formats import FORMATS, MC, engine
+    from vgc_suite.formats import CURRENT, FORMATS, engine
     from vgc_trainer.showdown.agent import Agent
     from vgc_trainer.showdown.buddy_client import BuddyClient
     from vgc_trainer.showdown.live_search import SEARCH_ARMS, LiveSearch
@@ -104,7 +104,7 @@ async def _pair(a, b, bring_a, bring_b, ckpt, n, device, seed, port, tag, full=F
     clients = []
     for name, sheet, bring, fz, raw in ((f"t1A{tag}", a, bring_a, force[0], policy[0]), (f"t1B{tag}", b, bring_b, force[1], policy[1])):
         efmt = engine(fmt)
-        bfmt = (efmt or MC) + "buddy"
+        bfmt = (efmt or fmt or CURRENT) + "buddy"
         c = BuddyClient(port, name, Agent(str(ckpt), device, seed=seed), sheet, fmt=bfmt, formats=[bfmt])
         c.closed_sheet_search = efmt is not None and not FORMATS[efmt].open_sheets
         c.teams = [sheet]

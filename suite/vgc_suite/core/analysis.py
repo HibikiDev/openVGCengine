@@ -55,6 +55,9 @@ def _label(d: Decision, slot: int, action: int, mega: bool = False) -> str:
     ally = d.active[1 - slot] or ""
     ctx = d.ctx or {}
     tag = (ctx.get("gimmick_played") or [None, None])[slot] or ctx.get("gimmick", "+mega")
+
+
+    from vgc_trainer.showdown.requests import describe_action
     return describe_action(action, d.moves[slot], d.foe_active, ally, d.display) + (f" {tag}" if mega else "")
 
 
@@ -83,6 +86,7 @@ def policy_view(agent: Agent, d: Decision, k: int = 3) -> dict:
     cond = None
     mask = bits[:, 0]
     a0 = m0 = None
+    first = None
     for c in (0, 1):
         slot = c ^ int(flip_own)
         if c == 1:
@@ -109,8 +113,12 @@ def policy_view(agent: Agent, d: Decision, k: int = 3) -> dict:
             pa = float(p[played[0]])
             rank = int((p > pa).sum()) + 1
             entry.update(played_p=round(pa, 3), played_rank=rank, tier=tier(pa, float(p[top_i[0]])))
+        if c == 1 and first is not None:
+            entry["after"] = first
         out["slots"][slot] = entry
         if c == 0:
+            first = {"mon": d.active[slot], "act": label if played is not None else _label(d, slot, top_i[0]),
+                     "own_pick": played is None}
             a0, m0 = (played if played is not None else (top_i[0], False))
             a0, m0 = to_c(a0), bool(m0)
     return out

@@ -1,9 +1,14 @@
 # openVGCengine
 
+**English** | [日本語](README.ja.md)
+
 A VGC battle engine, a neural network that learned to play VGC on it by playing itself, and a desktop toolkit built around
 the two: test a team against a field, study matchups and brings, review replays, and practise against the bot on your own computer.
 
 > **Early version.** Expect rough edges, and tell me about them (see [Bugs and feedback](#bugs-feedback-and-updates)).
+>
+> **The app speaks Japanese too:** the language button at the top of every page switches it. Japanese language support is an
+> early prototype, feedback welcome.
 
 - [What's inside](#whats-inside)
 - [The model](#the-model)
@@ -22,7 +27,7 @@ the two: test a team against a field, study matchups and brings, review replays,
 
 | Part | What it is |
 |---|---|
-| **Engine** (`crates/`) | A battle simulator in Rust: a port of [Showdown](https://github.com/smogon/pokemon-showdown)'s, checked against Showdown battle by battle (same random rolls, same result at every step). It plays thousands of games a second. |
+| **Engine** (`crates/`) | A battle simulator in Rust: a port of [Showdown](https://github.com/smogon/pokemon-showdown)'s, checked against Showdown battle by battle (same random rolls, same result at every step). It is built for speed: the model learned by playing a great many games on it. |
 | **Model** (`trainer/`; the weights are on the [Releases page](https://github.com/HibikiDev/openVGCengine/releases)) | The neural network that plays: picks the four to bring, the leads, and every turn's moves and switches. |
 | **Tools** (`suite/`) | A desktop app on top of the model: team testing, matchup and bring analysis, replay review. |
 | **Training buddy** | The bot as a practice partner on a Showdown server running on your own computer. |
@@ -74,11 +79,11 @@ away. Real spreads are more exact when you know them.
 | **Battle Lab → Series vs a field** | Best-of-three series against every team of a field, as real games to replay. | Studying games, not just numbers. |
 | **Battle Lab → Preview Advisor** | Two teams in, a bring-and-lead plan out: what to bring, what they'll likely bring, how it plays. | Team preview decisions. |
 | **Battle Lab → Line Crawler** | One game, turn by turn: you pick both sides' moves with the bot's view of each, and keep every branch. | Exploring a line; "what if they had switched?" |
-| **Replays → Analyzer** | A replay turn by turn, with where the model would have played differently and how likely it thought each option was. Takes a replay link, a downloaded replay, or anything you drop into the install's `replays` folder. | Reviewing your own games. |
+| **Replays → Analyzer** | A replay turn by turn, with where the model would have played differently and how likely it thought each option was. *Searched* and *Deep* run the bot's search on every turn: which choices cost the most, and how much of the game the dice decided. Takes a replay link or id, a downloaded replay, or anything you drop into the install's `replays` folder. | Reviewing your own games. |
 | **Buckets** | Named, saved sets of teams - say, the field you expect at an event - each weighted by how often you expect it. Open team sheets are enough: no EVs needed. | The "against" field for the Deep Dive, Series, the buddy. |
 | **Buddy** | The training buddy's control panel (below). | Practice. |
 
-**Quick and searched modes.** Most tools have a fast mode (the network's instinct, thousands of games in seconds) and a searched
+**Quick and searched modes.** Most tools have a fast mode (the network's instinct, thousands of games in a moment) and a searched
 mode (every game played the way the bot plays for real, with its search - slower, and more trustworthy for close matchups).
 Searched modes want a GPU: without one the app says so, and they start switched off.
 
@@ -99,6 +104,10 @@ that come with the app. You can edit or delete that bucket like any other.
    the internet), use the same name, and challenge **PracticeBot** in one of the "... buddy" formats, e.g. "[Gen 9 Champions] VGC 2026 Reg M-C buddy" (Bo1 or Bo3).
 4. **Review** - every game is listed under **Recent practice games** with a link to its page: the whole game, turn by turn, and
    **Open in the Replay Analyzer** for where the model would have played differently and how likely it thought each option was.
+
+**The coach.** Tick **Coach** in your practice settings, and during your own games on the local server a panel only you can see
+shows the bot's read of each turn: the line its search suggests and what it expects from the other side. Practice only: like
+everything else here, it never connects to Showdown's own servers.
 
 If you use your regular Showdown name, it asks for your password: Showdown's client checks registered names against the real Showdown servers, even on the local server. You can always use a name that isn't registered instead.
 
@@ -145,7 +154,7 @@ To force the small CPU build (or another build), set `OPENVGC_TORCH_BUILD=cpu` (
 in the folder and run `set OPENVGC_TORCH_BUILD=rocm`, then `setup.cmd`. If the build can't run on your card, setup falls back to the CPU build.
 
 **Updating:** *About & updates* (bottom of every page) → *Check for updates*. If a new version is out: *Download update*, then *Restart and update*. The app closes, updates itself and
-reopens, usually in about a minute. Your buckets, runs and practice games stay, and if anything goes wrong it goes back to the version you had.
+reopens on its own. Your buckets, runs and practice games stay, and if anything goes wrong it goes back to the version you had.
 
 To update by hand: download the new zip, extract it over the old folder (your buckets and runs are kept), then run `setup.cmd` again.
 
@@ -176,7 +185,7 @@ The folder's `START HERE (Mac).txt` has the same steps.
 **If something doesn't start:** the text in the Terminal window is what helps, so copy it into your bug report.
 
 **Updating:** *About & updates* (bottom of every page) → *Check for updates*. If a new version is out: *Download update*, then *Restart and update*. The app closes, updates itself and
-reopens, usually in about a minute. Your buckets, runs and practice games stay, and if anything goes wrong it goes back to the version you had.
+reopens on its own. Your buckets, runs and practice games stay, and if anything goes wrong it goes back to the version you had.
 
 To update by hand: extract the new zip somewhere else, then merge it over the old folder in Terminal with `ditto`, followed by the new folder and the old one (type `ditto` and a
 space, drag in each folder, press Return). Don't replace the folder in Finder: that deletes your buckets and runs. Then run `setup.command` again.
@@ -285,7 +294,8 @@ development, and it is entirely optional.
   runs a copy of its server.
 - **[Smogon](https://www.smogon.com/stats/)** - the usage statistics that ship in `data/smogon-usage/` are theirs, from Showdown's ladder
   games, shipped so each user needn't download them.
-- **Fonts:** Fredoka and Nunito (SIL Open Font License).
+- **Fonts:** Fredoka, Nunito and M PLUS Rounded 1c (SIL Open Font License).
+- **Japanese names** of Pokémon, moves, items and abilities: from Showdown's translation data, the games' own text and [PokéAPI](https://pokeapi.co).
 
 openVGCengine's code and model weights are MIT-licensed ([LICENSE](LICENSE)); third-party terms are in
 [THIRD_PARTY_NOTICES](THIRD_PARTY_NOTICES). Pokémon and all related names are trademarks of Nintendo, Game Freak and Creatures Inc. /

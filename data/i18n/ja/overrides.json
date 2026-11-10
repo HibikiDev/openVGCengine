@@ -1,0 +1,13 @@
+{
+	"_about": "Japanese names no source gives (Champions' text, Showdown's ja data, PokeAPI): each with where it comes from and whether the user reviewed it. tools/i18n/build_names.js applies these over every source.",
+	"species": {
+		"greninjabond": {"name": "ゲッコウガ（きずなへんげ）", "source": "the games show Battle Bond Greninja as plain ゲッコウガ; labelled by its ability's official name (きずなへんげ) to tell it apart", "reviewed": false},
+		"pichuspikyeared": {"name": "ギザみみピチュー", "source": "official name (HGSS event); PokeAPI has no Japanese form name for it", "reviewed": false}
+	},
+	"items": {
+		"mail": {"name": "メール", "source": "the generic Mail placeholder; each mail item has its own name in the games", "reviewed": false}
+	},
+	"abilities": {
+		"noability": {"name": "なし", "source": "placeholder for no ability (\"none\")", "reviewed": false}
+	}
+}

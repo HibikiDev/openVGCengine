@@ -1,44 +1,41 @@
 {% extends "base.html" %}
-{% block title %}Series vs a field · openVGCengine{% endblock %}
+{% block title %}{{ _("Series vs a field") }} · openVGCengine{% endblock %}
 {% block main %}
 <div class="card">
-  <h1>Series vs a field</h1>
-  <p>Your team against every team of a field: best-of-three series played by the bot on both sides - real games to study.</p>
+  <h1>{{ _("Series vs a field") }}</h1>
+  <p>{{ _("Your team against every team of a field: best-of-three series played by the bot on both sides - real games to study.") }}</p>
   <form method="post" action="/fieldplay">
     {% include "_format_pick.html" %}
-    <label for="team">Your team {% include "_team_help.html" %}</label>
+    <label for="team">{{ _("Your team") }} {% include "_team_help.html" %}</label>
     <textarea id="team" name="team" required data-team></textarea>
     <div class="row">
-      <div><label for="field">Against</label>
+      <div><label for="field">{{ _("Against") }}</label>
         <select id="field" name="field">
-          {% if has_meta_field() %}<option value="meta" data-format="{{ current_format }}">Current Metagame</option>{% endif %}
-          {% set bks = team_buckets() %}{% if bks %}<optgroup label="Your team buckets">
-          {% for b in bks %}<option value="bucket:{{ b }}" data-format="{{ bucket_format(b) }}">Bucket: {{ b }}</option>{% endfor %}</optgroup>{% endif %}
+          {% if has_meta_field() %}<option value="meta" data-format="{{ current_format }}">{{ _("Current Metagame") }}</option>{% endif %}
+          {% set bks = team_buckets() %}{% if bks %}<optgroup label="{{ _('Your team buckets') }}">
+          {% for b in bks %}<option value="bucket:{{ b }}" data-format="{{ bucket_format(b) }}">{{ _("Bucket: {name}", name=b) }}</option>{% endfor %}</optgroup>{% endif %}
         </select>
-        {% if not bks and not has_meta_field() %}<div class="small"><b>No field yet:</b> make a <a href="/buckets">team bucket</a> of the teams
-          you expect to face, then pick it here.</div>{% endif %}</div>
-      <div><label for="series">Series per team</label>
+        {% if not bks and not has_meta_field() %}<div class="small">{{ _("<b>No field yet:</b> make a <a href=\"/buckets\">team bucket</a> of the teams you expect to face, then pick it here.")|safe }}</div>{% endif %}</div>
+      <div><label for="series">{{ _("Series per team") }}</label>
         <select id="series" name="series"><option value="1">1</option><option value="2" selected>2</option><option value="3">3</option></select></div>
     </div>
     {% set sheets = deep_dive_sheets() if deep_dive_sheets is defined else [] %}
     <div class="row">
-      <div><label for="g1">Game 1 of each series</label>
+      <div><label for="g1">{{ _("Game 1 of each series") }}</label>
         <select id="g1" name="g1">
-          <option value="own">The bot's own pick</option>
-          {% if sheets %}<option value="recommended">A Deep Dive's recommended bring</option>
-          <option value="safest">A Deep Dive's safest bring</option>{% endif %}
+          <option value="own">{{ _("The bot's own pick") }}</option>
+          {% if sheets %}<option value="recommended">{{ _("A Deep Dive's recommended bring") }}</option>
+          <option value="safest">{{ _("A Deep Dive's safest bring") }}</option>{% endif %}
         </select></div>
-      <div id="sheet-row" hidden><label for="sheet">Deep Dive</label>
+      <div id="sheet-row" hidden><label for="sheet">{{ _("Deep Dive") }}</label>
         <select id="sheet" name="sheet">
-          {% for d in sheets %}<option value="{{ d.id }}">{{ d.id[4:6] }}-{{ d.id[6:8] }} {{ d.id[9:11] }}:{{ d.id[11:13] }} · {{ d.field }} · {{ d.teams }} teams{{ ' · Search Mode' if d.search }} · {{ d.team|join(' ') }}</option>{% endfor %}
+          {% for d in sheets %}<option value="{{ d.id }}">{{ d.id[4:6] }}-{{ d.id[6:8] }} {{ d.id[9:11] }}:{{ d.id[11:13] }} · {{ d.field|field_label }} · {{ _("{n} teams", n=d.teams) }}{{ (' · ' ~ _('Search Mode')) if d.search }} · {{ d.team|names(' ') }}</option>{% endfor %}
         </select></div>
     </div>
-    <p class="small muted" id="sheet-note" hidden>Game 1 plays the Deep Dive's bring for that opponent (the same leads, searched cells included);
-      games 2 and 3 change leads by the bot's rule, reacting to game 1. Your team and the field come from that Deep Dive run.</p>
-    <p class="small"><label><input type="checkbox" name="raw" value="1"> Without search <span class="muted">(much faster, weaker play)</span></label></p>
-    <p class="small muted">Each side picks its own four at team preview and changes leads between games like the practice bot. A long run: a field of
-      14 teams at 2 series is 28 series.</p>
-    <button class="btn" type="submit">Play the series</button>
+    <p class="small muted" id="sheet-note" hidden>{{ _("Game 1 plays the Deep Dive's bring for that opponent (the same leads, searched cells included); games 2 and 3 change leads by the bot's rule, reacting to game 1. Your team and the field come from that Deep Dive run.") }}</p>
+    <p class="small"><label><input type="checkbox" name="raw" value="1"> {{ _("Without search") }} <span class="muted">{{ _("(much faster, weaker play)") }}</span></label></p>
+    <p class="small muted">{{ _("Each side picks its own four at team preview and changes leads between games like the practice bot. A long run: a field of 14 teams at 2 series is 28 series.") }}</p>
+    <button class="btn" type="submit">{{ _("Play the series") }}</button>
   </form>
 </div>
 <script>

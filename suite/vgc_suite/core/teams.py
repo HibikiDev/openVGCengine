@@ -3,6 +3,8 @@
 
 from __future__ import annotations
 
+from vgc_trainer import i18n
+
 import sys
 from pathlib import Path
 from vgc_trainer.winproc import NO_WINDOW
@@ -70,19 +72,21 @@ def validated_sets(text: str, fmt: str, parse_only: bool = False) -> list[dict]:
     try:
         out = json.loads(r.stdout.strip().splitlines()[-1])
     except (IndexError, json.JSONDecodeError):
-        raise ValueError(f"the validator gave no answer ({r.stderr.strip()[-160:]})") from None
+        raise ValueError(i18n.t("the validator gave no answer ({stderr})", stderr=r.stderr.strip()[-160:])) from None
     if "problems" in out:
-        raise ValueError("Showdown's validator refused it: " + "; ".join(out["problems"])[:240])
+        raise ValueError(i18n.t("Showdown's validator refused it: {problems}", problems="; ".join(out["problems"])[:240]))
     return out["sets"]
 
 
 def legal(sets: list[dict], fmt: str | None = None, partial: bool = False) -> tuple[list[dict], list[str]]:
 
+
     from vgc_suite.formats import engine
-    return legal_mc(sets, partial) if engine(fmt) is None else (sets, [])
+    return legal_mc(sets, partial, fmt) if engine(fmt) is None else (sets, [])
 
 
-def legal_mc(sets: list[dict], partial: bool = False) -> tuple[list[dict], list[str]]:
+def legal_mc(sets: list[dict], partial: bool = False, fmt: str | None = None) -> tuple[list[dict], list[str]]:
+
 
 
 
@@ -95,13 +99,17 @@ def legal_mc(sets: list[dict], partial: bool = False) -> tuple[list[dict], list[
         if iv:
             notes.append(f"{s.get('name') or s['species']}'s IVs set to 31 (Champions has no IVs)")
         fixed.append({k: v for k, v in s.items() if k != "ivs"} if iv else s)
-    r = subprocess.run(["node", str(ROOT / "tools/showdown-oracle/validate-team.js"), "--format", "gen9championsvgc2026regmc"],
+    from vgc_suite.formats import FORMATS
+    from vgc_trainer.formats import CURRENT, base_id, is_champions
+    reg = base_id(fmt) if fmt and is_champions(fmt) else CURRENT
+    r = subprocess.run(["node", str(ROOT / "tools/showdown-oracle/validate-team.js"), "--format", reg],
                        input=json.dumps(fixed), capture_output=True, text=True, encoding="utf8", timeout=60, cwd=ROOT, **NO_WINDOW)
     try:
         out = json.loads(r.stdout.strip().splitlines()[-1])
     except (IndexError, ValueError):
-        raise ValueError(f"Showdown's validator gave no answer ({r.stderr.strip()[-160:]})") from None
+        raise ValueError(i18n.t("Showdown's validator gave no answer ({stderr})", stderr=r.stderr.strip()[-160:])) from None
     problems = [p for p in out.get("problems") or [] if not (partial and ("at least" in p or "at most" in p))]
     if problems:
-        raise ValueError("Not a legal Reg M-C team (Showdown's validator): " + " ".join(problems))
+        name = FORMATS[reg].short if reg in FORMATS else reg
+        raise ValueError(i18n.t("Not a legal {format} team (Showdown's validator): {problems}", format=name, problems=" ".join(problems)))
     return fixed, notes

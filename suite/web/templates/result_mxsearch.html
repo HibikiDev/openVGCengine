@@ -1,22 +1,22 @@
 
 {% set b = r.brings %}{% set rec = b.mine[b.recommended.row] %}
 <div class="card">
-  <h1>{{ r.team|join(' · ') }}</h1>
-  <p class="muted small">vs <b>{{ r.opp }}</b>: {{ r.species|join(' · ') }} · model {{ r.model }} · {{ r.games }} searched games · <a href="/job/{{ r.dd }}">back to the Deep Dive</a></p>
+  <h1>{{ r.team|names(' · ') }}</h1>
+  <p class="muted small">{{ _("vs {team}: {six}", team=r.opp, six=r.species|names(' · ')) }} · {{ _("model {model}", model=r.model) }} · {{ _("{n} searched games", n=r.games) }} · <a href="/job/{{ r.dd }}">{{ _("back to the Deep Dive") }}</a></p>
   <div class="stats">
-    <div><div class="big">{{ b.equilibrium.value|pct }}</div><div class="small muted">your score with both sides bringing well (±{{ (196 * b.value_se)|round|int }} points)</div></div>
+    <div><div class="big">{{ b.equilibrium.value|pct }}</div><div class="small muted">{{ _("your score with both sides bringing well (±{n} points)", n=(196 * b.value_se)|round|int) }}</div></div>
   </div>
-  <h3>What to bring</h3>
-  <p><b>{{ rec.lead|join(' + ') }}</b> leading, {{ rec.back|join(' + ') }} back.</p>
-  {% if b.near|length > 1 %}<p class="small muted">About as good, within 3 points against their mix: {% for i in b.near if i != b.recommended.row %}<b>{{ b.mine[i].lead|join(' + ') }}</b>, {{ b.mine[i].back|join(' + ') }}{{ ' · ' if not loop.last }}{% endfor %}</p>{% endif %}
-  <p class="small muted">Their worst case for it: {{ b.matrix[b.recommended.row]|min|pct }}. Your safest four keeps {{ b.safest.value|pct }} at worst.</p>
+  <h3>{{ _("What to bring") }}</h3>
+  <p>{{ _("{lead} leading, {back} back.", lead=('<b>'|safe) ~ rec.lead|names(' + ') ~ ('</b>'|safe), back=rec.back|names(' + ')) }}</p>
+  {% if b.near|length > 1 %}<p class="small muted">{{ _("About as good, within 3 points against their mix:") }} {% for i in b.near if i != b.recommended.row %}<b>{{ b.mine[i].lead|names(' + ') }}</b>, {{ b.mine[i].back|names(' + ') }}{{ ' · ' if not loop.last }}{% endfor %}</p>{% endif %}
+  <p class="small muted">{{ _("Their worst case for it: {a}. Your safest four keeps {b} at worst.", a=b.matrix[b.recommended.row]|min|pct, b=b.safest.value|pct) }}</p>
 </div>
 <div class="card flat">
-  <h3>The matrix</h3>
-  <p class="small muted">Your bring (row) vs theirs (column): your score, every cell searched. The percentages beside the brings are how often each side uses that bring when both bring well. Most cells have 8 games, so read them roughly; the cells that decide the answer have up to 32.</p>
+  <h3>{{ _("The matrix") }}</h3>
+  <p class="small muted">{{ _("Your bring (row) vs theirs (column): your score, every cell searched. The percentages beside the brings are how often each side uses that bring when both bring well. Most cells have 8 games, so read them roughly; the cells that decide the answer have up to 32.") }}</p>
   <div class="scroll"><table class="tbl small">
-    <tr><th></th>{% for o in b.theirs %}<th>{{ o.lead|join(' + ') }}<br><span class="muted" style="font-weight: 400">{{ o.back|join(' + ') }} · {{ b.equilibrium.theirs[loop.index0]|pct }}</span></th>{% endfor %}</tr>
-    {% for row in b.matrix %}{% set i = loop.index0 %}<tr><td><b>{{ b.mine[i].lead|join(' + ') }}</b><br><span class="muted">{{ b.mine[i].back|join(' + ') }} · {{ b.equilibrium.mine[i]|pct }}</span></td>
-      {% for v in row %}<td class="cell" style="background: {{ v|heat }}" title="{{ b.played[i][loop.index0] }} games">{{ v|pct }}</td>{% endfor %}</tr>{% endfor %}
+    <tr><th></th>{% for o in b.theirs %}<th>{{ o.lead|names(' + ') }}<br><span class="muted" style="font-weight: 400">{{ o.back|names(' + ') }} · {{ b.equilibrium.theirs[loop.index0]|pct }}</span></th>{% endfor %}</tr>
+    {% for row in b.matrix %}{% set i = loop.index0 %}<tr><td><b>{{ b.mine[i].lead|names(' + ') }}</b><br><span class="muted">{{ b.mine[i].back|names(' + ') }} · {{ b.equilibrium.mine[i]|pct }}</span></td>
+      {% for v in row %}<td class="cell" style="background: {{ v|heat }}" title="{{ _('{n} games', n=b.played[i][loop.index0]) }}">{{ v|pct }}</td>{% endfor %}</tr>{% endfor %}
   </table></div>
 </div>

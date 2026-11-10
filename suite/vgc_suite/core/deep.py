@@ -18,6 +18,7 @@
 
 from __future__ import annotations
 
+from vgc_trainer import i18n
 import math
 from collections import Counter
 
@@ -160,12 +161,13 @@ def run_deep(team: list[dict], field: list[tuple[str, list[dict]]], agent, model
     games = [0, 0]
     runs = []
     for x, (i, fid, fs) in enumerate(live):
-        say(f"Options: {fid} ({x + 1} of {len(live)})", x, len(live), "options")
+        say(i18n.t("Options: {team} ({n} of {total})", team=fid, n=x + 1, total=len(live)), x, len(live), "options")
         runs.append(Matchup(agent, team, fs, seed + 101 * (i + 1), fmt))
     games[1] = sum(m.shape[0] * m.shape[1] * STAGE1 for m in runs)
 
     def tick(fid: str, base: int, label: str):
-        return lambda d, t: say(f"{label}: {fid} ({base + d} of {games[1]} searched games)", base + d, games[1], label)
+        return lambda d, t: say(i18n.t("{stage}: {team} ({done} of {total} searched games)", stage=i18n.t(label), team=fid, done=base + d,
+                                      total=games[1]), base + d, games[1], label)
     values, ses = [], []
     for m, (_, fid, _) in zip(runs, live):
         values.append(m.stage1(tick(fid, games[0], "Searched matrix")))

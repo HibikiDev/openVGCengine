@@ -1,58 +1,58 @@
 {% extends "base.html" %}
-{% block title %}Compare runs · openVGCengine{% endblock %}
+{% block title %}{{ _("Compare runs") }} · openVGCengine{% endblock %}
 {% block main %}
 <div class="card">
-  <h1>Compare runs</h1>
-  <p>Your Team Deep Dives against one field, side by side - tick the runs to compare (nothing is replayed).</p>
+  <h1>{{ _("Compare runs") }}</h1>
+  <p>{{ _("Your Team Deep Dives against one field, side by side - tick the runs to compare (nothing is replayed).") }}</p>
   <form method="get" action="/compare" style="display:flex; gap:10px; align-items:center; flex-wrap:wrap">
-    <label for="field" style="margin:0">Field</label>
+    <label for="field" style="margin:0">{{ _("Field") }}</label>
     <select id="field" name="field" onchange="this.form.submit()">
-      {% for f, n in fields %}<option value="{{ f }}"{{ ' selected' if f == field }}>{{ field_label(f) }} ({{ n }} team{{ 's' if n != 1 }} tested)</option>{% endfor %}
+      {% for f, n in fields %}<option value="{{ f }}"{{ ' selected' if f == field }}>{{ field_label(f) }} ({{ _("{n} team(s) tested", n=n) }})</option>{% endfor %}
     </select>
   </form>
 </div>
 {% if cmp %}
 <div class="card">
-  <h2>{{ cmp.rows|length }} runs against {{ field_label(field) }}</h2>
+  <h2>{{ _("{n} runs against {field}", n=cmp.rows|length, field=field_label(field)) }}</h2>
   {% for w in cmp.warn %}<div class="note">{{ w }}</div>{% endfor %}
 
   {% set two = cmp.rows|length == 2 %}{% set A = cmp.rows[0] %}{% set B = cmp.rows[1] if two else none %}
-  {% macro six(sp) %}<span class="six-head">{{ sp[:3]|join(' ') }}<br>{{ sp[3:]|join(' ') }}</span>{% endmacro %}
+  {% macro six(sp) %}<span class="six-head">{{ sp[:3]|names(' ') }}<br>{{ sp[3:]|names(' ') }}</span>{% endmacro %}
 
   {% set thr = 20 if (two and (A.mode.search or B.mode.search)) else 7 %}{% set weighted = (cmp.shares.values()|list|unique|list|length) > 1 %}
   {% macro diff(a, b, t=thr) %}{% if a is not none and b is not none %}{% set d = (b - a) * 100 %}<td class="num {{ 'hirec' if d >= t else 'lowrec' if d <= -t else 'muted' }}">{{ '%+.0f'|format(d) }}</td>{% else %}<td class="num muted">-</td>{% endif %}{% endmacro %}
   <div class="scroll"><table class="tbl small cmp">
-    <tr><th>their team</th>
-      {% for e in cmp.rows %}<th class="num">{% if e.fav and e.fav.note %}<div>{{ e.fav.note }}</div>{% endif %}{{ six(e.species) }}<div class="muted" style="font-weight:400">{% if e.kind != 'team' %}{{ e.kind }} · {% endif %}{{ e.mode.label|replace('Search Mode, ', 'Search ') }} · <a href="/job/{{ e.job }}">{{ e.created|ago if e.created else e.job[:13] }}</a></div></th>{% endfor %}
-      {% if two %}<th class="num" title="second minus first, in points">difference</th>{% endif %}</tr>
-    <tr class="cmp-sum"><td><b>vs the field</b></td>{% for e in cmp.rows %}<td class="num"><b>{{ e.overall|pct }}</b>{% if e.ci %}<div class="muted">{{ e.ci[0]|pct }}–{{ e.ci[1]|pct }}</div>{% endif %}</td>{% endfor %}{% if two %}{{ diff(A.overall, B.overall, 4) }}{% endif %}</tr>
-    {% if cmp.has_both %}<tr class="cmp-sum"><td><b>both adapt</b> <span class="tag mx-alt" title="raw self-play: the policy without search - wrong in about half of the hard matchups checked">quick read</span></td>{% for e in cmp.rows %}<td class="num"><b>{{ e.both_adapt|pct }}</b></td>{% endfor %}{% if two %}{{ diff(A.both_adapt, B.both_adapt, 4) }}{% endif %}</tr>{% endif %}
-    {% if cmp.shared|length < cmp.teams|length %}<tr class="cmp-sum"><td><b>on shared teams</b></td>{% for e in cmp.rows %}<td class="num">{{ e.on_shared|pct }}</td>{% endfor %}{% if two %}{{ diff(A.on_shared, B.on_shared, 4) }}{% endif %}</tr>{% endif %}
+    <tr><th>{{ _("their team") }}</th>
+      {% for e in cmp.rows %}<th class="num">{% if e.fav and e.fav.note %}<div>{{ e.fav.note }}</div>{% endif %}{{ six(e.species) }}<div class="muted" style="font-weight:400">{% if e.kind != 'team' %}{{ _(e.kind) }} · {% endif %}{{ e.mode.label|replace('Search Mode, ', 'Search ') }} · <a href="/job/{{ e.job }}">{{ e.created|ago if e.created else e.job[:13] }}</a></div></th>{% endfor %}
+      {% if two %}<th class="num" title="{{ _('second minus first, in points') }}">{{ _("difference") }}</th>{% endif %}</tr>
+    <tr class="cmp-sum"><td><b>{{ _("vs the field") }}</b></td>{% for e in cmp.rows %}<td class="num"><b>{{ e.overall|pct }}</b>{% if e.ci %}<div class="muted">{{ e.ci[0]|pct }}–{{ e.ci[1]|pct }}</div>{% endif %}</td>{% endfor %}{% if two %}{{ diff(A.overall, B.overall, 4) }}{% endif %}</tr>
+    {% if cmp.has_both %}<tr class="cmp-sum"><td><b>{{ _("both adapt") }}</b> <span class="tag mx-alt" title="{{ _('Fast estimate from games the model plays without search') }}">{{ _("quick read") }}</span></td>{% for e in cmp.rows %}<td class="num"><b>{{ e.both_adapt|pct }}</b></td>{% endfor %}{% if two %}{{ diff(A.both_adapt, B.both_adapt, 4) }}{% endif %}</tr>{% endif %}
+    {% if cmp.shared|length < cmp.teams|length %}<tr class="cmp-sum"><td><b>{{ _("on shared teams") }}</b></td>{% for e in cmp.rows %}<td class="num">{{ e.on_shared|pct }}</td>{% endfor %}{% if two %}{{ diff(A.on_shared, B.on_shared, 4) }}{% endif %}</tr>{% endif %}
     {% for t in cmp.teams %}<tr><td title="{{ t }}">{% if cmp.species[t] %}{{ six(cmp.species[t]) }}{% else %}{{ t }}{% endif %}{% if weighted and cmp.shares[t] %} <span class="muted">{{ cmp.shares[t]|pct }}</span>{% endif %}</td>
-      {% for e in cmp.rows %}{% set o = e.opponents.get(t) %}{% if o %}<td class="cell" style="background: {{ o.score|heat }}" title="{{ o.games }} games">{% if o.score == cmp.best[t] and cmp.rows|length > 1 %}<b>{{ o.score|pct }}</b> ★{% else %}{{ o.score|pct }}{% endif %}{% if o.both_adapt is not none %}<div style="opacity:.75">{{ o.both_adapt|pct }}</div>{% endif %}</td>{% else %}<td class="num muted">-</td>{% endif %}{% endfor %}
+      {% for e in cmp.rows %}{% set o = e.opponents.get(t) %}{% if o %}<td class="cell" style="background: {{ o.score|heat }}" title="{{ _('{n} games', n=o.games) }}">{% if o.score == cmp.best[t] and cmp.rows|length > 1 %}<b>{{ o.score|pct }}</b> ★{% else %}{{ o.score|pct }}{% endif %}{% if o.both_adapt is not none %}<div style="opacity:.75">{{ o.both_adapt|pct }}</div>{% endif %}</td>{% else %}<td class="num muted">-</td>{% endif %}{% endfor %}
       {% if two %}{% set oa = A.opponents.get(t) %}{% set ob = B.opponents.get(t) %}{{ diff(oa.score if oa else none, ob.score if ob else none) }}{% endif %}</tr>{% endfor %}
   </table></div>
-  <p class="small muted">Each cell: that run's score vs that team (★ the best of the runs){% if cmp.has_both %}, both adapt below it{% endif %}; hardest teams first. Search Mode is ±14 points a team, quick ±5: read smaller gaps as ties{% if two %}; the difference column greys gaps inside the noise (under {{ thr }} points a team, 4 overall){% endif %}.</p>
+  <p class="small muted">{{ _("Each cell: that run's score vs that team (★ the best of the runs), both adapt below it; hardest teams first.") if cmp.has_both else _("Each cell: that run's score vs that team (★ the best of the runs); hardest teams first.") }} {{ _("Search Mode is ±14 points a team, quick ±5: read smaller gaps as ties.") }}{% if two %} {{ _("The difference column greys gaps inside the noise (under {n} points a team, 4 overall).", n=thr) }}{% endif %}</p>
 </div>
 {% endif %}
 {% if field %}
 <div class="card">
-  <h2>Runs against {{ field_label(field) }}</h2>
+  <h2>{{ _("Runs against {field}", field=field_label(field)) }}</h2>
   <form method="get" action="/compare">
     <input type="hidden" name="field" value="{{ field }}">
-    <p class="small" style="margin: 0 0 6px"><label style="display:inline; font-weight:400"><input type="checkbox" name="fav" value="1"{{ ' checked' if fav_only }} onchange="this.form.submit()"> ★ starred runs only</label></p>
+    <p class="small" style="margin: 0 0 6px"><label style="display:inline; font-weight:400"><input type="checkbox" name="fav" value="1"{{ ' checked' if fav_only }} onchange="this.form.submit()"> {{ _("★ starred runs only") }}</label></p>
     <div class="scroll"><table class="tbl small">
-      <tr><th></th><th>team</th><th>run</th><th class="num">vs the field</th><th class="num">both adapt <span class="muted">(quick read)</span></th></tr>
+      <tr><th></th><th>{{ _("team") }}</th><th>{{ _("run") }}</th><th class="num">{{ _("vs the field") }}</th><th class="num">{{ _("both adapt") }} <span class="muted">({{ _("quick read") }})</span></th></tr>
       {% for e in entries %}<tr>
         <td><input type="checkbox" name="run" value="{{ e.key }}"{{ ' checked' if e.key in chosen }}></td>
-        <td>{% if e.fav %}<span style="color: var(--sun, #e0a800)">★</span> {% if e.fav.note %}<b>{{ e.fav.note }}</b><br>{% endif %}{% endif %}{{ e.species|join(' ') }}{% if e.kind != 'team' %}<br><span class="muted">{{ e.kind }}</span>{% endif %}</td>
+        <td>{% if e.fav %}<span style="color: var(--sun, #e0a800)">★</span> {% if e.fav.note %}<b>{{ e.fav.note }}</b><br>{% endif %}{% endif %}{{ e.species|names(' ') }}{% if e.kind != 'team' %}<br><span class="muted">{{ _(e.kind) }}</span>{% endif %}</td>
         <td class="muted">{{ e.created|ago if e.created else '' }} · {{ e.mode.label }} · {{ e.model|replace('.pt', '') }}</td>
         <td class="num">{{ e.overall|pct }}</td><td class="num">{{ e.both_adapt|pct }}</td></tr>{% endfor %}
     </table></div>
-    <p><button class="btn" type="submit">Compare the ticked runs</button></p>
+    <p><button class="btn" type="submit">{{ _("Compare the ticked runs") }}</button></p>
   </form>
 </div>
 {% elif not fields %}
-<div class="card"><p>No finished Team Deep Dive runs yet. <a href="/validate">Run one</a> and it shows up here.</p></div>
+<div class="card"><p>{{ _("No finished Team Deep Dive runs yet. <a href=\"/validate\">Run one</a> and it shows up here.")|safe }}</p></div>
 {% endif %}
 {% endblock %}

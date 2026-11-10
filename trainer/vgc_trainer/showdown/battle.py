@@ -27,6 +27,7 @@ from .chaos import HIGH_CHAOS, net_bad_luck
 from .requests import REQUEST_TARGET, RequestMasks, describe_action, team_choice
 from .teams import pack, unpack
 from .tracker import Tracker, to_id
+from ..formats import CURRENT
 
 VERSION = "0.1"
 USER_AGENT = f"{websockets.http11.USER_AGENT} openVGCengine-buddy/{VERSION}"
@@ -937,7 +938,7 @@ class BaseClient:
 
 
 
-    def __init__(self, url: str, username: str, agent: Agent, team: list[dict], fmt: str = "gen9championsvgc2026regmc",
+    def __init__(self, url: str, username: str, agent: Agent, team: list[dict], fmt: str = CURRENT,
                  formats: list[str] | None = None):
         self.url, self.username, self.agent, self.team, self.format = url, username, agent, team, fmt
         self.formats = set(formats or [fmt])

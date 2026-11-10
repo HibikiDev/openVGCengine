@@ -9,6 +9,8 @@
 
 from __future__ import annotations
 
+from vgc_trainer import i18n
+
 import json
 from pathlib import Path
 
@@ -17,8 +19,8 @@ _CACHE: dict[str, tuple[float, list[dict]]] = {}
 
 def _mode(r: dict, games: int) -> dict:
     s = r.get("search")
-    return {"search": s["games_per_team"], "label": f"Search Mode, {s['games_per_team']} a team"} if s else \
-        {"search": 0, "label": f"quick, {games:,} games"}
+    return {"search": s["games_per_team"], "label": i18n.t("Search Mode, {n} a team", n=s['games_per_team'])} if s else \
+        {"search": 0, "label": i18n.t("quick, {n} games", n=f"{games:,}")}
 
 
 def _entries(j: dict) -> list[dict]:
@@ -78,7 +80,7 @@ def index(job_dir: Path) -> list[dict]:
 
 
 def field_label(field: str) -> str:
-    return f"bucket {field[7:]}" if field.startswith("bucket:") else "Current Metagame" if field == "meta" else field
+    return i18n.t("bucket {name}", name=field[7:]) if field.startswith("bucket:") else i18n.t("Current Metagame") if field == "meta" else field
 
 
 def compare(entries: list[dict]) -> dict:
@@ -105,13 +107,12 @@ def compare(entries: list[dict]) -> dict:
         e["on_shared"] = round(sum(a * b for a, b in w) / sum(a for a, _ in w), 3) if w else None
     warn = []
     if len({e["model"] for e in rows}) > 1:
-        warn.append("These runs used different models (" + ", ".join(sorted({str(e["model"]) for e in rows})) + "): a gap can be the "
-                    "model's, not the team's - rerun the older ones to compare like with like.")
+        warn.append(i18n.t("These runs used different models ({models}): a gap can be the model's, not the team's - rerun the older ones to compare like with like.",
+                           models=", ".join(sorted({str(e["model"]) for e in rows}))))
     if len({bool(e["mode"]["search"]) for e in rows}) > 1:
-        warn.append("Quick and Search Mode runs are mixed: quick numbers can sit ~20 points off a matchup the way the bot really plays "
-                    "it, so compare quick with quick and Search Mode with Search Mode.")
+        warn.append(i18n.t("Quick and Search Mode runs are mixed: quick numbers can sit ~20 points off a matchup the way the bot really plays it, so compare quick with quick and Search Mode with Search Mode."))
     if len(shared) < len(teams):
-        warn.append(f"Not every run played the same teams (the bucket changed between runs): the \"shared teams\" column scores each "
-                    f"run on the {len(shared)} teams all of them played.")
+        warn.append(i18n.t("Not every run played the same teams (the bucket changed between runs): the \"shared teams\" column scores each run on the {n} teams all of them played.",
+                           n=len(shared)))
     return {"rows": rows, "teams": teams, "shared": shared, "shares": shares, "best": best, "warn": warn, "species": species,
             "has_both": any(e["both_adapt"] is not None for e in rows)}

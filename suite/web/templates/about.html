@@ -1,68 +1,72 @@
 {% extends "base.html" %}
-{% block title %}About · openVGCengine{% endblock %}
+{% block title %}{{ _("About") }} · openVGCengine{% endblock %}
 
 
 {% block main %}
 <div class="card" id="update">
   <h1>openVGCengine {{ version }}</h1>
-  <p class="small muted">{% if bundle %}Installed bundle {{ bundle.export[:10] }}, built {{ bundle.built[:10] }} · engine {{ bundle.engine.commit }}
-    · model {{ (bundle.models.files|list)[0] if bundle.models and bundle.models.files else '?' }}{% else %}Running from a source checkout.{% endif %}
+  <p class="small muted">{% if bundle %}{{ _("Installed bundle {id}, built {date}", id=bundle.export[:10], date=bundle.built[:10]) }} · {{ _("engine {commit}", commit=bundle.engine.commit) }}
+    · {{ _("model {model}", model=(bundle.models.files|list)[0] if bundle.models and bundle.models.files else '?') }}{% else %}{{ _("Running from a source checkout.") }}{% endif %}
     · {{ gpu.name if gpu is defined else '' }}</p>
-  <p><button type="button" class="btn" id="check">Check for updates</button>
-    <span class="small muted">Asks GitHub for the newest release - only when you click.</span></p>
+  <p><button type="button" class="btn" id="check">{{ _("Check for updates") }}</button>
+    <span class="small muted">{{ _("Asks GitHub for the newest release - only when you click.") }}</span></p>
   <div id="upd" class="small" hidden></div>
-  {% if last_update %}<p class="small note">{% if last_update.ok %}Updated to version {{ last_update.version }}.{% else %}The update to {{ last_update.version }} didn't work, so you're back on the version you had: {{ last_update.error }}{% endif %}</p>{% endif %}
-  <p class="small">Releases: <a href="{{ releases }}" target="_blank" rel="noopener">{{ releases }}</a></p>
+  {% if last_update %}<p class="small note">{% if last_update.ok %}{{ _("Updated to version {v}.", v=last_update.version) }}{% else %}{{ _("The update to {v} didn't work, so you're back on the version you had: {error}", v=last_update.version, error=last_update.error) }}{% endif %}</p>{% endif %}
+  <p class="small">{{ _("Releases:") }} <a href="{{ releases }}" target="_blank" rel="noopener">{{ releases }}</a></p>
 </div>
 
 <div class="card" id="bug">
-  <h2>Report a bug</h2>
-  <p>Something broke or looks wrong? Write to me - a few lines on what you did and what happened are enough.</p>
+  <h2>{{ _("Report a bug") }}</h2>
+  <p>{{ _("Something broke or looks wrong? Write to me - a few lines on what you did and what happened are enough.") }}</p>
   <div class="row" style="align-items:center; gap:10px">
     <pre style="margin:0; display:inline-block">{{ contact }}</pre>
-    <button type="button" class="btn alt" onclick="copyExport(this)" style="padding:4px 12px">Copy</button>
+    <button type="button" class="btn alt" onclick="copyExport(this)" style="padding:4px 12px">{{ _("Copy") }}</button>
   </div>
-  <p class="small muted">Or open an issue on GitHub: <a href="{{ issues }}" target="_blank" rel="noopener">{{ issues }}</a></p>
-  <h3>Details to include</h3>
-  <p class="small">The versions, your device, and the last failed runs with their error. Read it first - copy only what you're happy
-    to share. Paths to your user folder are shortened to <code>~</code>.</p>
+  <p class="small muted">{{ _("Or open an issue on GitHub:") }} <a href="{{ issues }}" target="_blank" rel="noopener">{{ issues }}</a></p>
+  <h3>{{ _("Details to include") }}</h3>
+  <p class="small">{{ _("The versions, your device, and the last failed runs with their error. Read it first - copy only what you're happy to share. Paths to your user folder are shortened to <code>~</code>.")|safe }}</p>
   <div>
     <pre style="white-space:pre-wrap; max-height:340px; overflow:auto">{{ diag }}</pre>
-    <button type="button" class="btn alt" onclick="copyExport(this)" style="padding:4px 12px">Copy</button>
+    <button type="button" class="btn alt" onclick="copyExport(this)" style="padding:4px 12px">{{ _("Copy") }}</button>
   </div>
 </div>
 
 <div class="card">
-  <h2>Credits</h2>
-  <p class="small">The battle engine is a port of <a href="https://github.com/smogon/pokemon-showdown" target="_blank" rel="noopener">Pokémon
-    Showdown</a>'s simulator (MIT); the buddy plays on a local copy of its server. Usage data: <a href="https://www.smogon.com/stats/"
-    target="_blank" rel="noopener">Smogon's usage statistics</a>. openVGCengine is MIT-licensed (LICENSE, THIRD_PARTY_NOTICES); an
-    unofficial fan project, not affiliated with Nintendo, Game Freak or The Pokémon Company.</p>
+  <h2>{{ _("Credits") }}</h2>
+  <p class="small">{{ _("The battle engine is a port of <a href=\"https://github.com/smogon/pokemon-showdown\" target=\"_blank\" rel=\"noopener\">Pokémon Showdown</a>'s simulator (MIT); the buddy plays on a local copy of its server. Usage data: <a href=\"https://www.smogon.com/stats/\" target=\"_blank\" rel=\"noopener\">Smogon's usage statistics</a>. openVGCengine is MIT-licensed (LICENSE, THIRD_PARTY_NOTICES); an unofficial fan project, not affiliated with Nintendo, Game Freak or The Pokémon Company.")|safe }}</p>
 </div>
 {% endblock %}
 {% block scripts %}
 <script>
+const L = {download: {{ _("Download update ({mb} MB)")|tojson }}, unchanged: {{ _("Your install hasn't changed.")|tojson }},
+  ready: {{ _("Downloaded and checked. Restarting takes a moment: your buckets, runs and practice games stay.")|tojson }},
+  restart: {{ _("Restart and update")|tojson }}, closing: {{ _("Closing the app to update. It reopens when it's done.")|tojson }},
+  downloading: {{ _("Downloading: {pct}%")|tojson }}, checkingDl: {{ _("Checking the download ...")|tojson }},
+  checking: {{ _("Checking ...")|tojson }}, out: {{ _("Version {latest} is out ({published}) - you have {current}.")|tojson }},
+  page: {{ _("Open the release page")|tojson }}, newest: {{ _("You have the newest version ({current}).")|tojson }},
+  failed: {{ _("The check failed: {error}")|tojson }}};
+const F = (t, o) => t.replace(/\{(\w+)\}/g, (m, k) => k in o ? o[k] : m);
 const post = async (url) => (await fetch(url, {method: "POST"})).json();
 function addUpdate(out, r) {
   const mb = Math.round(r.asset.size / 1048576);
-  const b = document.createElement("button"); b.type = "button"; b.className = "btn"; b.textContent = `Download update (${mb} MB)`;
+  const b = document.createElement("button"); b.type = "button"; b.className = "btn"; b.textContent = F(L.download, {mb});
   const msg = document.createElement("p");
   out.append(b, msg);
-  const fail = (t) => { msg.textContent = t + " Your install hasn't changed."; b.disabled = false; };
+  const fail = (t) => { msg.textContent = t + " " + L.unchanged; b.disabled = false; };
   const restart = () => {
-    msg.textContent = "Downloaded and checked. Restarting takes about a minute: your buckets, runs and practice games stay.";
-    b.textContent = "Restart and update"; b.disabled = false;
+    msg.textContent = L.ready;
+    b.textContent = L.restart; b.disabled = false;
     b.onclick = async () => {
       b.disabled = true;
       const a = await post("/api/update-apply");
-      if (a.error) { msg.textContent = a.error; b.disabled = false; } else msg.textContent = "Closing the app to update. It reopens when it's done.";
+      if (a.error) { msg.textContent = a.error; b.disabled = false; } else msg.textContent = L.closing;
     };
   };
   const poll = async () => {
     const s = await post("/api/update-status");
     if (s.phase === "error") return fail(s.error);
     if (s.phase === "ready") return restart();
-    msg.textContent = s.phase === "download" ? `Downloading: ${Math.round(100 * s.done / s.total)}%` : "Checking the download ...";
+    msg.textContent = s.phase === "download" ? F(L.downloading, {pct: Math.round(100 * s.done / s.total)}) : L.checkingDl;
     setTimeout(poll, 500);
   };
   b.onclick = async () => {
@@ -71,7 +75,7 @@ function addUpdate(out, r) {
     if (s.phase === "error") return fail(s.error);
     poll();
   };
-  post("/api/update-status").then((s) => {
+  post("/api/update-status").then((s) => {  // (back on this page: a download already done or still going carries on)
     if (s.version !== r.latest) return;
     if (s.phase === "ready") restart();
     else if (s.phase === "download" || s.phase === "check") { b.disabled = true; poll(); }
@@ -79,23 +83,23 @@ function addUpdate(out, r) {
 }
 document.getElementById("check").addEventListener("click", async () => {
   const out = document.getElementById("upd"), btn = document.getElementById("check");
-  btn.disabled = true; out.hidden = false; out.textContent = "Checking ...";
+  btn.disabled = true; out.hidden = false; out.textContent = L.checking;
   try {
     const r = await (await fetch("/api/update-check", {method: "POST"})).json();
     out.replaceChildren();
     const p = document.createElement("p");
     if (r.error) p.textContent = r.error;
     else if (r.newer) {
-      p.append(`Version ${r.latest} is out (${r.published}) - you have ${r.current}. `);
-      const a = document.createElement("a"); a.href = r.url; a.target = "_blank"; a.rel = "noopener"; a.textContent = "Open the release page";
+      p.append(F(L.out, r) + " ");
+      const a = document.createElement("a"); a.href = r.url; a.target = "_blank"; a.rel = "noopener"; a.textContent = L.page;
       p.append(a);
-    } else p.textContent = `You have the newest version (${r.current}).`;
+    } else p.textContent = F(L.newest, r);
     out.append(p);
     if (r.newer && r.asset && r.can_install) addUpdate(out, r);
-    if (r.newer && r.notes) {
+    if (r.newer && r.notes) {  // (the release notes: plain text, never markup)
       const pre = document.createElement("pre"); pre.style.whiteSpace = "pre-wrap"; pre.textContent = r.notes; out.append(pre);
     }
-  } catch (e) { out.textContent = "The check failed: " + e; }
+  } catch (e) { out.textContent = F(L.failed, {error: e}); }
   btn.disabled = false;
 });
 </script>

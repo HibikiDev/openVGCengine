@@ -21,6 +21,7 @@
 
 from __future__ import annotations
 
+from vgc_trainer import i18n
 import re
 from collections import Counter, defaultdict
 from pathlib import Path
@@ -124,11 +125,11 @@ def sweep(five: list[dict], candidates: list[tuple[str, str, dict]], field: list
     for n, (label, src, s, six) in enumerate(todo):
 
         step = None if progress is None else (
-            lambda m, d=None, t=None, ph=None, n=n, label=label: progress(f"Candidate {n + 1} of {len(todo)} ({label}) · {m}",
+            lambda m, d=None, t=None, ph=None, n=n, label=label: progress(i18n.t("Candidate {n} of {total} ({label}) · {step}", n=n + 1, total=len(todo), label=label, step=m),
                                                                           n * per + (d or 0), len(todo) * per,
                                                                           ph if ph == "search-tail" else "search" if search_games else "fast"))
         if step:
-            step("starting")
+            step(i18n.t("starting"))
         rep = run_validation(six, field, ckpt, games=games, seed=seed, dev=dev, team_id=f"five + {label}", weights=weights,
                              field_name=field_name, progress=step, search_games=search_games, fmt=efmt)
         rows.append({"label": label, "source": src, "species": s["species"], "set": set_line(s), "paste": to_paste([s]), "six_paste": to_paste(six),
@@ -151,8 +152,8 @@ def sweep(five: list[dict], candidates: list[tuple[str, str, dict]], field: list
     robust_n = len(robust_rows) if brings_agent is not None and robust_top else 0
     for n, r in enumerate(robust_rows[:robust_n]):
         r["robust"] = _both_adapt(brings_agent, r["_six"], field, weights, robust_k, robust_games, seed, efmt,
-                                  lambda j, r=r, n=n: progress and progress(f"Both-adapt pass: candidate {n + 1} of {robust_n} "
-                                                                             f"({r['label']}), team {j + 1} of {len(field)}",
+                                  lambda j, r=r, n=n: progress and progress(i18n.t("Both-adapt pass: candidate {n} of {total} ({label}), team {j} of {teams}",
+                                                                                    n=n + 1, total=robust_n, label=r['label'], j=j + 1, teams=len(field)),
                                                                              n * len(field) + j, robust_n * len(field), "robust"))
     for r in rows:
         r.pop("opp_info")

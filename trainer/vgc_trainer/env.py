@@ -17,6 +17,8 @@ import numpy as np
 import torch
 import vgc_engine as ve
 
+from .formats import is_champions
+
 REPO = Path(__file__).resolve().parents[2]
 DEFAULT_TEAMS = REPO / "tools" / "corpus" / "out" / "teams-sets.json"
 
@@ -60,9 +62,6 @@ def load_team_ids(path: Path = DEFAULT_TEAMS, split: str = "all") -> list[str]:
 
 
 
-CHAMPIONS_FORMATS = {None, "gen9championsvgc2026regmc", "gen9championsvgc2026regmcbo3"}
-
-
 def load_team_file(path: Path) -> list[dict]:
 
 
@@ -70,7 +69,7 @@ def load_team_file(path: Path) -> list[dict]:
     doc = json.loads(Path(path).read_text(encoding="utf8"))
     entries = doc["teams"]
     fmt = doc.get("format")
-    if fmt in CHAMPIONS_FORMATS:
+    if is_champions(fmt):
         fmt = None
     probe = ve.BattlePool(1)
     usable = []

@@ -1,57 +1,57 @@
 {% extends "base.html" %}
-{% block title %}{{ s.name }} · Buddy · openVGCengine{% endblock %}
-{% macro wr(rows, label) %}
+{% block title %}{{ s.name }} · {{ _("Buddy") }} · openVGCengine{% endblock %}
+{% macro wr(rows, label, kind='mons') %}
 <h3>{{ label }}</h3>
 {% if rows %}<div class="scroll"><table class="tbl small">
-  <tr><th></th><th class="num">games</th><th class="num">you won</th><th></th></tr>
-  {% for e in rows %}<tr><td><b>{{ e.key }}</b></td><td class="num">{{ e.n }}</td><td class="num">{{ e.wins }} ({{ e.rate|pct }})</td>
+  <tr><th></th><th class="num">{{ _("games") }}</th><th class="num">{{ _("you won") }}</th><th></th></tr>
+  {% for e in rows %}<tr><td><b>{{ _(e.key) if kind == 'team' else e.key.split(' + ')|names(' + ') }}</b></td><td class="num">{{ e.n }}</td><td class="num">{{ e.wins }} ({{ e.rate|pct }})</td>
     <td style="min-width: 90px"><div class="bar"><i style="width: {{ (e.rate * 100)|round(1) }}%"></i></div></td></tr>{% endfor %}
 </table></div>{% else %}<p class="muted small">-</p>{% endif %}
 {% endmacro %}
 {% block main %}
 <div class="card">
   <h1>{{ s.name }}</h1>
-  <p class="muted small">{{ s.user }} vs {{ s.bot_label }} · {{ s.start[:16] }} – {{ s.end[11:16] if s.end and s.end[:10] == s.start[:10] else (s.end[:16] if s.end else 'still running') }} · <a href="/buddy#sessions">all sessions</a></p>
+  <p class="muted small">{{ _("{a} vs {b}", a=s.user, b=_(s.bot_label)) }} · {{ s.start[:16] }} – {{ s.end[11:16] if s.end and s.end[:10] == s.start[:10] else (s.end[:16] if s.end else _('still running')) }} · <a href="/buddy#sessions">{{ _("all sessions") }}</a></p>
   <div class="stats">
-    <div><div class="big">{{ s.wins }}-{{ s.losses }}</div><div class="small muted">your games ({{ s.games }} played)</div></div>
-    {% if s.series_won or s.series_lost %}<div><div class="big">{{ s.series_won }}-{{ s.series_lost }}</div><div class="small muted">your best-of-three series</div></div>{% endif %}
-    {% if s.turns %}<div><div class="big">{{ s.turns }}</div><div class="small muted">turns a game</div></div>{% endif %}
+    <div><div class="big">{{ s.wins }}-{{ s.losses }}</div><div class="small muted">{{ _("your games ({n} played)", n=s.games) }}</div></div>
+    {% if s.series_won or s.series_lost %}<div><div class="big">{{ s.series_won }}-{{ s.series_lost }}</div><div class="small muted">{{ _("your best-of-three series") }}</div></div>{% endif %}
+    {% if s.turns %}<div><div class="big">{{ s.turns }}</div><div class="small muted">{{ _("turns a game") }}</div></div>{% endif %}
   </div>
-  {% if not s.games %}<p class="muted">No finished games in this session yet - they show up here as they end.</p>{% endif %}
+  {% if not s.games %}<p class="muted">{{ _("No finished games in this session yet - they show up here as they end.") }}</p>{% endif %}
 </div>
 {% if s.games %}
 <div class="grid2">
-  <div class="card flat">{{ wr(s.your_leads, "Your leads") }}{{ wr(s.your_mons, "Your Pokémon (games it came in)") }}</div>
-  <div class="card flat">{{ wr(s.bot_teams, "The bot's teams") }}{{ wr(s.bot_leads, "The bot's leads") }}</div>
+  <div class="card flat">{{ wr(s.your_leads, _("Your leads")) }}{{ wr(s.your_mons, _("Your Pokémon (games it came in)")) }}</div>
+  <div class="card flat">{{ wr(s.bot_teams, _("The bot's teams"), 'team') }}{{ wr(s.bot_leads, _("The bot's leads")) }}</div>
 </div>
 {% from "_side_table.html" import side_table %}
 <div class="card">
-  <h2>What happened in these games</h2>
-  <p class="small muted"><b>Brought</b> / <b>led</b>: share of games on the sheet (brought = came into play). <b>Fainted</b>, <b>KOs</b>, Mega: per game it came in.</p>
-  <details class="howto small"><summary>How to read it</summary><p>From this session's game logs, like the Deep Dive's matchup detail. <b>What it clicks</b>: share of its actions (moves and switches out), the games it used each move in, and its targets - <i>spread</i> when a move hit both foes. A KO is the last direct hit before a faint in the same turn. Score when brought: your win rate in the games it came in.</p></details>
-  {{ side_table(s.your_side, "Your side") }}
-  {{ side_table(s.bot_side, "The bot's side") }}
+  <h2>{{ _("What happened in these games") }}</h2>
+  <p class="small muted">{{ _("<b>Brought</b> / <b>led</b>: share of games on the sheet (brought = came into play). <b>Fainted</b>, <b>KOs</b>, Mega: per game it came in.")|safe }}</p>
+  <details class="howto small"><summary>{{ _("How to read it") }}</summary><p>{{ _("From this session's game logs, like the Deep Dive's matchup detail. <b>What it clicks</b>: share of its actions (moves and switches out), the games it used each move in, and its targets - <i>spread</i> when a move hit both foes. A KO is the last direct hit before a faint in the same turn. Score when brought: your win rate in the games it came in.")|safe }}</p></details>
+  {{ side_table(s.your_side, _("Your side")) }}
+  {{ side_table(s.bot_side, _("The bot's side")) }}
 </div>
-{% if s.your_sixes|length > 1 %}<div class="card flat"><p class="small"><b>Your sheets this session:</b> {% for six, n in s.your_sixes %}{{ six }} <span class="muted">({{ n }} games)</span>{{ '; ' if not loop.last }}{% endfor %}</p></div>{% endif %}
+{% if s.your_sixes|length > 1 %}<div class="card flat"><p class="small"><b>{{ _("Your sheets this session:") }}</b> {% for six, n in s.your_sixes %}{{ six.split(' · ')|names(' · ') }} <span class="muted">({{ _("{n} games", n=n) }})</span>{{ _("; ") if not loop.last }}{% endfor %}</p></div>{% endif %}
 <div class="card">
-  <h2>Games</h2>
+  <h2>{{ _("Games") }}</h2>
   <div class="scroll"><table class="tbl small">
-    <tr><th></th><th>result</th><th>your lead</th><th>your four (seen)</th><th>bot's lead</th><th>bot's four</th><th class="num">turns</th><th></th></tr>
+    <tr><th></th><th>{{ _("result") }}</th><th>{{ _("your lead") }}</th><th>{{ _("your four (seen)") }}</th><th>{{ _("bot's lead") }}</th><th>{{ _("bot's four") }}</th><th class="num">{{ _("turns") }}</th><th></th></tr>
     {% for sr in s.series %}
-      {% if sr.bo3 %}<tr class="mx-mix"><td colspan="8"><b>Best of three</b> · you {{ sr.wins }}-{{ sr.losses }}{% if sr.won is not none %} - <b>{{ 'you won' if sr.won else 'the bot won' }}</b>{% endif %}
-        {% if s.series_pages and private %} · <a href="/status/series/{{ sr.id }}">series page</a>{% endif %} <span class="muted">· {{ sr.games[0].bot_six|join(' · ') }}</span></td></tr>{% endif %}
+      {% if sr.bo3 %}<tr class="mx-mix"><td colspan="8"><b>{{ _("Best of three") }}</b> · {{ _("you {w}-{l}", w=sr.wins, l=sr.losses) }}{% if sr.won is not none %} - <b>{{ _('you won') if sr.won else _('the bot won') }}</b>{% endif %}
+        {% if s.series_pages and private %} · <a href="/status/series/{{ sr.id }}">{{ _("series page") }}</a>{% endif %} <span class="muted">· {{ sr.games[0].bot_six|names(' · ') }}</span></td></tr>{% endif %}
       {% for g in sr.games %}<tr>
-        <td class="nowrap">{{ g.time }}{% if sr.bo3 %} · game {{ g.game }}{% endif %}</td>
-        <td>{% if g.won is none %}<span class="muted">-</span>{% elif g.won %}<b class="hirec">you won</b>{% else %}<span class="lowrec">bot won</span>{% endif %}</td>
-        <td>{{ g.your_lead|join(' + ') }}</td><td>{{ g.your_four|join(', ') }}</td>
-        <td>{{ g.bot_lead|join(' + ') }}</td><td>{{ g.bot_four|join(', ') }}{% if not sr.bo3 %}<br><span class="muted">{{ g.bot_six|join(' · ') }}</span>{% endif %}</td>
+        <td class="nowrap">{{ g.time }}{% if sr.bo3 %} · {{ _("game {n}", n=g.game) }}{% endif %}</td>
+        <td>{% if g.won is none %}<span class="muted">-</span>{% elif g.won %}<b class="hirec">{{ _("you won") }}</b>{% else %}<span class="lowrec">{{ _("bot won") }}</span>{% endif %}</td>
+        <td>{{ g.your_lead|names(' + ') }}</td><td>{{ g.your_four|names }}</td>
+        <td>{{ g.bot_lead|names(' + ') }}</td><td>{{ g.bot_four|names }}{% if not sr.bo3 %}<br><span class="muted">{{ g.bot_six|names(' · ') }}</span>{% endif %}</td>
         <td class="num">{{ g.turns or '' }}</td>
-        <td class="nowrap"><a href="/status/game/{{ g.room }}?pov=human">game</a></td></tr>
-        {% if g.notes %}<tr><td></td><td colspan="7"><ul class="small muted" style="margin:0; padding-left:16px">{% for n in g.notes %}<li>{{ n }}</li>{% endfor %}</ul></td></tr>{% endif %}
+        <td class="nowrap"><a href="/status/game/{{ g.room }}?pov=human">{{ _("game") }}</a></td></tr>
+        {% if g.notes %}<tr><td></td><td colspan="7"><ul class="small muted" style="margin:0; padding-left:16px">{% for n in g.notes %}<li>{{ n|note_label }}</li>{% endfor %}</ul></td></tr>{% endif %}
       {% endfor %}
     {% endfor %}
   </table></div>
-  <p class="small muted">"Seen": only mons that came into play.</p>
+  <p class="small muted">{{ _('"Seen": only mons that came into play.') }}</p>
 </div>
 {% endif %}
 {% endblock %}

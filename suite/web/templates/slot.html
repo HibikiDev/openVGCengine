@@ -1,30 +1,30 @@
 {% extends "base.html" %}
-{% block title %}Change a slot · openVGCengine{% endblock %}
+{% block title %}{{ _("Change a slot") }} · openVGCengine{% endblock %}
 {% block main %}
 {% set slot = true %}
 <div class="card">
-  <h1>Change a slot</h1>
-  <p>Find the sixth for five Pokémon, or try replacing one of your six: each candidate plays the same games against the field.</p>
+  <h1>{{ _("Change a slot") }}</h1>
+  <p>{{ _("Find the sixth for five Pokémon, or try replacing one of your six: each candidate plays the same games against the field.") }}</p>
   <form method="post" action="/validate">
     <input type="hidden" name="lab" value="slot">
     {% include "_format_pick.html" %}
-    <label for="team">Your team <span class="hint">five to find a sixth, or your six</span> {% include "_team_help.html" %}</label>
+    <label for="team">{{ _("Your team") }} <span class="hint">{{ _("five to find a sixth, or your six") }}</span> {% include "_team_help.html" %}</label>
     <textarea id="team" name="team" required data-team></textarea>
-    <label for="replace">Replace <span class="hint">with six: the one to replace</span></label>
-    <input id="replace" name="replace" placeholder="e.g. Kingambit" style="max-width: 16em">
-    <label for="candidates">Your candidates <span class="hint">Showdown sets, a blank line between sets</span></label>
+    <label for="replace">{{ _("Replace") }} <span class="hint">{{ _("with six: the one to replace") }}</span></label>
+    <input id="replace" name="replace" placeholder="{{ _('e.g. Kingambit') }}" style="max-width: 16em">
+    <label for="candidates">{{ _("Your candidates") }} <span class="hint">{{ _("Showdown sets, a blank line between sets") }}</span></label>
     <textarea id="candidates" name="candidates" rows="6"></textarea>
-    <p><label><input type="checkbox" name="field_cands" value="1" checked> Also try the
-      <input name="field_top" class="num-inline" type="number" min="1" max="{{ LIMITS.sixth_field_top }}" value="8"> most used Pokémon
-      you don't have, from <select name="field_src" class="num-inline" style="width: auto"><option value="field">your field</option><option value="smogon" class="mc-only">ladder usage (Smogon)</option></select>,
-      <select name="field_kind" class="num-inline" style="width: auto"><option value="any">any set</option><option value="plain" class="megas-only">non-Mega only</option><option value="mega" class="megas-only">Mega only</option></select></label></p>
+    <p><label><input type="checkbox" name="field_cands" value="1" checked> {{ _("Also try the") }}
+      <input name="field_top" class="num-inline" type="number" min="1" max="{{ LIMITS.sixth_field_top }}" value="8"> {{ _("most used Pokémon you don't have, from") }}
+      <select name="field_src" class="num-inline" style="width: auto"><option value="field">{{ _("your field") }}</option><option value="smogon" class="mc-only">{{ _("ladder usage (Smogon)") }}</option></select>{{ _(", ") }}
+      <select name="field_kind" class="num-inline" style="width: auto"><option value="any">{{ _("any set") }}</option><option value="plain" class="megas-only">{{ _("non-Mega only") }}</option><option value="mega" class="megas-only">{{ _("Mega only") }}</option></select></label></p>
     {% include "_dd_field.html" %}
-    <p><label>Both-adapt pass for the best <input name="robust_top" class="num-inline" type="number" min="0" max="{{ LIMITS.sixth_robust_top }}" value="4">
-      candidates <span class="muted small">(0 = off; the slow part) - the steadier ranking</span></label></p>
+    <p><label>{{ _("Both-adapt pass for the best") }} <input name="robust_top" class="num-inline" type="number" min="0" max="{{ LIMITS.sixth_robust_top }}" value="4">
+      {{ _("candidates") }} <span class="muted small">{{ _("(0 = off; the slow part) - the steadier ranking") }}</span></label></p>
     {% set sm = smogon_month() if smogon_month is defined else none %}
-    <p class="small muted">Ladder usage: {{ ("Smogon's stats, " ~ sm) if sm else 'not installed' }} ·
-      <a href="https://www.smogon.com/stats/" target="_blank" rel="noopener">Smogon's usage stats</a>, shipped with the app</p>
-    <button class="btn" type="submit">Try the candidates</button>
+    <p class="small muted">{{ _("Ladder usage: Smogon's stats, {month}", month=sm) if sm else _("Ladder usage: not installed") }} ·
+      <a href="https://www.smogon.com/stats/" target="_blank" rel="noopener">{{ _("Smogon's usage stats") }}</a>{{ _(", shipped with the app") }}</p>
+    <button class="btn" type="submit">{{ _("Try the candidates") }}</button>
   </form>
   <script>document.querySelectorAll("select.fmt-pick").forEach(fp => {
     const apply = () => {

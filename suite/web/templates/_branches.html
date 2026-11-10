@@ -1,0 +1,13 @@
+
+
+
+{% macro branch_list(bs, what='this game') %}{% if bs %}
+<div class="small" style="margin-top: 8px"><b>{{ _("Played on from {what}", what=_(what)) }}</b> <span class="muted">({{ bs|length }})</span>
+  <ul style="margin: 4px 0 0; padding-left: 18px">{% for b in bs|reverse %}
+    <li><a href="/status/game/{{ b.room }}?pov=human">{{ _("from turn {turn}", turn=b.turn) }}</a>
+      · {% set who = b.me or _('you') %}{% if b.won is none %}{{ _("{who}: unfinished", who=who) }}{% elif b.turns %}{{ _("{who} won in {n} turns", who=who, n=b.turns) if b.won else _("{who} lost in {n} turns", who=who, n=b.turns) }}{% else %}{{ _("{who} won", who=who) if b.won else _("{who} lost", who=who) }}{% endif %}
+      {% if b.mode == 'same' %}<span class="muted">· {{ _("the bot repeated its choice on that turn") }}</span>{% endif %}
+      <span class="muted">· {{ b.time }}</span></li>{% endfor %}
+  </ul></div>{% endif %}{% endmacro %}
+
+{% macro origin_line(o) %}{% if o %}{% set src %}{% if o.href %}<a href="{{ o.href }}"{% if o.href.startswith('http') %} target="_blank" rel="noopener"{% endif %}>{{ _(o.label) }}</a>{% else %}{{ _(o.label) }}{% endif %}{% endset %}<p class="small muted">{{ _("Played on from turn {turn} of {source}.", turn=o.turn, source=src)|safe }}</p>{% endif %}{% endmacro %}

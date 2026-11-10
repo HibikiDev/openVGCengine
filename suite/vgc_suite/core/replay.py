@@ -7,8 +7,11 @@
 
 from __future__ import annotations
 
+from vgc_trainer import i18n
+
 import html
 import re
+import urllib.error
 import urllib.request
 from dataclasses import dataclass, field
 from pathlib import Path
@@ -40,15 +43,20 @@ def _fetch(url: str) -> str:
     if "replay.pokemonshowdown.com" in url and not url.endswith((".log", ".json")):
         url = url.split("?")[0].rstrip("/") + ".log"
     req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
-    with urllib.request.urlopen(req, timeout=20) as r:
-        return r.read().decode("utf8")
+    try:
+        with urllib.request.urlopen(req, timeout=20) as r:
+            return r.read().decode("utf8")
+    except urllib.error.HTTPError as e:
+        if e.code == 404:
+            raise ValueError(i18n.t("That replay isn't on replay.pokemonshowdown.com. A battle's link works once its replay is uploaded (Upload and Share in Showdown); a private replay needs its whole link, password part included.")) from None
+        raise
 
 
 def _from_html(text: str) -> str:
 
     m = re.search(r'<script[^>]*class="battle-log-data"[^>]*>(.*?)</script>', text, re.S)
     if not m:
-        raise ValueError("no battle log found in this HTML (expected a Showdown replay page)")
+        raise ValueError(i18n.t("no battle log found in this HTML (expected a Showdown replay page)"))
     return html.unescape(m.group(1))
 
 

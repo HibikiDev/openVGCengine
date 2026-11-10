@@ -8,6 +8,7 @@
 
 from __future__ import annotations
 
+from vgc_trainer import i18n
 import json
 import math
 import time
@@ -40,23 +41,22 @@ def load_field(spec: str, fmt: str | None = None) -> list[tuple[str, list[dict]]
 
 
 
-    from vgc_suite.formats import MC, get as get_format
-    fmt = fmt or MC
+    from vgc_suite.formats import CURRENT, MC, get as get_format
+    fmt = fmt or CURRENT
     if spec.startswith("bucket:"):
         from .buckets import format_of, teams
         if format_of(spec[7:]) != fmt:
-            raise ValueError(f"the bucket {spec[7:]} holds {get_format(format_of(spec[7:])).short} teams; this run is "
-                             f"{get_format(fmt).short} - pick a {get_format(fmt).short} bucket")
+            raise ValueError(i18n.t("the bucket {spec} holds {short} teams; this run is {short2} - pick a {short2} bucket", spec=spec[7:], short=get_format(format_of(spec[7:])).short, short2=get_format(fmt).short))
         return [(label, _ready(sets, fmt)) for label, sets, _ in teams(spec[7:])]
     if fmt != MC:
-        raise ValueError(f"the built-in fields are Reg M-C's: for {get_format(fmt).short}, make a bucket of the teams you expect (Buckets)")
+        raise ValueError(i18n.t("the built-in fields are Reg M-C's: for {short}, make a bucket of the teams you expect (Buckets)", short=get_format(fmt).short))
     if spec == "meta":
         if not META_FIELD.exists():
-            raise ValueError("there's no built-in field here: make a team bucket of the teams you expect to face (Buckets) and pick it")
+            raise ValueError(i18n.t("there's no built-in field here: make a team bucket of the teams you expect to face (Buckets) and pick it"))
         return [(t["label"], _ready(lookup_team(t["src"]))) for t in json.loads(META_FIELD.read_text(encoding="utf8"))["teams"]]
     if spec in FIELDS:
         if not FIELDS[spec].exists():
-            raise ValueError(f"the {spec!r} field's file isn't in this install: pick a team bucket")
+            raise ValueError(i18n.t("the {spec} field's file isn't in this install: pick a team bucket", spec=f"{spec!r}"))
         teams = json.loads(FIELDS[spec].read_text(encoding="utf8"))["teams"]
         out = []
         for t in teams:
@@ -154,17 +154,17 @@ def run_validation(team: list[dict], field: list[tuple[str, list[dict]]], ckpt: 
         est = seen[0] + float(np.minimum(np.asarray(env.pool.turns())[live] / 7.0, 0.95).sum())
         k = int(live.sum())
         if seen[0] and k <= max(2, games // 20):
-            progress(f"Searched games: {seen[0]} of {games} - finishing the last {k} long ones", min(est, games), games, "search-tail")
+            progress(i18n.t("Searched games: {done} of {total} - finishing the last {k} long ones", done=seen[0], total=games, k=k), min(est, games), games, "search-tail")
             return
-        progress(f"Searched games: {seen[0]} of {games}", min(est, games), games, "search")
+        progress(i18n.t("Searched games: {done} of {total}", done=seen[0], total=games), min(est, games), games, "search")
 
     def on_done(env, done, res):
         stats.on_done(env, done, res)
         seen[0] += len(done)
         if progress is not None and search is None:
-            progress(f"Games: {seen[0]:,} of {games:,}", seen[0], games, "games")
+            progress(i18n.t("Games: {done} of {total}", done=f"{seen[0]:,}", total=f"{games:,}"), seen[0], games, "games")
     if search is not None and progress is not None:
-        progress(f"Searched games: starting {games} (the first step is the slowest)", 0, games, "search")
+        progress(i18n.t("Searched games: starting {total} (the first step is the slowest)", total=games), 0, games, "search")
     log = play([pilot], teams, games, n=n_slots, seed=seed, dev=dev, focus=[0], opp_p=None if search else opp_p,
                on_step=on_step, on_done=on_done, pairs=pairs, search=search, fmt=fmt)
     pairs, bring, result = log["pairs"], log["bring"], log["result"]
@@ -210,7 +210,7 @@ def run_validation(team: list[dict], field: list[tuple[str, list[dict]]], ckpt: 
         from .brings import summary
         for x, r in enumerate(per_opp):
             if progress is not None:
-                progress(f"Bring matrix: {r['id']} ({x + 1} of {len(per_opp)})", x, len(per_opp), "brings")
+                progress(i18n.t("Bring matrix: {team} ({n} of {total})", team=r['id'], n=x + 1, total=len(per_opp)), x, len(per_opp), "brings")
             j = next(i for i, (fid, _) in enumerate(field) if fid == r["id"])
             r["brings"] = b = summary(brings_agent, team, field[j][1], k=brings_k, games=brings_games, seed=seed + 101 * (j + 1), fmt=fmt)
 

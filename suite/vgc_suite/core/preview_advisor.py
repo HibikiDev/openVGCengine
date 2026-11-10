@@ -10,6 +10,7 @@
 
 from __future__ import annotations
 
+from vgc_trainer import i18n
 import numpy as np
 import torch
 
@@ -117,16 +118,16 @@ def advise(agent: Agent, mine: list[dict], theirs: list[dict], k: int = 5, games
     say = progress or (lambda *a, **k: None)
     if all_rows:
         o.n_head_foe, o.n_head_me = len(top_foe), len(top_me)
-        say("Screening their fours: their best answers to your usual bring")
+        say(i18n.t("Screening their fours: their best answers to your usual bring"))
         extra = [int(x) for x in screen_answers(agent, mine, theirs, o, screen, seed + 2000, screen_keep) if x not in set(top_foe.tolist())]
         screened_foe = set(extra)
         top_foe = o.top_foe = np.concatenate([top_foe, np.array(extra, dtype=top_foe.dtype)]) if extra else top_foe
-        say("Screening your fours: the most robust against all of theirs")
+        say(i18n.t("Screening your fours: the most robust against all of theirs"))
         extra = [int(x) for x in screen_counters(agent, mine, theirs, o, screen, seed + 3000, screen_keep) if x not in set(top_me.tolist())]
         screened = set(extra)
         top_me = o.top_me = np.concatenate([top_me, np.array(extra, dtype=top_me.dtype)]) if extra else top_me
     km, kf = len(top_me), len(top_foe)
-    say(f"Bring matrix: {len(o.top_me)} x {len(o.top_foe)} brings")
+    say(i18n.t("Bring matrix: {mine} x {theirs} brings", mine=len(o.top_me), theirs=len(o.top_foe)))
     m = play_matrix(agent, mine, theirs, o, games, seed)
     se = np.sqrt(m * (1 - m) / max(games, 1))
     foe_mix = p_foe[top_foe] / p_foe[top_foe].sum()
@@ -169,7 +170,7 @@ def advise(agent: Agent, mine: list[dict], theirs: list[dict], k: int = 5, games
 
     rep["summary"] = derive(agent, mine, theirs, o, m, games, seed)
     if answers:
-        say("Opener tree")
+        say(i18n.t("Opener tree"))
         from .opener_tree import opener_tree
         rep["opener_tree"] = opener_tree(agent, mine, theirs, answers=answers, seed=seed + 31)
     return rep

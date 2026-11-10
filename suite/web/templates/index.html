@@ -2,33 +2,33 @@
 {% block main %}
 <section class="hero">
   <div>
-    <h1>Study VGC with a model that learned it from scratch</h1>
-    <p class="lead">openVGCengine's model taught itself VGC through over a billion self-play games. These tools let you ask it things: about your replays, your team, your next team preview.</p>
-    <p class="muted">Its opinions are its own view, not a verdict: at a high level a "worse" play is often a read, and the model isn't perfect either.</p>
-    <div style="display:flex; gap:10px; flex-wrap:wrap"><a class="btn" href="/validate">Test a team</a><a class="btn alt" href="/analyze">Analyze a replay</a></div>
+    <h1>{{ _("Study VGC with a model that learned it from scratch") }}</h1>
+    <p class="lead">{{ _("openVGCengine's model taught itself VGC through over a billion self-play games. These tools let you ask it things: about your replays, your team, your next team preview.") }}</p>
+    <p class="muted">{{ _('Its opinions are its own view, not a verdict: at a high level a "worse" play is often a read, and the model isn\'t perfect either.') }}</p>
+    <div style="display:flex; gap:10px; flex-wrap:wrap"><a class="btn" href="/validate">{{ _("Test a team") }}</a><a class="btn alt" href="/analyze">{{ _("Analyze a replay") }}</a></div>
   </div>
 </section>
 
 <div class="tiles">
   <a class="tile" href="/validate"><div class="band c-sky"></div>
-    <div class="txt"><h3>Team Lab</h3><p class="small">Your team against a field of teams: every matchup and what to bring - or find the best sixth or a slot change.</p></div></a>
+    <div class="txt"><h3>{{ _("Team Lab") }}</h3><p class="small">{{ _("Your team against a field of teams: every matchup and what to bring - or find the best sixth or a slot change.") }}</p></div></a>
   <a class="tile" href="/h2h"><div class="band c-lime"></div>
-    <div class="txt"><h3>Battle Lab</h3><p class="small">Two teams against each other: head-to-head, played-out games, a preview plan, or one game step by step.</p></div></a>
+    <div class="txt"><h3>{{ _("Battle Lab") }}</h3><p class="small">{{ _("Two teams against each other: head-to-head, played-out games, a preview plan, or one game step by step.") }}</p></div></a>
   <a class="tile" href="/analyze"><div class="band c-blush"></div>
-    <div class="txt"><h3>Replays</h3><p class="small">Your replay turn by turn with the model's view, or a position played out from any turn.</p></div></a>
+    <div class="txt"><h3>{{ _("Replays") }}</h3><p class="small">{{ _("Your replay turn by turn with the model's view, or a position played out from any turn.") }}</p></div></a>
   <a class="tile" href="/buddy"><div class="band c-sun"></div>
-    <div class="txt"><h3>Training Buddy</h3><p class="small">Practise against the bot with any team or bucket, in practice sessions you can review.</p></div></a>
+    <div class="txt"><h3>{{ _("Training Buddy") }}</h3><p class="small">{{ _("Practise against the bot with any team or bucket, in practice sessions you can review.") }}</p></div></a>
   <a class="tile" href="/buckets"><div class="band c-sand"></div>
-    <div class="txt"><h3>Team buckets</h3><p class="small">Saved, weighted sets of teams - the field you expect - for every tool.</p></div></a>
+    <div class="txt"><h3>{{ _("Team buckets") }}</h3><p class="small">{{ _("Saved, weighted sets of teams - the field you expect - for every tool.") }}</p></div></a>
 </div>
 
 {% if recent %}
 <div class="card flat" style="margin-top:34px">
-  <h2>Recent runs</h2>
+  <h2>{{ _("Recent runs") }}</h2>
   <ul class="recent">
   {% for j in recent %}
-    <li><span class="chip {{ 't-agree' if j.status == 'done' else ('t-strong' if j.status == 'error' else 't-close') }}">{{ j.status }}</span>
-      {% set fv = favorites().get(j.id) if favorites is defined else none %}<a href="/job/{{ j.id }}">{{ (TOOLS.get(j.tool) or ('Turn-1 lab',))[0] }}</a>{% if fv %} <span style="color: var(--sun, #e0a800)">★</span>{% if fv.note %} <b class="small">{{ fv.note }}</b>{% endif %}{% endif %} <span class="muted small">{{ j.created|ago }}</span></li>
+    <li><span class="chip {{ 't-agree' if j.status == 'done' else ('t-strong' if j.status == 'error' else 't-close') }}">{{ _(j.status) }}</span>
+      {% set fv = favorites().get(j.id) if favorites is defined else none %}<a href="/job/{{ j.id }}">{{ tool_title(j.tool) }}</a>{% if fv %} <span style="color: var(--sun, #e0a800)">★</span>{% if fv.note %} <b class="small">{{ fv.note }}</b>{% endif %}{% endif %} <span class="muted small">{{ j.created|ago }}</span></li>
   {% endfor %}
   </ul>
 </div>
