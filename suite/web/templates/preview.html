@@ -6,8 +6,9 @@
   <p>{{ _("Your team and theirs: which four to bring and lead, what they will likely bring, and how every pairing plays out.") }}</p>
   <form method="post" action="/preview">
     {% include "_format_pick.html" %}
+    <p class="teamhelp">{% include "_team_help.html" %}</p>
     <div class="row">
-      <div><label for="mine">{{ _("Your team") }} {% include "_team_help.html" %}</label><textarea id="mine" name="mine" required data-team></textarea></div>
+      <div><label for="mine">{{ _("Your team") }}</label><textarea id="mine" name="mine" required data-team></textarea></div>
       <div><label for="theirs">{{ _("Their team") }}</label><textarea id="theirs" name="theirs" required data-team></textarea></div>
     </div>
     <details>

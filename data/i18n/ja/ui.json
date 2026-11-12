@@ -1,7 +1,7 @@
 {
 	"_about": "UI text, English -> Japanese (tools/i18n/extract.py keeps the keys; translations write glossary terms as {t:key}, terms in terms.json). 'reviewed' false until the user signs it off; null = not drafted yet.",
 	"spreads not given in a paste are the corpus guesses for the species": {
-		"ja": "貼り付けに努力値配分がない場合は、そのポケモンのデータに基づく推定値を使います",
+		"ja": "貼り付けに配分がない場合は、そのポケモンのデータに基づく推定値を使います",
 		"reviewed": false,
 		"where": [
 			"%s (dynamic key)"
@@ -85,7 +85,7 @@
 		]
 	},
 	"Back to the defaults: my own rotation in every format, open team sheets on, no drill.": {
-		"ja": "初期設定に戻しました：すべてのフォーマットでボット自身のチーム、オープンチームシートはオン、ドリルなし。",
+		"ja": "初期設定に戻しました：すべてのルールでボット自身のチーム、オープンチームシートはオン、ドリルなし。",
 		"reviewed": false,
 		"where": [
 			"suite/vgc_suite/buddy.py:310"
@@ -232,7 +232,7 @@
 		]
 	},
 	"I'll use my own rotation in every format.": {
-		"ja": "すべてのフォーマットでボット自身のチームを使います。",
+		"ja": "すべてのルールでボット自身のチームを使います。",
 		"reviewed": false,
 		"where": [
 			"suite/vgc_suite/buddy.py:376"
@@ -246,7 +246,7 @@
 		]
 	},
 	"I don't play {format} here. Formats: {formats}.": {
-		"ja": "ここでは{format}は対戦できません。対応フォーマット：{formats}。",
+		"ja": "ここでは{format}は対戦できません。対応ルール：{formats}。",
 		"reviewed": false,
 		"where": [
 			"suite/vgc_suite/buddy.py:385"
@@ -274,7 +274,7 @@
 		]
 	},
 	"Bucket {name} holds {own} teams, and I don't play that format here.": {
-		"ja": "{t:buckets}「{name}」は{own}のチームで、ここではそのフォーマットは対戦できません。",
+		"ja": "{t:buckets}「{name}」は{own}のチームで、ここではそのルールは対戦できません。",
 		"reviewed": false,
 		"where": [
 			"suite/vgc_suite/buddy.py:404"
@@ -295,7 +295,7 @@
 		]
 	},
 	"{team} is a {format} team, and I don't play that format here.": {
-		"ja": "{team}は{format}のチームで、ここではそのフォーマットは対戦できません。",
+		"ja": "{team}は{format}のチームで、ここではそのルールは対戦できません。",
 		"reviewed": false,
 		"where": [
 			"suite/vgc_suite/buddy.py:431"
@@ -333,70 +333,84 @@
 		"ja": "ローカルサーバーがまだ用意されていません。一度 `bash tools/buddy/make_server.sh` を実行してください（Node.jsが必要です）。",
 		"reviewed": false,
 		"where": [
-			"suite/vgc_suite/buddy.py:595"
+			"suite/vgc_suite/buddy.py:616"
 		]
 	},
 	"The local buddy server needs Node.js (nodejs.org), and `node` isn't on this PC's PATH.": {
 		"ja": "ローカルサーバーにはNode.js（nodejs.org）が必要ですが、このPCのPATHに `node` が見つかりません。",
 		"reviewed": false,
 		"where": [
-			"suite/vgc_suite/buddy.py:598"
+			"suite/vgc_suite/buddy.py:619"
 		]
 	},
 	"The local buddy server didn't come up (see {log}).": {
 		"ja": "ローカルサーバーが起動しませんでした（{log} を確認してください）。",
 		"reviewed": false,
 		"where": [
-			"suite/vgc_suite/buddy.py:617"
+			"suite/vgc_suite/buddy.py:638"
 		]
 	},
 	"No local buddy server started from here is running.": {
 		"ja": "ここから起動したローカルサーバーは実行されていません。",
 		"reviewed": false,
 		"where": [
-			"suite/vgc_suite/buddy.py:623"
+			"suite/vgc_suite/buddy.py:644"
 		]
 	},
 	"Local buddy server stopped.": {
 		"ja": "ローカルサーバーを停止しました。",
 		"reviewed": false,
 		"where": [
-			"suite/vgc_suite/buddy.py:626"
+			"suite/vgc_suite/buddy.py:647"
 		]
 	},
 	"The practice bot is already running.": {
 		"ja": "{t:practice_bot}はすでに実行中です。",
 		"reviewed": false,
 		"where": [
-			"suite/vgc_suite/buddy.py:649"
+			"suite/vgc_suite/buddy.py:670"
 		]
 	},
 	"Practice bot starting as {name} (it takes a moment to load and log in).": {
 		"ja": "{t:practice_bot}を{name}として起動しています（読み込みとログインに少し時間がかかります）。",
 		"reviewed": false,
 		"where": [
-			"suite/vgc_suite/buddy.py:661"
+			"suite/vgc_suite/buddy.py:682"
 		]
 	},
 	"The practice bot isn't running.": {
 		"ja": "{t:practice_bot}は実行されていません。",
 		"reviewed": false,
 		"where": [
-			"suite/vgc_suite/buddy.py:667"
+			"suite/vgc_suite/buddy.py:688"
 		]
 	},
 	"Practice bot stopped.": {
 		"ja": "{t:practice_bot}を停止しました。",
 		"reviewed": false,
 		"where": [
-			"suite/vgc_suite/buddy.py:672"
+			"suite/vgc_suite/buddy.py:693"
 		]
 	},
 	"Enter the name you use on the local Showdown server.": {
 		"ja": "ローカルのShowdownサーバーで使う名前を入力してください。",
 		"reviewed": false,
 		"where": [
-			"suite/vgc_suite/buddy.py:683"
+			"suite/vgc_suite/buddy.py:704"
+		]
+	},
+	"a pasted team": {
+		"ja": "貼り付けたチーム",
+		"reviewed": false,
+		"where": [
+			"suite/vgc_suite/buddy.py:787"
+		]
+	},
+	"as in the original game": {
+		"ja": "元の対戦と同じ",
+		"reviewed": false,
+		"where": [
+			"suite/vgc_suite/buddy.py:788"
 		]
 	},
 	"PracticeBot (local server)": {
@@ -428,21 +442,21 @@
 		]
 	},
 	"{n} teams: a bucket holds at most {max}": {
-		"ja": "{n}チーム: 1つのリストに入るのは最大{max}チームです",
+		"ja": "{n}チーム：1つのリストに入るのは最大{max}チームです",
 		"reviewed": false,
 		"where": [
 			"suite/vgc_suite/core/buckets.py:149"
 		]
 	},
 	"team {k} ({team}): no library team with that id": {
-		"ja": "チーム{k}（{team}）: そのIDのチームはライブラリにありません",
+		"ja": "チーム{k}（{team}）：そのIDのチームはライブラリにありません",
 		"reviewed": false,
 		"where": [
 			"suite/vgc_suite/core/buckets.py:199"
 		]
 	},
 	"team {k} ({team}): {error}": {
-		"ja": "チーム{k}（{team}）: {error}",
+		"ja": "チーム{k}（{team}）：{error}",
 		"reviewed": false,
 		"where": [
 			"suite/vgc_suite/core/buckets.py:202"
@@ -489,7 +503,7 @@
 		"where": [
 			"suite/vgc_suite/core/compare.py:83",
 			"suite/web/server.py:196",
-			"suite/web/server.py:2122"
+			"suite/web/server.py:2134"
 		]
 	},
 	"pick a node at the start of a turn (not a pending replacement, not the end of the game)": {
@@ -514,7 +528,7 @@
 		]
 	},
 	"Options: {team} ({n} of {total})": {
-		"ja": "選択肢の洗い出し: {team}（{n}/{total}）",
+		"ja": "選択肢の洗い出し：{team}（{n}/{total}）",
 		"reviewed": false,
 		"where": [
 			"suite/vgc_suite/core/deep.py:164"
@@ -615,28 +629,28 @@
 		]
 	},
 	"the model pilots both teams (self-play, both sides searching like the live bot): this is how the bot plays the matchup, not how a human would": {
-		"ja": "両チームともモデルが操作しています（自己対戦、実戦のボットと同じく両側が{t:search}）。人間ではなく、ボットがこの対面をどう戦うかを示します",
+		"ja": "両チームともモデルが操作しています（自己対戦、実戦のボットと同じく両側が{t:search}）。人間ではなく、ボットがこのマッチアップをどう戦うかを示します",
 		"reviewed": false,
 		"where": [
 			"suite/vgc_suite/core/h2h.py caveats (before 11-08) (dynamic key)"
 		]
 	},
 	"the model pilots both teams (self-play, both sides searching): this is how the bot plays the matchup, not how a human would": {
-		"ja": "両チームともモデルが操作しています（自己対戦、両側が{t:search}）。人間ではなく、ボットがこの対面をどう戦うかを示します",
+		"ja": "両チームともモデルが操作しています（自己対戦、両側が{t:search}）。人間ではなく、ボットがこのマッチアップをどう戦うかを示します",
 		"reviewed": false,
 		"where": [
 			"suite/vgc_suite/core/h2h.py caveats (server._caveat) (dynamic key)"
 		]
 	},
 	"the model pilots both teams (self-play, no search): this is how the bot plays the matchup, not how a human would": {
-		"ja": "両チームともモデルが操作しています（自己対戦、{t:search}なし）。人間ではなく、ボットがこの対面をどう戦うかを示します",
+		"ja": "両チームともモデルが操作しています（自己対戦、{t:search}なし）。人間ではなく、ボットがこのマッチアップをどう戦うかを示します",
 		"reviewed": false,
 		"where": [
 			"suite/vgc_suite/core/h2h.py caveats (server._caveat) (dynamic key)"
 		]
 	},
 	"turn-1 lines are the policy's draws; a line seen a handful of times says little on its own": {
-		"ja": "1ターン目の選択は方策による抽選です。数回しか出ていない選択だけでは多くを語りません",
+		"ja": "1ターン目の選択はモデルの方策からの抽選です。数回しか出ていない選択だけでは判断できません",
 		"reviewed": false,
 		"where": [
 			"suite/vgc_suite/core/h2h.py caveats (server._caveat) (dynamic key)"
@@ -650,14 +664,14 @@
 		]
 	},
 	"{fmt} uses closed team sheets: each side's search guesses the moves, items, abilities and spreads the battle hasn't shown yet, like the practice bot": {
-		"ja": "{fmt}はクローズドチームシートです。{t:practice_bot}と同じく、各側の{t:search}は対戦でまだ判明していない技・持ち物・特性・努力値配分を推定します",
+		"ja": "{fmt}はクローズドチームシートです。{t:practice_bot}と同じく、各側の{t:search}は対戦でまだ判明していない技・持ち物・特性・配分を推定します",
 		"reviewed": false,
 		"where": [
 			"suite/vgc_suite/core/h2h.py caveats (server._caveat) (dynamic key)"
 		]
 	},
 	"Searched games: {done} of {total}": {
-		"ja": "{t:search}対戦: {done}/{total}",
+		"ja": "{t:search}対戦：{done}/{total}",
 		"reviewed": false,
 		"where": [
 			"suite/vgc_suite/core/h2h.py:268",
@@ -666,7 +680,7 @@
 		]
 	},
 	"Games: {done} of {total}": {
-		"ja": "対戦: {done}/{total}",
+		"ja": "対戦：{done}/{total}",
 		"reviewed": false,
 		"where": [
 			"suite/vgc_suite/core/h2h.py:269",
@@ -828,7 +842,7 @@
 		]
 	},
 	"Sun": {
-		"ja": "にほんばれ",
+		"ja": "はれ",
 		"reviewed": false,
 		"where": [
 			"suite/vgc_suite/core/labels.py crawl_line / dice_word (crawler.py's words)"
@@ -1004,14 +1018,14 @@
 		]
 	},
 	"the game is over: a tie": {
-		"ja": "対戦終了: 引き分け",
+		"ja": "対戦終了：引き分け",
 		"reviewed": false,
 		"where": [
 			"suite/vgc_suite/core/labels.py crawl_line / dice_word (crawler.py's words)"
 		]
 	},
 	"the game is over: {side} won": {
-		"ja": "対戦終了: {side}の勝ち",
+		"ja": "対戦終了：{side}の勝ち",
 		"reviewed": false,
 		"where": [
 			"suite/vgc_suite/core/labels.py crawl_line / dice_word (crawler.py's words)"
@@ -1088,7 +1102,7 @@
 		]
 	},
 	"{who} is fully paralyzed": {
-		"ja": "{who}はからだがしびれて動けない",
+		"ja": "{who}は体がしびれて動けない",
 		"reviewed": false,
 		"where": [
 			"suite/vgc_suite/core/labels.py crawl_line / dice_word (crawler.py's words)"
@@ -1201,7 +1215,7 @@
 		]
 	},
 	"{side} chose {choices}": {
-		"ja": "{side}の選択: {choices}",
+		"ja": "{side}の選択：{choices}",
 		"reviewed": false,
 		"where": [
 			"suite/vgc_suite/core/labels.py:220"
@@ -1215,7 +1229,7 @@
 		]
 	},
 	"critical hit: {who}'s {move} on {target}": {
-		"ja": "急所: {who}の{move}が{target}に",
+		"ja": "急所：{who}の{move}が{target}に",
 		"reviewed": false,
 		"where": [
 			"suite/vgc_suite/core/labels.py:224"
@@ -1460,7 +1474,7 @@
 		]
 	},
 	"a sandstorm started": {
-		"ja": "砂あらしが吹き始めた",
+		"ja": "すなあらしが吹き始めた",
 		"reviewed": false,
 		"where": [
 			"suite/vgc_suite/core/narrate.py (narration template)"
@@ -1703,7 +1717,7 @@
 		]
 	},
 	"{mon} is frozen solid": {
-		"ja": "{mon}は凍ってしまって動けない",
+		"ja": "{mon}はこおってしまって動けない",
 		"reviewed": false,
 		"where": [
 			"suite/vgc_suite/core/narrate.py (narration template)"
@@ -1731,7 +1745,7 @@
 		]
 	},
 	"{mon} is no longer badly poisoned": {
-		"ja": "{mon}の猛毒が治った",
+		"ja": "{mon}のもうどくが治った",
 		"reviewed": false,
 		"where": [
 			"suite/vgc_suite/core/narrate.py (narration template)"
@@ -1745,7 +1759,7 @@
 		]
 	},
 	"{mon} is no longer frozen": {
-		"ja": "{mon}の氷が溶けた",
+		"ja": "{mon}のこおりがとけた",
 		"reviewed": false,
 		"where": [
 			"suite/vgc_suite/core/narrate.py (narration template)"
@@ -1759,7 +1773,7 @@
 		]
 	},
 	"{mon} is no longer poisoned": {
-		"ja": "{mon}の毒が治った",
+		"ja": "{mon}のどくが治った",
 		"reviewed": false,
 		"where": [
 			"suite/vgc_suite/core/narrate.py (narration template)"
@@ -1815,21 +1829,21 @@
 		]
 	},
 	"{mon} was badly poisoned": {
-		"ja": "{mon}は猛毒を受けた",
+		"ja": "{mon}はもうどくになった",
 		"reviewed": false,
 		"where": [
 			"suite/vgc_suite/core/narrate.py (narration template)"
 		]
 	},
 	"{mon} was frozen": {
-		"ja": "{mon}は凍りついた",
+		"ja": "{mon}はこおってしまった",
 		"reviewed": false,
 		"where": [
 			"suite/vgc_suite/core/narrate.py (narration template)"
 		]
 	},
 	"{mon} was poisoned": {
-		"ja": "{mon}は毒を受けた",
+		"ja": "{mon}はどくになった",
 		"reviewed": false,
 		"where": [
 			"suite/vgc_suite/core/narrate.py (narration template)"
@@ -1971,28 +1985,28 @@
 		]
 	},
 	"species not in the engine: {list}": {
-		"ja": "エンジンにないポケモン: {list}",
+		"ja": "エンジンにないポケモン：{list}",
 		"reviewed": false,
 		"where": [
 			"suite/vgc_suite/core/positions.py:495"
 		]
 	},
 	"Screening their fours: their best answers to your usual bring": {
-		"ja": "相手の4体を絞り込み中: あなたのいつもの{t:bring}への最善の対策",
+		"ja": "相手の4体を絞り込み中：あなたのいつもの{t:bring}への最善の対策",
 		"reviewed": false,
 		"where": [
 			"suite/vgc_suite/core/preview_advisor.py:121"
 		]
 	},
 	"Screening your fours: the most robust against all of theirs": {
-		"ja": "あなたの4体を絞り込み中: 相手のどの{t:bring}にも強いもの",
+		"ja": "あなたの4体を絞り込み中：相手のどの{t:bring}にも強いもの",
 		"reviewed": false,
 		"where": [
 			"suite/vgc_suite/core/preview_advisor.py:125"
 		]
 	},
 	"Bring matrix: {mine} x {theirs} brings": {
-		"ja": "{t:bring}の対戦表: {mine} × {theirs} 通り",
+		"ja": "{t:bring}の対戦表：{mine} × {theirs} 通り",
 		"reviewed": false,
 		"where": [
 			"suite/vgc_suite/core/preview_advisor.py:130"
@@ -2058,7 +2072,7 @@
 		]
 	},
 	"confused": {
-		"ja": "混乱した",
+		"ja": "こんらんした",
 		"reviewed": false,
 		"where": [
 			"suite/vgc_suite/core/review.py (dice words)",
@@ -2164,7 +2178,7 @@
 		]
 	},
 	"not confused": {
-		"ja": "混乱しなかった",
+		"ja": "こんらんしなかった",
 		"reviewed": false,
 		"where": [
 			"suite/vgc_suite/core/review.py (dice words)",
@@ -2203,14 +2217,14 @@
 		]
 	},
 	"thawed": {
-		"ja": "こおりが溶けた",
+		"ja": "こおりがとけた",
 		"reviewed": false,
 		"where": [
 			"suite/vgc_suite/core/review.py (dice words)"
 		]
 	},
 	"to confuse": {
-		"ja": "混乱",
+		"ja": "こんらん",
 		"reviewed": false,
 		"where": [
 			"suite/vgc_suite/core/review.py (dice words)"
@@ -2245,7 +2259,7 @@
 		]
 	},
 	"to thaw": {
-		"ja": "こおりが溶ける確率",
+		"ja": "こおりがとける確率",
 		"reviewed": false,
 		"where": [
 			"suite/vgc_suite/core/review.py (dice words)"
@@ -2287,7 +2301,7 @@
 		]
 	},
 	"a field candidate gets its commonest set in the field, spreads guessed where unknown": {
-		"ja": "相手側から選んだ候補はその中で最も多い型を使い、不明な努力値配分は推定です",
+		"ja": "相手側から選んだ候補はその中で最も多い型を使い、不明な配分は推定です",
 		"reviewed": false,
 		"where": [
 			"suite/vgc_suite/core/sixth.py caveats (server._caveat) (dynamic key)"
@@ -2315,7 +2329,7 @@
 		]
 	},
 	"Both-adapt pass: candidate {n} of {total} ({label}), team {j} of {teams}": {
-		"ja": "両者適応の確認: 候補 {n}/{total}（{label}）、チーム {j}/{teams}",
+		"ja": "両者適応の確認：候補 {n}/{total}（{label}）、チーム {j}/{teams}",
 		"reviewed": false,
 		"where": [
 			"suite/vgc_suite/core/sixth.py:155"
@@ -2329,7 +2343,7 @@
 		]
 	},
 	"Not a legal {format} team (Showdown's validator): {problems}": {
-		"ja": "{format}で使えないチームです（Showdownのチェッカー）: {problems}",
+		"ja": "{format}で使えないチームです（Showdownのチェッカー）：{problems}",
 		"reviewed": false,
 		"where": [
 			"suite/vgc_suite/core/teams.py:114"
@@ -2343,7 +2357,7 @@
 		]
 	},
 	"Showdown's validator refused it: {problems}": {
-		"ja": "Showdownのチェッカーで不可でした: {problems}",
+		"ja": "Showdownのチェッカーで不可でした：{problems}",
 		"reviewed": false,
 		"where": [
 			"suite/vgc_suite/core/teams.py:77"
@@ -2357,21 +2371,21 @@
 		]
 	},
 	"a cell of 8 games is a rough read: refined matchups rest on up to 32 a cell": {
-		"ja": "1マス8戦は大まかな目安です。精査した対面は1マス最大32戦に基づきます",
+		"ja": "1マス8戦は大まかな目安です。精査したマッチアップは1マス最大32戦に基づきます",
 		"reviewed": false,
 		"where": [
 			"suite/vgc_suite/core/validator.py / deep.py caveats (server._caveat) (dynamic key)"
 		]
 	},
 	"each matchup's score is the searched matrix's both-adapt value: both sides choosing their four well": {
-		"ja": "各対面のスコアは、{t:search}した対戦表の両者適応の値です（両者がうまく4体を選んだ場合）",
+		"ja": "各マッチアップのスコアは、{t:search}した対戦表の両者適応の値です（両者がうまく4体を選んだ場合）",
 		"reviewed": false,
 		"where": [
 			"suite/vgc_suite/core/validator.py / deep.py caveats (server._caveat) (dynamic key)"
 		]
 	},
 	"opponent spreads are guessed where the sheets don't show them": {
-		"ja": "シートに載っていない相手の努力値配分は推定です",
+		"ja": "シートに載っていない相手の配分は推定です",
 		"reviewed": false,
 		"where": [
 			"suite/vgc_suite/core/validator.py / deep.py caveats (server._caveat) (dynamic key)"
@@ -2385,21 +2399,21 @@
 		]
 	},
 	"Searched games: {done} of {total} - finishing the last {k} long ones": {
-		"ja": "{t:search}対戦: {done}/{total} - 長引いている残り{k}戦を処理中",
+		"ja": "{t:search}対戦：{done}/{total} - 長引いている残り{k}戦を処理中",
 		"reviewed": false,
 		"where": [
 			"suite/vgc_suite/core/validator.py:157"
 		]
 	},
 	"Searched games: starting {total} (the first step is the slowest)": {
-		"ja": "{t:search}対戦: {total}戦を開始（最初のステップが一番時間がかかります）",
+		"ja": "{t:search}対戦：{total}戦を開始（最初のステップが一番時間がかかります）",
 		"reviewed": false,
 		"where": [
 			"suite/vgc_suite/core/validator.py:167"
 		]
 	},
 	"Bring matrix: {team} ({n} of {total})": {
-		"ja": "{t:bring}の対戦表: {team}（{n}/{total}）",
+		"ja": "{t:bring}の対戦表：{team}（{n}/{total}）",
 		"reviewed": false,
 		"where": [
 			"suite/vgc_suite/core/validator.py:213"
@@ -2461,15 +2475,93 @@
 			"suite/vgc_suite/lines.py origin (dynamic key)"
 		]
 	},
+	"Opening a replay's position needs Node.js on this PC's PATH (the local Showdown runs on it).": {
+		"ja": "リプレイの{t:position}を開くには、このPCのPATHにNode.jsが必要です（ローカルのShowdownはNode.jsで動きます）。",
+		"reviewed": false,
+		"where": [
+			"suite/vgc_suite/lines.py:201"
+		]
+	},
+	"Start the practice bot on the Buddy page first: it plays the position.": {
+		"ja": "先に{t:buddy}のページで{t:practice_bot}を開始してください。この{t:position}は{t:practice_bot}が相手をします。",
+		"reviewed": false,
+		"where": [
+			"suite/vgc_suite/lines.py:204",
+			"suite/vgc_suite/lines.py:226"
+		]
+	},
+	"Turn {turn} is being rebuilt from the replay and opened on the local Showdown (it takes a moment): accept the invite from openvgchost there, signed in as {me}. Approximate - guessed spreads and unseen sets, HP to the percent, a new seed. The bot decides fresh.": {
+		"ja": "ターン{turn}をリプレイから再構築し、ローカルのShowdownで開いています（少し時間がかかります）。{me}でログインして、openvgchostからの招待を承諾してください。近似です：配分と見えていない型は推定、HPは%単位、新しいシードです。ボットは改めて判断します。",
+		"reviewed": false,
+		"where": [
+			"suite/vgc_suite/lines.py:214"
+		]
+	},
+	"Opening a position needs Node.js on this PC's PATH (the local Showdown runs on it).": {
+		"ja": "{t:position}を開くには、このPCのPATHにNode.jsが必要です（ローカルのShowdownはNode.jsで動きます）。",
+		"reviewed": false,
+		"where": [
+			"suite/vgc_suite/lines.py:223"
+		]
+	},
+	"This position is being opened on the local Showdown (it takes a moment): accept the invite from openvgchost there, signed in as {me}. The engine's own state - HP, status, boosts, PP, items, the field - with a new seed; the bot decides fresh.": {
+		"ja": "この{t:position}をローカルのShowdownで開いています（少し時間がかかります）。{me}でログインして、openvgchostからの招待を承諾してください。エンジン自身の状態（HP、状態異常、能力変化、PP、持ち物、場）を新しいシードで再現し、ボットは改めて判断します。",
+		"reviewed": false,
+		"where": [
+			"suite/vgc_suite/lines.py:239"
+		]
+	},
+	"This game was played before games were saved with their choices, so it can't be reopened.": {
+		"ja": "この対戦は選択が保存されるようになる前のものなので、再開できません。",
+		"reviewed": false,
+		"where": [
+			"suite/vgc_suite/lines.py:80"
+		]
+	},
+	"Reopening a game needs Node.js on this PC's PATH (it replays the game in Showdown's simulator).": {
+		"ja": "対戦の再開には、このPCのPATHにNode.jsが必要です（Showdownのシミュレーターで対戦を再生します）。",
+		"reviewed": false,
+		"where": [
+			"suite/vgc_suite/lines.py:82"
+		]
+	},
+	"Start the practice bot on the Buddy page first: it plays the reopened game.": {
+		"ja": "先に{t:buddy}のページで{t:practice_bot}を開始してください。再開した対戦は{t:practice_bot}が相手をします。",
+		"reviewed": false,
+		"where": [
+			"suite/vgc_suite/lines.py:85"
+		]
+	},
+	"The bot repeats its original choice on that turn, then decides fresh.": {
+		"ja": "ボットはそのターンは元の選択を繰り返し、その後は改めて判断します。",
+		"reviewed": false,
+		"where": [
+			"suite/vgc_suite/lines.py:90"
+		]
+	},
+	"The bot decides fresh from that turn.": {
+		"ja": "ボットはそのターンから改めて判断します。",
+		"reviewed": false,
+		"where": [
+			"suite/vgc_suite/lines.py:91"
+		]
+	},
+	"Turn {turn} is opening on the local Showdown: accept the invite from openvgchost there, signed in as {me}.": {
+		"ja": "ターン{turn}をローカルのShowdownで開いています。{me}でログインして、openvgchostからの招待を承諾してください。",
+		"reviewed": false,
+		"where": [
+			"suite/vgc_suite/lines.py:92"
+		]
+	},
 	"Matchup searched": {
-		"ja": "対面の{t:search}",
+		"ja": "マッチアップの{t:search}",
 		"reviewed": false,
 		"where": [
 			"suite/web/server.py EXTRA_TITLES"
 		]
 	},
 	"Matchup self-play": {
-		"ja": "対面の自己対戦",
+		"ja": "マッチアップの自己対戦",
 		"reviewed": false,
 		"where": [
 			"suite/web/server.py EXTRA_TITLES"
@@ -2617,7 +2709,7 @@
 		]
 	},
 	"Paste a Showdown team export, or give a team id from the library (e.g. BR-111).": {
-		"ja": "Showdownのチームのエクスポートを貼り付けるか、ライブラリのチームID（例: BR-111）を入力してください。",
+		"ja": "Showdownのチームのエクスポートを貼り付けるか、ライブラリのチームID（例：BR-111）を入力してください。",
 		"reviewed": false,
 		"where": [
 			"suite/web/server.py:1314"
@@ -2770,21 +2862,14 @@
 		"ja": "{p1} 対 {p2}",
 		"reviewed": false,
 		"where": [
-			"suite/web/server.py:2143"
+			"suite/web/server.py:2155"
 		]
 	},
-	"Saved bucket {name}: {n} {format} teams.": {
-		"ja": "リスト「{name}」を保存しました: {format}のチーム{n}件。",
+	"Open the local Showdown at localhost:8000.": {
+		"ja": "ローカルのShowdownをlocalhost:8000で開いてください。",
 		"reviewed": false,
 		"where": [
-			"suite/web/server.py:2778"
-		]
-	},
-	"Deleted bucket {name}.": {
-		"ja": "リスト「{name}」を削除しました。",
-		"reviewed": false,
-		"where": [
-			"suite/web/server.py:2782"
+			"suite/web/server.py:2444"
 		]
 	},
 	"The Analyzer reads {list} replays for now; this one is {short} (its Z-Moves / Dynamax / Tera come next).": {
@@ -2794,95 +2879,153 @@
 			"suite/web/server.py:279"
 		]
 	},
+	"Saved bucket {name}: {n} {format} teams.": {
+		"ja": "{t:buckets}「{name}」を保存しました：{format}のチーム{n}件。",
+		"reviewed": false,
+		"where": [
+			"suite/web/server.py:2790"
+		]
+	},
+	"Deleted bucket {name}.": {
+		"ja": "{t:buckets}「{name}」を削除しました。",
+		"reviewed": false,
+		"where": [
+			"suite/web/server.py:2794"
+		]
+	},
 	"Pick the bot and your Showdown name.": {
 		"ja": "ボットとあなたのShowdownの名前を選んでください。",
 		"reviewed": false,
 		"where": [
-			"suite/web/server.py:2809"
+			"suite/web/server.py:2821"
 		]
 	},
 	"That session isn't there any more.": {
 		"ja": "そのセッションはもうありません。",
 		"reviewed": false,
 		"where": [
-			"suite/web/server.py:2812"
+			"suite/web/server.py:2824"
 		]
 	},
 	"Session \"{name}\" started for {user} on {bot}: games from now on are grouped below.": {
 		"ja": "{bot}で{user}のセッション「{name}」を開始しました。これからの対戦は下にまとめて表示されます。",
 		"reviewed": false,
 		"where": [
-			"suite/web/server.py:2815"
+			"suite/web/server.py:2827"
 		]
 	},
 	"(Closed \"{name}\" first.)": {
 		"ja": "（先に「{name}」を終了しました。）",
 		"reviewed": false,
 		"where": [
-			"suite/web/server.py:2817"
+			"suite/web/server.py:2829"
 		]
 	},
 	"Session \"{name}\" is running again.": {
 		"ja": "セッション「{name}」を再開しました。",
 		"reviewed": false,
 		"where": [
-			"suite/web/server.py:2820"
+			"suite/web/server.py:2832"
 		]
 	},
 	"Folded in {n} later session(s).": {
 		"ja": "その後に始めた{n}件のセッションを統合しました。",
 		"reviewed": false,
 		"where": [
-			"suite/web/server.py:2821"
+			"suite/web/server.py:2833"
 		]
 	},
 	"Game added to \"{name}\".": {
 		"ja": "対戦を「{name}」に追加しました。",
 		"reviewed": false,
 		"where": [
-			"suite/web/server.py:2825"
+			"suite/web/server.py:2837"
 		]
 	},
 	"Game taken out of \"{name}\".": {
 		"ja": "対戦を「{name}」から外しました。",
 		"reviewed": false,
 		"where": [
-			"suite/web/server.py:2826"
+			"suite/web/server.py:2838"
 		]
 	},
 	"Session \"{name}\" deleted (its games are untouched).": {
 		"ja": "セッション「{name}」を削除しました（対戦はそのまま残ります）。",
 		"reviewed": false,
 		"where": [
-			"suite/web/server.py:2829"
+			"suite/web/server.py:2841"
 		]
 	},
 	"Session \"{name}\" ended.": {
 		"ja": "セッション「{name}」を終了しました。",
 		"reviewed": false,
 		"where": [
-			"suite/web/server.py:2832"
+			"suite/web/server.py:2844"
 		]
 	},
 	"{user} has no session running on {bot}.": {
 		"ja": "{bot}で{user}の実行中のセッションはありません。",
 		"reviewed": false,
 		"where": [
-			"suite/web/server.py:2833"
+			"suite/web/server.py:2845"
+		]
+	},
+	"Reopening a game works only from this PC itself (this page opened at 127.0.0.1).": {
+		"ja": "対戦の再開はこのPC自体からのみ行えます（このページを127.0.0.1で開いてください）。",
+		"reviewed": false,
+		"where": [
+			"suite/web/server.py:2860"
+		]
+	},
+	"This game can't be reopened: it has no saved choices (games before 11-08, or not played on the local server).": {
+		"ja": "この対戦は再開できません。選択が保存されていません（11月8日より前の対戦、またはローカルサーバー以外で行われた対戦）。",
+		"reviewed": false,
+		"where": [
+			"suite/web/server.py:2862"
+		]
+	},
+	"Give your side and your Showdown name.": {
+		"ja": "あなたのサイドとShowdownの名前を入力してください。",
+		"reviewed": false,
+		"where": [
+			"suite/web/server.py:2864",
+			"suite/web/server.py:2889"
+		]
+	},
+	"Pick a turn from {lo} to {hi}.": {
+		"ja": "{lo}〜{hi}のターンを選んでください。",
+		"reviewed": false,
+		"where": [
+			"suite/web/server.py:2866",
+			"suite/web/server.py:2891"
+		]
+	},
+	"Opening a position works only from this PC itself (this page opened at 127.0.0.1).": {
+		"ja": "{t:position}を開くのはこのPC自体からのみ行えます（このページを127.0.0.1で開いてください）。",
+		"reviewed": false,
+		"where": [
+			"suite/web/server.py:2885"
+		]
+	},
+	"That analysis isn't here any more: analyze the replay again.": {
+		"ja": "その分析はもうありません。リプレイをもう一度分析してください。",
+		"reviewed": false,
+		"where": [
+			"suite/web/server.py:2887"
 		]
 	},
 	"Start and stop work only from this PC itself (this page opened at 127.0.0.1).": {
 		"ja": "開始と停止はこのPC自体からのみ操作できます（このページを127.0.0.1で開いた場合）。",
 		"reviewed": false,
 		"where": [
-			"suite/web/server.py:2897"
+			"suite/web/server.py:2909"
 		]
 	},
 	"cancelled - it won't start": {
 		"ja": "中止しました - 開始されません",
 		"reviewed": false,
 		"where": [
-			"suite/web/server.py:2919"
+			"suite/web/server.py:2931"
 		]
 	},
 	"Start from a finished Preview Advisor result.": {
@@ -2922,14 +3065,14 @@
 		]
 	},
 	"Your team: {error}": {
-		"ja": "あなたのチーム: {error}",
+		"ja": "あなたのチーム：{error}",
 		"reviewed": false,
 		"where": [
 			"suite/web/server.py:592"
 		]
 	},
 	"Five Pokémon: find the sixth under Team Lab → Change a slot.": {
-		"ja": "5体です: 6体目は{t:team_lab} → 1体入れ替えで探してください。",
+		"ja": "5体です：6体目は{t:team_lab} → 1体入れ替えで探してください。",
 		"reviewed": false,
 		"where": [
 			"suite/web/server.py:609"
@@ -2964,7 +3107,7 @@
 		]
 	},
 	"Search Mode plays at most {search_total} games at once: {search_games} a team x {n} teams is {value} - use {value2} or fewer a team.": {
-		"ja": "{t:search}モードで一度に行えるのは最大{search_total}戦です: 1チーム{search_games}戦 × {n}チームで{value}戦になります。1チーム{value2}戦以下にしてください。",
+		"ja": "{t:search}モードで一度に行えるのは最大{search_total}戦です：1チーム{search_games}戦 × {n}チームで{value}戦になります。1チーム{value2}戦以下にしてください。",
 		"reviewed": false,
 		"where": [
 			"suite/web/server.py:619"
@@ -2992,7 +3135,7 @@
 		]
 	},
 	"The reference team: {error}": {
-		"ja": "比較用のチーム: {error}",
+		"ja": "比較用のチーム：{error}",
 		"reviewed": false,
 		"where": [
 			"suite/web/server.py:658"
@@ -3013,7 +3156,7 @@
 		]
 	},
 	"Luck: replaying the chance rolls": {
-		"ja": "運: 乱数の判定を再現中",
+		"ja": "運：乱数の判定を再現中",
 		"reviewed": false,
 		"where": [
 			"suite/web/server.py:670"
@@ -3056,21 +3199,21 @@
 		]
 	},
 	"Searched matrix: {done} of {total} games": {
-		"ja": "{t:search}による対戦表: {done}/{total}戦",
+		"ja": "{t:search}による対戦表：{done}/{total}戦",
 		"reviewed": false,
 		"where": [
 			"suite/web/server.py:761"
 		]
 	},
 	"Refining the cells that decide it: {done} of {total} games": {
-		"ja": "勝敗を分けるマスを精査中: {done}/{total}戦",
+		"ja": "勝敗を分けるマスを精査中：{done}/{total}戦",
 		"reviewed": false,
 		"where": [
 			"suite/web/server.py:762"
 		]
 	},
 	"Couldn't read your candidate sets: {error}": {
-		"ja": "候補の型を読み取れませんでした: {error}",
+		"ja": "候補の型を読み取れませんでした：{error}",
 		"reviewed": false,
 		"where": [
 			"suite/web/server.py:805",
@@ -3094,7 +3237,7 @@
 		]
 	},
 	"Ladder usage (Smogon) candidates are Reg M-C only - take the field's most used Pokémon instead.": {
-		"ja": "ランクマッチの使用率（Smogon）からの候補はReg M-C専用です。代わりに対戦相手で使用率の高いポケモンを使ってください。",
+		"ja": "Showdownラダーの使用率（Smogon）からの候補はReg M-C専用です。代わりに対戦相手で使用率の高いポケモンを使ってください。",
 		"reviewed": false,
 		"where": [
 			"suite/web/server.py:838"
@@ -3108,7 +3251,7 @@
 		]
 	},
 	"Candidates needed: paste some sets, or tick the field's most used Pokémon.": {
-		"ja": "候補が必要です: 型を貼り付けるか、対戦相手で使用率の高いポケモンにチェックを入れてください。",
+		"ja": "候補が必要です：型を貼り付けるか、対戦相手で使用率の高いポケモンにチェックを入れてください。",
 		"reviewed": false,
 		"where": [
 			"suite/web/server.py:849"
@@ -3197,7 +3340,7 @@
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/_branches.html:8",
-			"suite/vgc_suite/buddy.py:765"
+			"suite/vgc_suite/buddy.py:789"
 		]
 	},
 	"{who} won in {n} turns": {
@@ -3294,7 +3437,7 @@
 		]
 	},
 	"<b>No field yet:</b> make a <a href=\"/buckets\">team bucket</a> of the teams you expect to face, then pick it here.": {
-		"ja": "<b>まだ相手がありません:</b> 当たりそうなチームで<a href=\"/buckets\">{t:buckets}</a>を作り、ここで選んでください。",
+		"ja": "<b>まだ相手がありません：</b>当たりそうなチームで<a href=\"/buckets\">{t:buckets}</a>を作り、ここで選んでください。",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/_dd_field.html:11",
@@ -3331,7 +3474,7 @@
 		]
 	},
 	"Search Mode: {n} searched games a team": {
-		"ja": "{t:search}モード: 1チームあたり{t:search}対戦{n}戦",
+		"ja": "{t:search}モード：1チームあたり{t:search}対戦{n}戦",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/_dd_field.html:15",
@@ -3339,14 +3482,14 @@
 		]
 	},
 	"<b>Fast mode</b> - no search: {n}× the games, much quicker, no both-adapt pass.": {
-		"ja": "<b>高速モード</b> - {t:search}なし: 対戦数{n}倍、ずっと速い、両者適応の確認なし。",
+		"ja": "<b>高速モード</b> - {t:search}なし：対戦数{n}倍、ずっと速い、両者適応の確認なし。",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/_dd_field.html:17"
 		]
 	},
 	"Good for ranking; a single matchup can be ~20 points off.": {
-		"ja": "順位付けには十分ですが、個々の対面は20ポイントほどずれることがあります。",
+		"ja": "順位付けには十分ですが、個々のマッチアップは20ポイントほどずれることがあります。",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/_dd_field.html:17",
@@ -3376,7 +3519,7 @@
 		]
 	},
 	"What you should actually bring. The slowest tier by far: a full field is a long run, the hard or close matchups longest.": {
-		"ja": "実際に何を{t:bring}すべきかがわかります。最も時間がかかるモードで、相手全体だと長い実行になり、厳しい対面や接戦の対面ほど長くかかります。",
+		"ja": "実際に何を{t:bring}すべきかがわかります。最も時間がかかるモードで、相手全体だと長い実行になり、厳しいマッチアップや接戦のマッチアップほど長くかかります。",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/_dd_field.html:21"
@@ -3390,35 +3533,35 @@
 		]
 	},
 	"How the bot does with your team. Any matchup can then be searched in depth on its own.": {
-		"ja": "ボットがあなたのチームでどう戦うかがわかります。その後、個々の対面を詳しく{t:search}できます。",
+		"ja": "ボットがあなたのチームでどう戦うかがわかります。その後、個々のマッチアップを詳しく{t:search}できます。",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/_dd_field.html:23"
 		]
 	},
 	"<b>Fast mode</b> - no search: {n}× the games, much quicker, no bring matrix.": {
-		"ja": "<b>高速モード</b> - {t:search}なし: 対戦数{n}倍、ずっと速い、{t:bring}の対戦表なし。",
+		"ja": "<b>高速モード</b> - {t:search}なし：対戦数{n}倍、ずっと速い、{t:bring}の対戦表なし。",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/_dd_field.html:24"
 		]
 	},
 	"Deep Mode sets its own games: 8 a matrix cell, up to 32 where it matters": {
-		"ja": "詳細モードは対戦数を自動で決めます: 対戦表の1マスあたり8戦、重要なところは最大32戦",
+		"ja": "詳細モードは対戦数を自動で決めます：対戦表の1マスあたり8戦、重要なところは最大32戦",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/_dd_field.html:34"
 		]
 	},
 	"Fast mode: {n}× the searched games, no search": {
-		"ja": "高速モード: {t:search}対戦の{n}倍、{t:search}なし",
+		"ja": "高速モード：{t:search}対戦の{n}倍、{t:search}なし",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/_dd_field.html:35"
 		]
 	},
 	"Search Mode: {n} searched games a team (per candidate)": {
-		"ja": "{t:search}モード: 1チームあたり{t:search}対戦{n}戦（候補ごと）",
+		"ja": "{t:search}モード：1チームあたり{t:search}対戦{n}戦（候補ごと）",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/_dd_field.html:36"
@@ -3487,7 +3630,7 @@
 		]
 	},
 	"Closed team sheets: neither side knows the other's moves, items or spreads until they show up in battle.": {
-		"ja": "クローズドチームシート: 相手の技・持ち物・努力値配分は、対戦中に判明するまでどちらにもわかりません。",
+		"ja": "クローズドチームシート：相手の技・持ち物・配分は、対戦中に判明するまでどちらにもわかりません。",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/_format_pick.html:14"
@@ -3508,14 +3651,14 @@
 		]
 	},
 	"Open team sheets: each side knows the other's moves, items and abilities from the start, as on an open team sheet. Spreads stay hidden (sheets before Champions show no nature or EVs), so the bot's search guesses those. Example games on the practice server still play with closed sheets.": {
-		"ja": "オープンチームシート: オープンチームシートと同じく、互いに相手の技・持ち物・特性が最初からわかります。努力値配分は隠れたまま（Champions以前のシートには{t:nature}や努力値が載りません）なので、ボットの{t:search}がそれを推定します。練習用サーバーでのサンプル対戦はクローズドシートのままです。",
+		"ja": "オープンチームシート：オープンチームシートと同じく、互いに相手の技・持ち物・特性が最初からわかります。配分は隠れたまま（Champions以前のシートには{t:nature}や努力値が載りません）なので、ボットの{t:search}がそれを推定します。練習用サーバーでのサンプル対戦はクローズドシートのままです。",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/_format_pick.html:15"
 		]
 	},
 	"Open team sheets, as this format is played: both sides see each other's moves, items and abilities from the start. (Closed-sheet play for this format isn't in the tools yet.)": {
-		"ja": "このルールの実戦どおりのオープンチームシート: 互いに相手の技・持ち物・特性が最初から見えます。（このルールのクローズドシートでの対戦はまだツールにありません。）",
+		"ja": "このルールの実戦どおりのオープンチームシート：互いに相手の技・持ち物・特性が最初から見えます。（このルールのクローズドシートでの対戦はまだツールにありません。）",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/_format_pick.html:16"
@@ -3571,7 +3714,7 @@
 		"where": [
 			"suite/web/templates/_history.html:17",
 			"suite/web/templates/buddy.html:131",
-			"suite/web/templates/crawler.html:35"
+			"suite/web/templates/crawler.html:36"
 		]
 	},
 	"progress, cancel": {
@@ -3685,7 +3828,7 @@
 		]
 	},
 	"Never brought: {mons}": {
-		"ja": "{t:bring}されなかった: {mons}",
+		"ja": "{t:bring}されなかった：{mons}",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/_side_table.html:16"
@@ -3806,7 +3949,7 @@
 		]
 	},
 	"When both sides bring well: the best {n}": {
-		"ja": "両者がうまく{t:bring}した場合: 上位{n}",
+		"ja": "両者がうまく{t:bring}した場合：上位{n}",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/_sixth_result.html:22"
@@ -3834,7 +3977,7 @@
 		]
 	},
 	"Each six plays a bring matrix against every team: the brings the preview models list, plus their best answers to your usual four and your most robust fours from all 15 of each side; {n} games a cell, from both sides of the board. <b>If they know your four</b>: how exploitable always bringing it is. <b>Vs human-style</b>: against what a human preview model brings vs this sheet (a weak model - a hint).": {
-		"ja": "各6体が全チームと{t:bring}の対戦表で戦います: {t:bring}モデルが挙げる{t:bring}に加え、両側の4体の全15通りから、あなたのいつもの4体への相手の最善の対策とあなたの最も安定した4体を加えます。1マス{n}戦、盤面の両側から対戦します。<b>4体を読まれた場合</b>: いつも同じ4体を出すとどれだけ突かれやすいか。<b>人間らしい相手</b>: このチームに対して人間の{t:bring}モデルが出す{t:bring}との対戦（弱いモデルなので参考程度）。",
+		"ja": "各6体が全チームと{t:bring}の対戦表で戦います：{t:bring}モデルが挙げる{t:bring}に加え、両側の4体の全15通りから、あなたのいつもの4体への相手の最善の対策とあなたの最も安定した4体を加えます。1マス{n}戦、盤面の両側から対戦します。<b>4体を読まれた場合</b>：いつも同じ4体を出すとどれだけ突かれやすいか。<b>人間らしい相手</b>：このチームに対して人間の{t:bring}モデルが出す{t:bring}との対戦（弱いモデルなので参考程度）。",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/_sixth_result.html:24"
@@ -3901,14 +4044,14 @@
 		]
 	},
 	"if they know your four: {pct} to {bring}": {
-		"ja": "4体を読まれた場合: {bring} に対して{pct}",
+		"ja": "4体を読まれた場合：{bring} に対して{pct}",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/_sixth_result.html:38"
 		]
 	},
 	"your both-adapt lean: {mons}": {
-		"ja": "あなたの両者適応での傾向: {mons}",
+		"ja": "あなたの両者適応での傾向：{mons}",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/_sixth_result.html:38"
@@ -3922,7 +4065,7 @@
 		]
 	},
 	"Matchup by matchup, as picked": {
-		"ja": "対面ごと、実際の{t:bring}",
+		"ja": "マッチアップごと、実際の{t:bring}",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/_sixth_result.html:44"
@@ -4008,7 +4151,7 @@
 		]
 	},
 	"\"From ladder usage\": {note} - thanks to Smogon and Pokémon Showdown.": {
-		"ja": "「ランクマッチの使用率から」: {note} - SmogonとPokémon Showdownに感謝します。",
+		"ja": "「Showdownラダーの使用率から」：{note} - SmogonとPokémon Showdownに感謝します。",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/_sixth_result.html:56"
@@ -4024,7 +4167,7 @@
 		]
 	},
 	"against {field}": {
-		"ja": "対戦相手: {field}",
+		"ja": "対戦相手：{field}",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/_sixth_result.html:6",
@@ -4191,7 +4334,7 @@
 		]
 	},
 	"from ladder usage": {
-		"ja": "ランクマッチの使用率から",
+		"ja": "Showdownラダーの使用率から",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/_slot_result.html:25",
@@ -4242,14 +4385,14 @@
 		]
 	},
 	"(ticked: the teams your current team scores under 50% against when both adapt)": {
-		"ja": "（チェック: 両者適応で現在のチームのスコアが50%未満のチーム）",
+		"ja": "（チェック：両者適応で現在のチームのスコアが50%未満のチーム）",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/_slot_result.html:8"
 		]
 	},
 	"(ticked: the teams your current team scores under 50% against)": {
-		"ja": "（チェック: 現在のチームのスコアが50%未満のチーム）",
+		"ja": "（チェック：現在のチームのスコアが50%未満のチーム）",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/_slot_result.html:8"
@@ -4307,7 +4450,7 @@
 		]
 	},
 	"The update to {v} didn't work, so you're back on the version you had: {error}": {
-		"ja": "{v}へのアップデートに失敗したため、元のバージョンに戻しました: {error}",
+		"ja": "{v}へのアップデートに失敗したため、元のバージョンに戻しました：{error}",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/about.html:14"
@@ -4378,7 +4521,7 @@
 		]
 	},
 	"The battle engine is a port of <a href=\"https://github.com/smogon/pokemon-showdown\" target=\"_blank\" rel=\"noopener\">Pokémon Showdown</a>'s simulator (MIT); the buddy plays on a local copy of its server. Usage data: <a href=\"https://www.smogon.com/stats/\" target=\"_blank\" rel=\"noopener\">Smogon's usage statistics</a>. openVGCengine is MIT-licensed (LICENSE, THIRD_PARTY_NOTICES); an unofficial fan project, not affiliated with Nintendo, Game Freak or The Pokémon Company.": {
-		"ja": "対戦エンジンは<a href=\"https://github.com/smogon/pokemon-showdown\" target=\"_blank\" rel=\"noopener\">Pokémon Showdown</a>のシミュレーター（MIT）を移植したもので、{t:buddy}はそのサーバーのローカルコピー上で対戦します。使用率データ: <a href=\"https://www.smogon.com/stats/\" target=\"_blank\" rel=\"noopener\">Smogonの使用率統計</a>。openVGCengineはMITライセンスです（LICENSE、THIRD_PARTY_NOTICES）。非公式のファンプロジェクトであり、任天堂、ゲームフリーク、株式会社ポケモンとは関係ありません。",
+		"ja": "対戦エンジンは<a href=\"https://github.com/smogon/pokemon-showdown\" target=\"_blank\" rel=\"noopener\">Pokémon Showdown</a>のシミュレーター（MIT）を移植したもので、{t:buddy}はそのサーバーのローカルコピー上で対戦します。使用率データ：<a href=\"https://www.smogon.com/stats/\" target=\"_blank\" rel=\"noopener\">Smogonの使用率統計</a>。openVGCengineはMITライセンスです（LICENSE、THIRD_PARTY_NOTICES）。非公式のファンプロジェクトであり、任天堂、ゲームフリーク、株式会社ポケモンとは関係ありません。",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/about.html:36"
@@ -4427,7 +4570,7 @@
 		]
 	},
 	"Downloading: {pct}%": {
-		"ja": "ダウンロード中: {pct}%",
+		"ja": "ダウンロード中：{pct}%",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/about.html:44"
@@ -4462,7 +4605,7 @@
 		]
 	},
 	"The check failed: {error}": {
-		"ja": "確認に失敗しました: {error}",
+		"ja": "確認に失敗しました：{error}",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/about.html:47"
@@ -4800,7 +4943,7 @@
 		]
 	},
 	"<b>Running on the CPU</b> &middot; no GPU the tools can use was found, so searched modes (Search Mode, Deep mode, bring matrices, example games) are off by default or take much longer here; quick modes work as usual.": {
-		"ja": "<b>CPUで動作中</b> &middot; ツールが使えるGPUが見つかりませんでした。{t:search}を使うモード（Search Mode・Deep mode・{t:bring}マトリクス・対戦例）は初期設定でオフになっているか、この環境ではかなり時間がかかります。簡易モードは通常どおり使えます。",
+		"ja": "<b>CPUで動作中</b> &middot; ツールが使えるGPUが見つかりませんでした。{t:search}を使うモード（{t:search}モード・詳細モード・{t:bring}の対戦表・サンプル対戦）は初期設定でオフになっているか、この環境ではかなり時間がかかります。簡易モードは通常どおり使えます。",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/base.html:40"
@@ -4884,7 +5027,7 @@
 		]
 	},
 	"Pokémon icons: {mode}": {
-		"ja": "ポケモンのアイコン: {mode}",
+		"ja": "ポケモンのアイコン：{mode}",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/base.html:53"
@@ -4935,7 +5078,7 @@
 		]
 	},
 	"<b>Their recommended</b>: the four their side brings most when both sides pick well (the mirror of your recommended). <b>Your counter-switch</b>: the four to switch to if they answer your recommended four with the lead shown.": {
-		"ja": "<b>相手のおすすめ</b>: 両者がうまく選んだ場合に相手側が最もよく{t:bring}する4体（あなたのおすすめの裏返し）。<b>あなたの切り返し</b>: 相手が表示の{t:lead}であなたのおすすめの4体に対策してきた場合に切り替える4体。",
+		"ja": "<b>相手のおすすめ</b>：両者がうまく選んだ場合に相手側が最もよく{t:bring}する4体（あなたのおすすめの裏返し）。<b>あなたの切り返し</b>：相手が表示の{t:lead}であなたのおすすめの4体に対策してきた場合に切り替える4体。",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/brings_print.html:105"
@@ -4961,8 +5104,8 @@
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/brings_print.html:44",
-			"suite/web/templates/crawler.html:13",
-			"suite/web/templates/crawler.html:17"
+			"suite/web/templates/crawler.html:14",
+			"suite/web/templates/crawler.html:18"
 		]
 	},
 	"lead": {
@@ -4983,7 +5126,7 @@
 		]
 	},
 	"Your team: {team}": {
-		"ja": "あなたのチーム: {team}",
+		"ja": "あなたのチーム：{team}",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/brings_print.html:46"
@@ -5012,7 +5155,7 @@
 		]
 	},
 	"<b>Quick read:</b> these fours come from raw self-play (no search) except cells a search check covered - a first look, not a result.": {
-		"ja": "<b>簡易推定:</b> これらの4体は、{t:search}確認で再現したマスを除き、{t:search}なしの自己対戦によるものです。一次評価であり結論ではありません。",
+		"ja": "<b>簡易推定：</b>これらの4体は、{t:search}確認で再現したマスを除き、{t:search}なしの自己対戦によるものです。一次評価であり結論ではありません。",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/brings_print.html:49"
@@ -5123,21 +5266,21 @@
 		]
 	},
 	"<b>Both adapt</b>: your score when both sides pick their brings well. <b>As picked</b>: your usual four against their usual four. <b>Counter-switch</b>: if they bring their best answer to your recommended four (its lead shown), the four that beats it - with its score there and the recommended four's; \"not needed\" when the recommended four's worst case is already 50%+.": {
-		"ja": "<b>両者適応</b>: 両者がうまく{t:bring}した場合のあなたのスコア。<b>実際の{t:bring}</b>: あなたのいつもの4体と相手のいつもの4体の対戦。<b>切り返し</b>: 相手があなたのおすすめの4体への最善の対策を出してきた場合（その{t:lead}を表示）に勝てる4体と、その場合のスコアとおすすめの4体のスコア。おすすめの4体の最悪の場合がすでに50%以上なら「不要」。",
+		"ja": "<b>両者適応</b>：両者がうまく{t:bring}した場合のあなたのスコア。<b>実際の{t:bring}</b>: あなたのいつもの4体と相手のいつもの4体の対戦。<b>切り返し</b>：相手があなたのおすすめの4体への最善の対策を出してきた場合（その{t:lead}を表示）に勝てる4体と、その場合のスコアとおすすめの4体のスコア。おすすめの4体の最悪の場合がすでに50%以上なら「不要」。",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/brings_print.html:82"
 		]
 	},
 	"<b>Recommended</b>: the four both-adapt play brings most. <b>Safest</b>: the four with the best worst case. <b>Worst case</b>: that four's lowest score over their brings. ✓ = searched (the team's search check replayed that cell); the rest are quick reads. Self-play numbers: how the bot plays these teams, not a verdict.": {
-		"ja": "<b>おすすめ</b>: 両者適応で最もよく{t:bring}される4体。<b>最も安定</b>: 最悪の場合が最も良い4体。<b>最悪の場合</b>: その4体の、相手の{t:bring}全体での最低スコア。✓ = {t:search}済み（そのチームの{t:search}確認でそのマスを再現）、残りは簡易推定です。自己対戦の数字であり、ボットがこれらのチームをどう戦うかを示すもので、正解の判定ではありません。",
+		"ja": "<b>おすすめ</b>：両者適応で最もよく{t:bring}される4体。<b>最も安定</b>：最悪の場合が最も良い4体。<b>最悪の場合</b>：その4体の、相手の{t:bring}全体での最低スコア。✓ = {t:search}済み（そのチームの{t:search}確認でそのマスを再現）、残りは簡易推定です。自己対戦の数字であり、ボットがこれらのチームをどう戦うかを示すもので、正解の判定ではありません。",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/brings_print.html:83"
 		]
 	},
 	"At a glance: what your brings face": {
-		"ja": "一覧: あなたの{t:bring}が当たる相手",
+		"ja": "一覧：あなたの{t:bring}が当たる相手",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/brings_print.html:88"
@@ -5179,7 +5322,7 @@
 		]
 	},
 	"<b>Every team box:</b> \"fill from a bucket\".": {
-		"ja": "<b>各チーム入力欄:</b> 「{t:buckets}から入力」。",
+		"ja": "<b>各チーム入力欄：</b>「{t:buckets}から入力」。",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/buckets.html:10"
@@ -5223,7 +5366,7 @@
 		]
 	},
 	"e.g. Gdansk": {
-		"ja": "例: グダニスク",
+		"ja": "例：グダニスク",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/buckets.html:21"
@@ -5237,7 +5380,7 @@
 		]
 	},
 	"e.g. what I expect on day 1": {
-		"ja": "例: 1日目に予想される相手",
+		"ja": "例：1日目に予想される相手",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/buckets.html:22"
@@ -5594,7 +5737,7 @@
 		]
 	},
 	"series": {
-		"ja": "シリーズ",
+		"ja": "3本勝負",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/buddy.html:131",
@@ -5725,7 +5868,7 @@
 		]
 	},
 	"Challenge <b>{bot}</b> in a <b>buddy</b> format - <b>[Gen 9 Champions] VGC 2026 Reg M-C buddy</b> (Bo1), its Bo3 twin, or an older format's buddy twin (under \"Training buddy (local)\") - with your team. The buddy plays only these: same rules as the real formats, defined only on this local server.": {
-		"ja": "自分のチームで<b>{bot}</b>に<b>buddy</b>フォーマット（<b>[Gen 9 Champions] VGC 2026 Reg M-C buddy</b>（1本勝負）、その3本勝負版、または過去フォーマットのbuddy版。「Training buddy (local)」の下にあります）で対戦を申し込んでください。対戦できるのはこれらのフォーマットだけです。ルールは本来のフォーマットと同じで、このローカルサーバーにだけ用意されています。",
+		"ja": "自分のチームで<b>{bot}</b>に<b>buddy</b>ルール（<b>[Gen 9 Champions] VGC 2026 Reg M-C buddy</b>（1本勝負）、その3本勝負版、または過去のルールのbuddy版。「Training buddy (local)」の下にあります）で対戦を申し込んでください。対戦できるのはこれらのルールだけです。ルールは本来のルールと同じで、このローカルサーバーにだけ用意されています。",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/buddy.html:30"
@@ -5746,14 +5889,14 @@
 		]
 	},
 	"It plays with the same model and search as the tools; in Reg M-C it's ready to play out of the box, with a team from your {bucket} each game, until you set your own below. Other formats need a team set below.": {
-		"ja": "ツールと同じモデルと{t:search}で対戦します。Reg M-Cでは、下で自分のチームを設定するまで、{bucket}から毎回チームを選んですぐに対戦できます。ほかのフォーマットでは、下でチームを設定する必要があります。",
+		"ja": "ツールと同じモデルと{t:search}で対戦します。Reg M-Cでは、下で自分のチームを設定するまで、{bucket}から毎回チームを選んですぐに対戦できます。ほかのルールでは、下でチームを設定する必要があります。",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/buddy.html:33"
 		]
 	},
 	"It plays with the same model and search as the tools; it plays the team you set below for each format.": {
-		"ja": "ツールと同じモデルと{t:search}で、下でフォーマットごとに設定したチームを使って対戦します。",
+		"ja": "ツールと同じモデルと{t:search}で、下でルールごとに設定したチームを使って対戦します。",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/buddy.html:33"
@@ -5830,14 +5973,14 @@
 		]
 	},
 	"in": {
-		"ja": "フォーマット：",
+		"ja": "ルール：",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/buddy.html:49"
 		]
 	},
 	"one team per format; the bot plays each in that format's challenges.": {
-		"ja": "フォーマットごとに1チーム。ボットはそれぞれのフォーマットの対戦でそのチームを使います。",
+		"ja": "ルールごとに1チーム。ボットはそれぞれのルールの対戦でそのチームを使います。",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/buddy.html:50"
@@ -5886,7 +6029,7 @@
 		]
 	},
 	"Lead drill: the bot always leads these two; set the back too to repeat the exact bring. One per format with a single team (not a bucket).": {
-		"ja": "{t:lead}ドリル：ボットは必ずこの2体を{t:lead}に出します。{t:back}も設定すると、同じ{t:bring}を繰り返します。単一のチーム（{t:buckets}ではなく）を設定したフォーマットごとに1つ設定できます。",
+		"ja": "{t:lead}ドリル：ボットは必ずこの2体を{t:lead}に出します。{t:back}も設定すると、同じ{t:bring}を繰り返します。単一のチーム（{t:buckets}ではなく）を設定したルールごとに1つ設定できます。",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/buddy.html:56"
@@ -6189,14 +6332,14 @@
 		]
 	},
 	"<b>Brought</b> / <b>led</b>: share of games on the sheet (brought = came into play). <b>Fainted</b>, <b>KOs</b>, Mega: per game it came in.": {
-		"ja": "<b>{t:bring}</b> / <b>{t:lead}</b>: チームに入っていた試合に占める割合（{t:bring} = 場に出た）。<b>ひんし</b>、<b>撃破</b>、メガシンカ: 場に出た試合あたり。",
+		"ja": "<b>{t:bring}</b> / <b>{t:lead}</b>: チームに入っていた試合に占める割合（{t:bring} = 場に出た）。<b>ひんし</b>、<b>撃破</b>、メガシンカ：場に出た試合あたり。",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/buddy_session.html:30"
 		]
 	},
 	"From this session's game logs, like the Deep Dive's matchup detail. <b>What it clicks</b>: share of its actions (moves and switches out), the games it used each move in, and its targets - <i>spread</i> when a move hit both foes. A KO is the last direct hit before a faint in the same turn. Score when brought: your win rate in the games it came in.": {
-		"ja": "{t:deep_dive}の対面の詳細と同じく、このセッションの対戦ログから集計しています。<b>選んだ行動</b>: 行動（技と交代）に占める割合、各技を使った試合の割合、その対象（相手2体に当たった場合は<i>全体</i>）。撃破は、同じターンにひんしになる直前の最後の直接攻撃です。{t:bring}時のスコア: そのポケモンが場に出た試合でのあなたの{t:win_estimate}。",
+		"ja": "{t:deep_dive}のマッチアップの詳細と同じく、このセッションの対戦ログから集計しています。<b>選んだ行動</b>：行動（技と交代）に占める割合、各技を使った試合の割合、その対象（相手2体に当たった場合は<i>全体</i>）。撃破は、同じターンにひんしになる直前の最後の直接攻撃です。{t:bring}時のスコア：そのポケモンが場に出た試合でのあなたの{t:win_estimate}。",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/buddy_session.html:31"
@@ -6235,8 +6378,8 @@
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/buddy_session.html:37",
-			"suite/web/templates/h2h.html:16",
-			"suite/web/templates/playout.html:47"
+			"suite/web/templates/h2h.html:17",
+			"suite/web/templates/playout.html:48"
 		]
 	},
 	"bot's four": {
@@ -6301,7 +6444,7 @@
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/buddy_session.html:45",
-			"suite/vgc_suite/buddy.py:765"
+			"suite/vgc_suite/buddy.py:789"
 		]
 	},
 	"game": {
@@ -6313,7 +6456,7 @@
 		]
 	},
 	"\"Seen\": only mons that came into play.": {
-		"ja": "「判明分」: 場に出たポケモンだけです。",
+		"ja": "「判明分」：場に出たポケモンだけです。",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/buddy_session.html:54"
@@ -6390,14 +6533,14 @@
 		]
 	},
 	"Each cell: that run's score vs that team (★ the best of the runs), both adapt below it; hardest teams first.": {
-		"ja": "各マス: その実行のそのチームに対するスコア（★は実行の中で最良）、下段は両者適応。厳しいチームから順に。",
+		"ja": "各マス：その実行のそのチームに対するスコア（★は実行の中で最良）、下段は両者適応。厳しいチームから順に。",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/compare.html:35"
 		]
 	},
 	"Each cell: that run's score vs that team (★ the best of the runs); hardest teams first.": {
-		"ja": "各マス: その実行のそのチームに対するスコア（★は実行の中で最良）。厳しいチームから順に。",
+		"ja": "各マス：その実行のそのチームに対するスコア（★は実行の中で最良）。厳しいチームから順に。",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/compare.html:35"
@@ -6470,58 +6613,49 @@
 		"ja": "チームA",
 		"reviewed": false,
 		"where": [
-			"suite/web/templates/crawler.html:11",
-			"suite/web/templates/crawler.html:13",
-			"suite/web/templates/h2h.html:10"
+			"suite/web/templates/crawler.html:12",
+			"suite/web/templates/crawler.html:14",
+			"suite/web/templates/h2h.html:11"
 		]
 	},
 	"leads": {
 		"ja": "{t:lead}",
 		"reviewed": false,
 		"where": [
-			"suite/web/templates/crawler.html:12",
-			"suite/web/templates/crawler.html:16",
-			"suite/web/templates/playout.html:16"
+			"suite/web/templates/crawler.html:13",
+			"suite/web/templates/crawler.html:17",
+			"suite/web/templates/playout.html:17"
 		]
 	},
 	"back {n}": {
 		"ja": "{t:back}{n}",
 		"reviewed": false,
 		"where": [
-			"suite/web/templates/crawler.html:13",
-			"suite/web/templates/crawler.html:17",
-			"suite/web/templates/playout.html:17"
+			"suite/web/templates/crawler.html:14",
+			"suite/web/templates/crawler.html:18",
+			"suite/web/templates/playout.html:18"
 		]
 	},
 	"lead {n}": {
 		"ja": "{t:lead}{n}",
 		"reviewed": false,
 		"where": [
-			"suite/web/templates/crawler.html:13",
-			"suite/web/templates/crawler.html:17",
-			"suite/web/templates/playout.html:17"
+			"suite/web/templates/crawler.html:14",
+			"suite/web/templates/crawler.html:18",
+			"suite/web/templates/playout.html:18"
 		]
 	},
 	"Team B": {
 		"ja": "チームB",
 		"reviewed": false,
 		"where": [
-			"suite/web/templates/crawler.html:15",
-			"suite/web/templates/crawler.html:17",
-			"suite/web/templates/h2h.html:11"
+			"suite/web/templates/crawler.html:16",
+			"suite/web/templates/crawler.html:18",
+			"suite/web/templates/h2h.html:12"
 		]
 	},
 	"Name for team A (optional)": {
 		"ja": "チームAの名前（任意）",
-		"reviewed": false,
-		"where": [
-			"suite/web/templates/crawler.html:21",
-			"suite/web/templates/playout.html:48",
-			"suite/web/templates/preview.html:16"
-		]
-	},
-	"Name for team B (optional)": {
-		"ja": "チームBの名前（任意）",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/crawler.html:22",
@@ -6529,40 +6663,49 @@
 			"suite/web/templates/preview.html:17"
 		]
 	},
+	"Name for team B (optional)": {
+		"ja": "チームBの名前（任意）",
+		"reviewed": false,
+		"where": [
+			"suite/web/templates/crawler.html:23",
+			"suite/web/templates/playout.html:50",
+			"suite/web/templates/preview.html:18"
+		]
+	},
 	"Start the game": {
 		"ja": "対戦を始める",
 		"reviewed": false,
 		"where": [
-			"suite/web/templates/crawler.html:24"
+			"suite/web/templates/crawler.html:25"
 		]
 	},
 	"Recent crawls": {
 		"ja": "最近の検討",
 		"reviewed": false,
 		"where": [
-			"suite/web/templates/crawler.html:29"
+			"suite/web/templates/crawler.html:30"
 		]
 	},
 	"leads and back": {
 		"ja": "{t:lead}と{t:back}",
 		"reviewed": false,
 		"where": [
-			"suite/web/templates/crawler.html:31"
+			"suite/web/templates/crawler.html:32"
 		]
 	},
 	"positions": {
 		"ja": "{t:position}数",
 		"reviewed": false,
 		"where": [
-			"suite/web/templates/crawler.html:31"
+			"suite/web/templates/crawler.html:32"
 		]
 	},
 	"(team not readable yet)": {
 		"ja": "（チームをまだ読み取れません）",
 		"reviewed": false,
 		"where": [
-			"suite/web/templates/crawler.html:55",
-			"suite/web/templates/playout.html:69"
+			"suite/web/templates/crawler.html:56",
+			"suite/web/templates/playout.html:70"
 		]
 	},
 	"One game, one turn at a time: you pick both sides' moves, with the bot's read beside them. Every different choice or roll becomes a branch you can return to.": {
@@ -6576,8 +6719,8 @@
 		"ja": "チーム{side}: 異なるポケモンを4体選んでください。",
 		"reviewed": false,
 		"where": [
-			"suite/web/templates/crawler.html:65",
-			"suite/web/templates/playout.html:67"
+			"suite/web/templates/crawler.html:66",
+			"suite/web/templates/playout.html:68"
 		]
 	},
 	"The bot sees both full sheets here (in a real game, only the open ones).": {
@@ -6588,7 +6731,7 @@
 		]
 	},
 	"{who} fainted": {
-		"ja": "{who}はたおれた",
+		"ja": "{who}は倒れた",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/crawler_session.html:103",
@@ -6618,7 +6761,7 @@
 		]
 	},
 	"turn {n}: replacements": {
-		"ja": "{n}ターン目: 交代",
+		"ja": "{n}ターン目：交代",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/crawler_session.html:15"
@@ -6818,7 +6961,7 @@
 		]
 	},
 	"<b>Play from here in Showdown:</b> this position as a real battle on the local server, you against the practice bot.": {
-		"ja": "<b>ここからShowdownで対戦:</b> この{t:position}をローカルサーバーで実際の対戦にし、あなたが{t:practice_bot}と戦います。",
+		"ja": "<b>ここからShowdownで対戦：</b>この{t:position}をローカルサーバーで実際の対戦にし、あなたが{t:practice_bot}と戦います。",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/crawler_session.html:54"
@@ -6872,8 +7015,8 @@
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/crawler_session.html:74",
-			"suite/web/templates/playout.html:22",
-			"suite/web/templates/playout.html:27"
+			"suite/web/templates/playout.html:23",
+			"suite/web/templates/playout.html:28"
 		]
 	},
 	"The bot's instincts (policy, 256 draws):": {
@@ -7032,7 +7175,7 @@
 		]
 	},
 	"Each side picks its own four at team preview and changes leads between games like the practice bot. A long run: a field of 14 teams at 2 series is 28 series.": {
-		"ja": "{t:practice_bot}と同じく、両側が{t:team_preview}で自分の4体を選び、試合の間に{t:lead}を変えます。長い実行です: 14チームの相手に2回ずつだと28回の3本勝負になります。",
+		"ja": "{t:practice_bot}と同じく、両側が{t:team_preview}で自分の4体を選び、試合の間に{t:lead}を変えます。長い実行です：14チームの相手に2回ずつだと28回の3本勝負になります。",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/fieldplay.html:37"
@@ -7057,7 +7200,7 @@
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/fieldplay.html:9",
-			"suite/web/templates/preview.html:10",
+			"suite/web/templates/preview.html:11",
 			"suite/web/templates/result_validate.html:55"
 		]
 	},
@@ -7229,7 +7372,7 @@
 		]
 	},
 	"Games before 10-14 show only the policy's guess of the opponent's moves, not what the search played against.": {
-		"ja": "10-14より前の対戦では、相手の行動はポリシーの予想だけで、{t:search}が想定したものではありません。",
+		"ja": "10-14より前の対戦では、相手の行動は方策の予想だけで、{t:search}が想定したものではありません。",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/game.html:35"
@@ -7280,7 +7423,7 @@
 		]
 	},
 	"policy:": {
-		"ja": "ポリシー：",
+		"ja": "方策：",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/game.html:46"
@@ -7338,7 +7481,7 @@
 		]
 	},
 	"The policy network's auxiliary opponent guess. Since arm J the search predicts replies with a separate human-imitation model, which these older traces did not record - this panel is not what the search played against.": {
-		"ja": "ポリシーネットワークの補助的な相手予想です。arm J以降、{t:search}は別の人間模倣モデルで相手の行動を予想しますが、これらの古い記録にはそれが残っていません。このパネルは{t:search}が想定した相手の行動ではありません。",
+		"ja": "方策ネットワークの補助的な相手予想です。arm J以降、{t:search}は別の人間模倣モデルで相手の行動を予想しますが、これらの古い記録にはそれが残っていません。このパネルは{t:search}が想定した相手の行動ではありません。",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/game.html:51"
@@ -7375,7 +7518,7 @@
 		]
 	},
 	"A head-to-head example game (the bot on both sides), played on a local Showdown server, narrated from the battle protocol (no chat)": {
-		"ja": "{t:h2h}の対戦例（両側ともボット）。ローカルのShowdownサーバーで対戦し、バトルのプロトコルから再構成（チャットなし）",
+		"ja": "{t:h2h}のサンプル対戦（両側ともボット）。ローカルのShowdownサーバーで対戦し、バトルのプロトコルから再構成（チャットなし）",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/game.html:62"
@@ -7396,7 +7539,7 @@
 		]
 	},
 	"the series": {
-		"ja": "シリーズ",
+		"ja": "3本勝負",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/game.html:7"
@@ -7427,29 +7570,29 @@
 		"ja": "設定",
 		"reviewed": false,
 		"where": [
-			"suite/web/templates/h2h.html:14",
-			"suite/web/templates/preview.html:14"
+			"suite/web/templates/h2h.html:15",
+			"suite/web/templates/preview.html:15"
 		]
 	},
 	"4000 (400 in deep mode)": {
 		"ja": "4000（詳細モードでは400）",
 		"reviewed": false,
 		"where": [
-			"suite/web/templates/h2h.html:16"
+			"suite/web/templates/h2h.html:17"
 		]
 	},
 	"Example games (in real Showdown)": {
 		"ja": "サンプル対戦（実際のShowdownで）",
 		"reviewed": false,
 		"where": [
-			"suite/web/templates/h2h.html:17"
+			"suite/web/templates/h2h.html:18"
 		]
 	},
 	"none": {
 		"ja": "なし",
 		"reviewed": false,
 		"where": [
-			"suite/web/templates/h2h.html:18",
+			"suite/web/templates/h2h.html:19",
 			"suite/web/templates/result_analyze.html:65"
 		]
 	},
@@ -7457,85 +7600,85 @@
 		"ja": "{t:team_preview}",
 		"reviewed": false,
 		"where": [
-			"suite/web/templates/h2h.html:19"
+			"suite/web/templates/h2h.html:20"
 		]
 	},
 	"as the bot plays it": {
 		"ja": "ボットの実戦どおり",
 		"reviewed": false,
 		"where": [
-			"suite/web/templates/h2h.html:20"
+			"suite/web/templates/h2h.html:21"
 		]
 	},
 	"varied (other leads too; the score is then not the bot's)": {
 		"ja": "ばらつきあり（他の{t:lead}も。この場合スコアはボットのものではありません）",
 		"reviewed": false,
 		"where": [
-			"suite/web/templates/h2h.html:20"
+			"suite/web/templates/h2h.html:21"
 		]
 	},
 	"<b>Deep mode</b> - both sides search every turn": {
 		"ja": "<b>詳細モード</b> - 両側が毎ターン{t:search}",
 		"reviewed": false,
 		"where": [
-			"suite/web/templates/h2h.html:24"
+			"suite/web/templates/h2h.html:25"
 		]
 	},
 	"Unticked: much faster, but a rough screen that can be far off.": {
-		"ja": "チェックなし: ずっと速いですが、大きく外れることもある大まかな目安です。",
+		"ja": "チェックなし：ずっと速いですが、大きく外れることもある大まかな目安です。",
 		"reviewed": false,
 		"where": [
-			"suite/web/templates/h2h.html:25"
+			"suite/web/templates/h2h.html:26"
 		]
 	},
 	"No GPU here, so Deep mode is off by default on this PC: it runs the bot's search on the CPU, many times slower than with a GPU.": {
 		"ja": "このPCにはGPUがないため、詳細モードは初期状態でオフです。ボットの{t:search}をCPUで行うため、GPUより何倍も遅くなります。",
 		"reviewed": false,
 		"where": [
-			"suite/web/templates/h2h.html:26"
+			"suite/web/templates/h2h.html:27"
 		]
 	},
 	"<b>Bring matrix</b> - each side's likely fours played against each other, as in the Preview Advisor.": {
 		"ja": "<b>{t:bring}の対戦表</b> - {t:preview_advisor}と同じく、両側の有力な4体同士を対戦させます。",
 		"reviewed": false,
 		"where": [
-			"suite/web/templates/h2h.html:27"
+			"suite/web/templates/h2h.html:28"
 		]
 	},
 	"No GPU here, so the bring matrix is off by default on this PC: it plays thousands of extra games, much slower on the CPU.": {
 		"ja": "このPCにはGPUがないため、{t:bring}の対戦表は初期状態でオフです。追加で数千戦を行うため、CPUではずっと遅くなります。",
 		"reviewed": false,
 		"where": [
-			"suite/web/templates/h2h.html:28"
+			"suite/web/templates/h2h.html:29"
 		]
 	},
 	"<b>Best-of-three</b> - series, each side changing its lead between games by the bot's rule.": {
 		"ja": "<b>3本勝負</b> - 各試合の間に、両側がボットのルールで{t:lead}を変えます。",
 		"reviewed": false,
 		"where": [
-			"suite/web/templates/h2h.html:29"
+			"suite/web/templates/h2h.html:30"
 		]
 	},
 	"<b>Luck</b> - how much the matchup rides on the dice.": {
-		"ja": "<b>運</b> - この対面がどれだけ乱数に左右されるか。",
+		"ja": "<b>運</b> - このマッチアップがどれだけ乱数に左右されるか。",
 		"reviewed": false,
 		"where": [
-			"suite/web/templates/h2h.html:30"
+			"suite/web/templates/h2h.html:31"
 		]
 	},
 	"Adds a little time.": {
 		"ja": "少し時間が増えます。",
 		"reviewed": false,
 		"where": [
-			"suite/web/templates/h2h.html:31"
+			"suite/web/templates/h2h.html:32"
 		]
 	},
 	"Play it out": {
 		"ja": "対戦させる",
 		"reviewed": false,
 		"where": [
-			"suite/web/templates/h2h.html:32",
-			"suite/web/templates/playout.html:57"
+			"suite/web/templates/h2h.html:33",
+			"suite/web/templates/playout.html:58"
 		]
 	},
 	"Two teams against each other: who wins, what each brings and leads, and how turn 1 goes.": {
@@ -7546,14 +7689,14 @@
 		]
 	},
 	"Your team against a field of teams: every matchup and what to bring - or find the best sixth or a slot change.": {
-		"ja": "あなたのチームを仮想敵のチーム群と対戦させます。全対面と{t:bring}がわかり、6体目の最適解や1体の入れ替え候補も探せます。",
+		"ja": "あなたのチームを仮想敵のチーム群と対戦させます。全マッチアップと{t:bring}がわかり、6体目の最適解や1体の入れ替え候補も探せます。",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/index.html:14"
 		]
 	},
 	"Two teams against each other: head-to-head, played-out games, a preview plan, or one game step by step.": {
-		"ja": "2チームを対戦させます。直接対決、実際に対戦させた試合、{t:bring}プラン、1試合を1手ずつ検討することもできます。",
+		"ja": "2チームを対戦させます。{t:h2h}、{t:playout}、{t:bring}プラン、1試合を1手ずつ進める検討ができます。",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/index.html:16"
@@ -7737,7 +7880,7 @@
 		]
 	},
 	"For: {reason}": {
-		"ja": "理由: {reason}",
+		"ja": "理由：{reason}",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/locked.html:6"
@@ -7786,14 +7929,14 @@
 		]
 	},
 	"<b>You</b>: each side's leads and back (and optionally turn 1)": {
-		"ja": "<b>あなた</b>: 両側の{t:lead}と{t:back}（1ターン目の行動も指定可）",
+		"ja": "<b>あなた</b>：両側の{t:lead}と{t:back}（1ターン目の行動も指定可）",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/playout.html:11"
 		]
 	},
 	"<b>The bots</b>: team preview as in a real game": {
-		"ja": "<b>ボット</b>: 実戦と同じく{t:team_preview}で選ぶ",
+		"ja": "<b>ボット</b>：実戦と同じく{t:team_preview}で選ぶ",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/playout.html:12"
@@ -7803,125 +7946,125 @@
 		"ja": "（または指定する）",
 		"reviewed": false,
 		"where": [
-			"suite/web/templates/playout.html:19",
-			"suite/web/templates/playout.html:34"
+			"suite/web/templates/playout.html:20",
+			"suite/web/templates/playout.html:35"
 		]
 	},
 	"Turn 1 for team {side}:": {
 		"ja": "チーム{side}の1ターン目:",
 		"reviewed": false,
 		"where": [
-			"suite/web/templates/playout.html:19",
-			"suite/web/templates/playout.html:34",
-			"suite/web/templates/playout.html:66"
+			"suite/web/templates/playout.html:20",
+			"suite/web/templates/playout.html:35",
+			"suite/web/templates/playout.html:67"
 		]
 	},
 	"the bot decides": {
 		"ja": "ボットが決める",
 		"reviewed": false,
 		"where": [
-			"suite/web/templates/playout.html:19",
-			"suite/web/templates/playout.html:21",
-			"suite/web/templates/playout.html:26"
+			"suite/web/templates/playout.html:20",
+			"suite/web/templates/playout.html:22",
+			"suite/web/templates/playout.html:27"
 		]
 	},
 	"turn 1": {
 		"ja": "1ターン目",
 		"reviewed": false,
 		"where": [
-			"suite/web/templates/playout.html:21",
-			"suite/web/templates/playout.html:36"
+			"suite/web/templates/playout.html:22",
+			"suite/web/templates/playout.html:37"
 		]
 	},
 	"Set both leads or neither.": {
 		"ja": "{t:lead}2体とも指定するか、どちらも指定しないでください。",
 		"reviewed": false,
 		"where": [
-			"suite/web/templates/playout.html:23",
-			"suite/web/templates/playout.html:38"
+			"suite/web/templates/playout.html:24",
+			"suite/web/templates/playout.html:39"
 		]
 	},
 	"(optional; if another mon is in the slot, the bot decides)": {
 		"ja": "（任意。その枠に別のポケモンがいる場合はボットが決めます）",
 		"reviewed": false,
 		"where": [
-			"suite/web/templates/playout.html:24",
-			"suite/web/templates/playout.html:39"
+			"suite/web/templates/playout.html:25",
+			"suite/web/templates/playout.html:40"
 		]
 	},
 	"Turn 2": {
 		"ja": "2ターン目",
 		"reviewed": false,
 		"where": [
-			"suite/web/templates/playout.html:24",
-			"suite/web/templates/playout.html:39"
+			"suite/web/templates/playout.html:25",
+			"suite/web/templates/playout.html:40"
 		]
 	},
 	"slot {n}": {
 		"ja": "枠{n}",
 		"reviewed": false,
 		"where": [
-			"suite/web/templates/playout.html:25",
 			"suite/web/templates/playout.html:26",
-			"suite/web/templates/playout.html:40"
+			"suite/web/templates/playout.html:27",
+			"suite/web/templates/playout.html:41"
 		]
 	},
 	"turn 2": {
 		"ja": "2ターン目",
 		"reviewed": false,
 		"where": [
-			"suite/web/templates/playout.html:26",
-			"suite/web/templates/playout.html:41"
+			"suite/web/templates/playout.html:27",
+			"suite/web/templates/playout.html:42"
 		]
 	},
 	"Team {side} plays its <b>raw policy</b> (no search)": {
 		"ja": "チーム{side}は<b>方策そのまま</b>で行動（{t:search}なし）",
 		"reviewed": false,
 		"where": [
-			"suite/web/templates/playout.html:29",
-			"suite/web/templates/playout.html:44"
+			"suite/web/templates/playout.html:30",
+			"suite/web/templates/playout.html:45"
 		]
 	},
 	"(turn 1 only is much quicker)": {
 		"ja": "（1ターン目のみならずっと速い）",
 		"reviewed": false,
 		"where": [
-			"suite/web/templates/playout.html:47"
+			"suite/web/templates/playout.html:48"
 		]
 	},
 	"(Games = series, up to {n})": {
 		"ja": "（対戦数 = 3本勝負の数、最大{n}）",
 		"reviewed": false,
 		"where": [
-			"suite/web/templates/playout.html:52"
+			"suite/web/templates/playout.html:53"
 		]
 	},
 	"Best-of-three series": {
 		"ja": "3本勝負",
 		"reviewed": false,
 		"where": [
-			"suite/web/templates/playout.html:52"
-		]
-	},
-	"Both sides play their <b>raw policy</b> (no search: much faster)": {
-		"ja": "両側とも<b>方策そのまま</b>で行動（{t:search}なし: ずっと速い）",
-		"reviewed": false,
-		"where": [
 			"suite/web/templates/playout.html:53"
 		]
 	},
-	"(unticked: turn 1 only)": {
-		"ja": "（チェックなし: 1ターン目のみ）",
+	"Both sides play their <b>raw policy</b> (no search: much faster)": {
+		"ja": "両側とも<b>方策そのまま</b>で行動（{t:search}なし：ずっと速い）",
 		"reviewed": false,
 		"where": [
-			"suite/web/templates/playout.html:56"
+			"suite/web/templates/playout.html:54"
+		]
+	},
+	"(unticked: turn 1 only)": {
+		"ja": "（チェックなし：1ターン目のみ）",
+		"reviewed": false,
+		"where": [
+			"suite/web/templates/playout.html:57"
 		]
 	},
 	"Whole games": {
 		"ja": "試合全体",
 		"reviewed": false,
 		"where": [
-			"suite/web/templates/playout.html:56"
+			"suite/web/templates/playout.html:57"
 		]
 	},
 	"Two teams played by the bot on both sides, with its search. Pick the fours yourself to study an opening, or let the bots pick and play whole games or Bo3s.": {
@@ -7935,7 +8078,7 @@
 		"ja": "味方",
 		"reviewed": false,
 		"where": [
-			"suite/web/templates/playout.html:63",
+			"suite/web/templates/playout.html:64",
 			"suite/vgc_suite/core/labels.py:121"
 		]
 	},
@@ -7943,77 +8086,77 @@
 		"ja": "相手の{t:lead}{n}",
 		"reviewed": false,
 		"where": [
-			"suite/web/templates/playout.html:63"
+			"suite/web/templates/playout.html:64"
 		]
 	},
 	"(ally)": {
 		"ja": "（味方）",
 		"reviewed": false,
 		"where": [
-			"suite/web/templates/playout.html:64"
+			"suite/web/templates/playout.html:65"
 		]
 	},
 	"their left": {
 		"ja": "相手の左",
 		"reviewed": false,
 		"where": [
-			"suite/web/templates/playout.html:64"
+			"suite/web/templates/playout.html:65"
 		]
 	},
 	"their right": {
 		"ja": "相手の右",
 		"reviewed": false,
 		"where": [
-			"suite/web/templates/playout.html:64"
+			"suite/web/templates/playout.html:65"
 		]
 	},
 	"set by you": {
 		"ja": "あなたが指定",
 		"reviewed": false,
 		"where": [
-			"suite/web/templates/playout.html:65"
+			"suite/web/templates/playout.html:66"
 		]
 	},
 	"switch ->": {
 		"ja": "交代 ->",
 		"reviewed": false,
 		"where": [
-			"suite/web/templates/playout.html:65"
+			"suite/web/templates/playout.html:66"
 		]
 	},
 	"{mon} in slot {n}": {
 		"ja": "枠{n}の{mon}",
 		"reviewed": false,
 		"where": [
-			"suite/web/templates/playout.html:66"
+			"suite/web/templates/playout.html:67"
 		]
 	},
 	"Team {side}: set both leads' turn 1, or neither.": {
 		"ja": "チーム{side}: {t:lead}2体とも1ターン目を指定するか、どちらも指定しないでください。",
 		"reviewed": false,
 		"where": [
-			"suite/web/templates/playout.html:67"
+			"suite/web/templates/playout.html:68"
 		]
 	},
 	"Team {side}: a forced turn 2 needs a forced turn 1.": {
 		"ja": "チーム{side}: 2ターン目を指定するには1ターン目も指定が必要です。",
 		"reviewed": false,
 		"where": [
-			"suite/web/templates/playout.html:68"
+			"suite/web/templates/playout.html:69"
 		]
 	},
 	"Team {side}: set both slots' turn 2, or neither.": {
 		"ja": "チーム{side}: 両方の枠の2ターン目を指定するか、どちらも指定しないでください。",
 		"reviewed": false,
 		"where": [
-			"suite/web/templates/playout.html:68"
+			"suite/web/templates/playout.html:69"
 		]
 	},
 	"Their team": {
 		"ja": "相手のチーム",
 		"reviewed": false,
 		"where": [
-			"suite/web/templates/preview.html:11",
+			"suite/web/templates/preview.html:12",
 			"suite/web/templates/result_validate.html:90"
 		]
 	},
@@ -8021,42 +8164,42 @@
 		"ja": "各側の候補数",
 		"reviewed": false,
 		"where": [
-			"suite/web/templates/preview.html:20"
+			"suite/web/templates/preview.html:21"
 		]
 	},
 	"Games per pairing": {
 		"ja": "組み合わせごとの対戦数",
 		"reviewed": false,
 		"where": [
-			"suite/web/templates/preview.html:21"
+			"suite/web/templates/preview.html:22"
 		]
 	},
 	"(their best answers and your counters that neither model lists)": {
 		"ja": "（どちらのモデルも挙げない、相手の最善の対策とあなたの切り返し）",
 		"reviewed": false,
 		"where": [
-			"suite/web/templates/preview.html:24"
+			"suite/web/templates/preview.html:25"
 		]
 	},
 	"Screen all fours, both sides": {
 		"ja": "両者の4体の組み合わせをすべて絞り込む",
 		"reviewed": false,
 		"where": [
-			"suite/web/templates/preview.html:24"
+			"suite/web/templates/preview.html:25"
 		]
 	},
 	"(their best answers to your main bring, and your counters; slower)": {
 		"ja": "（あなたの主な{t:bring}への相手の最善の対策と、あなたの切り返し。時間がかかります）",
 		"reviewed": false,
 		"where": [
-			"suite/web/templates/preview.html:25"
+			"suite/web/templates/preview.html:26"
 		]
 	},
 	"Opener tree": {
 		"ja": "{t:lead}の展開ツリー",
 		"reviewed": false,
 		"where": [
-			"suite/web/templates/preview.html:25",
+			"suite/web/templates/preview.html:26",
 			"suite/web/templates/result_preview.html:58",
 			"suite/vgc_suite/core/preview_advisor.py:173"
 		]
@@ -8065,7 +8208,7 @@
 		"ja": "アドバイスを見る",
 		"reviewed": false,
 		"where": [
-			"suite/web/templates/preview.html:28"
+			"suite/web/templates/preview.html:29"
 		]
 	},
 	"Your team and theirs: which four to bring and lead, what they will likely bring, and how every pairing plays out.": {
@@ -8104,7 +8247,7 @@
 		]
 	},
 	"the search agrees: its top line in {k} of {n}": {
-		"ja": "{t:search}と一致: {n}回中{k}回で最善",
+		"ja": "{t:search}と一致：{n}回中{k}回で最善",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/result_analyze.html:103"
@@ -8480,7 +8623,7 @@
 		]
 	},
 	"Each turn's swing in the win estimate, split in two: what both players' clicks did (the turn replayed with the same clicks over many dice), and how the dice landed against that average.": {
-		"ja": "各ターンの{t:win_estimate}の変動を2つに分けています: 両プレイヤーの選択による分（同じ選択でそのターンを多くの乱数で再現）と、その平均に対する乱数の結果による分です。",
+		"ja": "各ターンの{t:win_estimate}の変動を2つに分けています：両プレイヤーの選択による分（同じ選択でそのターンを多くの乱数で再現）と、その平均に対する乱数の結果による分です。",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/result_analyze.html:75"
@@ -8592,7 +8735,7 @@
 		]
 	},
 	"A handful of series per team shows how the matchups play, not how often they're won - for that, the Team Deep Dive.": {
-		"ja": "チームごとに数回の3本勝負なので、対面がどう進むかはわかりますが、どれだけ勝てるかはわかりません。それには{t:deep_dive}を使ってください。",
+		"ja": "チームごとに数回の3本勝負なので、マッチアップがどう進むかはわかりますが、どれだけ勝てるかはわかりません。それには{t:deep_dive}を使ってください。",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/result_fieldplay.html:14"
@@ -8606,7 +8749,7 @@
 		]
 	},
 	"game {n}: {turns} turns": {
-		"ja": "{n}戦目: {turns}ターン",
+		"ja": "{n}戦目：{turns}ターン",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/result_fieldplay.html:25"
@@ -8629,7 +8772,7 @@
 		]
 	},
 	"Each game: your lead vs theirs. The game page has the narration, HP by turn and the bot's view every turn - from either side.": {
-		"ja": "各対戦: あなたの{t:lead}対相手の{t:lead}。対戦ページでは実況、ターンごとのHP、毎ターンのボットの見方を、どちらの側からでも見られます。",
+		"ja": "各対戦：あなたの{t:lead}対相手の{t:lead}。対戦ページでは実況、ターンごとのHP、毎ターンのボットの見方を、どちらの側からでも見られます。",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/result_fieldplay.html:31"
@@ -8688,7 +8831,7 @@
 		]
 	},
 	"<b>Game 1 of every series: the {deep_dive}'s {kind} bring</b> for that opponent (shown under its name); games 2 and 3 by the bot's lead rule.": {
-		"ja": "<b>すべての3本勝負の1戦目: その相手に対する{deep_dive}の{kind}の{t:bring}</b>（相手の名前の下に表示）。2戦目と3戦目はボットの{t:lead}ルールで。",
+		"ja": "<b>すべての3本勝負の1戦目：その相手に対する{deep_dive}の{kind}の{t:bring}</b>（相手の名前の下に表示）。2戦目と3戦目はボットの{t:lead}ルールで。",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/result_fieldplay.html:7"
@@ -8811,14 +8954,14 @@
 		]
 	},
 	"<b>deep mode</b>: both sides searched": {
-		"ja": "<b>詳細モード</b>: 両側が{t:search}",
+		"ja": "<b>詳細モード</b>：両側が{t:search}",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/result_h2h.html:18"
 		]
 	},
 	"another matchup": {
-		"ja": "別の対面を調べる",
+		"ja": "別のマッチアップを調べる",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/result_h2h.html:18",
@@ -8840,7 +8983,7 @@
 		]
 	},
 	"<b>Quick mode</b> (no search): a rough screen - re-run in deep mode before relying on it.": {
-		"ja": "<b>簡易モード</b>（{t:search}なし）: 大まかな目安です。頼る前に詳細モードで再実行してください。",
+		"ja": "<b>簡易モード</b>（{t:search}なし）：大まかな目安です。頼る前に詳細モードで再実行してください。",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/result_h2h.html:19"
@@ -8876,7 +9019,7 @@
 		]
 	},
 	"Luck in this matchup": {
-		"ja": "この対面の運",
+		"ja": "このマッチアップの運",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/result_h2h.html:29"
@@ -8987,14 +9130,14 @@
 		]
 	},
 	"{n} games of the raw policy (no search, even in deep mode), each chance roll replayed both ways - the chance event and the usual outcome; the gap in the model's win estimate times the event's chance is its worth per game. <b>Creates</b> / <b>carries</b>: a side's own rolls that help / hurt it. Guaranteed effects don't count; damage rolls are two-sided.": {
-		"ja": "方策そのまま（{t:search}なし、詳細モードでも同様）で{n}戦を行い、各乱数判定を両方の結果（確率事象が起きた場合と通常の結果）で再現します。モデルの{t:win_estimate}の差にその事象の確率を掛けたものが1試合あたりの価値です。<b>生み出す</b> / <b>受ける</b>: その側自身の判定のうち、有利になるもの / 不利になるもの。確定の効果は数えず、ダメージ乱数は両方向です。",
+		"ja": "方策そのまま（{t:search}なし、詳細モードでも同様）で{n}戦を行い、各乱数判定を両方の結果（確率事象が起きた場合と通常の結果）で再現します。モデルの{t:win_estimate}の差にその事象の確率を掛けたものが1試合あたりの価値です。<b>生み出す</b> / <b>受ける</b>：その側自身の判定のうち、有利になるもの / 不利になるもの。確定の効果は数えず、ダメージ乱数は両方向です。",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/result_h2h.html:44"
 		]
 	},
 	"The luck card failed: {error}": {
-		"ja": "運の集計に失敗しました: {error}",
+		"ja": "運の集計に失敗しました：{error}",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/result_h2h.html:46"
@@ -9100,7 +9243,7 @@
 		]
 	},
 	"Turn 1: {a} vs {b}": {
-		"ja": "1ターン目: {a} 対 {b}",
+		"ja": "1ターン目：{a} 対 {b}",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/result_h2h.html:76",
@@ -9136,7 +9279,7 @@
 		]
 	},
 	"Raw self-play games (no search), also in deep mode: a first look at which fours matter, not a result.": {
-		"ja": "{t:search}なしの自己対戦（詳細モードでも同様）: どの4体が重要かの一次評価で、結論ではありません。",
+		"ja": "{t:search}なしの自己対戦（詳細モードでも同様）：どの4体が重要かの一次評価で、結論ではありません。",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/result_h2h.html:90"
@@ -9243,14 +9386,14 @@
 		]
 	},
 	"A searched cell: ±{n} points; gaps under ~12 are noise.": {
-		"ja": "{t:search}したマス: ±{n}ポイント。約12未満の差は誤差です。",
+		"ja": "{t:search}したマス：±{n}ポイント。約12未満の差は誤差です。",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/result_mxcheck.html:25"
 		]
 	},
 	"Matrix checked with search: {team}": {
-		"ja": "{t:search}で確認した対戦表: {team}",
+		"ja": "{t:search}で確認した対戦表：{team}",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/result_mxcheck.html:3"
@@ -9313,7 +9456,7 @@
 		]
 	},
 	"Their worst case for it: {a}. Your safest four keeps {b} at worst.": {
-		"ja": "この4体の最悪の場合: {a}。最も安定した4体なら最悪でも{b}。",
+		"ja": "この4体の最悪の場合：{a}。最も安定した4体なら最悪でも{b}。",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/result_mxsearch.html:12"
@@ -9327,7 +9470,7 @@
 		]
 	},
 	"Your bring (row) vs theirs (column): your score, every cell searched. The percentages beside the brings are how often each side uses that bring when both bring well. Most cells have 8 games, so read them roughly; the cells that decide the answer have up to 32.": {
-		"ja": "あなたの{t:bring}（行）対相手の{t:bring}（列）: あなたのスコアで、全マス{t:search}済みです。{t:bring}の横の割合は、両者がうまく{t:bring}した場合にその{t:bring}を使う頻度です。ほとんどのマスは8戦なので大まかに読んでください。結論を左右するマスは最大32戦です。",
+		"ja": "あなたの{t:bring}（行）対相手の{t:bring}（列）：あなたのスコアで、全マス{t:search}済みです。{t:bring}の横の割合は、両者がうまく{t:bring}した場合にその{t:bring}を使う頻度です。ほとんどのマスは8戦なので大まかに読んでください。結論を左右するマスは最大32戦です。",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/result_mxsearch.html:16"
@@ -9530,42 +9673,42 @@
 		]
 	},
 	"Preview plan: {a} vs {b}": {
-		"ja": "{t:bring}プラン: {a} 対 {b}",
+		"ja": "{t:bring}プラン：{a} 対 {b}",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/result_preview.html:22"
 		]
 	},
 	" (closed team sheets: at team preview each side sees only the other's six Pokémon, not their moves, items or spreads)": {
-		"ja": "（クローズドチームシート: {t:team_preview}では互いに相手の6体だけが見え、技・持ち物・努力値配分は見えません）",
+		"ja": "（クローズドチームシート：{t:team_preview}では互いに相手の6体だけが見え、技・持ち物・配分は見えません）",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/result_preview.html:23"
 		]
 	},
 	"The human preview model learned from Reg M-C / M-B ladder players: its \"hum.\" picks here are a guess from another metagame.": {
-		"ja": "人間の{t:bring}モデルはReg M-C / M-Bのランクマッチのプレイヤーから学習しています。ここでの「人間」の{t:bring}は別の環境からの推測です。",
+		"ja": "人間の{t:bring}モデルはReg M-C / M-BのShowdownラダーのプレイヤーから学習しています。ここでの「人間」の{t:bring}は別の環境からの推測です。",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/result_preview.html:24"
 		]
 	},
 	"{n} raw self-play games per pairing (no search - a first look; check the matchups that matter in Head-to-head's deep mode) (±{se}% at worst)": {
-		"ja": "組み合わせごとに{t:search}なしの自己対戦{n}戦（一次評価です。重要な対面は{t:h2h}の詳細モードで確認してください）（誤差は最大±{se}%）",
+		"ja": "組み合わせごとに{t:search}なしの自己対戦{n}戦（一次評価です。重要なマッチアップは{t:h2h}の詳細モードで確認してください）（誤差は最大±{se}%）",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/result_preview.html:26"
 		]
 	},
 	"<b>bot</b>: the bot's own preview.": {
-		"ja": "<b>ボット</b>: ボット自身の{t:bring}。",
+		"ja": "<b>ボット</b>：ボット自身の{t:bring}。",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/result_preview.html:33"
 		]
 	},
 	"<b>hum.</b>: the human preview model (ladder players' brings).": {
-		"ja": "<b>人間</b>: 人間の{t:bring}モデル（ランクマッチのプレイヤーの{t:bring}）。",
+		"ja": "<b>人間</b>：人間の{t:bring}モデル（Showdownラダーのプレイヤーの{t:bring}）。",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/result_preview.html:33"
@@ -9609,7 +9752,7 @@
 		]
 	},
 	"click: play turn 1 of this pairing with search": {
-		"ja": "クリック: この組み合わせの1ターン目を{t:search}ありで対戦",
+		"ja": "クリック：この組み合わせの1ターン目を{t:search}ありで対戦",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/result_preview.html:47"
@@ -9700,7 +9843,7 @@
 		]
 	},
 	"Custom: pick the leads and the back": {
-		"ja": "カスタム: {t:lead}と{t:back}を選ぶ",
+		"ja": "カスタム：{t:lead}と{t:back}を選ぶ",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/result_preview.html:81",
@@ -9775,7 +9918,7 @@
 		]
 	},
 	"Whole games: {a} vs {b}": {
-		"ja": "試合全体: {a} 対 {b}",
+		"ja": "試合全体：{a} 対 {b}",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/result_turn1.html:22"
@@ -9852,7 +9995,7 @@
 		]
 	},
 	"(a quick read: raw self-play, not searched)": {
-		"ja": "（簡易推定: {t:search}なしの自己対戦）",
+		"ja": "（簡易推定：{t:search}なしの自己対戦）",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/result_turn1.html:33"
@@ -9960,7 +10103,7 @@
 		]
 	},
 	"the same game from {name}'s side: its search's options each turn": {
-		"ja": "同じ試合を{name}側から: 各ターンの{t:search}の候補",
+		"ja": "同じ試合を{name}側から：各ターンの{t:search}の候補",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/result_turn1.html:49"
@@ -9988,7 +10131,7 @@
 		]
 	},
 	"Both sides in that team's games. <b>What it clicks</b>: how often each move was picked when the Pokémon had a real choice, then the share of games it used the move at all. Fainted and score-when-brought are over the games it was brought.": {
-		"ja": "そのチームとの対戦での両側の内容です。<b>選んだ行動</b>: 実際に選択肢があったときに各技が選ばれた割合と、その技を一度でも使った試合の割合。ひんしと{t:bring}時のスコアは{t:bring}された試合が対象です。",
+		"ja": "そのチームとの対戦での両側の内容です。<b>選んだ行動</b>：実際に選択肢があったときに各技が選ばれた割合と、その技を一度でも使った試合の割合。ひんしと{t:bring}時のスコアは{t:bring}された試合が対象です。",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/result_validate.html:102"
@@ -10073,7 +10216,7 @@
 		]
 	},
 	"Played on instinct, no thinking ahead: much faster, but a matchup can read quite differently from how the bot really plays it": {
-		"ja": "先読みなしの直感で対戦しました。ずっと速いですが、対面によってはボットの実際の戦い方とかなり違う結果になることがあります",
+		"ja": "先読みなしの直感で対戦しました。ずっと速いですが、マッチアップによってはボットの実際の戦い方とかなり違う結果になることがあります",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/result_validate.html:12"
@@ -10137,7 +10280,7 @@
 		]
 	},
 	"<b>Both adapt</b>: your score when both sides pick their brings well - in raw self-play (searched cells ✓ excepted).": {
-		"ja": "<b>両者適応</b>: 両者がうまく{t:bring}した場合のあなたのスコア（{t:search}なしの自己対戦。✓の付いた{t:search}済みのマスを除く）。",
+		"ja": "<b>両者適応</b>：両者がうまく{t:bring}した場合のあなたのスコア（{t:search}なしの自己対戦。✓の付いた{t:search}済みのマスを除く）。",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/result_validate.html:127"
@@ -10151,14 +10294,14 @@
 		]
 	},
 	"<b>Countered</b>: your usual four against their best answer to it - how exploitable always bringing it is (* an answer no preview model lists).": {
-		"ja": "<b>対策された場合</b>: あなたのいつもの4体と、それに対する相手の最善の対策との対戦。いつも同じ4体を出すとどれだけ突かれやすいかを示します（* はどの{t:bring}モデルも挙げない対策）。",
+		"ja": "<b>対策された場合</b>：あなたのいつもの4体と、それに対する相手の最善の対策との対戦。いつも同じ4体を出すとどれだけ突かれやすいかを示します（* はどの{t:bring}モデルも挙げない対策）。",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/result_validate.html:129"
 		]
 	},
 	"<b>Recommended</b>: the four both-adapt play brings most. <b>Safest</b>: the four with the best worst case. <b>Worst case</b>: the shown four's lowest score over their brings.": {
-		"ja": "<b>おすすめ</b>: 両者適応で最もよく{t:bring}される4体。<b>最も安定</b>: 最悪の場合が最も良い4体。<b>最悪の場合</b>: 表示中の4体の、相手の{t:bring}全体での最低スコア。",
+		"ja": "<b>おすすめ</b>：両者適応で最もよく{t:bring}される4体。<b>最も安定</b>：最悪の場合が最も良い4体。<b>最悪の場合</b>：表示中の4体の、相手の{t:bring}全体での最低スコア。",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/result_validate.html:130"
@@ -10333,14 +10476,14 @@
 		]
 	},
 	"Every cell is searched: 8 games, up to 32 where it decides the answer.": {
-		"ja": "全マス{t:search}済みです: 8戦、結論を左右するマスは最大32戦。",
+		"ja": "全マス{t:search}済みです：8戦、結論を左右するマスは最大32戦。",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/result_validate.html:167"
 		]
 	},
 	"Your bring (row) vs theirs (column). <b>bot % · human %</b>: how likely the bot / a human picks it; <span class=\"tag mx-alt\">screened</span> found by trying all fours. <b>vs a human</b>: that bring against what humans usually bring. Click a cell to play it out.": {
-		"ja": "あなたの{t:bring}（行）対相手の{t:bring}（列）。<b>ボット % · 人間 %</b>: ボット / 人間がそれを選ぶ確率。<span class=\"tag mx-alt\">絞り込みで発見</span>: 4体の全組み合わせを試して発見。<b>対人</b>: その{t:bring}と人間がよく出す{t:bring}との対戦。マスをクリックすると対戦させます。",
+		"ja": "あなたの{t:bring}（行）対相手の{t:bring}（列）。<b>ボット % · 人間 %</b>: ボット / 人間がそれを選ぶ確率。<span class=\"tag mx-alt\">絞り込みで発見</span>: 4体の全組み合わせを試して発見。<b>対人</b>：その{t:bring}と人間がよく出す{t:bring}との対戦。マスをクリックすると対戦させます。",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/result_validate.html:167"
@@ -10424,14 +10567,14 @@
 		]
 	},
 	"Deep Mode: every team's bring matrix was searched first, and each score is that matrix's value with both sides bringing well.": {
-		"ja": "詳細モード: まず全チームの{t:bring}の対戦表を{t:search}し、各スコアは両者がうまく{t:bring}した場合のその対戦表の値です。",
+		"ja": "詳細モード：まず全チームの{t:bring}の対戦表を{t:search}し、各スコアは両者がうまく{t:bring}した場合のその対戦表の値です。",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/result_validate.html:18"
 		]
 	},
 	"{n} games a cell, up to {m} on the cells that decide the {k} hard, nearly hard or heavily weighted matchup(s).": {
-		"ja": "1マス{n}戦。厳しい・厳しめ・重みの大きい{k}つの対面を左右するマスは最大{m}戦。",
+		"ja": "1マス{n}戦。厳しい・厳しめ・重みの大きい{k}つのマッチアップを左右するマスは最大{m}戦。",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/result_validate.html:18"
@@ -10459,7 +10602,7 @@
 		]
 	},
 	"Play this pairing out: whole games, both sides on these brings": {
-		"ja": "この組み合わせを対戦させる: 両側がこの{t:bring}で試合全体",
+		"ja": "この組み合わせを対戦させる：両側がこの{t:bring}で試合全体",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/result_validate.html:183"
@@ -10473,14 +10616,14 @@
 		]
 	},
 	"Search Mode, {n} games a team: each team's score ±{se} points.": {
-		"ja": "{t:search}モード、1チーム{n}戦: 各チームのスコアは±{se}ポイント。",
+		"ja": "{t:search}モード、1チーム{n}戦：各チームのスコアは±{se}ポイント。",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/result_validate.html:19"
 		]
 	},
 	"Luck: how much your games ride on dice": {
-		"ja": "運: あなたの対戦がどれだけ乱数に左右されるか",
+		"ja": "運：あなたの対戦がどれだけ乱数に左右されるか",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/result_validate.html:193"
@@ -10515,7 +10658,7 @@
 		]
 	},
 	"the field's dice: against you / in your favour (their crits and flinches / their misses)": {
-		"ja": "相手側の乱数: 不利 / 有利（相手の急所とひるみ / 相手の技の外れ）",
+		"ja": "相手側の乱数：不利 / 有利（相手の急所とひるみ / 相手の技の外れ）",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/result_validate.html:198"
@@ -10571,7 +10714,7 @@
 		]
 	},
 	"A quick read without search - good for ranking; a single matchup can be ~20 points off. Check the ones that matter in <b>Search Mode</b> or <b>Deep Mode</b>.": {
-		"ja": "{t:search}なしの簡易推定です。順位付けには十分ですが、個々の対面は20ポイントほどずれることがあります。重要な対面は<b>{t:search}モード</b>か<b>詳細モード</b>で確認してください。",
+		"ja": "{t:search}なしの簡易推定です。順位付けには十分ですが、個々のマッチアップは20ポイントほどずれることがあります。重要なマッチアップは<b>{t:search}モード</b>か<b>詳細モード</b>で確認してください。",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/result_validate.html:21"
@@ -10599,21 +10742,21 @@
 		]
 	},
 	"Each chance roll is replayed both ways - the chance event and the usual outcome - and the gap in the model's win estimate, times the event's chance, is its worth per game. Chance events: misses, crits, added effects that fire, confusion, full paralysis, short sleeps, thaws, Quick Claw; guaranteed effects don't count. \"Creates\" / \"carries\" are your own Pokémon's rolls; damage rolls are shown as a spread.": {
-		"ja": "各乱数判定を両方の結果（確率事象が起きた場合と通常の結果）で再現し、モデルの{t:win_estimate}の差にその事象の確率を掛けたものが1試合あたりの価値です。確率事象: 技の外れ、急所、発動した追加効果、こんらん、まひ、短いねむり、こおり解除、せんせいのツメ。確定の効果は数えません。「生み出す」/「受ける」はあなた自身のポケモンの判定で、ダメージ乱数は振れ幅として表示します。",
+		"ja": "各乱数判定を両方の結果（確率事象が起きた場合と通常の結果）で再現し、モデルの{t:win_estimate}の差にその事象の確率を掛けたものが1試合あたりの価値です。確率事象：技の外れ、急所、発動した追加効果、こんらん、まひ、短いねむり、こおり解除、せんせいのツメ。確定の効果は数えません。「生み出す」/「受ける」はあなた自身のポケモンの判定で、ダメージ乱数は振れ幅として表示します。",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/result_validate.html:215"
 		]
 	},
 	"The luck section failed: {error}": {
-		"ja": "運の集計に失敗しました: {error}",
+		"ja": "運の集計に失敗しました：{error}",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/result_validate.html:217"
 		]
 	},
 	"Compared with the reference: {team}": {
-		"ja": "比較用のチームとの比較: {team}",
+		"ja": "比較用のチームとの比較：{team}",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/result_validate.html:25"
@@ -10742,7 +10885,7 @@
 		]
 	},
 	"Hardest matchups": {
-		"ja": "最も厳しい対面",
+		"ja": "最も厳しいマッチアップ",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/result_validate.html:61"
@@ -10763,7 +10906,7 @@
 		]
 	},
 	"Best matchups": {
-		"ja": "最も有利な対面",
+		"ja": "最も有利なマッチアップ",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/result_validate.html:63"
@@ -10777,21 +10920,21 @@
 		]
 	},
 	"Each Pokémon's share of the recommended mix, hardest matchups first.": {
-		"ja": "おすすめの配分に占める各ポケモンの割合（厳しい対面から順に）。",
+		"ja": "おすすめの配分に占める各ポケモンの割合（厳しいマッチアップから順に）。",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/result_validate.html:70"
 		]
 	},
 	"How often the bot brings each of your Pokémon, hardest matchups first.": {
-		"ja": "ボットがあなたの各ポケモンを{t:bring}する頻度（厳しい対面から順に）。",
+		"ja": "ボットがあなたの各ポケモンを{t:bring}する頻度（厳しいマッチアップから順に）。",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/result_validate.html:70"
 		]
 	},
 	"How often the bot brings each of your Pokémon, hardest matchups first; below, its share of the both-adapt mix (a quick read: raw self-play).": {
-		"ja": "ボットがあなたの各ポケモンを{t:bring}する頻度（厳しい対面から順に）。下段は両者適応の配分に占める割合（簡易推定: {t:search}なしの自己対戦）。",
+		"ja": "ボットがあなたの各ポケモンを{t:bring}する頻度（厳しいマッチアップから順に）。下段は両者適応の配分に占める割合（簡易推定：{t:search}なしの自己対戦）。",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/result_validate.html:70"
@@ -10851,7 +10994,8 @@
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/result_validate.html:82",
-			"suite/vgc_suite/buddy.py:764"
+			"suite/vgc_suite/buddy.py:787",
+			"suite/vgc_suite/buddy.py:787"
 		]
 	},
 	"their usual bring": {
@@ -10885,7 +11029,7 @@
 		]
 	},
 	"Every bring of this matchup searched, as in Deep Mode: what to bring (a long run, even for one team)": {
-		"ja": "詳細モードと同じく、この対面のすべての{t:bring}を{t:search}します: 何を{t:bring}すべきかがわかります（1チームでも長い実行です）",
+		"ja": "詳細モードと同じく、このマッチアップのすべての{t:bring}を{t:search}します：何を{t:bring}すべきかがわかります（1チームでも長い実行です）",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/result_validate.html:86"
@@ -10935,7 +11079,7 @@
 		]
 	},
 	"search this matchup": {
-		"ja": "この対面を{t:search}",
+		"ja": "このマッチアップを{t:search}",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/result_validate.html:86"
@@ -11026,14 +11170,14 @@
 		]
 	},
 	"with six: the one to replace": {
-		"ja": "6体の場合: 入れ替えるポケモン",
+		"ja": "6体の場合：入れ替えるポケモン",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/slot.html:13"
 		]
 	},
 	"e.g. Kingambit": {
-		"ja": "例: ドドゲザン",
+		"ja": "例：ドドゲザン",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/slot.html:14"
@@ -11068,7 +11212,7 @@
 		]
 	},
 	"ladder usage (Smogon)": {
-		"ja": "ランクマッチの使用率（Smogon）",
+		"ja": "Showdownラダーの使用率（Smogon）",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/slot.html:19"
@@ -11124,14 +11268,14 @@
 		]
 	},
 	"Ladder usage: Smogon's stats, {month}": {
-		"ja": "ランクマッチの使用率: Smogonの統計、{month}",
+		"ja": "Showdownラダーの使用率：Smogonの統計、{month}",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/slot.html:25"
 		]
 	},
 	"Ladder usage: not installed": {
-		"ja": "ランクマッチの使用率: 未インストール",
+		"ja": "Showdownラダーの使用率：未インストール",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/slot.html:25"
@@ -11201,21 +11345,21 @@
 		]
 	},
 	"<b>Deep Mode</b> plays your likeliest fours against theirs, plus the fours that answer them, all with search, and scores each matchup with both sides bringing well: the page then says what to bring. A full field is a long run, so <b>search this matchup</b> does the same for one team of a Search Mode run.": {
-		"ja": "<b>詳細モード</b>は、あなたの有力な4体と相手の有力な4体、さらにそれへの対策となる4体を、すべて{t:search}ありで対戦させ、両者がうまく{t:bring}した場合で各対面を評価します。結果のページで何を{t:bring}すべきかがわかります。相手全体だと長い実行になるので、<b>この対面を{t:search}</b>で{t:search}モードの実行の1チームについて同じことができます。",
+		"ja": "<b>詳細モード</b>は、あなたの有力な4体と相手の有力な4体、さらにそれへの対策となる4体を、すべて{t:search}ありで対戦させ、両者がうまく{t:bring}した場合で各マッチアップを評価します。結果のページで何を{t:bring}すべきかがわかります。相手全体だと長い実行になるので、<b>このマッチアップを{t:search}</b>で{t:search}モードの実行の1チームについて同じことができます。",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/validate.html:19"
 		]
 	},
 	"<b>Fast mode</b> plays {n}× the games on instinct, without search: good for ranking teams, but a single matchup can be ~20 points off the searched bot.": {
-		"ja": "<b>高速モード</b>は{t:search}なしの直感で{n}倍の対戦を行います。チームの順位付けには十分ですが、個々の対面は{t:search}ありのボットと20ポイントほどずれることがあります。",
+		"ja": "<b>高速モード</b>は{t:search}なしの直感で{n}倍の対戦を行います。チームの順位付けには十分ですが、個々のマッチアップは{t:search}ありのボットと20ポイントほどずれることがあります。",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/validate.html:20"
 		]
 	},
 	"Your team against a field of teams: overall score, every matchup, which four to bring against each, and how the bot plays your team.": {
-		"ja": "あなたのチームを相手チーム群と対戦させます。総合スコア、全対面、各相手に{t:bring}すべき4体、ボットがあなたのチームをどう使うかがわかります。",
+		"ja": "あなたのチームを相手チーム群と対戦させます。総合スコア、全マッチアップ、各相手に{t:bring}すべき4体、ボットがあなたのチームをどう使うかがわかります。",
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/validate.html:6"
@@ -11272,7 +11416,7 @@
 		]
 	},
 	"No search this turn; the model's quick read:": {
-		"ja": "このターンは{t:search}なし。モデルの簡易評価：",
+		"ja": "このターンは{t:search}なし。モデルの簡易推定：",
 		"reviewed": false,
 		"where": [
 			"tools/buddy/coach-plugin.js:76"

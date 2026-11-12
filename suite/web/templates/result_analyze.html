@@ -39,7 +39,7 @@
 
   {% if job is defined and job %}<p class="small" style="margin: 8px 0">
     <b>{{ _("Team preview:") }}</b> {{ _("brings and leads are graded by playing them out -") }}
-    <a class="btn alt" href="/preview?analyzed={{ job.id }}" style="padding: 2px 10px">{{ _("open this matchup in the Preview Advisor") }}</a>
+    <a class="btn alt inline" href="/preview?analyzed={{ job.id }}">{{ _("open this matchup in the Preview Advisor") }}</a>
     <span class="muted">{{ _("and set its best options next to what each player brought.") }}</span></p>{% endif %}{% endif %}
   {% set c = win_curve_svg(r.win_curve, players) %}
   <h3>{{ _("How the model rated each side, turn by turn") }}</h3>
@@ -86,7 +86,7 @@
   <div class="slot{% if sl.tier == 'agrees' %} agree{% endif %}" style="margin-top: 6px">
     <div class="small"><b>{{ sl.mon|dex('species') }}</b>: {{ _("clicked") }} <b>{{ (sl.played|act if sl.played else _('(not shown in the log)'))|replace(' -> ', ' → ') }}</b>
       {% if sl.tier %}<span class="chip {{ sl.tier|tier_class }}" title="{{ _('the model gave it {p} (its #{rank} choice)', p=sl.played_p|prob, rank=sl.played_rank) }}">{{ _(sl.tier) }} · {{ sl.played_p|prob }}</span>{% endif %}
-      {% if sl.hit %}<br><span class="muted">({{ _("hit {mon} - switched in first", mon=sl.hit|act) }})</span>{% endif %}
+      {% if sl.hit %}<br><span class="muted">({{ _("hit {mon} - switched in first", mon=sl.hit|dex('species')) }})</span>{% endif %}
       {% if sl.after %}<br><span class="muted">{{ (_("options read after {mon}'s likely {act}", mon=sl.after.mon|dex('species'), act=sl.after.act|act) if sl.after.own_pick else _("options read after {mon}'s {act}", mon=sl.after.mon|dex('species'), act=sl.after.act|act))|replace(' -> ', ' → ') }}</span>{% endif %}</div>
     {% for label, pr in sl.top %}<div class="opt"><div class="bar{% if loop.index == sl.played_rank %} sun{% endif %}"><i style="width: {{ (pr * 100)|round(1) }}%"></i><span>{{ label|act|replace(' -> ', ' → ') }}</span></div><span class="small">{{ pr|prob }}</span></div>{% endfor %}
   </div>

@@ -2,7 +2,7 @@
 {% set b = r.brings %}{% set rec = b.mine[b.recommended.row] %}
 <div class="card">
   <h1>{{ r.team|names(' · ') }}</h1>
-  <p class="muted small">{{ _("vs {team}: {six}", team=r.opp, six=r.species|names(' · ')) }} · {{ _("model {model}", model=r.model) }} · {{ _("{n} searched games", n=r.games) }} · <a href="/job/{{ r.dd }}">{{ _("back to the Deep Dive") }}</a></p>
+  <p class="muted small">{{ _("vs {team}: {six}", team=r.opp|team_id, six=r.species|names(' · ')) }} · {{ _("model {model}", model=r.model) }} · {{ _("{n} searched games", n=r.games) }} · <a href="/job/{{ r.dd }}">{{ _("back to the Deep Dive") }}</a></p>
   <div class="stats">
     <div><div class="big">{{ b.equilibrium.value|pct }}</div><div class="small muted">{{ _("your score with both sides bringing well (±{n} points)", n=(196 * b.value_se)|round|int) }}</div></div>
   </div>

@@ -76,7 +76,8 @@ footer { text-align: center; font-size: .85rem; color: var(--stone); padding: 0 
 
 label { display: block; font-weight: 700; color: var(--bark); margin: 14px 0 6px; }
 label .hint { font-weight: 400; color: var(--stone); font-size: .9rem; }
-input[type=text], input[type=number], textarea, select {
+input[type=text], input:not([type]), input[type=number], textarea, select {
+
   width: 100%; font: inherit; color: var(--ink); background: #fffdf9; border: 2px solid var(--sand); border-radius: 14px;
   padding: 10px 14px; outline: none; transition: border-color .15s, box-shadow .15s;
 }
@@ -93,6 +94,16 @@ summary { cursor: pointer; font-weight: 700; color: var(--bark); padding: 8px 0;
 .btn:hover { background: var(--leaf); }
 .btn:active { transform: translateY(3px); box-shadow: 0 1px 0 var(--bark); }
 .btn.alt { background: var(--sun); }
+
+
+.btn.inline { margin: 0 2px; padding: 1px 12px; font-size: .95em; line-height: 1.5; border-width: 2px; box-shadow: 0 2px 0 var(--bark);
+  vertical-align: middle; }
+.btn.inline:active { transform: translateY(1px); box-shadow: 0 1px 0 var(--bark); }
+li:has(> .btn.inline), p:has(> .btn.inline) { line-height: 2.1; }
+
+.btnrow { display: flex; flex-wrap: wrap; gap: 10px; align-items: flex-start; margin: 12px 0 22px; }
+.btnrow .btn, .btnrow form .btn { margin-top: 0; }
+.btnrow form { margin: 0; }
 
 
 .note { background: #fff6cf; border: 2px solid var(--honey); border-radius: 16px; padding: 10px 16px; margin: 14px 0; font-size: .93rem; }
@@ -149,6 +160,11 @@ summary { cursor: pointer; font-weight: 700; color: var(--bark); padding: 8px 0;
 .custom-bring { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 6px; margin-top: 6px; }
 .custom-bring[hidden] { display: none; }
 .custom-bring select { width: auto; flex: 1 1 8em; }
+
+
+#pa.custom-bring, #pb.custom-bring { display: grid; grid-template-columns: auto 1fr 1fr; }
+#pa.custom-bring select, #pb.custom-bring select { width: 100%; min-width: 0; }
+#pa.custom-bring[hidden], #pb.custom-bring[hidden] { display: none; }
 .tbl td.cell.pick { cursor: pointer; } .tbl td.cell.pick:hover { outline: 2px solid var(--bark); }
 .scroll { overflow: auto; max-height: 80vh; }
 
@@ -384,3 +400,5 @@ details.howto p { margin: 6px 0; }
 .langbtn:hover { filter: brightness(1.06); }
 
 html:lang(ja) body { line-break: strict; word-break: auto-phrase; }
+
+.teamhelp { margin: 10px 0 2px; font-size: .88rem; color: var(--stone); }

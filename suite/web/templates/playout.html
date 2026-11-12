@@ -11,8 +11,9 @@
       <label class="small" style="display:block"><input type="radio" name="pick" value="you" checked> {{ _("<b>You</b>: each side's leads and back (and optionally turn 1)")|safe }}</label>
       <label class="small" style="display:block"><input type="radio" name="pick" value="bots"> {{ _("<b>The bots</b>: team preview as in a real game")|safe }}</label>
     </fieldset>
+    <p class="teamhelp">{% include "_team_help.html" %}</p>
     <div class="row">
-      <div><label for="a">{{ _("Team A") }} {% include "_team_help.html" %}</label><textarea id="a" name="a" required data-team></textarea>
+      <div><label for="a">{{ _("Team A") }}</label><textarea id="a" name="a" required data-team></textarea>
         <div class="custom-bring manual-only" id="pa"><span class="small muted">{{ _("leads") }}</span>
           {% for k in (1, 2, 3, 4) %}{% if k == 3 %}<span class="small muted">{{ _("back") }}</span>{% endif %}<select name="a{{ k }}" aria-label="{{ _('Team A') }} {{ _('lead {n}', n=k) if k < 3 else _('back {n}', n=k - 2) }}" required><option value="">-</option></select>{% endfor %}
         </div>

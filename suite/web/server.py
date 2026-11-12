@@ -56,6 +56,7 @@ PRIVATE = importlib.util.find_spec("vgc_suite.team_stats") is not None
 
 OPEN_WINDOW = None
 QUIT_APP = None
+FOCUS_APP = None
 
 
 
@@ -2119,7 +2120,19 @@ def _fitted_paste(text: str, fits) -> tuple[str, bool]:
 
 
 ENV.globals["fitted_paste"] = _fitted_paste
-ENV.filters["field_label"] = lambda s: (_i18n.t("bucket {name}", name=s[7:]) if isinstance(s, str) and s.startswith("bucket ")
+
+
+def _team_id(s):
+
+
+
+    if not isinstance(s, str) or "/" not in s or not s.endswith("/..."):
+        return s
+    return "/".join(_i18n.dex("species", x) for x in s[:-4].split("/")) + "/…"
+
+
+ENV.filters["team_id"] = _team_id
+ENV.filters["field_label"] =lambda s: (_i18n.t("bucket {name}", name=s[7:]) if isinstance(s, str) and s.startswith("bucket ")
                                         else _i18n.t(s) if isinstance(s, str) else s)
 for _f in ("crawl_line", "crawl_pos", "dice_word"):
     ENV.filters[_f] = (lambda name: lambda s: getattr(__import__("vgc_suite.core.labels", fromlist=[name]), name)(s))(_f)
@@ -2425,11 +2438,15 @@ class Handler(BaseHTTPRequestHandler):
             if s is None:
                 return self._send(ENV.get_template("base.html").render(missing=True), code=404)
             return self._page("buddy_session.html", active="buddy", s=s)
+        if path == "app/focus":
+            if FOCUS_APP is not None and self._local():
+                FOCUS_APP()
+            return self._send(json.dumps({"app": "openVGCengine", "pid": os.getpid()}), "application/json")
         if path == "buddy/play":
             from urllib.parse import urlencode
             from vgc_suite.core.h2h_examples import ensure_local_server
             if OPEN_WINDOW is None or not self._local():
-                msg = "Open the local Showdown at localhost:8000."
+                msg = _i18n.t("Open the local Showdown at localhost:8000.")
             else:
                 missing = ensure_local_server()
                 msg = missing or "Showdown opened in its own window."
@@ -2845,13 +2862,13 @@ class Handler(BaseHTTPRequestHandler):
             meta = lines.info(room)
             turn = _int(params, "turn", 1, 999)
             if not self._local():
-                ok, msg = False, "Reopening a game works only from this PC itself (this page opened at 127.0.0.1)."
+                ok, msg = False, _i18n.t("Reopening a game works only from this PC itself (this page opened at 127.0.0.1).")
             elif meta is None:
-                ok, msg = False, "This game can't be reopened: it has no saved choices (games before 11-08, or not played on the local server)."
+                ok, msg = False, _i18n.t("This game can't be reopened: it has no saved choices (games before 11-08, or not played on the local server).")
             elif side not in ("p1", "p2") or not me:
-                ok, msg = False, "Give your side and your Showdown name."
+                ok, msg = False, _i18n.t("Give your side and your Showdown name.")
             elif not 1 <= turn <= meta["turns"]:
-                ok, msg = False, f"Pick a turn from 1 to {meta['turns']}."
+                ok, msg = False, _i18n.t("Pick a turn from {lo} to {hi}.", lo=1, hi=meta['turns'])
             else:
                 ok, msg = lines.start(room, turn, me, side, params.get("mode") == "same", self.jobs.device)
                 if ok and OPEN_WINDOW is not None:
@@ -2870,13 +2887,13 @@ class Handler(BaseHTTPRequestHandler):
             turn = _int(params, "turn", 1, 999)
             turns = [t["turn"] for t in (((job or {}).get("result") or {}).get("narration") or {}).get("turns", []) if t["turn"] >= 1]
             if not self._local():
-                ok, msg = False, "Opening a position works only from this PC itself (this page opened at 127.0.0.1)."
+                ok, msg = False, _i18n.t("Opening a position works only from this PC itself (this page opened at 127.0.0.1).")
             elif job is None or job["tool"] != "analyze" or not turns:
-                ok, msg = False, "That analysis isn't here any more: analyze the replay again."
+                ok, msg = False, _i18n.t("That analysis isn't here any more: analyze the replay again.")
             elif side not in ("p1", "p2") or not me:
-                ok, msg = False, "Give your side and your Showdown name."
+                ok, msg = False, _i18n.t("Give your side and your Showdown name.")
             elif turn not in turns:
-                ok, msg = False, f"Pick a turn from {min(turns)} to {max(turns)}."
+                ok, msg = False, _i18n.t("Pick a turn from {lo} to {hi}.", lo=min(turns), hi=max(turns))
             else:
                 try:
                     src = _replay_src(job["params"]["replay"])

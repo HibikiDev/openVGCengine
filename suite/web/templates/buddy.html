@@ -18,14 +18,14 @@
       <td>{% if d.running %}<span class="tag">{{ _("running") }}</span> <span class="muted small">pid {{ d.pid }}</span>{% else %}<span class="tag" style="background:var(--sand)">{{ _("stopped") }}</span>{% endif %}</td></tr>
   </table>
   {% if local %}
-  <div style="display:flex; gap:10px; margin-top:12px">
+  <div class="btnrow">
     <form method="post" action="/buddy/start"><button class="btn" type="submit"{% if d.running %} disabled{% endif %} onclick="this.textContent = {{ _('Starting (it takes a moment)...')|tojson|e }}">{{ _("Start practice bot") }}</button></form>
     <form method="post" action="/buddy/stop"><button class="btn alt" type="submit"{% if not d.running %} disabled{% endif %}>{{ _("Stop") }}</button></form>
   </div>
   {% else %}<p class="small muted">{{ _("Start and stop work only from this PC itself (open this page at 127.0.0.1:8765).") }}</p>{% endif %}
   <h3>{{ _("How to play it") }}</h3>
   <ol class="small">
-    {% if in_app() %}<li>{{ _("{button} - the local Showdown in its own window (it starts the server if needed) - and pick the name you set below.", button='<a class="btn" href="/buddy/play" style="padding: 2px 12px">' ~ _("Open Showdown") ~ '</a>')|safe }}</li>
+    {% if in_app() %}<li>{{ _("{button} - the local Showdown in its own window (it starts the server if needed) - and pick the name you set below.", button='<a class="btn inline" href="/buddy/play">' ~ _("Open Showdown") ~ '</a>')|safe }}</li>
     {% else %}<li>{{ _('Open the local Showdown at {local} on this PC (use <b>localhost</b>, not 127.0.0.1: Chrome blocks the client 127.0.0.1 sends you to, and it shows "can\'t connect to server"; in Safari it is the other way round - use {ip}, or it stays on "Connecting...") and pick the name you set below.', local='<a href="http://localhost:8000" target="_blank" rel="noopener">localhost:8000</a>', ip='<a href="http://127.0.0.1:8000" target="_blank" rel="noopener">127.0.0.1:8000</a>')|safe }}</li>{% endif %}
     <li>{{ _('Challenge <b>{bot}</b> in a <b>buddy</b> format - <b>[Gen 9 Champions] VGC 2026 Reg M-C buddy</b> (Bo1), its Bo3 twin, or an older format\'s buddy twin (under "Training buddy (local)") - with your team. The buddy plays only these: same rules as the real formats, defined only on this local server.', bot=d.bot|e)|safe }}</li>
     <li>{{ _("Settings saved here apply from the next challenge; no restart needed.") }}</li>
@@ -93,9 +93,9 @@
       <td class="nowrap">{{ s.start[5:16] }} – {% if s.end %}{{ s.end[11:16] if s.end[:10] == s.start[:10] else s.end[5:16] }}{% else %}<span class="tag">{{ _("running") }}</span>{% endif %}</td>
       <td class="num">{{ s.games }}</td><td class="num">{{ s.wins }}-{{ s.losses }}</td>
       <td class="nowrap">{% set hid %}<input type="hidden" name="bot" value="{{ s.bot }}"><input type="hidden" name="user" value="{{ s.user }}"><input type="hidden" name="start" value="{{ s.start }}">{% endset %}
-        {% if not s.end %}<form method="post" action="/buddy/session-end" style="display:inline; margin:0">{{ hid }}<button class="btn alt" type="submit" style="padding: 2px 10px">{{ _("end") }}</button></form>
-        {% else %}<form method="post" action="/buddy/session-resume" style="display:inline; margin:0" onsubmit="return confirm({{ _('Resume this session? It runs again from its start, and any session of {user} started after it ended is folded into it.', user=s.user)|tojson|e }})">{{ hid }}<button class="btn alt" type="submit" style="padding: 2px 10px">{{ _("resume") }}</button></form>{% endif %}
-        <form method="post" action="/buddy/session-delete" style="display:inline; margin:0" onsubmit="return confirm({{ _('Delete this session? Only the grouping goes - the games stay.')|tojson|e }})">{{ hid }}<button class="btn alt" type="submit" style="padding: 2px 10px" title="{{ _('delete the session (the games stay)') }}">✕</button></form></td></tr>{% endfor %}
+        {% if not s.end %}<form method="post" action="/buddy/session-end" style="display:inline; margin:0">{{ hid }}<button class="btn alt inline" type="submit">{{ _("end") }}</button></form>
+        {% else %}<form method="post" action="/buddy/session-resume" style="display:inline; margin:0" onsubmit="return confirm({{ _('Resume this session? It runs again from its start, and any session of {user} started after it ended is folded into it.', user=s.user)|tojson|e }})">{{ hid }}<button class="btn alt inline" type="submit">{{ _("resume") }}</button></form>{% endif %}
+        <form method="post" action="/buddy/session-delete" style="display:inline; margin:0" onsubmit="return confirm({{ _('Delete this session? Only the grouping goes - the games stay.')|tojson|e }})">{{ hid }}<button class="btn alt inline" type="submit" title="{{ _('delete the session (the games stay)') }}">✕</button></form></td></tr>{% endfor %}
   </table></div>
   {% else %}<p class="muted small">{{ _("No sessions yet.") }}</p>{% endif %}
 </div>
@@ -121,13 +121,13 @@
       <td class="small">{{ g.team }}</td><td>{{ g.result }}</td><td>{{ g.turns or '' }}</td>
       {% if tagged %}<td class="small">
         {% for x in g.sessions %}<div style="display:flex; gap:4px; align-items:center"><a class="tag" href="/buddy/session?{{ {'bot': g.bot, 'u': x.user, 's': x.start}|urlencode }}">{{ x.name }}</a>
-          <form method="post" action="/buddy/session-remove" style="margin:0"><input type="hidden" name="bot" value="{{ g.bot }}"><input type="hidden" name="user" value="{{ x.user }}"><input type="hidden" name="start" value="{{ x.start }}"><input type="hidden" name="room" value="{{ g.room }}"><button class="btn alt" type="submit" style="padding: 0 6px" title="{{ _('take this game out of the session') }}">✕</button></form></div>{% endfor %}
+          <form method="post" action="/buddy/session-remove" style="margin:0"><input type="hidden" name="bot" value="{{ g.bot }}"><input type="hidden" name="user" value="{{ x.user }}"><input type="hidden" name="start" value="{{ x.start }}"><input type="hidden" name="room" value="{{ g.room }}"><button class="btn alt inline" type="submit" style="padding: 0 6px" title="{{ _('take this game out of the session') }}">✕</button></form></div>{% endfor %}
         {% if g.other_sessions %}<form method="post" action="/buddy/session-add" style="display:flex; gap:4px; margin:2px 0 0">
           <input type="hidden" name="bot" value="{{ g.bot }}"><input type="hidden" name="room" value="{{ g.room }}">
           <select name="pick" style="max-width: 11em" onchange="const [u, s] = this.value.split('|'); this.form.user.value = u; this.form.start.value = s">
             <option value="">{{ _("add to…") }}</option>{% for x in g.other_sessions %}<option value="{{ x.user }}|{{ x.start }}">{{ x.name }} ({{ x.user }}, {{ x.start[5:10] }})</option>{% endfor %}</select>
           <input type="hidden" name="user"><input type="hidden" name="start">
-          <button class="btn alt" type="submit" style="padding: 0 8px">{{ _("add") }}</button></form>{% elif not g.sessions %}<span class="muted">-</span>{% endif %}</td>{% endif %}
+          <button class="btn alt inline" type="submit" style="padding: 0 8px">{{ _("add") }}</button></form>{% elif not g.sessions %}<span class="muted">-</span>{% endif %}</td>{% endif %}
       <td class="small nowrap"><a href="/status/game/{{ g.room }}{{ '?pov=human' if g.bot is defined }}">{{ _("open") }}</a>{% if g.series and g.bot == 'live' %}<br><a href="/status/series/{{ g.series }}">{{ _("series") }}</a>{% endif %}</td></tr>{% endfor %}
   </table></div>
   {% else %}<p class="muted">{{ _("No practice games yet.") }}</p>{% endif %}

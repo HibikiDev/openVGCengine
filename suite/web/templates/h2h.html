@@ -6,8 +6,9 @@
   <p>{{ _("Two teams against each other: who wins, what each brings and leads, and how turn 1 goes.") }}</p>
   <form method="post" action="/h2h">
     {% include "_format_pick.html" %}
+    <p class="teamhelp">{% include "_team_help.html" %}</p>
     <div class="row">
-      <div><label for="a">{{ _("Team A") }} {% include "_team_help.html" %}</label><textarea id="a" name="a" required data-team></textarea></div>
+      <div><label for="a">{{ _("Team A") }}</label><textarea id="a" name="a" required data-team></textarea></div>
       <div><label for="b">{{ _("Team B") }}</label><textarea id="b" name="b" required data-team></textarea></div>
     </div>
     <details>

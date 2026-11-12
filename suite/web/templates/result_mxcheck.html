@@ -5,7 +5,7 @@
   {% if r.note is defined and r.note %}<div class="note">{{ r.note }}</div>{% endif %}
   <p class="muted small">{{ _("{a} vs {b}", a=r.team|names(' · '), b=r.species|names(' · ')) }} · {{ _("model {model}", model=r.model) }} · {{ _("{n} searched games a pairing", n=r.games) }} · <a href="/job/{{ r.dd }}#mx-{{ r.opp }}">{{ _("back to the Deep Dive matrix") }}</a></p>
   <form method="post" action="/mxcheck" style="margin: 0 0 8px"><input type="hidden" name="dd" value="{{ r.dd }}"><input type="hidden" name="opp" value="{{ r.opp }}"><input type="hidden" name="fresh" value="1">
-    <button class="btn alt" type="submit" style="padding: 2px 10px">{{ _("run it again") }}</button> <span class="small muted">{{ _("fresh games on a new seed (the button on the matrix opens this result)") }}</span></form>
+    <button class="btn alt inline" type="submit">{{ _("run it again") }}</button> <span class="small muted">{{ _("fresh games on a new seed (the button on the matrix opens this result)") }}</span></form>
   {% if r.both_adapt %}{% set e = r.both_adapt.search - r.both_adapt.raw %}
   <div class="stats">
     <div><div class="big">{{ r.both_adapt.search|pct }}</div><div class="small muted">{{ _("both adapt, with search (the quick matrix said {pct}: {d} points)", pct=r.both_adapt.raw|pct, d="%+.0f"|format(e * 100)) }}</div></div>

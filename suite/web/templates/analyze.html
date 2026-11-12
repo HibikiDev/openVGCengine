@@ -46,7 +46,7 @@
       <div><label for="depth">{{ _("How deep?") }}</label>
         <select id="depth" name="depth"><option value="fast">{{ _("Quick: the model's first read") }}</option><option value="standard">{{ _("Searched: 4 searches a turn") }}</option><option value="deep">{{ _("Deep: 8 searches a turn (the slowest)") }}</option></select></div>
     </div>
-    <p class="small muted" style="margin-top: -4px">{{ _("Searched and Deep look ahead on every turn the way the bot does when it plays, and score the line that was played next to the best one they find. One search alone often changes its mind, so a turn only reads as costly when most of them agree.") }}</p>
+    <p class="small muted" style="margin-top: 8px">{{ _("Searched and Deep look ahead on every turn the way the bot does when it plays, and score the line that was played next to the best one they find. One search alone often changes its mind, so a turn only reads as costly when most of them agree.") }}</p>
     <details{% if prefill and (prefill.paste_p1 or prefill.paste_p2) %} open{% endif %}>
       <summary>{{ _("Team exports (optional)") }}</summary>
       <p class="small muted">{% if prefill and (prefill.paste_p1 or prefill.paste_p2) %}{{ _("Exact spreads instead of usage guesses - the sets the last analysis played with: change any of them and analyze again.") }}{% else %}{{ _("Exact spreads instead of usage guesses.") }}{% endif %}</p>

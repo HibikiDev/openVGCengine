@@ -18,9 +18,9 @@
 <div class="card" id="bug">
   <h2>{{ _("Report a bug") }}</h2>
   <p>{{ _("Something broke or looks wrong? Write to me - a few lines on what you did and what happened are enough.") }}</p>
-  <div class="row" style="align-items:center; gap:10px">
+  <div style="display:flex; align-items:center; gap:10px; flex-wrap:wrap">
     <pre style="margin:0; display:inline-block">{{ contact }}</pre>
-    <button type="button" class="btn alt" onclick="copyExport(this)" style="padding:4px 12px">{{ _("Copy") }}</button>
+    <button type="button" class="btn alt inline" onclick="copyExport(this)">{{ _("Copy") }}</button>
   </div>
   <p class="small muted">{{ _("Or open an issue on GitHub:") }} <a href="{{ issues }}" target="_blank" rel="noopener">{{ issues }}</a></p>
   <h3>{{ _("Details to include") }}</h3>

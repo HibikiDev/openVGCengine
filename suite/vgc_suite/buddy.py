@@ -571,17 +571,38 @@ def _kill_tree(pid: int) -> None:
             pass
 
 
-def _pid_from(f: Path) -> int | None:
+def _pid_image(pid: int) -> str | None:
+
+    import subprocess
+    try:
+        if os.name == "nt":
+            out = subprocess.run(["tasklist", "/FI", f"PID eq {pid}", "/FO", "CSV", "/NH"], capture_output=True, text=True,
+                                 errors="replace", **NO_WINDOW).stdout or ""
+            row = next((ln for ln in out.splitlines() if ln.startswith('"') and f'"{pid}"' in ln), None)
+            return row.split('","', 1)[0].strip('"').lower().rsplit(".", 1)[0] if row else None
+        out = subprocess.run(["ps", "-p", str(pid), "-o", "comm="], capture_output=True, text=True, errors="replace").stdout.strip()
+        return Path(out).name.lower() or None
+    except OSError:
+        return None
+
+
+def _pid_from(f: Path, image: str | None = None) -> int | None:
+
+
+
     try:
         pid = int(f.read_text().strip())
     except (OSError, ValueError):
         return None
+    if image is not None:
+        name = _pid_image(pid)
+        return pid if name and name.startswith(image) else None
     return pid if _pid_alive(pid) else None
 
 
 def server_pid(root: Path) -> int | None:
 
-    return _pid_from(root / SERVER["pid"])
+    return _pid_from(root / SERVER["pid"], "node")
 
 
 def start_server(root: Path, wait: float = 45) -> str | None:
@@ -640,7 +661,7 @@ def _pid_alive(pid: int) -> bool:
 
 def practice_pid(root: Path) -> int | None:
 
-    return _pid_from(root / PRACTICE["pid"])
+    return _pid_from(root / PRACTICE["pid"], "python")
 
 
 def start_practice(root: Path) -> str:
@@ -761,7 +782,10 @@ def page_data(root: Path, who: str = "") -> dict:
     games = []
     for r in buddy_sessions.recent_games(root, 30, who):
         games.append({"time": r["time"][5:16], "room": r["room"], "opponent": r["opponent"], "bot": r["bot"], "bot_label": r["bot_label"],
-                      "team": r.get("team") if r.get("team") not in (None, "?") else t("their pick"),
+
+
+                      "team": {None: t("their pick"), "?": t("their pick"), "buddy": t("a pasted team"),
+                               "reopened": t("as in the original game")}.get(r.get("team"), r.get("team")),
                       "result": "-" if r["won"] is None else (t("{who} won", who=r["opponent"]) if r["won"] else t("bot won")),
                       "turns": r.get("turns"), "notes": notes.get(r["room"], None), "series": r.get("series"), "game": r.get("game"),
                       "line": r.get("line"),

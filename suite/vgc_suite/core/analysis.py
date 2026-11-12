@@ -26,11 +26,16 @@ CALIBRATION = Path(__file__).resolve().parents[3] / "trainer/runs/opp_human/valu
 
 
 def load_calibration(ckpt: str) -> dict | None:
-    try:
-        cal = json.loads(CALIBRATION.read_text(encoding="utf8"))
-    except (OSError, ValueError):
-        return None
-    return cal if cal.get("ckpt") == Path(ckpt).name else None
+
+
+    for f in (Path(ckpt).parent / CALIBRATION.name, CALIBRATION):
+        try:
+            cal = json.loads(f.read_text(encoding="utf8"))
+        except (OSError, ValueError):
+            continue
+        if cal.get("ckpt") == Path(ckpt).name:
+            return cal
+    return None
 
 
 def calibrated_win(raw: float, turn: int, cal: dict) -> float:

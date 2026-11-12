@@ -17,6 +17,8 @@ import sys
 import time
 from pathlib import Path
 
+from vgc_trainer.i18n import t
+
 ROOT = Path(__file__).resolve().parents[2]
 LOGS = ROOT / "trainer/runs/buddy_server/logs"
 OUT = ROOT / "trainer/runs/practise_lines"
@@ -75,19 +77,20 @@ def start(room: str, turn: int, me: str, side: str, same_first: bool, device: st
 
     f = game_file(room)
     if f is None:
-        return False, "This game was played before games were saved with their choices, so it can't be reopened."
+        return False, t("This game was played before games were saved with their choices, so it can't be reopened.")
     if not shutil.which("node"):
-        return False, "Reopening a game needs Node.js on this PC's PATH (it replays the game in Showdown's simulator)."
+        return False, t("Reopening a game needs Node.js on this PC's PATH (it replays the game in Showdown's simulator).")
     from .buddy import practice_pid
     if practice_pid(ROOT) is None:
-        return False, "Start the practice bot on the Buddy page first: it plays the reopened game."
+        return False, t("Start the practice bot on the Buddy page first: it plays the reopened game.")
     OUT.mkdir(parents=True, exist_ok=True)
     _remember(me)
     _launch(f"{room}-t{turn}", [str(f), "--turn", str(turn), "--me", me, "--side", side, "--device", device,
                                 "--kind", "game", "--back", f"/status/game/{room}?pov=human"] + (["--force-first"] if same_first else []))
-    how = "repeats its original choice on that turn, then decides fresh" if same_first else "decides fresh from that turn"
-    return True, (f"Turn {turn} is opening on the local Showdown: accept the invite from openvgchost there, signed in as {me}. "
-                  f"The bot {how}.")
+    how = (t("The bot repeats its original choice on that turn, then decides fresh.") if same_first
+           else t("The bot decides fresh from that turn."))
+    return True, t("Turn {turn} is opening on the local Showdown: accept the invite from openvgchost there, signed in as {me}.",
+                   turn=turn, me=me) + " " + how
 
 
 def _launch(tag: str, args: list[str]) -> None:
@@ -195,10 +198,10 @@ def start_replay(src: str, turn: int, me: str, side: str, device: str, back: str
 
 
     if not shutil.which("node"):
-        return False, "Opening a replay's position needs Node.js on this PC's PATH (the local Showdown runs on it)."
+        return False, t("Opening a replay's position needs Node.js on this PC's PATH (the local Showdown runs on it).")
     from .buddy import practice_pid
     if practice_pid(ROOT) is None:
-        return False, "Start the practice bot on the Buddy page first: it plays the position."
+        return False, t("Start the practice bot on the Buddy page first: it plays the position.")
     if not src.startswith(("http://", "https://")):
         REPLAYS.mkdir(parents=True, exist_ok=True)
         f = REPLAYS / replay_key(src)
@@ -207,9 +210,9 @@ def start_replay(src: str, turn: int, me: str, side: str, device: str, back: str
     _remember(me)
     _launch(f"replay-t{turn}", [src, "--replay", "--turn", str(turn), "--me", me, "--side", side, "--device", device, "--kind", "replay"]
             + (["--back", back] if back else []))
-    return True, (f"Turn {turn} is being rebuilt from the replay and opened on the local Showdown (it takes a moment): accept the invite "
-                  f"from openvgchost there, signed in as {me}. Approximate - guessed spreads and unseen sets, HP to the percent, a new "
-                  f"seed. The bot decides fresh.")
+
+    return True, t("Turn {turn} is being rebuilt from the replay and opened on the local Showdown (it takes a moment): accept the invite from openvgchost there, signed in as {me}. Approximate - guessed spreads and unseen sets, HP to the percent, a new seed. The bot decides fresh.",
+                   turn=turn, me=me)
 
 
 def start_crawl(crawl, nid: str, me: str, side: str, device: str) -> tuple[bool, str]:
@@ -217,10 +220,10 @@ def start_crawl(crawl, nid: str, me: str, side: str, device: str) -> tuple[bool,
 
 
     if not shutil.which("node"):
-        return False, "Opening a position needs Node.js on this PC's PATH (the local Showdown runs on it)."
+        return False, t("Opening a position needs Node.js on this PC's PATH (the local Showdown runs on it).")
     from .buddy import practice_pid
     if practice_pid(ROOT) is None:
-        return False, "Start the practice bot on the Buddy page first: it plays the position."
+        return False, t("Start the practice bot on the Buddy page first: it plays the position.")
     import json
     from .core.crawl_position import build
     try:
@@ -233,6 +236,5 @@ def start_crawl(crawl, nid: str, me: str, side: str, device: str) -> tuple[bool,
     _remember(me)
     _launch(f"crawl-{nid}", [str(f), "--replay", "--turn", str(spec["turn"]), "--me", me, "--side", side, "--device", device,
                              "--kind", "crawl", "--back", f"/crawler/s/{crawl.data['id']}?n={nid}"])
-    return True, (f"This position is being opened on the local Showdown (it takes a moment): accept the invite from openvgchost "
-                  f"there, signed in as {me}. The engine's own state - HP, status, boosts, PP, items, the field - with a new seed; "
-                  f"the bot decides fresh.")
+    return True, t("This position is being opened on the local Showdown (it takes a moment): accept the invite from openvgchost there, signed in as {me}. The engine's own state - HP, status, boosts, PP, items, the field - with a new seed; the bot decides fresh.",
+                   me=me)

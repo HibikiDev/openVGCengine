@@ -67,7 +67,7 @@ Ability: Blaze
     <a href="/buckets?edit={{ b.name|urlencode }}">{{ _("edit") }}</a>
     <a href="/validate?field={{ ('bucket:' ~ b.name)|urlencode }}">{{ _("Deep Dive against it") }}</a>
     <form method="post" action="/buckets/delete" onsubmit="return confirm({{ _('Delete bucket {name}?', name=b.name)|tojson|e }})" style="margin:0">
-      <input type="hidden" name="name" value="{{ b.name }}"><button class="btn alt" type="submit" style="padding:2px 12px; font-size:.85rem">{{ _("delete") }}</button></form>
+      <input type="hidden" name="name" value="{{ b.name }}"><button class="btn alt inline" type="submit" style="font-size:.85rem">{{ _("delete") }}</button></form>
   </div>
   {% endfor %}
   {% else %}<p class="muted">{{ _("No buckets yet.") }}</p>{% endif %}
