@@ -1,0 +1,312 @@
+{
+	"format": "gen7vgc2017",
+	"seed": "gen5,3173,22758,18192,38970",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Muk-Alola",
+			"item": "Figy Berry",
+			"ability": "Gluttony",
+			"moves": [
+				"Poison Jab",
+				"Protect",
+				"Knock Off",
+				"Pursuit"
+			],
+			"nature": "Sassy",
+			"evs": {
+				"hp": 252,
+				"atk": 0,
+				"def": 164,
+				"spa": 0,
+				"spd": 92,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "Magnezone",
+			"item": "Life Orb",
+			"ability": "Sturdy",
+			"moves": [
+				"Volt Switch",
+				"Hidden Power Ice",
+				"Flash Cannon",
+				"Protect"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 92,
+				"atk": 0,
+				"def": 4,
+				"spa": 156,
+				"spd": 4,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 30,
+				"atk": 31,
+				"def": 30,
+				"spe": 31,
+				"spa": 31,
+				"spd": 31
+			},
+			"level": 50,
+			"gender": "N",
+			"hpType": "Ice"
+		},
+		{
+			"name": "Mon2",
+			"species": "Garchomp",
+			"item": "Lum Berry",
+			"ability": "Rough Skin",
+			"moves": [
+				"Rock Slide",
+				"Protect",
+				"Fire Fang",
+				"Flamethrower"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 0,
+				"atk": 252,
+				"def": 0,
+				"spa": 0,
+				"spd": 4,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "Arcanine",
+			"item": "Sitrus Berry",
+			"ability": "Intimidate",
+			"moves": [
+				"Snarl",
+				"Extreme Speed",
+				"Flare Blitz",
+				"Protect"
+			],
+			"nature": "Gentle",
+			"evs": {
+				"hp": 252,
+				"atk": 0,
+				"def": 0,
+				"spa": 0,
+				"spd": 252,
+				"spe": 4
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Clefairy",
+			"item": "Iron Ball",
+			"ability": "Friend Guard",
+			"moves": [
+				"Follow Me",
+				"Moonblast",
+				"Dazzling Gleam",
+				"Wish"
+			],
+			"nature": "Sassy",
+			"evs": {
+				"hp": 252,
+				"atk": 0,
+				"def": 188,
+				"spa": 0,
+				"spd": 68,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "Porygon2",
+			"item": "Eviolite",
+			"ability": "Trace",
+			"moves": [
+				"Toxic",
+				"Tri Attack",
+				"Trick Room",
+				"Recover"
+			],
+			"nature": "Sassy",
+			"evs": {
+				"hp": 244,
+				"atk": 4,
+				"def": 140,
+				"spa": 28,
+				"spd": 92,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "Marowak-Alola",
+			"item": "Thick Club",
+			"ability": "Lightning Rod",
+			"moves": [
+				"Perish Song",
+				"Shadow Bone",
+				"Iron Head",
+				"Protect"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 252,
+				"atk": 180,
+				"def": 0,
+				"spa": 0,
+				"spd": 68,
+				"spe": 8
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "Golem-Alola",
+			"item": "Focus Sash",
+			"ability": "Galvanize",
+			"moves": [
+				"Rock Slide",
+				"Earthquake",
+				"Return",
+				"Explosion"
+			],
+			"nature": "Brave",
+			"evs": {
+				"hp": 4,
+				"atk": 252,
+				"def": 0,
+				"spa": 0,
+				"spd": 252,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"happiness": 0
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 4 1, move 3 -1",
+			"p2": "switch 3, move 2 -1"
+		},
+		{
+			"p1": "move 1 1, move 2 2",
+			"p2": "switch 4, move 1 1"
+		},
+		{
+			"p1": "move 3 2, switch 3",
+			"p2": "switch 4, move 2 -1"
+		},
+		{
+			"p1": "move 1 1, move 4 1",
+			"p2": "move 2 1, move 1 2"
+		},
+		{
+			"p1": "move 3 1, move 4 1",
+			"p2": "move 2 1, switch 4"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 3, pass"
+		},
+		{
+			"p1": "switch 4, move 4 1",
+			"p2": "move 2 1, switch 4"
+		},
+		{
+			"p1": "switch 3, move 4 1",
+			"p2": "move 2 2, move 2 1"
+		},
+		{
+			"p1": "move 2 2, switch 4",
+			"p2": "move 1, move 3"
+		},
+		{
+			"p1": "move 1 -2, switch 3",
+			"p2": "switch 4, move 1 1"
+		},
+		{
+			"p1": "switch 3, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 1 2, switch 3",
+			"p2": "move 4, move 2 1"
+		}
+	],
+	"teams": [
+		"U17-81",
+		"U17-178"
+	]
+}

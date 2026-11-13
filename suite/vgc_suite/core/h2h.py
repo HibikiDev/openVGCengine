@@ -45,7 +45,7 @@ def make_searcher(pilot, env, dev, seed: int):
 
     from vgc_trainer.model import load_policy
     from vgc_suite.formats import FORMATS
-    from .bundle import closed_searcher, live_searcher, path as pinned
+    from .bundle import live_searcher, path as pinned
     bc = load_policy(torch.load(BC_POLICY or pinned("reply_policy"), map_location=dev, weights_only=True), dev).eval()
     closed = sorted({f for f in env.formats if f is not None and not FORMATS[f].open_sheets})
     if closed:
@@ -56,7 +56,11 @@ def make_searcher(pilot, env, dev, seed: int):
             raise ValueError(f"a closed-sheet search runs one format at a time, not {sorted(map(str, set(env.formats)))}")
 
 
-        return ClosedSheetSearch(env, closed[0], lambda world: closed_searcher(pilot.policy, world, dev, seed), seed)
+
+        if pilot.preview is None:
+            raise ValueError("the tools' search needs the policy's preview head (the client's view samples the opponent's unseen mons)")
+        return ClosedSheetSearch(env, closed[0], lambda world: live_searcher(pilot.policy, world, dev, seed, bc, hidden="sample",
+                                                                             preview=pilot.preview), seed)
 
 
 

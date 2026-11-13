@@ -69,6 +69,12 @@ def closed_searcher(policy, env, dev, seed: int, **over):
 
 
 
+
+
+
+
     from vgc_trainer.search import OneStepSearch
+    if "hidden" not in over:
+        raise ValueError("closed_searcher needs an explicit view: hidden='sample' (with preview) or hidden='true'")
     return OneStepSearch(policy, env, dev, k=8, m=8, samples=32, seed=seed, replies="self", score="value", finish_switch=False,
                          greedy_column=True, cand_temp=2.0, **over)

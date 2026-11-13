@@ -1,0 +1,311 @@
+{
+	"format": "gen7vgc2017",
+	"seed": "gen5,64287,3413,63886,43036",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Kartana",
+			"item": "Focus Sash",
+			"ability": "Beast Boost",
+			"moves": [
+				"Leaf Blade",
+				"Swords Dance",
+				"Sacred Sword",
+				"Protect"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 0,
+				"atk": 252,
+				"def": 0,
+				"spa": 0,
+				"spd": 4,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "Tapu Koko",
+			"item": "Life Orb",
+			"ability": "Electric Surge",
+			"moves": [
+				"Protect",
+				"Dazzling Gleam",
+				"Volt Switch",
+				"Thunderbolt"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 0,
+				"atk": 0,
+				"def": 0,
+				"spa": 252,
+				"spd": 4,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "Porygon2",
+			"item": "Eviolite",
+			"ability": "Download",
+			"moves": [
+				"Recover",
+				"Trick Room",
+				"Return",
+				"Ice Beam"
+			],
+			"nature": "Relaxed",
+			"evs": {
+				"hp": 244,
+				"atk": 0,
+				"def": 252,
+				"spa": 12,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N",
+			"happiness": 0
+		},
+		{
+			"name": "Mon3",
+			"species": "Arcanine",
+			"item": "Aguav Berry",
+			"ability": "Intimidate",
+			"moves": [
+				"Flare Blitz",
+				"Roar",
+				"Extreme Speed",
+				"Helping Hand"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 76,
+				"atk": 252,
+				"def": 4,
+				"spa": 0,
+				"spd": 12,
+				"spe": 164
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Scizor",
+			"item": "Steelium Z",
+			"ability": "Technician",
+			"moves": [
+				"Aerial Ace",
+				"X-Scissor",
+				"Protect",
+				"Acrobatics"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 252,
+				"atk": 252,
+				"def": 0,
+				"spa": 0,
+				"spd": 4,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "Ninetales-Alola",
+			"item": "Focus Sash",
+			"ability": "Snow Warning",
+			"moves": [
+				"Roar",
+				"Aurora Veil",
+				"Freeze-Dry",
+				"Protect"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 4,
+				"atk": 0,
+				"def": 0,
+				"spa": 252,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "Marowak-Alola",
+			"item": "Thick Club",
+			"ability": "Lightning Rod",
+			"moves": [
+				"Bonemerang",
+				"Protect",
+				"Flare Blitz",
+				"Shadow Bone"
+			],
+			"nature": "Brave",
+			"evs": {
+				"hp": 252,
+				"atk": 0,
+				"def": 252,
+				"spa": 0,
+				"spd": 4,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "Tapu Koko",
+			"item": "Life Orb",
+			"ability": "Electric Surge",
+			"moves": [
+				"Taunt",
+				"Thunderbolt",
+				"Dazzling Gleam",
+				"Sky Drop"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 0,
+				"atk": 0,
+				"def": 0,
+				"spa": 252,
+				"spd": 4,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 1 -2, move 3 2",
+			"p2": "move 4 1, switch 4"
+		},
+		{
+			"p1": "pass, switch 4",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 1 2, move 1 2",
+			"p2": "move 4 1, switch 3"
+		},
+		{
+			"p1": "move 4, switch 3",
+			"p2": "move 2 -2, move 1 1"
+		},
+		{
+			"p1": "move 2, move 4 1",
+			"p2": "move 4 1, move 3 2"
+		},
+		{
+			"p1": "move 4, switch 3",
+			"p2": "move 2 -2, move 1 2"
+		},
+		{
+			"p1": "move 3 2, move 3 1",
+			"p2": "move 3, move 4 1"
+		},
+		{
+			"p1": "switch 3, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 4 2, move 3 -1",
+			"p2": "move 1 1, move 1 1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "pass, switch 3"
+		},
+		{
+			"p1": "move 3 2, move 1 1",
+			"p2": "move 2 2, move 4 1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 4, pass"
+		}
+	],
+	"teams": [
+		"V17-13",
+		"U17-92"
+	]
+}

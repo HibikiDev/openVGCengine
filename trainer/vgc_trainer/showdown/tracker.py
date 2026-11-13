@@ -123,6 +123,20 @@ def _any_move(name: str) -> int:
 STALL_IDS = {_any_move(n) for n in STALL_MOVES}
 METRONOME_ITEM = ve.lookup("item", "Metronome")
 EV_MOVE, EV_SWITCH, EV_FAINT = 1, 2, 3
+ZYGARDE_COMPLETE = ve.lookup("species", "zygardecomplete")
+
+PREVIEW_MASKED = ("greninja", "gourgeist", "pumpkaboo", "xerneas", "silvally", "urshifu", "dudunsparce")
+
+def preview_species(name: str) -> str:
+
+
+
+    sid = to_id(name)
+    if sid in ("zaciancrowned", "zamazentacrowned"):
+        return sid[:-7]
+    if sid == "rockruffdusk":
+        return "rockruff"
+    return next((f for f in PREVIEW_MASKED if sid.startswith(f)), name)
 
 
 def to_id(s: str) -> str:
@@ -293,8 +307,9 @@ class Tracker:
         self.format_index, self.open_sheets = FORMATS[fmt]
         self.foe = "p2" if me == "p1" else "p1"
         if not self.open_sheets:
-            foe_sheet = [{"name": s.get("name") or s["species"], "species": s["species"], "item": "", "ability": "", "moves": []}
-                         for s in foe_sheet]
+
+            foe_sheet = [{"name": s.get("name") or s["species"], "species": preview_species(s["species"]), "item": "", "ability": "",
+                          "moves": []} for s in foe_sheet]
         self.mons = {self.me: [self._from_sheet(s, self.fmt) for s in my_sheet], self.foe: [self._from_sheet(s, self.fmt) for s in foe_sheet]}
         for m in self.mons[self.me] + self.mons[self.foe]:
 
@@ -452,6 +467,10 @@ class Tracker:
             return
         if request.get("active"):
             self._move_request = request
+            for side_ in (self.me, self.foe):
+                for m_ in self.mons[side_]:
+                    if m_.vol.pop("choicelock_gone", None):
+                        m_.vol.pop("choicelock", None)
         party = request["side"]["pokemon"]
 
         for k, p in enumerate(party[:2]):
@@ -481,8 +500,13 @@ class Tracker:
 
                 m.item = ve.lookup("item", p["item"]) if p.get("item") else 0
                 if "transform" in m.vol and p.get("moves"):
-                    m.moves = [_request_move(x) for x in p["moves"]][:4]
-                    m.moves += [0] * (4 - len(m.moves))
+                    new = [_request_move(x) for x in p["moves"]][:4]
+                    new += [0] * (4 - len(new))
+
+
+                    m.pp = [m.pp[k] if new[k] and new[k] == m.moves[k] else (min(5, ve.max_pp(new[k], m.fmt)) if new[k] else 0)
+                            for k in range(4)]
+                    m.moves = new
             if "raw" in m.vol:
                 m.stats[1:] = m.vol["raw"]
             self._hp(side, m, cond)
@@ -526,6 +550,14 @@ class Tracker:
         if kind in ("switch", "drag"):
             side, idx, m = self._mon(a[0], real=False, details=a[1])
             m.gender = details_gender(a[1])
+            shown = a[1].split(",")[0]
+            if (side == self.foe and not self.open_sheets and to_id(shown) != to_id(m.sheet["species"])
+                    and to_id(preview_species(shown)) == to_id(m.sheet["species"])):
+
+                sp = ve.lookup("species", shown)
+                if sp and sp != m.species:
+                    m.species = sp
+                    m.types = m.live_types()
             slot = self._slot(a[0])
             if side == self.foe and m.slot is not None and m.slot != slot and not m.fainted:
 
@@ -647,6 +679,12 @@ class Tracker:
             self._future_hit = None
             for side in (self.me, self.foe):
                 for m in self.mons[side]:
+
+
+                    if m.status == "tox" and m.slot is not None and not m.fainted and m.vol.get("tox_counted") != self.turn:
+                        m.toxic_stage = min(15, m.toxic_stage + 1)
+            for side in (self.me, self.foe):
+                for m in self.mons[side]:
                     if m.vol.get("protect") and m.stall_turn != self.turn:
                         m.vol["protect"], m.protect_streak = False, 0
             for side in (self.me, self.foe):
@@ -754,13 +792,18 @@ class Tracker:
                 of = next((x[5:] for x in a[2:] if x.startswith("[of] ")), None)
                 if of and of[2] in "ab":
                     m.vol["leechseed"] = {"p1": 0, "p2": 1}[of[:2]] * 2 + "ab".index(of[2]) + 1
-            if frm and "psn" in frm and m.status == "tox":
+
+
+            if m.status == "tox" and frm and ("psn" in frm or (kind == "-heal" and frm == "[from] ability: Poison Heal")):
                 m.toxic_stage = min(15, m.toxic_stage + 1)
+                m.vol["tox_counted"] = self.turn
             return
         if kind == "-status":
             side, idx, m = self._mon(a[0])
             m.status = a[1]
             m.toxic_stage = 0
+            if a[1] == "tox" and "[from] item: Toxic Orb" in a[2:]:
+                m.vol["tox_counted"] = self.turn
             m.status_tries, m.rest_sleep = 0, "[from] move: Rest" in a[2:]
             if a[1] == "slp":
                 m.vol.pop("yawn", None)
@@ -929,10 +972,16 @@ class Tracker:
             side, idx, m = self._mon(a[0])
             sp = ve.lookup("species", a[1].split(",")[0])
 
-            if sp and sp == ve.lookup("species", "greninja") and m.species == ve.lookup("species", "greninjaash"):
+
+            if (sp and sp == ve.lookup("species", "greninja") and m.species == ve.lookup("species", "greninjaash")
+                    and (side == self.me or self.open_sheets)):
                 sp = ve.lookup("species", "greninjabond")
             if sp:
                 old_species, m.species = m.species, sp
+                if sp == ZYGARDE_COMPLETE and not m.fainted:
+
+
+                    m.mega = True
                 m.types = m.live_types()
                 m.tera_types()
 
@@ -1046,7 +1095,9 @@ class Tracker:
 
                 m.vol["ngas"], m.ability = NEUTRALIZING_GAS, 0
             if m.vol.get("choicelock") not in (None, True) and m.vol["choicelock"] not in m.moves:
-                m.vol.pop("choicelock")
+
+
+                m.vol["choicelock_gone"] = True
             if side == self.me and m.stats:
                 m.stats[1:] = m.vol["raw"]
             return
@@ -1389,6 +1440,13 @@ class Tracker:
             m.vol["recharge"] = True
             return
         if kind == "move":
+
+
+
+
+            pursuit_hit = to_id(a[1]) == "pursuit" and "[from] move: Pursuit" in a[3:]
+            if pursuit_hit:
+                a = [x for x in a if x != "[from] move: Pursuit"]
             z_name, was_z = None, False
             if self._zpower is not None and self._zpower == self._mon(a[0])[:2] and not any(x.startswith("[from]") for x in a[3:]):
                 was_z = True
@@ -1470,7 +1528,7 @@ class Tracker:
 
 
             if side == self.me and mid and mid in m.moves and not any(x.startswith("[from]") for x in a[3:]) and "charging" not in m.vol:
-                self._deduct_pp(side, m, mid, a[2] if len(a) > 2 else "")
+                self._deduct_pp(side, m, mid, "" if pursuit_hit else a[2] if len(a) > 2 else "")
             elif side == self.me and was_max and not any(x.startswith("[from]") for x in a[3:]) and m.slot is not None:
                 k = self._max_slot(m, a[1])
                 if k is not None:
@@ -1484,7 +1542,11 @@ class Tracker:
             elif side == self.me and z_name is not None:
 
 
-                base = next((x for x in m.moves if x and ve.z_move_of(m.item, m.species, x, m.fmt) == mid), 0)
+                gives = [x for x in m.moves if x and ve.z_move_of(m.item, m.species, x, m.fmt) == mid]
+
+
+                chosen = self._my_choice[m.slot] if m.slot is not None else None
+                base = m.moves[chosen] if chosen is not None and chosen < 4 and m.moves[chosen] in gives else (gives[0] if gives else 0)
                 if base:
                     self._deduct_pp(side, m, base, a[2] if len(a) > 2 else "")
             if "charging" in m.vol and "[still]" not in a[3:]:
@@ -1515,6 +1577,11 @@ class Tracker:
                 m.stall_turn = self.turn
             if m.item in CHOICE_ITEMS and not self.magic_room:
                 m.vol.setdefault("choicelock", mid)
+                if (was_max or z_name is not None) and m.vol["choicelock"] == mid:
+
+
+
+                    m.vol["choicelock_gone"] = True
             if choice_fail:
                 self._event(EV_MOVE, (side, idx), None, 0, outcome=-1)
                 self._last_move = None
@@ -1531,7 +1598,18 @@ class Tracker:
             m.last_move = max_base if was_max else mid
             m.last_move_z = was_z
             m.last_move_max = was_max
-            self._event(EV_MOVE, (side, idx), None, mid, outcome=1)
+
+
+
+            first = None
+
+            spread = next((x[9:] for x in a[3:] if x.startswith("[spread] ")), "") if mid and ve.move_category(mid) != "status" else ""
+            pos = spread.split(",")[0] if spread else ""
+            if len(pos) == 3 and pos[:2] in ("p1", "p2") and pos[2] in "ab":
+                at = [k for k, o in enumerate(self.mons[pos[:2]]) if o.slot == "ab".index(pos[2]) and not o.fainted]
+                if at and pos != a[0][:3]:
+                    first = (pos[:2], at[0])
+            self._event(EV_MOVE, (side, idx), first, mid, outcome=1)
             self._last_move = (side, idx, mid, len(self.history) - 1, a[0][:3])
             return
         if kind == "cant" and len(a) > 1 and a[1] == "Shell Trap":

@@ -1,0 +1,311 @@
+{
+	"format": "gen6vgc2014",
+	"seed": "gen5,6457,27861,23757,19004",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Hydreigon",
+			"item": "Focus Sash",
+			"ability": "Levitate",
+			"moves": [
+				"Draco Meteor",
+				"Earth Power",
+				"Protect",
+				"Dark Pulse"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 4,
+				"atk": 0,
+				"def": 0,
+				"spa": 252,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "Gothitelle",
+			"item": "Sitrus Berry",
+			"ability": "Shadow Tag",
+			"moves": [
+				"Tickle",
+				"Rest",
+				"Psyshock",
+				"Psychic"
+			],
+			"nature": "Relaxed",
+			"evs": {
+				"hp": 252,
+				"atk": 0,
+				"def": 156,
+				"spa": 100,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "Kangaskhan",
+			"item": "Kangaskhanite",
+			"ability": "Scrappy",
+			"moves": [
+				"Return",
+				"Protect",
+				"Power-Up Punch",
+				"Fake Out"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 4,
+				"atk": 196,
+				"def": 4,
+				"spa": 0,
+				"spd": 54,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"happiness": 175
+		},
+		{
+			"name": "Mon3",
+			"species": "Rotom-Heat",
+			"item": "Safety Goggles",
+			"ability": "Levitate",
+			"moves": [
+				"Will-O-Wisp",
+				"Overheat",
+				"Thunderbolt",
+				"Protect"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 244,
+				"atk": 0,
+				"def": 100,
+				"spa": 116,
+				"spd": 4,
+				"spe": 44
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Gliscor",
+			"item": "Toxic Orb",
+			"ability": "Poison Heal",
+			"moves": [
+				"Protect",
+				"Earthquake",
+				"Cross Poison",
+				"Roost"
+			],
+			"nature": "Impish",
+			"evs": {
+				"hp": 252,
+				"atk": 4,
+				"def": 252,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "Meowstic",
+			"item": "Mental Herb",
+			"ability": "Prankster",
+			"moves": [
+				"Charm",
+				"Light Screen",
+				"Trick Room",
+				"Swagger"
+			],
+			"nature": "Calm",
+			"evs": {
+				"hp": 4,
+				"atk": 0,
+				"def": 4,
+				"spa": 0,
+				"spd": 248,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "Pachirisu",
+			"item": "Sitrus Berry",
+			"ability": "Volt Absorb",
+			"moves": [
+				"Protect",
+				"Follow Me",
+				"Nuzzle",
+				"Super Fang"
+			],
+			"nature": "Impish",
+			"evs": {
+				"hp": 252,
+				"atk": 0,
+				"def": 156,
+				"spa": 0,
+				"spd": 100,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "Mamoswine",
+			"item": "Choice Scarf",
+			"ability": "Thick Fat",
+			"moves": [
+				"Icicle Crash",
+				"Ice Shard",
+				"Rock Slide",
+				"Earthquake"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 36,
+				"atk": 252,
+				"def": 124,
+				"spa": 0,
+				"spd": 92,
+				"spe": 4
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"turns": [
+		{
+			"p1": "switch 4, move 4 1",
+			"p2": "move 1, move 1 2"
+		},
+		{
+			"p1": "move 4, move 1 2",
+			"p2": "move 3 1, move 4 1"
+		},
+		{
+			"p1": "move 3 2, move 4 2",
+			"p2": "move 3 -2, move 1 1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "pass, switch 4"
+		},
+		{
+			"p1": "move 2 1, switch 3",
+			"p2": "move 3 1, move 2 -1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 3, pass"
+		},
+		{
+			"p1": "switch 4, move 3 1",
+			"p2": "move 2, move 2 2"
+		},
+		{
+			"p1": "move 1 1, move 3 -1",
+			"p2": "move 3 1, move 2 1"
+		},
+		{
+			"p1": "switch 3, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 3 2, move 3 -1 mega",
+			"p2": "move 1, move 2 2"
+		},
+		{
+			"p1": "move 3 -2, move 4 -1",
+			"p2": "move 4 2, move 2 2"
+		},
+		{
+			"p1": "pass, switch 4",
+			"p2": "pass, pass"
+		}
+	],
+	"teams": [
+		"U14-140",
+		"U14-165"
+	]
+}

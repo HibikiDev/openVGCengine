@@ -1,0 +1,311 @@
+{
+	"format": "gen6vgc2016",
+	"seed": "gen5,58525,28470,29876,53837",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Talonflame",
+			"item": "Life Orb",
+			"ability": "Gale Wings",
+			"moves": [
+				"Brave Bird",
+				"Flare Blitz",
+				"Quick Guard",
+				"Tailwind"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 0,
+				"atk": 252,
+				"def": 0,
+				"spa": 0,
+				"spd": 4,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "Salamence",
+			"item": "Salamencite",
+			"ability": "Intimidate",
+			"moves": [
+				"Double-Edge",
+				"Hyper Voice",
+				"Draco Meteor",
+				"Protect"
+			],
+			"nature": "Naive",
+			"evs": {
+				"hp": 20,
+				"atk": 108,
+				"def": 4,
+				"spa": 124,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "Xerneas",
+			"item": "Power Herb",
+			"ability": "Fairy Aura",
+			"moves": [
+				"Moonblast",
+				"Dazzling Gleam",
+				"Geomancy",
+				"Protect"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 4,
+				"atk": 0,
+				"def": 0,
+				"spa": 252,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "Smeargle",
+			"item": "Focus Sash",
+			"ability": "Moody",
+			"moves": [
+				"Dark Void",
+				"Follow Me",
+				"Fake Out",
+				"Spiky Shield"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 4,
+				"atk": 0,
+				"def": 0,
+				"spa": 252,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Rayquaza",
+			"item": "Life Orb",
+			"ability": "Air Lock",
+			"moves": [
+				"Overheat",
+				"Extreme Speed",
+				"Dragon Ascent",
+				"Draco Meteor"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 4,
+				"atk": 252,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "Raichu",
+			"item": "Assault Vest",
+			"ability": "Lightning Rod",
+			"moves": [
+				"Volt Tackle",
+				"Fake Out",
+				"Hidden Power Ice",
+				"Nuzzle"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 0,
+				"atk": 252,
+				"def": 0,
+				"spa": 0,
+				"spd": 4,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 30,
+				"atk": 31,
+				"def": 30,
+				"spe": 31,
+				"spa": 31,
+				"spd": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"hpType": "Ice"
+		},
+		{
+			"name": "Mon2",
+			"species": "Yveltal",
+			"item": "Dread Plate",
+			"ability": "Dark Aura",
+			"moves": [
+				"Sucker Punch",
+				"Snarl",
+				"Dark Pulse",
+				"Acrobatics"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 148,
+				"atk": 0,
+				"def": 0,
+				"spa": 108,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "Smeargle",
+			"item": "Focus Sash",
+			"ability": "Moody",
+			"moves": [
+				"Crafty Shield",
+				"Spiky Shield",
+				"Dark Void",
+				"Geomancy"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 252,
+				"atk": 0,
+				"def": 4,
+				"spa": 0,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 1 -2, move 3 -1",
+			"p2": "move 2 1, move 2 2"
+		},
+		{
+			"p1": "switch 4, move 4",
+			"p2": "move 2 2 mega, move 2 1"
+		},
+		{
+			"p1": "move 2, move 2",
+			"p2": "move 4 1, move 2 2"
+		},
+		{
+			"p1": "switch 4, move 2 mega",
+			"p2": "move 3 1, move 3 2"
+		},
+		{
+			"p1": "switch 4, switch 3",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 4, move 2",
+			"p2": "switch 3, move 1 2"
+		},
+		{
+			"p1": "move 2, move 1 2",
+			"p2": "switch 4, move 2 -1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "pass, switch 3"
+		},
+		{
+			"p1": "move 3 1, move 1 1",
+			"p2": "move 4, move 3 -1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 4, pass"
+		},
+		{
+			"p1": "move 3 -2, move 1 -1",
+			"p2": "move 1 -2, move 4 2"
+		},
+		{
+			"p1": "pass, move 3",
+			"p2": "move 4 1, pass"
+		}
+	],
+	"teams": [
+		"V16-4",
+		"U16-52"
+	]
+}

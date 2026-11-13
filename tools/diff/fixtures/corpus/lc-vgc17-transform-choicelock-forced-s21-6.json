@@ -1,0 +1,310 @@
+{
+	"format": "gen7vgc2017",
+	"seed": "gen5,20204,49243,55519,63111",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Klefki",
+			"item": "Wiki Berry",
+			"ability": "Prankster",
+			"moves": [
+				"Metal Sound",
+				"Light Screen",
+				"Reflect",
+				"Flash Cannon"
+			],
+			"nature": "Bold",
+			"evs": {
+				"hp": 252,
+				"atk": 0,
+				"def": 12,
+				"spa": 68,
+				"spd": 172,
+				"spe": 4
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "Buzzwole",
+			"item": "Assault Vest",
+			"ability": "Beast Boost",
+			"moves": [
+				"Superpower",
+				"Poison Jab",
+				"Ice Punch",
+				"Bulldoze"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 44,
+				"atk": 220,
+				"def": 4,
+				"spa": 0,
+				"spd": 140,
+				"spe": 100
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "Golduck",
+			"item": "Waterium Z",
+			"ability": "Swift Swim",
+			"moves": [
+				"Protect",
+				"Scald",
+				"Hydro Pump",
+				"Disable"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 100,
+				"atk": 0,
+				"def": 4,
+				"spa": 252,
+				"spd": 28,
+				"spe": 124
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "Tapu Koko",
+			"item": "Life Orb",
+			"ability": "Electric Surge",
+			"moves": [
+				"Protect",
+				"Thunder",
+				"Dazzling Gleam",
+				"Volt Switch"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 0,
+				"atk": 0,
+				"def": 0,
+				"spa": 252,
+				"spd": 4,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Arcanine",
+			"item": "Assault Vest",
+			"ability": "Intimidate",
+			"moves": [
+				"Flare Blitz",
+				"Extreme Speed",
+				"Bulldoze",
+				"Flame Charge"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 76,
+				"atk": 252,
+				"def": 4,
+				"spa": 0,
+				"spd": 12,
+				"spe": 164
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "Tapu Bulu",
+			"item": "Figy Berry",
+			"ability": "Grassy Surge",
+			"moves": [
+				"Protect",
+				"Bulk Up",
+				"Horn Leech",
+				"Superpower"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 252,
+				"atk": 80,
+				"def": 20,
+				"spa": 0,
+				"spd": 156,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "Nihilego",
+			"item": "Life Orb",
+			"ability": "Beast Boost",
+			"moves": [
+				"Sludge Bomb",
+				"Power Gem",
+				"Hidden Power",
+				"Protect"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 4,
+				"atk": 0,
+				"def": 0,
+				"spa": 252,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "Smeargle",
+			"item": "Choice Scarf",
+			"ability": "Own Tempo",
+			"moves": [
+				"Mat Block",
+				"Spore",
+				"Fake Out",
+				"Transform"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 252,
+				"atk": 4,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 1 -2, switch 3",
+			"p2": "move 4 2, switch 3"
+		},
+		{
+			"p1": "move 4 2, move 2 1",
+			"p2": "move 1 -2, move 3 -1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "pass, switch 4"
+		},
+		{
+			"p1": "move 1 2, move 2 1",
+			"p2": "move 1 2, move 4 1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 3, pass"
+		},
+		{
+			"p1": "move 3, move 2 -1",
+			"p2": "move 4 2, move 4 -1"
+		},
+		{
+			"p1": "move 1 1, move 4 -1",
+			"p2": "move 1, move 4 1"
+		},
+		{
+			"p1": "move 4 -2, move 4 2",
+			"p2": "move 1, move 4 2"
+		},
+		{
+			"p1": "pass, switch 4",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 4 -2, move 4 -1",
+			"p2": "move 1, move 1"
+		},
+		{
+			"p1": "pass, switch 3",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "switch 3, pass",
+			"p2": "pass, pass"
+		}
+	],
+	"teams": [
+		"V17-11",
+		"V17-20"
+	]
+}

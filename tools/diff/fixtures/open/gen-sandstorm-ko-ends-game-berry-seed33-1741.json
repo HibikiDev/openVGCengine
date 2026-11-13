@@ -1,0 +1,294 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,64774,35656,5035,25893",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Morpeko",
+			"item": "Charcoal",
+			"ability": "Hunger Switch",
+			"moves": [
+				"Thunder Punch",
+				"Foul Play",
+				"Psychic Fangs",
+				"Protect"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 2,
+				"atk": 32,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "Hydrapple",
+			"item": "Life Orb",
+			"ability": "Supersweet Syrup",
+			"moves": [
+				"Leaf Storm",
+				"Dragon Pulse",
+				"Double-Edge",
+				"Protect"
+			],
+			"nature": "Quiet",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 0,
+				"spa": 32,
+				"spd": 2,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "Sandaconda",
+			"item": "White Herb",
+			"ability": "Sand Spit",
+			"moves": [
+				"Earthquake",
+				"Rock Slide",
+				"Protect",
+				"High Horsepower"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 2,
+				"atk": 32,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "Meowstic-F",
+			"item": "Psychic Seed",
+			"ability": "Competitive",
+			"moves": [
+				"Expanding Force",
+				"Thunderbolt",
+				"Protect",
+				"Helping Hand"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 2,
+				"atk": 0,
+				"def": 0,
+				"spa": 32,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Hawlucha",
+			"item": "Hawluchanite",
+			"ability": "Limber",
+			"moves": [
+				"Superpower",
+				"Dual Wingbeat",
+				"Mega Kick",
+				"Protect"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 2,
+				"atk": 32,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "Slowbro",
+			"item": "Slowbronite",
+			"ability": "Own Tempo",
+			"moves": [
+				"Surf",
+				"Future Sight",
+				"Blizzard",
+				"Protect"
+			],
+			"nature": "Quiet",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 0,
+				"spa": 32,
+				"spd": 2,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "Leafeon",
+			"item": "Sitrus Berry",
+			"ability": "Chlorophyll",
+			"moves": [
+				"Leaf Blade",
+				"Double-Edge",
+				"Protect",
+				"Seed Bomb"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 2,
+				"atk": 32,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "Lycanroc",
+			"item": "Fairy Feather",
+			"ability": "Sand Rush",
+			"moves": [
+				"Rock Blast",
+				"Close Combat",
+				"Protect",
+				"Double Team"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 2,
+				"atk": 32,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 3 1, move 1 -1",
+			"p2": "move 2 -2 mega, move 1"
+		},
+		{
+			"p1": "switch 3, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 4 -2, move 1 -1",
+			"p2": "move 2 -2, switch 4"
+		},
+		{
+			"p1": "switch 4, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 2 2, move 1 2",
+			"p2": "move 2 -2, move 1 1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 3, switch 4"
+		},
+		{
+			"p1": "move 2 2, move 2 2",
+			"p2": "move 2 2, move 1"
+		},
+		{
+			"p1": "move 3, pass",
+			"p2": "move 1 2, pass"
+		}
+	],
+	"teams": [
+		"GU-536",
+		"GU-1755"
+	]
+}

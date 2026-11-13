@@ -794,6 +794,10 @@ fn switch_in_seed(battle: &mut Battle, actor: Actor) {
 fn switch_in_late(battle: &mut Battle, actor: Actor) {
     if !mon_at(battle, actor).is_fainted() {
 
+
+
+        check_white_herb_for_all_actives(battle);
+
         if mon_at(battle, actor).ability == engine_data::abilities_table::ability_ids::COSTAR {
             costar(battle, actor);
         }
@@ -1190,10 +1194,6 @@ fn switch_in_events_before_items(battle: &mut Battle, actor: Actor) {
     apply_hazards_on_switch_in(battle, actor);
     if !mon_at(battle, actor).is_fainted() {
         crate::abilities::on_switch_in(battle, actor);
-
-
-
-        check_white_herb_for_all_actives(battle);
     }
 }
 
@@ -1281,6 +1281,7 @@ fn try_mega_evolve(battle: &mut Battle, actor: Actor) {
     }
     mon.set_species_types(crate::mon::species_types(data.types));
     mon.base_ability = data.abilities[0];
+    let old_ability = mon.ability;
 
     set_ability(mon, data.abilities[0]);
     mon.recalc_stats(rules, data.base_stats);
@@ -1288,6 +1289,14 @@ fn try_mega_evolve(battle: &mut Battle, actor: Actor) {
 
     mon.move_result_this_turn = crate::mon::move_result::SUCCESS;
     stamp_ability_order(battle, actor);
+
+
+
+    if matches!(old_ability, engine_data::abilities_table::ability_ids::CLOUDNINE | engine_data::abilities_table::ability_ids::AIRLOCK)
+        && old_ability != data.abilities[0]
+    {
+        suppressor_end_formes(battle);
+    }
 }
 
 
@@ -3547,6 +3556,10 @@ fn set_ability(m: &mut Mon, ability: engine_data::abilities_table::AbilityId) ->
         m.volatiles.conds.remove(crate::mon::condition_ids::PARADOX);
         m.flags.clear(crate::mon::mon_flags::UNNERVED);
     }
+
+
+
+    m.volatiles.clear(volatile_flags::PROTEAN);
     if m.volatiles.has(volatile_flags::GASTRO_ACID) || m.flags.has(mon_flags::NGAS_SUPPRESSED) {
         m.suppressed_ability = ability;
         false
@@ -5990,10 +6003,17 @@ fn hit_checks_before_accuracy(battle: &mut Battle, actor: Actor, target: Actor, 
 
 
 
+
+
+
+
+
+    let priority_of = if bounced { target } else { actor };
+    let move_priority = effective_priority(battle.rules(), mon_at(battle, priority_of), move_data, move_id, battle.field.terrain);
     let guarded_priority = if effects.quick_guard_base_priority {
         move_id != moves_table::move_ids::FEINT && move_data.priority > 0
     } else {
-        effective_priority(battle.rules(), mon_at(battle, actor), move_data, move_id, battle.field.terrain) > 0
+        move_priority > 0
     };
 
 
@@ -6011,7 +6031,7 @@ fn hit_checks_before_accuracy(battle: &mut Battle, actor: Actor, target: Actor, 
 
 
 
-    if effective_priority(battle.rules(), mon_at(battle, actor), move_data, move_id, battle.field.terrain) > 0 && battle.field.terrain == crate::field::Terrain::Psychic && target.side != actor.side && is_grounded(mon_at(battle, target)) {
+    if move_priority > 0 && battle.field.terrain == crate::field::Terrain::Psychic && target.side != actor.side && is_grounded(mon_at(battle, target)) {
         return false;
     }
 
@@ -12517,7 +12537,11 @@ fn execute_action(
 
         let target = hits.iter().flatten().next().map_or(crate::event::NO_MON, |h| seen_before[(h.target.side * 2 + h.target.slot) as usize]);
         let went_off = battle.history.since_mut(cursor).find(|e| e.kind == EventKind::Move && e.actor == packed).map(|e| e.target = target);
-        if went_off.is_none() {
+
+
+
+        let held_aloft = went_off.is_none() && in_sky_drop(mon_at(battle, actor));
+        if went_off.is_none() && !held_aloft {
 
             battle.history.push(Event { actor: packed, kind: EventKind::Move, target, subject: 0, outcome: -1 });
         }
@@ -14648,10 +14672,14 @@ fn use_move_inner_body(
         move_data.contact = false;
     }
     if move_id == moves_table::move_ids::SHELLSIDEARM {
-        if let Some(t) = targets.iter().flatten().next().copied() {
+
+
+
+        let fainted_ally = (target_slot >= 2).then(|| Actor { side: actor.side, slot: target_slot - 2 }).filter(|&a| a != actor && mon_at(battle, a).is_fainted());
+        if let Some(t) = targets.iter().flatten().next().copied().or(fainted_ally) {
             let (u, d) = (mon_at(battle, actor), mon_at(battle, t));
             let wonder = d.flags.has(crate::mon::mon_flags::WONDER_ROOM);
-            let stat = |m: &Mon, s: Stat, b: Stat| apply_boost(m.stats[s as usize] as u32, m.boosts[b as usize]) as i64;
+            let stat = |m: &Mon, s: Stat, b: Stat| apply_boost(m.stats[s as usize] as u32, if m.is_fainted() { 0 } else { m.boosts[b as usize] }) as i64;
             let def = stat(d, Stat::Def, if wonder { Stat::SpD } else { Stat::Def });
             let spd = stat(d, Stat::SpD, if wonder { Stat::Def } else { Stat::SpD });
             let physical = 22 * 90 * stat(u, Stat::Atk, Stat::Atk) / def.max(1) / 50;
@@ -15713,7 +15741,9 @@ fn use_move_inner_body(
 
 
 
-    let blown = matches!(move_id, moves_table::move_ids::STEELBEAM | moves_table::move_ids::MINDBLOWN) && total_damage_no_sub == 0;
+
+
+    let blown = matches!(move_id, moves_table::move_ids::STEELBEAM | moves_table::move_ids::MINDBLOWN) && total_damage_no_sub == 0 && !any_hit;
     if blown && !mon_at(battle, actor).is_fainted() {
         damage_event_ties(battle, actor, rng);
     }
@@ -16033,14 +16063,25 @@ fn order28_tie_rank(battle: &Battle, rng: &mut Rng) -> [[u8; 2]; 2] {
         for slot in 0..2u8 {
             let a = Actor { side, slot };
             let m = mon_at(battle, a);
-            if m.is_fainted()
 
-                || !matches!(real_ability(m), ability_ids::SPEEDBOOST | ability_ids::MOODY | ability_ids::HARVEST | ability_ids::PICKUP | ability_ids::CUDCHEW | ability_ids::SLOWSTART)
-            {
+
+
+
+
+
+            if !matches!(real_ability(m), ability_ids::SPEEDBOOST | ability_ids::MOODY | ability_ids::HARVEST | ability_ids::PICKUP | ability_ids::CUDCHEW | ability_ids::SLOWSTART) {
                 continue;
             }
-            let speed = effective_speed(&battle.sides[side as usize].side_conditions, m, battle.weather(), battle.field.terrain, battle.rules()) as i64;
-            let speed = if battle.field.trick_room_turns > 0 { -speed } else { speed };
+            let trick_room = battle.field.trick_room_turns > 0;
+            let speed = if m.is_fainted() {
+
+
+                let raw = m.stats[Stat::Spe as usize] as i64;
+                if trick_room && battle.rules().trick_room_speed_underflow { raw - 10000 } else { raw }
+            } else {
+                let speed = effective_speed(&battle.sides[side as usize].side_conditions, m, battle.weather(), battle.field.terrain, battle.rules()) as i64;
+                if trick_room { -speed } else { speed }
+            };
             holders[n] = (a, speed, real_ability(m) == ability_ids::MOODY);
             n += 1;
         }
@@ -17010,6 +17051,10 @@ fn apply_residual_inner(battle: &mut Battle, rng: &mut Rng) -> bool {
     let (future_order, future_n) = future_attack_order(battle, rng);
     let order28_rank = order28_tie_rank(battle, rng);
 
+
+
+    let status_at_start: [[Status; 2]; 2] = [0u8, 1].map(|side| [0u8, 1].map(|slot| mon_at(battle, Actor { side, slot }).status));
+
     for a in all_actors() {
         let code = mon_at(battle, a).syrup_source;
         if mon_at(battle, a).syrup_turns > 0 && !active_by_code(battle, code).is_some_and(|src| !mon_at(battle, src).is_fainted()) {
@@ -17312,7 +17357,9 @@ fn apply_residual_inner(battle: &mut Battle, rng: &mut Rng) -> bool {
             .into_iter()
             .filter(|&a| {
                 let m = mon_at(battle, a);
-                !m.is_fainted() && if burn { m.status == Status::Burn } else { matches!(m.status, Status::Poison | Status::Toxic) }
+                !m.is_fainted()
+                    && status_at_start[a.side as usize][a.slot as usize] == m.status
+                    && if burn { m.status == Status::Burn } else { matches!(m.status, Status::Poison | Status::Toxic) }
             })
             .map(|a| (a, mon_at(battle, a).speed_cache))
             .collect();
@@ -17637,6 +17684,7 @@ fn apply_residual_inner(battle: &mut Battle, rng: &mut Rng) -> bool {
     perish_order.sort_by_key(|&(_, speed)| std::cmp::Reverse(speed));
     let mut faint_pending = false;
     let mut ended_in_perish = false;
+    let mut perish_unnoticed: [[bool; 2]; 2] = [[false; 2]; 2];
     for (actor, _) in perish_order {
         let ko = perish_kos[actor.side as usize][actor.slot as usize];
         if ended_in_perish {
@@ -17649,8 +17697,28 @@ fn apply_residual_inner(battle: &mut Battle, rng: &mut Rng) -> bool {
             let hp = mon.hp;
             apply_damage_gated(rules, mon, hp, true);
             faint_pending = true;
-        } else if faint_pending && wiped(battle) {
-            ended_in_perish = true;
+            perish_unnoticed[actor.side as usize][actor.slot as usize] = true;
+        } else {
+            perish_unnoticed = [[false; 2]; 2];
+            if faint_pending && wiped(battle) {
+                ended_in_perish = true;
+            }
+        }
+    }
+
+
+
+    {
+        let f = &battle.field;
+        let field_timer = f.terrain_turns > 0 || f.trick_room_turns > 0 || f.gravity_turns > 0 || f.magic_room_turns > 0
+            || f.wonder_room_turns > 0 || f.fairy_lock_turns > 0 || f.mud_sport_turns > 0 || f.water_sport_turns > 0;
+        let side_timer = battle.sides.iter().any(|sd| {
+            let c = &sd.side_conditions;
+            c.reflect_turns > 0 || c.light_screen_turns > 0 || c.aurora_veil_turns > 0 || c.tailwind_turns > 0 || c.safeguard_turns > 0
+                || c.mist_turns > 0 || c.lucky_chant_turns > 0 || c.sea_of_fire_turns > 0 || c.swamp_turns > 0 || c.rainbow_turns > 0
+        });
+        if field_timer || side_timer {
+            perish_unnoticed = [[false; 2]; 2];
         }
     }
     if ended_in_perish {
@@ -17683,7 +17751,9 @@ fn apply_residual_inner(battle: &mut Battle, rng: &mut Rng) -> bool {
             for slot in 0..2u8 {
                 let actor = Actor { side, slot };
                 let m = mon_at(battle, actor);
-                if m.is_fainted() {
+
+                let unnoticed_harvest = perish_unnoticed[side as usize][slot as usize] && m.ability == ability_ids::HARVEST;
+                if m.is_fainted() && !unnoticed_harvest {
                     continue;
                 }
                 let speed = effective_speed(&battle.sides[side as usize].side_conditions, m, battle.weather(), battle.field.terrain, battle.rules()) as i64;
@@ -17697,8 +17767,21 @@ fn apply_residual_inner(battle: &mut Battle, rng: &mut Rng) -> bool {
             }
         }
         stage.sort_by_key(|&(a, sub, speed)| (std::cmp::Reverse(speed), sub, order28_rank[a.side as usize][a.slot as usize]));
+        let mut first = true;
         for (actor, sub, _) in stage {
+            let first_handler = std::mem::replace(&mut first, false);
             if mon_at(battle, actor).is_fainted() {
+
+
+
+                if first_handler
+                    && sub == 2
+                    && perish_unnoticed[actor.side as usize][actor.slot as usize]
+                    && mon_at(battle, actor).ability == ability_ids::HARVEST
+                    && weather != crate::field::Weather::Sun
+                {
+                    rng.chance(1, 2);
+                }
                 continue;
             }
 

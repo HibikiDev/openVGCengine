@@ -1,0 +1,310 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,58513,63382,31376,45843",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Ariados",
+			"item": "Life Orb",
+			"ability": "Sniper",
+			"moves": [
+				"Leech Life",
+				"Poison Jab",
+				"Body Slam",
+				"Protect"
+			],
+			"nature": "Brave",
+			"evs": {
+				"hp": 32,
+				"atk": 32,
+				"def": 2,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "Emolga",
+			"item": "Focus Sash",
+			"ability": "Static",
+			"moves": [
+				"Discharge",
+				"Air Slash",
+				"Energy Ball",
+				"Protect"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 2,
+				"atk": 0,
+				"def": 0,
+				"spa": 32,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "Gengar",
+			"item": "Gengarite",
+			"ability": "Cursed Body",
+			"moves": [
+				"Shadow Ball",
+				"Venoshock",
+				"Dazzling Gleam",
+				"Protect"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 2,
+				"atk": 0,
+				"def": 0,
+				"spa": 32,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "Bellibolt",
+			"item": "Chople Berry",
+			"ability": "Damp",
+			"moves": [
+				"Thunderbolt",
+				"Hyper Voice",
+				"Protect",
+				"Electric Terrain"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 2,
+				"spa": 32,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Charizard",
+			"item": "Charizardite Y",
+			"ability": "Solar Power",
+			"moves": [
+				"Heat Wave",
+				"Air Cutter",
+				"Dragon Pulse",
+				"Protect"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 2,
+				"atk": 0,
+				"def": 0,
+				"spa": 32,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "Slowbro-Galar",
+			"item": "Life Orb",
+			"ability": "Own Tempo",
+			"moves": [
+				"Shell Side Arm",
+				"Future Sight",
+				"Flamethrower",
+				"Protect"
+			],
+			"nature": "Quiet",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 0,
+				"spa": 32,
+				"spd": 2,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "Decidueye-Hisui",
+			"item": "Psychic Seed",
+			"ability": "Scrappy",
+			"moves": [
+				"Seed Bomb",
+				"Close Combat",
+				"Sucker Punch",
+				"Protect"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 32,
+				"atk": 32,
+				"def": 0,
+				"spa": 0,
+				"spd": 2,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "Gogoat",
+			"item": "Sitrus Berry",
+			"ability": "Grass Pelt",
+			"moves": [
+				"Horn Leech",
+				"High Horsepower",
+				"Bulk Up",
+				"Milk Drink"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 26,
+				"atk": 27,
+				"def": 0,
+				"spa": 0,
+				"spd": 6,
+				"spe": 7
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 1 1, switch 4",
+			"p2": "move 3 2 mega, move 1 1"
+		},
+		{
+			"p1": "move 4, move 1 1",
+			"p2": "move 2, move 1 -1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 3, pass"
+		},
+		{
+			"p1": "move 2 2, move 1 -1",
+			"p2": "move 2 2, move 2 1"
+		},
+		{
+			"p1": "pass, switch 4",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 4, move 3 2",
+			"p2": "move 3 2, move 4"
+		},
+		{
+			"p1": "switch 3, move 3 1",
+			"p2": "move 3 -2, move 2 -1"
+		},
+		{
+			"p1": "switch 3, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 1 2, move 3 -1",
+			"p2": "move 1 2, move 3 2"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "pass, switch 4"
+		},
+		{
+			"p1": "move 4, move 3 1",
+			"p2": "move 3 1, move 3"
+		},
+		{
+			"p1": "move 3 2, move 1",
+			"p2": "pass, move 4 -2"
+		}
+	],
+	"teams": [
+		"GU-1416",
+		"GU-1133"
+	]
+}

@@ -1,0 +1,310 @@
+{
+	"format": "gen8vgc2022",
+	"seed": "gen5,23047,19245,51979,393",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Rotom-Wash",
+			"item": "Sitrus Berry",
+			"ability": "Levitate",
+			"moves": [
+				"Ally Switch",
+				"Protect",
+				"Thunderbolt",
+				"Hydro Pump"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 150,
+				"atk": 0,
+				"def": 180,
+				"spa": 0,
+				"spd": 180,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "Incineroar",
+			"item": "Safety Goggles",
+			"ability": "Intimidate",
+			"moves": [
+				"Flare Blitz",
+				"Parting Shot",
+				"Throat Chop",
+				"Fake Out"
+			],
+			"nature": "Impish",
+			"evs": {
+				"hp": 244,
+				"atk": 4,
+				"def": 156,
+				"spa": 0,
+				"spd": 68,
+				"spe": 36
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "Kyurem-White",
+			"item": "Life Orb",
+			"ability": "Turboblaze",
+			"moves": [
+				"Flash Cannon",
+				"Fly",
+				"Draco Meteor",
+				"Freeze-Dry"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 4,
+				"atk": 0,
+				"def": 0,
+				"spa": 252,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "Calyrex-Shadow",
+			"item": "Spell Tag",
+			"ability": "As One (Spectrier)",
+			"moves": [
+				"Astral Barrage",
+				"Substitute",
+				"Trick Room",
+				"Mud Shot"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 0,
+				"atk": 0,
+				"def": 4,
+				"spa": 252,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Venusaur",
+			"item": "Assault Vest",
+			"ability": "Chlorophyll",
+			"moves": [
+				"Frenzy Plant",
+				"Sludge Bomb",
+				"Weather Ball",
+				"Solar Beam"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 4,
+				"atk": 0,
+				"def": 0,
+				"spa": 252,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "Incineroar",
+			"item": "Sitrus Berry",
+			"ability": "Intimidate",
+			"moves": [
+				"Taunt",
+				"Fake Out",
+				"Flare Blitz",
+				"Protect"
+			],
+			"nature": "Careful",
+			"evs": {
+				"hp": 236,
+				"atk": 4,
+				"def": 76,
+				"spa": 0,
+				"spd": 76,
+				"spe": 116
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "Zacian",
+			"item": "Rusted Sword",
+			"ability": "Intrepid Sword",
+			"moves": [
+				"Sacred Sword",
+				"Play Rough",
+				"Protect",
+				"Iron Head"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 252,
+				"atk": 4,
+				"def": 204,
+				"spa": 0,
+				"spd": 44,
+				"spe": 4
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "Kyurem-White",
+			"item": "Choice Scarf",
+			"ability": "Turboblaze",
+			"moves": [
+				"Freeze-Dry",
+				"Blizzard",
+				"Earth Power",
+				"Fusion Flare"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 36,
+				"atk": 0,
+				"def": 0,
+				"spa": 252,
+				"spd": 0,
+				"spe": 220
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 4 1, move 1 2",
+			"p2": "move 3 2, move 2 -1"
+		},
+		{
+			"p1": "move 4 1, move 4 1 dynamax",
+			"p2": "move 2 1 dynamax, move 2 1"
+		},
+		{
+			"p1": "move 3 2, move 4 2",
+			"p2": "switch 3, switch 4"
+		},
+		{
+			"p1": "move 4 -2, move 4 2",
+			"p2": "move 4 1, move 2"
+		},
+		{
+			"p1": "move 1, move 4 -1",
+			"p2": "move 1 -2, switch 3"
+		},
+		{
+			"p1": "move 1 -2, switch 3",
+			"p2": "move 4 2, move 1 2"
+		},
+		{
+			"p1": "pass, switch 3",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 4 -2, move 3 -1",
+			"p2": "move 4 2, move 1"
+		},
+		{
+			"p1": "move 2 1, move 3 1",
+			"p2": "move 2 -2, move 4 2"
+		},
+		{
+			"p1": "switch 4, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "pass, switch 4"
+		},
+		{
+			"p1": "move 4 2, move 4 -1",
+			"p2": "move 4 1, move 2 2"
+		}
+	],
+	"teams": [
+		"U22-16",
+		"U22-193"
+	]
+}

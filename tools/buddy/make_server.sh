@@ -29,6 +29,12 @@ grep -qE "^exports\.backdoor = false;" "$C" || echo "exports.backdoor = false;" 
 
 
 
+sed -i.bak -E "s/^exports\.nothrottle = .*/exports.nothrottle = true;/" "$C"
+rm -f "$C.bak"
+grep -qE "^exports\.nothrottle = true;" "$C" || echo "exports.nothrottle = true;" >> "$C"
+
+
+
 
 sed -i.bak -E "s/^exports\.logchallenges = .*/exports.logchallenges = true;/" "$C"
 rm -f "$C.bak"

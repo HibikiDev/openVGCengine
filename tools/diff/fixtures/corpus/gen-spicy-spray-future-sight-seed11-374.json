@@ -1,0 +1,310 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,42294,35745,13882,27507",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Passimian",
+			"item": "Leftovers",
+			"ability": "Receiver",
+			"moves": [
+				"Superpower",
+				"Mega Kick",
+				"Protect",
+				"Coaching"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 2,
+				"atk": 32,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "Froslass",
+			"item": "Froslassite",
+			"ability": "Snow Cloak",
+			"moves": [
+				"Blizzard",
+				"Shadow Ball",
+				"Thunder",
+				"Protect"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 2,
+				"atk": 0,
+				"def": 0,
+				"spa": 32,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "Musharna",
+			"item": "Black Glasses",
+			"ability": "Forewarn",
+			"moves": [
+				"Future Sight",
+				"Moonblast",
+				"Protect",
+				"Dazzling Gleam"
+			],
+			"nature": "Quiet",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 0,
+				"spa": 32,
+				"spd": 2,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "Kommo-o",
+			"item": "Grassy Seed",
+			"ability": "Soundproof",
+			"moves": [
+				"Clanging Scales",
+				"Aura Sphere",
+				"Clangorous Soul",
+				"Protect"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 10,
+				"atk": 0,
+				"def": 1,
+				"spa": 20,
+				"spd": 5,
+				"spe": 30
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Scovillain",
+			"item": "Scovillainite",
+			"ability": "Moody",
+			"moves": [
+				"Protect",
+				"Giga Drain",
+				"Rage Powder",
+				"Overheat"
+			],
+			"nature": "Bold",
+			"evs": {
+				"hp": 31,
+				"atk": 0,
+				"def": 27,
+				"spa": 0,
+				"spd": 8,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "Rotom",
+			"item": "Psychic Seed",
+			"ability": "Levitate",
+			"moves": [
+				"Thunderbolt",
+				"Hex",
+				"Hyper Voice",
+				"Protect"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 2,
+				"atk": 0,
+				"def": 0,
+				"spa": 32,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "Froslass",
+			"item": "Froslassite",
+			"ability": "Cursed Body",
+			"moves": [
+				"Blizzard",
+				"Protect",
+				"Taunt",
+				"Shadow Ball"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 30,
+				"atk": 0,
+				"def": 1,
+				"spa": 10,
+				"spd": 2,
+				"spe": 23
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "Basculegion",
+			"item": "Sitrus Berry",
+			"ability": "Adaptability",
+			"moves": [
+				"Protect",
+				"Last Respects",
+				"Flip Turn",
+				"Wave Crash"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 12,
+				"atk": 13,
+				"def": 19,
+				"spa": 0,
+				"spd": 6,
+				"spe": 16
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 1 -2, move 3 2 mega",
+			"p2": "move 1 mega, move 3"
+		},
+		{
+			"p1": "move 2 -2, switch 3",
+			"p2": "move 4 2, move 1 1"
+		},
+		{
+			"p1": "switch 3, move 3",
+			"p2": "move 4 2, move 2 2"
+		},
+		{
+			"p1": "switch 3, move 1 -1",
+			"p2": "move 3, move 2 -1"
+		},
+		{
+			"p1": "switch 4, move 1 2",
+			"p2": "move 2 1, move 1 2"
+		},
+		{
+			"p1": "switch 3, move 1 2",
+			"p2": "move 2 -2, move 2 1"
+		},
+		{
+			"p1": "move 4, move 2 1",
+			"p2": "move 4 2, move 4"
+		},
+		{
+			"p1": "pass, switch 3",
+			"p2": "pass, switch 4"
+		},
+		{
+			"p1": "move 2 2, move 3",
+			"p2": "move 4 2, move 2 1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "pass, switch 3"
+		},
+		{
+			"p1": "move 3 -2, move 3",
+			"p2": "move 4 2, move 2"
+		},
+		{
+			"p1": "switch 4, pass",
+			"p2": "pass, pass"
+		}
+	],
+	"teams": [
+		"GU-2",
+		"GM-581"
+	]
+}

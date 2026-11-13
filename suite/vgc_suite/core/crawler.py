@@ -251,8 +251,8 @@ class Crawl:
                 sseed = (int(self.data["seed"]) + int(nid) * 7919 + side) & ((1 << 62) - 1)
                 if closed:
                     from vgc_trainer.closed_worlds import ClosedSheetSearch
-                    from .bundle import closed_searcher
-                    srch = ClosedSheetSearch(env, efmt, lambda w: closed_searcher(pol, w, dev, sseed, max_roots=1), sseed)
+
+                    srch = ClosedSheetSearch(env, efmt, lambda w: live_searcher(pol, w, dev, sseed, bc, max_roots=1, hidden="true"), sseed)
                     srch.world.sync(side, np.array([0]))
                 else:
                     srch = live_searcher(pol, env, dev, sseed, bc, max_roots=1)

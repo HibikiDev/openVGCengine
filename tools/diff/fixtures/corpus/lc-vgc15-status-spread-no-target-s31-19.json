@@ -1,0 +1,311 @@
+{
+	"format": "gen6vgc2015",
+	"seed": "gen5,23222,4927,1598,16882",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Terrakion",
+			"item": "Life Orb",
+			"ability": "Justified",
+			"moves": [
+				"Rock Slide",
+				"Earthquake",
+				"Quick Guard",
+				"Protect"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 4,
+				"atk": 252,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "Landorus-Therian",
+			"item": "Choice Scarf",
+			"ability": "Intimidate",
+			"moves": [
+				"U-turn",
+				"Hidden Power Ice",
+				"Earthquake",
+				"Superpower"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 4,
+				"atk": 252,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 30,
+				"atk": 31,
+				"def": 30,
+				"spe": 31,
+				"spa": 31,
+				"spd": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"hpType": "Ice"
+		},
+		{
+			"name": "Mon2",
+			"species": "Swampert",
+			"item": "Swampertite",
+			"ability": "Torrent",
+			"moves": [
+				"Ice Beam",
+				"Wide Guard",
+				"Waterfall",
+				"Protect"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 248,
+				"atk": 252,
+				"def": 4,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "Salamence",
+			"item": "Salamencite",
+			"ability": "Intimidate",
+			"moves": [
+				"Hyper Beam",
+				"Hyper Voice",
+				"Flamethrower",
+				"Protect"
+			],
+			"nature": "Naive",
+			"evs": {
+				"hp": 0,
+				"atk": 4,
+				"def": 0,
+				"spa": 252,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Heatran",
+			"item": "Flame Plate",
+			"ability": "Flash Fire",
+			"moves": [
+				"Flash Cannon",
+				"Heat Wave",
+				"Earth Power",
+				"Protect"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 52,
+				"atk": 0,
+				"def": 0,
+				"spa": 204,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "Smeargle",
+			"item": "Focus Sash",
+			"ability": "Moody",
+			"moves": [
+				"Dark Void",
+				"King's Shield",
+				"Belly Drum",
+				"Storm Throw"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 4,
+				"atk": 0,
+				"def": 252,
+				"spa": 0,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "Gardevoir",
+			"item": "Gardevoirite",
+			"ability": "Synchronize",
+			"moves": [
+				"Psyshock",
+				"Psychic",
+				"Protect",
+				"Hyper Voice"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 252,
+				"atk": 0,
+				"def": 100,
+				"spa": 132,
+				"spd": 4,
+				"spe": 20
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "Crobat",
+			"item": "Sharp Beak",
+			"ability": "Inner Focus",
+			"moves": [
+				"Tailwind",
+				"Super Fang",
+				"Cross Poison",
+				"Taunt"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 252,
+				"atk": 0,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"turns": [
+		{
+			"p1": "switch 4, move 4 1",
+			"p2": "move 3 1, move 2"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 3, pass"
+		},
+		{
+			"p1": "move 3 -2 mega, move 4 1",
+			"p2": "move 1 1, move 1"
+		},
+		{
+			"p1": "move 1 2, move 4 2",
+			"p2": "move 1 1 mega, move 4 -1"
+		},
+		{
+			"p1": "move 3 2, move 4 -1",
+			"p2": "move 1 1, switch 4"
+		},
+		{
+			"p1": "switch 3, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 3 -2, move 4 -1",
+			"p2": "switch 4, move 2 1"
+		},
+		{
+			"p1": "pass, switch 4",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 1 -2, move 4",
+			"p2": "move 2, switch 4"
+		},
+		{
+			"p1": "move 2, move 1",
+			"p2": "move 4 1, move 3"
+		},
+		{
+			"p1": "move 2, move 4",
+			"p2": "move 4 1, move 4"
+		},
+		{
+			"p1": "move 1 -2, move 2",
+			"p2": "move 4 2, move 3"
+		}
+	],
+	"teams": [
+		"U15-295",
+		"U15-217"
+	]
+}

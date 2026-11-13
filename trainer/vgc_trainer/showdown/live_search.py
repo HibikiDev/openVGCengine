@@ -264,7 +264,9 @@ class LiveSearch:
             if not foe_world:
                 raise ValueError("closed sheets: no world for the opponent's sets")
 
-            arm = {k: v for k, v in arm.items() if k not in ("opp_head", "reply_policy") and not k.startswith("rollout")}
+
+
+            arm = {k: v for k, v in arm.items() if k != "opp_head"}
             if any((s_.get("ability") or "") == "Illusion" for s_ in foe_world):
 
                 raise Unsupported("Illusion possible in the opponent's world")
@@ -319,7 +321,7 @@ class LiveSearch:
         pol = self.agent.policy
         search = OneStepSearch(pol, env, self.agent.dev, k=arm.get("k", self.k), m=self.m, samples=arm.get("samples", 32),
                                seed=self.rng.getrandbits(62),
-                               replies=arm.get("replies") or ("self" if closed else "policy" if reply_policy is not None else "aux"),
+                               replies=arm.get("replies") or ("policy" if reply_policy is not None else "self" if closed else "aux"),
                                reply_policy=reply_policy,
                                score=arm.get("score", self.score), finish_switch=False, greedy_column=self.greedy_column,
                                cand_temp=self.cand_temp, protect_variants=self.protect_variants,

@@ -1,0 +1,311 @@
+{
+	"format": "gen6vgc2014",
+	"seed": "gen5,3173,22758,18192,38970",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Aerodactyl",
+			"item": "Focus Sash",
+			"ability": "Unnerve",
+			"moves": [
+				"Protect",
+				"Rock Slide",
+				"Tailwind",
+				"Sky Drop"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 4,
+				"atk": 252,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "Sableye",
+			"item": "Mental Herb",
+			"ability": "Prankster",
+			"moves": [
+				"Foul Play",
+				"Snarl",
+				"Recover",
+				"Taunt"
+			],
+			"nature": "Careful",
+			"evs": {
+				"hp": 252,
+				"atk": 0,
+				"def": 4,
+				"spa": 0,
+				"spd": 252,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "Gengar",
+			"item": "Gengarite",
+			"ability": "Levitate",
+			"moves": [
+				"Sludge Bomb",
+				"Shadow Ball",
+				"Dark Pulse",
+				"Taunt"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 4,
+				"atk": 0,
+				"def": 0,
+				"spa": 252,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "Tyranitar",
+			"item": "Tyranitarite",
+			"ability": "Sand Stream",
+			"moves": [
+				"Crunch",
+				"Protect",
+				"Fire Blast",
+				"Ice Beam"
+			],
+			"nature": "Quiet",
+			"evs": {
+				"hp": 196,
+				"atk": 76,
+				"def": 68,
+				"spa": 132,
+				"spd": 36,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Rotom-Wash",
+			"item": "Safety Goggles",
+			"ability": "Levitate",
+			"moves": [
+				"Will-O-Wisp",
+				"Thunderbolt",
+				"Hydro Pump",
+				"Protect"
+			],
+			"nature": "Bold",
+			"evs": {
+				"hp": 252,
+				"atk": 0,
+				"def": 148,
+				"spa": 100,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "Garchomp",
+			"item": "Life Orb",
+			"ability": "Rough Skin",
+			"moves": [
+				"Dragon Claw",
+				"Protect",
+				"Rock Slide",
+				"Earthquake"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 0,
+				"atk": 252,
+				"def": 4,
+				"spa": 0,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "Jolteon",
+			"item": "Choice Specs",
+			"ability": "Quick Feet",
+			"moves": [
+				"Hidden Power Ice",
+				"Thunderbolt",
+				"Thunder",
+				"Shadow Ball"
+			],
+			"nature": "Hardy",
+			"evs": {
+				"hp": 0,
+				"atk": 0,
+				"def": 124,
+				"spa": 252,
+				"spd": 128,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 30,
+				"atk": 31,
+				"def": 30,
+				"spe": 31,
+				"spa": 31,
+				"spd": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"hpType": "Ice"
+		},
+		{
+			"name": "Mon3",
+			"species": "Gardevoir",
+			"item": "Gardevoirite",
+			"ability": "Telepathy",
+			"moves": [
+				"Shadow Ball",
+				"Dazzling Gleam",
+				"Psychic",
+				"Psyshock"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 4,
+				"atk": 0,
+				"def": 0,
+				"spa": 252,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 4 2, move 1 1",
+			"p2": "move 1 2, move 4"
+		},
+		{
+			"p1": "move 1, move 1 1",
+			"p2": "move 4, move 2"
+		},
+		{
+			"p1": "move 4 2, move 1 -1",
+			"p2": "switch 4, move 1 -1"
+		},
+		{
+			"p1": "move 1, move 3",
+			"p2": "move 1 1, move 1 -1"
+		},
+		{
+			"p1": "move 4 -2, move 3",
+			"p2": "move 3 2 mega, move 1 2"
+		},
+		{
+			"p1": "move 4 2, move 2",
+			"p2": "move 4 1, move 4"
+		},
+		{
+			"p1": "move 1, switch 4",
+			"p2": "move 4 2, move 1 2"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "pass, switch 3"
+		},
+		{
+			"p1": "move 1, move 4 2 mega",
+			"p2": "move 3 1, move 1 1"
+		},
+		{
+			"p1": "move 1, move 3 -1",
+			"p2": "move 1 2, move 1 -1"
+		},
+		{
+			"p1": "move 4 -2, move 4 -1",
+			"p2": "move 2, move 1 2"
+		},
+		{
+			"p1": "switch 3, pass",
+			"p2": "pass, pass"
+		}
+	],
+	"teams": [
+		"U14-163",
+		"U14-185"
+	]
+}

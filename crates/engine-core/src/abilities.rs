@@ -1046,7 +1046,9 @@ fn intimidate_foes(battle: &mut Battle, actor: Actor) {
             continue;
         }
 
-        if battle.sides[foe.side as usize].side_conditions.mist_turns > 0 {
+
+
+        if battle.sides[foe.side as usize].side_conditions.mist_turns > 0 && mon_at(battle, foe).ability != ability_ids::CONTRARY {
             after_boost_ties_here(battle, foe);
             adrenaline_orb(battle, foe, capped);
             continue;
@@ -1057,7 +1059,13 @@ fn intimidate_foes(battle: &mut Battle, actor: Actor) {
 
 
 
-        if mon_at(battle, foe).types.contains(&Some(Type::Grass)) && self_or_ally_has_ability(battle, foe, ability_ids::FLOWERVEIL) {
+
+
+
+        if mon_at(battle, foe).types.contains(&Some(Type::Grass))
+            && self_or_ally_has_ability(battle, foe, ability_ids::FLOWERVEIL)
+            && mon_at(battle, foe).ability != ability_ids::CONTRARY
+        {
             after_boost_ties_here(battle, foe);
             adrenaline_orb(battle, foe, capped);
             continue;

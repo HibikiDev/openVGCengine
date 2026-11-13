@@ -1,0 +1,310 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,23027,42246,42829,8685",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Farigiraf",
+			"item": "Grassy Seed",
+			"ability": "Armor Tail",
+			"moves": [
+				"Psychic",
+				"Trick Room",
+				"Helping Hand",
+				"Protect"
+			],
+			"nature": "Calm",
+			"evs": {
+				"hp": 31,
+				"atk": 0,
+				"def": 11,
+				"spa": 1,
+				"spd": 23,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "Avalugg",
+			"item": "Miracle Seed",
+			"ability": "Sturdy",
+			"moves": [
+				"Ice Spinner",
+				"Earthquake",
+				"Protect",
+				"Recover"
+			],
+			"nature": "Brave",
+			"evs": {
+				"hp": 32,
+				"atk": 32,
+				"def": 0,
+				"spa": 0,
+				"spd": 2,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "Skeledirge",
+			"item": "Sharp Beak",
+			"ability": "Unaware",
+			"moves": [
+				"Heat Wave",
+				"Hex",
+				"Hyper Voice",
+				"Protect"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 2,
+				"spa": 32,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "Clefable",
+			"item": "Clefablite",
+			"ability": "Unaware",
+			"moves": [
+				"Moonblast",
+				"Air Slash",
+				"Future Sight",
+				"Protect"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 2,
+				"atk": 0,
+				"def": 0,
+				"spa": 32,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Gourgeist",
+			"item": "Miracle Seed",
+			"ability": "Insomnia",
+			"moves": [
+				"Shadow Sneak",
+				"Power Whip",
+				"Foul Play",
+				"Protect"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 2,
+				"atk": 32,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "Dedenne",
+			"item": "Focus Sash",
+			"ability": "Pickup",
+			"moves": [
+				"Thunderbolt",
+				"Dazzling Gleam",
+				"Round",
+				"Protect"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 2,
+				"atk": 0,
+				"def": 0,
+				"spa": 32,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "Rotom-Heat",
+			"item": "Grassy Seed",
+			"ability": "Levitate",
+			"moves": [
+				"Thunderbolt",
+				"Overheat",
+				"Hex",
+				"Protect"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 2,
+				"atk": 0,
+				"def": 0,
+				"spa": 32,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "Slurpuff",
+			"item": "Chople Berry",
+			"ability": "Sweet Veil",
+			"moves": [
+				"Dazzling Gleam",
+				"Flamethrower",
+				"Protect",
+				"Yawn"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 2,
+				"atk": 0,
+				"def": 0,
+				"spa": 32,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 1 1, switch 4",
+			"p2": "move 4, switch 4"
+		},
+		{
+			"p1": "move 2, move 3 2 mega",
+			"p2": "switch 4, switch 3"
+		},
+		{
+			"p1": "switch 3, move 2 -1",
+			"p2": "move 4, move 1 2"
+		},
+		{
+			"p1": "move 1, move 2 2",
+			"p2": "move 2, switch 3"
+		},
+		{
+			"p1": "pass, switch 3",
+			"p2": "pass, switch 4"
+		},
+		{
+			"p1": "switch 4, move 4",
+			"p2": "move 2, switch 3"
+		},
+		{
+			"p1": "move 1 2, move 4",
+			"p2": "move 1 2, move 2 2"
+		},
+		{
+			"p1": "move 1 1, move 2",
+			"p2": "move 1 -2, move 2 1"
+		},
+		{
+			"p1": "switch 4, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 2 2, move 1 2",
+			"p2": "move 3 1, move 2 2"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "pass, switch 3"
+		},
+		{
+			"p1": "move 2 2, move 3 -1",
+			"p2": "move 4, move 2 -1"
+		}
+	],
+	"teams": [
+		"GU-2520",
+		"GU-761"
+	]
+}

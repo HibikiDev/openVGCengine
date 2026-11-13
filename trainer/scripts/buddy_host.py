@@ -101,7 +101,7 @@ def make_client(args):
         client.lead_preview = client.agent.load_preview_head(args.lead_preview)
     client.reply_temps = [float(x) for x in args.reply_temps.split(",")]
     client.search_arms = [SEARCH_ARMS[a] for a in args.search_arms.split(",")]
-    client.closed_search_arms = [SEARCH_ARMS[a] for a in args.closed_search_arms.split(",")]
+    client.closed_search_arms = [SEARCH_ARMS[a] for a in args.closed_search_arms.split(",")] if args.closed_search_arms else None
     client.closed_reply_temps = [float(x) for x in args.closed_reply_temps.split(",")]
     client.lead_arms = args.lead_arms.split(",")
     client.teams = list(teams)
@@ -290,7 +290,7 @@ def make_parser() -> argparse.ArgumentParser:
     ap.add_argument("--search-deadline", type=float, default=None,
                     help="seconds from a request's arrival after which a search still running is dropped for the policy's choice "
                          "(default: battle.SEARCH_DEADLINE, and at most a sixth of the game clock left)")
-    ap.add_argument("--closed-search-arms", default="A", help="closed-sheet formats: arm A at reply T 1, the setting VGC13's closed-sheet search was tested with (0.593 vs raw, 10-24) and the tools' closed_searcher; the A/B/C x 1/3.42 draw was a leftover of the null 10-08 A/Bs (user 11-08)")
+    ap.add_argument("--closed-search-arms", default="", help="closed-sheet formats' arms; empty (the default since 11-12, user: the established best search in every format): the same as --search-arms. Until 11-12 arm A at reply T 1 (decisions 11-08)")
     ap.add_argument("--reply-temps", default="1")
     ap.add_argument("--closed-reply-temps", default="1")
     ap.add_argument("--lead-arms", default="v3")

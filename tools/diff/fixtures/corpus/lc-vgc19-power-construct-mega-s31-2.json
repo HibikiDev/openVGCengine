@@ -1,0 +1,311 @@
+{
+	"format": "gen7vgc2019",
+	"seed": "gen5,59703,34396,41510,31895",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Tapu Lele",
+			"item": "Psychic Seed",
+			"ability": "Psychic Surge",
+			"moves": [
+				"Magic Room",
+				"Moonblast",
+				"Dazzling Gleam",
+				"Focus Blast"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 12,
+				"atk": 0,
+				"def": 116,
+				"spa": 156,
+				"spd": 4,
+				"spe": 220
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "Stakataka",
+			"item": "Safety Goggles",
+			"ability": "Beast Boost",
+			"moves": [
+				"Trick Room",
+				"Gyro Ball",
+				"Skill Swap",
+				"Wide Guard"
+			],
+			"nature": "Lonely",
+			"evs": {
+				"hp": 244,
+				"atk": 252,
+				"def": 0,
+				"spa": 0,
+				"spd": 12,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "Tapu Koko",
+			"item": "Electrium Z",
+			"ability": "Electric Surge",
+			"moves": [
+				"Volt Switch",
+				"Thunderbolt",
+				"Grass Knot",
+				"Protect"
+			],
+			"nature": "Calm",
+			"evs": {
+				"hp": 188,
+				"atk": 0,
+				"def": 4,
+				"spa": 4,
+				"spd": 252,
+				"spe": 60
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "Groudon",
+			"item": "Red Orb",
+			"ability": "Drought",
+			"moves": [
+				"Precipice Blades",
+				"Protect",
+				"Dragon Claw",
+				"Fire Punch"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 252,
+				"atk": 164,
+				"def": 4,
+				"spa": 0,
+				"spd": 76,
+				"spe": 12
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Incineroar",
+			"item": "Aguav Berry",
+			"ability": "Intimidate",
+			"moves": [
+				"Flare Blitz",
+				"Throat Chop",
+				"Fake Out",
+				"U-turn"
+			],
+			"nature": "Careful",
+			"evs": {
+				"hp": 236,
+				"atk": 4,
+				"def": 4,
+				"spa": 0,
+				"spd": 236,
+				"spe": 28
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "Xerneas",
+			"item": "Power Herb",
+			"ability": "Fairy Aura",
+			"moves": [
+				"Dazzling Gleam",
+				"Moonblast",
+				"Protect",
+				"Geomancy"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 108,
+				"atk": 0,
+				"def": 0,
+				"spa": 148,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "Zygarde",
+			"item": "Misty Seed",
+			"ability": "Power Construct",
+			"moves": [
+				"Thousand Arrows",
+				"Coil",
+				"Extreme Speed",
+				"Dragon Dance"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 76,
+				"atk": 252,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 180
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "Venusaur",
+			"item": "Life Orb",
+			"ability": "Overgrow",
+			"moves": [
+				"Sleep Powder",
+				"Hidden Power Fire",
+				"Grass Knot",
+				"Sludge Bomb"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 44,
+				"atk": 0,
+				"def": 4,
+				"spa": 252,
+				"spd": 4,
+				"spe": 204
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 30,
+				"spe": 30,
+				"spa": 30,
+				"spd": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"hpType": "Fire"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 2 2, switch 3",
+			"p2": "move 2 -2, switch 4"
+		},
+		{
+			"p1": "move 4 1, move 4",
+			"p2": "move 3 1, move 2 2"
+		},
+		{
+			"p1": "switch 3, move 2 -1 zmove",
+			"p2": "switch 3, move 3 -1"
+		},
+		{
+			"p1": "move 2 -2, move 1 1",
+			"p2": "move 4, switch 3"
+		},
+		{
+			"p1": "move 4, move 2 2",
+			"p2": "move 4, move 1 2"
+		},
+		{
+			"p1": "pass, switch 3",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 4, move 1",
+			"p2": "move 2, move 3 -1"
+		},
+		{
+			"p1": "move 2 -2, move 1",
+			"p2": "move 3 -2, move 4 -1"
+		},
+		{
+			"p1": "pass, switch 4",
+			"p2": "pass, switch 4"
+		},
+		{
+			"p1": "move 3 1, move 2",
+			"p2": "move 3 1, switch 3"
+		},
+		{
+			"p1": "move 2 2, move 3 1",
+			"p2": "move 3 -2, switch 3"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "pass, switch 3"
+		}
+	],
+	"teams": [
+		"U19-69",
+		"U19-123"
+	]
+}

@@ -1,0 +1,298 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,30502,55499,4485,59496",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Grapploct",
+			"item": "Life Orb",
+			"ability": "Technician",
+			"moves": [
+				"Storm Throw",
+				"Stomping Tantrum",
+				"Mach Punch",
+				"Detect"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 32,
+				"atk": 32,
+				"def": 0,
+				"spa": 0,
+				"spd": 2,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "Ariados",
+			"item": "Sitrus Berry",
+			"ability": "Insomnia",
+			"moves": [
+				"Megahorn",
+				"Cross Poison",
+				"Foul Play",
+				"Protect"
+			],
+			"nature": "Brave",
+			"evs": {
+				"hp": 32,
+				"atk": 32,
+				"def": 0,
+				"spa": 0,
+				"spd": 2,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "Runerigus",
+			"item": "Leftovers",
+			"ability": "Wandering Spirit",
+			"moves": [
+				"Sand Tomb",
+				"Shadow Claw",
+				"Rock Slide",
+				"Protect"
+			],
+			"nature": "Brave",
+			"evs": {
+				"hp": 32,
+				"atk": 32,
+				"def": 2,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "Glaceon",
+			"item": "Grassy Seed",
+			"ability": "Ice Body",
+			"moves": [
+				"Freeze-Dry",
+				"Alluring Voice",
+				"Protect",
+				"Helping Hand"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 2,
+				"spa": 32,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Lopunny",
+			"item": "Lopunnite",
+			"ability": "Klutz",
+			"moves": [
+				"Double Hit",
+				"High Jump Kick",
+				"Iron Tail",
+				"Protect"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 2,
+				"atk": 32,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "Talonflame",
+			"item": "Sharp Beak",
+			"ability": "Gale Wings",
+			"moves": [
+				"Feint",
+				"Tailwind",
+				"Brave Bird",
+				"Flare Blitz"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 7,
+				"atk": 32,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 27
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "Polteageist",
+			"item": "Life Orb",
+			"ability": "Cursed Body",
+			"moves": [
+				"Hex",
+				"Giga Drain",
+				"Protect",
+				"Calm Mind"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 2,
+				"atk": 0,
+				"def": 0,
+				"spa": 32,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "Cinderace",
+			"item": "White Herb",
+			"ability": "Libero",
+			"moves": [
+				"Pyro Ball",
+				"High Jump Kick",
+				"Snarl",
+				"Taunt"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 2,
+				"atk": 32,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 3 -2, move 1 2",
+			"p2": "move 3 -2 mega, switch 3"
+		},
+		{
+			"p1": "move 1 -2, switch 3",
+			"p2": "move 1 2, move 1 -1"
+		},
+		{
+			"p1": "move 2 -2, move 1 1",
+			"p2": "move 3 2, move 3"
+		},
+		{
+			"p1": "pass, switch 4",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 2 1, move 1 1",
+			"p2": "move 2 1, move 2 -1"
+		},
+		{
+			"p1": "switch 3, pass",
+			"p2": "switch 4, pass"
+		},
+		{
+			"p1": "move 3 -2, move 1 2",
+			"p2": "move 3, move 3"
+		},
+		{
+			"p1": "move 1 -2, move 1 1",
+			"p2": "move 4 -2, move 2 2"
+		},
+		{
+			"p1": "move 3 -2, pass",
+			"p2": "move 1 1, move 1 1"
+		}
+	],
+	"teams": [
+		"GU-1579",
+		"GU-2535"
+	]
+}

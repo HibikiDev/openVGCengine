@@ -1,0 +1,310 @@
+{
+	"format": "gen9championsvgc2026regmc",
+	"seed": "gen5,47290,43315,25634,44374",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Greninja",
+			"item": "Greninjite",
+			"ability": "Protean",
+			"moves": [
+				"Hydro Pump",
+				"Dark Pulse",
+				"Blizzard",
+				"Protect"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 2,
+				"atk": 0,
+				"def": 0,
+				"spa": 32,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "Annihilape",
+			"item": "Choice Scarf",
+			"ability": "Defiant",
+			"moves": [
+				"Close Combat",
+				"Shadow Claw",
+				"U-turn",
+				"Ice Punch"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 5,
+				"atk": 32,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 29
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "Politoed",
+			"item": "Life Orb",
+			"ability": "Drizzle",
+			"moves": [
+				"Muddy Water",
+				"Ice Beam",
+				"Weather Ball",
+				"Protect"
+			],
+			"nature": "Quiet",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 2,
+				"spa": 32,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "Pincurchin",
+			"item": "Sitrus Berry",
+			"ability": "Lightning Rod",
+			"moves": [
+				"Zing Zap",
+				"Sucker Punch",
+				"Protect",
+				"Recover"
+			],
+			"nature": "Brave",
+			"evs": {
+				"hp": 32,
+				"atk": 32,
+				"def": 0,
+				"spa": 0,
+				"spd": 2,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Stunfisk",
+			"item": "Psychic Seed",
+			"ability": "Sand Veil",
+			"moves": [
+				"Mud Shot",
+				"Discharge",
+				"Sludge Wave",
+				"Protect"
+			],
+			"nature": "Quiet",
+			"evs": {
+				"hp": 32,
+				"atk": 0,
+				"def": 0,
+				"spa": 32,
+				"spd": 2,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "Chandelure",
+			"item": "Chandelurite",
+			"ability": "Infiltrator",
+			"moves": [
+				"Shadow Ball",
+				"Heat Wave",
+				"Energy Ball",
+				"Protect"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 2,
+				"atk": 0,
+				"def": 0,
+				"spa": 32,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "Gholdengo",
+			"item": "Sitrus Berry",
+			"ability": "Good as Gold",
+			"moves": [
+				"Make It Rain",
+				"Hex",
+				"Psychic",
+				"Protect"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 2,
+				"atk": 0,
+				"def": 0,
+				"spa": 32,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "Feraligatr",
+			"item": "Feraligite",
+			"ability": "Sheer Force",
+			"moves": [
+				"Liquidation",
+				"Dragon Claw",
+				"Mega Kick",
+				"Protect"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 2,
+				"atk": 32,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 32
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 2 -2, move 1 2",
+			"p2": "move 2, move 3 1"
+		},
+		{
+			"p1": "move 4 mega, switch 3",
+			"p2": "move 1 -2, move 3 1"
+		},
+		{
+			"p1": "move 2 -2, switch 4",
+			"p2": "switch 4, move 1 1"
+		},
+		{
+			"p1": "move 4, move 2 -1",
+			"p2": "move 1 -2, move 2"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "pass, switch 4"
+		},
+		{
+			"p1": "switch 4, move 1 -1",
+			"p2": "move 2 2, move 3"
+		},
+		{
+			"p1": "switch 4, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 4, move 2 2",
+			"p2": "move 2 2 mega, move 1 1"
+		},
+		{
+			"p1": "pass, switch 3",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 2 2, move 2 2",
+			"p2": "move 2 2, switch 3"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "pass, switch 3"
+		},
+		{
+			"p1": "move 4, pass",
+			"p2": "move 3 -2, move 1 1"
+		}
+	],
+	"teams": [
+		"GU-7",
+		"GU-247"
+	]
+}

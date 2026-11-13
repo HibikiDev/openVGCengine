@@ -1,0 +1,310 @@
+{
+	"format": "gen7vgc2017",
+	"seed": "gen5,58525,28470,29876,53837",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Arcanine",
+			"item": "Aguav Berry",
+			"ability": "Intimidate",
+			"moves": [
+				"Flare Blitz",
+				"Close Combat",
+				"Wild Charge",
+				"Bulldoze"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 140,
+				"atk": 172,
+				"def": 4,
+				"spa": 0,
+				"spd": 4,
+				"spe": 188
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "Mudsdale",
+			"item": "Assault Vest",
+			"ability": "Stamina",
+			"moves": [
+				"Heavy Slam",
+				"Rock Slide",
+				"Earthquake",
+				"High Horsepower"
+			],
+			"nature": "Sassy",
+			"evs": {
+				"hp": 220,
+				"atk": 252,
+				"def": 0,
+				"spa": 0,
+				"spd": 36,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "Gyarados",
+			"item": "Focus Sash",
+			"ability": "Intimidate",
+			"moves": [
+				"Substitute",
+				"Protect",
+				"Dragon Dance",
+				"Aqua Tail"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 4,
+				"atk": 252,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "Tapu Lele",
+			"item": "Choice Specs",
+			"ability": "Psychic Surge",
+			"moves": [
+				"Shadow Ball",
+				"Psychic",
+				"Thunderbolt",
+				"Dazzling Gleam"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 0,
+				"atk": 0,
+				"def": 0,
+				"spa": 252,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Kartana",
+			"item": "Focus Sash",
+			"ability": "Beast Boost",
+			"moves": [
+				"Leaf Blade",
+				"Smart Strike",
+				"Protect",
+				"Sacred Sword"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 0,
+				"atk": 252,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "Celesteela",
+			"item": "Leftovers",
+			"ability": "Beast Boost",
+			"moves": [
+				"Leech Seed",
+				"Air Slash",
+				"Substitute",
+				"Heavy Slam"
+			],
+			"nature": "Careful",
+			"evs": {
+				"hp": 244,
+				"atk": 4,
+				"def": 84,
+				"spa": 0,
+				"spd": 124,
+				"spe": 52
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "Mimikyu",
+			"item": "Mental Herb",
+			"ability": "Disguise",
+			"moves": [
+				"Destiny Bond",
+				"Trick Room",
+				"Play Rough",
+				"Protect"
+			],
+			"nature": "Brave",
+			"evs": {
+				"hp": 252,
+				"atk": 124,
+				"def": 132,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "Hariyama",
+			"item": "Flame Orb",
+			"ability": "Thick Fat",
+			"moves": [
+				"Protect",
+				"Close Combat",
+				"Fake Out",
+				"Poison Jab"
+			],
+			"nature": "Brave",
+			"evs": {
+				"hp": 252,
+				"atk": 252,
+				"def": 4,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 3 1, switch 4",
+			"p2": "switch 3, move 2 -1"
+		},
+		{
+			"p1": "move 3 2, move 3 2",
+			"p2": "move 2, switch 3"
+		},
+		{
+			"p1": "move 3 2, move 3 -1",
+			"p2": "move 3 -2, move 1 2"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "pass, switch 3"
+		},
+		{
+			"p1": "move 1 2, move 3 1",
+			"p2": "move 4, move 2 -1"
+		},
+		{
+			"p1": "move 3 -2, move 3 -1",
+			"p2": "move 1, move 1 -1"
+		},
+		{
+			"p1": "move 3 2, move 3 1",
+			"p2": "move 3 1, move 2 2"
+		},
+		{
+			"p1": "switch 3, switch 4",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 4 2, move 2",
+			"p2": "move 2, move 3"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 4, pass"
+		},
+		{
+			"p1": "move 2, move 1 2",
+			"p2": "move 4 -2, move 4 -1"
+		},
+		{
+			"p1": "move 4 2, move 1 -1",
+			"p2": "move 1, move 2 1"
+		}
+	],
+	"teams": [
+		"U17-6",
+		"U17-78"
+	]
+}

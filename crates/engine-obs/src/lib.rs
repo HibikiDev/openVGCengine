@@ -351,6 +351,40 @@ fn stellar_left(mon: &Mon) -> f32 {
 }
 
 
+fn details_species(s: engine_data::species_table::SpeciesId) -> engine_data::species_table::SpeciesId {
+    use engine_data::species_table::species_ids::*;
+    match s {
+        GRENINJABOND => GRENINJA,
+        ROCKRUFFDUSK => ROCKRUFF,
+        _ => s,
+    }
+}
+
+
+
+
+
+
+
+fn preview_species(s: engine_data::species_table::SpeciesId) -> engine_data::species_table::SpeciesId {
+    use engine_data::species_table::species_ids::*;
+    match s {
+        ZACIANCROWNED => ZACIAN,
+        ZAMAZENTACROWNED => ZAMAZENTA,
+        GRENINJAASH | GRENINJABOND | GRENINJAMEGA => GRENINJA,
+        GOURGEISTLARGE | GOURGEISTSMALL | GOURGEISTSUPER => GOURGEIST,
+        PUMPKABOOLARGE | PUMPKABOOSMALL | PUMPKABOOSUPER => PUMPKABOO,
+        SILVALLYBUG | SILVALLYDARK | SILVALLYDRAGON | SILVALLYELECTRIC | SILVALLYFAIRY | SILVALLYFIGHTING | SILVALLYFIRE | SILVALLYFLYING
+        | SILVALLYGHOST | SILVALLYGRASS | SILVALLYGROUND | SILVALLYICE | SILVALLYPOISON | SILVALLYPSYCHIC | SILVALLYROCK | SILVALLYSTEEL
+        | SILVALLYWATER => SILVALLY,
+        URSHIFUGMAX | URSHIFURAPIDSTRIKE | URSHIFURAPIDSTRIKEGMAX => URSHIFU,
+        DUDUNSPARCETHREESEGMENT => DUDUNSPARCE,
+        ROCKRUFFDUSK => ROCKRUFF,
+        _ => s,
+    }
+}
+
+
 fn z_capable(battle: &Battle, side: u8, item: u16, species: u16, moves: &[u16]) -> bool {
     !battle.sides[side as usize].z_used && z_capable_sheet(battle.rules(), item, species, moves)
 }
@@ -419,7 +453,9 @@ fn encode_mon(battle: &Battle, ctx: &ObsContext, me: u8, side: u8, r: usize, ids
         .filter(|(_, m)| mine || m.flags.has(mon_flags::REVEALED));
     let Some((index, mon)) = live else {
 
-        ids[mon_id::SPECIES] = sheet.species as i32;
+
+        let species = if sheet_known { sheet.species } else { preview_species(sheet.species) };
+        ids[mon_id::SPECIES] = species as i32;
         if sheet_known {
             ids[mon_id::ITEM] = sheet.item as i32;
             ids[mon_id::ABILITY] = sheet.ability as i32;
@@ -427,7 +463,7 @@ fn encode_mon(battle: &Battle, ctx: &ObsContext, me: u8, side: u8, r: usize, ids
                 ids[mon_id::MOVES + k] = sheet.moves[k] as i32;
             }
         }
-        let types = rules.species_data(sheet.species).types;
+        let types = rules.species_data(species).types;
         for k in 0..2 {
             ids[mon_id::TYPES + k] = types[k].map_or(0, |t| t as i32 + 1);
         }
@@ -455,7 +491,9 @@ fn encode_mon(battle: &Battle, ctx: &ObsContext, me: u8, side: u8, r: usize, ids
                         && engine_data::z_table::crystal(sheet.item).is_none()))) as u8 as f32;
         return;
     };
-    ids[mon_id::SPECIES] = mon.species as i32;
+
+
+    ids[mon_id::SPECIES] = if sheet_known { mon.species } else { details_species(mon.species) } as i32;
 
     let transformed = mon.flags.has(mon_flags::TRANSFORMED);
     if sheet_known {

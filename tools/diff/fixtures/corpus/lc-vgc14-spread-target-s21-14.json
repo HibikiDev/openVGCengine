@@ -1,0 +1,310 @@
+{
+	"format": "gen6vgc2014",
+	"seed": "gen5,64287,3413,63886,43036",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Rotom-Heat",
+			"item": "Safety Goggles",
+			"ability": "Levitate",
+			"moves": [
+				"Protect",
+				"Thunderbolt",
+				"Overheat",
+				"Will-O-Wisp"
+			],
+			"nature": "Relaxed",
+			"evs": {
+				"hp": 160,
+				"atk": 0,
+				"def": 140,
+				"spa": 72,
+				"spd": 132,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "Hariyama",
+			"item": "Sitrus Berry",
+			"ability": "Guts",
+			"moves": [
+				"Close Combat",
+				"Fake Out",
+				"Knock Off",
+				"Rock Slide"
+			],
+			"nature": "Brave",
+			"evs": {
+				"hp": 60,
+				"atk": 100,
+				"def": 100,
+				"spa": 0,
+				"spd": 244,
+				"spe": 4
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "Aegislash",
+			"item": "Weakness Policy",
+			"ability": "Stance Change",
+			"moves": [
+				"Substitute",
+				"Shadow Ball",
+				"King's Shield",
+				"Flash Cannon"
+			],
+			"nature": "Brave",
+			"evs": {
+				"hp": 252,
+				"atk": 252,
+				"def": 0,
+				"spa": 4,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "Venusaur",
+			"item": "Black Sludge",
+			"ability": "Chlorophyll",
+			"moves": [
+				"Toxic",
+				"Sleep Powder",
+				"Solar Beam",
+				"Sludge Bomb"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 252,
+				"atk": 0,
+				"def": 124,
+				"spa": 8,
+				"spd": 124,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Rotom-Wash",
+			"item": "Life Orb",
+			"ability": "Levitate",
+			"moves": [
+				"Hydro Pump",
+				"Will-O-Wisp",
+				"Thunder Wave",
+				"Thunderbolt"
+			],
+			"nature": "Calm",
+			"evs": {
+				"hp": 252,
+				"atk": 0,
+				"def": 44,
+				"spa": 60,
+				"spd": 148,
+				"spe": 4
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "Aegislash",
+			"item": "Leftovers",
+			"ability": "Stance Change",
+			"moves": [
+				"Shadow Sneak",
+				"Substitute",
+				"Flash Cannon",
+				"Wide Guard"
+			],
+			"nature": "Quiet",
+			"evs": {
+				"hp": 236,
+				"atk": 0,
+				"def": 4,
+				"spa": 108,
+				"spd": 156,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "Garchomp",
+			"item": "Lum Berry",
+			"ability": "Rough Skin",
+			"moves": [
+				"Protect",
+				"Dragon Claw",
+				"Earthquake",
+				"Rock Slide"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 4,
+				"atk": 252,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "Raichu",
+			"item": "Focus Sash",
+			"ability": "Lightning Rod",
+			"moves": [
+				"Thunder Wave",
+				"Fake Out",
+				"Protect",
+				"Volt Switch"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 0,
+				"atk": 0,
+				"def": 0,
+				"spa": 252,
+				"spd": 4,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 3 2, move 1 2",
+			"p2": "move 3 1, move 1 1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "pass, switch 4"
+		},
+		{
+			"p1": "move 4 1, switch 3",
+			"p2": "move 1 1, move 3"
+		},
+		{
+			"p1": "switch 3, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 2 -2, move 2 2",
+			"p2": "move 2 1, move 2 2"
+		},
+		{
+			"p1": "move 2 1, move 3",
+			"p2": "move 4 1, switch 3"
+		},
+		{
+			"p1": "move 3 1, move 1",
+			"p2": "move 4 2, move 2 2"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 3, pass"
+		},
+		{
+			"p1": "move 1 2, move 4 1",
+			"p2": "move 1 -2, move 4"
+		},
+		{
+			"p1": "move 2 -2, switch 4",
+			"p2": "move 2 2, move 2 -1"
+		},
+		{
+			"p1": "move 3 2, move 2 2",
+			"p2": "pass, move 3"
+		},
+		{
+			"p1": "switch 4, pass",
+			"p2": "pass, pass"
+		}
+	],
+	"teams": [
+		"U14-208",
+		"U14-125"
+	]
+}
