@@ -502,8 +502,8 @@
 		"reviewed": false,
 		"where": [
 			"suite/vgc_suite/core/compare.py:83",
-			"suite/web/server.py:196",
-			"suite/web/server.py:2134"
+			"suite/web/server.py:202",
+			"suite/web/server.py:2140"
 		]
 	},
 	"pick a node at the start of a turn (not a pending replacement, not the end of the game)": {
@@ -674,16 +674,16 @@
 		"ja": "{t:search}対戦：{done}/{total}",
 		"reviewed": false,
 		"where": [
-			"suite/vgc_suite/core/h2h.py:268",
+			"suite/vgc_suite/core/h2h.py:272",
 			"suite/vgc_suite/core/validator.py:159",
-			"suite/web/server.py:728"
+			"suite/web/server.py:734"
 		]
 	},
 	"Games: {done} of {total}": {
 		"ja": "対戦：{done}/{total}",
 		"reviewed": false,
 		"where": [
-			"suite/vgc_suite/core/h2h.py:269",
+			"suite/vgc_suite/core/h2h.py:273",
 			"suite/vgc_suite/core/validator.py:165"
 		]
 	},
@@ -2669,113 +2669,113 @@
 		"ja": "そのレポートファイルにはリプレイが入っていません。",
 		"reviewed": false,
 		"where": [
-			"suite/web/server.py:1001"
+			"suite/web/server.py:1007"
 		]
 	},
 	"That game's log isn't on this PC.": {
 		"ja": "その対戦のログはこのPCにありません。",
 		"reviewed": false,
 		"where": [
-			"suite/web/server.py:1007"
+			"suite/web/server.py:1013"
 		]
 	},
 	"Only replay.pokemonshowdown.com links work here (or open a downloaded replay file).": {
 		"ja": "使えるのはreplay.pokemonshowdown.comのリンクだけです（またはダウンロードしたリプレイファイルを開いてください）。",
 		"reviewed": false,
 		"where": [
-			"suite/web/server.py:1014"
+			"suite/web/server.py:1020"
 		]
 	},
 	"That's the text from the battle window, which the Analyzer can't read. Use the game's replay link (Upload and Share in Showdown), or a downloaded replay.": {
 		"ja": "それは対戦画面のテキストで、{t:analyzer}では読めません。対戦のリプレイリンク（Showdownの「Upload and Share」）か、ダウンロードしたリプレイを使ってください。",
 		"reviewed": false,
 		"where": [
-			"suite/web/server.py:1019"
+			"suite/web/server.py:1025"
 		]
 	},
 	"Paste a replay.pokemonshowdown.com link, or open a downloaded replay file.": {
 		"ja": "replay.pokemonshowdown.comのリンクを貼り付けるか、ダウンロードしたリプレイファイルを開いてください。",
 		"reviewed": false,
 		"where": [
-			"suite/web/server.py:1020"
+			"suite/web/server.py:1026"
 		]
 	},
 	"{who}: {error}": {
 		"ja": "{who}: {error}",
 		"reviewed": false,
 		"where": [
-			"suite/web/server.py:1089",
-			"suite/web/server.py:1138"
+			"suite/web/server.py:1095",
+			"suite/web/server.py:1144"
 		]
 	},
 	"Paste a Showdown team export, or give a team id from the library (e.g. BR-111).": {
 		"ja": "Showdownのチームのエクスポートを貼り付けるか、ライブラリのチームID（例：BR-111）を入力してください。",
 		"reviewed": false,
 		"where": [
-			"suite/web/server.py:1314"
+			"suite/web/server.py:1320"
 		]
 	},
 	"Paste a Showdown team export.": {
 		"ja": "Showdownのチームのエクスポートを貼り付けてください。",
 		"reviewed": false,
 		"where": [
-			"suite/web/server.py:1315"
+			"suite/web/server.py:1321"
 		]
 	},
 	"Team {side}: set both leads' turn-1 actions, or leave both to the bot.": {
 		"ja": "チーム{side}: {t:lead}2体とも1ターン目の行動を指定するか、両方ともボットに任せてください。",
 		"reviewed": false,
 		"where": [
-			"suite/web/server.py:1372"
+			"suite/web/server.py:1378"
 		]
 	},
 	"Team {side}: a turn-1 switch must go to one of the two in the back.": {
 		"ja": "チーム{side}: 1ターン目の交代先は{t:back}の2体のどちらかにしてください。",
 		"reviewed": false,
 		"where": [
-			"suite/web/server.py:1379"
+			"suite/web/server.py:1385"
 		]
 	},
 	"Team {side}: the two leads can't switch to the same Pokemon.": {
 		"ja": "チーム{side}: {t:lead}2体が同じポケモンに交代することはできません。",
 		"reviewed": false,
 		"where": [
-			"suite/web/server.py:1389"
+			"suite/web/server.py:1395"
 		]
 	},
 	"Team {side}: set both slots' turn-2 actions, or leave turn 2 to the bot.": {
 		"ja": "チーム{side}: 両方の枠の2ターン目の行動を指定するか、2ターン目はボットに任せてください。",
 		"reviewed": false,
 		"where": [
-			"suite/web/server.py:1401"
+			"suite/web/server.py:1407"
 		]
 	},
 	"Team {side}: a forced turn 2 needs a forced turn 1 (the slots' occupants follow from it).": {
 		"ja": "チーム{side}: 2ターン目を指定するには1ターン目も指定が必要です（各枠に誰がいるかがそれで決まります）。",
 		"reviewed": false,
 		"where": [
-			"suite/web/server.py:1403"
+			"suite/web/server.py:1409"
 		]
 	},
 	"Pick two leads and two in the back for a custom bring.": {
 		"ja": "カスタムの{t:bring}には{t:lead}2体と{t:back}2体を選んでください。",
 		"reviewed": false,
 		"where": [
-			"suite/web/server.py:1538"
+			"suite/web/server.py:1544"
 		]
 	},
 	"A custom bring needs four different Pokemon from the team.": {
 		"ja": "カスタムの{t:bring}には、チームから異なるポケモン4体が必要です。",
 		"reviewed": false,
 		"where": [
-			"suite/web/server.py:1540"
+			"suite/web/server.py:1546"
 		]
 	},
 	"bucket {name} ({n} teams, one drawn by weight per game)": {
 		"ja": "{t:buckets}「{name}」（{n}チーム。毎回、重みに応じて1つを選びます）",
 		"reviewed": false,
 		"where": [
-			"suite/web/server.py:1763",
+			"suite/web/server.py:1769",
 			"suite/web/server.py team_label (dynamic key)"
 		]
 	},
@@ -2783,7 +2783,7 @@
 		"ja": "貼り付けたチーム（{id}）",
 		"reviewed": false,
 		"where": [
-			"suite/web/server.py:1766",
+			"suite/web/server.py:1772",
 			"suite/web/server.py team_label (dynamic key)"
 		]
 	},
@@ -2791,54 +2791,26 @@
 		"ja": "{t:buckets}「{name}」",
 		"reviewed": false,
 		"where": [
-			"suite/web/server.py:1768",
+			"suite/web/server.py:1774",
 			"suite/web/server.py team_label (dynamic key)"
-		]
-	},
-	"Search Mode {n} a team": {
-		"ja": "{t:search}モード 1チーム{n}戦",
-		"reviewed": false,
-		"where": [
-			"suite/web/server.py:198"
-		]
-	},
-	"quick": {
-		"ja": "簡易",
-		"reviewed": false,
-		"where": [
-			"suite/web/server.py:198"
-		]
-	},
-	"sixth": {
-		"ja": "6体目",
-		"reviewed": false,
-		"where": [
-			"suite/web/server.py:201"
-		]
-	},
-	"slot": {
-		"ja": "入れ替え",
-		"reviewed": false,
-		"where": [
-			"suite/web/server.py:201"
-		]
-	},
-	"{kind}: best {label} {pct}": {
-		"ja": "{kind}: 最良 {label} {pct}",
-		"reviewed": false,
-		"where": [
-			"suite/web/server.py:201"
 		]
 	},
 	"{fmt} uses closed team sheets": {
 		"ja": "{fmt}はクローズドチームシートです",
 		"reviewed": false,
 		"where": [
-			"suite/web/server.py:2026"
+			"suite/web/server.py:2032"
 		]
 	},
-	"{pct} vs the field": {
-		"ja": "対戦相手全体に{pct}",
+	"Search Mode {n} a team": {
+		"ja": "{t:search}モード 1チーム{n}戦",
+		"reviewed": false,
+		"where": [
+			"suite/web/server.py:204"
+		]
+	},
+	"quick": {
+		"ja": "簡易",
 		"reviewed": false,
 		"where": [
 			"suite/web/server.py:204"
@@ -2848,427 +2820,455 @@
 		"ja": "味方の{mon}",
 		"reviewed": false,
 		"where": [
-			"suite/web/server.py:2040"
+			"suite/web/server.py:2046"
 		]
 	},
 	"keep {mon}": {
 		"ja": "{mon}のまま",
 		"reviewed": false,
 		"where": [
-			"suite/web/server.py:2051"
+			"suite/web/server.py:2057"
+		]
+	},
+	"sixth": {
+		"ja": "6体目",
+		"reviewed": false,
+		"where": [
+			"suite/web/server.py:207"
+		]
+	},
+	"slot": {
+		"ja": "入れ替え",
+		"reviewed": false,
+		"where": [
+			"suite/web/server.py:207"
+		]
+	},
+	"{kind}: best {label} {pct}": {
+		"ja": "{kind}: 最良 {label} {pct}",
+		"reviewed": false,
+		"where": [
+			"suite/web/server.py:207"
+		]
+	},
+	"{pct} vs the field": {
+		"ja": "対戦相手全体に{pct}",
+		"reviewed": false,
+		"where": [
+			"suite/web/server.py:210"
 		]
 	},
 	"{p1} vs {p2}": {
 		"ja": "{p1} 対 {p2}",
 		"reviewed": false,
 		"where": [
-			"suite/web/server.py:2155"
+			"suite/web/server.py:2161"
 		]
 	},
 	"Open the local Showdown at localhost:8000.": {
 		"ja": "ローカルのShowdownをlocalhost:8000で開いてください。",
 		"reviewed": false,
 		"where": [
-			"suite/web/server.py:2444"
-		]
-	},
-	"The Analyzer reads {list} replays for now; this one is {short} (its Z-Moves / Dynamax / Tera come next).": {
-		"ja": "{t:analyzer}が今読めるのは{list}のリプレイです。これは{short}のリプレイです（Zワザ / ダイマックス / テラスタルは今後対応予定）。",
-		"reviewed": false,
-		"where": [
-			"suite/web/server.py:279"
+			"suite/web/server.py:2458"
 		]
 	},
 	"Saved bucket {name}: {n} {format} teams.": {
 		"ja": "{t:buckets}「{name}」を保存しました：{format}のチーム{n}件。",
 		"reviewed": false,
 		"where": [
-			"suite/web/server.py:2790"
+			"suite/web/server.py:2804"
 		]
 	},
 	"Deleted bucket {name}.": {
 		"ja": "{t:buckets}「{name}」を削除しました。",
 		"reviewed": false,
 		"where": [
-			"suite/web/server.py:2794"
+			"suite/web/server.py:2808"
 		]
 	},
 	"Pick the bot and your Showdown name.": {
 		"ja": "ボットとあなたのShowdownの名前を選んでください。",
 		"reviewed": false,
 		"where": [
-			"suite/web/server.py:2821"
+			"suite/web/server.py:2835"
 		]
 	},
 	"That session isn't there any more.": {
 		"ja": "そのセッションはもうありません。",
 		"reviewed": false,
 		"where": [
-			"suite/web/server.py:2824"
+			"suite/web/server.py:2838"
 		]
 	},
 	"Session \"{name}\" started for {user} on {bot}: games from now on are grouped below.": {
 		"ja": "{bot}で{user}のセッション「{name}」を開始しました。これからの対戦は下にまとめて表示されます。",
 		"reviewed": false,
 		"where": [
-			"suite/web/server.py:2827"
+			"suite/web/server.py:2841"
 		]
 	},
 	"(Closed \"{name}\" first.)": {
 		"ja": "（先に「{name}」を終了しました。）",
 		"reviewed": false,
 		"where": [
-			"suite/web/server.py:2829"
+			"suite/web/server.py:2843"
 		]
 	},
 	"Session \"{name}\" is running again.": {
 		"ja": "セッション「{name}」を再開しました。",
 		"reviewed": false,
 		"where": [
-			"suite/web/server.py:2832"
+			"suite/web/server.py:2846"
 		]
 	},
 	"Folded in {n} later session(s).": {
 		"ja": "その後に始めた{n}件のセッションを統合しました。",
 		"reviewed": false,
 		"where": [
-			"suite/web/server.py:2833"
+			"suite/web/server.py:2847"
+		]
+	},
+	"The Analyzer reads {list} replays for now; this one is {short} (its Z-Moves / Dynamax / Tera come next).": {
+		"ja": "{t:analyzer}が今読めるのは{list}のリプレイです。これは{short}のリプレイです（Zワザ / ダイマックス / テラスタルは今後対応予定）。",
+		"reviewed": false,
+		"where": [
+			"suite/web/server.py:285"
 		]
 	},
 	"Game added to \"{name}\".": {
 		"ja": "対戦を「{name}」に追加しました。",
 		"reviewed": false,
 		"where": [
-			"suite/web/server.py:2837"
+			"suite/web/server.py:2851"
 		]
 	},
 	"Game taken out of \"{name}\".": {
 		"ja": "対戦を「{name}」から外しました。",
 		"reviewed": false,
 		"where": [
-			"suite/web/server.py:2838"
+			"suite/web/server.py:2852"
 		]
 	},
 	"Session \"{name}\" deleted (its games are untouched).": {
 		"ja": "セッション「{name}」を削除しました（対戦はそのまま残ります）。",
 		"reviewed": false,
 		"where": [
-			"suite/web/server.py:2841"
+			"suite/web/server.py:2855"
 		]
 	},
 	"Session \"{name}\" ended.": {
 		"ja": "セッション「{name}」を終了しました。",
 		"reviewed": false,
 		"where": [
-			"suite/web/server.py:2844"
+			"suite/web/server.py:2858"
 		]
 	},
 	"{user} has no session running on {bot}.": {
 		"ja": "{bot}で{user}の実行中のセッションはありません。",
 		"reviewed": false,
 		"where": [
-			"suite/web/server.py:2845"
+			"suite/web/server.py:2859"
 		]
 	},
 	"Reopening a game works only from this PC itself (this page opened at 127.0.0.1).": {
 		"ja": "対戦の再開はこのPC自体からのみ行えます（このページを127.0.0.1で開いてください）。",
 		"reviewed": false,
 		"where": [
-			"suite/web/server.py:2860"
+			"suite/web/server.py:2874"
 		]
 	},
 	"This game can't be reopened: it has no saved choices (games before 11-08, or not played on the local server).": {
 		"ja": "この対戦は再開できません。選択が保存されていません（11月8日より前の対戦、またはローカルサーバー以外で行われた対戦）。",
 		"reviewed": false,
 		"where": [
-			"suite/web/server.py:2862"
+			"suite/web/server.py:2876"
 		]
 	},
 	"Give your side and your Showdown name.": {
 		"ja": "あなたのサイドとShowdownの名前を入力してください。",
 		"reviewed": false,
 		"where": [
-			"suite/web/server.py:2864",
-			"suite/web/server.py:2889"
+			"suite/web/server.py:2878",
+			"suite/web/server.py:2903"
 		]
 	},
 	"Pick a turn from {lo} to {hi}.": {
 		"ja": "{lo}〜{hi}のターンを選んでください。",
 		"reviewed": false,
 		"where": [
-			"suite/web/server.py:2866",
-			"suite/web/server.py:2891"
+			"suite/web/server.py:2880",
+			"suite/web/server.py:2905"
 		]
 	},
 	"Opening a position works only from this PC itself (this page opened at 127.0.0.1).": {
 		"ja": "{t:position}を開くのはこのPC自体からのみ行えます（このページを127.0.0.1で開いてください）。",
 		"reviewed": false,
 		"where": [
-			"suite/web/server.py:2885"
+			"suite/web/server.py:2899"
 		]
 	},
 	"That analysis isn't here any more: analyze the replay again.": {
 		"ja": "その分析はもうありません。リプレイをもう一度分析してください。",
 		"reviewed": false,
 		"where": [
-			"suite/web/server.py:2887"
+			"suite/web/server.py:2901"
 		]
 	},
 	"Start and stop work only from this PC itself (this page opened at 127.0.0.1).": {
 		"ja": "開始と停止はこのPC自体からのみ操作できます（このページを127.0.0.1で開いた場合）。",
 		"reviewed": false,
 		"where": [
-			"suite/web/server.py:2909"
+			"suite/web/server.py:2923"
 		]
 	},
 	"cancelled - it won't start": {
 		"ja": "中止しました - 開始されません",
 		"reviewed": false,
 		"where": [
-			"suite/web/server.py:2931"
+			"suite/web/server.py:2950"
 		]
 	},
 	"Start from a finished Preview Advisor result.": {
 		"ja": "完了した{t:preview_advisor}の結果から始めてください。",
 		"reviewed": false,
 		"where": [
-			"suite/web/server.py:387"
+			"suite/web/server.py:393"
 		]
 	},
 	"that Deep Dive run isn't there any more": {
 		"ja": "その{t:deep_dive}の実行はもうありません",
 		"reviewed": false,
 		"where": [
-			"suite/web/server.py:424"
+			"suite/web/server.py:430"
 		]
 	},
 	"unknown field": {
 		"ja": "不明な対戦相手",
 		"reviewed": false,
 		"where": [
-			"suite/web/server.py:435",
-			"suite/web/server.py:581"
+			"suite/web/server.py:441",
+			"suite/web/server.py:587"
 		]
 	},
 	"At most {max_teams} teams (this field has {n}).": {
 		"ja": "最大{max_teams}チームまでです（この対戦相手は{n}チーム）。",
 		"reviewed": false,
 		"where": [
-			"suite/web/server.py:451"
+			"suite/web/server.py:457"
 		]
 	},
 	"{team} ({n} of {total}) · {step}": {
 		"ja": "{team}（{n}/{total}）· {step}",
 		"reviewed": false,
 		"where": [
-			"suite/web/server.py:465"
+			"suite/web/server.py:471"
 		]
 	},
 	"Your team: {error}": {
 		"ja": "あなたのチーム：{error}",
 		"reviewed": false,
 		"where": [
-			"suite/web/server.py:592"
+			"suite/web/server.py:598"
 		]
 	},
 	"Five Pokémon: find the sixth under Team Lab → Change a slot.": {
 		"ja": "5体です：6体目は{t:team_lab} → 1体入れ替えで探してください。",
 		"reviewed": false,
 		"where": [
-			"suite/web/server.py:609"
+			"suite/web/server.py:615"
 		]
 	},
 	"Name the Pokémon to replace - or give five to find a sixth.": {
 		"ja": "入れ替えるポケモンを指定してください。または5体を入力すると6体目を探します。",
 		"reviewed": false,
 		"where": [
-			"suite/web/server.py:611"
+			"suite/web/server.py:617"
 		]
 	},
 	"Team Lab plays at most {max_teams} teams, and this field has {n}: pick a bucket (the Buckets page makes one).": {
 		"ja": "{t:team_lab}で使えるのは最大{max_teams}チームで、この対戦相手は{n}チームです。{t:buckets}を選んでください（{t:buckets}のページで作れます）。",
 		"reviewed": false,
 		"where": [
-			"suite/web/server.py:613"
+			"suite/web/server.py:619"
 		]
 	},
 	"Deep Mode is for a full team of six in the Deep Dive.": {
 		"ja": "詳細モードは{t:deep_dive}で6体そろったチームに使います。",
 		"reviewed": false,
 		"where": [
-			"suite/web/server.py:615"
+			"suite/web/server.py:621"
 		]
 	},
 	"Deep Mode needs the search, and this format's closed team sheets can't be searched on this engine build.": {
 		"ja": "詳細モードには{t:search}が必要ですが、このエンジンのビルドではこのルールのクローズドチームシートを{t:search}できません。",
 		"reviewed": false,
 		"where": [
-			"suite/web/server.py:617"
+			"suite/web/server.py:623"
 		]
 	},
 	"Search Mode plays at most {search_total} games at once: {search_games} a team x {n} teams is {value} - use {value2} or fewer a team.": {
 		"ja": "{t:search}モードで一度に行えるのは最大{search_total}戦です：1チーム{search_games}戦 × {n}チームで{value}戦になります。1チーム{value2}戦以下にしてください。",
 		"reviewed": false,
 		"where": [
-			"suite/web/server.py:619"
+			"suite/web/server.py:625"
 		]
 	},
 	"Name one Pokémon of your team to replace (\"{replace}\" matches {n}).": {
 		"ja": "入れ替えるポケモンをチームから1体指定してください（「{replace}」は{n}体に当てはまります）。",
 		"reviewed": false,
 		"where": [
-			"suite/web/server.py:632"
+			"suite/web/server.py:638"
 		]
 	},
 	"Give six Pokémon - or five, to find the sixth (this team has {n}).": {
 		"ja": "ポケモンを6体入力してください。6体目を探すなら5体です（このチームは{n}体）。",
 		"reviewed": false,
 		"where": [
-			"suite/web/server.py:638"
+			"suite/web/server.py:644"
 		]
 	},
 	"The reference team needs six Pokémon (it has {n}).": {
 		"ja": "比較用のチームには6体必要です（{n}体です）。",
 		"reviewed": false,
 		"where": [
-			"suite/web/server.py:654"
+			"suite/web/server.py:660"
 		]
 	},
 	"The reference team: {error}": {
 		"ja": "比較用のチーム：{error}",
 		"reviewed": false,
 		"where": [
-			"suite/web/server.py:658"
+			"suite/web/server.py:664"
 		]
 	},
 	"your team": {
 		"ja": "あなたのチーム",
 		"reviewed": false,
 		"where": [
-			"suite/web/server.py:660"
+			"suite/web/server.py:666"
 		]
 	},
 	"the reference team": {
 		"ja": "比較用のチーム",
 		"reviewed": false,
 		"where": [
-			"suite/web/server.py:662"
+			"suite/web/server.py:668"
 		]
 	},
 	"Luck: replaying the chance rolls": {
 		"ja": "運：乱数の判定を再現中",
 		"reviewed": false,
 		"where": [
-			"suite/web/server.py:670"
+			"suite/web/server.py:676"
 		]
 	},
 	"That Deep Dive run or its bring matrix for this team isn't available.": {
 		"ja": "その{t:deep_dive}の実行、またはこのチームの{t:bring}の対戦表がありません。",
 		"reviewed": false,
 		"where": [
-			"suite/web/server.py:694"
+			"suite/web/server.py:700"
 		]
 	},
 	"This engine build can't search closed team sheets yet.": {
 		"ja": "このエンジンのビルドはまだクローズドチームシートを{t:search}できません。",
 		"reviewed": false,
 		"where": [
-			"suite/web/server.py:706",
-			"suite/web/server.py:757"
+			"suite/web/server.py:712",
+			"suite/web/server.py:763"
 		]
 	},
 	"Nothing left to search: every cell the quick references rest on is searched.": {
 		"ja": "{t:search}するものは残っていません。簡易推定が頼っているマスはすべて{t:search}済みです。",
 		"reviewed": false,
 		"where": [
-			"suite/web/server.py:722"
+			"suite/web/server.py:728"
 		]
 	},
 	"That Deep Dive run or this team isn't available.": {
 		"ja": "その{t:deep_dive}の実行、またはこのチームがありません。",
 		"reviewed": false,
 		"where": [
-			"suite/web/server.py:751"
+			"suite/web/server.py:757"
 		]
 	},
 	"Finding the fours to look at": {
 		"ja": "検討する4体を探しています",
 		"reviewed": false,
 		"where": [
-			"suite/web/server.py:759"
+			"suite/web/server.py:765"
 		]
 	},
 	"Searched matrix: {done} of {total} games": {
 		"ja": "{t:search}による対戦表：{done}/{total}戦",
 		"reviewed": false,
 		"where": [
-			"suite/web/server.py:761"
+			"suite/web/server.py:767"
 		]
 	},
 	"Refining the cells that decide it: {done} of {total} games": {
 		"ja": "勝敗を分けるマスを精査中：{done}/{total}戦",
 		"reviewed": false,
 		"where": [
-			"suite/web/server.py:762"
+			"suite/web/server.py:768"
 		]
 	},
 	"Couldn't read your candidate sets: {error}": {
 		"ja": "候補の型を読み取れませんでした：{error}",
 		"reviewed": false,
 		"where": [
-			"suite/web/server.py:805",
-			"suite/web/server.py:822"
+			"suite/web/server.py:811",
+			"suite/web/server.py:828"
 		]
 	},
 	"{list}: more than four moves - two sets ran together? Put a blank line between sets.": {
 		"ja": "{list}: 技が5つ以上あります。2つの型がつながっていませんか？ 型の間に空行を入れてください。",
 		"reviewed": false,
 		"where": [
-			"suite/web/server.py:808",
-			"suite/web/server.py:825"
+			"suite/web/server.py:814",
+			"suite/web/server.py:831"
 		]
 	},
 	"Candidate {label}: {error}": {
 		"ja": "候補{label}: {error}",
 		"reviewed": false,
 		"where": [
-			"suite/web/server.py:817",
-			"suite/web/server.py:831"
+			"suite/web/server.py:823",
+			"suite/web/server.py:837"
 		]
 	},
 	"Ladder usage (Smogon) candidates are Reg M-C only - take the field's most used Pokémon instead.": {
 		"ja": "Showdownラダーの使用率（Smogon）からの候補はReg M-C専用です。代わりに対戦相手で使用率の高いポケモンを使ってください。",
 		"reviewed": false,
 		"where": [
-			"suite/web/server.py:838"
+			"suite/web/server.py:844"
 		]
 	},
 	"No Smogon usage data for this format in this install (data/smogon-usage/).": {
 		"ja": "このインストールにはこのルールのSmogon使用率データがありません（data/smogon-usage/）。",
 		"reviewed": false,
 		"where": [
-			"suite/web/server.py:843"
+			"suite/web/server.py:849"
 		]
 	},
 	"Candidates needed: paste some sets, or tick the field's most used Pokémon.": {
 		"ja": "候補が必要です：型を貼り付けるか、対戦相手で使用率の高いポケモンにチェックを入れてください。",
 		"reviewed": false,
 		"where": [
-			"suite/web/server.py:849"
+			"suite/web/server.py:855"
 		]
 	},
 	"At most {sixth_candidates} candidates in one run (this one has {n}).": {
 		"ja": "1回の実行で候補は最大{sixth_candidates}件です（この実行は{n}件）。",
 		"reviewed": false,
 		"where": [
-			"suite/web/server.py:851"
+			"suite/web/server.py:857"
 		]
 	},
 	"That replay isn't in the replays folder.": {
 		"ja": "そのリプレイはリプレイフォルダーにありません。",
 		"reviewed": false,
 		"where": [
-			"suite/web/server.py:925"
+			"suite/web/server.py:931"
 		]
 	},
 	"this game": {
@@ -4475,7 +4475,7 @@
 		"reviewed": false,
 		"where": [
 			"suite/web/templates/about.html:19",
-			"suite/web/templates/base.html:47"
+			"suite/web/templates/base.html:50"
 		]
 	},
 	"About": {
@@ -4949,109 +4949,144 @@
 			"suite/web/templates/base.html:40"
 		]
 	},
+	"<b>Running in your browser</b> &middot; this PC doesn't have Microsoft's Edge WebView2 Runtime, so openVGCengine opened here instead of in its own window (installing the runtime brings the window back). Closing every tab closes the app after a while; to close it now:": {
+		"ja": "<b>ブラウザで動作中</b> &middot; このPCにはMicrosoftのEdge WebView2ランタイムがないため、openVGCengineは専用のウィンドウではなくここで開きました（ランタイムをインストールするとウィンドウに戻ります）。タブをすべて閉じると、しばらくしてアプリも終了します。今すぐ終了するには：",
+		"reviewed": false,
+		"where": [
+			"suite/web/templates/base.html:42"
+		]
+	},
+	"Close the app": {
+		"ja": "アプリを終了",
+		"reviewed": false,
+		"where": [
+			"suite/web/templates/base.html:42"
+		]
+	},
 	"Status, results and history still work; new runs and the Line Crawler wait until it's done.": {
 		"ja": "状況・結果・履歴はそのまま見られます。新しい実行と{t:line_crawler}は、処理が終わるまで待機します。",
 		"reviewed": false,
 		"where": [
-			"suite/web/templates/base.html:41"
+			"suite/web/templates/base.html:43"
 		]
 	},
 	"Tools paused": {
 		"ja": "ツール一時停止中",
 		"reviewed": false,
 		"where": [
-			"suite/web/templates/base.html:41"
+			"suite/web/templates/base.html:43"
 		]
 	},
 	"this PC is busy:": {
 		"ja": "このPCは処理中です：",
 		"reviewed": false,
 		"where": [
-			"suite/web/templates/base.html:41"
+			"suite/web/templates/base.html:43"
 		]
 	},
 	"until about {time}": {
 		"ja": "{time}ごろまで",
 		"reviewed": false,
 		"where": [
-			"suite/web/templates/base.html:41"
+			"suite/web/templates/base.html:43"
+		]
+	},
+	"You can close this tab. Start the app again to keep going.": {
+		"ja": "このタブは閉じてかまいません。続けるにはアプリをもう一度起動してください。",
+		"reviewed": false,
+		"where": [
+			"suite/web/templates/base.html:45"
+		]
+	},
+	"openVGCengine has closed": {
+		"ja": "openVGCengineは終了しました",
+		"reviewed": false,
+		"where": [
+			"suite/web/templates/base.html:45"
 		]
 	},
 	"Back home": {
 		"ja": "ホームに戻る",
 		"reviewed": false,
 		"where": [
-			"suite/web/templates/base.html:43"
+			"suite/web/templates/base.html:46"
 		]
 	},
 	"Hmm, nothing here": {
 		"ja": "ここには何もありません",
 		"reviewed": false,
 		"where": [
-			"suite/web/templates/base.html:43"
+			"suite/web/templates/base.html:46"
 		]
 	},
 	"That result doesn't exist (any more).": {
 		"ja": "その結果は存在しません（削除された可能性があります）。",
 		"reviewed": false,
 		"where": [
-			"suite/web/templates/base.html:43"
+			"suite/web/templates/base.html:46"
 		]
 	},
 	"Everything here is the model's view from self-play, not a verdict": {
 		"ja": "表示はすべて自己対戦で学習したモデルの見方であり、正解ではありません",
 		"reviewed": false,
 		"where": [
-			"suite/web/templates/base.html:46"
+			"suite/web/templates/base.html:49"
 		]
 	},
 	"About & updates": {
 		"ja": "このアプリについて・アップデート",
 		"reviewed": false,
 		"where": [
-			"suite/web/templates/base.html:47"
+			"suite/web/templates/base.html:50"
+		]
+	},
+	"openVGCengine has closed. Start the app again to keep going.": {
+		"ja": "openVGCengineは終了しました。続けるにはアプリをもう一度起動してください。",
+		"reviewed": false,
+		"where": [
+			"suite/web/templates/base.html:55"
 		]
 	},
 	"fill from a bucket…": {
 		"ja": "{t:buckets}から入力…",
 		"reviewed": false,
 		"where": [
-			"suite/web/templates/base.html:51"
+			"suite/web/templates/base.html:59"
 		]
 	},
 	"the whole bucket (a team drawn per game)": {
 		"ja": "リスト全体（対戦ごとに1チームを抽選）",
 		"reviewed": false,
 		"where": [
-			"suite/web/templates/base.html:52"
+			"suite/web/templates/base.html:60"
 		]
 	},
 	"Pokémon icons: {mode}": {
 		"ja": "ポケモンのアイコン：{mode}",
 		"reviewed": false,
 		"where": [
-			"suite/web/templates/base.html:53"
+			"suite/web/templates/base.html:61"
 		]
 	},
 	"icons only": {
 		"ja": "アイコンのみ",
 		"reviewed": false,
 		"where": [
-			"suite/web/templates/base.html:53"
+			"suite/web/templates/base.html:61"
 		]
 	},
 	"icons with names": {
 		"ja": "アイコンと名前",
 		"reviewed": false,
 		"where": [
-			"suite/web/templates/base.html:54"
+			"suite/web/templates/base.html:62"
 		]
 	},
 	"off": {
 		"ja": "オフ",
 		"reviewed": false,
 		"where": [
-			"suite/web/templates/base.html:54",
+			"suite/web/templates/base.html:62",
 			"suite/web/templates/buddy.html:57",
 			"suite/web/templates/buddy.html:70"
 		]
@@ -5060,21 +5095,21 @@
 		"ja": "コピーしました",
 		"reviewed": false,
 		"where": [
-			"suite/web/templates/base.html:59"
+			"suite/web/templates/base.html:67"
 		]
 	},
 	"Select + copy by hand": {
 		"ja": "選択して手動でコピーしてください",
 		"reviewed": false,
 		"where": [
-			"suite/web/templates/base.html:59"
+			"suite/web/templates/base.html:67"
 		]
 	},
 	"sort": {
 		"ja": "並べ替え",
 		"reviewed": false,
 		"where": [
-			"suite/web/templates/base.html:75"
+			"suite/web/templates/base.html:83"
 		]
 	},
 	"<b>Their recommended</b>: the four their side brings most when both sides pick well (the mirror of your recommended). <b>Your counter-switch</b>: the four to switch to if they answer your recommended four with the lead shown.": {

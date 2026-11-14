@@ -1,0 +1,311 @@
+{
+	"format": "gen6vgc2016",
+	"seed": "gen5,30502,55499,4485,59496",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Typhlosion",
+			"item": "Occa Berry",
+			"ability": "Flash Fire",
+			"moves": [
+				"Eruption",
+				"Swift",
+				"Protect",
+				"Swagger"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 4,
+				"atk": 0,
+				"def": 0,
+				"spa": 252,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 0,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "Gourgeist-Super",
+			"item": "Choice Band",
+			"ability": "Insomnia",
+			"moves": [
+				"Shadow Sneak",
+				"Bullet Seed",
+				"Rock Slide",
+				"Razor Leaf"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 252,
+				"atk": 252,
+				"def": 0,
+				"spa": 0,
+				"spd": 4,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 0,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "Zebstrika",
+			"item": "Draco Plate",
+			"ability": "Lightning Rod",
+			"moves": [
+				"Wild Charge",
+				"Double-Edge",
+				"Protect",
+				"Swagger"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 4,
+				"atk": 252,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 0,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "Arcanine",
+			"item": "Safety Goggles",
+			"ability": "Intimidate",
+			"moves": [
+				"Extreme Speed",
+				"Hidden Power Ice",
+				"Close Combat",
+				"Flare Blitz"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 0,
+				"atk": 252,
+				"def": 4,
+				"spa": 0,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 30,
+				"atk": 31,
+				"def": 30,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"hpType": "Ice"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Scizor",
+			"item": "Scizorite",
+			"ability": "Technician",
+			"moves": [
+				"Bullet Punch",
+				"Protect",
+				"Swords Dance",
+				"Knock Off"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 252,
+				"atk": 252,
+				"def": 0,
+				"spa": 0,
+				"spd": 4,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "Shedinja",
+			"item": "Focus Sash",
+			"ability": "Wonder Guard",
+			"moves": [
+				"X-Scissor",
+				"Toxic",
+				"Protect",
+				"Shadow Sneak"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 0,
+				"atk": 252,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "Palkia",
+			"item": "Lustrous Orb",
+			"ability": "Pressure",
+			"moves": [
+				"Protect",
+				"Earth Power",
+				"Spacial Rend",
+				"Flamethrower"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 4,
+				"atk": 0,
+				"def": 0,
+				"spa": 252,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "Charizard",
+			"item": "Kebia Berry",
+			"ability": "Solar Power",
+			"moves": [
+				"Heat Wave",
+				"Air Slash",
+				"Dragon Pulse",
+				"Protect"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 4,
+				"atk": 0,
+				"def": 0,
+				"spa": 252,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 0,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 2, move 1 1",
+			"p2": "move 2, move 2 1"
+		},
+		{
+			"p1": "move 1, move 1 2",
+			"p2": "move 4 1 mega, switch 3"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 3, pass"
+		},
+		{
+			"p1": "move 4 1, switch 4",
+			"p2": "move 4 1, move 2 1"
+		},
+		{
+			"p1": "switch 3, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 1 -2, switch 4",
+			"p2": "move 4 2, switch 4"
+		},
+		{
+			"p1": "switch 4, move 2 1",
+			"p2": "move 2 1, move 3 1"
+		},
+		{
+			"p1": "move 4 -2, move 2 -1",
+			"p2": "move 2 2, move 2 -1"
+		},
+		{
+			"p1": "pass, switch 4",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 1 -2, move 4 1",
+			"p2": "move 2 2, move 3 2"
+		},
+		{
+			"p1": "move 1 1, move 4 2",
+			"p2": "move 1 1, move 4"
+		},
+		{
+			"p1": "pass, move 4 2",
+			"p2": "move 1 1, switch 4"
+		}
+	],
+	"teams": [
+		"GU-87",
+		"GM-223"
+	]
+}

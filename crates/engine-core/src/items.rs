@@ -36,7 +36,14 @@ pub fn mail_locked(item: engine_data::items_table::ItemId) -> bool {
 pub fn mega_forme(item: u16, species: u16, moves: &[u16], dragon_ascent: bool) -> Option<u16> {
     use engine_data::species_table::species_ids::{RAYQUAZA, RAYQUAZAMEGA};
     engine_data::items_table::mega_forme_for(item, species)
-        .or_else(|| (dragon_ascent && species == RAYQUAZA && moves.contains(&engine_data::moves_table::move_ids::DRAGONASCENT)).then_some(RAYQUAZAMEGA))
+
+        .or_else(|| {
+            (dragon_ascent
+                && species == RAYQUAZA
+                && moves.contains(&engine_data::moves_table::move_ids::DRAGONASCENT)
+                && engine_data::z_table::crystal(item).is_none())
+            .then_some(RAYQUAZAMEGA)
+        })
 
         .or_else(|| is_ultra_burst(item, species).then_some(engine_data::species_table::species_ids::NECROZMAULTRA))
 }
@@ -63,10 +70,12 @@ pub fn mega_target(rules: &crate::rules::Rules, mon: &crate::mon::Mon) -> Option
 
 
 
-pub fn species_locked_item(item: u16, species: u16) -> bool {
+pub fn species_locked_item(rules: &crate::rules::Rules, item: u16, species: u16) -> bool {
     use engine_data::items_table::item_ids;
-    use engine_data::species_table::species_ids::{GROUDON, GROUDONPRIMAL, KYOGRE, KYOGREPRIMAL};
+    use engine_data::species_table::species_ids::{GIRATINA, GIRATINAORIGIN, GROUDON, GROUDONPRIMAL, KYOGRE, KYOGREPRIMAL};
     engine_data::items_table::MEGA_STONES.iter().any(|&(i, base, mega)| i == item && (species == base || species == mega))
+
+        || (rules.items.griseous_orb_locked && item == item_ids::GRISEOUSORB && matches!(species, GIRATINA | GIRATINAORIGIN))
         || (item == item_ids::REDORB && matches!(species, GROUDON | GROUDONPRIMAL))
         || (item == item_ids::BLUEORB && matches!(species, KYOGRE | KYOGREPRIMAL))
 
@@ -201,8 +210,8 @@ fn is_paradox(species: u16) -> bool {
 
 
 
-pub fn knock_off_boosts(holder: &Mon) -> bool {
-    holder.item != crate::ids::NONE_ID && !species_locked_item(holder.item, pre_transform_species(holder))
+pub fn knock_off_boosts(rules: &crate::rules::Rules, holder: &Mon) -> bool {
+    holder.item != crate::ids::NONE_ID && !species_locked_item(rules, holder.item, pre_transform_species(holder))
 }
 
 
@@ -210,7 +219,7 @@ pub fn knock_off_boosts(holder: &Mon) -> bool {
 
 
 
-pub fn knock_off_removable(holder: &Mon, taker_species: u16) -> bool {
+pub fn knock_off_removable(rules: &crate::rules::Rules, holder: &Mon, taker_species: u16) -> bool {
     use engine_data::abilities_table::ability_ids;
 
 
@@ -218,7 +227,7 @@ pub fn knock_off_removable(holder: &Mon, taker_species: u16) -> bool {
     if holder.item == crate::ids::NONE_ID || sticky {
         return false;
     }
-    !species_locked_item(holder.item, taker_species)
+    !species_locked_item(rules, holder.item, taker_species)
 }
 
 
@@ -422,10 +431,10 @@ mod tests {
 
         assert_eq!(types(&Rules::GEN7_VGC, sp::ARCEUSFIRE, ability_ids::PRESSURE, item_ids::FLAMEPLATE), [Some(Type::Normal), None, None]);
         assert_eq!(types(&Rules::GEN9_SV, sp::ARCEUSFIRE, ability_ids::PRESSURE, item_ids::FLAMEPLATE), [Some(Type::Fire), None, None]);
-        assert!(species_locked_item(item_ids::FLAMEPLATE, sp::ARCEUS) && species_locked_item(item_ids::FLAMEPLATE, sp::ARCEUSWATER));
-        assert!(!species_locked_item(item_ids::FLAMEPLATE, sp::SILVALLY));
-        assert!(species_locked_item(item_ids::DOUSEDRIVE, sp::GENESECTDOUSE) && species_locked_item(item_ids::BURNDRIVE, sp::GENESECT));
-        assert!(!species_locked_item(item_ids::DOUSEDRIVE, sp::ARCEUS));
+        assert!(species_locked_item(&crate::rules::Rules::GEN9_SV, item_ids::FLAMEPLATE, sp::ARCEUS) && species_locked_item(&crate::rules::Rules::GEN9_SV, item_ids::FLAMEPLATE, sp::ARCEUSWATER));
+        assert!(!species_locked_item(&crate::rules::Rules::GEN9_SV, item_ids::FLAMEPLATE, sp::SILVALLY));
+        assert!(species_locked_item(&crate::rules::Rules::GEN9_SV, item_ids::DOUSEDRIVE, sp::GENESECTDOUSE) && species_locked_item(&crate::rules::Rules::GEN9_SV, item_ids::BURNDRIVE, sp::GENESECT));
+        assert!(!species_locked_item(&crate::rules::Rules::GEN9_SV, item_ids::DOUSEDRIVE, sp::ARCEUS));
         assert_eq!(drive_type(item_ids::CHILLDRIVE), Some(Type::Ice));
     }
 }

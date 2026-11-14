@@ -1,0 +1,310 @@
+{
+	"format": "gen7vgc2019",
+	"seed": "gen5,31144,19250,48313,10967",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Decidueye",
+			"item": "Decidium Z",
+			"ability": "Overgrow",
+			"moves": [
+				"Grass Pledge",
+				"Shadow Ball",
+				"Spirit Shackle",
+				"Protect"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 4,
+				"atk": 0,
+				"def": 0,
+				"spa": 252,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 0,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "Seismitoad",
+			"item": "Figy Berry",
+			"ability": "Water Absorb",
+			"moves": [
+				"Stomping Tantrum",
+				"Rock Slide",
+				"Protect",
+				"Substitute"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 4,
+				"atk": 252,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 0,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "Tapu Bulu",
+			"item": "Payapa Berry",
+			"ability": "Grassy Surge",
+			"moves": [
+				"Wood Hammer",
+				"Rock Slide",
+				"Protect",
+				"Taunt"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 4,
+				"atk": 252,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 0,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "Giratina-Origin",
+			"item": "Griseous Orb",
+			"ability": "Levitate",
+			"moves": [
+				"Ominous Wind",
+				"Dragon Pulse",
+				"Earth Power",
+				"Protect"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 4,
+				"atk": 0,
+				"def": 0,
+				"spa": 252,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 0,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Araquanid-Totem",
+			"item": "Psychium Z",
+			"ability": "Water Bubble",
+			"moves": [
+				"Waterfall",
+				"Lunge",
+				"Mirror Coat",
+				"Protect"
+			],
+			"nature": "Brave",
+			"evs": {
+				"hp": 252,
+				"atk": 252,
+				"def": 4,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 0,
+				"spd": 31,
+				"spe": 0
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "Girafarig",
+			"item": "Groundium Z",
+			"ability": "Sap Sipper",
+			"moves": [
+				"Hyper Voice",
+				"Future Sight",
+				"Stomping Tantrum",
+				"Protect"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 4,
+				"atk": 0,
+				"def": 0,
+				"spa": 252,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 0,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "Groudon",
+			"item": "Aguav Berry",
+			"ability": "Drought",
+			"moves": [
+				"Precipice Blades",
+				"Protect",
+				"Swords Dance",
+				"Fire Punch"
+			],
+			"nature": "Careful",
+			"evs": {
+				"hp": 244,
+				"atk": 4,
+				"def": 4,
+				"spa": 0,
+				"spd": 220,
+				"spe": 36
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "Minun",
+			"item": "Dread Plate",
+			"ability": "Volt Absorb",
+			"moves": [
+				"Thunder",
+				"Swift",
+				"Protect",
+				"Light Screen"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 4,
+				"atk": 0,
+				"def": 0,
+				"spa": 252,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 0,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 1 -2, move 3",
+			"p2": "switch 4, move 3 2"
+		},
+		{
+			"p1": "move 3 -2 zmove, move 1 2",
+			"p2": "move 1 2, move 2 -1"
+		},
+		{
+			"p1": "move 1 1, move 4",
+			"p2": "switch 3, switch 4"
+		},
+		{
+			"p1": "move 2 1, move 1 -1",
+			"p2": "switch 3, move 3 -1 zmove"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 4, pass"
+		},
+		{
+			"p1": "move 4, switch 3",
+			"p2": "move 4, move 3"
+		},
+		{
+			"p1": "move 1 1, move 3",
+			"p2": "move 1, move 1 2"
+		},
+		{
+			"p1": "move 1 1, move 1 -1",
+			"p2": "move 3 -2, move 1 2"
+		},
+		{
+			"p1": "move 1 1, move 1 -1",
+			"p2": "switch 3, move 2 1"
+		},
+		{
+			"p1": "switch 4, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 2 2, move 3",
+			"p2": "move 3, move 3"
+		},
+		{
+			"p1": "move 1 2, move 2",
+			"p2": "move 3, move 3"
+		}
+	],
+	"teams": [
+		"GU-240",
+		"GU-192"
+	]
+}

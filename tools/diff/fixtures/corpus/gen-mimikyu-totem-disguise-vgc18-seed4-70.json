@@ -1,0 +1,310 @@
+{
+	"format": "gen7vgc2018",
+	"seed": "gen5,40020,48992,21936,30543",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Charizard",
+			"item": "Charizardite Y",
+			"ability": "Blaze",
+			"moves": [
+				"Heat Wave",
+				"Solar Beam",
+				"Overheat",
+				"Protect"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 76,
+				"atk": 0,
+				"def": 180,
+				"spa": 64,
+				"spd": 0,
+				"spe": 188
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "Mimikyu-Totem",
+			"item": "Razor Fang",
+			"ability": "Disguise",
+			"moves": [
+				"Shadow Claw",
+				"Play Rough",
+				"Leech Life",
+				"Protect"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 4,
+				"atk": 252,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 0,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "Tropius",
+			"item": "Terrain Extender",
+			"ability": "Harvest",
+			"moves": [
+				"Leaf Storm",
+				"Air Slash",
+				"Dragon Pulse",
+				"Protect"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 252,
+				"atk": 0,
+				"def": 0,
+				"spa": 252,
+				"spd": 4,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 0,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "Tyranitar",
+			"item": "Tyranitarite",
+			"ability": "Sand Stream",
+			"moves": [
+				"Protect",
+				"Dragon Dance",
+				"Rock Slide",
+				"Superpower"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 0,
+				"atk": 252,
+				"def": 0,
+				"spa": 0,
+				"spd": 4,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Mimikyu",
+			"item": "Mimikium Z",
+			"ability": "Disguise",
+			"moves": [
+				"Astonish",
+				"Play Rough",
+				"Leech Life",
+				"Protect"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 4,
+				"atk": 252,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 0,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "Throh",
+			"item": "Rock Incense",
+			"ability": "Guts",
+			"moves": [
+				"Brick Break",
+				"Poison Jab",
+				"Protect",
+				"Helping Hand"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 252,
+				"atk": 252,
+				"def": 4,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 0,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "Lopunny",
+			"item": "Lopunnite",
+			"ability": "Cute Charm",
+			"moves": [
+				"Facade",
+				"High Jump Kick",
+				"Iron Tail",
+				"Protect"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 4,
+				"atk": 252,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 0,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "Shiftry",
+			"item": "Chesto Berry",
+			"ability": "Pickpocket",
+			"moves": [
+				"Bullet Seed",
+				"Knock Off",
+				"Facade",
+				"Protect"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 4,
+				"atk": 252,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 0,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 3 -2 mega, move 2 -1",
+			"p2": "move 2 -2, move 3"
+		},
+		{
+			"p1": "move 3 2, switch 4",
+			"p2": "move 2 1, move 2 2"
+		},
+		{
+			"p1": "move 2 -2, switch 3",
+			"p2": "move 2 -2, switch 3"
+		},
+		{
+			"p1": "move 1, move 1 1",
+			"p2": "move 1 1, move 3 1 mega"
+		},
+		{
+			"p1": "move 3 -2, move 2 -1",
+			"p2": "move 3 2, move 1 2"
+		},
+		{
+			"p1": "pass, switch 3",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 4, move 1",
+			"p2": "move 2 2, move 2 1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "pass, switch 4"
+		},
+		{
+			"p1": "move 4, move 4 1",
+			"p2": "move 2 1 zmove, move 3 -1"
+		},
+		{
+			"p1": "switch 4, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 3 -2, move 4 2",
+			"p2": "move 1 -2, move 4"
+		},
+		{
+			"p1": "move 2 1, move 4 1",
+			"p2": "move 4, move 1 -1"
+		}
+	],
+	"teams": [
+		"GM-226",
+		"GU-156"
+	]
+}

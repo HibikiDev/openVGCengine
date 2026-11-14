@@ -60,6 +60,11 @@ FOCUS_APP = None
 
 
 
+BROWSER_MODE = False
+APP_SEEN = time.monotonic()
+
+
+
 
 
 SHOWDOWN_URL = "http://127.0.0.1:8000" if sys.platform == "darwin" else "http://localhost:8000"
@@ -2185,7 +2190,7 @@ def _has_meta_field() -> bool:
     return META_FIELD.exists()
 
 
-ENV.globals.update(in_app=lambda: OPEN_WINDOW is not None, private=PRIVATE, favorites=favorites, mxchecks=mxchecks, mxsearches=mxsearches, sweep_six_paste=sweep_six_paste, team_paste=team_paste, dd_team_paste=dd_team_paste, has_mxcheck=True, smogon_month=_smogon_month, TOOLS=TOOLS, LIMITS=LIMITS, WAIT=WAIT, win_curve_svg=win_curve_svg, suite_lock=lambda: suite_lock.state(),
+ENV.globals.update(in_app=lambda: OPEN_WINDOW is not None, browser_mode=lambda: BROWSER_MODE, private=PRIVATE, favorites=favorites, mxchecks=mxchecks, mxsearches=mxsearches, sweep_six_paste=sweep_six_paste, team_paste=team_paste, dd_team_paste=dd_team_paste, has_mxcheck=True, smogon_month=_smogon_month, TOOLS=TOOLS, LIMITS=LIMITS, WAIT=WAIT, win_curve_svg=win_curve_svg, suite_lock=lambda: suite_lock.state(),
                    team_buckets=_bucket_names, has_meta_field=_has_meta_field,
                    has_library=_has_library())
 STATIC = {"style.css": "text/css", "app.js": "text/javascript", "sprites.js": "text/javascript", "fonts/fonts.css": "text/css",
@@ -2442,6 +2447,10 @@ class Handler(BaseHTTPRequestHandler):
             if FOCUS_APP is not None and self._local():
                 FOCUS_APP()
             return self._send(json.dumps({"app": "openVGCengine", "pid": os.getpid()}), "application/json")
+        if path == "app/alive":
+            if self._local():
+                globals()["APP_SEEN"] = time.monotonic()
+            return self._send(json.dumps({"ok": True}), "application/json")
         if path == "buddy/play":
             from urllib.parse import urlencode
             from vgc_suite.core.h2h_examples import ensure_local_server
@@ -2924,6 +2933,11 @@ class Handler(BaseHTTPRequestHandler):
         tool = urlparse(self.path).path.strip("/")
         if not PRIVATE and private_route(tool):
             return self._send("Not in this build.", "text/plain; charset=utf-8", 404)
+        if tool == "app/quit":
+            if not BROWSER_MODE or QUIT_APP is None or not self._local():
+                return self._send("Not from this app.", "text/plain; charset=utf-8", 403)
+            threading.Timer(0.5, QUIT_APP).start()
+            return self._page("base.html", closed=True, standalone=True)
         if suite_lock.state() is not None and tool != "api/species":
             return self._locked_page()
         if tool == "api/cancel":

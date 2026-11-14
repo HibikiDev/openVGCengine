@@ -1,0 +1,310 @@
+{
+	"format": "gen8vgc2020",
+	"seed": "gen5,10367,37802,22963,51151",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Silvally-Grass",
+			"item": "Grass Memory",
+			"ability": "RKS System",
+			"moves": [
+				"Grass Pledge",
+				"Hyper Voice",
+				"Protect",
+				"Parting Shot"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 4,
+				"atk": 0,
+				"def": 0,
+				"spa": 252,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 0,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "Blastoise-Gmax",
+			"item": "Leftovers",
+			"ability": "Torrent",
+			"moves": [
+				"Water Spout",
+				"Dragon Pulse",
+				"Protect",
+				"Muddy Water"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 4,
+				"atk": 0,
+				"def": 0,
+				"spa": 252,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 0,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "Seaking",
+			"item": "Life Orb",
+			"ability": "Swift Swim",
+			"moves": [
+				"Waterfall",
+				"Megahorn",
+				"Protect",
+				"Swords Dance"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 252,
+				"atk": 252,
+				"def": 4,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 0,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "Venusaur-Gmax",
+			"item": "Mental Herb",
+			"ability": "Chlorophyll",
+			"moves": [
+				"Leaf Storm",
+				"Sludge Bomb",
+				"Double-Edge",
+				"Protect"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 4,
+				"atk": 0,
+				"def": 0,
+				"spa": 252,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 0,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Krookodile",
+			"item": "Assault Vest",
+			"ability": "Intimidate",
+			"moves": [
+				"Darkest Lariat",
+				"Rock Slide",
+				"Power Trip",
+				"High Horsepower"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 76,
+				"atk": 172,
+				"def": 4,
+				"spa": 0,
+				"spd": 12,
+				"spe": 244
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "Primarina",
+			"item": "Choice Specs",
+			"ability": "Liquid Voice",
+			"moves": [
+				"Moonblast",
+				"Aqua Jet",
+				"Energy Ball",
+				"Hyper Voice"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 252,
+				"atk": 0,
+				"def": 0,
+				"spa": 252,
+				"spd": 4,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "Talonflame",
+			"item": "Sharp Beak",
+			"ability": "Gale Wings",
+			"moves": [
+				"Dual Wingbeat",
+				"Tailwind",
+				"Brave Bird",
+				"Defog"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 0,
+				"atk": 252,
+				"def": 0,
+				"spa": 0,
+				"spd": 4,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "Dragapult",
+			"item": "Life Orb",
+			"ability": "Clear Body",
+			"moves": [
+				"Reflect",
+				"Shadow Ball",
+				"Dragon Darts",
+				"U-turn"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 0,
+				"atk": 252,
+				"def": 0,
+				"spa": 0,
+				"spd": 4,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 4 -2, switch 4",
+			"p2": "move 3 -2, move 4 2 dynamax"
+		},
+		{
+			"p1": "switch 3, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "switch 3, move 1 2 dynamax",
+			"p2": "move 2, move 1 2"
+		},
+		{
+			"p1": "move 4 -2, move 4",
+			"p2": "move 3 -2, move 4 2"
+		},
+		{
+			"p1": "move 4 2, switch 4",
+			"p2": "move 4 2, move 1 2"
+		},
+		{
+			"p1": "switch 4, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "pass, switch 4",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "switch 3, move 1 1",
+			"p2": "move 4 -2, move 1 -1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 3, pass"
+		},
+		{
+			"p1": "move 1 2, move 2",
+			"p2": "move 1 -2, switch 4"
+		},
+		{
+			"p1": "move 1 2, move 4 1",
+			"p2": "move 3 2, move 2 -1"
+		},
+		{
+			"p1": "pass, switch 3",
+			"p2": "pass, switch 4"
+		}
+	],
+	"teams": [
+		"GU-95",
+		"GM-188"
+	]
+}

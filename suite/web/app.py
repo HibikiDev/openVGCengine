@@ -14,6 +14,9 @@
 
 
 
+
+
+
 from __future__ import annotations
 
 import argparse
@@ -78,12 +81,13 @@ def main() -> int:
     ap.add_argument("--sprites", default=str(ROOT / "sprites"), help="a folder of Pokemon sprite images for the optional icons")
     ap.add_argument("--smoke", action="store_true", help="open, check the page loaded, close (exit 1 if it didn't)")
     ap.add_argument("--debug", action="store_true", help="the web inspector (right click -> Inspect)")
+    ap.add_argument("--browser", action="store_true", help="the pages in the default browser instead of the app's window (what the "
+                    "app does by itself without pywebview or, on Windows, without the Edge WebView2 Runtime)")
     args = ap.parse_args()
     try:
         import webview
     except ImportError:
-        print("The desktop app needs pywebview: pip install -r requirements/app.txt (or run suite/web/server.py and open the browser).")
-        return 2
+        webview = None
     _log_to_file()
     if not args.smoke and _other_copy():
         print(f"app: {time.strftime('%Y-%m-%d %H:%M:%S')} another copy is open - its window was brought forward; this one exits", flush=True)
@@ -104,6 +108,9 @@ def main() -> int:
             INSTANCE.write_text(json.dumps({"pid": os.getpid(), "port": int(url.rstrip("/").rsplit(":", 1)[1])}), encoding="utf8")
         except (OSError, ValueError):
             pass
+    if args.browser or webview is None or not _webview2_ok():
+        why = "--browser" if args.browser else "no pywebview" if webview is None else "no Edge WebView2 Runtime"
+        return _browser(server, srv, url, before, why, args.smoke)
 
     webview.settings["OPEN_EXTERNAL_LINKS_IN_BROWSER"] = True
     webview.settings["ALLOW_DOWNLOADS"] = True
@@ -165,6 +172,81 @@ def main() -> int:
     finally:
         _shutdown(srv, before)
     return 0 if result["ok"] else 1
+
+
+WEBVIEW2_KEYS = ("{F3017226-FE2A-4295-8BDF-00C3A9A7E4C5}", "{2CD8A007-E189-409D-A2C8-9AF4EF3C72AA}",
+                 "{0D50BFEC-CD6A-4F9A-964C-C7416E3ACB10}", "{65C35B14-6C1D-4122-AC46-7148CC9D6497}")
+
+
+def _webview2_ok() -> bool:
+
+
+
+
+
+    if sys.platform != "win32":
+        return True
+    import platform
+    import winreg
+    try:
+        with winreg.OpenKey(winreg.HKEY_LOCAL_MACHINE, r"SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full") as k:
+            if winreg.QueryValueEx(k, "Release")[0] < 394802:
+                return False
+    except OSError:
+        return False
+    for key in WEBVIEW2_KEYS:
+        for hive in ("HKEY_CURRENT_USER", "HKEY_LOCAL_MACHINE"):
+            sub = "" if hive == "HKEY_CURRENT_USER" or platform.machine() == "x86" else "WOW6432Node\\"
+            try:
+                with winreg.OpenKey(getattr(winreg, hive), rf"SOFTWARE\{sub}Microsoft\EdgeUpdate\Clients\{key}") as k:
+                    if int(str(winreg.QueryValueEx(k, "pv")[0]).split(".")[0]) >= 86:
+                        return True
+            except (OSError, ValueError):
+                pass
+    return False
+
+
+IDLE_S = 600
+
+
+def _browser(server, srv, url: str, before: tuple, why: str, smoke: bool) -> int:
+
+
+
+
+    import webbrowser
+
+    stop = threading.Event()
+    server.BROWSER_MODE = True
+    server.OPEN_WINDOW = lambda u, title: webbrowser.open(u)
+    server.FOCUS_APP = lambda: webbrowser.open(url)
+    server.QUIT_APP = stop.set
+    print(f"app: in the default browser ({why})", flush=True)
+    if smoke:
+        try:
+            with urllib.request.urlopen(url, timeout=60) as r:
+                page = r.read().decode("utf8")
+            ok = "<title>" in page and page.count('class="tab') > 3 and "/app/quit" in page
+            print(f"smoke: browser mode page -> {'ok' if ok else 'FAILED'}", flush=True)
+        except OSError as e:
+            ok = False
+            print(f"smoke: browser mode page -> FAILED ({e})", flush=True)
+        _shutdown(srv, before)
+        return 0 if ok else 1
+    server.APP_SEEN = time.monotonic()
+    webbrowser.open(url)
+    tick = time.monotonic()
+    while not stop.wait(15):
+        now = time.monotonic()
+        if now - tick > 60:
+            server.APP_SEEN = now
+        tick = now
+        busy = any(j.get("status") in ("queued", "running") for j in server.Handler.jobs.jobs.values())
+        if now - server.APP_SEEN > IDLE_S and not busy:
+            print("app: no page open - closing", flush=True)
+            break
+    _shutdown(srv, before)
+    return 0
 
 
 def _shutdown(srv, before: tuple) -> None:

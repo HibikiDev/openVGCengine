@@ -1,0 +1,311 @@
+{
+	"format": "gen6vgc2016",
+	"seed": "gen5,34319,49729,5191,25111",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Kangaskhan",
+			"item": "Kangaskhanite",
+			"ability": "Early Bird",
+			"moves": [
+				"Sucker Punch",
+				"Double-Edge",
+				"Fake Out",
+				"Return"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 4,
+				"atk": 252,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"happiness": 0
+		},
+		{
+			"name": "Mon1",
+			"species": "Weavile",
+			"item": "Life Orb",
+			"ability": "Pressure",
+			"moves": [
+				"Knock Off",
+				"Icicle Crash",
+				"Protect",
+				"Fake Out"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 0,
+				"atk": 252,
+				"def": 4,
+				"spa": 0,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "Talonflame",
+			"item": "Chesto Berry",
+			"ability": "Gale Wings",
+			"moves": [
+				"Flare Blitz",
+				"Taunt",
+				"Tailwind",
+				"Brave Bird"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 4,
+				"atk": 252,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "Xerneas",
+			"item": "Power Herb",
+			"ability": "Fairy Aura",
+			"moves": [
+				"Moonblast",
+				"Protect",
+				"Geomancy",
+				"Dazzling Gleam"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 252,
+				"atk": 0,
+				"def": 0,
+				"spa": 252,
+				"spd": 4,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Giratina-Origin",
+			"item": "Griseous Orb",
+			"ability": "Levitate",
+			"moves": [
+				"Will-O-Wisp",
+				"Dragon Claw",
+				"Substitute",
+				"Protect"
+			],
+			"nature": "Brave",
+			"evs": {
+				"hp": 236,
+				"atk": 252,
+				"def": 4,
+				"spa": 4,
+				"spd": 12,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "Serperior",
+			"item": "Mental Herb",
+			"ability": "Overgrow",
+			"moves": [
+				"Leaf Storm",
+				"Twister",
+				"Protect",
+				"Safeguard"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 4,
+				"atk": 0,
+				"def": 0,
+				"spa": 252,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 0,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "Skuntank",
+			"item": "Power Herb",
+			"ability": "Keen Eye",
+			"moves": [
+				"Poison Jab",
+				"Foul Play",
+				"Double-Edge",
+				"Protect"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 4,
+				"atk": 252,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 0,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "Glaceon",
+			"item": "Rocky Helmet",
+			"ability": "Snow Cloak",
+			"moves": [
+				"Ice Beam",
+				"Swift",
+				"Protect",
+				"Substitute"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 252,
+				"atk": 0,
+				"def": 4,
+				"spa": 252,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 0,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 2 -2 mega, move 1 1",
+			"p2": "move 1 1, move 4"
+		},
+		{
+			"p1": "pass, switch 4",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 2 -2, move 1 -1",
+			"p2": "move 3, switch 3"
+		},
+		{
+			"p1": "switch 3, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 4 -2, move 1 2",
+			"p2": "move 1 -2, move 1 -1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "pass, switch 3"
+		},
+		{
+			"p1": "move 2 2, move 1 2",
+			"p2": "move 2 2, move 3"
+		},
+		{
+			"p1": "move 2 1, move 2",
+			"p2": "move 1 1, move 1 1"
+		},
+		{
+			"p1": "move 1 2, move 2",
+			"p2": "switch 4, move 1 -1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "pass, switch 4"
+		},
+		{
+			"p1": "move 4 2, move 1 1",
+			"p2": "move 1 1, move 1 2"
+		},
+		{
+			"p1": "pass, move 1 -1",
+			"p2": "move 1 2, pass"
+		}
+	],
+	"teams": [
+		"GM-83",
+		"GU-234"
+	]
+}

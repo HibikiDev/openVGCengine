@@ -151,6 +151,10 @@ pub fn on_switch_in(battle: &mut Battle, actor: Actor) {
             }
         }
 
+        ability_ids::WINDRIDER if battle.sides[actor.side as usize].side_conditions.tailwind_turns > 0 => {
+            boost_here(battle, actor, [1, 0, 0, 0, 0, 0, 0]);
+        }
+
         ability_ids::INTREPIDSWORD
             if battle.rules().abilities.sword_shield_every_switch_in || !mon_at(battle, actor).flags.has(crate::mon::mon_flags::SWORD_BOOST) =>
         {

@@ -43,6 +43,20 @@ def engine_format(fmt: str | None) -> str | None:
     return None if is_champions(fmt) else fmt
 
 
+
+
+ENGINE_CHAMPIONS = ("gen9championsvgc2026regmb",)
+
+
+def training_format(fmt: str | None) -> str | None:
+
+
+
+    if fmt is not None and base_id(fmt) in ENGINE_CHAMPIONS:
+        return base_id(fmt)
+    return engine_format(fmt)
+
+
 def newest_first(regs: tuple[str, ...] = REGULATIONS) -> tuple[str, ...]:
 
     return tuple(reversed(regs))

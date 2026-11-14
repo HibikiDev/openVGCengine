@@ -1,0 +1,310 @@
+{
+	"format": "gen8vgc2020",
+	"seed": "gen5,58427,42485,15722,22755",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Milotic",
+			"item": "Leftovers",
+			"ability": "Competitive",
+			"moves": [
+				"Recover",
+				"Hypnosis",
+				"Coil",
+				"Muddy Water"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 252,
+				"atk": 0,
+				"def": 0,
+				"spa": 252,
+				"spd": 4,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "Gastrodon",
+			"item": "Rindo Berry",
+			"ability": "Storm Drain",
+			"moves": [
+				"Scald",
+				"Recover",
+				"Earth Power",
+				"Protect"
+			],
+			"nature": "Bold",
+			"evs": {
+				"hp": 252,
+				"atk": 0,
+				"def": 252,
+				"spa": 4,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "Oranguru",
+			"item": "Iapapa Berry",
+			"ability": "Symbiosis",
+			"moves": [
+				"Trick Room",
+				"Expanding Force",
+				"Psychic",
+				"Ally Switch"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 0,
+				"atk": 0,
+				"def": 4,
+				"spa": 252,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "Rillaboom",
+			"item": "Normal Gem",
+			"ability": "Overgrow",
+			"moves": [
+				"Wood Hammer",
+				"Earthquake",
+				"Protect",
+				"Fake Out"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 4,
+				"atk": 252,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 0,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Bellossom",
+			"item": "Black Belt",
+			"ability": "Healer",
+			"moves": [
+				"Leaf Storm",
+				"Dazzling Gleam",
+				"Protect",
+				"Strength Sap"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 252,
+				"atk": 0,
+				"def": 4,
+				"spa": 252,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 0,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "Milotic",
+			"item": "Leftovers",
+			"ability": "Competitive",
+			"moves": [
+				"Muddy Water",
+				"Protect",
+				"Recover",
+				"Hydro Pump"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 252,
+				"atk": 0,
+				"def": 4,
+				"spa": 4,
+				"spd": 244,
+				"spe": 4
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "Passimian",
+			"item": "Adrenaline Orb",
+			"ability": "Defiant",
+			"moves": [
+				"Close Combat",
+				"Knock Off",
+				"Acrobatics",
+				"Rock Slide"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 68,
+				"atk": 252,
+				"def": 4,
+				"spa": 0,
+				"spd": 12,
+				"spe": 172
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "Cinderace",
+			"item": "Expert Belt",
+			"ability": "Libero",
+			"moves": [
+				"Sucker Punch",
+				"High Jump Kick",
+				"Pyro Ball",
+				"Iron Head"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 4,
+				"atk": 252,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 2 1, move 2 dynamax",
+			"p2": "switch 3, move 1 1 dynamax"
+		},
+		{
+			"p1": "move 4, switch 3",
+			"p2": "move 2 2, move 3"
+		},
+		{
+			"p1": "move 2 -2, move 4",
+			"p2": "move 1 -2, move 1 2"
+		},
+		{
+			"p1": "move 4, move 3",
+			"p2": "move 2 -2, move 4 -1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 3, pass"
+		},
+		{
+			"p1": "move 3, switch 3",
+			"p2": "move 4 1, move 4 -1"
+		},
+		{
+			"p1": "switch 3, move 1 -1",
+			"p2": "move 1 2, move 1"
+		},
+		{
+			"p1": "pass, switch 3",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 4, move 2 1",
+			"p2": "move 1 -2, move 3"
+		},
+		{
+			"p1": "move 2 1, switch 4",
+			"p2": "move 1 -2, move 1"
+		},
+		{
+			"p1": "switch 4, move 4 2",
+			"p2": "move 3, switch 4"
+		},
+		{
+			"p1": "move 2 1, move 4 -1",
+			"p2": "move 3, move 3 -1"
+		}
+	],
+	"teams": [
+		"GM-255",
+		"GM-212"
+	]
+}

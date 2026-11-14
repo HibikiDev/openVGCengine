@@ -1,0 +1,306 @@
+{
+	"format": "gen7vgc2019",
+	"seed": "gen5,1144,55086,47677,10025",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Noivern",
+			"item": "Apicot Berry",
+			"ability": "Telepathy",
+			"moves": [
+				"Air Cutter",
+				"Dragon Pulse",
+				"Heat Wave",
+				"Protect"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 4,
+				"atk": 0,
+				"def": 0,
+				"spa": 252,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 0,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "Rayquaza",
+			"item": "Waterium Z",
+			"ability": "Air Lock",
+			"moves": [
+				"Dragon Claw",
+				"Dragon Ascent",
+				"Waterfall",
+				"Protect"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 4,
+				"atk": 252,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 0,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "Carnivine",
+			"item": "Coba Berry",
+			"ability": "Levitate",
+			"moves": [
+				"Power Whip",
+				"Knock Off",
+				"Protect",
+				"Rest"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 252,
+				"atk": 252,
+				"def": 0,
+				"spa": 0,
+				"spd": 4,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 0,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "Mismagius",
+			"item": "Fairium Z",
+			"ability": "Levitate",
+			"moves": [
+				"Hex",
+				"Energy Ball",
+				"Protect",
+				"Dazzling Gleam"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 4,
+				"atk": 0,
+				"def": 0,
+				"spa": 252,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 0,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Yveltal",
+			"item": "Shell Bell",
+			"ability": "Dark Aura",
+			"moves": [
+				"Foul Play",
+				"Oblivion Wing",
+				"Sucker Punch",
+				"Knock Off"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 108,
+				"atk": 0,
+				"def": 4,
+				"spa": 68,
+				"spd": 76,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "Gengar",
+			"item": "Gengarite",
+			"ability": "Cursed Body",
+			"moves": [
+				"Hypnosis",
+				"Protect",
+				"Shadow Ball",
+				"Sludge Bomb"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 0,
+				"atk": 0,
+				"def": 0,
+				"spa": 252,
+				"spd": 4,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "Accelgor",
+			"item": "Focus Sash",
+			"ability": "Unburden",
+			"moves": [
+				"Encore",
+				"Acid Spray",
+				"Final Gambit",
+				"Protect"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 252,
+				"atk": 0,
+				"def": 0,
+				"spa": 4,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "Tsareena",
+			"item": "Aguav Berry",
+			"ability": "Queenly Majesty",
+			"moves": [
+				"Knock Off",
+				"Trop Kick",
+				"Power Whip",
+				"Feint"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 252,
+				"atk": 252,
+				"def": 0,
+				"spa": 0,
+				"spd": 4,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"turns": [
+		{
+			"p1": "switch 4, move 2 -1",
+			"p2": "move 3 -2, move 1 2"
+		},
+		{
+			"p1": "move 4, switch 4",
+			"p2": "move 3 1, move 3 1 mega"
+		},
+		{
+			"p1": "switch 4, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 2 1, move 1",
+			"p2": "switch 4, move 3 2"
+		},
+		{
+			"p1": "pass, switch 3",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 2 -2, move 2 2",
+			"p2": "move 2 1, move 4 2"
+		},
+		{
+			"p1": "move 3 1 zmove, pass",
+			"p2": "move 4 2, move 2"
+		},
+		{
+			"p1": "move 3 2, pass",
+			"p2": "switch 3, move 3 -1"
+		},
+		{
+			"p1": "move 1 1, pass",
+			"p2": "move 2 -2, move 4 -1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 4, pass"
+		},
+		{
+			"p1": "move 1 1, pass",
+			"p2": "move 1 1, move 4 1"
+		}
+	],
+	"teams": [
+		"GU-177",
+		"GM-280"
+	]
+}

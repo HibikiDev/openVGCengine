@@ -1,0 +1,302 @@
+{
+	"format": "gen8vgc2020",
+	"seed": "gen5,35876,41597,60593,11491",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Primarina",
+			"item": "Iapapa Berry",
+			"ability": "Liquid Voice",
+			"moves": [
+				"Sparkling Aria",
+				"Dazzling Gleam",
+				"Hyper Voice",
+				"Protect"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 252,
+				"atk": 0,
+				"def": 4,
+				"spa": 252,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 0,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "Gengar",
+			"item": "Focus Sash",
+			"ability": "Cursed Body",
+			"moves": [
+				"Perish Song",
+				"Shadow Ball",
+				"Protect",
+				"Trick Room"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 4,
+				"atk": 0,
+				"def": 0,
+				"spa": 252,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "Seismitoad",
+			"item": "Mystic Water",
+			"ability": "Water Absorb",
+			"moves": [
+				"Liquidation",
+				"Stomping Tantrum",
+				"Power Whip",
+				"Protect"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 4,
+				"atk": 252,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 0,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "Oranguru",
+			"item": "Iron Ball",
+			"ability": "Inner Focus",
+			"moves": [
+				"Instruct",
+				"Quash",
+				"Encore",
+				"Ally Switch"
+			],
+			"nature": "Sassy",
+			"evs": {
+				"hp": 252,
+				"atk": 0,
+				"def": 236,
+				"spa": 0,
+				"spd": 16,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Butterfree-Gmax",
+			"item": "Starf Berry",
+			"ability": "Compound Eyes",
+			"moves": [
+				"Pollen Puff",
+				"Air Slash",
+				"Giga Drain",
+				"Protect"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 4,
+				"atk": 0,
+				"def": 0,
+				"spa": 252,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 0,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "Psyduck",
+			"item": "Light Clay",
+			"ability": "Cloud Nine",
+			"moves": [
+				"Hydro Pump",
+				"Blizzard",
+				"Protect",
+				"Light Screen"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 252,
+				"atk": 0,
+				"def": 0,
+				"spa": 252,
+				"spd": 4,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 0,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "Pikachu-Original",
+			"item": "Light Ball",
+			"ability": "Static",
+			"moves": [
+				"Thunder Punch",
+				"Body Slam",
+				"Protect",
+				"Helping Hand"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 4,
+				"atk": 252,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 0,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "Dracozolt",
+			"item": "Life Orb",
+			"ability": "Hustle",
+			"moves": [
+				"Protect",
+				"High Horsepower",
+				"Earthquake",
+				"Dragon Claw"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 0,
+				"atk": 252,
+				"def": 0,
+				"spa": 0,
+				"spd": 4,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 1 2 dynamax, move 1",
+			"p2": "move 3 -2, move 4 dynamax"
+		},
+		{
+			"p1": "move 3 1, switch 3",
+			"p2": "switch 3, move 2 1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 3, pass"
+		},
+		{
+			"p1": "move 1 1, move 2 -1",
+			"p2": "move 3 -2, switch 4"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 4, pass"
+		},
+		{
+			"p1": "switch 4, switch 3",
+			"p2": "move 4, move 3"
+		},
+		{
+			"p1": "move 1 1, move 2 1",
+			"p2": "move 4, move 2 1"
+		},
+		{
+			"p1": "move 2 -2, move 2 1",
+			"p2": "pass, move 2 2"
+		},
+		{
+			"p1": "pass, switch 3",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 2 -2, move 2 1",
+			"p2": "pass, move 2 -1"
+		}
+	],
+	"teams": [
+		"GU-155",
+		"GU-89"
+	]
+}

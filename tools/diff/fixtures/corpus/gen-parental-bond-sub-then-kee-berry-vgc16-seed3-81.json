@@ -1,0 +1,310 @@
+{
+	"format": "gen6vgc2016",
+	"seed": "gen5,6175,39247,43944,27079",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Kyogre",
+			"item": "Red Orb",
+			"ability": "Drizzle",
+			"moves": [
+				"Water Spout",
+				"Protect",
+				"Ice Beam",
+				"Scald"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 252,
+				"atk": 0,
+				"def": 156,
+				"spa": 76,
+				"spd": 20,
+				"spe": 4
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "Kangaskhan",
+			"item": "Kangaskhanite",
+			"ability": "Early Bird",
+			"moves": [
+				"Low Kick",
+				"Double-Edge",
+				"Fake Out",
+				"Sucker Punch"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 4,
+				"atk": 252,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "Bisharp",
+			"item": "Focus Sash",
+			"ability": "Defiant",
+			"moves": [
+				"Assurance",
+				"Sucker Punch",
+				"Protect",
+				"Iron Head"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 0,
+				"atk": 252,
+				"def": 0,
+				"spa": 0,
+				"spd": 4,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "Cofagrigus",
+			"item": "Power Herb",
+			"ability": "Mummy",
+			"moves": [
+				"Shadow Ball",
+				"Psychic",
+				"Protect",
+				"Hex"
+			],
+			"nature": "Quiet",
+			"evs": {
+				"hp": 252,
+				"atk": 0,
+				"def": 0,
+				"spa": 252,
+				"spd": 4,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 0,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 0
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Lugia",
+			"item": "Kee Berry",
+			"ability": "Pressure",
+			"moves": [
+				"Roost",
+				"Substitute",
+				"Aeroblast",
+				"Icy Wind"
+			],
+			"nature": "Bold",
+			"evs": {
+				"hp": 252,
+				"atk": 0,
+				"def": 124,
+				"spa": 0,
+				"spd": 132,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "Muk",
+			"item": "Bright Powder",
+			"ability": "Poison Touch",
+			"moves": [
+				"Gunk Shot",
+				"Rock Slide",
+				"Protect",
+				"Taunt"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 252,
+				"atk": 252,
+				"def": 4,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 0,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "Tangrowth",
+			"item": "Red Orb",
+			"ability": "Chlorophyll",
+			"moves": [
+				"Giga Drain",
+				"Focus Blast",
+				"Protect",
+				"Toxic"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 252,
+				"atk": 0,
+				"def": 0,
+				"spa": 252,
+				"spd": 4,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 0,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "Starmie",
+			"item": "Power Herb",
+			"ability": "Natural Cure",
+			"moves": [
+				"Scald",
+				"Psychic",
+				"Blizzard",
+				"Protect"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 4,
+				"atk": 0,
+				"def": 0,
+				"spa": 252,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 0,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 4 1, move 3 2 mega",
+			"p2": "move 2, switch 3"
+		},
+		{
+			"p1": "move 3 2, move 3 2",
+			"p2": "switch 3, move 4 -1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "pass, switch 4"
+		},
+		{
+			"p1": "move 3 1, move 2 1",
+			"p2": "move 2, move 2 2"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 3, pass"
+		},
+		{
+			"p1": "move 4 -2, switch 4",
+			"p2": "move 2, move 2 1"
+		},
+		{
+			"p1": "move 4 -2, move 2 2",
+			"p2": "move 4, move 1 1"
+		},
+		{
+			"p1": "pass, switch 3",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 4 2, switch 4",
+			"p2": "move 1, move 1 1"
+		},
+		{
+			"p1": "move 4 -2, move 2 1",
+			"p2": "move 2, move 1 1"
+		},
+		{
+			"p1": "pass, switch 4",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 2, move 4 1",
+			"p2": "move 4, move 1 1"
+		}
+	],
+	"teams": [
+		"GM-279",
+		"GU-209"
+	]
+}

@@ -17,7 +17,7 @@ import numpy as np
 import torch
 import vgc_engine as ve
 
-from .formats import is_champions
+from .formats import is_champions, training_format
 
 REPO = Path(__file__).resolve().parents[2]
 DEFAULT_TEAMS = REPO / "tools" / "corpus" / "out" / "teams-sets.json"
@@ -68,9 +68,9 @@ def load_team_file(path: Path) -> list[dict]:
 
     doc = json.loads(Path(path).read_text(encoding="utf8"))
     entries = doc["teams"]
-    fmt = doc.get("format")
-    if is_champions(fmt):
-        fmt = None
+
+
+    fmt = training_format(doc.get("format"))
     probe = ve.BattlePool(1)
     usable = []
     for e in entries:
@@ -236,7 +236,7 @@ class VecEnv:
         self.foe_sheet_ids = np.zeros_like(self.sheet_ids)
         for k, tid in enumerate(self.team_ids):
             self.pool.sheet_ids(tid, self.sheet_ids[k])
-            if self.formats[k] is None:
+            if is_champions(self.formats[k]):
                 self.foe_sheet_ids[k] = self.sheet_ids[k]
             else:
                 self.pool.sheet_ids(tid, self.foe_sheet_ids[k], True, *((True,) if open_sheets else ()))

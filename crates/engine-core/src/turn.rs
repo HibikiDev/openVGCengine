@@ -758,7 +758,7 @@ fn switch_in_events(battle: &mut Battle, actor: Actor) {
     let opportunists = switch_in_opportunists(battle);
     switch_in_events_before_items(battle, actor);
     switch_in_seed(battle, actor);
-    switch_in_late(battle, actor);
+    switch_in_late(battle, actor, &[]);
     switch_in_tail(battle, opportunists);
 }
 
@@ -791,16 +791,19 @@ fn switch_in_seed(battle: &mut Battle, actor: Actor) {
 
 
 
-fn switch_in_late(battle: &mut Battle, actor: Actor) {
+
+fn switch_in_late(battle: &mut Battle, actor: Actor, later_costars: &[Actor]) {
     if !mon_at(battle, actor).is_fainted() {
 
 
 
-        check_white_herb_for_all_actives(battle);
-
         if mon_at(battle, actor).ability == engine_data::abilities_table::ability_ids::COSTAR {
             costar(battle, actor);
         }
+
+
+
+        check_white_herb_except(battle, later_costars);
 
         ice_face_restore(battle, Some(actor), None);
 
@@ -2120,9 +2123,13 @@ pub(crate) fn room_stat(mon: &Mon, stat: Stat) -> Stat {
     }
 }
 
-fn confusion_self_damage(mon: &Mon, rng: &mut Rng) -> u16 {
-    let attack = apply_boost(mon.stats[Stat::Atk as usize] as u32, mon.boosts[Stat::Atk as usize]) as i64;
-    let defense = apply_boost(mon.stats[room_stat(mon, Stat::Def) as usize] as u32, mon.boosts[Stat::Def as usize]) as i64;
+
+
+
+fn confusion_self_damage(mon: &Mon, unaware: bool, rng: &mut Rng) -> u16 {
+    let (atk_boost, def_boost) = if unaware { (0, 0) } else { (mon.boosts[Stat::Atk as usize], mon.boosts[Stat::Def as usize]) };
+    let attack = apply_boost(mon.stats[Stat::Atk as usize] as u32, atk_boost) as i64;
+    let defense = apply_boost(mon.stats[room_stat(mon, Stat::Def) as usize] as u32, def_boost) as i64;
 
     let base = ((22 * 40 * attack / defense.max(1)) / 50 + 2) & 0xFFFF;
     damage::apply_random_roll(base, rng).max(1) as u16
@@ -2212,7 +2219,7 @@ fn pre_move_check_high(rules: &crate::rules::Rules, mon: &mut Mon, move_data: &M
 
 
 
-fn pre_move_check(rules: &crate::rules::Rules, mon: &mut Mon, move_data: &MoveData, self_hit: DamageHandlers, unnerved: bool, rng: &mut Rng) -> bool {
+fn pre_move_check(rules: &crate::rules::Rules, mon: &mut Mon, move_data: &MoveData, self_hit: DamageHandlers, unnerved: bool, self_hit_unaware: bool, rng: &mut Rng) -> bool {
 
 
     if mon.throat_chop_turns > 0 && move_data.sound {
@@ -2226,19 +2233,32 @@ fn pre_move_check(rules: &crate::rules::Rules, mon: &mut Mon, move_data: &MoveDa
 
         let (num, den) = rules.confusion_roll;
         if mon.confusion_turns > 0 && rng.chance_at(crate::rng::Site::ConfusionSelfHit, num as u32, den as u32) == rules.confusion_hits_on_success {
-            let damage = confusion_self_damage(mon, rng);
+            let damage = confusion_self_damage(mon, self_hit_unaware, rng);
 
             self_hit.draw(rng);
 
 
             if mon.ability == engine_data::abilities_table::ability_ids::DISGUISE
-                && mon.species == engine_data::species_table::species_ids::MIMIKYU
+                && disguise_busted_forme(mon.species).is_some()
                 && !mon.flags.has(crate::mon::mon_flags::TRANSFORMED)
             {
                 mon.volatiles.set(volatile_flags::DISGUISE_BUSTED);
             } else {
 
+
+                let full = mon.hp == mon.max_hp;
+                let damage = if full && damage >= mon.hp && mon.ability == engine_data::abilities_table::ability_ids::STURDY {
+                    mon.hp - 1
+                } else {
+                    damage
+                };
                 let damage = if focus_band_roll(mon, rng) && damage >= mon.hp { mon.hp - 1 } else { damage };
+                let damage = if full && damage >= mon.hp && mon.effective_item() == engine_data::items_table::item_ids::FOCUSSASH {
+                    spend_item(mon);
+                    mon.hp - 1
+                } else {
+                    damage
+                };
 
 
                 apply_damage_gated(rules, mon, damage, unnerved);
@@ -3443,6 +3463,17 @@ pub(crate) fn skill_swap(battle: &mut Battle, source: Actor, target: Actor, chec
 
 
 
+pub(crate) fn disguise_busted_forme(species: u16) -> Option<u16> {
+    use engine_data::species_table::species_ids;
+    match species {
+        species_ids::MIMIKYU => Some(species_ids::MIMIKYUBUSTED),
+        species_ids::MIMIKYUTOTEM => Some(species_ids::MIMIKYUBUSTEDTOTEM),
+        _ => None,
+    }
+}
+
+
+
 
 
 fn disguise_intact(battle: &Battle, actor: Actor, target: Actor, move_data: &MoveData) -> bool {
@@ -3450,7 +3481,7 @@ fn disguise_intact(battle: &Battle, actor: Actor, target: Actor, move_data: &Mov
     use engine_data::species_table::species_ids;
     let t = mon_at(battle, target);
     let shield = match target_ability(battle, actor, target) {
-        ability_ids::DISGUISE => t.species == species_ids::MIMIKYU,
+        ability_ids::DISGUISE => disguise_busted_forme(t.species).is_some(),
         ability_ids::ICEFACE => t.species == species_ids::EISCUE && move_data.category == Category::Physical,
         _ => false,
     };
@@ -4661,7 +4692,7 @@ fn move_type_changes(
         .or(terrain_pulse_type(move_id, battle, actor))
         .or(forme_move_type(move_id, mon_at(battle, actor).species))
         .or(plate_drive_move_type(move_id, mon_at(battle, actor)))
-        .or(liquid_voice_type(mon_at(battle, actor).ability, move_data.sound))
+        .or(liquid_voice_type(mon_at(battle, actor).ability, move_data.sound && !is_dynamaxed(mon_at(battle, actor))))
 
         .or((move_id == moves_table::move_ids::HIDDENPOWER).then(|| crate::team::hidden_power(mon_at(battle, actor).ivs).0))
 
@@ -5347,6 +5378,12 @@ fn modify_damage_tie_draws(battle: &Battle, actor: Actor, target: Actor, rng: &m
         }
     }
 
+
+
+    if defender.flags.has(crate::mon::mon_flags::DYNAMAXED) {
+        handlers.push((defender_speed, 2));
+    }
+
     for side in 0..2u8 {
         for slot in 0..2u8 {
             let m = mon_at(battle, Actor { side, slot });
@@ -5382,8 +5419,8 @@ fn modify_damage_tie_draws(battle: &Battle, actor: Actor, target: Actor, rng: &m
 
 
 
-fn knock_off_power_modifier(move_id: u16, defender: &Mon) -> Option<(i64, i64)> {
-    (move_id == moves_table::move_ids::KNOCKOFF && crate::items::knock_off_boosts(defender)).then_some((3, 2))
+fn knock_off_power_modifier(rules: &crate::rules::Rules, move_id: u16, defender: &Mon) -> Option<(i64, i64)> {
+    (move_id == moves_table::move_ids::KNOCKOFF && crate::items::knock_off_boosts(rules, defender)).then_some((3, 2))
 }
 
 
@@ -5828,6 +5865,7 @@ fn ally_base_power(battle: &Battle, actor: Actor, ability: engine_data::abilitie
         _ => None,
     }
 }
+
 
 
 
@@ -6980,6 +7018,12 @@ fn resolve_hit_after_checks(
     }
 
     if move_id == moves_table::move_ids::POLLENPUFF && target.side == actor.side && target != actor {
+
+        let t = mon_at(battle, target);
+        if battle.rules().move_effects.pollen_puff_full_ally_fails && (t.hp >= t.max_hp || t.heal_block_turns > 0) {
+            mon_at_mut(battle, actor).move_result_this_turn = crate::mon::move_result::FAILED;
+            return HitOutcome { connected: false, record: None };
+        }
         let t = mon_at_mut(battle, target);
         apply_heal(t, t.base_max_hp / 2);
         return HitOutcome { connected: true, record };
@@ -7524,7 +7568,7 @@ fn resolve_hit_after_checks(
 
             sport_holders_modifier(battle, move_type),
 
-            knock_off_power_modifier(move_id, mon_at(battle, target)).filter(|_| rules.move_effects.knock_off_boost)
+            knock_off_power_modifier(rules, move_id, mon_at(battle, target)).filter(|_| rules.move_effects.knock_off_boost)
                 .or((move_id == moves_table::move_ids::BRINE && defender.hp as u32 * 2 <= defender.max_hp as u32).then_some((2, 1)))
 
                 .or(((move_id == moves_table::move_ids::FUSIONBOLT && battle.field.last_success_move == moves_table::move_ids::FUSIONFLARE)
@@ -7789,6 +7833,8 @@ fn resolve_hit_after_checks(
         if inputs.resist_berry_modifier.is_some() && !is_fixed_damage_move(move_id) {
             let defender = mon_at_mut(battle, target);
             spend_item(defender);
+
+            resolve_symbiosis_for(battle, target);
         }
 
 
@@ -8515,7 +8561,7 @@ fn resolve_hit_after_checks(
 
     if move_id == moves_table::move_ids::BESTOW {
         let (mine, theirs) = (mon_at(battle, actor), mon_at(battle, target));
-        let stone_for = crate::items::species_locked_item;
+        let stone_for = |item: u16, species: u16| crate::items::species_locked_item(battle.rules(), item, species);
         let ok = theirs.item == crate::ids::NONE_ID
             && mine.item != crate::ids::NONE_ID
             && !theirs.is_fainted()
@@ -9292,7 +9338,7 @@ fn resolve_hit_after_checks(
         let ok = t.item != crate::ids::NONE_ID
             && t.ability != engine_data::abilities_table::ability_ids::STICKYHOLD
             && !crate::items::mail_locked(t.item)
-            && crate::items::knock_off_removable(t, crate::items::pre_transform_species(t));
+            && crate::items::knock_off_removable(battle.rules(), t, crate::items::pre_transform_species(t));
         if ok {
             let m = mon_at_mut(battle, target);
             m.item = crate::ids::NONE_ID;
@@ -9372,7 +9418,7 @@ fn resolve_hit_after_checks(
     if matches!(move_id, moves_table::move_ids::TRICK | moves_table::move_ids::SWITCHEROO) {
         let (mine, theirs) = (mon_at(battle, actor), mon_at(battle, target));
         let movable = |m: &crate::mon::Mon, to: u16| {
-            !crate::items::species_locked_item(m.item, crate::items::pre_transform_species(m)) && !crate::items::species_locked_item(m.item, to)
+            !crate::items::species_locked_item(battle.rules(), m.item, crate::items::pre_transform_species(m)) && !crate::items::species_locked_item(battle.rules(), m.item, to)
         };
         let ok = theirs.ability != engine_data::abilities_table::ability_ids::STICKYHOLD
             && !crate::items::mail_locked(mine.item)
@@ -9386,7 +9432,7 @@ fn resolve_hit_after_checks(
                 m.item != crate::ids::NONE_ID
                     && !(by_other && m.ability == engine_data::abilities_table::ability_ids::STICKYHOLD)
                     && !crate::items::mail_locked(m.item)
-                    && !crate::items::species_locked_item(m.item, crate::items::pre_transform_species(m))
+                    && !crate::items::species_locked_item(battle.rules(), m.item, crate::items::pre_transform_species(m))
             };
             (takes(theirs, true), takes(mine, false))
         };
@@ -9643,7 +9689,8 @@ fn damaging_hit_reactions(battle: &mut Battle, actor: Actor, target: Actor, move
 
     if mon_at(battle, target).status == Status::Freeze
         && (rec.move_type == engine_data::type_chart::Type::Fire
-            || matches!(move_id, moves_table::move_ids::MATCHAGOTCHA | moves_table::move_ids::SCALD | moves_table::move_ids::SCORCHINGSANDS | moves_table::move_ids::HYDROSTEAM | moves_table::move_ids::STEAMERUPTION))
+            || (move_id == moves_table::move_ids::SCALD && battle.rules().move_effects.scald_thaws_target)
+            || matches!(move_id, moves_table::move_ids::MATCHAGOTCHA | moves_table::move_ids::SCORCHINGSANDS | moves_table::move_ids::HYDROSTEAM | moves_table::move_ids::STEAMERUPTION))
     {
         let t = mon_at_mut(battle, target);
         t.status = Status::None;
@@ -9821,7 +9868,7 @@ fn damaging_hit_reactions(battle: &mut Battle, actor: Actor, target: Actor, move
 
     let after_hit = !(battle.rules().move_effects.after_hit_needs_user_hp && mon_at(battle, actor).is_fainted());
     if move_id == moves_table::move_ids::KNOCKOFF && after_hit {
-        if crate::items::knock_off_removable(mon_at(battle, target), crate::items::pre_transform_species(mon_at(battle, target))) {
+        if crate::items::knock_off_removable(battle.rules(), mon_at(battle, target), crate::items::pre_transform_species(mon_at(battle, target))) {
             let t = mon_at_mut(battle, target);
             t.item = crate::ids::NONE_ID;
             t.volatiles.set(volatile_flags::ITEM_CONSUMED);
@@ -9843,8 +9890,8 @@ fn damaging_hit_reactions(battle: &mut Battle, actor: Actor, target: Actor, move
         if item != crate::ids::NONE_ID
             && target_ability(battle, actor, target) != engine_data::abilities_table::ability_ids::STICKYHOLD
 
-            && crate::items::knock_off_removable(t, crate::items::pre_transform_species(t))
-            && crate::items::knock_off_removable(t, crate::items::pre_transform_species(mon_at(battle, actor)))
+            && crate::items::knock_off_removable(battle.rules(), t, crate::items::pre_transform_species(t))
+            && crate::items::knock_off_removable(battle.rules(), t, crate::items::pre_transform_species(mon_at(battle, actor)))
         {
             let tm = mon_at_mut(battle, target);
             tm.item = crate::ids::NONE_ID;
@@ -10218,7 +10265,7 @@ fn apply_move_secondaries(battle: &mut Battle, actor: Actor, target: Actor, move
         let t = mon_at(battle, target);
         if (is_berry(t.item) || (battle.rules().move_effects.incinerate_burns_gems && gem_type(t.item).is_some()))
             && target_ability(battle, actor, target) != engine_data::abilities_table::ability_ids::STICKYHOLD
-            && crate::items::knock_off_removable(t, crate::items::pre_transform_species(t))
+            && crate::items::knock_off_removable(battle.rules(), t, crate::items::pre_transform_species(t))
         {
             let m = mon_at_mut(battle, target);
             m.item = crate::ids::NONE_ID;
@@ -12164,8 +12211,10 @@ fn red_card(battle: &mut Battle, actor: Actor, target: Actor, move_data: &MoveDa
     resolve_symbiosis(battle);
     let a = mon_at(battle, actor);
 
+
     if !matches!(a.ability, engine_data::abilities_table::ability_ids::GUARDDOG | engine_data::abilities_table::ability_ids::SUCTIONCUPS)
         && !a.volatiles.has(volatile_flags::INGRAIN)
+        && !is_dynamaxed(a)
     {
         mon_at_mut(battle, actor).flags.set(crate::mon::mon_flags::RED_CARD_DRAG);
     }
@@ -12200,7 +12249,7 @@ fn magician(battle: &mut Battle, actor: Actor, move_id: u16, move_data: &MoveDat
         }
         let m = mon_at(battle, t);
         let item = m.item;
-        if item == crate::ids::NONE_ID || m.ability == engine_data::abilities_table::ability_ids::STICKYHOLD || !crate::items::knock_off_removable(m, crate::items::pre_transform_species(m)) {
+        if item == crate::ids::NONE_ID || m.ability == engine_data::abilities_table::ability_ids::STICKYHOLD || !crate::items::knock_off_removable(battle.rules(), m, crate::items::pre_transform_species(m)) {
             continue;
         }
         if mon_at(battle, actor).is_fainted() {
@@ -12767,11 +12816,19 @@ fn push_faint_events(battle: &mut Battle, before: [[bool; 4]; 2], rng: &mut Rng)
                     m.ability = m.mega.base_ability;
                 }
 
-                if rules.abilities.disguise_forme_regression
-                    && m.species == engine_data::species_table::species_ids::MIMIKYUBUSTED
-                    && !m.flags.has(mon_flags::TRANSFORM_STASH)
-                {
-                    m.species = engine_data::species_table::species_ids::MIMIKYU;
+
+                if rules.abilities.disguise_forme_regression && !m.flags.has(mon_flags::TRANSFORM_STASH) {
+                    use engine_data::species_table::species_ids as sp;
+                    match m.species {
+                        sp::MIMIKYUBUSTED => m.species = sp::MIMIKYU,
+                        sp::MIMIKYUBUSTEDTOTEM => m.species = sp::MIMIKYUTOTEM,
+                        _ => {}
+                    }
+                }
+
+
+                if m.species == engine_data::species_table::species_ids::MORPEKOHANGRY && m.tera.active && !m.flags.has(mon_flags::TRANSFORM_STASH) {
+                    change_forme(rules, m, engine_data::species_table::species_ids::MORPEKO);
                 }
 
                 if rules.abilities.battle_bond_forme_change
@@ -13216,6 +13273,11 @@ fn encore_retarget(battle: &mut Battle, remaining: &[(Actor, Action, i8, i64)], 
 
 fn pressure_extra_pp(battle: &Battle, actor: Actor, move_id: u16, move_data: &MoveData, target_slot: u8) -> u8 {
     let pressure = |f: &Mon| !f.is_fainted() && f.ability == engine_data::abilities_table::ability_ids::PRESSURE;
+
+
+    if move_data.target == MoveTarget::Normal && resolve_targets(battle, actor, move_data, move_id, target_slot).iter().all(|t| t.is_none()) {
+        return 0;
+    }
     (if move_data.target == MoveTarget::All
         || matches!(move_id, moves_table::move_ids::IMPRISON | moves_table::move_ids::SNATCH | moves_table::move_ids::SPIKES | moves_table::move_ids::STEALTHROCK | moves_table::move_ids::TOXICSPIKES | moves_table::move_ids::TERABLAST)
     {
@@ -13556,6 +13618,10 @@ fn execute_action_inner(
 
 
     let mut overridden_from = None;
+
+
+
+    let mut overridden_priority: Option<i8> = None;
     let target_slot = {
         let mon = mon_at(battle, actor);
         if !battle.rules().move_effects.encore_requeues_at_start
@@ -13579,6 +13645,7 @@ fn execute_action_inner(
             {
                 let _ = random_living_foe(battle, actor, rng);
             }
+            overridden_priority = Some(effective_priority(battle.rules(), mon, battle.move_data(chosen), chosen, battle.field.terrain));
             overridden_from = Some(match battle.move_data(chosen).target {
                 MoveTarget::Self_ | MoveTarget::All | MoveTarget::AllySide => 2 + actor.slot,
                 _ => target_slot,
@@ -13743,7 +13810,21 @@ fn execute_action_inner(
     let ob = mon_at(battle, actor).boosts;
     let self_hit = damage_event_handlers(battle, actor, &[]);
     let unnerved = crate::items::foe_has_unnerve(battle, actor);
-    let can_move = pre_move_check(battle.rules(), mon_at_mut(battle, actor), &move_data, self_hit, unnerved, rng);
+
+
+
+    let one_target = matches!(move_data.target, MoveTarget::Normal | MoveTarget::AdjacentAlly);
+    let self_hit_unaware = match (mon_at(battle, actor).confusion_turns > 0 && one_target)
+        .then(|| resolve_targets(battle, actor, &move_data, move_id, target_slot))
+    {
+        Some([Some(t), None, None]) => {
+            t != actor
+                && mon_at(battle, t).ability == engine_data::abilities_table::ability_ids::UNAWARE
+                && !breaks_molds_vs(battle, actor, t)
+        }
+        _ => false,
+    };
+    let can_move = pre_move_check(battle.rules(), mon_at_mut(battle, actor), &move_data, self_hit, unnerved, self_hit_unaware, rng);
 
     feed_opportunist_drawn(battle, actor, ob, rng);
     if !can_move {
@@ -13898,7 +13979,13 @@ fn execute_action_inner(
     let packed = packed_seen(battle, actor);
     battle.history.push(Event { actor: packed, kind: EventKind::Move, target: crate::event::NO_MON, subject: move_id, outcome: 1 });
 
+    if let Some(p) = overridden_priority {
+        mon_at_mut(battle, actor).volatiles.conds.set(crate::mon::condition_ids::CALLED_PRIORITY, p as u8);
+    }
     let hits = use_move_inner(battle, actor, move_id, target_slot, counter_fails, remaining, rng);
+    if overridden_priority.is_some() {
+        mon_at_mut(battle, actor).volatiles.conds.remove(crate::mon::condition_ids::CALLED_PRIORITY);
+    }
     mon_at_mut(battle, actor).flags.clear(mon_flags::USING_Z | mon_flags::IGNORES_ABILITIES);
 
     let m = mon_at_mut(battle, actor);
@@ -14135,7 +14222,12 @@ fn use_move_inner_body(
 
 
 
-    if move_id == moves_table::move_ids::ECHOEDVOICE && resolve_targets(battle, actor, &move_data, move_id, target_slot).iter().any(|t| t.is_some()) {
+
+
+    let at_fainted_partner = target_slot == 2 + (1 - actor.slot) && mon_at(battle, Actor { side: actor.side, slot: 1 - actor.slot }).is_fainted();
+    if move_id == moves_table::move_ids::ECHOEDVOICE
+        && (at_fainted_partner || resolve_targets(battle, actor, &move_data, move_id, target_slot).iter().any(|t| t.is_some()))
+    {
         let f = &mut battle.field;
         if f.echoed_voice_turns == 0 {
             f.echoed_voice_turns = 2;
@@ -14356,6 +14448,16 @@ fn use_move_inner_body(
     if mon_at(battle, actor).volatiles.has(volatile_flags::CHARGING) {
         mon_at_mut(battle, actor).volatiles.clear(volatile_flags::CHARGING);
         mon_at_mut(battle, actor).volatiles.clear(volatile_flags::INVULNERABLE);
+    } else if move_data.charge
+        && move_id != moves_table::move_ids::SKYDROP
+        && target_slot == 2 + actor.slot
+        && resolve_targets(battle, actor, &move_data, move_id, target_slot).iter().all(|t| t.is_none())
+    {
+
+
+        mon_at_mut(battle, actor).move_result_this_turn = crate::mon::move_result::FAILED;
+        after_move_volatiles(battle, actor, move_id, &move_data);
+        return NO_HITS;
     } else if move_data.charge && move_id != moves_table::move_ids::SKYDROP {
 
 
@@ -14892,7 +14994,7 @@ fn use_move_inner_body(
     if move_id == moves_table::move_ids::FLING {
         let m = mon_at(battle, actor);
         let item = m.item;
-        let stone = crate::items::species_locked_item(item, crate::items::pre_transform_species(m));
+        let stone = crate::items::species_locked_item(battle.rules(), item, crate::items::pre_transform_species(m));
         let ok = item != crate::ids::NONE_ID
             && m.effective_item() != crate::ids::NONE_ID
             && m.ability != engine_data::abilities_table::ability_ids::KLUTZ
@@ -15055,14 +15157,28 @@ fn use_move_inner_body(
 
     let mut passed = [false; 3];
     let mut accuracy_true = false;
+
+
+
+    let mut at_least_one_failure = false;
     for i in 0..3 {
         if let Some(target) = targets[i] {
+            let before = mon_at(battle, actor).move_result_this_turn;
+            mon_at_mut(battle, actor).move_result_this_turn = crate::mon::move_result::NONE;
             passed[i] = hit_checks_before_accuracy(battle, actor, target, move_id, &move_data, false, &mut accuracy_true, rng);
+            let now = mon_at(battle, actor).move_result_this_turn;
+            if !passed[i] && now != crate::mon::move_result::NULL {
+                at_least_one_failure = true;
+            }
+            if now == crate::mon::move_result::NONE {
+                mon_at_mut(battle, actor).move_result_this_turn = before;
+            }
         }
     }
     for i in 0..3 {
         if let (Some(target), true) = (targets[i], passed[i]) {
             passed[i] = accuracy_true || hit_check_accuracy(battle, actor, target, move_id, &move_data, rng);
+            at_least_one_failure |= !passed[i];
         }
     }
     for i in 0..3 {
@@ -15437,7 +15553,7 @@ fn use_move_inner_body(
 
     if any_hit {
         mon_at_mut(battle, actor).move_result_this_turn = crate::mon::move_result::SUCCESS;
-    } else if mon_at(battle, actor).move_result_this_turn != crate::mon::move_result::NULL {
+    } else if mon_at(battle, actor).move_result_this_turn != crate::mon::move_result::NULL || at_least_one_failure {
         mon_at_mut(battle, actor).move_result_this_turn = crate::mon::move_result::FAILED;
     }
 
@@ -15791,13 +15907,24 @@ fn use_move_inner_body(
     }
 
 
-    let game_over = battle.sides.iter().any(|s| s.mons.iter().all(|m| m.is_fainted()));
+
+
+    let game_over = mon_at(battle, actor).is_fainted() && battle.sides.iter().any(|s| s.mons.iter().all(|m| m.is_fainted()));
     let kos = if game_over { 0 } else { (0..3).filter(|&i| alive_before[i] && targets[i].map_or(false, |t| t != actor && mon_at(battle, t).is_fainted())).count() as i8 };
     source_after_faint(battle, actor, kos, rng);
     after_move_volatiles(battle, actor, move_id, &move_data);
     mon_at_mut(battle, actor).volatiles.clear(volatile_flags::GEM);
 
     hits
+}
+
+
+
+
+
+fn last_hit_into_sub(hits: &[Option<HitRecord>; MAX_ACTION_HITS], i: usize, t: Actor) -> bool {
+    let first = hits[i].map_or(false, |r| r.into_substitute);
+    hits[3..].iter().flatten().filter(|r| r.target == t).last().map_or(first, |r| r.into_substitute)
 }
 
 
@@ -15828,7 +15955,7 @@ fn after_move_secondary_reactions(
             let Some(t) = targets[i] else { continue };
             let Some(rec) = hits[i] else { continue };
             let ability = mon_at(battle, t).ability;
-            if !connected[i] || rec.into_substitute || t == actor || mon_at(battle, t).is_fainted() || !matches!(ability, engine_data::abilities_table::ability_ids::BERSERK | engine_data::abilities_table::ability_ids::ANGERSHELL) {
+            if !connected[i] || last_hit_into_sub(hits, i, t) || t == actor || mon_at(battle, t).is_fainted() || !matches!(ability, engine_data::abilities_table::ability_ids::BERSERK | engine_data::abilities_table::ability_ids::ANGERSHELL) {
                 continue;
             }
             let m = mon_at(battle, t);
@@ -15847,7 +15974,7 @@ fn after_move_secondary_reactions(
         use engine_data::items_table::item_ids;
         for i in 0..3 {
             let Some(t) = targets[i] else { continue };
-            if !connected[i] || hits[i].map_or(true, |r| r.into_substitute) || t == actor {
+            if !connected[i] || (hits[i].is_none() || last_hit_into_sub(hits, i, t)) || t == actor {
                 continue;
             }
 
@@ -15894,7 +16021,7 @@ fn after_move_secondary_reactions(
         let move_type = effective_move_type(battle, actor, move_id, move_data);
         for i in 0..3 {
             let Some(t) = targets[i] else { continue };
-            if !connected[i] || hits[i].map_or(true, |r| r.into_substitute) || t == actor || mon_at(battle, t).is_fainted() || mon_at(battle, t).ability != engine_data::abilities_table::ability_ids::COLORCHANGE {
+            if !connected[i] || (hits[i].is_none() || last_hit_into_sub(hits, i, t)) || t == actor || mon_at(battle, t).is_fainted() || mon_at(battle, t).ability != engine_data::abilities_table::ability_ids::COLORCHANGE {
                 continue;
             }
             let m = mon_at_mut(battle, t);
@@ -15912,7 +16039,7 @@ fn after_move_secondary_reactions(
     if move_data.contact && move_data.category != Category::Status {
         for i in 0..3 {
             let Some(t) = targets[i] else { continue };
-            if !connected[i] || hits[i].map_or(false, |r| r.into_substitute) || t == actor || mon_at(battle, t).is_fainted() || mon_at(battle, t).ability != engine_data::abilities_table::ability_ids::PICKPOCKET || mon_at(battle, t).item != crate::ids::NONE_ID || ate[i] {
+            if !connected[i] || last_hit_into_sub(hits, i, t) || t == actor || mon_at(battle, t).is_fainted() || mon_at(battle, t).ability != engine_data::abilities_table::ability_ids::PICKPOCKET || mon_at(battle, t).item != crate::ids::NONE_ID || ate[i] {
                 continue;
             }
 
@@ -15926,7 +16053,7 @@ fn after_move_secondary_reactions(
             }
 
 
-            if !crate::items::knock_off_removable(mon_at(battle, actor), crate::items::pre_transform_species(mon_at(battle, actor))) {
+            if !crate::items::knock_off_removable(battle.rules(), mon_at(battle, actor), crate::items::pre_transform_species(mon_at(battle, actor))) {
                 continue;
             }
             let stolen = mon_at(battle, actor).item;
@@ -16475,11 +16602,17 @@ fn end_stockpile(battle: &mut Battle, actor: Actor) {
 
 
 fn check_white_herb_for_all_actives(battle: &mut Battle) {
+    check_white_herb_except(battle, &[]);
+}
+
+
+
+fn check_white_herb_except(battle: &mut Battle, skip: &[Actor]) {
     for side in 0..2u8 {
         for slot in 0..2u8 {
             let actor = Actor { side, slot };
             let mon = mon_at(battle, actor);
-            if mon.effective_item() == engine_data::items_table::item_ids::WHITEHERB && mon.boosts.iter().any(|&b| b < 0) {
+            if !skip.contains(&actor) && mon.effective_item() == engine_data::items_table::item_ids::WHITEHERB && mon.boosts.iter().any(|&b| b < 0) {
                 let mon = mon_at_mut(battle, actor);
                 spend_item(mon);
                 for b in mon.boosts.iter_mut() {
@@ -16911,8 +17044,8 @@ fn eat_pending_berries_inner(battle: &mut Battle, rng: &mut Rng) {
             mon_at_mut(battle, actor).volatiles.clear(volatile_flags::DISGUISE_BUSTED);
             if mon_at(battle, actor).species == engine_data::species_table::species_ids::EISCUE {
                 change_forme(rules, mon_at_mut(battle, actor), engine_data::species_table::species_ids::EISCUENOICE);
-            } else if mon_at(battle, actor).species == engine_data::species_table::species_ids::MIMIKYU {
-                change_forme(rules, mon_at_mut(battle, actor), engine_data::species_table::species_ids::MIMIKYUBUSTED);
+            } else if let Some(busted) = disguise_busted_forme(mon_at(battle, actor).species) {
+                change_forme(rules, mon_at_mut(battle, actor), busted);
                 if rules.abilities.disguise_bust_costs_hp {
                     let eighth = (mon_at(battle, actor).base_max_hp / 8).max(1);
                     apply_direct_damage(battle, actor, eighth);
@@ -16928,29 +17061,34 @@ fn eat_pending_berries_inner(battle: &mut Battle, rng: &mut Rng) {
 pub(crate) fn resolve_symbiosis(battle: &mut Battle) {
     for side in 0..2u8 {
         for slot in 0..2u8 {
-            let user = Actor { side, slot };
-            if !mon_at(battle, user).volatiles.has(volatile_flags::ITEM_USED) {
-                continue;
-            }
-            mon_at_mut(battle, user).volatiles.clear(volatile_flags::ITEM_USED);
-            let giver = Actor { side, slot: 1 - slot };
-            let (u, g) = (mon_at(battle, user), mon_at(battle, giver));
-            if u.item == crate::ids::NONE_ID
-                && !u.is_fainted()
-
-                && !(u.volatiles.has(volatile_flags::VOLUNTARY_SWITCH) && battle.rules().abilities.symbiosis_skips_switching_ally)
-                && !g.is_fainted()
-                && g.ability == engine_data::abilities_table::ability_ids::SYMBIOSIS
-                && g.item != crate::ids::NONE_ID
-                && crate::items::knock_off_removable(g, crate::items::pre_transform_species(g))
-            {
-                let item = g.item;
-                let g = mon_at_mut(battle, giver);
-                g.item = crate::ids::NONE_ID;
-                g.volatiles.set(volatile_flags::ITEM_CONSUMED);
-                mon_at_mut(battle, user).item = item;
-            }
+            resolve_symbiosis_for(battle, Actor { side, slot });
         }
+    }
+}
+
+
+
+fn resolve_symbiosis_for(battle: &mut Battle, user: Actor) {
+    if !mon_at(battle, user).volatiles.has(volatile_flags::ITEM_USED) {
+        return;
+    }
+    mon_at_mut(battle, user).volatiles.clear(volatile_flags::ITEM_USED);
+    let giver = Actor { side: user.side, slot: 1 - user.slot };
+    let (u, g) = (mon_at(battle, user), mon_at(battle, giver));
+    if u.item == crate::ids::NONE_ID
+        && !u.is_fainted()
+
+        && !(u.volatiles.has(volatile_flags::VOLUNTARY_SWITCH) && battle.rules().abilities.symbiosis_skips_switching_ally)
+        && !g.is_fainted()
+        && g.ability == engine_data::abilities_table::ability_ids::SYMBIOSIS
+        && g.item != crate::ids::NONE_ID
+        && crate::items::knock_off_removable(battle.rules(), g, crate::items::pre_transform_species(g))
+    {
+        let item = g.item;
+        let g = mon_at_mut(battle, giver);
+        g.item = crate::ids::NONE_ID;
+        g.volatiles.set(volatile_flags::ITEM_CONSUMED);
+        mon_at_mut(battle, user).item = item;
     }
 }
 
@@ -17351,6 +17489,11 @@ fn apply_residual_inner(battle: &mut Battle, rng: &mut Rng) -> bool {
     leech_seed_residual(battle, rng);
 
 
+    if battle.sides.iter().any(|s| s.mons.iter().all(|m| m.is_fainted())) {
+        return false;
+    }
+
+
 
     for burn in [false, true] {
         let mut order: StackVec<(Actor, i64), 32> = all_actors()
@@ -17656,6 +17799,9 @@ fn apply_residual_inner(battle: &mut Battle, rng: &mut Rng) -> bool {
         .map(|a| (a, mon_at(battle, a).speed_cache))
         .collect();
     yawn_order.sort_by_key(|&(_, speed)| std::cmp::Reverse(speed));
+
+
+    let yawn_order = if battle.sides.iter().any(|s| s.mons.iter().all(|m| m.is_fainted())) { StackVec::new() } else { yawn_order };
     for (actor, _) in yawn_order {
         if !mon_at(battle, actor).is_fainted() {
 
@@ -18300,9 +18446,11 @@ fn run_battle_start_hooks(battle: &mut Battle, rng: &mut Rng) {
         switch_in_seed(battle, actor);
         *rng = battle.rng;
     }
-    for (actor, ..) in entries {
+    let costars: StackVec<Actor, 4> = entries.iter().map(|e| e.0).filter(|&a| mon_at(battle, a).ability == engine_data::abilities_table::ability_ids::COSTAR).collect();
+    for (k, (actor, ..)) in entries.iter().copied().enumerate() {
         battle.rng = *rng;
-        switch_in_late(battle, actor);
+        let later: StackVec<Actor, 4> = costars.iter().copied().filter(|c| entries[k + 1..].iter().any(|e| e.0 == *c)).collect();
+        switch_in_late(battle, actor, &later);
         *rng = battle.rng;
     }
     battle.rng = *rng;
@@ -19547,8 +19695,10 @@ fn resolve_forced_switches(battle: &mut Battle, actions: [JointAction; 2], need:
         for &(a, _) in &order {
             switch_in_seed(battle, a);
         }
-        for &(a, _) in &order {
-            switch_in_late(battle, a);
+        let costars: StackVec<Actor, 4> = order.iter().map(|o| o.0).filter(|&a| mon_at(battle, a).ability == engine_data::abilities_table::ability_ids::COSTAR).collect();
+        for (k, &(a, _)) in order.iter().enumerate() {
+            let later: StackVec<Actor, 4> = costars.iter().copied().filter(|c| order[k + 1..].iter().any(|o| o.0 == *c)).collect();
+            switch_in_late(battle, a, &later);
         }
         switch_in_tail(battle, opportunists);
 
@@ -20824,17 +20974,17 @@ pub(crate) mod tests {
         use engine_data::abilities_table::ability_ids;
         use engine_data::items_table::{item_ids, MEGA_STONES};
         let mut holder = test_mon([Some(Type::Normal), None], [100; 5], [0; 4]);
-        assert!(!crate::items::knock_off_removable(&holder, 0), "no item - nothing to take");
+        assert!(!crate::items::knock_off_removable(&crate::rules::Rules::GEN9_SV, &holder, 0), "no item - nothing to take");
         holder.item = item_ids::LEFTOVERS;
-        assert!(crate::items::knock_off_removable(&holder, 0), "an ordinary item can be taken");
+        assert!(crate::items::knock_off_removable(&crate::rules::Rules::GEN9_SV, &holder, 0), "an ordinary item can be taken");
         holder.ability = ability_ids::STICKYHOLD;
-        assert!(!crate::items::knock_off_removable(&holder, 0), "Sticky Hold blocks it");
+        assert!(!crate::items::knock_off_removable(&crate::rules::Rules::GEN9_SV, &holder, 0), "Sticky Hold blocks it");
         holder.ability = 0;
         let (stone, base, mega) = MEGA_STONES[0];
         holder.item = stone;
-        assert!(!crate::items::knock_off_removable(&holder, base), "a stone can't be taken by its own base species");
-        assert!(!crate::items::knock_off_removable(&holder, mega), "...or its mega forme");
-        assert!(crate::items::knock_off_removable(&holder, u16::MAX), "a species that isn't this stone's own can take it");
+        assert!(!crate::items::knock_off_removable(&crate::rules::Rules::GEN9_SV, &holder, base), "a stone can't be taken by its own base species");
+        assert!(!crate::items::knock_off_removable(&crate::rules::Rules::GEN9_SV, &holder, mega), "...or its mega forme");
+        assert!(crate::items::knock_off_removable(&crate::rules::Rules::GEN9_SV, &holder, u16::MAX), "a species that isn't this stone's own can take it");
     }
 
     #[test]
@@ -20856,7 +21006,7 @@ pub(crate) mod tests {
     fn confusion_self_hit_damage_is_a_typeless_forty_power_hit_on_itself() {
         let mon = test_mon([Some(Type::Normal), None], [100; 5], [0; 4]);
         for seed in 1..50u64 {
-            let dmg = confusion_self_damage(&mon, &mut Rng::new(seed));
+            let dmg = confusion_self_damage(&mon, false, &mut Rng::new(seed));
 
             assert!((16..=19).contains(&dmg), "seed {seed} gave {dmg}");
         }
@@ -20868,7 +21018,7 @@ pub(crate) mod tests {
         let mut mon = test_mon([Some(Type::Normal), None], [100; 5], moves_with(move_ids::TACKLE));
         mon.confusion_turns = 3;
         let hp_before = mon.hp;
-        let acted = pre_move_check(&crate::rules::Rules::CHAMPIONS_MC, &mut mon, moves_table::get(move_ids::TACKLE), DamageHandlers::NONE, false, &mut Rng::new(seed));
+        let acted = pre_move_check(&crate::rules::Rules::CHAMPIONS_MC, &mut mon, moves_table::get(move_ids::TACKLE), DamageHandlers::NONE, false, false, &mut Rng::new(seed));
         assert!(!acted, "the self-hit roll passed, so the move doesn't go ahead");
         assert!(mon.hp < hp_before, "and the mon takes its own confusion damage");
         assert_eq!(mon.confusion_turns, 2, "the counter ticked down this turn");
@@ -21183,7 +21333,7 @@ pub(crate) mod tests {
             let mut mon = test_mon([Some(Type::Normal), None], [100; 5], moves_with(move_ids::TACKLE));
             mon.status = Status::Paralysis;
             let mut rng = Rng::new(seed);
-            if !pre_move_check(&crate::rules::Rules::CHAMPIONS_MC, &mut mon, &move_data, DamageHandlers::NONE, false, &mut rng) {
+            if !pre_move_check(&crate::rules::Rules::CHAMPIONS_MC, &mut mon, &move_data, DamageHandlers::NONE, false, false, &mut rng) {
                 prevented += 1;
             }
         }

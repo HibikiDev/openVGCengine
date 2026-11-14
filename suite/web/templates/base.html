@@ -38,8 +38,11 @@
 {% if sub %}<div class="subnav">{% for key, label in sub %}<a class="{{ 'on' if active == key or (key == 'preview' and active == 'turn1') }}" href="/{{ key }}">{{ label }}</a>{% endfor %}
   <button type="button" class="subclear" data-clear="{{ 'team' if active in team else 'lab' if active in lab else 'rep' }}">{{ _('clear team') if active in team else _('clear teams') if active in lab else _('clear replay') }}</button></div>{% endif %}{% endif %}
 {% if not standalone and gpu is defined and not gpu.on and (active in team or active in lab) %}<div class="card flat cpubar small">{{ _("<b>Running on the CPU</b> &middot; no GPU the tools can use was found, so searched modes (Search Mode, Deep mode, bring matrices, example games) are off by default or take much longer here; quick modes work as usual.")|safe }}</div>{% endif %}
+
+{% if not standalone and browser_mode() %}<form class="card flat cpubar small appbar" method="post" action="/app/quit">{{ _("<b>Running in your browser</b> &middot; this PC doesn't have Microsoft's Edge WebView2 Runtime, so openVGCengine opened here instead of in its own window (installing the runtime brings the window back). Closing every tab closes the app after a while; to close it now:")|safe }} <button type="submit" class="btn inline">{{ _("Close the app") }}</button></form>{% endif %}
 {% set _lk = suite_lock() %}{% if _lk %}<div class="card flat lockbar"><b>{{ _("Tools paused") }}</b> &middot; {{ _("this PC is busy:") }} {{ _lk.reason }}{% if _lk.until %} ({{ _("until about {time}", time=_lk.until) }}){% endif %}. {{ _("Status, results and history still work; new runs and the Line Crawler wait until it's done.") }}</div>{% endif %}
 {% block main %}
+{% if closed %}<div class="card"><h2>{{ _("openVGCengine has closed") }}</h2><p>{{ _("You can close this tab. Start the app again to keep going.") }}</p></div>{% endif %}
 {% if missing %}<div class="card"><h2>{{ _("Hmm, nothing here") }}</h2><p>{{ _("That result doesn't exist (any more).") }} <a href="/">{{ _("Back home") }}</a></p></div>{% endif %}
 {% endblock %}
 </div></main>
@@ -47,6 +50,11 @@
   {% if not standalone %}&middot; <a href="/about">{{ _("About & updates") }}</a> &middot; <a href="/about#bug">{{ _("Report a bug") }}</a>{% endif %}</footer>
 {% block scripts %}{% endblock %}
 {% if not standalone %}<script src="/static/sprites.js" defer></script><script src="/static/app.js" defer></script>{% endif %}
+{% if not standalone and browser_mode() %}<script>  // (browser mode: check in while open; once the app has closed, the bar says so)
+(() => { const ping = () => fetch("/app/alive", {cache: "no-store"}).catch(() => { const b = document.querySelector(".appbar");
+  if (b) b.textContent = {{ _("openVGCengine has closed. Start the app again to keep going.")|tojson }}; });
+  ping(); setInterval(ping, 30000); })();
+</script>{% endif %}
 <script>
 window.T = {"fill from a bucket…": {{ _("fill from a bucket…")|tojson }},  // (app.js's strings)
             "the whole bucket (a team drawn per game)": {{ _("the whole bucket (a team drawn per game)")|tojson }},

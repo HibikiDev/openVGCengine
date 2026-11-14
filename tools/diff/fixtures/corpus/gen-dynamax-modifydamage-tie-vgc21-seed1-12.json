@@ -1,0 +1,310 @@
+{
+	"format": "gen8vgc2021",
+	"seed": "gen5,26596,37159,31377,9784",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Virizion",
+			"item": "Mental Herb",
+			"ability": "Justified",
+			"moves": [
+				"Leaf Blade",
+				"Close Combat",
+				"Zen Headbutt",
+				"Protect"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 4,
+				"atk": 252,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 0,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "Glalie",
+			"item": "Choice Scarf",
+			"ability": "Inner Focus",
+			"moves": [
+				"Blizzard",
+				"Hex",
+				"Freeze-Dry",
+				"Dark Pulse"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 4,
+				"atk": 0,
+				"def": 0,
+				"spa": 252,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 0,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "Galvantula",
+			"item": "Cheri Berry",
+			"ability": "Swarm",
+			"moves": [
+				"Bug Buzz",
+				"Thunderbolt",
+				"Energy Ball",
+				"Protect"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 4,
+				"atk": 0,
+				"def": 0,
+				"spa": 252,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 0,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "Sirfetch’d",
+			"item": "Sea Incense",
+			"ability": "Scrappy",
+			"moves": [
+				"Superpower",
+				"Brave Bird",
+				"Protect",
+				"Rest"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 252,
+				"atk": 252,
+				"def": 4,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 0,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Rillaboom",
+			"item": "Assault Vest",
+			"ability": "Grassy Surge",
+			"moves": [
+				"Grassy Glide",
+				"U-turn",
+				"Wood Hammer",
+				"Fake Out"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 252,
+				"atk": 252,
+				"def": 0,
+				"spa": 0,
+				"spd": 4,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "Dubwool",
+			"item": "Metal Coat",
+			"ability": "Bulletproof",
+			"moves": [
+				"Double-Edge",
+				"Body Press",
+				"Protect",
+				"Thunder Wave"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 4,
+				"atk": 252,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 0,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "Dragapult",
+			"item": "Safety Goggles",
+			"ability": "Clear Body",
+			"moves": [
+				"Light Screen",
+				"Phantom Force",
+				"Dragon Dance",
+				"Reflect"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 252,
+				"atk": 0,
+				"def": 0,
+				"spa": 0,
+				"spd": 4,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "Landorus-Therian",
+			"item": "Choice Scarf",
+			"ability": "Intimidate",
+			"moves": [
+				"Earthquake",
+				"Fly",
+				"U-turn",
+				"Iron Tail"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 0,
+				"atk": 252,
+				"def": 4,
+				"spa": 0,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"turns": [
+		{
+			"p1": "switch 4, move 3 2",
+			"p2": "move 4 1 dynamax, switch 4"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "pass, switch 3"
+		},
+		{
+			"p1": "move 1 2, switch 3",
+			"p2": "move 4 1, move 4"
+		},
+		{
+			"p1": "move 2 1 dynamax, switch 3",
+			"p2": "move 1 1, move 1"
+		},
+		{
+			"p1": "switch 3, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 3 1, move 4 2",
+			"p2": "move 1 -2, move 3"
+		},
+		{
+			"p1": "switch 4, move 4 -1",
+			"p2": "move 4 1, move 2 1"
+		},
+		{
+			"p1": "move 3 2, move 4 2",
+			"p2": "move 2 2, move 1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 4, pass"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "pass, switch 4"
+		},
+		{
+			"p1": "move 2 2, move 4 2",
+			"p2": "move 1 -2, move 4 -1"
+		},
+		{
+			"p1": "move 1 2, switch 4",
+			"p2": "move 3, pass"
+		}
+	],
+	"teams": [
+		"GU-34",
+		"GM-285"
+	]
+}

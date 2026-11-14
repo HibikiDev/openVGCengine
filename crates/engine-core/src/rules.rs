@@ -35,6 +35,10 @@ pub enum Format {
 
 
     Gen8Vgc = 6,
+
+
+
+    ChampionsMB = 7,
 }
 
 impl Format {
@@ -42,6 +46,7 @@ impl Format {
     pub fn from_id(id: &str) -> Option<Format> {
         match id {
             "gen9championsvgc2026regmc" | "gen9championsvgc2026regmcbo3" => Some(Format::ChampionsMC),
+            "gen9championsvgc2026regmb" | "gen9championsvgc2026regmbbo3" => Some(Format::ChampionsMB),
             "gen5vgc2013" => Some(Format::Gen5Vgc13),
             "gen6vgc2014" | "gen6vgc2015" | "gen6vgc2016" => Some(Format::Gen6Vgc),
             "gen7vgc2017" | "gen7vgc2018" | "gen7vgc2019" => Some(Format::Gen7Vgc),
@@ -49,6 +54,15 @@ impl Format {
             "gen9vgc2023regc" | "gen9vgc2023regd" => Some(Format::Gen9SvPreDlc),
             "gen8vgc2020" | "gen8vgc2021" | "gen8vgc2022" => Some(Format::Gen8Vgc),
             _ => None,
+        }
+    }
+
+
+
+    pub const fn obs_slot(self) -> usize {
+        match self {
+            Format::ChampionsMB => Format::ChampionsMC as usize,
+            f => f as usize,
         }
     }
 }
@@ -76,6 +90,8 @@ pub enum StatFormula {
 pub enum PpFormula {
 
     Champions,
+
+    ChampionsRegMB,
 
     ThreePpUps,
 }
@@ -228,6 +244,9 @@ pub struct ItemRules {
 
 
     pub jaboca_needs_standing_attacker: bool,
+
+
+    pub griseous_orb_locked: bool,
 }
 
 
@@ -342,6 +361,12 @@ pub struct MoveEffectRules {
 
 
     pub charge_ends_on_any_move: bool,
+
+
+    pub pollen_puff_full_ally_fails: bool,
+
+
+    pub scald_thaws_target: bool,
 
 
     pub weather_event_updates: bool,
@@ -598,7 +623,7 @@ impl Rules {
             emergency_exit_clears_switches: false,
             unseen_fist_strips_protect_flag: false,
         },
-        items: ItemRules { gem_modifier: (5325, 4096), confusion_berry_pinch: (1, 4), confusion_berry_heal: (1, 3), life_orb_modern: true, eject_button_cancels_user_switch: false, jaboca_needs_standing_attacker: true },
+        items: ItemRules { gem_modifier: (5325, 4096), confusion_berry_pinch: (1, 4), confusion_berry_heal: (1, 3), life_orb_modern: true, eject_button_cancels_user_switch: false, jaboca_needs_standing_attacker: true, griseous_orb_locked: false },
         move_effects: MoveEffectRules {
             screen_doubles_modifier: (2732, 4096),
             after_hit_needs_user_hp: false,
@@ -644,6 +669,8 @@ impl Rules {
             parting_shot_needs_drops: true,
             choice_lock_fails_other_moves: true,
             charge_ends_on_any_move: false,
+            pollen_puff_full_ally_fails: false,
+            scald_thaws_target: true,
             weather_event_updates: true,
             secondary_chance_overflow: false,
         },
@@ -731,7 +758,7 @@ impl Rules {
             emergency_exit_clears_switches: true,
             unseen_fist_strips_protect_flag: true,
         },
-        items: ItemRules { gem_modifier: (6144, 4096), confusion_berry_pinch: (1, 2), confusion_berry_heal: (1, 8), life_orb_modern: false, eject_button_cancels_user_switch: true, jaboca_needs_standing_attacker: false },
+        items: ItemRules { gem_modifier: (6144, 4096), confusion_berry_pinch: (1, 2), confusion_berry_heal: (1, 8), life_orb_modern: false, eject_button_cancels_user_switch: true, jaboca_needs_standing_attacker: false, griseous_orb_locked: true },
         move_effects: MoveEffectRules {
             screen_doubles_modifier: (2703, 4096),
             after_hit_needs_user_hp: true,
@@ -777,6 +804,8 @@ impl Rules {
             parting_shot_needs_drops: true,
             choice_lock_fails_other_moves: false,
             charge_ends_on_any_move: true,
+            pollen_puff_full_ally_fails: false,
+            scald_thaws_target: false,
             weather_event_updates: false,
             secondary_chance_overflow: true,
         },
@@ -871,7 +900,7 @@ impl Rules {
             emergency_exit_clears_switches: true,
             unseen_fist_strips_protect_flag: true,
         },
-        items: ItemRules { gem_modifier: (5325, 4096), confusion_berry_pinch: (1, 2), confusion_berry_heal: (1, 8), life_orb_modern: false, eject_button_cancels_user_switch: true, jaboca_needs_standing_attacker: false },
+        items: ItemRules { gem_modifier: (5325, 4096), confusion_berry_pinch: (1, 2), confusion_berry_heal: (1, 8), life_orb_modern: false, eject_button_cancels_user_switch: true, jaboca_needs_standing_attacker: false, griseous_orb_locked: true },
         move_effects: MoveEffectRules {
             screen_doubles_modifier: (2732, 4096),
             after_hit_needs_user_hp: true,
@@ -917,6 +946,8 @@ impl Rules {
             parting_shot_needs_drops: false,
             choice_lock_fails_other_moves: false,
             charge_ends_on_any_move: true,
+            pollen_puff_full_ally_fails: false,
+            scald_thaws_target: true,
             weather_event_updates: false,
             secondary_chance_overflow: true,
         },
@@ -1010,7 +1041,7 @@ impl Rules {
             emergency_exit_clears_switches: true,
             unseen_fist_strips_protect_flag: true,
         },
-        items: ItemRules { gem_modifier: (5325, 4096), confusion_berry_pinch: (1, 4), confusion_berry_heal: (1, 2), life_orb_modern: true, eject_button_cancels_user_switch: true, jaboca_needs_standing_attacker: true },
+        items: ItemRules { gem_modifier: (5325, 4096), confusion_berry_pinch: (1, 4), confusion_berry_heal: (1, 2), life_orb_modern: true, eject_button_cancels_user_switch: true, jaboca_needs_standing_attacker: true, griseous_orb_locked: true },
         move_effects: MoveEffectRules {
             screen_doubles_modifier: (2732, 4096),
             after_hit_needs_user_hp: true,
@@ -1056,6 +1087,8 @@ impl Rules {
             parting_shot_needs_drops: true,
             choice_lock_fails_other_moves: true,
             charge_ends_on_any_move: true,
+            pollen_puff_full_ally_fails: true,
+            scald_thaws_target: true,
             weather_event_updates: true,
             secondary_chance_overflow: true,
         },
@@ -1158,7 +1191,7 @@ impl Rules {
             emergency_exit_clears_switches: true,
             unseen_fist_strips_protect_flag: true,
         },
-        items: ItemRules { gem_modifier: (5325, 4096), confusion_berry_pinch: (1, 4), confusion_berry_heal: (1, 3), life_orb_modern: true, eject_button_cancels_user_switch: true, jaboca_needs_standing_attacker: true },
+        items: ItemRules { gem_modifier: (5325, 4096), confusion_berry_pinch: (1, 4), confusion_berry_heal: (1, 3), life_orb_modern: true, eject_button_cancels_user_switch: true, jaboca_needs_standing_attacker: true, griseous_orb_locked: true },
         move_effects: MoveEffectRules {
             screen_doubles_modifier: (2732, 4096),
             after_hit_needs_user_hp: true,
@@ -1205,6 +1238,8 @@ impl Rules {
             parting_shot_needs_drops: true,
             choice_lock_fails_other_moves: true,
             charge_ends_on_any_move: true,
+            pollen_puff_full_ally_fails: false,
+            scald_thaws_target: true,
             weather_event_updates: true,
             secondary_chance_overflow: true,
         },
@@ -1305,7 +1340,7 @@ impl Rules {
             unseen_fist_strips_protect_flag: true,
         },
 
-        items: ItemRules { gem_modifier: (5325, 4096), confusion_berry_pinch: (1, 4), confusion_berry_heal: (1, 3), life_orb_modern: true, eject_button_cancels_user_switch: true, jaboca_needs_standing_attacker: true },
+        items: ItemRules { gem_modifier: (5325, 4096), confusion_berry_pinch: (1, 4), confusion_berry_heal: (1, 3), life_orb_modern: true, eject_button_cancels_user_switch: true, jaboca_needs_standing_attacker: true, griseous_orb_locked: false },
         move_effects: MoveEffectRules {
             screen_doubles_modifier: (2732, 4096),
 
@@ -1356,6 +1391,8 @@ impl Rules {
             parting_shot_needs_drops: true,
             choice_lock_fails_other_moves: true,
             charge_ends_on_any_move: false,
+            pollen_puff_full_ally_fails: false,
+            scald_thaws_target: true,
             weather_event_updates: true,
             secondary_chance_overflow: false,
         },
@@ -1365,6 +1402,9 @@ impl Rules {
 
 
 
+
+
+    pub const CHAMPIONS_MB: Rules = Rules { pp_formula: PpFormula::ChampionsRegMB, ..Rules::CHAMPIONS_MC };
 
     pub const GEN9_SV_PREDLC: Rules = Rules {
         ability_flag_overrides: engine_data::abilities_table::ABILITY_FLAG_OVERRIDES_GEN9_PREDLC,
@@ -1406,6 +1446,10 @@ impl Rules {
     pub fn max_pp(&self, move_id: engine_data::moves_table::MoveId) -> u8 {
         match self.pp_formula {
             PpFormula::Champions => crate::mon::max_pp(move_id),
+            PpFormula::ChampionsRegMB => {
+                use engine_data::moves_table::move_ids::{STRENGTHSAP, WISH};
+                if matches!(move_id, WISH | STRENGTHSAP) { (10 / 5 + 1) * 4 } else { crate::mon::max_pp(move_id) }
+            }
             PpFormula::ThreePpUps => {
                 use engine_data::moves_table::move_ids::{SKETCH, STRUGGLE, TRUMPCARD};
                 if move_id == 0 {
@@ -1424,6 +1468,7 @@ impl Rules {
     pub const fn of(format: Format) -> &'static Rules {
         match format {
             Format::ChampionsMC => &Rules::CHAMPIONS_MC,
+            Format::ChampionsMB => &Rules::CHAMPIONS_MB,
             Format::Gen5Vgc13 => &Rules::GEN5_VGC13,
             Format::Gen6Vgc => &Rules::GEN6_VGC,
             Format::Gen7Vgc => &Rules::GEN7_VGC,

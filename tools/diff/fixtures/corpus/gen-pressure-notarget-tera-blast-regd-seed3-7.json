@@ -1,0 +1,318 @@
+{
+	"format": "gen9vgc2023regd",
+	"seed": "gen5,32701,39873,43345,19053",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Komala",
+			"item": "Wide Lens",
+			"ability": "Comatose",
+			"moves": [
+				"Body Slam",
+				"Wood Hammer",
+				"Protect",
+				"Facade"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 252,
+				"atk": 252,
+				"def": 4,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 0,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Normal"
+		},
+		{
+			"name": "Mon1",
+			"species": "Moltres",
+			"item": "Icicle Plate",
+			"ability": "Pressure",
+			"moves": [
+				"Heat Wave",
+				"Hurricane",
+				"Tera Blast",
+				"Protect"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 4,
+				"atk": 0,
+				"def": 0,
+				"spa": 252,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 0,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N",
+			"teraType": "Fire"
+		},
+		{
+			"name": "Mon2",
+			"species": "Tornadus",
+			"item": "Mental Herb",
+			"ability": "Prankster",
+			"moves": [
+				"Tailwind",
+				"Taunt",
+				"Sunny Day",
+				"Bleakwind Storm"
+			],
+			"nature": "Bold",
+			"evs": {
+				"hp": 244,
+				"atk": 0,
+				"def": 244,
+				"spa": 4,
+				"spd": 4,
+				"spe": 12
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 0,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Ghost"
+		},
+		{
+			"name": "Mon3",
+			"species": "Hydreigon",
+			"item": "Sitrus Berry",
+			"ability": "Levitate",
+			"moves": [
+				"Dark Pulse",
+				"Draco Meteor",
+				"Heat Wave",
+				"Protect"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 4,
+				"atk": 0,
+				"def": 0,
+				"spa": 252,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 0,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Dark"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Enamorus",
+			"item": "Rocky Helmet",
+			"ability": "Contrary",
+			"moves": [
+				"Dazzling Gleam",
+				"Earth Power",
+				"Protect",
+				"Tailwind"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 4,
+				"atk": 0,
+				"def": 0,
+				"spa": 252,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 0,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Fairy"
+		},
+		{
+			"name": "Mon1",
+			"species": "Mabosstiff",
+			"item": "Focus Sash",
+			"ability": "Guard Dog",
+			"moves": [
+				"Jaw Lock",
+				"Body Slam",
+				"Protect",
+				"Double-Edge"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 4,
+				"atk": 252,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 0,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Dark"
+		},
+		{
+			"name": "Mon2",
+			"species": "Spiritomb",
+			"item": "Choice Band",
+			"ability": "Pressure",
+			"moves": [
+				"Shadow Sneak",
+				"Sucker Punch",
+				"Facade",
+				"Foul Play"
+			],
+			"nature": "Brave",
+			"evs": {
+				"hp": 252,
+				"atk": 252,
+				"def": 4,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 0,
+				"spd": 31,
+				"spe": 0
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Normal"
+		},
+		{
+			"name": "Mon3",
+			"species": "Sableye",
+			"item": "Roseli Berry",
+			"ability": "Prankster",
+			"moves": [
+				"Light Screen",
+				"Will-O-Wisp",
+				"Taunt",
+				"Quash"
+			],
+			"nature": "Bold",
+			"evs": {
+				"hp": 252,
+				"atk": 0,
+				"def": 252,
+				"spa": 0,
+				"spd": 4,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 0,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Grass"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 1 2, move 2 -1",
+			"p2": "move 4 terastallize, move 3"
+		},
+		{
+			"p1": "move 1 -2 terastallize, switch 3",
+			"p2": "move 2 2, move 1 2"
+		},
+		{
+			"p1": "move 4 2, move 2 2",
+			"p2": "move 1, move 4 -1"
+		},
+		{
+			"p1": "switch 4, switch 3",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 3, move 2 1",
+			"p2": "move 2 -2, move 1 1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 4, switch 3"
+		},
+		{
+			"p1": "move 2 -2, move 3 2",
+			"p2": "move 2 1, move 4 -1"
+		},
+		{
+			"p1": "move 1 2, move 4",
+			"p2": "move 1, move 4 1"
+		},
+		{
+			"p1": "move 1 1, move 2 -1",
+			"p2": "move 4 2, move 4 1"
+		},
+		{
+			"p1": "pass, move 3 -1",
+			"p2": "move 2 -2, move 4 -1"
+		},
+		{
+			"p1": "pass, move 2 1",
+			"p2": "move 2 1, move 4 -1"
+		},
+		{
+			"p1": "pass, move 3 1",
+			"p2": "pass, move 4 2"
+		}
+	],
+	"teams": [
+		"GU-131",
+		"GU-62"
+	]
+}

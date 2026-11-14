@@ -1,0 +1,298 @@
+{
+	"format": "gen5vgc2013",
+	"seed": "gen5,35179,45452,6417,1208",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Rhyperior",
+			"item": "Rock Gem",
+			"ability": "Lightning Rod",
+			"moves": [
+				"Megahorn",
+				"Protect",
+				"Rock Slide",
+				"Earthquake"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 44,
+				"atk": 252,
+				"def": 0,
+				"spa": 0,
+				"spd": 212,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "Delcatty",
+			"item": "Heat Rock",
+			"ability": "Cute Charm",
+			"moves": [
+				"Double-Edge",
+				"Sucker Punch",
+				"Protect",
+				"Headbutt"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 4,
+				"atk": 252,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 0,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "Scolipede",
+			"item": "Eviolite",
+			"ability": "Quick Feet",
+			"moves": [
+				"Megahorn",
+				"Poison Jab",
+				"Earthquake",
+				"Protect"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 4,
+				"atk": 252,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 0,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "Fearow",
+			"item": "Chesto Berry",
+			"ability": "Keen Eye",
+			"moves": [
+				"Secret Power",
+				"Drill Peck",
+				"Feint Attack",
+				"Protect"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 4,
+				"atk": 252,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 0,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Seismitoad",
+			"item": "Focus Sash",
+			"ability": "Swift Swim",
+			"moves": [
+				"Muddy Water",
+				"Earth Power",
+				"Sludge Wave",
+				"Protect"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 4,
+				"atk": 0,
+				"def": 0,
+				"spa": 252,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 0,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "Scrafty",
+			"item": "Bright Powder",
+			"ability": "Moxie",
+			"moves": [
+				"Feint Attack",
+				"High Jump Kick",
+				"Head Smash",
+				"Protect"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 252,
+				"atk": 252,
+				"def": 4,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 0,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "Wormadam",
+			"item": "Choice Scarf",
+			"ability": "Anticipation",
+			"moves": [
+				"Signal Beam",
+				"Leaf Storm",
+				"Psychic",
+				"Giga Drain"
+			],
+			"nature": "Quiet",
+			"evs": {
+				"hp": 252,
+				"atk": 0,
+				"def": 0,
+				"spa": 252,
+				"spd": 4,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 0,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 0
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "Alakazam",
+			"item": "Grass Gem",
+			"ability": "Inner Focus",
+			"moves": [
+				"Psychic",
+				"Focus Blast",
+				"Protect",
+				"Substitute"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 4,
+				"atk": 0,
+				"def": 0,
+				"spa": 252,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 0,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"turns": [
+		{
+			"p1": "switch 4, move 1 2",
+			"p2": "move 2 1, move 3 2"
+		},
+		{
+			"p1": "move 2 -2, move 4 -1",
+			"p2": "move 4, move 3 2"
+		},
+		{
+			"p1": "pass, switch 4",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 3 2, switch 3",
+			"p2": "move 1, move 4"
+		},
+		{
+			"p1": "move 2 -2, move 4",
+			"p2": "move 2 2, move 2 1"
+		},
+		{
+			"p1": "switch 3, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 1 -2, move 1 1",
+			"p2": "move 2 2, move 3 -1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 4, pass"
+		},
+		{
+			"p1": "move 3, pass",
+			"p2": "move 4, move 2 2"
+		}
+	],
+	"teams": [
+		"GU-272",
+		"GU-83"
+	]
+}

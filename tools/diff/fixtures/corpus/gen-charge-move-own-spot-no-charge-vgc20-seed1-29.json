@@ -1,0 +1,310 @@
+{
+	"format": "gen8vgc2020",
+	"seed": "gen5,18955,40265,26148,36518",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Arctozolt",
+			"item": "Mental Herb",
+			"ability": "Volt Absorb",
+			"moves": [
+				"Thunder Punch",
+				"Icicle Spear",
+				"Mega Kick",
+				"Protect"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 252,
+				"atk": 252,
+				"def": 0,
+				"spa": 0,
+				"spd": 4,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 0,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "Pincurchin",
+			"item": "Magnet",
+			"ability": "Electric Surge",
+			"moves": [
+				"Liquidation",
+				"Sucker Punch",
+				"Thunderbolt",
+				"Venoshock"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 252,
+				"atk": 0,
+				"def": 4,
+				"spa": 252,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "Lunatone",
+			"item": "Destiny Knot",
+			"ability": "Levitate",
+			"moves": [
+				"Power Gem",
+				"Psychic",
+				"Moonblast",
+				"Protect"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 4,
+				"atk": 0,
+				"def": 0,
+				"spa": 252,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 0,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "Ferrothorn",
+			"item": "Haban Berry",
+			"ability": "Anticipation",
+			"moves": [
+				"Power Whip",
+				"Iron Head",
+				"Poison Jab",
+				"Protect"
+			],
+			"nature": "Brave",
+			"evs": {
+				"hp": 252,
+				"atk": 252,
+				"def": 4,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 0,
+				"spd": 31,
+				"spe": 0
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Ferrothorn",
+			"item": "Leftovers",
+			"ability": "Iron Barbs",
+			"moves": [
+				"Protect",
+				"Body Press",
+				"Iron Defense",
+				"Power Whip"
+			],
+			"nature": "Relaxed",
+			"evs": {
+				"hp": 248,
+				"atk": 8,
+				"def": 252,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "Skarmory",
+			"item": "Babiri Berry",
+			"ability": "Keen Eye",
+			"moves": [
+				"Steel Wing",
+				"Brave Bird",
+				"X-Scissor",
+				"Protect"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 4,
+				"atk": 252,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 0,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "Cinderace",
+			"item": "Life Orb",
+			"ability": "Libero",
+			"moves": [
+				"Bounce",
+				"Sucker Punch",
+				"Pyro Ball",
+				"Iron Head"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 100,
+				"atk": 204,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 196
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "Rotom-Wash",
+			"item": "Sitrus Berry",
+			"ability": "Levitate",
+			"moves": [
+				"Ally Switch",
+				"Thunderbolt",
+				"Hydro Pump",
+				"Dark Pulse"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 252,
+				"atk": 0,
+				"def": 100,
+				"spa": 52,
+				"spd": 100,
+				"spe": 4
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 3 2, move 3 -1",
+			"p2": "move 4 1, move 1 2 dynamax"
+		},
+		{
+			"p1": "move 2 1, move 3 -1",
+			"p2": "move 4 -2, move 3 2"
+		},
+		{
+			"p1": "switch 4, move 4 2 dynamax",
+			"p2": "switch 4, move 4"
+		},
+		{
+			"p1": "switch 4, move 3 1",
+			"p2": "move 2 -2, move 1 1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "pass, switch 3"
+		},
+		{
+			"p1": "move 3 1, move 2 2",
+			"p2": "move 3 2, move 4 1"
+		},
+		{
+			"p1": "pass, switch 3",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 1 2, move 3 -1",
+			"p2": "move 1, move 1 -1"
+		},
+		{
+			"p1": "switch 4, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 2 -2, move 3 -1",
+			"p2": "switch 4, move 3 2"
+		},
+		{
+			"p1": "move 3 -2, pass",
+			"p2": "move 4 1, move 2 2"
+		},
+		{
+			"p1": "move 3 1, pass",
+			"p2": "move 2 2, move 4 -1"
+		}
+	],
+	"teams": [
+		"GU-48",
+		"GM-96"
+	]
+}

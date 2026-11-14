@@ -1,0 +1,318 @@
+{
+	"format": "gen9vgc2024regg",
+	"seed": "gen5,64543,29718,42880,276",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Goodra-Hisui",
+			"item": "Leftovers",
+			"ability": "Sap Sipper",
+			"moves": [
+				"Heavy Slam",
+				"Body Press",
+				"Shelter",
+				"Protect"
+			],
+			"nature": "Careful",
+			"evs": {
+				"hp": 252,
+				"atk": 4,
+				"def": 0,
+				"spa": 0,
+				"spd": 252,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Water"
+		},
+		{
+			"name": "Mon1",
+			"species": "Morpeko",
+			"item": "Covert Cloak",
+			"ability": "Hunger Switch",
+			"moves": [
+				"Wild Charge",
+				"Lash Out",
+				"Psychic Fangs",
+				"Protect"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 4,
+				"atk": 252,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 0,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Dark"
+		},
+		{
+			"name": "Mon2",
+			"species": "Lapras",
+			"item": "Lagging Tail",
+			"ability": "Shell Armor",
+			"moves": [
+				"Sparkling Aria",
+				"Blizzard",
+				"Hyper Voice",
+				"Protect"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 252,
+				"atk": 0,
+				"def": 4,
+				"spa": 252,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 0,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Water"
+		},
+		{
+			"name": "Mon3",
+			"species": "Infernape",
+			"item": "Choice Scarf",
+			"ability": "Blaze",
+			"moves": [
+				"Temper Flare",
+				"Drain Punch",
+				"Gunk Shot",
+				"Close Combat"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 4,
+				"atk": 252,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 0,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Fire"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Hippowdon",
+			"item": "Eviolite",
+			"ability": "Sand Stream",
+			"moves": [
+				"High Horsepower",
+				"Body Press",
+				"Protect",
+				"Sleep Talk"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 252,
+				"atk": 252,
+				"def": 0,
+				"spa": 0,
+				"spd": 4,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 0,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Fighting"
+		},
+		{
+			"name": "Mon1",
+			"species": "Spiritomb",
+			"item": "White Herb",
+			"ability": "Infiltrator",
+			"moves": [
+				"Shadow Sneak",
+				"Sucker Punch",
+				"Rock Tomb",
+				"Protect"
+			],
+			"nature": "Brave",
+			"evs": {
+				"hp": 252,
+				"atk": 252,
+				"def": 0,
+				"spa": 0,
+				"spd": 4,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 0,
+				"spd": 31,
+				"spe": 0
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Ghost"
+		},
+		{
+			"name": "Mon2",
+			"species": "Eternatus",
+			"item": "Leftovers",
+			"ability": "Pressure",
+			"moves": [
+				"Cosmic Power",
+				"Sludge Bomb",
+				"Protect",
+				"Recover"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 20,
+				"atk": 0,
+				"def": 4,
+				"spa": 228,
+				"spd": 4,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 0,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N",
+			"teraType": "Dark"
+		},
+		{
+			"name": "Mon3",
+			"species": "Meowscarada",
+			"item": "Rocky Helmet",
+			"ability": "Protean",
+			"moves": [
+				"Bullet Seed",
+				"Throat Chop",
+				"Brick Break",
+				"Protect"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 4,
+				"atk": 252,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 0,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Grass"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 1 1, move 3 1",
+			"p2": "move 4, move 3 -1"
+		},
+		{
+			"p1": "move 1 2, move 1 1 terastallize",
+			"p2": "move 1 1 terastallize, move 2 -1"
+		},
+		{
+			"p1": "move 2 -2, move 2 1",
+			"p2": "switch 3, move 3 -1"
+		},
+		{
+			"p1": "pass, switch 3",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 4, move 4",
+			"p2": "move 1, move 2 -1"
+		},
+		{
+			"p1": "move 1 -2, move 1",
+			"p2": "move 4, move 4"
+		},
+		{
+			"p1": "move 2 -2, move 4",
+			"p2": "switch 3, move 3 1"
+		},
+		{
+			"p1": "move 1 2, move 2",
+			"p2": "move 3, move 2 2"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "pass, switch 4"
+		},
+		{
+			"p1": "move 1 1, switch 4",
+			"p2": "move 2 -2, move 4"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 3, pass"
+		},
+		{
+			"p1": "move 4, move 1 2",
+			"p2": "move 1, move 3 -1"
+		}
+	],
+	"teams": [
+		"GU-2",
+		"GU-11"
+	]
+}

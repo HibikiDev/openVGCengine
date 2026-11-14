@@ -1,0 +1,318 @@
+{
+	"format": "gen9vgc2023regd",
+	"seed": "gen5,8672,34256,54680,63572",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Pelipper",
+			"item": "Rocky Helmet",
+			"ability": "Drizzle",
+			"moves": [
+				"Hurricane",
+				"Tailwind",
+				"Wide Guard",
+				"Protect"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 0,
+				"atk": 0,
+				"def": 0,
+				"spa": 252,
+				"spd": 4,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 0,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Grass"
+		},
+		{
+			"name": "Mon1",
+			"species": "Zoroark",
+			"item": "Booster Energy",
+			"ability": "Illusion",
+			"moves": [
+				"Foul Play",
+				"Body Slam",
+				"Protect",
+				"Rain Dance"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 4,
+				"atk": 252,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 0,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Dark"
+		},
+		{
+			"name": "Mon2",
+			"species": "Houndstone",
+			"item": "Adrenaline Orb",
+			"ability": "Sand Rush",
+			"moves": [
+				"Last Respects",
+				"Psychic Fangs",
+				"Protect",
+				"Helping Hand"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 252,
+				"atk": 252,
+				"def": 4,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 0,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Ghost"
+		},
+		{
+			"name": "Mon3",
+			"species": "Brambleghast",
+			"item": "Focus Sash",
+			"ability": "Wind Rider",
+			"moves": [
+				"Power Whip",
+				"Tera Blast",
+				"Strength Sap",
+				"Shadow Sneak"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 164,
+				"atk": 116,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 228
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Ghost"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Flutter Mane",
+			"item": "Choice Specs",
+			"ability": "Protosynthesis",
+			"moves": [
+				"Dazzling Gleam",
+				"Thunderbolt",
+				"Moonblast",
+				"Tera Blast"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 228,
+				"atk": 0,
+				"def": 100,
+				"spa": 36,
+				"spd": 4,
+				"spe": 140
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 0,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N",
+			"teraType": "Fairy"
+		},
+		{
+			"name": "Mon1",
+			"species": "Cresselia",
+			"item": "Safety Goggles",
+			"ability": "Levitate",
+			"moves": [
+				"Lunar Dance",
+				"Psychic",
+				"Ice Beam",
+				"Trick Room"
+			],
+			"nature": "Relaxed",
+			"evs": {
+				"hp": 252,
+				"atk": 0,
+				"def": 252,
+				"spa": 0,
+				"spd": 4,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 0,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 0
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Water"
+		},
+		{
+			"name": "Mon2",
+			"species": "Amoonguss",
+			"item": "Rocky Helmet",
+			"ability": "Regenerator",
+			"moves": [
+				"Spore",
+				"Leaf Storm",
+				"Pollen Puff",
+				"Rage Powder"
+			],
+			"nature": "Bold",
+			"evs": {
+				"hp": 236,
+				"atk": 0,
+				"def": 156,
+				"spa": 4,
+				"spd": 108,
+				"spe": 4
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 0,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Water"
+		},
+		{
+			"name": "Mon3",
+			"species": "Urshifu",
+			"item": "Focus Sash",
+			"ability": "Unseen Fist",
+			"moves": [
+				"Wicked Blow",
+				"Close Combat",
+				"Sucker Punch",
+				"Detect"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 4,
+				"atk": 252,
+				"def": 4,
+				"spa": 0,
+				"spd": 36,
+				"spe": 212
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Dark"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 2, move 2 -1",
+			"p2": "move 3 -2, move 3 2"
+		},
+		{
+			"p1": "move 4, switch 4",
+			"p2": "move 3 -2, switch 3"
+		},
+		{
+			"p1": "move 1 1, move 4 2 terastallize",
+			"p2": "switch 3, move 1 1"
+		},
+		{
+			"p1": "switch 3, move 2 -1",
+			"p2": "move 3 1, move 3 -1"
+		},
+		{
+			"p1": "switch 3, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 4, move 1 2",
+			"p2": "switch 3, move 2 -1 terastallize"
+		},
+		{
+			"p1": "switch 4, move 2 -1",
+			"p2": "switch 4, move 3 -1"
+		},
+		{
+			"p1": "switch 4, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 1 2, move 3 -1",
+			"p2": "move 2 1, switch 3"
+		},
+		{
+			"p1": "pass, move 2 -1",
+			"p2": "switch 4, move 4"
+		},
+		{
+			"p1": "pass, move 3 2",
+			"p2": "move 4 2, move 2 2"
+		},
+		{
+			"p1": "pass, move 1 1",
+			"p2": "switch 3, move 3 -1"
+		}
+	],
+	"teams": [
+		"GU-34",
+		"GM-275"
+	]
+}

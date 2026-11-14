@@ -1,0 +1,311 @@
+{
+	"format": "gen5vgc2013",
+	"seed": "gen5,22294,58627,20915,58594",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Tornadus-Therian",
+			"item": "Chesto Berry",
+			"ability": "Regenerator",
+			"moves": [
+				"Air Slash",
+				"Heat Wave",
+				"Protect",
+				"Substitute"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 4,
+				"atk": 0,
+				"def": 0,
+				"spa": 252,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 0,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "Mesprit",
+			"item": "Chople Berry",
+			"ability": "Levitate",
+			"moves": [
+				"Future Sight",
+				"Thunder",
+				"Protect",
+				"Swagger"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 4,
+				"atk": 0,
+				"def": 0,
+				"spa": 252,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 0,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "Porygon-Z",
+			"item": "Leftovers",
+			"ability": "Adaptability",
+			"moves": [
+				"Swift",
+				"Ice Beam",
+				"Protect",
+				"Trick Room"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 4,
+				"atk": 0,
+				"def": 0,
+				"spa": 252,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 0,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "Ninetales",
+			"item": "Life Orb",
+			"ability": "Drought",
+			"moves": [
+				"Heat Wave",
+				"Hidden Power Ice",
+				"Will-O-Wisp",
+				"Energy Ball"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 4,
+				"atk": 0,
+				"def": 0,
+				"spa": 252,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 2,
+				"def": 30,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"hpType": "Ice"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Rampardos",
+			"item": "Electric Gem",
+			"ability": "Sheer Force",
+			"moves": [
+				"Stone Edge",
+				"Double-Edge",
+				"Protect",
+				"Substitute"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 252,
+				"atk": 252,
+				"def": 0,
+				"spa": 0,
+				"spd": 4,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 0,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "Registeel",
+			"item": "Micle Berry",
+			"ability": "Clear Body",
+			"moves": [
+				"Metal Claw",
+				"Double-Edge",
+				"Protect",
+				"Thunder Wave"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 252,
+				"atk": 252,
+				"def": 0,
+				"spa": 0,
+				"spd": 4,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 0,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "Omastar",
+			"item": "Razor Fang",
+			"ability": "Shell Armor",
+			"moves": [
+				"Ancient Power",
+				"Hydro Pump",
+				"Earth Power",
+				"Protect"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 252,
+				"atk": 0,
+				"def": 4,
+				"spa": 252,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 0,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "Swoobat",
+			"item": "Choice Scarf",
+			"ability": "Unaware",
+			"moves": [
+				"Future Sight",
+				"Air Cutter",
+				"Shadow Ball",
+				"Psyshock"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 4,
+				"atk": 0,
+				"def": 0,
+				"spa": 252,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 0,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"turns": [
+		{
+			"p1": "switch 4, move 4 1",
+			"p2": "switch 4, move 4 2"
+		},
+		{
+			"p1": "move 2 -2, move 4 -1",
+			"p2": "move 1 2, move 4 1"
+		},
+		{
+			"p1": "move 2 -2, switch 3",
+			"p2": "move 1 -2, switch 4"
+		},
+		{
+			"p1": "move 4 1, move 2 1",
+			"p2": "switch 4, switch 3"
+		},
+		{
+			"p1": "pass, switch 4",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 2 1, move 2",
+			"p2": "switch 4, move 1 2"
+		},
+		{
+			"p1": "move 3 2, move 2",
+			"p2": "move 4 -2, move 3 1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 4, switch 3"
+		},
+		{
+			"p1": "move 3 1, switch 3",
+			"p2": "move 4 2, move 1 -1"
+		},
+		{
+			"p1": "move 3 2, move 3",
+			"p2": "move 2 1, move 2 2"
+		},
+		{
+			"p1": "move 4 1, switch 3",
+			"p2": "move 1 2, move 1 1"
+		},
+		{
+			"p1": "switch 3, pass",
+			"p2": "pass, pass"
+		}
+	],
+	"teams": [
+		"GU-81",
+		"GU-18"
+	]
+}

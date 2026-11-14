@@ -1,0 +1,310 @@
+{
+	"format": "gen9vgc2024regg",
+	"seed": "gen5,43154,6340,22544,58032",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Miraidon",
+			"item": "Life Orb",
+			"ability": "Hadron Engine",
+			"moves": [
+				"Volt Switch",
+				"Electro Drift",
+				"Draco Meteor",
+				"Protect"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 44,
+				"atk": 0,
+				"def": 4,
+				"spa": 196,
+				"spd": 12,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N",
+			"teraType": "Grass"
+		},
+		{
+			"name": "Mon1",
+			"species": "Iron Bundle",
+			"item": "Focus Sash",
+			"ability": "Quark Drive",
+			"moves": [
+				"Icy Wind",
+				"Freeze-Dry",
+				"Protect",
+				"Encore"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 4,
+				"atk": 0,
+				"def": 0,
+				"spa": 252,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 0,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N",
+			"teraType": "Ghost"
+		},
+		{
+			"name": "Mon2",
+			"species": "Incineroar",
+			"item": "Assault Vest",
+			"ability": "Intimidate",
+			"moves": [
+				"Fake Out",
+				"Knock Off",
+				"Flare Blitz",
+				"U-turn"
+			],
+			"nature": "Careful",
+			"evs": {
+				"hp": 244,
+				"atk": 0,
+				"def": 164,
+				"spa": 0,
+				"spd": 100,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Ghost"
+		},
+		{
+			"name": "Mon3",
+			"species": "Farigiraf",
+			"item": "Throat Spray",
+			"ability": "Armor Tail",
+			"moves": [
+				"Trick Room",
+				"Body Slam",
+				"Hyper Voice",
+				"Shadow Ball"
+			],
+			"nature": "Bold",
+			"evs": {
+				"hp": 236,
+				"atk": 0,
+				"def": 164,
+				"spa": 4,
+				"spd": 92,
+				"spe": 12
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 0,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Normal"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Squawkabilly",
+			"item": "Jaboca Berry",
+			"ability": "Guts",
+			"moves": [
+				"Double-Edge",
+				"Aerial Ace",
+				"Foul Play",
+				"Protect"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 4,
+				"atk": 252,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 0,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Flying"
+		},
+		{
+			"name": "Mon1",
+			"species": "Walking Wake",
+			"item": "Life Orb",
+			"ability": "Protosynthesis",
+			"moves": [
+				"Hydro Steam",
+				"Draco Meteor",
+				"Protect",
+				"Flamethrower"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 0,
+				"atk": 0,
+				"def": 0,
+				"spa": 252,
+				"spd": 4,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 0,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N",
+			"teraType": "Water"
+		},
+		{
+			"name": "Mon2",
+			"species": "Vivillon",
+			"item": "Psychic Seed",
+			"ability": "Shield Dust",
+			"moves": [
+				"Bug Buzz",
+				"Air Cutter",
+				"Energy Ball",
+				"Protect"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 4,
+				"atk": 0,
+				"def": 0,
+				"spa": 252,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 0,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Flying"
+		},
+		{
+			"name": "Mon3",
+			"species": "Raging Bolt",
+			"item": "Magnet",
+			"ability": "Protosynthesis",
+			"moves": [
+				"Thunderclap",
+				"Draco Meteor",
+				"Protect",
+				"Thunderbolt"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 188,
+				"atk": 0,
+				"def": 4,
+				"spa": 180,
+				"spd": 4,
+				"spe": 132
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 20,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N",
+			"teraType": "Electric"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 1 -2 terastallize, move 4 2",
+			"p2": "move 1 1, move 2 -1 terastallize"
+		},
+		{
+			"p1": "switch 4, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 4, pass"
+		},
+		{
+			"p1": "move 2 2, move 3",
+			"p2": "move 3, move 4 -1"
+		},
+		{
+			"p1": "move 3, move 2 2",
+			"p2": "move 1 -2, move 4 -1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "pass, switch 3"
+		},
+		{
+			"p1": "move 2 -2, move 4 1",
+			"p2": "move 4 2, move 2"
+		},
+		{
+			"p1": "switch 4, switch 3",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 4, move 1 2",
+			"p2": "move 1 1, move 1 -1"
+		},
+		{
+			"p1": "move 1 2, move 3 -1",
+			"p2": "pass, move 1 2"
+		}
+	],
+	"teams": [
+		"GM-92",
+		"GM-145"
+	]
+}

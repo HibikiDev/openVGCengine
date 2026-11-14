@@ -1,0 +1,310 @@
+{
+	"format": "gen8vgc2022",
+	"seed": "gen5,49589,24841,46085,45340",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Ho-Oh",
+			"item": "Coba Berry",
+			"ability": "Regenerator",
+			"moves": [
+				"Sacred Fire",
+				"Brave Bird",
+				"Iron Head",
+				"Protect"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 4,
+				"atk": 252,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 0,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "Reshiram",
+			"item": "Life Orb",
+			"ability": "Turboblaze",
+			"moves": [
+				"Draco Meteor",
+				"Heat Wave",
+				"Psychic",
+				"Protect"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 4,
+				"atk": 0,
+				"def": 0,
+				"spa": 252,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 0,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "Glaceon",
+			"item": "Spell Tag",
+			"ability": "Ice Body",
+			"moves": [
+				"Blizzard",
+				"Swift",
+				"Protect",
+				"Ice Beam"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 252,
+				"atk": 0,
+				"def": 4,
+				"spa": 252,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 0,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "Aggron",
+			"item": "Chople Berry",
+			"ability": "Rock Head",
+			"moves": [
+				"Iron Head",
+				"Rock Slide",
+				"Double-Edge",
+				"Protect"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 252,
+				"atk": 252,
+				"def": 4,
+				"spa": 0,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 0,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Whimsicott",
+			"item": "Mental Herb",
+			"ability": "Prankster",
+			"moves": [
+				"Taunt",
+				"Light Screen",
+				"Helping Hand",
+				"Solar Beam"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 4,
+				"atk": 0,
+				"def": 0,
+				"spa": 252,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "Thundurus",
+			"item": "Sitrus Berry",
+			"ability": "Prankster",
+			"moves": [
+				"Fly",
+				"Eerie Impulse",
+				"Electroweb",
+				"Thunderbolt"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 0,
+				"atk": 252,
+				"def": 0,
+				"spa": 0,
+				"spd": 4,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "Kyogre",
+			"item": "Assault Vest",
+			"ability": "Drizzle",
+			"moves": [
+				"Ice Beam",
+				"Water Spout",
+				"Origin Pulse",
+				"Thunder"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 0,
+				"atk": 0,
+				"def": 0,
+				"spa": 252,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "Landorus-Therian",
+			"item": "White Herb",
+			"ability": "Intimidate",
+			"moves": [
+				"Earthquake",
+				"Rock Slide",
+				"Swords Dance",
+				"U-turn"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 0,
+				"atk": 252,
+				"def": 0,
+				"spa": 0,
+				"spd": 4,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 3 1 dynamax, move 3 -1",
+			"p2": "move 1 dynamax, move 4 -1"
+		},
+		{
+			"p1": "move 2 2, switch 3",
+			"p2": "move 4 1, switch 3"
+		},
+		{
+			"p1": "move 3 2, move 4 -1",
+			"p2": "switch 4, move 1 1"
+		},
+		{
+			"p1": "switch 4, move 4 2",
+			"p2": "switch 3, move 1 -1"
+		},
+		{
+			"p1": "move 1 1, switch 3",
+			"p2": "move 4 -2, move 4 1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "pass, switch 3"
+		},
+		{
+			"p1": "move 3 2, move 1 2",
+			"p2": "move 4 -2, move 3"
+		},
+		{
+			"p1": "switch 3, move 3 -1",
+			"p2": "move 4 -2, move 4 -1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "pass, switch 4"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 4, pass"
+		},
+		{
+			"p1": "move 4 -2, move 2",
+			"p2": "move 4 1, move 2"
+		},
+		{
+			"p1": "move 1, switch 4",
+			"p2": "move 4 2, pass"
+		}
+	],
+	"teams": [
+		"GU-146",
+		"GM-37"
+	]
+}

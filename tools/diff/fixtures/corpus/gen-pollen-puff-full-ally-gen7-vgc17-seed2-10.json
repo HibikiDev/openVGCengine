@@ -1,0 +1,290 @@
+{
+	"format": "gen7vgc2017",
+	"seed": "gen5,58921,32739,49414,42579",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Celesteela",
+			"item": "Charcoal",
+			"ability": "Beast Boost",
+			"moves": [
+				"Heavy Slam",
+				"Flamethrower",
+				"Leech Seed",
+				"Protect"
+			],
+			"nature": "Careful",
+			"evs": {
+				"hp": 212,
+				"atk": 4,
+				"def": 156,
+				"spa": 0,
+				"spd": 76,
+				"spe": 60
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "Tapu Fini",
+			"item": "Choice Specs",
+			"ability": "Misty Surge",
+			"moves": [
+				"Moonblast",
+				"Muddy Water",
+				"Dazzling Gleam",
+				"Ice Beam"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 204,
+				"atk": 0,
+				"def": 0,
+				"spa": 212,
+				"spd": 0,
+				"spe": 92
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "Krookodile",
+			"item": "Groundium Z",
+			"ability": "Intimidate",
+			"moves": [
+				"Rock Slide",
+				"Crunch",
+				"Taunt",
+				"Protect"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 36,
+				"atk": 180,
+				"def": 4,
+				"spa": 0,
+				"spd": 84,
+				"spe": 204
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "Marowak-Alola",
+			"item": "Thick Club",
+			"ability": "Lightning Rod",
+			"moves": [
+				"Flare Blitz",
+				"Shadow Bone",
+				"Brick Break",
+				"Protect"
+			],
+			"nature": "Careful",
+			"evs": {
+				"hp": 252,
+				"atk": 20,
+				"def": 4,
+				"spa": 0,
+				"spd": 156,
+				"spe": 76
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Ribombee",
+			"item": "Life Orb",
+			"ability": "Shield Dust",
+			"moves": [
+				"Quiver Dance",
+				"Protect",
+				"Pollen Puff",
+				"Baton Pass"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 4,
+				"atk": 0,
+				"def": 0,
+				"spa": 252,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "Lycanroc",
+			"item": "Fightinium Z",
+			"ability": "Steadfast",
+			"moves": [
+				"Stone Edge",
+				"Rock Climb",
+				"Protect",
+				"Brick Break"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 4,
+				"atk": 252,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 0,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "Hariyama",
+			"item": "Choice Scarf",
+			"ability": "Guts",
+			"moves": [
+				"Cross Chop",
+				"Stone Edge",
+				"Close Combat",
+				"Brick Break"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 252,
+				"atk": 252,
+				"def": 0,
+				"spa": 0,
+				"spd": 4,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 0,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "Vikavolt-Totem",
+			"item": "Mental Herb",
+			"ability": "Levitate",
+			"moves": [
+				"Signal Beam",
+				"Thunderbolt",
+				"Round",
+				"Protect"
+			],
+			"nature": "Quiet",
+			"evs": {
+				"hp": 252,
+				"atk": 0,
+				"def": 0,
+				"spa": 252,
+				"spd": 4,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 0,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 0
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 1 2, switch 4",
+			"p2": "move 2, move 4 1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "pass, switch 4"
+		},
+		{
+			"p1": "move 2 -2, move 4",
+			"p2": "move 3 1, move 2 1"
+		},
+		{
+			"p1": "move 2 -2, move 1 2",
+			"p2": "move 3 -2, move 2 1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "pass, switch 3"
+		},
+		{
+			"p1": "move 1 1, move 2 -1",
+			"p2": "move 4, move 3 -1"
+		},
+		{
+			"p1": "move 3 -2, move 1 2",
+			"p2": "pass, move 3 -1"
+		}
+	],
+	"teams": [
+		"GM-247",
+		"GU-97"
+	]
+}

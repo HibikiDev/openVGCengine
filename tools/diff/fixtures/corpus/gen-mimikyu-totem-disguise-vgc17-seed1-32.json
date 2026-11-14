@@ -1,0 +1,302 @@
+{
+	"format": "gen7vgc2017",
+	"seed": "gen5,23072,25998,9290,57917",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Silvally-Ice",
+			"item": "Ice Memory",
+			"ability": "RKS System",
+			"moves": [
+				"Ice Beam",
+				"Flamethrower",
+				"Protect",
+				"Air Slash"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 4,
+				"atk": 0,
+				"def": 0,
+				"spa": 252,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 0,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon1",
+			"species": "Clefairy",
+			"item": "Eviolite",
+			"ability": "Friend Guard",
+			"moves": [
+				"Lucky Chant",
+				"Encore",
+				"Follow Me",
+				"After You"
+			],
+			"nature": "Bold",
+			"evs": {
+				"hp": 252,
+				"atk": 0,
+				"def": 180,
+				"spa": 0,
+				"spd": 76,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "Mimikyu-Totem",
+			"item": "Metal Coat",
+			"ability": "Disguise",
+			"moves": [
+				"Shadow Claw",
+				"Play Rough",
+				"Drain Punch",
+				"Protect"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 4,
+				"atk": 252,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 0,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "Carbink",
+			"item": "Aguav Berry",
+			"ability": "Sturdy",
+			"moves": [
+				"Ancient Power",
+				"Moonblast",
+				"Round",
+				"Protect"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 252,
+				"atk": 0,
+				"def": 0,
+				"spa": 252,
+				"spd": 4,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 0,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Lanturn",
+			"item": "Shed Shell",
+			"ability": "Volt Absorb",
+			"moves": [
+				"Surf",
+				"Thunder",
+				"Signal Beam",
+				"Protect"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 252,
+				"atk": 0,
+				"def": 4,
+				"spa": 252,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 0,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon1",
+			"species": "Silvally-Rock",
+			"item": "Rock Memory",
+			"ability": "RKS System",
+			"moves": [
+				"Rock Slide",
+				"Multi-Attack",
+				"Protect",
+				"Roar"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 4,
+				"atk": 252,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 0,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon2",
+			"species": "Passimian",
+			"item": "Darkinium Z",
+			"ability": "Receiver",
+			"moves": [
+				"Close Combat",
+				"Double-Edge",
+				"Protect",
+				"Brutal Swing"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 4,
+				"atk": 252,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 0,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon3",
+			"species": "Smeargle",
+			"item": "Focus Sash",
+			"ability": "Moody",
+			"moves": [
+				"Fake Out",
+				"Follow Me",
+				"Spore",
+				"Whirlwind"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 244,
+				"atk": 0,
+				"def": 0,
+				"spa": 0,
+				"spd": 12,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 1 1, move 4 1",
+			"p2": "move 3 1, move 2 1"
+		},
+		{
+			"p1": "move 4 2, move 2 1",
+			"p2": "move 3 -2, move 1"
+		},
+		{
+			"p1": "switch 4, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 2 1, switch 3",
+			"p2": "switch 4, move 2 2"
+		},
+		{
+			"p1": "move 1 2, move 1 -1",
+			"p2": "move 2, switch 3"
+		},
+		{
+			"p1": "move 3 1, move 1 2",
+			"p2": "move 4 -2, move 2 2"
+		},
+		{
+			"p1": "move 4, move 2 2",
+			"p2": "move 4 2, move 3 1"
+		},
+		{
+			"p1": "move 2 2, move 1",
+			"p2": "move 1 2, move 1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 4, switch 3"
+		},
+		{
+			"p1": "move 2 1, move 4 1",
+			"p2": "move 1 -2, move 4 2"
+		}
+	],
+	"teams": [
+		"GU-222",
+		"GU-211"
+	]
+}

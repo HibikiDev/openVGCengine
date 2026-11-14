@@ -1,0 +1,318 @@
+{
+	"format": "gen9vgc2025regi",
+	"seed": "gen5,30502,55499,4485,59496",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Incineroar",
+			"item": "Rocky Helmet",
+			"ability": "Intimidate",
+			"moves": [
+				"Knock Off",
+				"Fake Out",
+				"Parting Shot",
+				"Will-O-Wisp"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 180,
+				"atk": 4,
+				"def": 60,
+				"spa": 0,
+				"spd": 12,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Bug"
+		},
+		{
+			"name": "Mon1",
+			"species": "Iron Treads",
+			"item": "Choice Band",
+			"ability": "Quark Drive",
+			"moves": [
+				"Iron Head",
+				"High Horsepower",
+				"Ice Spinner",
+				"Knock Off"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 28,
+				"atk": 252,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 228
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N",
+			"teraType": "Bug"
+		},
+		{
+			"name": "Mon2",
+			"species": "Urshifu-Rapid-Strike",
+			"item": "Mystic Water",
+			"ability": "Unseen Fist",
+			"moves": [
+				"Surging Strikes",
+				"Detect",
+				"Taunt",
+				"Aqua Jet"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 84,
+				"atk": 212,
+				"def": 4,
+				"spa": 0,
+				"spd": 4,
+				"spe": 204
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Water"
+		},
+		{
+			"name": "Mon3",
+			"species": "Miraidon",
+			"item": "Iron Plate",
+			"ability": "Hadron Engine",
+			"moves": [
+				"Volt Switch",
+				"Snarl",
+				"Electro Drift",
+				"Draco Meteor"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 188,
+				"atk": 0,
+				"def": 12,
+				"spa": 196,
+				"spd": 4,
+				"spe": 108
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N",
+			"teraType": "Electric"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Incineroar",
+			"item": "Assault Vest",
+			"ability": "Intimidate",
+			"moves": [
+				"Fake Out",
+				"Flare Blitz",
+				"Knock Off",
+				"U-turn"
+			],
+			"nature": "Impish",
+			"evs": {
+				"hp": 252,
+				"atk": 0,
+				"def": 188,
+				"spa": 0,
+				"spd": 68,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M",
+			"teraType": "Water"
+		},
+		{
+			"name": "Mon1",
+			"species": "Flamigo",
+			"item": "White Herb",
+			"ability": "Costar",
+			"moves": [
+				"Close Combat",
+				"Acrobatics",
+				"Detect",
+				"Wide Guard"
+			],
+			"nature": "Adamant",
+			"evs": {
+				"hp": 4,
+				"atk": 248,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Steel"
+		},
+		{
+			"name": "Mon2",
+			"species": "Calyrex-Shadow",
+			"item": "Life Orb",
+			"ability": "As One (Spectrier)",
+			"moves": [
+				"Psychic",
+				"Nasty Plot",
+				"Protect",
+				"Astral Barrage"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 0,
+				"atk": 0,
+				"def": 4,
+				"spa": 252,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 0,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N",
+			"teraType": "Dark"
+		},
+		{
+			"name": "Mon3",
+			"species": "Farigiraf",
+			"item": "Electric Seed",
+			"ability": "Armor Tail",
+			"moves": [
+				"Trick Room",
+				"Helping Hand",
+				"Imprison",
+				"Foul Play"
+			],
+			"nature": "Bold",
+			"evs": {
+				"hp": 252,
+				"atk": 0,
+				"def": 252,
+				"spa": 4,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F",
+			"teraType": "Water"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 3 1 terastallize, move 4 -1",
+			"p2": "move 2 2 terastallize, move 1 1"
+		},
+		{
+			"p1": "switch 4, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 4 2, move 4 2",
+			"p2": "move 1 -2, move 2 2"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "pass, switch 4"
+		},
+		{
+			"p1": "move 4 1, switch 3",
+			"p2": "move 2 -2, move 4 -1"
+		},
+		{
+			"p1": "move 4 -2, move 1 2",
+			"p2": "move 3 -2, move 3"
+		},
+		{
+			"p1": "pass, switch 4",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 1 -2, move 3 1",
+			"p2": "move 3 1, move 4 -1"
+		},
+		{
+			"p1": "switch 3, pass",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "pass, switch 3",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 2 2, move 1 2",
+			"p2": "move 3 1, move 3"
+		},
+		{
+			"p1": "pass, switch 3",
+			"p2": "pass, pass"
+		}
+	],
+	"teams": [
+		"GM-156",
+		"GM-26"
+	]
+}

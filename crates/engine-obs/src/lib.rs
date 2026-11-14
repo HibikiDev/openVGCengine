@@ -305,7 +305,7 @@ fn encode_field(battle: &Battle, me: u8, f: &mut [f32]) {
         }
     };
     f[field::DECISION + decision] = 1.0;
-    let format = battle.format as usize;
+    let format = battle.format.obs_slot();
     if format < field::FORMAT_SLOTS {
         f[field::FORMAT + format] = 1.0;
     } else {

@@ -1,0 +1,310 @@
+{
+	"format": "gen7vgc2018",
+	"seed": "gen5,28516,39203,20860,25252",
+	"team1": [
+		{
+			"name": "Mon0",
+			"species": "Audino",
+			"item": "Audinite",
+			"ability": "Regenerator",
+			"moves": [
+				"Echoed Voice",
+				"Dazzling Gleam",
+				"Fire Blast",
+				"Protect"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 252,
+				"atk": 0,
+				"def": 4,
+				"spa": 252,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 0,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "Hydreigon",
+			"item": "Darkinium Z",
+			"ability": "Levitate",
+			"moves": [
+				"Tailwind",
+				"Dark Pulse",
+				"Flamethrower",
+				"Dragon Pulse"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 0,
+				"atk": 0,
+				"def": 0,
+				"spa": 252,
+				"spd": 4,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon2",
+			"species": "Lunatone",
+			"item": "Dread Plate",
+			"ability": "Levitate",
+			"moves": [
+				"Power Gem",
+				"Future Sight",
+				"Ice Beam",
+				"Protect"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 4,
+				"atk": 0,
+				"def": 0,
+				"spa": 252,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 0,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		},
+		{
+			"name": "Mon3",
+			"species": "Buzzwole",
+			"item": "Choice Scarf",
+			"ability": "Beast Boost",
+			"moves": [
+				"Leech Life",
+				"Hammer Arm",
+				"Poison Jab",
+				"Superpower"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 4,
+				"atk": 252,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 0,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "N"
+		}
+	],
+	"team2": [
+		{
+			"name": "Mon0",
+			"species": "Charizard",
+			"item": "Charizardite Y",
+			"ability": "Blaze",
+			"moves": [
+				"Overheat",
+				"Air Slash",
+				"Focus Blast",
+				"Protect"
+			],
+			"nature": "Timid",
+			"evs": {
+				"hp": 4,
+				"atk": 0,
+				"def": 0,
+				"spa": 252,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 0,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon1",
+			"species": "Camerupt",
+			"item": "Cameruptite",
+			"ability": "Anger Point",
+			"moves": [
+				"Heat Wave",
+				"Earth Power",
+				"Double-Edge",
+				"Protect"
+			],
+			"nature": "Quiet",
+			"evs": {
+				"hp": 252,
+				"atk": 0,
+				"def": 0,
+				"spa": 252,
+				"spd": 4,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 0,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 0
+			},
+			"level": 50,
+			"gender": "M"
+		},
+		{
+			"name": "Mon2",
+			"species": "Seismitoad",
+			"item": "Flyinium Z",
+			"ability": "Water Absorb",
+			"moves": [
+				"Earthquake",
+				"Rock Slide",
+				"Protect",
+				"Bounce"
+			],
+			"nature": "Jolly",
+			"evs": {
+				"hp": 4,
+				"atk": 252,
+				"def": 0,
+				"spa": 0,
+				"spd": 0,
+				"spe": 252
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 31,
+				"def": 31,
+				"spa": 0,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		},
+		{
+			"name": "Mon3",
+			"species": "Gothitelle",
+			"item": "Iapapa Berry",
+			"ability": "Shadow Tag",
+			"moves": [
+				"Future Sight",
+				"Dark Pulse",
+				"Protect",
+				"Helping Hand"
+			],
+			"nature": "Modest",
+			"evs": {
+				"hp": 252,
+				"atk": 0,
+				"def": 4,
+				"spa": 252,
+				"spd": 0,
+				"spe": 0
+			},
+			"ivs": {
+				"hp": 31,
+				"atk": 0,
+				"def": 31,
+				"spa": 31,
+				"spd": 31,
+				"spe": 31
+			},
+			"level": 50,
+			"gender": "F"
+		}
+	],
+	"turns": [
+		{
+			"p1": "move 3 2, move 3 -1",
+			"p2": "move 4, move 1"
+		},
+		{
+			"p1": "move 4 mega, move 3 2",
+			"p2": "move 2 2 mega, move 2 1"
+		},
+		{
+			"p1": "move 1 -2, move 2 1",
+			"p2": "move 1 2, move 3 -1"
+		},
+		{
+			"p1": "pass, switch 4",
+			"p2": "pass, pass"
+		},
+		{
+			"p1": "move 1 2, move 3 1",
+			"p2": "move 2 -2, switch 4"
+		},
+		{
+			"p1": "move 4, move 3 2",
+			"p2": "move 1 -2, move 1 -1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "pass, switch 3"
+		},
+		{
+			"p1": "move 4, move 3 1",
+			"p2": "switch 4, move 4 1"
+		},
+		{
+			"p1": "move 4, move 3 1",
+			"p2": "move 3 -2, move 1"
+		},
+		{
+			"p1": "pass, pass",
+			"p2": "switch 4, pass"
+		},
+		{
+			"p1": "move 4, move 3 2",
+			"p2": "move 1 2, move 4 2 zmove"
+		},
+		{
+			"p1": "pass, switch 3",
+			"p2": "pass, pass"
+		}
+	],
+	"teams": [
+		"GU-89",
+		"GU-243"
+	]
+}
