@@ -48,7 +48,7 @@
     <label for="team">{{ _("The team the bot plays") }} {% include "_team_help.html" %}</label>
     {% if d.formats is defined %}<p class="small" style="margin: 2px 0 6px">{{ _("in") }} <select name="team_fmt" style="width:auto">{% for f, name in d.formats %}<option value="{{ f }}">{{ name }}</option>{% endfor %}</select>
       <span class="muted">- {{ _("one team per format; the bot plays each in that format's challenges.") }}</span></p>{% endif %}
-    <textarea id="team" name="team" data-team="whole" placeholder="{{ _('a library id (e.g. BR-111), a pokepast.es link, or a pasted Showdown export (EVs optional: an open team sheet works as it is)') if has_library else _('a pokepast.es link, or a pasted Showdown export (EVs optional: an open team sheet works as it is)') }}"></textarea>
+    <textarea id="team" name="team" data-team="whole" placeholder="{{ _('a pokepast.es link, or a pasted Showdown export (EVs optional: an open team sheet works as it is)') }}"></textarea>
     {% if d.rotation %}<label><input type="checkbox" name="rotation"> {{ _("Let the bot play its own teams instead") }}</label>{% endif %}
     <div class="small muted">{{ _("Leave the box empty and unticked to keep the current team.") if d.rotation else _("Leave the box empty to keep the current team.") }}</div>
     {% if me and me.drill_rows %}

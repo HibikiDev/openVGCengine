@@ -9,6 +9,11 @@
 
 
 
+
+
+
+
+
 const fs = require('fs');
 const { Battle, Dex } = require('./lib/showdown');
 
@@ -27,11 +32,12 @@ function statOf(base, pts, nature, stat) {
 
 function setOf(s) {
 	return { name: s.species, species: s.species, item: s.item || '', ability: s.ability || '', nature: s.nature || 'Serious',
-		evs: Object.assign({ hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 }, s.evs || {}), moves: s.moves || ['Tackle'], level: 50, gender: s.gender || '' };
+		evs: Object.assign({ hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 }, s.evs || {}), moves: s.moves || ['Tackle'], level: 50, gender: s.gender || '',
+		...(s.ivs ? { ivs: Object.assign({ hp: 31, atk: 31, def: 31, spa: 31, spd: 31, spe: 31 }, s.ivs) } : {}) };
 }
 
 function run(c) {
-	const battle = new Battle({ formatid: FORMAT, seed: [1, 2, 3, 4], p1: { name: 'A', team: [setOf(c.atk), FILLER] }, p2: { name: 'D', team: [setOf(c.def), FILLER] } });
+	const battle = new Battle({ formatid: c.format || FORMAT, seed: [1, 2, 3, 4], p1: { name: 'A', team: [setOf(c.atk), FILLER] }, p2: { name: 'D', team: [setOf(c.def), FILLER] } });
 	battle.choose('p1', 'team 12');
 	battle.choose('p2', 'team 12');
 	const src = battle.p1.active[0], tgt = battle.p2.active[0];
@@ -39,7 +45,7 @@ function run(c) {
 	if (c.defForme && c.defForme !== tgt.species.name) tgt.formeChange(c.defForme, tgt.getItem(), true);
 
 	const base = tgt.species.baseStats;
-	for (const st of ['def', 'spd']) {
+	for (const st of (battle.dex.currentMod === 'champions' ? ['def', 'spd'] : [])) {
 		const f = statOf(base, setOf(c.def).evs[st], setOf(c.def).nature, st);
 		if (f !== tgt.storedStats[st]) throw new Error(`stat formula mismatch: ${tgt.species.name} ${st} sim ${tgt.storedStats[st]} formula ${f}`);
 	}
@@ -101,6 +107,16 @@ function run(c) {
 		src.storedStats.spa = statOf(abase, cand.spa, nat, 'spa');
 		res.atkCandidates.push({ ...cand, atkStat: src.storedStats.atk, spaStat: src.storedStats.spa, rolls: rolls() });
 		src.storedStats.atk = a0; src.storedStats.spa = s0;
+	}
+	if (c.defVals) {
+		const k = { def: tgt.storedStats.def, spd: tgt.storedStats.spd };
+		res.defRolls = c.defVals.map(v => { tgt.storedStats.def = tgt.storedStats.spd = v; return rolls(); });
+		tgt.storedStats.def = k.def; tgt.storedStats.spd = k.spd;
+	}
+	if (c.atkVals) {
+		const k = { atk: src.storedStats.atk, spa: src.storedStats.spa };
+		res.atkRolls = c.atkVals.map(v => { src.storedStats.atk = src.storedStats.spa = v; return rolls(); });
+		src.storedStats.atk = k.atk; src.storedStats.spa = k.spa;
 	}
 	return res;
 }

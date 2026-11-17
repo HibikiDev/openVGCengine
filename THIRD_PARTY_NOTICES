@@ -78,6 +78,12 @@ The starter "Default" bucket (data/default_bucket.json) holds three open team
 sheets from public regional results, as listed on Munchstats. The sheets carry
 no player names.
 
+The "Tournament meta" buckets (data/format_buckets/) hold, per format, the 20
+most represented teams of that format's official events and how often each was
+brought, built from the open team sheets and standings of the official events
+listed on Munchstats (https://www.munchstats.com/tournaments/). The sheets carry
+no player names.
+
 
 5. In the Windows package only
 ------------------------------

@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+{% block title %}{{ _("Fictional tournament") }} · openVGCengine{% endblock %}
+{% block main %}
+
+
+<div class="card">
+  <h1>{{ _("Fictional tournament") }}</h1>
+  <p>{{ _("A bucket's teams, each as often as its weight says, become a field of players, and the event plays out as a real one runs: best-of-three open-team-sheet matches in the official tournament structure for that many players, with the model playing every seat.") }}</p>
+  <form method="post" action="/tournament">
+    <div class="row">
+      <div><label for="bucket">{{ _("Bucket") }}</label>
+        <select id="bucket" name="bucket">{% for b in team_buckets() %}<option value="{{ b }}">{{ b }} ({{ bucket_format(b) }})</option>{% endfor %}</select>
+        {% if not team_buckets() %}<div class="small">{{ _('<a href="/buckets">Make a bucket</a> first: the teams you expect, each with a weight.')|safe }}</div>{% endif %}</div>
+      <div><label for="mode">{{ _("Mode") }}</label>
+        <select id="mode" name="mode"><option value="quick">{{ _("Fast Mode - the model alone, no search") }}</option>
+          <option value="search">{{ _("Search Mode - the bot's search on both sides") }}</option></select></div>
+      <div><label for="players">{{ _("Players") }}</label>
+        <input id="players" name="players" type="number" min="4" max="{{ LIMITS.tour_players }}" value="512"></div>
+      <div><label for="events">{{ _("Events") }}</label>
+        <input id="events" name="events" type="number" min="1" max="{{ LIMITS.tour_events }}" value="1"></div>
+    </div>
+    <div class="row">
+      <div><label for="drop">{{ _("Players drop at") }}</label>
+        <select id="drop" name="drop"><option value="4">X-4</option><option value="3">X-3</option><option value="0">{{ _("never (everyone plays every round)") }}</option></select></div>
+      <div><label for="seed">{{ _("Seed") }} <span class="muted">{{ _("(blank: new)") }}</span></label><input id="seed" name="seed" type="number" min="0"></div>
+    </div>
+    <p id="structure" class="small"></p>
+    <details><summary class="small">{{ _("How the event runs") }}</summary>
+      <ul class="small">
+        <li>{{ _("<b>Structure</b>: the Swiss rounds, the match points needed for the second Swiss phase (records carried over) and the top cut all follow the player count.")|safe }}</li>
+        <li>{{ _("<b>Top cut</b>: everyone with at least the match points of the last seeded place gets in, up to 16 players; when that isn't a power of two, the top seeds sit out the first round.")|safe }}</li>
+        <li>{{ _("<b>Drops</b>: a player who reaches the chosen record plays no more rounds of the first phase, as players out of contention do at a real event. Their record and place stay and they can't make the top cut; nobody drops in the second phase. Fewer games are played that way, most of all in Search Mode.")|safe }}</li>
+        <li>{{ _("<b>Events</b>: one event's top cut is a handful of players, so to read a metagame, play several events. The result takes them all together and keeps each one in full below.")|safe }}</li>
+      </ul></details>
+    <p class="small muted" id="search-note" hidden>{{ _("Search Mode plays every game with the bot's search: a very long run at any size, so it is capped at {n} players.", n=LIMITS.tour_search_players) }}</p>
+    <script>
+    (() => {
+      const T = {{ tour_structure|tojson }}, inp = document.getElementById("players"), out = document.getElementById("structure");
+      const say = {one: {{ _("{n} players: {total} Swiss rounds")|tojson }},
+                   two: {{ _("{n} players: {p1} Swiss rounds, then {p2} more for the players with {points} match points or more (X-2 or better)")|tojson }},
+                   cut: {{ _("then a top cut (the top {cut}, and everyone level with them, up to 16)")|tojson }},
+                   none: {{ _("no top cut: first in the standings wins")|tojson }}};
+      const fill = (s, o) => s.replace(/\{(\w+)\}/g, (m, k) => (k in o ? o[k] : m));
+      function show() {
+        const n = +inp.value, row = T.find(r => n <= r[0]);
+        if (!(n >= 4) || !row) { out.textContent = ""; return; }
+        const [, total, p1, thr, cut] = row;
+        out.textContent = (thr === null ? fill(say.one, {n, total}) : fill(say.two, {n, p1, p2: total - p1, points: thr}))
+          + ", " + (cut ? fill(say.cut, {cut}) : say.none) + ".";
+      }
+      inp.addEventListener("input", show); show();
+    })();
+    </script>
+    <button class="btn" type="submit">{{ _("Play the tournament") }}</button>
+  </form>
+</div>
+{% if history %}<div class="card"><h2>{{ _("Past tournaments") }}</h2><div class="scroll"><table class="tbl">
+  <tr><th>{{ _("Run") }}</th><th>{{ _("Bucket") }}</th><th>{{ _("Mode") }}</th><th>{{ _("Players") }}</th><th>{{ _("Events") }}</th><th>{{ _("Status") }}</th></tr>
+  {% for h in history %}<tr><td><a href="/job/{{ h.id }}">{{ h.id }}</a></td><td>{{ h.params.bucket }}</td><td>{{ _("Search Mode") if h.params.mode == 'search' else _("Fast Mode") }}</td>
+    <td>{{ h.params.players }}</td><td>{{ h.params.events or 1 }}</td><td>{{ _(h.status) }}</td></tr>{% endfor %}</table></div></div>{% endif %}
+<script>
+(function () {
+  var mode = document.getElementById("mode"), players = document.getElementById("players");
+  function sync() {
+    var s = mode.value === "search";
+    document.getElementById("search-note").hidden = !s;
+    players.max = s ? {{ LIMITS.tour_search_players }} : {{ LIMITS.tour_players }};
+    // (each mode's recommended size unless the number was typed: Search 64, back to Fast 512 - user 11-14)
+    if (!players.dataset.touched) players.value = s ? 64 : 512;
+    else if (s && +players.value > {{ LIMITS.tour_search_players }}) players.value = 64;
+    players.dispatchEvent(new Event("input"));  // (the structure line follows)
+    var ev = document.getElementById("events");
+    ev.max = s ? {{ LIMITS.tour_search_events }} : {{ LIMITS.tour_events }};
+    if (+ev.value > +ev.max) ev.value = ev.max;
+    if (!drop.dataset.touched) drop.value = s ? "3" : "4";
+  }
+  var drop = document.getElementById("drop");
+  drop.addEventListener("change", function () { drop.dataset.touched = "1"; });
+  players.addEventListener("change", function () { players.dataset.touched = "1"; });
+  mode.addEventListener("change", sync); sync();
+})();
+</script>
+{% endblock %}

@@ -1,18 +1,18 @@
 
 <div class="card">
   <h1>{{ _("Matrix checked with search: {team}", team=r.opp) }}</h1>
-  {% if r.gaps is defined and r.gaps %}<p class="small"><span class="tag">{{ _("gap fill") }}</span> {{ _("only the cells the quick references still rested on unsearched - the Deep Dive merges them with this team's earlier checks.") }}</p>{% endif %}
+  {% if r.gaps is defined and r.gaps %}<p class="small"><span class="tag">{{ _("gap fill") }}</span> {{ _("only the cells the fast references still rested on unsearched - the Deep Dive merges them with this team's earlier checks.") }}</p>{% endif %}
   {% if r.note is defined and r.note %}<div class="note">{{ r.note }}</div>{% endif %}
   <p class="muted small">{{ _("{a} vs {b}", a=r.team|names(' · '), b=r.species|names(' · ')) }} · {{ _("model {model}", model=r.model) }} · {{ _("{n} searched games a pairing", n=r.games) }} · <a href="/job/{{ r.dd }}#mx-{{ r.opp }}">{{ _("back to the Deep Dive matrix") }}</a></p>
   <form method="post" action="/mxcheck" style="margin: 0 0 8px"><input type="hidden" name="dd" value="{{ r.dd }}"><input type="hidden" name="opp" value="{{ r.opp }}"><input type="hidden" name="fresh" value="1">
     <button class="btn alt inline" type="submit">{{ _("run it again") }}</button> <span class="small muted">{{ _("fresh games on a new seed (the button on the matrix opens this result)") }}</span></form>
   {% if r.both_adapt %}{% set e = r.both_adapt.search - r.both_adapt.raw %}
   <div class="stats">
-    <div><div class="big">{{ r.both_adapt.search|pct }}</div><div class="small muted">{{ _("both adapt, with search (the quick matrix said {pct}: {d} points)", pct=r.both_adapt.raw|pct, d="%+.0f"|format(e * 100)) }}</div></div>
+    <div><div class="big">{{ r.both_adapt.search|pct }}</div><div class="small muted">{{ _("both adapt, with search (the fast matrix said {pct}: {d} points)", pct=r.both_adapt.raw|pct, d="%+.0f"|format(e * 100)) }}</div></div>
   </div>
-  <p class="small muted">{{ _("Both adapt again over the quick mix's brings ({a} × {b}), now with searched scores; other cells stay quick reads.", a=r.both_adapt.brings.mine|length, b=r.both_adapt.brings.theirs|length) }}</p>{% endif %}
+  <p class="small muted">{{ _("Both adapt again over the fast mix's brings ({a} × {b}), now with searched scores; other cells stay fast reads.", a=r.both_adapt.brings.mine|length, b=r.both_adapt.brings.theirs|length) }}</p>{% endif %}
   <div class="scroll"><table class="tbl small">
-    <tr><th>{{ _("your bring") }}</th><th>{{ _("their bring") }}</th><th>{{ _("why it's checked") }}</th><th class="num">{{ _("quick<br><span class=\"muted\">(instinct)</span>")|safe }}</th><th class="num">{{ _("with search<br><span class=\"muted\">(as in a real game)</span>")|safe }}</th><th class="num">{{ _("difference") }}</th><th></th></tr>
+    <tr><th>{{ _("your bring") }}</th><th>{{ _("their bring") }}</th><th>{{ _("why it's checked") }}</th><th class="num">{{ _("Fast Mode<br><span class=\"muted\">(no search)</span>")|safe }}</th><th class="num">{{ _("with search<br><span class=\"muted\">(as in a real game)</span>")|safe }}</th><th class="num">{{ _("difference") }}</th><th></th></tr>
     {% for c in r.cells %}{% set d = c.search - c.raw %}<tr>
       <td><b>{{ c.mine[:2]|names(' + ') }}</b><br><span class="muted">{{ c.mine[2:]|names(' + ') }}</span></td>
       <td><b>{{ c.theirs[:2]|names(' + ') }}</b><br><span class="muted">{{ c.theirs[2:]|names(' + ') }}</span></td>

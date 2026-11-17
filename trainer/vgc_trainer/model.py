@@ -31,6 +31,8 @@ import torch
 import torch.nn as nn
 import vgc_engine as ve
 
+from .gpu_lock import check as _gpu_check
+
 
 ACTIVE_A, ACTIVE_B, IS_MINE, PP = 2, 3, 0, 45
 
@@ -284,6 +286,7 @@ class PolicyNet(nn.Module):
         return self.move(ids) + self.move_feat(self.move_dex[ids])
 
     def encode(self, field, mon_ids, mon_features, history, bring) -> _State:
+        _gpu_check(field.device)
         ids = mon_ids.long()
         mv = self.move_vec(ids[..., 3:7])
         mons = (

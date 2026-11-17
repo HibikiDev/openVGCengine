@@ -17,6 +17,7 @@ from collections import Counter
 import numpy as np
 import torch
 import websockets
+from vgc_trainer import gpu_lock
 
 COACH = "openvgccoach"
 DEBUG = False
@@ -193,7 +194,8 @@ async def watch(port: int, user: str, agent, ls, ckpt: str, n: int = 2, find_for
                     continue
                 done_turns.add(turn)
                 try:
-                    panel = await loop.run_in_executor(None, read_turn, snap, side, turn, agent, ls, ckpt, n)
+
+                    panel = await loop.run_in_executor(None, gpu_lock.locked(read_turn), snap, side, turn, agent, ls, ckpt, n)
                 except Exception as e:
                     print(f"coach: {user} turn {turn} no panel ({type(e).__name__}: {str(e)[:120]})", flush=True)
                     panel = None

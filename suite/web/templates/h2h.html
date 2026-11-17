@@ -14,7 +14,7 @@
     <details>
       <summary>{{ _("Settings") }}</summary>
       <div class="row">
-        <div><label for="games">{{ _("Games") }}</label><input id="games" name="games" type="number" min="200" max="{{ LIMITS.h2h_games }}" placeholder="{{ _('4000 (400 in deep mode)') }}"></div>
+        <div><label for="games">{{ _("Games") }}</label><input id="games" name="games" type="number" min="200" max="{{ LIMITS.h2h_games }}" placeholder="{{ _('4000 (400 in Search Mode)') }}"></div>
         <div><label for="examples">{{ _("Example games (in real Showdown)") }}</label>
           <select id="examples" name="examples"><option value="0">{{ _("none") }}</option><option value="1">1</option><option value="3">3</option><option value="5">5</option></select></div>
         <div><label for="vary">{{ _("Team preview") }}</label>
@@ -22,9 +22,9 @@
       </div>
     </details>
     <input type="hidden" name="_checks" value="1">
-    <p><label><input type="checkbox" name="deep" value="1"{{ ' checked' if gpu.on }}> {{ _("<b>Deep mode</b> - both sides search every turn")|safe }}
-      <span class="muted small">{{ _("Unticked: much faster, but a rough screen that can be far off.") }}</span></label>
-      {% if not gpu.on %}<span class="small cpu-warn">{{ _("No GPU here, so Deep mode is off by default on this PC: it runs the bot's search on the CPU, many times slower than with a GPU.") }}</span>{% endif %}</p>
+    <p><label><input type="checkbox" name="deep" value="1"{{ ' checked' if gpu.on }}> {{ _("<b>Search Mode</b> - both sides search every turn")|safe }}
+      <span class="muted small">{{ _("Unticked, Fast Mode: much faster, but a rough screen that can be far off.") }}</span></label>
+      {% if not gpu.on %}<span class="small cpu-warn">{{ _("No GPU here, so Search Mode is off by default on this PC: it runs the bot's search on the CPU, many times slower than with a GPU.") }}</span>{% endif %}</p>
     <p><label><input type="checkbox" name="matrix" value="1"{{ ' checked' if gpu.on }}> {{ _("<b>Bring matrix</b> - each side's likely fours played against each other, as in the Preview Advisor.")|safe }}</label>
       {% if not gpu.on %}<span class="small cpu-warn">{{ _("No GPU here, so the bring matrix is off by default on this PC: it plays thousands of extra games, much slower on the CPU.") }}</span>{% endif %}</p>
     <p><label><input type="checkbox" name="bo3" value="1" checked> {{ _("<b>Best-of-three</b> - series, each side changing its lead between games by the bot's rule.")|safe }}</label></p>

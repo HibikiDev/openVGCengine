@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block title %}{{ _("Tune spreads") }} · openVGCengine{% endblock %}
+{% block main %}
+
+{% set no_sheets = true %}
+<div class="card">
+  <h1>{{ _("Tune spreads") }}</h1>
+  <p>{{ _("Each of your Pokémon's spread tuned into a field on the damage calc: which hits it survives, which Pokémon it knocks out in one hit, and where moving first decides the exchange. You get a few options for each, from \"better on every count\" to bulkier or harder-hitting, and a copy of your team with the ones you pick.") }}</p>
+  <form method="post" action="/spreads">
+    {% include "_format_pick.html" %}
+    <label for="team">{{ _("Your team") }} {% include "_team_help.html" %}</label>
+    <textarea id="team" name="team" required data-team></textarea>
+    <div class="row">
+      <div><label for="field">{{ _("Against") }}</label>
+        <select id="field" name="field">
+          {% if has_meta_field() %}<option value="meta" data-format="{{ current_format }}">{{ _("Current Metagame") }}</option>{% endif %}
+          {% set bks = team_buckets() %}{% if bks %}<optgroup label="{{ _('Your team buckets') }}">
+          {% for b in bks %}<option value="bucket:{{ b }}" data-format="{{ bucket_format(b) }}">{{ _("Bucket: {name}", name=b) }}</option>{% endfor %}</optgroup>{% endif %}
+        </select>
+        {% include "_bucket_pick.html" %}
+        {% if not bks and not has_meta_field() %}<div class="small">{{ _("<b>No field yet:</b> make a <a href=\"/buckets\">team bucket</a> of the teams you expect to face, then pick it here.")|safe }}</div>{% endif %}
+        <div class="small muted"><a href="/buckets">{{ _("Buckets") }}</a></div></div>
+    </div>
+    <details><summary class="small">{{ _("How it works") }}</summary>
+      <ul class="small">
+        <li>{{ _("<b>The field</b>: every Pokémon on the field's teams, weighted by its team's weight. Each is calculated with the spread written in the bucket and with the most used spreads for it in this format's ladder usage, so you aren't tuning against one guess.")|safe }}</li>
+        <li>{{ _("<b>The counts</b> for each spread: the share of the field whose best move can knock your Pokémon out in one hit from full HP, the share your best move knocks out in one hit, and Speed only where it decides an exchange - the share you move before and knock out in one hit, and the share that moves before you and knocks you out in one hit. Roll odds count: a 50% chance counts half.")|safe }}</li>
+        <li>{{ _("<b>The options</b>: <i>better on every count</i> never makes any count worse; <i>more bulk</i> and <i>more damage</i> keep your Speed and trade the rest; <i>Speed where it counts</i> may change your Speed to move first where an OHKO is in play, giving up at most a few points of OHKOs dealt or survived. Your Speed is otherwise kept, since you usually set it for a reason the field may not show.")|safe }}</li>
+        <li>{{ _("<b>Not counted</b>: Terastallization, Dynamax and Z-Moves, Focus Sash and similar, stat boosts, Intimidate, screens, Helping Hand, critical hits, and weather or terrain other than your own team's. Multi-hit moves count one hit.")|safe }}</li>
+      </ul></details>
+    {% set sm = smogon_month() if smogon_month is defined else none %}
+    <p class="small muted">{{ _("Ladder usage: Smogon's stats, {month}", month=sm) if sm else _("Ladder usage: not installed") }} ·
+      <a href="https://www.smogon.com/stats/" target="_blank" rel="noopener">{{ _("Smogon's usage stats") }}</a>{{ _(", shipped with the app") }}</p>
+    <button class="btn" type="submit">{{ _("Tune the spreads") }}</button>
+  </form>
+</div>
+{% include "_history.html" %}
+{% endblock %}

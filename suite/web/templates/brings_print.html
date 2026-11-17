@@ -44,9 +44,9 @@
 {% macro four(o) %}<div class="mx-opt"><div><span class="mx-k">{{ _("lead") }}</span> <b>{{ o.lead|names(' + ') }}</b></div><div><span class="mx-k">{{ _("back") }}</span> {{ o.back|names(' + ') }}</div></div>{% endmacro %}
 <h1>{{ _("Brings per opponent") }}</h1>
 <p class="meta">{{ _("Your team: {team}", team=r.team.species|names(' · ')) }} · {{ _("against {field}", field=_(r.field.name) if r.field.name else _("{n} teams", n=r.field.teams)) }}
-  · {% if r.search %}{{ _("Search Mode, {n} games a team", n=r.search.games_per_team) }}{% else %}{{ _("quick mode") }}{% endif %}
+  · {% if r.search %}{{ _("Search Mode, {n} games a team", n=r.search.games_per_team) }}{% else %}{{ _("Fast Mode") }}{% endif %}
   · {{ _("{n} games a matrix cell", n=r.brings.games_per_cell) }} · {{ _("model {model}", model=r.model) }} · {{ job.created|ago if job.created else '' }}</p>
-<p class="meta">{{ _("<b>Quick read:</b> these fours come from raw self-play (no search) except cells a search check covered - a first look, not a result.")|safe }}</p>
+<p class="meta">{{ _("<b>Fast read:</b> these fours come from Fast Mode games (no search) except cells a search check covered - a first look, not a result.")|safe }}</p>
 {% if r.brings.best_answer is defined and r.brings.best_answer is not none %}
 {% set fb = checked_field(job.id, r) if checked_field is defined else dict(r.brings, checked=0, teams=r.opponents|selectattr('brings')|list|length) %}
 <div class="stats-line"><span><b>{{ fb.equilibrium|pct }}</b> {{ _("both adapt") }}</span><span><b>{{ fb.as_picked|pct }}</b> {{ _("as picked") }}</span>
@@ -80,7 +80,7 @@
 </table>
 <ul class="defs">
   <li>{{ _('<b>Both adapt</b>: your score when both sides pick their brings well. <b>As picked</b>: your usual four against their usual four. <b>Counter-switch</b>: if they bring their best answer to your recommended four (its lead shown), the four that beats it - with its score there and the recommended four\'s; "not needed" when the recommended four\'s worst case is already 50%+.')|safe }}</li>
-  <li>{{ _("<b>Recommended</b>: the four both-adapt play brings most. <b>Safest</b>: the four with the best worst case. <b>Worst case</b>: that four's lowest score over their brings. ✓ = searched (the team's search check replayed that cell); the rest are quick reads. Self-play numbers: how the bot plays these teams, not a verdict.")|safe }}</li>
+  <li>{{ _("<b>Recommended</b>: the four both-adapt play brings most.")|safe }}<br>{{ _("<b>Safest</b>: the four with the best worst case.")|safe }}<br>{{ _("<b>Worst case</b>: that four's lowest score over their brings.")|safe }}<br>{{ _("✓ = searched (the team's search check replayed that cell); the rest are fast reads. Self-play numbers: how the bot plays these teams, not a verdict.")|safe }}</li>
 </ul>
 
 
@@ -102,7 +102,7 @@
   </tbody>
 </table>
 <ul class="defs">
-  <li>{{ _("<b>Their recommended</b>: the four their side brings most when both sides pick well (the mirror of your recommended). <b>Your counter-switch</b>: the four to switch to if they answer your recommended four with the lead shown.")|safe }}</li>
+  <li>{{ _("<b>Their recommended</b>: the four their side brings most when both sides pick well (the mirror of your recommended).")|safe }}<br>{{ _("<b>Your counter-switch</b>: the four to switch to if they answer your recommended four with the lead shown.")|safe }}</li>
 </ul>
 </section>
 </main>

@@ -1,0 +1,79 @@
+
+
+{% set L = r.labels|map('replace', '…', '')|list %}{% set L = L if not (L and L[0][:2].isdigit() and ' ' in L[0]) else L|map('truncate', 2, True, '')|list %}
+
+
+{% set SIX = [] %}{% for sp in r.species %}{% set _x = SIX.append(sp|six) %}{% endfor %}
+{% macro team(t) %}<span style="display:inline-block; vertical-align:top"><span data-no-icons>{{ L[t] }}</span><br><span class="small muted">{{ SIX[t] }}</span></span>{% endmacro %}
+{% macro cell(t) %}<div data-no-icons>{{ L[t] }}</div><div class="small muted">{{ SIX[t] }}</div>{% endmacro %}
+{% macro rec(m) %}{{ m[3]|select('equalto', 0)|list|length }}-{{ m[3]|select('equalto', 1)|list|length }}{% endmacro %}
+{% macro player(pid) %}{{ _("Player {n}", n=pid + 1) }}{% endmacro %}
+{% set c = r.config %}
+<div class="card">
+  <h2>{{ _("{n} players", n=r.players) }} · {{ _("bucket {name}", name=r.bucket) }} · {{ _("Search Mode") if r.mode == 'search' else _("Fast Mode") }}</h2>
+  <p class="small muted">{{ r.format_name }} · {{ _("model {model}", model=r.model) }} · {{ _("seed {seed}", seed=r.seed) }} · {{ _("{n} games", n=r.games) }} ·
+    {{ _("{n} Swiss rounds", n=c.phase1_rounds) }}{% if c.phase2_rounds %}, {{ _("then {n} more for the {players} players with {points} match points or more", n=c.phase2_rounds, players=r.advanced, points=c.advance_points) }}{% endif %},
+    {% if c.cut %}{{ _("top cut of {n}", n=c.cut_size) }}{% else %}{{ _("no top cut") }}{% endif %}{% if c.drop_losses %}, {{ _("players dropped at X-{n}", n=c.drop_losses) }}{% endif %}</p>
+  {% if r.winner and not (r.events and r.events > 1) %}<p><b>{{ _("Winner:") }}</b> {{ player(r.winner.pid) }} · {{ team(r.winner.team) }}</p>{% endif %}
+  {% if r.skipped %}<p class="small">{{ _("Left out:") }} {{ r.skipped|join('; ') }}</p>{% endif %}
+</div>
+{% if r.pool is not defined %}<div class="card"><p class="small muted">{{ _("This run was played by an older version: play it again to see its result.") }}</p></div>
+{% else %}{% set P = r.pool %}{% set N = P.events|length %}
+
+<div class="card"><h2>{{ _("How each team did") }}{% if N > 1 %} · {{ _("{n} events together", n=N) }}{% endif %}</h2>
+  <p class="small muted">{{ _("Sorted by match win % against other teams (best-of-three series, mirror matches left out).") }}
+    {% if P.two_phase %}{{ _("<b>Phase 2 + Cut win %</b> is the same over the second Swiss phase and the top cut only.")|safe }}{% endif %}</p>
+  <div class="scroll"><table class="tbl"><tr><th>{{ _("Team") }}</th><th>{{ _("Players") }}</th><th>{{ _("Match win %") }}</th><th>{{ _("Series") }}</th>{% if P.two_phase %}<th>{{ _("Phase 2 + Cut win %") }}</th><th>{{ _("Reached phase 2") }}</th>{% endif %}
+    <th>{{ _("Top cut") }}</th><th>{{ _("Finals") }}</th><th>{{ _("Titles") }}</th></tr>
+  {% for t in P.teams %}<tr><td>{{ cell(t.team) }}</td><td data-v="{{ t.players }}">{{ t.players }} ({{ t.share|pct }})</td>
+    <td data-v="{{ t.wr if t.wr is not none else -1 }}"><b>{{ t.wr|pct }}</b></td><td>{{ t.series }}</td>
+    {% if P.two_phase %}<td data-v="{{ t.late_wr if t.late_wr is not none else -1 }}">{% if t.late_wr is not none %}{{ t.late_wr|pct }} <span class="muted small">({{ _("{n} series", n=t.late_series) }})</span>{% else %}-{% endif %}</td>
+    <td data-v="{{ t.phase2 / t.players }}">{{ t.phase2 }} ({{ (t.phase2 / t.players)|pct }})</td>{% endif %}
+    <td data-v="{{ t.cut / t.players }}">{{ t.cut }} ({{ (t.cut / t.players)|pct }})</td>
+    <td>{{ t.finals }}</td><td>{{ t.titles }}</td></tr>{% endfor %}</table></div></div>
+<div class="card"><h2>{{ _("Team against team") }}</h2>
+  <p class="small muted">{{ _("The % of series the row's team won against the column's, every event together. Hover a cell for the count; a pale cell has fewer than 5 series. The table scrolls sideways, and the row's team stays in view.") }}</p>
+  {% set order = P.teams|map(attribute='team')|list %}
+  <div class="scroll"><table class="tbl" style="width:auto"><tr><th style="position:sticky; left:0; z-index:3; background:var(--paper)"></th>{% for b_ in order %}<th style="font-weight:inherit; text-transform:none; vertical-align:bottom">{{ cell(b_) }}</th>{% endfor %}</tr>
+  {% for a_ in order %}<tr><td style="white-space:nowrap; position:sticky; left:0; z-index:1; background:var(--paper)">{{ cell(a_) }}</td>
+    {% for b_ in order %}{% set n = P.met[a_][b_] %}{% if a_ == b_ or not n %}<td class="num muted">{{ '·' if a_ == b_ else '' }}</td>
+    {% else %}{% set v = P.won[a_][b_] / n %}<td title="{{ L[a_] }} v {{ L[b_] }}: {{ _('{won} of {n} series', won=P.won[a_][b_], n=n) }}" style="text-align:center; background: {{ v|heat }}{% if n < 5 %}; opacity:.45{% endif %}">{{ (v * 100)|round|int }}%</td>{% endif %}{% endfor %}</tr>{% endfor %}
+  </table></div></div>
+{% if N > 1 %}<div class="card"><h2>{{ _("The {n} events", n=N) }}</h2>
+  <div class="scroll"><table class="tbl"><tr><th>{{ _("Event") }}</th><th>{{ _("Winner") }}</th><th>{{ _("Finalist") }}</th><th>{{ _("Top cut") }}</th></tr>
+  {% for e in P.events %}<tr><td>{{ loop.index }}</td><td>{% if e.winner is not none %}{{ cell(e.winner) }}{% endif %}</td>
+    <td>{% if e.second is not none %}{{ cell(e.second) }}{% endif %}</td>
+    <td class="small" data-no-icons>{{ e.cut|length }}{% if e.cut %}: {% for t in e.cut|unique %}{{ L[t] }}{% if e.cut.count(t) > 1 %} ×{{ e.cut.count(t) }}{% endif %}{{ ', ' if not loop.last }}{% endfor %}{% endif %}</td></tr>{% endfor %}
+  </table></div></div>{% endif %}
+
+
+{% macro event_detail(ev) %}
+<div class="card"><h2>{{ _("Teams") }}</h2>
+  <div class="scroll"><table class="tbl"><tr><th>{{ _("Team") }}</th><th>{{ _("Players") }}</th>{% if c.phase2_rounds %}<th>{{ _("Reached phase 2") }}</th>{% endif %}<th>{{ _("Top cut") }}</th><th>{{ _("Best finish") }}</th><th>{{ _("Match win %") }}</th></tr>
+  {% for t in ev.teams|sort(attribute='players', reverse=True) %}<tr><td>{{ cell(t.team) }}</td><td data-v="{{ t.players }}">{{ t.players }} ({{ t.share|pct }})</td>
+    {% if c.phase2_rounds %}<td data-v="{{ t.phase2 / t.players }}">{{ t.phase2 }} ({{ (t.phase2 / t.players)|pct }})</td>{% endif %}
+    <td data-v="{{ t.cut / t.players }}">{{ t.cut }} ({{ (t.cut / t.players)|pct }})</td><td>{{ t.best }}</td>
+    <td>{{ t.wr_vs_others|pct if t.wr_vs_others is not none else '-' }}</td></tr>{% endfor %}
+  </table></div></div>
+<div class="card"><h2>{{ _("Top cut") }}</h2>
+  {% if not ev.top_cut %}<p class="small muted">{{ _("No top cut at this size: the Swiss standings are the result.") }}</p>{% else %}
+  <div class="scroll"><table class="tbl"><tr><th>{{ _("Finish") }}</th><th>{{ _("Seed") }}</th><th>{{ _("Player") }}</th><th>{{ _("Team") }}</th><th>{{ _("Swiss record") }}</th></tr>
+  {% for p in ev.top_cut %}<tr><td>{{ p.finish }}</td><td>{{ p.seed }}</td><td>{{ player(p.pid) }}</td><td>{{ cell(p.team) }}</td><td>{{ p.record }}</td></tr>{% endfor %}</table></div>{% endif %}
+  {% for rd in ev.bracket %}<h3>{{ rd.label|tour_round }}</h3><ul class="small">
+    {% for m in rd.matches %}<li>{% if m[1] is none %}{{ player(m[0]) }} · {{ team(ev.player_team[m[0]]) }} · {{ _("bye") }}{% else %}{% set w, l = (m[0], m[1]) if m[2] == 0 else (m[1], m[0]) %}
+      <b>{{ player(w) }}</b> · {{ team(ev.player_team[w]) }} &nbsp;<b>{{ m[3]|select('equalto', m[2])|list|length }}-{{ m[3]|reject('equalto', m[2])|list|length }}</b>&nbsp; {{ player(l) }} · {{ team(ev.player_team[l]) }}{% if m[4] %} ({{ _("decided by a coin: the games could not be finished") }}){% endif %}{% endif %}</li>{% endfor %}</ul>{% endfor %}
+</div>
+<div class="card"><h2>{{ _("Swiss standings (top {n})", n=ev.standings|length) }}</h2>
+  <div class="scroll"><table class="tbl"><tr><th>#</th><th>{{ _("Player") }}</th><th>{{ _("Team") }}</th><th>{{ _("Record") }}</th><th>{{ _("Opponents' win %") }}</th><th>{{ _("Opponents' opponents' win %") }}</th></tr>
+  {% for s in ev.standings %}<tr><td>{{ loop.index }}</td><td>{{ player(s.pid) }}</td><td>{{ cell(s.team) }}</td><td>{{ s.wins }}-{{ s.losses }}</td>
+    <td>{{ s.owp|pct }}</td><td>{{ s.oowp|pct }}</td></tr>{% endfor %}</table></div></div>
+{% if ev.rounds %}<div class="card"><h2>{{ _("Rounds") }}</h2>
+  {% for rd in ev.rounds %}<details data-no-icons><summary>{{ rd.label|tour_round }} · {{ _("{n} pairings", n=rd.matches|length) }}</summary><ul class="small">
+    {% for m in rd.matches[:200] %}<li>{% if m[1] is none %}{{ player(m[0]) }} · {{ _("bye") }}{% else %}{% set w, l = (m[0], m[1]) if m[2] == 0 else (m[1], m[0]) %}
+      <b>{{ player(w) }}</b> ({{ L[ev.player_team[w]] }}) {{ m[3]|select('equalto', m[2])|list|length }}-{{ m[3]|reject('equalto', m[2])|list|length }} {{ player(l) }} ({{ L[ev.player_team[l]] }}){% if m[4] %} ({{ _("decided by a coin: the games could not be finished") }}){% endif %}{% endif %}</li>{% endfor %}
+    {% if rd.matches|length > 200 %}<li class="muted">{{ _("… {n} more", n=rd.matches|length - 200) }}</li>{% endif %}</ul></details>{% endfor %}
+</div>{% endif %}
+{% endmacro %}
+{% for ev in (r.event_list if r.event_list is defined else [r]) %}<details style="margin: 0 0 12px"><summary class="btn alt inline">{{ _("Event {n} in full", n=loop.index) }}{% if ev.winner %} · <span data-no-icons>{{ _("won by {team}", team=L[ev.winner.team]) }}</span>{% endif %}</summary>
+{{ event_detail(ev) }}</details>{% endfor %}
+{% endif %}

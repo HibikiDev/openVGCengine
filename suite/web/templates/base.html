@@ -15,7 +15,7 @@
   </a>
   {% if not standalone %}
 
-  {% set team = ['validate', 'muselfplay', 'slot'] %}{% set lab = ['h2h', 'playout', 'fieldplay', 'preview', 'crawler', 'turn1', 'mxcheck'] %}{% set rep = ['analyze'] %}
+  {% set team = ['validate', 'muselfplay', 'slot', 'spreads'] %}{% set lab = ['h2h', 'playout', 'fieldplay', 'preview', 'crawler', 'turn1', 'mxcheck', 'tournament'] %}{% set rep = ['analyze'] %}
   {% set dev = ['prep', 'nice', 'matchups', 'opp', 'meta'] %}
   <nav>
     <a class="tab{% if active in team %} on{% endif %}" href="/validate">{{ _("Team Lab") }}</a>
@@ -33,11 +33,11 @@
     <button type="submit" class="langbtn" lang="{{ 'en' if lang() == 'ja' else 'ja' }}" title="{{ 'Switch to English' if lang() == 'ja' else '日本語に切り替える' }}">{{ 'English' if lang() == 'ja' else '日本語' }}</button></form>
 </div></header>
 <main><div class="wrap">
-{% if not standalone %}{% set sub = [('validate', _('Team Deep Dive')), ('slot', _('Change a slot'))] if active in team else [('h2h', _('Head-to-head')), ('playout', _('Play-out')), ('fieldplay', _('Series vs a field')), ('preview', _('Preview Advisor')), ('crawler', _('Line Crawler'))] if active in lab
+{% if not standalone %}{% set sub = [('validate', _('Team Deep Dive')), ('slot', _('Change a slot')), ('spreads', _('Tune spreads'))] if active in team else [('h2h', _('Head-to-head')), ('playout', _('Play-out')), ('fieldplay', _('Series vs a field')), ('preview', _('Preview Advisor')), ('crawler', _('Line Crawler')), ('tournament', _('Fictional tournament'))] if active in lab
    else ([('analyze', _('Analyzer'))] if active in rep else []) %}
 {% if sub %}<div class="subnav">{% for key, label in sub %}<a class="{{ 'on' if active == key or (key == 'preview' and active == 'turn1') }}" href="/{{ key }}">{{ label }}</a>{% endfor %}
   <button type="button" class="subclear" data-clear="{{ 'team' if active in team else 'lab' if active in lab else 'rep' }}">{{ _('clear team') if active in team else _('clear teams') if active in lab else _('clear replay') }}</button></div>{% endif %}{% endif %}
-{% if not standalone and gpu is defined and not gpu.on and (active in team or active in lab) %}<div class="card flat cpubar small">{{ _("<b>Running on the CPU</b> &middot; no GPU the tools can use was found, so searched modes (Search Mode, Deep mode, bring matrices, example games) are off by default or take much longer here; quick modes work as usual.")|safe }}</div>{% endif %}
+{% if not standalone and gpu is defined and not gpu.on and (active in team or active in lab) %}<div class="card flat cpubar small">{{ _("<b>Running on the CPU</b> &middot; no GPU the tools can use was found, so searched runs (Search Mode, Deep Mode, bring matrices, example games) are off by default or take much longer here; Fast Mode works as usual.")|safe }}</div>{% endif %}
 
 {% if not standalone and browser_mode() %}<form class="card flat cpubar small appbar" method="post" action="/app/quit">{{ _("<b>Running in your browser</b> &middot; this PC doesn't have Microsoft's Edge WebView2 Runtime, so openVGCengine opened here instead of in its own window (installing the runtime brings the window back). Closing every tab closes the app after a while; to close it now:")|safe }} <button type="submit" class="btn inline">{{ _("Close the app") }}</button></form>{% endif %}
 {% set _lk = suite_lock() %}{% if _lk %}<div class="card flat lockbar"><b>{{ _("Tools paused") }}</b> &middot; {{ _("this PC is busy:") }} {{ _lk.reason }}{% if _lk.until %} ({{ _("until about {time}", time=_lk.until) }}){% endif %}. {{ _("Status, results and history still work; new runs and the Line Crawler wait until it's done.") }}</div>{% endif %}
@@ -63,8 +63,8 @@ window.T = {"fill from a bucket…": {{ _("fill from a bucket…")|tojson }},  /
 // (The "show team" exports' Copy button, `_team_export.html`: over plain http on the LAN the async clipboard API is missing - fall back
 // to selecting the text and execCommand.)
 function copyExport(btn) {
-  const text = btn.parentElement.querySelector("pre").textContent;
-  const done = ok => { btn.textContent = ok ? {{ _("Copied")|tojson }} : {{ _("Select + copy by hand")|tojson }}; setTimeout(() => btn.textContent = {{ _("Copy")|tojson }}, 1800); };
+  const text = btn.parentElement.querySelector("pre").textContent, was = btn.dataset.was || (btn.dataset.was = btn.textContent);
+  const done = ok => { btn.textContent = ok ? {{ _("Copied")|tojson }} : {{ _("Select + copy by hand")|tojson }}; setTimeout(() => btn.textContent = was, 1800); };
   if (navigator.clipboard && window.isSecureContext) { navigator.clipboard.writeText(text).then(() => done(true), () => done(false)); return; }
   const ta = document.createElement("textarea");
   ta.value = text; ta.setAttribute("readonly", ""); ta.style.position = "fixed"; ta.style.opacity = "0";

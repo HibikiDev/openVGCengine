@@ -27,7 +27,7 @@
 {% from "_side_table.html" import side_table %}
 <div class="card">
   <h2>{{ _("What happened in these games") }}</h2>
-  <p class="small muted">{{ _("<b>Brought</b> / <b>led</b>: share of games on the sheet (brought = came into play). <b>Fainted</b>, <b>KOs</b>, Mega: per game it came in.")|safe }}</p>
+  <p class="small muted">{{ _("<b>Brought</b> / <b>led</b>: share of games on the sheet (brought = came into play).")|safe }}<br>{{ _("<b>Fainted</b>, <b>KOs</b>, Mega: per game it came in.")|safe }}</p>
   <details class="howto small"><summary>{{ _("How to read it") }}</summary><p>{{ _("From this session's game logs, like the Deep Dive's matchup detail. <b>What it clicks</b>: share of its actions (moves and switches out), the games it used each move in, and its targets - <i>spread</i> when a move hit both foes. A KO is the last direct hit before a faint in the same turn. Score when brought: your win rate in the games it came in.")|safe }}</p></details>
   {{ side_table(s.your_side, _("Your side")) }}
   {{ side_table(s.bot_side, _("The bot's side")) }}

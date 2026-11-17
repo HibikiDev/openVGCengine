@@ -34,7 +34,8 @@ NAME_RE = re.compile(r"[A-Za-z0-9][A-Za-z0-9 _.-]{0,39}")
 ID_RE = re.compile(r"[A-Za-z0-9][A-Za-z0-9_-]{0,31}")
 PASTE_RE = re.compile(r"https?://pokepast\.es/([0-9a-fA-F]+)/?(?:raw)?")
 WEIGHT_RE = re.compile(r"\s+x\s*(\d+(?:\.\d+)?)\s*$", re.I)
-MAX_TEAMS = 20
+FIELD_MAX = 20
+
 DEFAULT = "Default"
 SEED = ROOT / "data/default_bucket.json"
 SEEDED = ROOT / "trainer/runs/default_bucket.seeded"
@@ -51,8 +52,65 @@ def _load() -> dict:
         return {}
 
 
+T = lambda s: s
+NOTE_OFFICIAL = T("The {n} most represented teams of {events} official events, weighted by how often they were brought (newer events count more). The spreads are each Pokémon's most used one, not the players' own: edit a team to change them. Updated with the app.")
+NOTE_IMPORTED = T("Imported from a Showdown backup.")
+
+
+def note_of(b: dict) -> str:
+
+
+    nt = b.get("note_t")
+    if nt:
+        return i18n.t(nt[0], **(nt[1] if len(nt) > 1 else {}))
+    return b.get("note", "")
+
+
+FORMAT_DIR = ROOT / "data/format_buckets"
+FORMAT_SEEN = None
+
+_format_synced = False
+
+
+def _format_buckets(d: dict) -> dict:
+
+
+
+
+    global _format_synced
+    if _format_synced or not FORMAT_DIR.is_dir():
+        return d
+    _format_synced = True
+    seen_file = FORMAT_SEEN or STORE.with_name("format_buckets.seen")
+    try:
+        seen = json.loads(seen_file.read_text(encoding="utf8"))
+    except (OSError, ValueError):
+        seen = {}
+    changed = False
+    for f in sorted(FORMAT_DIR.glob("*.json")):
+        try:
+            b = json.loads(f.read_text(encoding="utf8"))
+            name, stamp = b["name"], b["built"]
+        except (OSError, ValueError, KeyError):
+            continue
+        cur = d.get(name)
+        if seen.get(name) == stamp or (cur is not None and not (cur.get("official") and cur["official"] == seen.get(name))):
+            continue
+        d[name] = {"note": "", "note_t": [NOTE_OFFICIAL, {"n": len(b["teams"]), "events": len(b["events"])}],
+                   "updated": stamp, "format": b["format"], "official": stamp,
+                   "teams": [{"label": t["label"], "src": t["src"], "link": None, "weight": t["weight"], "species": t["species"]}
+                             for t in b["teams"]]}
+        seen[name] = stamp
+        changed = True
+    if changed:
+        _save(d)
+        seen_file.write_text(json.dumps(seen), encoding="utf8")
+    return d
+
+
 def _seeded(d: dict) -> dict:
 
+    d = _format_buckets(d)
     if SEEDED.exists() or not SEED.is_file():
         return d
     if DEFAULT not in d:
@@ -89,7 +147,7 @@ def format_of(name: str) -> str:
 def summaries() -> list[dict]:
 
     d = _load()
-    return [{"name": k, "note": d[k].get("note", ""), "updated": d[k].get("updated", ""), "format": d[k].get("format", MC),
+    return [{"name": k, "note": note_of(d[k]), "updated": d[k].get("updated", ""), "format": d[k].get("format", MC),
              "teams": [{"label": t["label"], "weight": t["weight"], "species": t["species"], "src": t["src"]} for t in d[k]["teams"]]}
             for k in sorted(d, key=str.lower)]
 
@@ -145,8 +203,6 @@ def parse(text: str) -> list[dict]:
     for e in out:
         if not (0 < e["weight"] <= 100):
             raise ValueError(i18n.t("weight {w} for {team}: use a number above 0 (at most 100)", w=f"{e['weight']:g}", team=e['label'] or i18n.t('a team')))
-    if len(out) > MAX_TEAMS:
-        raise ValueError(i18n.t("{n} teams: a bucket holds at most {max}", n=len(out), max=MAX_TEAMS))
     return out
 
 
@@ -196,7 +252,7 @@ def save(name: str, text: str, note: str = "", old_name: str | None = None, fmt:
                 src, sets = _resolve(e["spec"], fmt)
                 species = [s["species"] for s in sets]
         except SystemExit:
-            problems.append(i18n.t("team {k} ({team}): no library team with that id", k=k, team=e['label'] or e['spec'][:30]))
+            problems.append(i18n.t("team {k} ({team}): not a team - paste its Showdown export or a pokepast.es link", k=k, team=e['label'] or e['spec'][:30]))
             continue
         except Exception as ex:
             problems.append(i18n.t("team {k} ({team}): {error}", k=k, team=e['label'] or e['spec'][:30].strip(), error=f"{type(ex).__name__}: {str(ex)[:160]}"))
@@ -209,8 +265,121 @@ def save(name: str, text: str, note: str = "", old_name: str | None = None, fmt:
     if old_name and old_name != name:
         d.pop(old_name, None)
     d[name] = {"note": note.strip()[:300], "updated": time.strftime("%Y-%m-%d %H:%M"), "teams": teams, "format": fmt}
+    if prev_bucket.get("note_t") and note.strip() == note_of(prev_bucket).strip():
+        d[name].update(note="", note_t=prev_bucket["note_t"])
     _save(d)
     return d[name], []
+
+
+BACKUP_RE = re.compile(r"(?m)^[ \t]*===[ \t]*\[([^\]\n]+)\][ \t]*(.*?)[ \t]*===[ \t]*$")
+
+
+def split_backup(text: str) -> list[dict]:
+
+
+    parts = BACKUP_RE.split(text.replace("\r", ""))
+    out = []
+    for fmt, title, body in zip(parts[1::3], parts[2::3], parts[3::3]):
+        folder, _, name = title.rpartition("/")
+        out.append({"format": fmt.strip(), "folder": folder.strip(), "name": name.strip(), "export": body.strip() + "\n"})
+    return out
+
+
+def buddy_backup(teams: list[dict], bo3: bool | None = None) -> str:
+
+
+
+    from vgc_trainer.formats import REGULATIONS, base_id
+    from vgc_trainer.showdown.sheets import buddy_format
+    from vgc_suite.formats import IN_TOOLS
+    out = []
+    for t in teams:
+        b = base_id(t["format"])
+        if b not in IN_TOOLS:
+            out.append(f"=== [{t['format']}] {t['folder'] + '/' if t['folder'] else ''}{t['name']} ===\n\n{t['export'].strip()}\n")
+            continue
+        keep3 = t["format"].removesuffix("buddy").endswith("bo3")
+        fmt = buddy_format(b + ("bo3" if (keep3 if bo3 is None else bo3) and b in REGULATIONS else ""))
+        out.append(f"=== [{fmt}] {t['folder'] + '/' if t['folder'] else ''}{t['name']} ===\n\n{t['export'].strip()}\n")
+    return "\n\n".join(out)
+
+
+def backup_text(name: str, bo3: bool = True) -> str:
+
+
+    b = get(name)
+    fmt = b.get("format", MC)
+    teams = [{"format": fmt + ("bo3" if bo3 else ""), "folder": name, "name": t["label"], "export": x}
+             for t, x in zip(b["teams"], team_exports(name))]
+    return buddy_backup(teams)
+
+
+def team_exports(name: str) -> list[str]:
+
+
+    from vgc_trainer.showdown.teams import to_paste
+    from .teams import read_team
+    b = get(name)
+    fmt = b.get("format", MC)
+    out = []
+    for t in b["teams"]:
+        src = t["src"]
+        if "\n" not in src:
+            if (src, fmt) not in _ID_EXPORTS:
+                _ID_EXPORTS[(src, fmt)] = to_paste(read_team(src, fmt))
+            src = _ID_EXPORTS[(src, fmt)]
+        out.append(src.strip())
+    return out
+
+
+_ID_EXPORTS: dict[tuple[str, str], str] = {}
+
+
+def import_backup(text: str, prefix: str = "Showdown") -> dict:
+
+
+
+
+
+    from vgc_trainer.formats import base_id
+    from vgc_suite.formats import IN_TOOLS
+    teams = split_backup(text)
+    added: dict[str, int] = {}
+    skipped: list[tuple[str, str]] = []
+    d = _load()
+    for t in teams:
+        label = WEIGHT_RE.sub("", (t["name"] or t["folder"] or "team")).strip()[:40] or "team"
+        fmt = base_id(t["format"])
+        if fmt not in IN_TOOLS:
+            skipped.append((label, i18n.t("{format} isn't a format the tools play", format=t["format"])))
+            continue
+        try:
+            src, sets = _resolve(t["export"], fmt)
+        except SystemExit:
+            skipped.append((label, i18n.t("not a team the tools can read")))
+            continue
+        except Exception as ex:
+            skipped.append((label, f"{type(ex).__name__}: {str(ex)[:160]}"))
+            continue
+        base = f"{prefix} {get_format(fmt).short}"[:40].strip()
+        k, name = 1, base
+        while True:
+            b = d.get(name)
+            if b is not None and (b.get("format", MC) != fmt or b.get("official")):
+                k += 1
+                name = f"{base} {k}"
+                continue
+            if b is not None and any(x["src"] == src for x in b["teams"]):
+                skipped.append((label, i18n.t("already in {bucket}", bucket=name)))
+                break
+            b = d.setdefault(name, {"note": "", "note_t": [NOTE_IMPORTED], "teams": [], "format": fmt})
+            b["teams"].append({"label": label, "src": src, "link": None, "weight": 1.0, "species": [s["species"] for s in sets]})
+            b["updated"] = time.strftime("%Y-%m-%d %H:%M")
+            added[name] = added.get(name, 0) + 1
+            break
+    if added:
+        _save(d)
+    return {"buckets": added, "skipped": skipped, "teams": teams, "buddy": buddy_backup(teams)}
 
 
 def to_text(name: str) -> str:

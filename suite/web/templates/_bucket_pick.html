@@ -1,0 +1,55 @@
+
+
+
+<div id="pick-box" class="small" hidden style="margin-top:6px"></div>
+<input type="hidden" name="pick" id="pick" value="">
+<script>
+(() => {
+  const sel = document.getElementById("field"), box = document.getElementById("pick-box"), hid = document.getElementById("pick");
+  if (!sel) return;
+  const MAX = {{ field_max }};
+  const say = {head: {{ _("Teams: {k} of {n} ticked")|tojson }}, cap: {{ _("at most {max} play")|tojson }},
+               all: {{ _("all")|tojson }}, none: {{ _("none")|tojson }}, top: {{ _("the {max} heaviest")|tojson }}};
+  const fill = (s, o) => s.replace(/\{(\w+)\}/g, (m, k) => (k in o ? o[k] : m));
+  let bks = null;
+  function update(b) {
+    const boxes = [...box.querySelectorAll("input[type=checkbox]")], on = boxes.filter(c => c.checked);
+    boxes.forEach(c => { c.disabled = !c.checked && on.length >= MAX; });
+    hid.value = on.length === boxes.length ? "" : on.map(c => c.value).join(",");
+    box.querySelector("summary").textContent = fill(say.head, {k: on.length, n: boxes.length}) + (boxes.length > MAX ? " · " + fill(say.cap, {max: MAX}) : "");
+  }
+  function render() {
+    hid.value = ""; box.hidden = true; box.innerHTML = "";
+    if (!sel.value.startsWith("bucket:") || !bks) return;
+    const b = bks.find(x => x.name === sel.value.slice(7));
+    if (!b || !b.teams.length) return;
+    const order = b.teams.map((t, i) => i).sort((x, y) => b.teams[y].weight - b.teams[x].weight || x - y);
+    const on = new Set(order.slice(0, MAX));
+    const d = document.createElement("details");
+    if (b.teams.length > MAX) d.open = true;
+    d.appendChild(document.createElement("summary"));
+    const bar = document.createElement("div");
+    const act = (label, fn) => { const a = document.createElement("a"); a.href = "#"; a.textContent = label; a.style.marginRight = "10px";
+      a.onclick = e => { e.preventDefault(); fn(); update(b); }; bar.appendChild(a); };
+    const list = document.createElement("div");
+    list.style.cssText = "max-height:16em; overflow:auto; columns: 2 18em";
+    b.teams.forEach((t, i) => {
+      const l = document.createElement("label"); l.style.display = "block";
+      const c = document.createElement("input"); c.type = "checkbox"; c.value = i; c.checked = on.has(i);
+      c.onchange = () => update(b);
+      l.appendChild(c);
+      l.appendChild(document.createTextNode(" " + t.label + " · x" + t.weight + " "));
+      const sp = document.createElement("span"); sp.className = "muted"; sp.textContent = (t.species || []).join(" / ");
+      l.appendChild(sp); list.appendChild(l);
+    });
+    const boxes = () => [...list.querySelectorAll("input")];
+    if (b.teams.length <= MAX) act(say.all, () => boxes().forEach(c => { c.checked = true; }));
+    else act(fill(say.top, {max: MAX}), () => boxes().forEach(c => { c.checked = on.has(+c.value); }));
+    act(say.none, () => boxes().forEach(c => { c.checked = false; }));
+    d.appendChild(bar); d.appendChild(list); box.appendChild(d); box.hidden = false;
+    update(b);
+  }
+  fetch("/api/buckets").then(r => r.json()).then(x => { bks = x; render(); }).catch(() => {});
+  sel.addEventListener("change", render);
+})();
+</script>

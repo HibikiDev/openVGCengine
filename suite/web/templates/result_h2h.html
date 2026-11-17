@@ -14,13 +14,13 @@
   {% set NA = _(r.ids.a) if "\n" not in r.ids.a else _("Team A") %}{% set NB = _(r.ids.b) if "\n" not in r.ids.b else _("Team B") %}
   <h1>{{ NA }} <span class="muted">{{ _("vs") }}</span> {{ NB }} {% if r.format_name %}<span class="tag">{{ r.format_name }}</span>{% endif %}</h1>
   {% from "_team_export.html" import team_export %}{% if team_paste is defined and job is defined and job %}<div style="display:flex; gap:18px; flex-wrap:wrap">{{ team_export(team_paste(job.params.a), _("show {name}", name=NA)) }}{{ team_export(team_paste(job.params.b), _("show {name}", name=NB)) }}</div>{% endif %}
-  <p class="six"><b>A</b> {{ r.species.a|names(' · ') }}<br><b>B</b> {{ r.species.b|names(' · ') }}</p>
-  <p class="muted small">{{ _("model {model}", model=r.model) }} · {{ _("{n} self-play games, {turns} turns on average", n=r.games, turns=r.turns) }}{% if r.deep %} · {{ _("<b>deep mode</b>: both sides searched")|safe }}{% endif %}{% if r.bring_temp != 1 %} · {{ _("team preview varied") }}{% endif %} · <a href="/h2h">{{ _("another matchup") }}</a></p>
-  {% if not r.deep %}<p class="small" style="color:#b5483a">{{ _("<b>Quick mode</b> (no search): a rough screen - re-run in deep mode before relying on it.")|safe }}</p>{% endif %}
+  <p class="six"><b>A</b> <span style="display:inline-block; vertical-align:top">{{ r.species.a|six }}</span><br><b>B</b> <span style="display:inline-block; vertical-align:top">{{ r.species.b|six }}</span></p>
+  <p class="muted small">{{ _("model {model}", model=r.model) }} · {{ _("{n} self-play games, {turns} turns on average", n=r.games, turns=r.turns) }}{% if r.deep %} · {{ _("<b>Search Mode</b>: both sides searched")|safe }}{% endif %}{% if r.bring_temp != 1 %} · {{ _("team preview varied") }}{% endif %} · <a href="/h2h">{{ _("another matchup") }}</a></p>
+  {% if not r.deep %}<p class="small" style="color:#b5483a">{{ _("<b>Fast Mode</b> (no search): a rough screen - re-run in Search Mode before relying on it.")|safe }}</p>{% endif %}
   <div class="stats">
     <div><div class="big">{{ o.score|pct }}</div><div class="small muted">{{ _("team A's score (95%: {lo}–{hi})", lo=o.ci[0]|pct, hi=o.ci[1]|pct) }}</div></div>
     <div><div class="big" style="font-size:2rem">{{ "%+d"|format(o.elo|int) }}</div><div class="small muted">{{ _("Elo, A over B") }}</div></div>
-    {% if r.matrix and r.matrix.equilibrium %}<div><div class="big" style="font-size:2rem">{{ r.matrix.equilibrium.value|pct }}</div><div class="small muted">{{ _("A when both adapt their brings") }} <span class="tag mx-alt" title="{{ _("Fast estimate from games the model plays without search (also in deep mode)") }}">{{ _("quick read") }}</span></div></div>{% endif %}
+    {% if r.matrix and r.matrix.equilibrium %}<div><div class="big" style="font-size:2rem">{{ r.matrix.equilibrium.value|pct }}</div><div class="small muted">{{ _("A when both adapt their brings") }} <span class="tag mx-alt" title="{{ _("Fast estimate from games the model plays without search (also in Search Mode)") }}">{{ _("fast read") }}</span></div></div>{% endif %}
   </div>
 </div>
 {% macro pts(x) %}{{ "%+.1f"|format(x * 100) }}{% endmacro %}
@@ -41,7 +41,7 @@
     {% for x in L.top %}<tr><td>{{ x.side }}</td><td class="small">{{ x.mon|dex('species') }}</td><td class="small">{{ x.move|dex('move') }}</td><td class="small">{{ x.event|luck_event }}</td>
       <td class="num {{ 'hirec' if x.per_game > 0 else 'lowrec' }}">{{ pts(x.per_game) }}</td></tr>{% endfor %}
   </table></div>
-  <details class="howto small"><summary>{{ _("How luck is measured") }}</summary><p>{{ _("{n} games of the raw policy (no search, even in deep mode), each chance roll replayed both ways - the chance event and the usual outcome; the gap in the model's win estimate times the event's chance is its worth per game. <b>Creates</b> / <b>carries</b>: a side's own rolls that help / hurt it. Guaranteed effects don't count; damage rolls are two-sided.", n=L.games)|safe }}</p></details>
+  <details class="howto small"><summary>{{ _("How luck is measured") }}</summary><p>{{ _("{n} Fast Mode games (no search, even in Search Mode), each chance roll replayed both ways - the chance event and the usual outcome; the gap in the model's win estimate times the event's chance is its worth per game.", n=L.games)|safe }}<br>{{ _("<b>Creates</b> / <b>carries</b>: a side's own rolls that help / hurt it. Guaranteed effects don't count; damage rolls are two-sided.")|safe }}</p></details>
 </div>
 {% elif r.luck_error %}<div class="note">{{ _("The luck card failed: {error}", error=r.luck_error) }}</div>{% endif %}
 {% if r.bo3 %}{% set S = r.bo3 %}
@@ -86,8 +86,8 @@
 {% endfor %}
 {% if r.matrix %}{% set mx = r.matrix %}
 <div class="card flat">
-  <h3>{{ _("Bring against bring") }} <span class="tag mx-alt" title="{{ _("Fast estimate from games the model plays without search (also in deep mode)") }}">{{ _("quick read") }}</span></h3>
-  <p class="small muted">{{ _("Raw self-play games (no search), also in deep mode: a first look at which fours matter, not a result.") }}</p>
+  <h3>{{ _("Bring against bring") }} <span class="tag mx-alt" title="{{ _("Fast estimate from games the model plays without search (also in Search Mode)") }}">{{ _("fast read") }}</span></h3>
+  <p class="small muted">{{ _("Fast Mode games (no search), also in Search Mode: a first look at which fours matter, not a result.") }}</p>
   <p class="small muted">{{ _("The model's top {k} brings for each side, every pairing played out ({n} games each, ±{se}% at worst). Cells are A's score; ◆ / <span class=\"tag mx-alt\">screened</span>: found by trying all fours.", k=mx.k, n=mx.games_per_cell, se=(mx.matrix_se * 100)|round|int)|safe }}</p>
   <div class="scroll"><table class="tbl">
     <tr><th>{{ _("A brings") }}</th><th class="num">{{ _("model likes") }}</th><th class="num">{{ _("vs B's likely") }}</th><th class="num">{{ _("worst") }}</th>{% for t in mx.their_options %}<th class="num" title="{{ t.lead|names(' + ') }} (+{{ t.back|names }})">B{{ loop.index }}{% if t.screened %}◆{% endif %}</th>{% endfor %}</tr>

@@ -22,6 +22,7 @@ import vgc_engine as ve
 import websockets
 import websockets.http11
 
+from .. import gpu_lock
 from .agent import Agent
 from .chaos import HIGH_CHAOS, net_bad_luck
 from .requests import REQUEST_TARGET, RequestMasks, describe_action, team_choice
@@ -362,7 +363,9 @@ class Battle:
         if len(back) == 2 and None not in back and len(set(lead + back)) == 4:
             self.bring = lead + back
         else:
-            self.bring = self.agent.choose_bring(self.my_sheet, self.foe_sheet, force_lead=lead, fmt=self.engine_fmt, closed=self.fmt is not None)
+            with gpu_lock.section():
+                self.bring = self.agent.choose_bring(self.my_sheet, self.foe_sheet, force_lead=lead, fmt=self.engine_fmt,
+                                                     closed=self.fmt is not None)
         log.warning("%s: drill bring %s", self.room, "/".join(self.my_sheet[i]["species"] for i in self.bring))
         return True
 
@@ -406,8 +409,8 @@ class Battle:
             try:
 
 
-                bring, info = await asyncio.wait_for(
-                    asyncio.to_thread(self.client.counter_bring.choose, self.my_sheet, self.foe_sheet, prev[0], prev[1]), CB_DEADLINE)
+                bring, info = await asyncio.wait_for(asyncio.to_thread(gpu_lock.locked(self.client.counter_bring.choose),
+                                                                       self.my_sheet, self.foe_sheet, prev[0], prev[1]), CB_DEADLINE)
                 self.bring = [int(i) for i in bring]
                 rec.update(info, bring=self.bring)
                 log.warning("%s: counter-bring G%s: %s vs their %s (WR %.2f, today's pick %s; %d ms)", self.room, self.series_game,
@@ -588,13 +591,14 @@ class Battle:
 
                 ls = self.live_search or self.client.live_search
                 alt = (self.client.lead_preview or getattr(ls, "foe_preview", None)) if self.engine_fmt is None else None
-                self.bring = self.agent.choose_bring(self.my_sheet, self.foe_sheet, fmt=self.engine_fmt, closed=self.fmt is not None,
-                                                     alt_head=alt, **lead_kw)
+
+                self.bring = await gpu_lock.call(self.agent.choose_bring, self.my_sheet, self.foe_sheet, fmt=self.engine_fmt,
+                                                 closed=self.fmt is not None, alt_head=alt, **lead_kw)
             else:
                 if last and time.monotonic() - last[1] < 3600 and random.random() < (last[2] if len(last) > 2 else self.client.bo3_lead_avoid):
                     avoid = last[0]
-                self.bring = self.agent.choose_bring(self.my_sheet, self.foe_sheet, avoid_lead=avoid, fmt=self.engine_fmt,
-                                                     closed=self.fmt is not None)
+                self.bring = await gpu_lock.call(self.agent.choose_bring, self.my_sheet, self.foe_sheet, avoid_lead=avoid,
+                                                 fmt=self.engine_fmt, closed=self.fmt is not None)
             drilled = self._drill_bring()
             pv = getattr(self.agent, "last_preview", None)
             if self.client.force_bring is not None:
@@ -703,8 +707,8 @@ class Battle:
             actions = self.client.random_agent.act(None, masks, self.bring)
         else:
             play_ctx = self._play_context(req)
-            actions = self.agent.act(obs, masks, self.bring, play_ctx)
-            explained = self.agent.last_explain
+
+            actions, explained = await gpu_lock.call(lambda: (self.agent.act(obs, masks, self.bring, play_ctx), self.agent.last_explain))
 
             ls = (self.live_search or self.client.live_search) if self.fmt is None or self.client.closed_sheet_search else None
             if ls is not None and not req.get("forceSwitch"):
@@ -721,7 +725,7 @@ class Battle:
 
                     def run(tracker=self.tracker, sheets=(self.my_sheet, self.foe_sheet), bring=self.bring, arm=arm, explained=explained):
                         t_wait = time.monotonic()
-                        with self.client.search_lock:
+                        with self.client.search_lock, gpu_lock.section():
                             waited = time.monotonic() - t_wait
                             t_world = time.monotonic()
                             world = self._foe_world(raw) if raw is not None else None

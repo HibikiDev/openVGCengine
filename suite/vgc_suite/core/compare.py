@@ -20,7 +20,7 @@ _CACHE: dict[str, tuple[float, list[dict]]] = {}
 def _mode(r: dict, games: int) -> dict:
     s = r.get("search")
     return {"search": s["games_per_team"], "label": i18n.t("Search Mode, {n} a team", n=s['games_per_team'])} if s else \
-        {"search": 0, "label": i18n.t("quick, {n} games", n=f"{games:,}")}
+        {"search": 0, "label": i18n.t("Fast Mode, {n} games", n=f"{games:,}")}
 
 
 def _entries(j: dict) -> list[dict]:
@@ -110,7 +110,7 @@ def compare(entries: list[dict]) -> dict:
         warn.append(i18n.t("These runs used different models ({models}): a gap can be the model's, not the team's - rerun the older ones to compare like with like.",
                            models=", ".join(sorted({str(e["model"]) for e in rows}))))
     if len({bool(e["mode"]["search"]) for e in rows}) > 1:
-        warn.append(i18n.t("Quick and Search Mode runs are mixed: quick numbers can sit ~20 points off a matchup the way the bot really plays it, so compare quick with quick and Search Mode with Search Mode."))
+        warn.append(i18n.t("Fast Mode and Search Mode runs are mixed: Fast Mode numbers can sit ~20 points off a matchup the way the bot really plays it, so compare Fast Mode with Fast Mode and Search Mode with Search Mode."))
     if len(shared) < len(teams):
         warn.append(i18n.t("Not every run played the same teams (the bucket changed between runs): the \"shared teams\" column scores each run on the {n} teams all of them played.",
                            n=len(shared)))

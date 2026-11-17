@@ -1,0 +1,85 @@
+
+
+{% set LAB = {"hp": "HP", "atk": "Atk", "def": "Def", "spa": "SpA", "spd": "SpD", "spe": "Spe"} %}
+{% set NAMES = {"current": _("Your spread"), "improve": _("Better on every count"), "bulk": _("More bulk"), "damage": _("More damage"), "free": _("Speed where it counts")} %}
+{% macro spread(nature, evs) %}{{ nature }} · {% for k in ["hp", "atk", "def", "spa", "spd", "spe"] if evs[k] %}{{ evs[k] }} {{ LAB[k] }}{{ " / " if not loop.last }}{% else %}{{ _("nothing invested") }}{% endfor %}{% endmacro %}
+
+{% macro odds(x) %}{% set v = 100 * x %}{{ v|round|int if v < 0.05 or v > 99.95 else '%.1f'|format(v + 0.0001) }}%{% endmacro %}
+{% macro ours(x) %}{% if x.ours %}<span class="muted">{{ _("as {forme}:", forme=x.ours|dex('species')) }}</span> {% endif %}{% endmacro %}
+{% macro pct(x) %}{{ (100 * x)|round|int }}%{% endmacro %}
+{% macro delta(x, base, lower_better=false) %}{% set d = (100 * (x - base))|round|int %}{% if d %} <span class="small {{ 'sp-better' if (d < 0) == lower_better else 'sp-worse' }}">({{ '+' if d > 0 }}{{ d }})</span>{% endif %}{% endmacro %}
+<style>.sp-better { color: #3b7d23; } .sp-worse { color: #b0413e; } .sp-tbl td, .sp-tbl th { vertical-align: top; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .sp-better { color: #8fd16a; } :root:not([data-theme="light"]) .sp-worse { color: #f08a86; } }
+:root[data-theme="dark"] .sp-better { color: #8fd16a; } :root[data-theme="dark"] .sp-worse { color: #f08a86; }
+.sp-changes p { margin: 8px 0 2px; } .sp-changes ul { margin: 0 0 4px; padding-left: 1.4em; } .sp-changes li { margin: 1px 0; }</style>
+<div class="card">
+  <h2>{{ _("Tune spreads") }}</h2>
+  <p>{{ r.species|six }}</p>
+  <p class="small">{{ _("Against {field} · {format} · {n} different opposing sets from {t} teams", field=r.field_label, format=r.format_name, n=r.field_sets, t=r.teams) }}{% if r.picked %} · {{ r.picked }}{% endif %}</p>
+  <p class="small muted">{{ _("<b>OHKO'd by</b>: the share of the field whose best move can knock this Pokémon out in one hit from full HP.")|safe }}<br>{{ _("<b>OHKOs</b>: the share its best move knocks out in one hit.")|safe }}<br>{{ _("<b>Moves first to OHKO</b>: the share it moves before and knocks out in one hit.")|safe }}<br>{{ _("<b>OHKO'd before it moves</b>: the share that moves first and knocks it out in one hit (lower is better). Moving first means under Trick Room for a Trick Room set.")|safe }}</p>
+  <p class="small muted">{{ _("Each opposing Pokémon is calculated with its spread from the bucket and its most used spreads on the ladder, and every number for it comes from the one that's worst for you: the hardest-hitting when you take a hit, the bulkiest when you attack. Its chance is a plain damage-calc roll chance (in 1/16 steps), and the counts above add those chances up over the field. On a team with two Mega Stones, each stone holder counts half its games as its Mega and half in its base forme, on your side and theirs.") }}</p>
+  {% if r.field_spreads %}<details><summary class="small">{{ _("The spreads each opposing Pokémon is calculated with") }}</summary>
+    <div class="scroll"><table class="tbl small">
+      <tr><th>{{ _("Pokémon") }}</th><th>{{ _("From the bucket") }}</th><th>{{ _("Most used on the ladder") }}</th></tr>
+      {% for f in r.field_spreads %}<tr><td>{{ f.who|dex('species') }}</td>
+        <td>{% for sp in f.bucket %}{{ spread(sp.nature, sp.evs) }}{% if not loop.last %}<br>{% endif %}{% endfor %}</td>
+        <td>{% for sp in f.ladder %}{{ spread(sp.nature, sp.evs) }}{% if not loop.last %}<br>{% endif %}{% else %}<span class="muted">{{ _("none") }}</span>{% endfor %}</td></tr>{% endfor %}
+    </table></div></details>{% endif %}
+  {% if not r.usage %}<p class="small">{{ _("No ladder usage for this format here: each opposing Pokémon is calculated with its written spread only.") }}</p>{% endif %}
+</div>
+{% set old = r.field_spreads is not defined %}
+{% if old %}<div class="card"><p class="small">{{ _("This run was made by an older version of Tune spreads: run it again to see it with today's counts.") }}</p></div>{% endif %}
+{% for m in (r.mons if not old else []) %}{% set mi = loop.index0 %}
+<div class="card sp-mon" data-mon="{{ mi }}">
+  <h3>{{ m.species|dex('species') }}{% if m.item %} <span class="small muted">@ {{ m.item|dex('items') }}</span>{% endif %}</h3>
+  {% if m.error %}<p class="small">{{ _("The calc couldn't run this Pokémon: {error}", error=m.error) }}</p>
+  {% else %}
+  {% set c = m.current.show %}
+  <div class="scroll"><table class="tbl sp-tbl">
+    <tr><th></th><th>{{ _("Spread") }}</th><th>{{ _("OHKO'd by") }}</th><th>{{ _("OHKOs") }}</th><th>{{ _("Moves first to OHKO") }}</th><th>{{ _("OHKO'd before it moves") }}</th></tr>
+    <tr><td><input type="radio" name="pick{{ mi }}" value="current" checked></td><td><b>{{ NAMES.current }}</b><br><span class="small">{{ spread(m.nature, m.evs) }}</span></td>
+      <td>{{ pct(c.risk) }}</td><td>{{ pct(c.reach) }}</td><td>{{ pct(c.first_ko) }}</td><td>{{ pct(c.ko_before) }}</td></tr>
+    {% for name in r.presets %}{% set p = m.presets[name] %}
+    <tr><td>{% if p and not p.same and not p.dup %}<input type="radio" name="pick{{ mi }}" value="{{ name }}">{% endif %}</td>
+      <td><b>{{ NAMES[name] }}</b><br>{% if not p %}<span class="small muted">{{ _("none fits") }}</span>{% elif p.same %}<span class="small muted">{{ _("your spread already is this one") }}</span>{% elif p.dup %}<span class="small muted">{{ _("the same spread as \"{option}\"", option=NAMES[p.dup]) }}</span>{% else %}<span class="small">{{ spread(p.nature, p.evs) }}</span>{% endif %}</td>
+      {% if p and not p.same and not p.dup %}<td>{{ pct(p.show.risk) }}{{ delta(p.show.risk, c.risk, true) }}</td><td>{{ pct(p.show.reach) }}{{ delta(p.show.reach, c.reach) }}</td><td>{{ pct(p.show.first_ko) }}{{ delta(p.show.first_ko, c.first_ko) }}</td><td>{{ pct(p.show.ko_before) }}{{ delta(p.show.ko_before, c.ko_before, true) }}</td>
+      {% else %}<td></td><td></td><td></td><td></td>{% endif %}</tr>
+    {% endfor %}
+  </table></div>
+  {% for name in r.presets %}{% set p = m.presets[name] %}{% if p and not p.same and not p.dup %}{% set ch = p.changes %}
+  <details{{ ' open' if name == 'improve' }}><summary class="small">{{ _("What \"{option}\" changes", option=NAMES[name]) }}</summary>
+
+    <div class="small sp-changes">
+      {% if ch.safe %}<p>{{ _("<b>Now survives</b>:")|safe }}</p><ul>{% for x in ch.safe[:8] %}<li>{{ ours(x) }}{{ _("{species}'s {move}", species=x.who|dex('species'), move=x.move|dex('moves')) }} ({{ _("OHKO chance {a} → {b}", a=odds(x['from']), b=odds(x.to)) }})</li>{% endfor %}</ul>{% endif %}
+      {% if ch.ko_by %}<p>{{ _("<b>Now OHKO'd by</b>:")|safe }}</p><ul>{% for x in ch.ko_by[:8] %}<li>{{ ours(x) }}{{ _("{species}'s {move}", species=x.who|dex('species'), move=x.move|dex('moves')) }} ({{ _("OHKO chance {a} → {b}", a=odds(x['from']), b=odds(x.to)) }})</li>{% endfor %}</ul>{% endif %}
+      {% if ch.kos %}<p>{{ _("<b>Now OHKOs</b>:")|safe }}</p><ul>{% for x in ch.kos[:8] %}<li>{{ ours(x) }}{{ x.who|dex('species') }} {{ _("with {move}", move=x.move|dex('moves')) }} ({{ _("OHKO chance {a} → {b}", a=odds(x['from']), b=odds(x.to)) }})</li>{% endfor %}</ul>{% endif %}
+      {% if ch.no_ko %}<p>{{ _("<b>No longer OHKOs</b>:")|safe }}</p><ul>{% for x in ch.no_ko[:8] %}<li>{{ ours(x) }}{{ x.who|dex('species') }} {{ _("with {move}", move=x.move|dex('moves')) }} ({{ _("OHKO chance {a} → {b}", a=odds(x['from']), b=odds(x.to)) }})</li>{% endfor %}</ul>{% endif %}
+      {% if ch.faster %}<p>{{ _("<b>Now moves before</b>:")|safe }}</p><ul>{% for x in ch.faster[:10] %}<li>{{ x.who|dex('species') }} ({{ x.spe }})</li>{% endfor %}</ul>{% endif %}
+      {% if ch.slower %}<p>{{ _("<b>No longer moves before</b>:")|safe }}</p><ul>{% for x in ch.slower[:10] %}<li>{{ x.who|dex('species') }} ({{ x.spe }})</li>{% endfor %}</ul>{% endif %}
+      {% if not (ch.safe or ch.ko_by or ch.kos or ch.no_ko or ch.faster or ch.slower) %}<p class="muted">{{ _("No single matchup moves much: small gains spread over the field.") }}</p>{% endif %}
+    </div></details>
+  {% endif %}{% endfor %}
+  {% endif %}
+  <script type="application/json" class="sp-sets">{{ m.sets|tojson }}</script>
+</div>
+{% endfor %}
+<div class="card">
+  <h3>{{ _("Your team with the picked spreads") }}</h3>
+  <p class="small muted">{{ _("Pick an option for each Pokémon above; the export follows.") }}</p>
+  <div class="sheet"><button type="button" class="copybtn" onclick="copyExport(this)">{{ _("Copy") }}</button>
+  <pre class="sheettext" id="sp-export"></pre></div>
+</div>
+<script>
+(() => {
+  const cards = [...document.querySelectorAll(".sp-mon")], out = document.getElementById("sp-export");
+  const build = () => {
+    out.textContent = cards.map(c => {
+      const sets = JSON.parse(c.querySelector(".sp-sets").textContent);
+      const on = c.querySelector("input[type=radio]:checked");
+      return sets[on ? on.value : "current"] || sets.current;
+    }).join("\n\n");
+  };
+  cards.forEach(c => c.addEventListener("change", build));
+  build();
+})();
+</script>

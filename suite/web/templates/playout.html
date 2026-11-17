@@ -27,7 +27,7 @@
             <select name="a2f{{ k }}" aria-label="{{ _('Team A') }} {{ _('slot {n}', n=k) }} {{ _('turn 2') }}"><option value="">{{ _("the bot decides") }}</option></select>
             <label class="small t2mega"><input type="checkbox" name="a2m{{ k }}" value="1"> {{ _("Mega") }}</label></div>{% endfor %}
         </details>
-        <p class="small manual-only"><label><input type="checkbox" name="pa" value="1"> {{ _("Team {side} plays its <b>raw policy</b> (no search)", side="A")|safe }}</label></p></div>
+        <p class="small manual-only"><label><input type="checkbox" name="pa" value="1"> {{ _("Team {side} plays in <b>Fast Mode</b> (no search)", side="A")|safe }}</label></p></div>
       <div><label for="b">{{ _("Team B") }}</label><textarea id="b" name="b" required data-team></textarea>
         <div class="custom-bring manual-only" id="pb"><span class="small muted">{{ _("leads") }}</span>
           {% for k in (1, 2, 3, 4) %}{% if k == 3 %}<span class="small muted">{{ _("back") }}</span>{% endif %}<select name="b{{ k }}" aria-label="{{ _('Team B') }} {{ _('lead {n}', n=k) if k < 3 else _('back {n}', n=k - 2) }}" required><option value="">-</option></select>{% endfor %}
@@ -42,7 +42,7 @@
             <select name="b2f{{ k }}" aria-label="{{ _('Team B') }} {{ _('slot {n}', n=k) }} {{ _('turn 2') }}"><option value="">{{ _("the bot decides") }}</option></select>
             <label class="small t2mega"><input type="checkbox" name="b2m{{ k }}" value="1"> {{ _("Mega") }}</label></div>{% endfor %}
         </details>
-        <p class="small manual-only"><label><input type="checkbox" name="pb" value="1"> {{ _("Team {side} plays its <b>raw policy</b> (no search)", side="B")|safe }}</label></p></div>
+        <p class="small manual-only"><label><input type="checkbox" name="pb" value="1"> {{ _("Team {side} plays in <b>Fast Mode</b> (no search)", side="B")|safe }}</label></p></div>
     </div>
     <div class="row">
       <div><label for="n">{{ _("Games") }} <span class="muted small">{{ _("(turn 1 only is much quicker)") }}</span></label><input id="n" name="n" type="number" min="1" max="{{ LIMITS.turn1_n }}" value="8"></div>
@@ -51,7 +51,7 @@
     </div>
     <div class="bots-only" hidden>
       <p><label><input type="checkbox" name="bo3" value="1"> <b>{{ _("Best-of-three series") }}</b> <span class="muted small">{{ _("(Games = series, up to {n})", n=LIMITS.playout_series) }}</span></label></p>
-      <p class="small"><label><input type="checkbox" name="raw" value="1"> {{ _("Both sides play their <b>raw policy</b> (no search: much faster)")|safe }}</label></p>
+      <p class="small"><label><input type="checkbox" name="raw" value="1"> {{ _("<b>Fast Mode</b>: both sides play without search (much faster)")|safe }}</label></p>
       
     </div>
     <p class="manual-only"><label><input type="checkbox" name="full" value="1" checked> <b>{{ _("Whole games") }}</b> <span class="muted small">{{ _("(unticked: turn 1 only)") }}</span></label></p>

@@ -1,0 +1,600 @@
+{
+ "format": "gen9vgc2025regi",
+ "name": "Tournament meta SV Reg I",
+ "built": "2026-11-14 16:29",
+ "skipped": [],
+ "source": "munchstats.com (official events' open team sheets)",
+ "half_life_days": 60.0,
+ "coverage": 0.2303,
+ "archetypes": 4762,
+ "events": [
+  {
+   "name": "2026 Seville Pokémon VGC Special Championships",
+   "date": "2026-03-28",
+   "players": 591,
+   "weight": 0.1182
+  },
+  {
+   "name": "2026 Houston Pokémon VGC Regional Championships",
+   "date": "2026-03-20",
+   "players": 622,
+   "weight": 0.1077
+  },
+  {
+   "name": "2026 Curitiba Pokémon VGC Regional Championships",
+   "date": "2026-03-14",
+   "players": 179,
+   "weight": 0.1005
+  },
+  {
+   "name": "2026 Seattle Pokémon VGC Regional Championships",
+   "date": "2026-02-27",
+   "players": 820,
+   "weight": 0.0845
+  },
+  {
+   "name": "2026 Europe Pokémon VGC International Championships",
+   "date": "2026-02-13",
+   "players": 1455,
+   "weight": 0.0719
+  },
+  {
+   "name": "2026 Santiago Pokémon VGC Regional Championships",
+   "date": "2026-02-07",
+   "players": 213,
+   "weight": 0.0671
+  },
+  {
+   "name": "2026 Sydney Pokémon VGC Regional Championships",
+   "date": "2026-02-07",
+   "players": 277,
+   "weight": 0.0671
+  },
+  {
+   "name": "2026 Mérida Pokémon VGC Regional Championships",
+   "date": "2026-01-24",
+   "players": 234,
+   "weight": 0.0571
+  },
+  {
+   "name": "2026 Birmingham Pokémon VGC Regional Championships",
+   "date": "2026-01-24",
+   "players": 687,
+   "weight": 0.0571
+  },
+  {
+   "name": "2026 Toronto Pokémon VGC Regional Championships",
+   "date": "2026-01-16",
+   "players": 745,
+   "weight": 0.052
+  },
+  {
+   "name": "2026 Stuttgart Pokémon VGC Regional Championships",
+   "date": "2025-11-29",
+   "players": 660,
+   "weight": 0.0299
+  },
+  {
+   "name": "2026 Latin America Pokémon VGC International Championships",
+   "date": "2025-11-21",
+   "players": 516,
+   "weight": 0.0272
+  },
+  {
+   "name": "2026 Las Vegas Pokémon VGC Regional Championships",
+   "date": "2025-11-14",
+   "players": 705,
+   "weight": 0.0251
+  },
+  {
+   "name": "2026 Brisbane Pokémon VGC Regional Championships",
+   "date": "2025-11-01",
+   "players": 210,
+   "weight": 0.0216
+  },
+  {
+   "name": "2026 Gdańsk Pokémon VGC Regional Championships",
+   "date": "2025-11-01",
+   "players": 416,
+   "weight": 0.0216
+  },
+  {
+   "name": "2026 Lille Pokémon VGC Regional Championships",
+   "date": "2025-10-25",
+   "players": 679,
+   "weight": 0.0199
+  },
+  {
+   "name": "2026 Belo Horizonte Pokémon VGC Regional Championships",
+   "date": "2025-10-11",
+   "players": 184,
+   "weight": 0.017
+  },
+  {
+   "name": "2026 Milwaukee Pokémon VGC Regional Championships",
+   "date": "2025-10-10",
+   "players": 706,
+   "weight": 0.0168
+  },
+  {
+   "name": "2026 Pittsburgh Pokémon VGC Regional Championships",
+   "date": "2025-09-19",
+   "players": 746,
+   "weight": 0.0132
+  },
+  {
+   "name": "2026 Monterrey Pokémon VGC Regional Championships",
+   "date": "2025-09-13",
+   "players": 281,
+   "weight": 0.0123
+  },
+  {
+   "name": "2026 Frankfurt Pokémon VGC Regional Championships",
+   "date": "2025-09-13",
+   "players": 741,
+   "weight": 0.0123
+  }
+ ],
+ "teams": [
+  {
+   "label": "#01",
+   "key": "Flutter Mane / Incineroar / Ogerpon-Hearthflame / Raging Bolt / Rillaboom / Urshifu-Rapid-Strike",
+   "src": "Raging Bolt @ Life Orb  \nAbility: Protosynthesis  \nLevel: 50  \nEVs: 196 HP / 28 Def / 252 SpA / 4 SpD / 28 Spe  \nTera Type: Electric  \nModest Nature  \n- Thunderbolt  \n- Draco Meteor  \n- Thunderclap  \n- Protect  \n\nUrshifu (Urshifu-Rapid-Strike) @ Mystic Water  \nAbility: Unseen Fist  \nLevel: 50  \nEVs: 4 HP / 252 Atk / 252 Spe  \nTera Type: Steel  \nAdamant Nature  \n- Surging Strikes  \n- Close Combat  \n- Aqua Jet  \n- Protect  \n\nFlutter Mane @ Booster Energy  \nAbility: Protosynthesis  \nLevel: 50  \nEVs: 4 HP / 252 SpA / 252 Spe  \nTera Type: Grass  \nTimid Nature  \n- Moonblast  \n- Icy Wind  \n- Taunt  \n- Pain Split  \n\nOgerpon (Ogerpon-Hearthflame) (F) @ Hearthflame Mask  \nAbility: Mold Breaker  \nLevel: 50  \nEVs: 188 HP / 76 Atk / 52 Def / 4 SpD / 188 Spe  \nTera Type: Fire  \nAdamant Nature  \n- Ivy Cudgel  \n- Grassy Glide  \n- Swords Dance  \n- Spiky Shield  \n\nRillaboom @ Assault Vest  \nAbility: Grassy Surge  \nLevel: 50  \nEVs: 252 HP / 36 Atk / 4 Def / 204 SpD / 12 Spe  \nTera Type: Fire  \nAdamant Nature  \n- Wood Hammer  \n- Grassy Glide  \n- High Horsepower  \n- Fake Out  \n\nIncineroar @ Sitrus Berry  \nAbility: Intimidate  \nLevel: 50  \nEVs: 252 HP / 252 Def / 4 SpD  \nTera Type: Ghost  \nImpish Nature  \n- Flare Blitz  \n- Knock Off  \n- Parting Shot  \n- Fake Out\n",
+   "weight": 2.841,
+   "species": [
+    "Raging Bolt",
+    "Urshifu-Rapid-Strike",
+    "Flutter Mane",
+    "Ogerpon-Hearthflame",
+    "Rillaboom",
+    "Incineroar"
+   ],
+   "sheet_from": "2026 Seville Pokémon VGC Special Championships",
+   "sheet_placement": 5,
+   "stats": {
+    "players": 208,
+    "events": 10,
+    "day2": 0.2163,
+    "cut": 0.0481,
+    "match_wr": 0.5288
+   }
+  },
+  {
+   "label": "#02",
+   "key": "Chien-Pao / Incineroar / Landorus / Raging Bolt / Rillaboom / Urshifu-Rapid-Strike",
+   "src": "Raging Bolt @ Booster Energy  \nAbility: Protosynthesis  \nLevel: 50  \nEVs: 196 HP / 28 Def / 252 SpA / 4 SpD / 28 Spe  \nTera Type: Fairy  \nModest Nature  \n- Thunderclap  \n- Dragon Pulse  \n- Calm Mind  \n- Protect  \n\nIncineroar @ Safety Goggles  \nAbility: Intimidate  \nLevel: 50  \nEVs: 252 HP / 252 Def / 4 SpD  \nTera Type: Ghost  \nImpish Nature  \n- Flare Blitz  \n- Fake Out  \n- Parting Shot  \n- Taunt  \n\nChien-Pao @ Focus Sash  \nAbility: Sword of Ruin  \nLevel: 50  \nEVs: 252 Atk / 4 Def / 252 Spe  \nTera Type: Stellar  \nJolly Nature  \n- Icy Wind  \n- Icicle Crash  \n- Sucker Punch  \n- Protect  \n\nLandorus (M) @ Life Orb  \nAbility: Sheer Force  \nLevel: 50  \nEVs: 252 HP / 4 Def / 116 SpA / 132 SpD / 4 Spe  \nTera Type: Ghost  \nModest Nature  \n- Earth Power  \n- Sludge Bomb  \n- Sandsear Storm  \n- Protect  \n\nRillaboom @ Assault Vest  \nAbility: Grassy Surge  \nLevel: 50  \nEVs: 252 HP / 36 Atk / 4 Def / 204 SpD / 12 Spe  \nTera Type: Fire  \nAdamant Nature  \n- U-turn  \n- Wood Hammer  \n- Grassy Glide  \n- Fake Out  \n\nUrshifu (Urshifu-Rapid-Strike) @ Mystic Water  \nAbility: Unseen Fist  \nLevel: 50  \nEVs: 4 HP / 252 Atk / 252 Spe  \nTera Type: Steel  \nAdamant Nature  \n- Detect  \n- Surging Strikes  \n- Close Combat  \n- Aqua Jet\n",
+   "weight": 2.303,
+   "species": [
+    "Raging Bolt",
+    "Incineroar",
+    "Chien-Pao",
+    "Landorus",
+    "Rillaboom",
+    "Urshifu-Rapid-Strike"
+   ],
+   "sheet_from": "2026 Seville Pokémon VGC Special Championships",
+   "sheet_placement": 11,
+   "stats": {
+    "players": 147,
+    "events": 10,
+    "day2": 0.1633,
+    "cut": 0.0544,
+    "match_wr": 0.5008
+   }
+  },
+  {
+   "label": "#03",
+   "key": "Amoonguss / Incineroar / Porygon2 / Tornadus / Ursaluna / Urshifu-Rapid-Strike",
+   "src": "Tornadus (M) @ Sharp Beak  \nAbility: Prankster  \nLevel: 50  \nEVs: 4 HP / 252 SpA / 252 Spe  \nTera Type: Steel  \nTimid Nature  \n- Protect  \n- Tailwind  \n- Bleakwind Storm  \n- Rain Dance  \n\nAmoonguss @ Sitrus Berry  \nAbility: Regenerator  \nLevel: 50  \nEVs: 236 HP / 196 Def / 76 SpD  \nTera Type: Fairy  \nCalm Nature  \n- Rage Powder  \n- Pollen Puff  \n- Sludge Bomb  \n- Spore  \n\nUrsaluna @ Flame Orb  \nAbility: Guts  \nLevel: 50  \nEVs: 140 HP / 252 Atk / 44 Def / 4 SpA / 68 SpD  \nTera Type: Ghost  \nBrave Nature  \n- Protect  \n- Facade  \n- Headlong Rush  \n- Earthquake  \n\nIncineroar @ Assault Vest  \nAbility: Intimidate  \nLevel: 50  \nEVs: 252 HP / 252 Def / 4 SpD  \nTera Type: Grass  \nImpish Nature  \n- Flare Blitz  \n- Knock Off  \n- Fake Out  \n- U-turn  \n\nPorygon2 @ Eviolite  \nAbility: Download  \nLevel: 50  \nEVs: 252 HP / 28 Def / 44 SpA / 180 SpD  \nTera Type: Flying  \nQuiet Nature  \n- Recover  \n- Trick Room  \n- Ice Beam  \n- Tera Blast  \n\nUrshifu (Urshifu-Rapid-Strike) @ Life Orb  \nAbility: Unseen Fist  \nLevel: 50  \nEVs: 4 HP / 252 Atk / 252 Spe  \nTera Type: Steel  \nAdamant Nature  \n- Close Combat  \n- Surging Strikes  \n- Aqua Jet  \n- Detect\n",
+   "weight": 1.839,
+   "species": [
+    "Tornadus",
+    "Amoonguss",
+    "Ursaluna",
+    "Incineroar",
+    "Porygon2",
+    "Urshifu-Rapid-Strike"
+   ],
+   "sheet_from": "2026 Seville Pokémon VGC Special Championships",
+   "sheet_placement": 89,
+   "stats": {
+    "players": 158,
+    "events": 10,
+    "day2": 0.2405,
+    "cut": 0.0506,
+    "match_wr": 0.5501
+   }
+  },
+  {
+   "label": "#04",
+   "key": "Indeedee-F / Iron Crown / Ogerpon-Hearthflame / Regidrago / Tornadus / Urshifu-Rapid-Strike",
+   "src": "Urshifu (Urshifu-Rapid-Strike) @ Choice Scarf  \nAbility: Unseen Fist  \nLevel: 50  \nEVs: 4 HP / 252 Atk / 252 Spe  \nTera Type: Water  \nAdamant Nature  \n- Surging Strikes  \n- Close Combat  \n- Rock Tomb  \n- U-turn  \n\nIndeedee (Indeedee-F) (F) @ Rocky Helmet  \nAbility: Psychic Surge  \nLevel: 50  \nEVs: 252 HP / 252 Def / 4 SpD  \nTera Type: Fairy  \nBold Nature  \n- Dazzling Gleam  \n- Follow Me  \n- Helping Hand  \n- Trick Room  \n\nIron Crown @ Booster Energy  \nAbility: Quark Drive  \nLevel: 50  \nEVs: 4 HP / 252 SpA / 252 Spe  \nTera Type: Water  \nModest Nature  \n- Expanding Force  \n- Tachyon Cutter  \n- Tera Blast  \n- Protect  \n\nRegidrago @ Life Orb  \nAbility: Dragon's Maw  \nLevel: 50  \nEVs: 252 SpA / 4 SpD / 252 Spe  \nTera Type: Steel  \nModest Nature  \n- Dragon Energy  \n- Draco Meteor  \n- Earth Power  \n- Protect  \n\nOgerpon (Ogerpon-Hearthflame) (F) @ Hearthflame Mask  \nAbility: Mold Breaker  \nLevel: 50  \nEVs: 188 HP / 76 Atk / 52 Def / 4 SpD / 188 Spe  \nTera Type: Fire  \nAdamant Nature  \n- Ivy Cudgel  \n- Wood Hammer  \n- Follow Me  \n- Spiky Shield  \n\nTornadus (M) @ Focus Sash  \nAbility: Prankster  \nLevel: 50  \nEVs: 4 HP / 252 SpA / 252 Spe  \nTera Type: Steel  \nTimid Nature  \n- Bleakwind Storm  \n- Rain Dance  \n- Tailwind  \n- Protect\n",
+   "weight": 1.827,
+   "species": [
+    "Urshifu-Rapid-Strike",
+    "Indeedee-F",
+    "Iron Crown",
+    "Regidrago",
+    "Ogerpon-Hearthflame",
+    "Tornadus"
+   ],
+   "sheet_from": "2026 Seville Pokémon VGC Special Championships",
+   "sheet_placement": 6,
+   "stats": {
+    "players": 157,
+    "events": 10,
+    "day2": 0.1146,
+    "cut": 0.0255,
+    "match_wr": 0.495
+   }
+  },
+  {
+   "label": "#05",
+   "key": "Farigiraf / Flutter Mane / Incineroar / Ogerpon-Hearthflame / Tornadus / Ursaluna",
+   "src": "Tornadus (M) @ Covert Cloak  \nAbility: Prankster  \nLevel: 50  \nEVs: 4 HP / 252 SpA / 252 Spe  \nTera Type: Steel  \nTimid Nature  \n- Bleakwind Storm  \n- Tailwind  \n- Sunny Day  \n- Protect  \n\nOgerpon (Ogerpon-Hearthflame) (F) @ Hearthflame Mask  \nAbility: Mold Breaker  \nLevel: 50  \nEVs: 188 HP / 76 Atk / 52 Def / 4 SpD / 188 Spe  \nTera Type: Fire  \nAdamant Nature  \n- Ivy Cudgel  \n- Wood Hammer  \n- Follow Me  \n- Spiky Shield  \n\nFlutter Mane @ Choice Specs  \nAbility: Protosynthesis  \nLevel: 50  \nEVs: 4 HP / 252 SpA / 252 Spe  \nTera Type: Fairy  \nTimid Nature  \n- Moonblast  \n- Dazzling Gleam  \n- Shadow Ball  \n- Power Gem  \n\nUrsaluna @ Flame Orb  \nAbility: Guts  \nLevel: 50  \nEVs: 140 HP / 252 Atk / 44 Def / 4 SpA / 68 SpD  \nTera Type: Dragon  \nBrave Nature  \n- Facade  \n- Headlong Rush  \n- Earthquake  \n- Protect  \n\nFarigiraf @ Throat Spray  \nAbility: Armor Tail  \nLevel: 50  \nEVs: 204 HP / 164 Def / 4 SpA / 108 SpD / 28 Spe  \nTera Type: Fairy  \nBold Nature  \n- Psychic  \n- Hyper Voice  \n- Trick Room  \n- Protect  \n\nIncineroar @ Assault Vest  \nAbility: Intimidate  \nLevel: 50  \nEVs: 252 HP / 252 Def / 4 SpD  \nTera Type: Grass  \nImpish Nature  \n- Fake Out  \n- Flare Blitz  \n- Knock Off  \n- U-turn\n",
+   "weight": 1.359,
+   "species": [
+    "Tornadus",
+    "Ogerpon-Hearthflame",
+    "Flutter Mane",
+    "Ursaluna",
+    "Farigiraf",
+    "Incineroar"
+   ],
+   "sheet_from": "2026 Seville Pokémon VGC Special Championships",
+   "sheet_placement": 61,
+   "stats": {
+    "players": 79,
+    "events": 10,
+    "day2": 0.2658,
+    "cut": 0.0759,
+    "match_wr": 0.5704
+   }
+  },
+  {
+   "label": "#06",
+   "key": "Amoonguss / Gholdengo / Incineroar / Landorus / Roaring Moon / Urshifu-Rapid-Strike",
+   "src": "Gholdengo @ Choice Specs  \nAbility: Good as Gold  \nLevel: 50  \nEVs: 4 HP / 252 SpA / 252 Spe  \nTera Type: Fairy  \nTimid Nature  \n- Make It Rain  \n- Shadow Ball  \n- Trick  \n- Dazzling Gleam  \n\nRoaring Moon @ Booster Energy  \nAbility: Protosynthesis  \nLevel: 50  \nEVs: 28 HP / 220 Atk / 4 Def / 4 SpD / 252 Spe  \nTera Type: Poison  \nJolly Nature  \n- Breaking Swipe  \n- Knock Off  \n- Tailwind  \n- Protect  \n\nIncineroar @ Rocky Helmet  \nAbility: Intimidate  \nLevel: 50  \nEVs: 252 HP / 252 Def / 4 SpD  \nTera Type: Flying  \nImpish Nature  \n- Flare Blitz  \n- Fake Out  \n- Knock Off  \n- Parting Shot  \n\nUrshifu (Urshifu-Rapid-Strike) @ Mystic Water  \nAbility: Unseen Fist  \nLevel: 50  \nEVs: 4 HP / 252 Atk / 252 Spe  \nTera Type: Fire  \nAdamant Nature  \n- Surging Strikes  \n- Protect  \n- Close Combat  \n- Aqua Jet  \n\nAmoonguss @ Sitrus Berry  \nAbility: Regenerator  \nLevel: 50  \nEVs: 236 HP / 196 Def / 76 SpD  \nTera Type: Water  \nCalm Nature  \n- Spore  \n- Sludge Bomb  \n- Rage Powder  \n- Protect  \n\nLandorus (M) @ Life Orb  \nAbility: Sheer Force  \nLevel: 50  \nEVs: 252 HP / 4 Def / 116 SpA / 132 SpD / 4 Spe  \nTera Type: Steel  \nModest Nature  \n- Earth Power  \n- Sandsear Storm  \n- Sludge Bomb  \n- Protect\n",
+   "weight": 1.278,
+   "species": [
+    "Gholdengo",
+    "Roaring Moon",
+    "Incineroar",
+    "Urshifu-Rapid-Strike",
+    "Amoonguss",
+    "Landorus"
+   ],
+   "sheet_from": "2026 Seville Pokémon VGC Special Championships",
+   "sheet_placement": 10,
+   "stats": {
+    "players": 93,
+    "events": 10,
+    "day2": 0.2258,
+    "cut": 0.043,
+    "match_wr": 0.555
+   }
+  },
+  {
+   "label": "#07",
+   "key": "Gholdengo / Ogerpon-Hearthflame / Regidrago / Rillaboom / Tornadus / Urshifu-Rapid-Strike",
+   "src": "Regidrago @ Life Orb  \nAbility: Dragon's Maw  \nLevel: 50  \nEVs: 252 SpA / 4 SpD / 252 Spe  \nTera Type: Ghost  \nModest Nature  \n- Dragon Energy  \n- Draco Meteor  \n- Earth Power  \n- Protect  \n\nGholdengo @ Choice Specs  \nAbility: Good as Gold  \nLevel: 50  \nEVs: 4 HP / 252 SpA / 252 Spe  \nTera Type: Steel  \nTimid Nature  \n- Make It Rain  \n- Shadow Ball  \n- Trick  \n- Power Gem  \n\nTornadus (M) @ Focus Sash  \nAbility: Prankster  \nLevel: 50  \nEVs: 4 HP / 252 SpA / 252 Spe  \nTera Type: Ghost  \nTimid Nature  \n- Bleakwind Storm  \n- Icy Wind  \n- Tailwind  \n- Protect  \n\nOgerpon (Ogerpon-Hearthflame) (F) @ Hearthflame Mask  \nAbility: Mold Breaker  \nLevel: 50  \nEVs: 188 HP / 76 Atk / 52 Def / 4 SpD / 188 Spe  \nTera Type: Fire  \nAdamant Nature  \n- Ivy Cudgel  \n- Grassy Glide  \n- Follow Me  \n- Spiky Shield  \n\nUrshifu (Urshifu-Rapid-Strike) @ Choice Scarf  \nAbility: Unseen Fist  \nLevel: 50  \nEVs: 4 HP / 252 Atk / 252 Spe  \nTera Type: Water  \nAdamant Nature  \n- Surging Strikes  \n- Close Combat  \n- Aqua Jet  \n- U-turn  \n\nRillaboom @ Assault Vest  \nAbility: Grassy Surge  \nLevel: 50  \nEVs: 252 HP / 36 Atk / 4 Def / 204 SpD / 12 Spe  \nTera Type: Fire  \nAdamant Nature  \n- Wood Hammer  \n- Grassy Glide  \n- High Horsepower  \n- Fake Out\n",
+   "weight": 1.254,
+   "species": [
+    "Regidrago",
+    "Gholdengo",
+    "Tornadus",
+    "Ogerpon-Hearthflame",
+    "Urshifu-Rapid-Strike",
+    "Rillaboom"
+   ],
+   "sheet_from": "2026 Seville Pokémon VGC Special Championships",
+   "sheet_placement": 101,
+   "stats": {
+    "players": 106,
+    "events": 10,
+    "day2": 0.1415,
+    "cut": 0.0094,
+    "match_wr": 0.5093
+   }
+  },
+  {
+   "label": "#08",
+   "key": "Amoonguss / Cresselia / Flutter Mane / Incineroar / Ursaluna / Urshifu-Rapid-Strike",
+   "src": "Incineroar @ Assault Vest  \nAbility: Intimidate  \nLevel: 50  \nEVs: 252 HP / 252 Def / 4 SpD  \nTera Type: Grass  \nImpish Nature  \n- Flare Blitz  \n- Knock Off  \n- U-turn  \n- Fake Out  \n\nUrsaluna @ Flame Orb  \nAbility: Guts  \nLevel: 50  \nEVs: 140 HP / 252 Atk / 44 Def / 4 SpA / 68 SpD  \nTera Type: Ghost  \nBrave Nature  \n- Facade  \n- Headlong Rush  \n- Earthquake  \n- Protect  \n\nCresselia (F) @ Safety Goggles  \nAbility: Levitate  \nLevel: 50  \nEVs: 252 HP / 156 Def / 100 SpD  \nTera Type: Steel  \nBold Nature  \n- Psychic  \n- Icy Wind  \n- Lunar Blessing  \n- Trick Room  \n\nUrshifu (Urshifu-Rapid-Strike) @ Mystic Water  \nAbility: Unseen Fist  \nLevel: 50  \nEVs: 4 HP / 252 Atk / 252 Spe  \nTera Type: Steel  \nAdamant Nature  \n- Detect  \n- Surging Strikes  \n- Close Combat  \n- Aqua Jet  \n\nFlutter Mane @ Choice Specs  \nAbility: Protosynthesis  \nLevel: 50  \nEVs: 4 HP / 252 SpA / 252 Spe  \nTera Type: Fairy  \nTimid Nature  \n- Dazzling Gleam  \n- Moonblast  \n- Shadow Ball  \n- Power Gem  \n\nAmoonguss @ Rocky Helmet  \nAbility: Regenerator  \nLevel: 50  \nEVs: 236 HP / 196 Def / 76 SpD  \nTera Type: Fire  \nCalm Nature  \n- Protect  \n- Spore  \n- Rage Powder  \n- Sludge Bomb\n",
+   "weight": 1.254,
+   "species": [
+    "Incineroar",
+    "Ursaluna",
+    "Cresselia",
+    "Urshifu-Rapid-Strike",
+    "Flutter Mane",
+    "Amoonguss"
+   ],
+   "sheet_from": "2026 Seville Pokémon VGC Special Championships",
+   "sheet_placement": 42,
+   "stats": {
+    "players": 67,
+    "events": 10,
+    "day2": 0.2388,
+    "cut": 0.0896,
+    "match_wr": 0.5704
+   }
+  },
+  {
+   "label": "#09",
+   "key": "Amoonguss / Flutter Mane / Incineroar / Porygon2 / Ursaluna / Urshifu-Rapid-Strike",
+   "src": "Amoonguss @ Rocky Helmet  \nAbility: Regenerator  \nLevel: 50  \nEVs: 236 HP / 196 Def / 76 SpD  \nTera Type: Dark  \nCalm Nature  \n- Protect  \n- Sludge Bomb  \n- Rage Powder  \n- Spore  \n\nPorygon2 @ Eviolite  \nAbility: Download  \nLevel: 50  \nEVs: 252 HP / 28 Def / 44 SpA / 180 SpD  \nTera Type: Flying  \nQuiet Nature  \n- Recover  \n- Trick Room  \n- Tera Blast  \n- Ice Beam  \n\nUrsaluna @ Flame Orb  \nAbility: Guts  \nLevel: 50  \nEVs: 140 HP / 252 Atk / 44 Def / 4 SpA / 68 SpD  \nTera Type: Ghost  \nBrave Nature  \n- Headlong Rush  \n- Facade  \n- Earthquake  \n- Protect  \n\nIncineroar @ Assault Vest  \nAbility: Intimidate  \nLevel: 50  \nEVs: 252 HP / 252 Def / 4 SpD  \nTera Type: Grass  \nImpish Nature  \n- Flare Blitz  \n- Fake Out  \n- U-turn  \n- Knock Off  \n\nFlutter Mane @ Booster Energy  \nAbility: Protosynthesis  \nLevel: 50  \nEVs: 4 HP / 252 SpA / 252 Spe  \nTera Type: Water  \nTimid Nature  \n- Moonblast  \n- Protect  \n- Shadow Ball  \n- Substitute  \n\nUrshifu (Urshifu-Rapid-Strike) @ Splash Plate  \nAbility: Unseen Fist  \nLevel: 50  \nEVs: 4 HP / 252 Atk / 252 Spe  \nTera Type: Water  \nAdamant Nature  \n- Surging Strikes  \n- Aqua Jet  \n- Close Combat  \n- Detect\n",
+   "weight": 0.952,
+   "species": [
+    "Amoonguss",
+    "Porygon2",
+    "Ursaluna",
+    "Incineroar",
+    "Flutter Mane",
+    "Urshifu-Rapid-Strike"
+   ],
+   "sheet_from": "2026 Seville Pokémon VGC Special Championships",
+   "sheet_placement": 112,
+   "stats": {
+    "players": 59,
+    "events": 9,
+    "day2": 0.1695,
+    "cut": 0.0508,
+    "match_wr": 0.5
+   }
+  },
+  {
+   "label": "#10",
+   "key": "Indeedee-F / Iron Crown / Landorus-Therian / Ogerpon-Hearthflame / Tornadus / Urshifu-Rapid-Strike",
+   "src": "Iron Crown @ Booster Energy  \nAbility: Quark Drive  \nLevel: 50  \nEVs: 4 HP / 252 SpA / 252 Spe  \nTera Type: Dragon  \nModest Nature  \n- Protect  \n- Tachyon Cutter  \n- Expanding Force  \n- Calm Mind  \n\nLandorus (Landorus-Therian) (M) @ Choice Band  \nAbility: Intimidate  \nLevel: 50  \nEVs: 252 Atk / 4 SpD / 252 Spe  \nTera Type: Steel  \nJolly Nature  \n- Stomping Tantrum  \n- U-turn  \n- Earthquake  \n- Rock Slide  \n\nIndeedee (Indeedee-F) (F) @ Rocky Helmet  \nAbility: Psychic Surge  \nLevel: 50  \nEVs: 252 HP / 252 Def / 4 SpD  \nTera Type: Fairy  \nBold Nature  \n- Trick Room  \n- Follow Me  \n- Helping Hand  \n- Psychic  \n\nUrshifu (Urshifu-Rapid-Strike) @ Choice Scarf  \nAbility: Unseen Fist  \nLevel: 50  \nEVs: 4 HP / 252 Atk / 252 Spe  \nTera Type: Water  \nAdamant Nature  \n- Surging Strikes  \n- Close Combat  \n- Coaching  \n- U-turn  \n\nTornadus (M) @ Covert Cloak  \nAbility: Prankster  \nLevel: 50  \nEVs: 4 HP / 252 SpA / 252 Spe  \nTera Type: Steel  \nTimid Nature  \n- Bleakwind Storm  \n- Tailwind  \n- Icy Wind  \n- Rain Dance  \n\nOgerpon (Ogerpon-Hearthflame) (F) @ Hearthflame Mask  \nAbility: Mold Breaker  \nLevel: 50  \nEVs: 188 HP / 76 Atk / 52 Def / 4 SpD / 188 Spe  \nTera Type: Fire  \nAdamant Nature  \n- Ivy Cudgel  \n- Wood Hammer  \n- Follow Me  \n- Spiky Shield\n",
+   "weight": 0.875,
+   "species": [
+    "Iron Crown",
+    "Landorus-Therian",
+    "Indeedee-F",
+    "Urshifu-Rapid-Strike",
+    "Tornadus",
+    "Ogerpon-Hearthflame"
+   ],
+   "sheet_from": "2026 Seville Pokémon VGC Special Championships",
+   "sheet_placement": 1,
+   "stats": {
+    "players": 60,
+    "events": 9,
+    "day2": 0.2167,
+    "cut": 0.05,
+    "match_wr": 0.5598
+   }
+  },
+  {
+   "label": "#11",
+   "key": "Amoonguss / Flutter Mane / Incineroar / Tornadus / Ursaluna / Urshifu-Rapid-Strike",
+   "src": "Urshifu (Urshifu-Rapid-Strike) @ Life Orb  \nAbility: Unseen Fist  \nLevel: 50  \nEVs: 4 HP / 252 Atk / 252 Spe  \nTera Type: Ghost  \nAdamant Nature  \n- Detect  \n- Close Combat  \n- Aqua Jet  \n- Surging Strikes  \n\nAmoonguss @ Rocky Helmet  \nAbility: Regenerator  \nLevel: 50  \nEVs: 236 HP / 196 Def / 76 SpD  \nTera Type: Fairy  \nCalm Nature  \n- Spore  \n- Rage Powder  \n- Sludge Bomb  \n- Pollen Puff  \n\nFlutter Mane @ Booster Energy  \nAbility: Protosynthesis  \nLevel: 50  \nEVs: 4 HP / 252 SpA / 252 Spe  \nTera Type: Grass  \nTimid Nature  \n- Protect  \n- Moonblast  \n- Shadow Ball  \n- Icy Wind  \n\nUrsaluna @ Flame Orb  \nAbility: Guts  \nLevel: 50  \nEVs: 140 HP / 252 Atk / 44 Def / 4 SpA / 68 SpD  \nTera Type: Ghost  \nBrave Nature  \n- Protect  \n- Earthquake  \n- Headlong Rush  \n- Facade  \n\nIncineroar @ Assault Vest  \nAbility: Intimidate  \nLevel: 50  \nEVs: 252 HP / 252 Def / 4 SpD  \nTera Type: Grass  \nImpish Nature  \n- Fake Out  \n- U-turn  \n- Knock Off  \n- Flare Blitz  \n\nTornadus (M) @ Sharp Beak  \nAbility: Prankster  \nLevel: 50  \nEVs: 4 HP / 252 SpA / 252 Spe  \nTera Type: Steel  \nTimid Nature  \n- Protect  \n- Bleakwind Storm  \n- Rain Dance  \n- Tailwind\n",
+   "weight": 0.85,
+   "species": [
+    "Urshifu-Rapid-Strike",
+    "Amoonguss",
+    "Flutter Mane",
+    "Ursaluna",
+    "Incineroar",
+    "Tornadus"
+   ],
+   "sheet_from": "2026 Seville Pokémon VGC Special Championships",
+   "sheet_placement": 20,
+   "stats": {
+    "players": 38,
+    "events": 5,
+    "day2": 0.3684,
+    "cut": 0.0789,
+    "match_wr": 0.5697
+   }
+  },
+  {
+   "label": "#12",
+   "key": "Flutter Mane / Indeedee-F / Iron Crown / Ogerpon-Hearthflame / Tornadus / Urshifu-Rapid-Strike",
+   "src": "Ogerpon (Ogerpon-Hearthflame) (F) @ Hearthflame Mask  \nAbility: Mold Breaker  \nLevel: 50  \nEVs: 188 HP / 76 Atk / 52 Def / 4 SpD / 188 Spe  \nTera Type: Fire  \nAdamant Nature  \n- Ivy Cudgel  \n- Wood Hammer  \n- Follow Me  \n- Spiky Shield  \n\nIron Crown @ Booster Energy  \nAbility: Quark Drive  \nLevel: 50  \nEVs: 4 HP / 252 SpA / 252 Spe  \nTera Type: Dragon  \nModest Nature  \n- Tachyon Cutter  \n- Expanding Force  \n- Calm Mind  \n- Protect  \n\nFlutter Mane @ Choice Specs  \nAbility: Protosynthesis  \nLevel: 50  \nEVs: 4 HP / 252 SpA / 252 Spe  \nTera Type: Fairy  \nTimid Nature  \n- Moonblast  \n- Dazzling Gleam  \n- Shadow Ball  \n- Power Gem  \n\nUrshifu (Urshifu-Rapid-Strike) @ Focus Band  \nAbility: Unseen Fist  \nLevel: 50  \nEVs: 4 HP / 252 Atk / 252 Spe  \nTera Type: Stellar  \nAdamant Nature  \n- Surging Strikes  \n- Close Combat  \n- Detect  \n- Taunt  \n\nIndeedee (Indeedee-F) (F) @ Rocky Helmet  \nAbility: Psychic Surge  \nLevel: 50  \nEVs: 252 HP / 252 Def / 4 SpD  \nTera Type: Fairy  \nBold Nature  \n- Follow Me  \n- Helping Hand  \n- Trick Room  \n- Imprison  \n\nTornadus (M) @ Covert Cloak  \nAbility: Prankster  \nLevel: 50  \nEVs: 4 HP / 252 SpA / 252 Spe  \nTera Type: Steel  \nTimid Nature  \n- Bleakwind Storm  \n- Tailwind  \n- Sunny Day  \n- Protect\n",
+   "weight": 0.844,
+   "species": [
+    "Ogerpon-Hearthflame",
+    "Iron Crown",
+    "Flutter Mane",
+    "Urshifu-Rapid-Strike",
+    "Indeedee-F",
+    "Tornadus"
+   ],
+   "sheet_from": "2026 Seville Pokémon VGC Special Championships",
+   "sheet_placement": 36,
+   "stats": {
+    "players": 63,
+    "events": 10,
+    "day2": 0.0952,
+    "cut": 0.0476,
+    "match_wr": 0.536
+   }
+  },
+  {
+   "label": "#13",
+   "key": "Arcanine-Hisui / Flutter Mane / Landorus / Ogerpon-Wellspring / Raging Bolt / Urshifu",
+   "src": "Urshifu @ Focus Sash  \nAbility: Unseen Fist  \nLevel: 50  \nEVs: 4 HP / 252 Atk / 252 Spe  \nTera Type: Dark  \nAdamant Nature  \n- Wicked Blow  \n- Close Combat  \n- Sucker Punch  \n- Detect  \n\nArcanine (Arcanine-Hisui) @ Choice Band  \nAbility: Intimidate  \nLevel: 50  \nEVs: 252 Atk / 4 SpD / 252 Spe  \nTera Type: Ghost  \nJolly Nature  \n- Rock Slide  \n- Flare Blitz  \n- Extreme Speed  \n- Head Smash  \n\nOgerpon (Ogerpon-Wellspring) (F) @ Wellspring Mask  \nAbility: Water Absorb  \nLevel: 50  \nEVs: 252 Atk / 4 SpD / 252 Spe  \nTera Type: Water  \nJolly Nature  \n- Ivy Cudgel  \n- Horn Leech  \n- Follow Me  \n- Spiky Shield  \n\nRaging Bolt @ Assault Vest  \nAbility: Protosynthesis  \nLevel: 50  \nEVs: 196 HP / 28 Def / 252 SpA / 4 SpD / 28 Spe  \nTera Type: Electric  \nModest Nature  \n- Draco Meteor  \n- Thunderbolt  \n- Thunderclap  \n- Electroweb  \n\nFlutter Mane @ Booster Energy  \nAbility: Protosynthesis  \nLevel: 50  \nEVs: 4 HP / 252 SpA / 252 Spe  \nTera Type: Grass  \nTimid Nature  \n- Moonblast  \n- Icy Wind  \n- Thunder Wave  \n- Taunt  \n\nLandorus (M) @ Life Orb  \nAbility: Sheer Force  \nLevel: 50  \nEVs: 252 HP / 4 Def / 116 SpA / 132 SpD / 4 Spe  \nTera Type: Steel  \nModest Nature  \n- Earth Power  \n- Sandsear Storm  \n- Sludge Bomb  \n- Protect\n",
+   "weight": 0.768,
+   "species": [
+    "Urshifu",
+    "Arcanine-Hisui",
+    "Ogerpon-Wellspring",
+    "Raging Bolt",
+    "Flutter Mane",
+    "Landorus"
+   ],
+   "sheet_from": "2026 Seville Pokémon VGC Special Championships",
+   "sheet_placement": 94,
+   "stats": {
+    "players": 62,
+    "events": 10,
+    "day2": 0.2258,
+    "cut": 0.0323,
+    "match_wr": 0.5603
+   }
+  },
+  {
+   "label": "#14",
+   "key": "Amoonguss / Flutter Mane / Incineroar / Landorus / Tornadus / Urshifu-Rapid-Strike",
+   "src": "Flutter Mane @ Booster Energy  \nAbility: Protosynthesis  \nLevel: 50  \nEVs: 4 HP / 252 SpA / 252 Spe  \nTera Type: Fairy  \nTimid Nature  \n- Moonblast  \n- Shadow Ball  \n- Dazzling Gleam  \n- Protect  \n\nIncineroar @ Assault Vest  \nAbility: Intimidate  \nLevel: 50  \nEVs: 252 HP / 252 Def / 4 SpD  \nTera Type: Grass  \nImpish Nature  \n- Flare Blitz  \n- Knock Off  \n- U-turn  \n- Fake Out  \n\nLandorus (M) @ Life Orb  \nAbility: Sheer Force  \nLevel: 50  \nEVs: 252 HP / 4 Def / 116 SpA / 132 SpD / 4 Spe  \nTera Type: Steel  \nModest Nature  \n- Protect  \n- Sandsear Storm  \n- Sludge Bomb  \n- Earth Power  \n\nAmoonguss @ Rocky Helmet  \nAbility: Regenerator  \nLevel: 50  \nEVs: 236 HP / 196 Def / 76 SpD  \nTera Type: Water  \nCalm Nature  \n- Spore  \n- Sludge Bomb  \n- Rage Powder  \n- Protect  \n\nTornadus (M) @ Sharp Beak  \nAbility: Prankster  \nLevel: 50  \nEVs: 4 HP / 252 SpA / 252 Spe  \nTera Type: Steel  \nTimid Nature  \n- Protect  \n- Rain Dance  \n- Bleakwind Storm  \n- Tailwind  \n\nUrshifu (Urshifu-Rapid-Strike) @ Mystic Water  \nAbility: Unseen Fist  \nLevel: 50  \nEVs: 4 HP / 252 Atk / 252 Spe  \nTera Type: Steel  \nAdamant Nature  \n- Surging Strikes  \n- Close Combat  \n- Aqua Jet  \n- Protect\n",
+   "weight": 0.758,
+   "species": [
+    "Flutter Mane",
+    "Incineroar",
+    "Landorus",
+    "Amoonguss",
+    "Tornadus",
+    "Urshifu-Rapid-Strike"
+   ],
+   "sheet_from": "2026 Seville Pokémon VGC Special Championships",
+   "sheet_placement": 213,
+   "stats": {
+    "players": 53,
+    "events": 10,
+    "day2": 0.1698,
+    "cut": 0.0189,
+    "match_wr": 0.4931
+   }
+  },
+  {
+   "label": "#15",
+   "key": "Farigiraf / Flutter Mane / Incineroar / Ogerpon-Cornerstone / Torkoal / Ursaluna",
+   "src": "Ursaluna @ Flame Orb  \nAbility: Guts  \nLevel: 50  \nEVs: 140 HP / 252 Atk / 44 Def / 4 SpA / 68 SpD  \nTera Type: Dragon  \nBrave Nature  \n- Facade  \n- Headlong Rush  \n- Earthquake  \n- Protect  \n\nIncineroar @ Assault Vest  \nAbility: Intimidate  \nLevel: 50  \nEVs: 252 HP / 252 Def / 4 SpD  \nTera Type: Grass  \nImpish Nature  \n- Flare Blitz  \n- Knock Off  \n- U-turn  \n- Fake Out  \n\nFlutter Mane @ Choice Specs  \nAbility: Protosynthesis  \nLevel: 50  \nEVs: 4 HP / 252 SpA / 252 Spe  \nTera Type: Fairy  \nTimid Nature  \n- Moonblast  \n- Shadow Ball  \n- Dazzling Gleam  \n- Protect  \n\nOgerpon (Ogerpon-Cornerstone) (F) @ Cornerstone Mask  \nAbility: Sturdy  \nLevel: 50  \nEVs: 4 HP / 252 Atk / 252 Spe  \nTera Type: Rock  \nJolly Nature  \n- Ivy Cudgel  \n- Power Whip  \n- Follow Me  \n- Spiky Shield  \n\nTorkoal @ Charcoal  \nAbility: Drought  \nLevel: 50  \nEVs: 252 HP / 252 SpA / 4 SpD  \nTera Type: Fire  \nQuiet Nature  \n- Eruption  \n- Heat Wave  \n- Protect  \n- Helping Hand  \n\nFarigiraf @ Sitrus Berry  \nAbility: Armor Tail  \nLevel: 50  \nEVs: 204 HP / 164 Def / 4 SpA / 108 SpD / 28 Spe  \nTera Type: Fairy  \nBold Nature  \n- Psychic  \n- Hyper Voice  \n- Trick Room  \n- Protect\n",
+   "weight": 0.718,
+   "species": [
+    "Ursaluna",
+    "Incineroar",
+    "Flutter Mane",
+    "Ogerpon-Cornerstone",
+    "Torkoal",
+    "Farigiraf"
+   ],
+   "sheet_from": "2026 Seville Pokémon VGC Special Championships",
+   "sheet_placement": 148,
+   "stats": {
+    "players": 58,
+    "events": 8,
+    "day2": 0.1897,
+    "cut": 0.0517,
+    "match_wr": 0.5146
+   }
+  },
+  {
+   "label": "#16",
+   "key": "Amoonguss / Archaludon / Chien-Pao / Flutter Mane / Pelipper / Urshifu-Rapid-Strike",
+   "src": "Urshifu (Urshifu-Rapid-Strike) @ Choice Scarf  \nAbility: Unseen Fist  \nLevel: 50  \nEVs: 4 HP / 252 Atk / 252 Spe  \nTera Type: Grass  \nAdamant Nature  \n- Surging Strikes  \n- Close Combat  \n- Aqua Jet  \n- U-turn  \n\nFlutter Mane @ Booster Energy  \nAbility: Protosynthesis  \nLevel: 50  \nEVs: 4 HP / 252 SpA / 252 Spe  \nTera Type: Fairy  \nTimid Nature  \n- Moonblast  \n- Shadow Ball  \n- Dazzling Gleam  \n- Protect  \n\nArchaludon @ Assault Vest  \nAbility: Stamina  \nLevel: 50  \nEVs: 252 SpA / 4 SpD / 252 Spe  \nTera Type: Grass  \nTimid Nature  \n- Dragon Pulse  \n- Flash Cannon  \n- Electro Shot  \n- Snarl  \n\nPelipper @ Life Orb  \nAbility: Drizzle  \nLevel: 50  \nEVs: 4 HP / 252 SpA / 252 Spe  \nTera Type: Steel  \nModest Nature  \n- Weather Ball  \n- Hurricane  \n- Wide Guard  \n- Protect  \n\nChien-Pao @ Focus Sash  \nAbility: Sword of Ruin  \nLevel: 50  \nEVs: 252 Atk / 4 Def / 252 Spe  \nTera Type: Stellar  \nJolly Nature  \n- Ice Spinner  \n- Throat Chop  \n- Ice Shard  \n- Protect  \n\nAmoonguss @ Rocky Helmet  \nAbility: Regenerator  \nLevel: 50  \nEVs: 236 HP / 196 Def / 76 SpD  \nTera Type: Fairy  \nCalm Nature  \n- Sludge Bomb  \n- Rage Powder  \n- Spore  \n- Pollen Puff\n",
+   "weight": 0.711,
+   "species": [
+    "Urshifu-Rapid-Strike",
+    "Flutter Mane",
+    "Archaludon",
+    "Pelipper",
+    "Chien-Pao",
+    "Amoonguss"
+   ],
+   "sheet_from": "2026 Seville Pokémon VGC Special Championships",
+   "sheet_placement": 49,
+   "stats": {
+    "players": 55,
+    "events": 10,
+    "day2": 0.1636,
+    "cut": 0.0364,
+    "match_wr": 0.5536
+   }
+  },
+  {
+   "label": "#17",
+   "key": "Annihilape / Dragonite / Gholdengo / Maushold / Rillaboom / Ursaluna-Bloodmoon",
+   "src": "Maushold @ Focus Sash  \nAbility: Friend Guard  \nLevel: 50  \nEVs: 252 Atk / 4 SpD / 252 Spe  \nTera Type: Ghost  \nJolly Nature  \n- Beat Up  \n- Super Fang  \n- Follow Me  \n- Protect  \n\nRillaboom @ Meadow Plate  \nAbility: Grassy Surge  \nLevel: 50  \nEVs: 252 HP / 36 Atk / 4 Def / 204 SpD / 12 Spe  \nTera Type: Fire  \nAdamant Nature  \n- Fake Out  \n- Grassy Glide  \n- Wood Hammer  \n- High Horsepower  \n\nAnnihilape @ Sitrus Berry  \nAbility: Defiant  \nLevel: 50  \nEVs: 252 HP / 4 Atk / 252 Spe  \nTera Type: Fire  \nJolly Nature  \n- Rage Fist  \n- Drain Punch  \n- Bulk Up  \n- Protect  \n\nGholdengo @ Life Orb  \nAbility: Good as Gold  \nLevel: 50  \nEVs: 4 HP / 252 SpA / 252 Spe  \nTera Type: Water  \nTimid Nature  \n- Make It Rain  \n- Shadow Ball  \n- Nasty Plot  \n- Protect  \n\nDragonite @ Loaded Dice  \nAbility: Multiscale  \nLevel: 50  \nEVs: 252 HP / 252 Atk / 4 Def  \nTera Type: Fairy  \nAdamant Nature  \n- Scale Shot  \n- Tailwind  \n- Haze  \n- Protect  \n\nUrsaluna (Ursaluna-Bloodmoon) (M) @ Assault Vest  \nAbility: Mind's Eye  \nLevel: 50  \nEVs: 252 HP / 252 SpA / 4 SpD  \nTera Type: Water  \nQuiet Nature  \n- Blood Moon  \n- Earth Power  \n- Hyper Voice  \n- Vacuum Wave\n",
+   "weight": 0.69,
+   "species": [
+    "Maushold",
+    "Rillaboom",
+    "Annihilape",
+    "Gholdengo",
+    "Dragonite",
+    "Ursaluna-Bloodmoon"
+   ],
+   "sheet_from": "2026 Stuttgart Pokémon VGC Regional Championships",
+   "sheet_placement": 29,
+   "stats": {
+    "players": 190,
+    "events": 11,
+    "day2": 0.1842,
+    "cut": 0.0316,
+    "match_wr": 0.5379
+   }
+  },
+  {
+   "label": "#18",
+   "key": "Chi-Yu / Flutter Mane / Glimmora / Ogerpon-Wellspring / Tornadus / Urshifu",
+   "src": "Chi-Yu @ Choice Specs  \nAbility: Beads of Ruin  \nLevel: 50  \nEVs: 4 HP / 252 SpA / 252 Spe  \nTera Type: Ghost  \nModest Nature  \n- Heat Wave  \n- Overheat  \n- Snarl  \n- Dark Pulse  \n\nTornadus (M) @ Covert Cloak  \nAbility: Prankster  \nLevel: 50  \nEVs: 4 HP / 252 SpA / 252 Spe  \nTera Type: Steel  \nTimid Nature  \n- Bleakwind Storm  \n- Tailwind  \n- Taunt  \n- Sunny Day  \n\nUrshifu @ Focus Sash  \nAbility: Unseen Fist  \nLevel: 50  \nEVs: 4 HP / 252 Atk / 252 Spe  \nTera Type: Dark  \nAdamant Nature  \n- Wicked Blow  \n- Detect  \n- Close Combat  \n- Sucker Punch  \n\nGlimmora @ Power Herb  \nAbility: Toxic Debris  \nLevel: 50  \nEVs: 4 HP / 252 SpA / 252 Spe  \nTera Type: Grass  \nTimid Nature  \n- Meteor Beam  \n- Sludge Bomb  \n- Earth Power  \n- Spiky Shield  \n\nOgerpon (Ogerpon-Wellspring) (F) @ Wellspring Mask  \nAbility: Water Absorb  \nLevel: 50  \nEVs: 252 Atk / 4 SpD / 252 Spe  \nTera Type: Water  \nJolly Nature  \n- Ivy Cudgel  \n- Horn Leech  \n- Follow Me  \n- Spiky Shield  \n\nFlutter Mane @ Booster Energy  \nAbility: Protosynthesis  \nLevel: 50  \nEVs: 4 HP / 252 SpA / 252 Spe  \nTera Type: Fairy  \nTimid Nature  \n- Dazzling Gleam  \n- Moonblast  \n- Icy Wind  \n- Protect\n",
+   "weight": 0.663,
+   "species": [
+    "Chi-Yu",
+    "Tornadus",
+    "Urshifu",
+    "Glimmora",
+    "Ogerpon-Wellspring",
+    "Flutter Mane"
+   ],
+   "sheet_from": "2026 Seville Pokémon VGC Special Championships",
+   "sheet_placement": 476,
+   "stats": {
+    "players": 50,
+    "events": 10,
+    "day2": 0.08,
+    "cut": 0.02,
+    "match_wr": 0.4731
+   }
+  },
+  {
+   "label": "#19",
+   "key": "Gholdengo / Incineroar / Ogerpon-Cornerstone / Regidrago / Urshifu-Rapid-Strike / Whimsicott",
+   "src": "Ogerpon (Ogerpon-Cornerstone) (F) @ Cornerstone Mask  \nAbility: Sturdy  \nLevel: 50  \nEVs: 4 HP / 252 Atk / 252 Spe  \nTera Type: Rock  \nJolly Nature  \n- Ivy Cudgel  \n- Power Whip  \n- Follow Me  \n- Spiky Shield  \n\nRegidrago @ Life Orb  \nAbility: Dragon's Maw  \nLevel: 50  \nEVs: 252 SpA / 4 SpD / 252 Spe  \nTera Type: Ghost  \nModest Nature  \n- Draco Meteor  \n- Dragon Energy  \n- Earth Power  \n- Protect  \n\nGholdengo @ Metal Coat  \nAbility: Good as Gold  \nLevel: 50  \nEVs: 4 HP / 252 SpA / 252 Spe  \nTera Type: Dragon  \nTimid Nature  \n- Make It Rain  \n- Shadow Ball  \n- Nasty Plot  \n- Protect  \n\nWhimsicott @ Covert Cloak  \nAbility: Prankster  \nLevel: 50  \nEVs: 4 HP / 252 SpA / 252 Spe  \nTera Type: Fire  \nTimid Nature  \n- Moonblast  \n- Encore  \n- Tailwind  \n- Light Screen  \n\nUrshifu (Urshifu-Rapid-Strike) @ Mystic Water  \nAbility: Unseen Fist  \nLevel: 50  \nEVs: 4 HP / 252 Atk / 252 Spe  \nTera Type: Steel  \nAdamant Nature  \n- Surging Strikes  \n- Close Combat  \n- Aqua Jet  \n- Protect  \n\nIncineroar @ Assault Vest  \nAbility: Intimidate  \nLevel: 50  \nEVs: 252 HP / 252 Def / 4 SpD  \nTera Type: Water  \nImpish Nature  \n- U-turn  \n- Flare Blitz  \n- Knock Off  \n- Fake Out\n",
+   "weight": 0.635,
+   "species": [
+    "Ogerpon-Cornerstone",
+    "Regidrago",
+    "Gholdengo",
+    "Whimsicott",
+    "Urshifu-Rapid-Strike",
+    "Incineroar"
+   ],
+   "sheet_from": "2026 Seville Pokémon VGC Special Championships",
+   "sheet_placement": 26,
+   "stats": {
+    "players": 30,
+    "events": 6,
+    "day2": 0.2,
+    "cut": 0.0667,
+    "match_wr": 0.5483
+   }
+  },
+  {
+   "label": "#20",
+   "key": "Farigiraf / Hatterene / Indeedee-F / Smeargle / Torkoal / Urshifu",
+   "src": "Urshifu @ Choice Band  \nAbility: Unseen Fist  \nLevel: 50  \nEVs: 4 HP / 252 Atk / 252 Spe  \nTera Type: Dark  \nAdamant Nature  \n- Wicked Blow  \n- Close Combat  \n- Sucker Punch  \n- Iron Head  \n\nFarigiraf @ Psychic Seed  \nAbility: Armor Tail  \nLevel: 50  \nEVs: 204 HP / 164 Def / 4 SpA / 108 SpD / 28 Spe  \nTera Type: Fire  \nBold Nature  \n- Psyshock  \n- Helping Hand  \n- Trick Room  \n- Hyper Voice  \n\nIndeedee (Indeedee-F) (F) @ Mental Herb  \nAbility: Psychic Surge  \nLevel: 50  \nEVs: 252 HP / 252 Def / 4 SpD  \nTera Type: Steel  \nBold Nature  \n- Psyshock  \n- Trick Room  \n- Follow Me  \n- Healing Wish  \n\nHatterene (F) @ Life Orb  \nAbility: Magic Bounce  \nLevel: 50  \nEVs: 252 HP / 252 SpA / 4 SpD  \nTera Type: Fire  \nQuiet Nature  \n- Dazzling Gleam  \n- Trick Room  \n- Expanding Force  \n- Protect  \n\nTorkoal @ Choice Specs  \nAbility: Drought  \nLevel: 50  \nEVs: 252 HP / 252 SpA / 4 SpD  \nTera Type: Fire  \nQuiet Nature  \n- Heat Wave  \n- Weather Ball  \n- Eruption  \n- Earth Power  \n\nSmeargle @ Focus Sash  \nAbility: Technician  \nLevel: 50  \nEVs: 252 HP / 4 Atk / 252 Spe  \nTera Type: Grass  \nJolly Nature  \n- Fake Out  \n- Spore  \n- Decorate  \n- Follow Me\n",
+   "weight": 0.612,
+   "species": [
+    "Urshifu",
+    "Farigiraf",
+    "Indeedee-F",
+    "Hatterene",
+    "Torkoal",
+    "Smeargle"
+   ],
+   "sheet_from": "2026 Seville Pokémon VGC Special Championships",
+   "sheet_placement": 587,
+   "stats": {
+    "players": 53,
+    "events": 10,
+    "day2": 0.1321,
+    "cut": 0.0,
+    "match_wr": 0.4988
+   }
+  }
+ ]
+}

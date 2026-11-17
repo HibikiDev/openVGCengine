@@ -402,3 +402,9 @@ details.howto p { margin: 6px 0; }
 html:lang(ja) body { line-break: strict; word-break: auto-phrase; }
 
 .teamhelp { margin: 10px 0 2px; font-size: .88rem; color: var(--stone); }
+
+
+@media (max-width: 700px) { .devmenu .devlist { position: fixed; left: 16px; right: 16px; top: auto; margin-top: 6px; min-width: 0; } }
+
+.six-grid { display: inline-grid; grid-template-columns: repeat(3, auto); column-gap: .6em; row-gap: 2px; vertical-align: top; justify-content: start; }
+.six-grid > span { white-space: nowrap; }

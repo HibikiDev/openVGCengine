@@ -27,10 +27,10 @@
     <p>{{ NA }}: {{ bring(r.opt_a) }}</p>
     <p>{{ NB }}: {{ bring(r.opt_b) }}</p>
   </div>
-  {% for key in ('a', 'b') %}{% set nm = NA if key == 'a' else NB %}{% if r.policy and r.policy[key] %}<p class="small"><span class="tag">{{ _("policy only") }}</span> {{ _("{name} played its raw policy (no search).", name=nm) }}</p>{% endif %}
+  {% for key in ('a', 'b') %}{% set nm = NA if key == 'a' else NB %}{% if r.policy and r.policy[key] %}<p class="small"><span class="tag">{{ _("Fast Mode") }}</span> {{ _("{name} played in Fast Mode (no search).", name=nm) }}</p>{% endif %}
   {% if r.turn2 and r.turn2[key] %}<p class="small"><span class="tag">{{ _("turn 2 set") }}</span> {{ nm }}: {{ r.turn2[key].line|line_label }} <span class="muted">{{ _("(applied in {k} of {n})", k=r.turn2[key].applied, n=r.n) }}</span></p>{% endif %}{% endfor %}
   {% if r.full %}<p><span class="chip t-agree">{{ _("{name} won {k} of {n}", name=NA, k=r.a_won, n=r.n) }}</span> <span class="muted small">({{ (r.a_won / r.n)|pct }})</span></p>{% endif %}
-  {% if not r.src %}{% elif r.cell is not none %}<p class="small">{{ _("In the preview plan's games, {name} wins {pct}", name=NA, pct=r.cell|pct) }} <span class="muted">{{ _("(a quick read: raw self-play, not searched)") }}</span></p>
+  {% if not r.src %}{% elif r.cell is not none %}<p class="small">{{ _("In the preview plan's games, {name} wins {pct}", name=NA, pct=r.cell|pct) }} <span class="muted">{{ _("(a fast read: Fast Mode games, not searched)") }}</span></p>
   {% endif %}
   <div class="grid2">
     {{ searched(NA, r.sides.a) }}

@@ -4,7 +4,7 @@
 <div class="card">
   <h1>{{ _("{a} vs {b}", a=NA, b=NB) }}{% if r.format_name %} <span class="tag">{{ r.format_name }}</span>{% endif %}</h1>
   {% if team_paste is defined and job is defined and job %}<div style="display:flex; gap:18px; flex-wrap:wrap">{{ team_export(team_paste(job.params.a), _("show {name}", name=NA)) }}{{ team_export(team_paste(job.params.b), _("show {name}", name=NB)) }}</div>{% endif %}
-  <p class="muted small">{{ _("The bot on both sides, picking its own fours") if r.deep else _("The bot on both sides, raw policy (no search), picking its own fours") }}{% if r.bo3 %}{{ _("; Bo3 lead changes by the bot's rule") }}{% endif %} · <a href="/playout">{{ _("play out another") }}</a></p>
+  <p class="muted small">{{ _("The bot on both sides, picking its own fours") if r.deep else _("The bot on both sides in Fast Mode (no search), picking its own fours") }}{% if r.bo3 %}{{ _("; Bo3 lead changes by the bot's rule") }}{% endif %} · <a href="/playout">{{ _("play out another") }}</a></p>
   <div class="stats">
     {% if r.bo3 and r.series %}<div><div class="big">{{ r.a_series }}–{{ r.series|length - r.a_series }}</div><div class="small muted">{{ _("series ({a} – {b})", a=NA, b=NB) }}</div></div>{% endif %}
     <div><div class="big">{{ r.a_wins }}–{{ r.games - r.a_wins }}</div><div class="small muted">{{ _("games ({a} – {b})", a=NA, b=NB) }}</div></div>

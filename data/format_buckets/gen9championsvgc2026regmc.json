@@ -1,0 +1,522 @@
+{
+ "format": "gen9championsvgc2026regmc",
+ "name": "Tournament meta Reg M-C",
+ "built": "2026-11-14 16:28",
+ "skipped": [],
+ "source": "munchstats.com (official events' open team sheets)",
+ "half_life_days": 60.0,
+ "coverage": 0.2626,
+ "archetypes": 2538,
+ "events": [
+  {
+   "name": "2027 Gdansk Pokémon VGC Regional Championships",
+   "date": "2026-10-31",
+   "players": 758,
+   "weight": 0.1609
+  },
+  {
+   "name": "2027 Puebla Pokémon VGC Regional Championships",
+   "date": "2026-10-24",
+   "players": 333,
+   "weight": 0.1484
+  },
+  {
+   "name": "2027 Nice Pokémon VGC Regional Championships",
+   "date": "2026-10-17",
+   "players": 860,
+   "weight": 0.1369
+  },
+  {
+   "name": "2027 Louisville Pokémon VGC Regional Championships",
+   "date": "2026-10-09",
+   "players": 1013,
+   "weight": 0.1248
+  },
+  {
+   "name": "2027 Recife Pokémon VGC Regional Championships",
+   "date": "2026-10-03",
+   "players": 222,
+   "weight": 0.1164
+  },
+  {
+   "name": "2027 Brisbane Pokémon VGC Regional Championships",
+   "date": "2026-09-26",
+   "players": 326,
+   "weight": 0.1074
+  },
+  {
+   "name": "2027 Frankfurt Pokémon VGC Regional Championships",
+   "date": "2026-09-26",
+   "players": 1129,
+   "weight": 0.1074
+  },
+  {
+   "name": "2027 Baltimore Pokémon VGC Regional Championships",
+   "date": "2026-09-18",
+   "players": 1078,
+   "weight": 0.0979
+  }
+ ],
+ "teams": [
+  {
+   "label": "#01",
+   "key": "Archaludon / Charizard-Mega-Y / Garchomp-Mega-Z / Grimmsnarl / Pelipper / Venusaur",
+   "src": "Charizard @ Charizardite Y  \nAbility: Blaze  \nLevel: 50  \nEVs: 12 HP / 14 Def / 8 SpA / 32 Spe  \nTimid Nature  \n- Heat Wave  \n- Weather Ball  \n- Hurricane  \n- Protect  \n\nArchaludon @ Leftovers  \nAbility: Stamina  \nLevel: 50  \nEVs: 32 HP / 1 SpA / 29 SpD / 4 Spe  \nCalm Nature  \n- Dragon Pulse  \n- Electro Shot  \n- Flash Cannon  \n- Protect  \n\nGrimmsnarl @ Light Clay  \nAbility: Prankster  \nLevel: 50  \nEVs: 32 HP / 19 Def / 15 SpD  \nSassy Nature  \n- Spirit Break  \n- Reflect  \n- Light Screen  \n- Parting Shot  \n\nGarchomp @ Garchompite Z  \nAbility: Rough Skin  \nLevel: 50  \nEVs: 2 HP / 32 SpA / 32 Spe  \nModest Nature  \n- Draco Meteor  \n- Earth Power  \n- Power Gem  \n- Protect  \n\nVenusaur @ Focus Sash  \nAbility: Chlorophyll  \nLevel: 50  \nEVs: 2 HP / 32 SpA / 32 Spe  \nModest Nature  \n- Leaf Storm  \n- Sludge Bomb  \n- Sleep Powder  \n- Protect  \n\nPelipper @ Sitrus Berry  \nAbility: Drizzle  \nLevel: 50  \nEVs: 31 HP / 2 Def / 32 SpD / 1 Spe  \nBold Nature  \n- Weather Ball  \n- Tailwind  \n- Hurricane  \n- Wide Guard\n",
+   "weight": 2.518,
+   "species": [
+    "Charizard",
+    "Archaludon",
+    "Grimmsnarl",
+    "Garchomp",
+    "Venusaur",
+    "Pelipper"
+   ],
+   "sheet_from": "2027 Gdansk Pokémon VGC Regional Championships",
+   "sheet_placement": 181,
+   "stats": {
+    "players": 122,
+    "events": 7,
+    "day2": 0.1557,
+    "cut": 0.0246,
+    "match_wr": 0.5321
+   }
+  },
+  {
+   "label": "#02",
+   "key": "Arcanine-Hisui / Gholdengo / Primarina / Raichu-Mega-Y / Rillaboom / Staraptor-Mega",
+   "src": "Gholdengo @ Life Orb  \nAbility: Good as Gold  \nLevel: 50  \nEVs: 17 HP / 17 SpA / 32 Spe  \nModest Nature  \n- Make It Rain  \n- Shadow Ball  \n- Nasty Plot  \n- Protect  \n\nPrimarina @ Leftovers  \nAbility: Liquid Voice  \nLevel: 50  \nEVs: 32 HP / 2 Def / 32 SpA  \nModest Nature  \n- Hyper Voice  \n- Moonblast  \n- Calm Mind  \n- Protect  \n\nArcanine-Hisui @ Focus Sash  \nAbility: Rock Head  \nLevel: 50  \nEVs: 2 HP / 32 Atk / 32 Spe  \nAdamant Nature  \n- Flare Blitz  \n- Head Smash  \n- Extreme Speed  \n- Protect  \n\nRillaboom @ Miracle Seed  \nAbility: Grassy Surge  \nLevel: 50  \nEVs: 32 HP / 32 Atk / 2 Spe  \nAdamant Nature  \n- Wood Hammer  \n- Grassy Glide  \n- High Horsepower  \n- Fake Out  \n\nRaichu @ Raichunite Y  \nAbility: Lightning Rod  \nLevel: 50  \nEVs: 20 HP / 21 Def / 25 Spe  \nTimid Nature  \n- Zap Cannon  \n- Protect  \n- Focus Blast  \n- Fake Out  \n\nStaraptor @ Staraptite  \nAbility: Intimidate  \nLevel: 50  \nEVs: 19 HP / 15 Atk / 32 Spe  \nJolly Nature  \n- Brave Bird  \n- Close Combat  \n- Tailwind  \n- Protect\n",
+   "weight": 2.148,
+   "species": [
+    "Gholdengo",
+    "Primarina",
+    "Arcanine-Hisui",
+    "Rillaboom",
+    "Raichu",
+    "Staraptor"
+   ],
+   "sheet_from": "2027 Gdansk Pokémon VGC Regional Championships",
+   "sheet_placement": 12,
+   "stats": {
+    "players": 107,
+    "events": 7,
+    "day2": 0.215,
+    "cut": 0.0467,
+    "match_wr": 0.5449
+   }
+  },
+  {
+   "label": "#03",
+   "key": "Delphox-Mega / Floette-Mega / Incineroar / Kingambit / Sinistcha / Sneasler",
+   "src": "Sinistcha @ Occa Berry  \nAbility: Hospitality  \nLevel: 50  \nEVs: 32 HP / 14 Def / 20 SpD  \nBold Nature  \n- Protect  \n- Matcha Gotcha  \n- Rage Powder  \n- Trick Room  \n\nFloette-Eternal @ Floettite  \nAbility: Flower Veil  \nLevel: 50  \nEVs: 28 HP / 1 Def / 5 SpA / 32 Spe  \nModest Nature  \n- Protect  \n- Moonblast  \n- Dazzling Gleam  \n- Calm Mind  \n\nKingambit @ Life Orb  \nAbility: Defiant  \nLevel: 50  \nEVs: 2 HP / 32 Atk / 32 Spe  \nAdamant Nature  \n- Protect  \n- Kowtow Cleave  \n- Sucker Punch  \n- Swords Dance  \n\nIncineroar @ Sitrus Berry  \nAbility: Intimidate  \nLevel: 50  \nEVs: 32 HP / 14 Def / 20 SpD  \nCareful Nature  \n- Fake Out  \n- Flare Blitz  \n- Snarl  \n- Parting Shot  \n\nSneasler @ Focus Sash  \nAbility: Poison Touch  \nLevel: 50  \nEVs: 2 HP / 32 Atk / 32 Spe  \nJolly Nature  \n- Fake Out  \n- Close Combat  \n- Poison Jab  \n- Quick Guard  \n\nDelphox @ Delphoxite  \nAbility: Blaze  \nLevel: 50  \nEVs: 2 HP / 32 SpA / 32 Spe  \nTimid Nature  \n- Protect  \n- Heat Wave  \n- Psyshock  \n- Nasty Plot\n",
+   "weight": 2.068,
+   "species": [
+    "Sinistcha",
+    "Floette-Eternal",
+    "Kingambit",
+    "Incineroar",
+    "Sneasler",
+    "Delphox"
+   ],
+   "sheet_from": "2027 Gdansk Pokémon VGC Regional Championships",
+   "sheet_placement": 8,
+   "stats": {
+    "players": 100,
+    "events": 8,
+    "day2": 0.25,
+    "cut": 0.05,
+    "match_wr": 0.5451
+   }
+  },
+  {
+   "label": "#04",
+   "key": "Archaludon / Basculegion-F / Golisopod-Mega / Pelipper / Raichu-Mega-X / Sneasler",
+   "src": "Basculegion-F @ Focus Sash  \nAbility: Swift Swim  \nLevel: 50  \nEVs: 2 HP / 32 SpA / 32 Spe  \nModest Nature  \n- Muddy Water  \n- Shadow Ball  \n- Ice Beam  \n- Protect  \n\nSneasler @ Electric Seed  \nAbility: Unburden  \nLevel: 50  \nEVs: 2 HP / 32 Atk / 32 Spe  \nAdamant Nature  \n- Poison Jab  \n- Close Combat  \n- Swords Dance  \n- Protect  \n\nRaichu @ Raichunite X  \nAbility: Lightning Rod  \nLevel: 50  \nEVs: 29 HP / 5 Def / 32 Spe  \nJolly Nature  \n- Volt Tackle  \n- Volt Switch  \n- Fake Out  \n- Feint  \n\nPelipper @ Damp Rock  \nAbility: Drizzle  \nLevel: 50  \nEVs: 31 HP / 2 Def / 32 SpD / 1 Spe  \nBold Nature  \n- Weather Ball  \n- Hurricane  \n- Helping Hand  \n- Wide Guard  \n\nGolisopod @ Golisopite  \nAbility: Emergency Exit  \nLevel: 50  \nEVs: 32 HP / 32 Atk / 2 SpD  \nAdamant Nature  \n- Iron Head  \n- Leech Life  \n- Sucker Punch  \n- Protect  \n\nArchaludon @ Leftovers  \nAbility: Stamina  \nLevel: 50  \nEVs: 32 HP / 1 SpA / 29 SpD / 4 Spe  \nCalm Nature  \n- Dragon Pulse  \n- Electro Shot  \n- Snarl  \n- Protect\n",
+   "weight": 2.042,
+   "species": [
+    "Basculegion-F",
+    "Sneasler",
+    "Raichu",
+    "Pelipper",
+    "Golisopod",
+    "Archaludon"
+   ],
+   "sheet_from": "2027 Gdansk Pokémon VGC Regional Championships",
+   "sheet_placement": 38,
+   "stats": {
+    "players": 73,
+    "events": 4,
+    "day2": 0.2192,
+    "cut": 0.0274,
+    "match_wr": 0.5482
+   }
+  },
+  {
+   "label": "#05",
+   "key": "Arcanine-Hisui / Gholdengo / Raichu-Mega-Y / Rillaboom / Staraptor-Mega / Sylveon",
+   "src": "Rillaboom @ Miracle Seed  \nAbility: Grassy Surge  \nLevel: 50  \nEVs: 32 HP / 32 Atk / 2 Spe  \nAdamant Nature  \n- Wood Hammer  \n- Grassy Glide  \n- U-turn  \n- Fake Out  \n\nGholdengo @ Life Orb  \nAbility: Good as Gold  \nLevel: 50  \nEVs: 7 HP / 27 SpA / 32 Spe  \nTimid Nature  \n- Make It Rain  \n- Shadow Ball  \n- Nasty Plot  \n- Protect  \n\nStaraptor @ Staraptite  \nAbility: Intimidate  \nLevel: 50  \nEVs: 19 HP / 15 Atk / 32 Spe  \nJolly Nature  \n- Close Combat  \n- Brave Bird  \n- Protect  \n- Tailwind  \n\nRaichu @ Raichunite Y  \nAbility: Lightning Rod  \nLevel: 50  \nEVs: 20 HP / 21 Def / 25 Spe  \nTimid Nature  \n- Zap Cannon  \n- Focus Blast  \n- Fake Out  \n- Protect  \n\nSylveon @ Fairy Feather  \nAbility: Pixilate  \nLevel: 50  \nEVs: 9 HP / 22 Def / 20 SpA / 15 Spe  \nModest Nature  \n- Hyper Beam  \n- Detect  \n- Quick Attack  \n- Hyper Voice  \n\nArcanine-Hisui @ Focus Sash  \nAbility: Rock Head  \nLevel: 50  \nEVs: 2 HP / 32 Atk / 32 Spe  \nJolly Nature  \n- Extreme Speed  \n- Flare Blitz  \n- Head Smash  \n- Protect\n",
+   "weight": 2.023,
+   "species": [
+    "Rillaboom",
+    "Gholdengo",
+    "Staraptor",
+    "Raichu",
+    "Sylveon",
+    "Arcanine-Hisui"
+   ],
+   "sheet_from": "2027 Gdansk Pokémon VGC Regional Championships",
+   "sheet_placement": 522,
+   "stats": {
+    "players": 140,
+    "events": 7,
+    "day2": 0.1214,
+    "cut": 0.0143,
+    "match_wr": 0.5128
+   }
+  },
+  {
+   "label": "#06",
+   "key": "Corviknight / Excadrill / Indeedee / Salamence-Mega / Sneasler / Tyranitar-Mega",
+   "src": "Corviknight @ Psychic Seed  \nAbility: Mirror Armor  \nLevel: 50  \nEVs: 32 HP / 18 Atk / 2 Def / 5 SpD / 9 Spe  \nCareful Nature  \n- Body Press  \n- Brave Bird  \n- Bulk Up  \n- Roost  \n\nTyranitar @ Tyranitarite  \nAbility: Sand Stream  \nLevel: 50  \nEVs: 17 HP / 17 Atk / 32 Spe  \nJolly Nature  \n- Rock Slide  \n- Knock Off  \n- Dragon Dance  \n- Protect  \n\nExcadrill @ Focus Sash  \nAbility: Sand Rush  \nLevel: 50  \nEVs: 2 HP / 32 Atk / 32 Spe  \nAdamant Nature  \n- Iron Head  \n- High Horsepower  \n- Rock Slide  \n- Protect  \n\nIndeedee @ Choice Scarf  \nAbility: Psychic Surge  \nLevel: 50  \nEVs: 2 HP / 32 SpA / 32 Spe  \nModest Nature  \n- Expanding Force  \n- Mystical Fire  \n- Trick  \n- Protect  \n\nSalamence @ Salamencite  \nAbility: Intimidate  \nLevel: 50  \nEVs: 2 HP / 32 SpA / 32 Spe  \nTimid Nature  \n- Hyper Voice  \n- Draco Meteor  \n- Tailwind  \n- Protect  \n\nSneasler @ White Herb  \nAbility: Unburden  \nLevel: 50  \nEVs: 2 HP / 32 Atk / 32 Spe  \nAdamant Nature  \n- Close Combat  \n- Dire Claw  \n- Coaching  \n- Protect\n",
+   "weight": 1.778,
+   "species": [
+    "Corviknight",
+    "Tyranitar",
+    "Excadrill",
+    "Indeedee",
+    "Salamence",
+    "Sneasler"
+   ],
+   "sheet_from": "2027 Gdansk Pokémon VGC Regional Championships",
+   "sheet_placement": 169,
+   "stats": {
+    "players": 91,
+    "events": 8,
+    "day2": 0.0989,
+    "cut": 0.044,
+    "match_wr": 0.4973
+   }
+  },
+  {
+   "label": "#07",
+   "key": "Garchomp-Mega-Z / Gholdengo / Incineroar / Raichu-Mega-Y / Rillaboom / Volcarona",
+   "src": "Raichu @ Raichunite Y  \nAbility: Lightning Rod  \nLevel: 50  \nEVs: 20 HP / 21 Def / 25 Spe  \nTimid Nature  \n- Zap Cannon  \n- Encore  \n- Focus Blast  \n- Protect  \n\nRillaboom @ Miracle Seed  \nAbility: Grassy Surge  \nLevel: 50  \nEVs: 32 HP / 32 Atk / 2 Spe  \nAdamant Nature  \n- Grassy Glide  \n- Wood Hammer  \n- Fake Out  \n- High Horsepower  \n\nVolcarona @ Rocky Helmet  \nAbility: Flame Body  \nLevel: 50  \nEVs: 2 HP / 32 SpA / 32 Spe  \nTimid Nature  \n- Overheat  \n- Struggle Bug  \n- Rage Powder  \n- Tailwind  \n\nIncineroar @ Sitrus Berry  \nAbility: Intimidate  \nLevel: 50  \nEVs: 32 HP / 20 Def / 14 SpD  \nImpish Nature  \n- Parting Shot  \n- Fake Out  \n- Flare Blitz  \n- Darkest Lariat  \n\nGholdengo @ Life Orb  \nAbility: Good as Gold  \nLevel: 50  \nEVs: 17 HP / 17 SpA / 32 Spe  \nModest Nature  \n- Protect  \n- Shadow Ball  \n- Nasty Plot  \n- Make It Rain  \n\nGarchomp @ Garchompite Z  \nAbility: Rough Skin  \nLevel: 50  \nEVs: 2 HP / 32 SpA / 32 Spe  \nModest Nature  \n- Dragon Pulse  \n- Earth Power  \n- Power Gem  \n- Protect\n",
+   "weight": 1.729,
+   "species": [
+    "Raichu",
+    "Rillaboom",
+    "Volcarona",
+    "Incineroar",
+    "Gholdengo",
+    "Garchomp"
+   ],
+   "sheet_from": "2027 Gdansk Pokémon VGC Regional Championships",
+   "sheet_placement": 374,
+   "stats": {
+    "players": 71,
+    "events": 6,
+    "day2": 0.0845,
+    "cut": 0.0141,
+    "match_wr": 0.4356
+   }
+  },
+  {
+   "label": "#08",
+   "key": "Aerodactyl-Mega / Charizard-Mega-Y / Farigiraf / Garchomp / Kingambit / Sylveon",
+   "src": "Aerodactyl @ Aerodactylite  \nAbility: Unnerve  \nLevel: 50  \nEVs: 2 HP / 32 Atk / 32 Spe  \nJolly Nature  \n- Rock Slide  \n- Dual Wingbeat  \n- Tailwind  \n- Wide Guard  \n\nGarchomp @ Life Orb  \nAbility: Rough Skin  \nLevel: 50  \nEVs: 2 HP / 32 Atk / 32 Spe  \nAdamant Nature  \n- Dragon Claw  \n- Earthquake  \n- Rock Tomb  \n- Protect  \n\nKingambit @ Focus Sash  \nAbility: Defiant  \nLevel: 50  \nEVs: 2 HP / 32 Atk / 32 Spe  \nAdamant Nature  \n- Iron Head  \n- Kowtow Cleave  \n- Sucker Punch  \n- Low Kick  \n\nFarigiraf @ Sitrus Berry  \nAbility: Armor Tail  \nLevel: 50  \nEVs: 32 HP / 20 Def / 14 SpD  \nBold Nature  \n- Psychic  \n- Thunderbolt  \n- Protect  \n- Trick Room  \n\nSylveon @ Fairy Feather  \nAbility: Pixilate  \nLevel: 50  \nEVs: 9 HP / 22 Def / 20 SpA / 15 Spe  \nModest Nature  \n- Hyper Voice  \n- Hyper Beam  \n- Quick Attack  \n- Protect  \n\nCharizard @ Charizardite Y  \nAbility: Blaze  \nLevel: 50  \nEVs: 2 HP / 32 SpA / 32 Spe  \nModest Nature  \n- Weather Ball  \n- Heat Wave  \n- Solar Beam  \n- Protect\n",
+   "weight": 1.262,
+   "species": [
+    "Aerodactyl",
+    "Garchomp",
+    "Kingambit",
+    "Farigiraf",
+    "Sylveon",
+    "Charizard"
+   ],
+   "sheet_from": "2027 Gdansk Pokémon VGC Regional Championships",
+   "sheet_placement": 30,
+   "stats": {
+    "players": 79,
+    "events": 8,
+    "day2": 0.2911,
+    "cut": 0.038,
+    "match_wr": 0.5865
+   }
+  },
+  {
+   "label": "#09",
+   "key": "Ceruledge / Gholdengo / Milotic / Raichu-Mega-Y / Rillaboom / Staraptor-Mega",
+   "src": "Milotic @ Sitrus Berry  \nAbility: Competitive  \nLevel: 50  \nEVs: 32 HP / 29 Def / 5 SpD  \nCalm Nature  \n- Muddy Water  \n- Ice Beam  \n- Coil  \n- Hypnosis  \n\nGholdengo @ Life Orb  \nAbility: Good as Gold  \nLevel: 50  \nEVs: 17 HP / 17 SpA / 32 Spe  \nModest Nature  \n- Make It Rain  \n- Shadow Ball  \n- Nasty Plot  \n- Protect  \n\nRillaboom @ Miracle Seed  \nAbility: Grassy Surge  \nLevel: 50  \nEVs: 32 HP / 32 Atk / 2 Spe  \nAdamant Nature  \n- Wood Hammer  \n- Grassy Glide  \n- Fake Out  \n- High Horsepower  \n\nCeruledge @ Grassy Seed  \nAbility: Flash Fire  \nLevel: 50  \nEVs: 31 HP / 25 Atk / 10 Def  \nAdamant Nature  \n- Bitter Blade  \n- Shadow Sneak  \n- Swords Dance  \n- Protect  \n\nStaraptor @ Staraptite  \nAbility: Intimidate  \nLevel: 50  \nEVs: 19 HP / 15 Atk / 32 Spe  \nJolly Nature  \n- Close Combat  \n- Brave Bird  \n- Tailwind  \n- Protect  \n\nRaichu @ Raichunite Y  \nAbility: Lightning Rod  \nLevel: 50  \nEVs: 20 HP / 21 Def / 25 Spe  \nTimid Nature  \n- Zap Cannon  \n- Focus Blast  \n- Fake Out  \n- Protect\n",
+   "weight": 1.145,
+   "species": [
+    "Milotic",
+    "Gholdengo",
+    "Rillaboom",
+    "Ceruledge",
+    "Staraptor",
+    "Raichu"
+   ],
+   "sheet_from": "2027 Puebla Pokémon VGC Regional Championships",
+   "sheet_placement": 255,
+   "stats": {
+    "players": 64,
+    "events": 7,
+    "day2": 0.1406,
+    "cut": 0.0156,
+    "match_wr": 0.4962
+   }
+  },
+  {
+   "label": "#10",
+   "key": "Basculegion / Charizard-Mega-Y / Garchomp / Kingambit / Sneasler / Whimsicott",
+   "src": "Charizard @ Charizardite Y  \nAbility: Blaze  \nLevel: 50  \nEVs: 2 HP / 32 SpA / 32 Spe  \nModest Nature  \n- Heat Wave  \n- Solar Beam  \n- Weather Ball  \n- Protect  \n\nSneasler @ White Herb  \nAbility: Unburden  \nLevel: 50  \nEVs: 2 HP / 32 Atk / 32 Spe  \nAdamant Nature  \n- Close Combat  \n- Dire Claw  \n- Rock Tomb  \n- Protect  \n\nKingambit @ Chople Berry  \nAbility: Defiant  \nLevel: 50  \nEVs: 2 HP / 32 Atk / 32 Spe  \nAdamant Nature  \n- Kowtow Cleave  \n- Iron Head  \n- Sucker Punch  \n- Low Kick  \n\nGarchomp @ Life Orb  \nAbility: Rough Skin  \nLevel: 50  \nEVs: 2 HP / 32 Atk / 32 Spe  \nJolly Nature  \n- Earthquake  \n- Dragon Claw  \n- Rock Slide  \n- Protect  \n\nBasculegion @ Mystic Water  \nAbility: Adaptability  \nLevel: 50  \nEVs: 2 HP / 32 Atk / 32 Spe  \nAdamant Nature  \n- Wave Crash  \n- Last Respects  \n- Aqua Jet  \n- Protect  \n\nWhimsicott @ Focus Sash  \nAbility: Prankster  \nLevel: 50  \nEVs: 2 HP / 32 SpA / 32 Spe  \nTimid Nature  \n- Moonblast  \n- Encore  \n- Tailwind  \n- Protect\n",
+   "weight": 1.135,
+   "species": [
+    "Charizard",
+    "Sneasler",
+    "Kingambit",
+    "Garchomp",
+    "Basculegion",
+    "Whimsicott"
+   ],
+   "sheet_from": "2027 Gdansk Pokémon VGC Regional Championships",
+   "sheet_placement": 4,
+   "stats": {
+    "players": 49,
+    "events": 4,
+    "day2": 0.3673,
+    "cut": 0.1224,
+    "match_wr": 0.6062
+   }
+  },
+  {
+   "label": "#11",
+   "key": "Charizard-Mega-Y / Garchomp / Incineroar / Sylveon / Toxapex / Venusaur",
+   "src": "Charizard @ Charizardite Y  \nAbility: Blaze  \nLevel: 50  \nEVs: 12 HP / 14 Def / 8 SpA / 32 Spe  \nTimid Nature  \n- Weather Ball  \n- Heat Wave  \n- Ancient Power  \n- Protect  \n\nIncineroar @ Sitrus Berry  \nAbility: Intimidate  \nLevel: 50  \nEVs: 32 HP / 20 Def / 14 SpD  \nImpish Nature  \n- Fake Out  \n- Darkest Lariat  \n- Flare Blitz  \n- Parting Shot  \n\nGarchomp @ Choice Scarf  \nAbility: Rough Skin  \nLevel: 50  \nEVs: 2 HP / 32 Atk / 32 Spe  \nAdamant Nature  \n- Rock Slide  \n- Stomping Tantrum  \n- Earthquake  \n- Dragon Claw  \n\nToxapex @ Leftovers  \nAbility: Regenerator  \nLevel: 50  \nEVs: 32 HP / 18 Def / 16 SpD  \nBold Nature  \n- Baneful Bunker  \n- Infestation  \n- Wide Guard  \n- Toxic  \n\nSylveon @ Fairy Feather  \nAbility: Pixilate  \nLevel: 50  \nEVs: 9 HP / 22 Def / 20 SpA / 15 Spe  \nModest Nature  \n- Hyper Voice  \n- Yawn  \n- Quick Attack  \n- Detect  \n\nVenusaur @ Life Orb  \nAbility: Chlorophyll  \nLevel: 50  \nEVs: 2 HP / 32 SpA / 32 Spe  \nModest Nature  \n- Leaf Storm  \n- Sludge Bomb  \n- Earth Power  \n- Protect\n",
+   "weight": 1.014,
+   "species": [
+    "Charizard",
+    "Incineroar",
+    "Garchomp",
+    "Toxapex",
+    "Sylveon",
+    "Venusaur"
+   ],
+   "sheet_from": "2027 Gdansk Pokémon VGC Regional Championships",
+   "sheet_placement": 42,
+   "stats": {
+    "players": 51,
+    "events": 7,
+    "day2": 0.3922,
+    "cut": 0.098,
+    "match_wr": 0.6141
+   }
+  },
+  {
+   "label": "#12",
+   "key": "Basculegion / Floette-Mega / Incineroar / Raichu-Mega-Y / Rillaboom / Volcarona",
+   "src": "Rillaboom @ Miracle Seed  \nAbility: Grassy Surge  \nLevel: 50  \nEVs: 32 HP / 32 Atk / 2 Spe  \nAdamant Nature  \n- Fake Out  \n- Wood Hammer  \n- Grassy Glide  \n- U-turn  \n\nFloette-Eternal @ Floettite  \nAbility: Flower Veil  \nLevel: 50  \nEVs: 28 HP / 1 Def / 5 SpA / 32 Spe  \nModest Nature  \n- Protect  \n- Moonblast  \n- Dazzling Gleam  \n- Calm Mind  \n\nVolcarona @ Leftovers  \nAbility: Flame Body  \nLevel: 50  \nEVs: 16 HP / 15 Def / 5 SpA / 30 Spe  \nModest Nature  \n- Protect  \n- Quiver Dance  \n- Flamethrower  \n- Struggle Bug  \n\nBasculegion @ Choice Scarf  \nAbility: Adaptability  \nLevel: 50  \nEVs: 2 HP / 32 Atk / 32 Spe  \nJolly Nature  \n- Flip Turn  \n- Wave Crash  \n- Last Respects  \n- Aqua Jet  \n\nIncineroar @ Sitrus Berry  \nAbility: Intimidate  \nLevel: 50  \nEVs: 32 HP / 14 Def / 20 SpD  \nCareful Nature  \n- Fake Out  \n- Flare Blitz  \n- Throat Chop  \n- Parting Shot  \n\nRaichu @ Raichunite Y  \nAbility: Lightning Rod  \nLevel: 50  \nEVs: 20 HP / 21 Def / 25 Spe  \nTimid Nature  \n- Fake Out  \n- Protect  \n- Zap Cannon  \n- Focus Blast\n",
+   "weight": 1.008,
+   "species": [
+    "Rillaboom",
+    "Floette-Eternal",
+    "Volcarona",
+    "Basculegion",
+    "Incineroar",
+    "Raichu"
+   ],
+   "sheet_from": "2027 Gdansk Pokémon VGC Regional Championships",
+   "sheet_placement": 37,
+   "stats": {
+    "players": 51,
+    "events": 6,
+    "day2": 0.2745,
+    "cut": 0.0196,
+    "match_wr": 0.5481
+   }
+  },
+  {
+   "label": "#13",
+   "key": "Dragonite-Mega / Floette-Mega / Gholdengo / Incineroar / Rillaboom / Sneasler",
+   "src": "Dragonite @ Dragoninite  \nAbility: Inner Focus  \nLevel: 50  \nEVs: 2 HP / 32 SpA / 32 Spe  \nModest Nature  \n- Dragon Pulse  \n- Heat Wave  \n- Tailwind  \n- Protect  \n\nGholdengo @ Life Orb  \nAbility: Good as Gold  \nLevel: 50  \nEVs: 17 HP / 17 SpA / 32 Spe  \nModest Nature  \n- Make It Rain  \n- Shadow Ball  \n- Nasty Plot  \n- Protect  \n\nSneasler @ White Herb  \nAbility: Unburden  \nLevel: 50  \nEVs: 2 HP / 32 Atk / 32 Spe  \nAdamant Nature  \n- Close Combat  \n- Rock Tomb  \n- Dire Claw  \n- Protect  \n\nIncineroar @ Sitrus Berry  \nAbility: Intimidate  \nLevel: 50  \nEVs: 32 HP / 14 Def / 20 SpD  \nCareful Nature  \n- Darkest Lariat  \n- Flare Blitz  \n- Parting Shot  \n- Fake Out  \n\nRillaboom @ Miracle Seed  \nAbility: Grassy Surge  \nLevel: 50  \nEVs: 32 HP / 32 Atk / 2 Spe  \nAdamant Nature  \n- Grassy Glide  \n- Wood Hammer  \n- High Horsepower  \n- Fake Out  \n\nFloette-Eternal @ Floettite  \nAbility: Flower Veil  \nLevel: 50  \nEVs: 28 HP / 1 Def / 5 SpA / 32 Spe  \nModest Nature  \n- Dazzling Gleam  \n- Draining Kiss  \n- Calm Mind  \n- Protect\n",
+   "weight": 0.951,
+   "species": [
+    "Dragonite",
+    "Gholdengo",
+    "Sneasler",
+    "Incineroar",
+    "Rillaboom",
+    "Floette-Eternal"
+   ],
+   "sheet_from": "2027 Gdansk Pokémon VGC Regional Championships",
+   "sheet_placement": 116,
+   "stats": {
+    "players": 55,
+    "events": 7,
+    "day2": 0.1818,
+    "cut": 0.0727,
+    "match_wr": 0.521
+   }
+  },
+  {
+   "label": "#14",
+   "key": "Archaludon / Charizard-Mega-Y / Garchomp / Grimmsnarl / Pelipper / Venusaur",
+   "src": "Venusaur @ Focus Sash  \nAbility: Chlorophyll  \nLevel: 50  \nEVs: 2 HP / 32 SpA / 32 Spe  \nModest Nature  \n- Sludge Bomb  \n- Earth Power  \n- Sleep Powder  \n- Protect  \n\nPelipper @ Sitrus Berry  \nAbility: Drizzle  \nLevel: 50  \nEVs: 2 HP / 32 SpA / 32 Spe  \nCalm Nature  \n- Weather Ball  \n- Hurricane  \n- Tailwind  \n- Protect  \n\nGarchomp @ Choice Scarf  \nAbility: Rough Skin  \nLevel: 50  \nEVs: 2 HP / 32 Atk / 32 Spe  \nAdamant Nature  \n- Bulldoze  \n- Earthquake  \n- Rock Slide  \n- Dragon Claw  \n\nGrimmsnarl @ Light Clay  \nAbility: Prankster  \nLevel: 50  \nEVs: 32 HP / 2 Atk / 16 Def / 16 SpD  \nImpish Nature  \n- Spirit Break  \n- Reflect  \n- Light Screen  \n- Parting Shot  \n\nCharizard @ Charizardite Y  \nAbility: Blaze  \nLevel: 50  \nEVs: 2 HP / 32 SpA / 32 Spe  \nModest Nature  \n- Heat Wave  \n- Weather Ball  \n- Hurricane  \n- Protect  \n\nArchaludon @ Leftovers  \nAbility: Stamina  \nLevel: 50  \nEVs: 32 HP / 5 SpA / 26 SpD / 3 Spe  \nModest Nature  \n- Dragon Pulse  \n- Electro Shot  \n- Snarl  \n- Protect\n",
+   "weight": 0.831,
+   "species": [
+    "Venusaur",
+    "Pelipper",
+    "Garchomp",
+    "Grimmsnarl",
+    "Charizard",
+    "Archaludon"
+   ],
+   "sheet_from": "2027 Gdansk Pokémon VGC Regional Championships",
+   "sheet_placement": 409,
+   "stats": {
+    "players": 41,
+    "events": 6,
+    "day2": 0.0976,
+    "cut": 0.0488,
+    "match_wr": 0.521
+   }
+  },
+  {
+   "label": "#15",
+   "key": "Archaludon / Charizard-Mega-Y / Farigiraf / Golisopod-Mega / Grimmsnarl / Politoed",
+   "src": "Grimmsnarl @ Light Clay  \nAbility: Prankster  \nLevel: 50  \nEVs: 32 HP / 19 Def / 15 SpD  \nCareful Nature  \n- Spirit Break  \n- Reflect  \n- Light Screen  \n- Parting Shot  \n\nFarigiraf @ Sitrus Berry  \nAbility: Armor Tail  \nLevel: 50  \nEVs: 32 HP / 20 Def / 14 SpD  \nBold Nature  \n- Psychic  \n- Roar  \n- Trick Room  \n- Protect  \n\nGolisopod @ Golisopite  \nAbility: Emergency Exit  \nLevel: 50  \nEVs: 32 HP / 32 Atk / 2 SpD  \nAdamant Nature  \n- Leech Life  \n- Drill Run  \n- Iron Head  \n- Protect  \n\nCharizard @ Charizardite Y  \nAbility: Blaze  \nLevel: 50  \nEVs: 12 HP / 14 Def / 8 SpA / 32 Spe  \nTimid Nature  \n- Heat Wave  \n- Weather Ball  \n- Hurricane  \n- Protect  \n\nArchaludon @ Leftovers  \nAbility: Stamina  \nLevel: 50  \nEVs: 32 HP / 1 SpA / 29 SpD / 4 Spe  \nCalm Nature  \n- Electro Shot  \n- Dragon Pulse  \n- Snarl  \n- Protect  \n\nPolitoed @ Mystic Water  \nAbility: Drizzle  \nLevel: 50  \nEVs: 32 HP / 30 SpA / 4 Spe  \nModest Nature  \n- Weather Ball  \n- Muddy Water  \n- Ice Beam  \n- Protect\n",
+   "weight": 0.83,
+   "species": [
+    "Grimmsnarl",
+    "Farigiraf",
+    "Golisopod",
+    "Charizard",
+    "Archaludon",
+    "Politoed"
+   ],
+   "sheet_from": "2027 Gdansk Pokémon VGC Regional Championships",
+   "sheet_placement": 36,
+   "stats": {
+    "players": 52,
+    "events": 6,
+    "day2": 0.1538,
+    "cut": 0.0385,
+    "match_wr": 0.5366
+   }
+  },
+  {
+   "label": "#16",
+   "key": "Arcanine-Hisui / Froslass-Mega / Kingambit / Raichu-Mega-Y / Rillaboom / Sneasler",
+   "src": "Sneasler @ Grassy Seed  \nAbility: Unburden  \nLevel: 50  \nEVs: 2 HP / 32 Atk / 32 Spe  \nAdamant Nature  \n- Close Combat  \n- Dire Claw  \n- Acrobatics  \n- Protect  \n\nRaichu @ Raichunite Y  \nAbility: Lightning Rod  \nLevel: 50  \nEVs: 20 HP / 21 Def / 25 Spe  \nTimid Nature  \n- Zap Cannon  \n- Focus Blast  \n- Fake Out  \n- Protect  \n\nFroslass @ Froslassite  \nAbility: Cursed Body  \nLevel: 50  \nEVs: 15 HP / 8 Def / 9 SpA / 2 SpD / 32 Spe  \nTimid Nature  \n- Blizzard  \n- Shadow Ball  \n- Aurora Veil  \n- Protect  \n\nKingambit @ Life Orb  \nAbility: Defiant  \nLevel: 50  \nEVs: 2 HP / 32 Atk / 32 Spe  \nAdamant Nature  \n- Kowtow Cleave  \n- Sucker Punch  \n- Swords Dance  \n- Protect  \n\nArcanine-Hisui @ Focus Sash  \nAbility: Rock Head  \nLevel: 50  \nEVs: 2 HP / 32 Atk / 32 Spe  \nJolly Nature  \n- Head Smash  \n- Flare Blitz  \n- Extreme Speed  \n- Protect  \n\nRillaboom @ Miracle Seed  \nAbility: Grassy Surge  \nLevel: 50  \nEVs: 32 HP / 32 Atk / 2 Spe  \nAdamant Nature  \n- Wood Hammer  \n- Grassy Glide  \n- High Horsepower  \n- Fake Out\n",
+   "weight": 0.817,
+   "species": [
+    "Sneasler",
+    "Raichu",
+    "Froslass",
+    "Kingambit",
+    "Arcanine-Hisui",
+    "Rillaboom"
+   ],
+   "sheet_from": "2027 Nice Pokémon VGC Regional Championships",
+   "sheet_placement": 309,
+   "stats": {
+    "players": 49,
+    "events": 6,
+    "day2": 0.1837,
+    "cut": 0.0408,
+    "match_wr": 0.5123
+   }
+  },
+  {
+   "label": "#17",
+   "key": "Basculegion / Floette-Mega / Kingambit / Rillaboom / Salamence-Mega / Sneasler",
+   "src": "Rillaboom @ Life Orb  \nAbility: Grassy Surge  \nLevel: 50  \nEVs: 32 HP / 32 Atk / 2 Spe  \nAdamant Nature  \n- Wood Hammer  \n- High Horsepower  \n- Grassy Glide  \n- Fake Out  \n\nBasculegion @ Colbur Berry  \nAbility: Adaptability  \nLevel: 50  \nEVs: 2 HP / 32 Atk / 32 Spe  \nAdamant Nature  \n- Aqua Jet  \n- Wave Crash  \n- Protect  \n- Last Respects  \n\nKingambit @ Chople Berry  \nAbility: Defiant  \nLevel: 50  \nEVs: 2 HP / 32 Atk / 32 Spe  \nAdamant Nature  \n- Kowtow Cleave  \n- Sucker Punch  \n- Protect  \n- Iron Head  \n\nSneasler @ Focus Sash  \nAbility: Poison Touch  \nLevel: 50  \nEVs: 2 HP / 32 Atk / 32 Spe  \nJolly Nature  \n- Close Combat  \n- Dire Claw  \n- Fake Out  \n- Protect  \n\nFloette-Eternal @ Floettite  \nAbility: Flower Veil  \nLevel: 50  \nEVs: 28 HP / 1 Def / 5 SpA / 32 Spe  \nModest Nature  \n- Dazzling Gleam  \n- Protect  \n- Moonblast  \n- Calm Mind  \n\nSalamence @ Salamencite  \nAbility: Intimidate  \nLevel: 50  \nEVs: 2 HP / 32 SpA / 32 Spe  \nModest Nature  \n- Tailwind  \n- Hyper Voice  \n- Protect  \n- Flamethrower\n",
+   "weight": 0.76,
+   "species": [
+    "Rillaboom",
+    "Basculegion",
+    "Kingambit",
+    "Sneasler",
+    "Floette-Eternal",
+    "Salamence"
+   ],
+   "sheet_from": "2027 Gdansk Pokémon VGC Regional Championships",
+   "sheet_placement": 6,
+   "stats": {
+    "players": 32,
+    "events": 6,
+    "day2": 0.3125,
+    "cut": 0.1562,
+    "match_wr": 0.5993
+   }
+  },
+  {
+   "label": "#18",
+   "key": "Arcanine-Hisui / Gholdengo / Raichu-Mega-Y / Rillaboom / Salamence-Mega / Sneasler",
+   "src": "Salamence @ Salamencite  \nAbility: Intimidate  \nLevel: 50  \nEVs: 2 HP / 32 Atk / 32 Spe  \nJolly Nature  \n- Hyper Voice  \n- Tailwind  \n- Draco Meteor  \n- Protect  \n\nRillaboom @ Miracle Seed  \nAbility: Grassy Surge  \nLevel: 50  \nEVs: 32 HP / 32 Atk / 2 Spe  \nAdamant Nature  \n- Wood Hammer  \n- Grassy Glide  \n- High Horsepower  \n- Fake Out  \n\nRaichu @ Raichunite Y  \nAbility: Lightning Rod  \nLevel: 50  \nEVs: 20 HP / 21 Def / 25 Spe  \nTimid Nature  \n- Zap Cannon  \n- Focus Blast  \n- Fake Out  \n- Protect  \n\nSneasler @ Grassy Seed  \nAbility: Unburden  \nLevel: 50  \nEVs: 2 HP / 32 Atk / 32 Spe  \nAdamant Nature  \n- Close Combat  \n- Dire Claw  \n- Rock Tomb  \n- Protect  \n\nGholdengo @ Life Orb  \nAbility: Good as Gold  \nLevel: 50  \nEVs: 7 HP / 27 SpA / 32 Spe  \nTimid Nature  \n- Make It Rain  \n- Shadow Ball  \n- Nasty Plot  \n- Protect  \n\nArcanine-Hisui @ Focus Sash  \nAbility: Rock Head  \nLevel: 50  \nEVs: 2 HP / 32 Atk / 32 Spe  \nJolly Nature  \n- Flare Blitz  \n- Head Smash  \n- Extreme Speed  \n- Protect\n",
+   "weight": 0.74,
+   "species": [
+    "Salamence",
+    "Rillaboom",
+    "Raichu",
+    "Sneasler",
+    "Gholdengo",
+    "Arcanine-Hisui"
+   ],
+   "sheet_from": "2027 Nice Pokémon VGC Regional Championships",
+   "sheet_placement": 341,
+   "stats": {
+    "players": 59,
+    "events": 6,
+    "day2": 0.1017,
+    "cut": 0.0,
+    "match_wr": 0.5209
+   }
+  },
+  {
+   "label": "#19",
+   "key": "Excadrill / Gholdengo / Milotic / Rillaboom / Salamence-Mega / Tyranitar-Mega",
+   "src": "Tyranitar @ Tyranitarite  \nAbility: Sand Stream  \nLevel: 50  \nEVs: 17 HP / 17 Atk / 32 Spe  \nJolly Nature  \n- Rock Slide  \n- Knock Off  \n- Protect  \n- Low Kick  \n\nMilotic @ Sitrus Berry  \nAbility: Competitive  \nLevel: 50  \nEVs: 32 HP / 29 Def / 5 SpD  \nCalm Nature  \n- Scald  \n- Ice Beam  \n- Icy Wind  \n- Protect  \n\nGholdengo @ Life Orb  \nAbility: Good as Gold  \nLevel: 50  \nEVs: 17 HP / 17 SpA / 32 Spe  \nModest Nature  \n- Make It Rain  \n- Shadow Ball  \n- Nasty Plot  \n- Protect  \n\nExcadrill @ Focus Sash  \nAbility: Sand Rush  \nLevel: 50  \nEVs: 2 HP / 32 Atk / 32 Spe  \nAdamant Nature  \n- Protect  \n- Rock Slide  \n- High Horsepower  \n- Iron Head  \n\nSalamence @ Salamencite  \nAbility: Intimidate  \nLevel: 50  \nEVs: 2 HP / 32 SpA / 32 Spe  \nModest Nature  \n- Flamethrower  \n- Hyper Voice  \n- Tailwind  \n- Protect  \n\nRillaboom @ Miracle Seed  \nAbility: Grassy Surge  \nLevel: 50  \nEVs: 32 HP / 32 Atk / 2 Spe  \nAdamant Nature  \n- Grassy Glide  \n- Wood Hammer  \n- Fake Out  \n- High Horsepower\n",
+   "weight": 0.733,
+   "species": [
+    "Tyranitar",
+    "Milotic",
+    "Gholdengo",
+    "Excadrill",
+    "Salamence",
+    "Rillaboom"
+   ],
+   "sheet_from": "2027 Gdansk Pokémon VGC Regional Championships",
+   "sheet_placement": 61,
+   "stats": {
+    "players": 49,
+    "events": 7,
+    "day2": 0.102,
+    "cut": 0.0,
+    "match_wr": 0.4911
+   }
+  },
+  {
+   "label": "#20",
+   "key": "Basculegion / Garchomp-Mega-Z / Incineroar / Raichu-Mega-Y / Rillaboom / Volcarona",
+   "src": "Rillaboom @ Miracle Seed  \nAbility: Grassy Surge  \nLevel: 50  \nEVs: 32 HP / 32 Atk / 2 Spe  \nAdamant Nature  \n- Wood Hammer  \n- Grassy Glide  \n- U-turn  \n- Fake Out  \n\nGarchomp @ Garchompite Z  \nAbility: Rough Skin  \nLevel: 50  \nEVs: 2 HP / 32 SpA / 32 Spe  \nTimid Nature  \n- Draco Meteor  \n- Earth Power  \n- Power Gem  \n- Protect  \n\nVolcarona @ Leftovers  \nAbility: Flame Body  \nLevel: 50  \nEVs: 16 HP / 15 Def / 5 SpA / 30 Spe  \nModest Nature  \n- Heat Wave  \n- Giga Drain  \n- Quiver Dance  \n- Protect  \n\nIncineroar @ Sitrus Berry  \nAbility: Intimidate  \nLevel: 50  \nEVs: 32 HP / 14 Def / 20 SpD  \nCareful Nature  \n- Flare Blitz  \n- Snarl  \n- Parting Shot  \n- Fake Out  \n\nRaichu @ Raichunite Y  \nAbility: Lightning Rod  \nLevel: 50  \nEVs: 20 HP / 21 Def / 25 Spe  \nTimid Nature  \n- Zap Cannon  \n- Focus Blast  \n- Encore  \n- Protect  \n\nBasculegion @ Choice Scarf  \nAbility: Adaptability  \nLevel: 50  \nEVs: 2 HP / 32 Atk / 32 Spe  \nJolly Nature  \n- Wave Crash  \n- Last Respects  \n- Aqua Jet  \n- Flip Turn\n",
+   "weight": 0.729,
+   "species": [
+    "Rillaboom",
+    "Garchomp",
+    "Volcarona",
+    "Incineroar",
+    "Raichu",
+    "Basculegion"
+   ],
+   "sheet_from": "2027 Gdansk Pokémon VGC Regional Championships",
+   "sheet_placement": 98,
+   "stats": {
+    "players": 47,
+    "events": 5,
+    "day2": 0.1915,
+    "cut": 0.0,
+    "match_wr": 0.5236
+   }
+  }
+ ]
+}

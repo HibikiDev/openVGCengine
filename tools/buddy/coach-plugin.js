@@ -73,7 +73,7 @@ function panel(d) {
 	} else if (d.best) {
 		body = `<div>${t('Suggested:')} <strong>${esc(d.best)}</strong> <small>(${d.votes === d.n ? (d.n === 2 ? t('both searches agree') : t('all {n} searches agree', {n: d.n})) : t('the top line in {k} of {n} searches', {k: d.votes, n: d.n})})</small></div>`;
 	} else {
-		body = `<div><small>${t("No search this turn; the model's quick read:")}</small></div>` + d.slots.map(sl => `<div><strong>${esc(sl.mon)}</strong>: ` +
+		body = `<div><small>${t("No search this turn; the model's fast read:")}</small></div>` + d.slots.map(sl => `<div><strong>${esc(sl.mon)}</strong>: ` +
 			sl.top.map(([l, p]) => `${esc(l)} <small>${pct(p)}</small>`).join(' · ') + '</div>').join('');
 	}
 

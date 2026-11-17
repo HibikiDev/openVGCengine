@@ -80,7 +80,9 @@ def private_route(path: str) -> bool:
 
 WAIT: dict[str, str] = {}
 FAST_FACTOR = 80
-LIMITS = {"search_games": 128, "search_total": 1024, "brings_games": 512, "preview_games": 256, "preview_k": 8,"validate_games": 20000, "sixth_games": 10000, "sixth_candidates": 16, "sixth_field_top": 12, "sixth_robust_top": 8, "h2h_games": 20000, "h2h_deep_games": 4000, "h2h_examples": 5, "turn1_n": 24, "playout_games": 10, "playout_series": 5}
+LIMITS = {"search_games": 128, "search_total": 1024, "brings_games": 512, "preview_games": 256, "preview_k": 8,"validate_games": 20000, "sixth_games": 10000, "sixth_candidates": 16, "sixth_field_top": 12, "sixth_robust_top": 8, "h2h_games": 20000, "h2h_deep_games": 4000, "h2h_examples": 5, "turn1_n": 24, "playout_games": 10, "playout_series": 5,
+          "tour_players": 4096, "tour_search_players": 256,
+          "tour_events": 50, "tour_search_events": 3}
 
 
 
@@ -93,7 +95,12 @@ class Jobs:
 
 
     def __init__(self, device: str):
+        from vgc_trainer import gpu_lock
         self.device = device
+
+
+        gpu_lock.configure(device)
+        self.crawl_device = "cpu" if device == "mps" else device
         self.jobs: dict[str, dict] = {}
         self.q: queue.Queue[str] = queue.Queue()
         self._agents: dict[str, object] = {}
@@ -116,8 +123,10 @@ class Jobs:
                 gc.collect()
                 try:
                     import torch
+                    from vgc_trainer import gpu_lock
                     from vgc_trainer.amp import free_memory
-                    free_memory()
+                    with gpu_lock.section():
+                        free_memory()
                 except Exception:
                     pass
                 print(f"{time.strftime('%H:%M:%S')} suite lock on: models dropped, GPU cache freed", flush=True)
@@ -201,7 +210,7 @@ class Jobs:
                 fld = (j.get("params") or {}).get("field", "")
                 fld = _i18n.t("bucket {name}", name=fld[7:]) if fld.startswith("bucket:") else _i18n.t("Current Metagame") if fld == "meta" \
                     else _i18n.t(fld)
-                mode = _i18n.t("Search Mode {n} a team", n=res['search']['games_per_team']) if res.get("search") else _i18n.t("quick")
+                mode = _i18n.t("Search Mode {n} a team", n=res['search']['games_per_team']) if res.get("search") else _i18n.t("Fast Mode")
                 if res.get("sweep"):
                     best = (res.get("rows") or [{}])[0]
                     summary = f"{fld} · {mode} · " + _i18n.t("{kind}: best {label} {pct}", kind=_i18n.t("slot") if res.get('slot') else _i18n.t("sixth"),
@@ -239,7 +248,9 @@ class Jobs:
             sheets_open = _sheets_open(job["params"])
             token = SHEETS_OPEN.set(sheets_open)
             try:
-                job["result"] = getattr(self, f"_run_{job['tool']}")(job["params"])
+                from vgc_trainer import gpu_lock
+                with gpu_lock.section():
+                    job["result"] = getattr(self, f"_run_{job['tool']}")(job["params"])
                 if sheets_open and isinstance(job["result"], dict) and job["result"].get("format_name"):
                     job["result"]["format_name"] += " · open team sheets"
                 job["status"] = "error" if "error" in job["result"] else "done"
@@ -453,8 +464,11 @@ class Jobs:
                 if o.get("brings"):
                     b = checked_brings(sheet, o["id"], o["brings"])
                     g1_brings[o["id"]] = [int(i) for i in b["mine"][b[g1]["row"]]["bring"]]
-        if len(fld) > buckets.MAX_TEAMS:
-            raise BadInput(_i18n.t("At most {max_teams} teams (this field has {n}).", max_teams=buckets.MAX_TEAMS, n=len(fld)))
+        fld, _, picked = _pick_field(params, field if dd is None else "", fld, None)
+        if picked:
+            skipped.append(picked)
+        if len(fld) > buckets.FIELD_MAX:
+            raise BadInput(_i18n.t("At most {max_teams} teams (this field has {n}).", max_teams=buckets.FIELD_MAX, n=len(fld)))
         n = _int(params, "series", 2, 3)
         deep = params.get("raw") != "1"
         ckpt, mine = newest_checkpoint(), _ready(team, fmt)
@@ -497,6 +511,124 @@ class Jobs:
                 "g1": g1 if sheet else "own", "sheet": sheet or None,
                 "series_won": sum(t["won"] for t in teams), "series_played": sum(len(t["series"]) for t in teams),
                 "ids": {"a": "your team", "b": "the field team"}, "format": fmt, "format_name": get_format(fmt).short}
+
+    def _run_tournament(self, params: dict) -> dict:
+
+
+
+
+        import torch
+        from vgc_suite.core import buckets
+        from vgc_suite.core.models import newest_checkpoint
+        from vgc_suite.core.teams import legal
+        from vgc_suite.core.tournament import Pool, SelfPlayRunner, Tournament
+        from vgc_suite.core.validator import _ready
+        from vgc_suite.formats import engine, get as get_format
+        name = params.get("bucket", "")
+        if name not in buckets.names():
+            raise BadInput(_i18n.t("unknown field"))
+        fmt = buckets.format_of(name)
+        deep = params.get("mode") == "search"
+
+
+
+        players = _int(params, "players", 64 if deep else 512, LIMITS["tour_search_players" if deep else "tour_players"])
+        events = _int(params, "events", 1, LIMITS["tour_search_events" if deep else "tour_events"])
+        seed = _int(params, "seed", int(time.time()) % 100000, 10**9)
+
+        drop = {"0": None, "3": 3, "4": 4}.get(str(params.get("drop", "")), 3 if deep else 4)
+        if players < 4:
+            raise BadInput(_i18n.t("At least 4 players (the smallest official event)."))
+        labels, teams, weights, skipped = [], [], [], []
+        for label, sets, w in buckets.teams(name):
+            try:
+                legal(sets, fmt)
+                teams.append(_ready(sets, fmt))
+            except ValueError as e:
+                skipped.append(f"{label}: {e}")
+                continue
+            labels.append(label)
+            weights.append(w)
+        if not teams:
+            raise BadInput(_i18n.t("No team of this bucket can be played."))
+        ckpt = newest_checkpoint()
+        where = {"label": "", "k": 0, "total": 1, "e": 0}
+
+        def round_prog(label, k, total):
+            where.update(label=label, k=k, total=total)
+
+        def series_prog(label, done, m, _elapsed):
+            ev = _i18n.t("Event {k} of {n}", k=where["e"] + 1, n=events) + " · " if events > 1 else ""
+            self._progress(ev + _i18n.t("{round} ({k} of {n}) · series decided: {done} of {m}", round=_tour_round(label), k=where["k"],
+                                        n=where["total"], done=done, m=m),
+                           where["e"] * where["total"] + where["k"] - 1 + done / max(m, 1), events * where["total"], "rounds")
+        runner = SelfPlayRunner(teams, ckpt, torch.device(self.device), seed=seed, fmt=engine(fmt), progress=series_prog, deep=deep)
+        agg: dict[int, dict] = {}
+        event_list: list[dict] = []
+        ROUNDS_KEPT = 5
+        pool = Pool(len(teams))
+        for e in range(events):
+            where["e"] = e
+            t = Tournament(weights, players=players, seed=seed + e, drop_losses=drop)
+            t.run(runner, progress=round_prog)
+            got = t.report(labels)
+            pool.add(t)
+            if e == 0:
+                rep = dict(got)
+            if e >= ROUNDS_KEPT:
+                got["rounds"] = []
+            event_list.append(got)
+            for row in got["teams"]:
+                a = agg.setdefault(row["team"], {"team": row["team"], "label": row["label"], "players": 0, "phase2": 0, "cut": 0,
+                                                 "titles": 0, "finals": 0, "sw": 0, "sl": 0})
+                a["players"] += row["players"]
+                a["phase2"] += row["phase2"]
+                a["cut"] += row["cut"]
+            for x in got["top_cut"]:
+                agg[x["team"]]["finals"] += x["finish"] in (1, 2)
+            if got["winner"]:
+                agg[got["winner"]["team"]]["titles"] += 1
+            for pl in t.players:
+                agg[pl.team]["sw"] += pl.wins - pl.byes
+                agg[pl.team]["sl"] += pl.losses
+        for a in agg.values():
+            a["swiss_wr"] = round(a["sw"] / (a["sw"] + a["sl"]), 4) if a["sw"] + a["sl"] else None
+        rep["events"] = events
+        rep["pooled"] = sorted(agg.values(), key=lambda a: -a["players"])
+        rep["pool"] = pool.report(labels)
+        rep["event_list"] = event_list
+        rep.update(labels=labels, species=[[s["species"] for s in x] for x in teams], skipped=skipped, bucket=name, seed=seed,
+                   mode="search" if deep else "quick", model=ckpt.name, games=runner.games, format=fmt, format_name=get_format(fmt).short)
+        return rep
+
+    def _run_spreads(self, params: dict) -> dict:
+
+
+
+        from vgc_suite.core import buckets, spreadopt
+        from vgc_suite.core.validator import field_weights, load_field
+        from vgc_suite.formats import get as get_format, tool_format
+        try:
+            fmt = tool_format(params.get("format"))
+        except ValueError as e:
+            raise BadInput(str(e)) from None
+        team = _read(_team_src(params["team"]), fmt, "Your team")
+        field = params.get("field", "meta")
+        if field != "meta" and not (field.startswith("bucket:") and field[7:] in buckets.names()):
+            raise BadInput(_i18n.t("unknown field"))
+        try:
+            fld = load_field(field, fmt)
+        except ValueError as e:
+            raise BadInput(str(e)) from None
+        weights = field_weights(field)
+        fld, weights, picked = _pick_field(params, field, fld, weights)
+
+        def prog(k, n, species):
+            self._progress(_i18n.t("Calculating {species} ({k} of {n})", species=species, k=k + 1, n=n), k, n, "mons")
+        rep = spreadopt.tune_team(team, fld, weights, fmt, log=lambda *_: None, progress=prog)
+        rep.update(field=field, field_label=field[7:] if field.startswith("bucket:") else _i18n.t("Current Metagame"), picked=picked,
+                   format_name=get_format(fmt).short, species=[s["species"] for s in team])
+        return rep
 
     def _run_playout(self, params: dict) -> dict:
 
@@ -615,8 +747,11 @@ class Jobs:
             raise BadInput(_i18n.t("Five Pokémon: find the sixth under Team Lab → Change a slot."))
         if slot_lab and len(team) == 6 and not (params.get("replace") or "").strip():
             raise BadInput(_i18n.t("Name the Pokémon to replace - or give five to find a sixth."))
-        if len(fld) > buckets.MAX_TEAMS:
-            raise BadInput(_i18n.t("Team Lab plays at most {max_teams} teams, and this field has {n}: pick a bucket (the Buckets page makes one).", max_teams=buckets.MAX_TEAMS, n=len(fld)))
+        fld, weights, picked = _pick_field(params, field, fld, weights)
+        if picked:
+            legal_notes.append(picked)
+        if len(fld) > buckets.FIELD_MAX:
+            raise BadInput(_i18n.t("Team Lab plays at most {max_teams} teams, and this field has {n}: pick a bucket (the Buckets page makes one).", max_teams=buckets.FIELD_MAX, n=len(fld)))
         if deep and (len(team) != 6 or slot_lab):
             raise BadInput(_i18n.t("Deep Mode is for a full team of six in the Deep Dive."))
         if deep and not search_games:
@@ -725,7 +860,7 @@ class Jobs:
         if not cells:
             return {"dd": dd["id"], "opp": opp, "species": row["species"], "team": dd["result"]["team"]["species"], "games": 0,
                     "cells": [], "both_adapt": None, "model": dd["result"].get("model"), "gaps": gaps,
-                    "note": _i18n.t("Nothing left to search: every cell the quick references rest on is searched.")}
+                    "note": _i18n.t("Nothing left to search: every cell the fast references rest on is searched.")}
         games = _int(params, "games", 64, 128)
         agent = self._agent()[0]
         vals = play_cells(agent, mine, theirs, [(b["mine"][i]["bring"], b["theirs"][j]["bring"]) for i, j in cells], games,
@@ -1261,6 +1396,30 @@ def dd_team_paste(job: dict | None, opp: str) -> str | None:
     return team_paste(pair[1]) if pair else None
 
 
+def _pick_field(params: dict, field: str, fld: list, weights: list[float] | None) -> tuple[list, list[float] | None, str | None]:
+
+
+
+    from vgc_suite.core.buckets import FIELD_MAX
+    if not field.startswith("bucket:"):
+        return fld, weights, None
+    raw = [x for x in (params.get("pick") or "").split(",") if x.strip().isdigit()]
+    note = None
+    if raw:
+        idx = sorted({int(x) for x in raw if int(x) < len(fld)})
+        if not idx:
+            raise BadInput(_i18n.t("Tick at least one team of the bucket."))
+        if len(idx) < len(fld):
+            note = _i18n.t("{k} of the bucket's {n} teams, as ticked.", k=len(idx), n=len(fld))
+    elif len(fld) > FIELD_MAX:
+        w = weights or [1.0] * len(fld)
+        idx = sorted(sorted(range(len(fld)), key=lambda i: (-w[i], i))[:FIELD_MAX])
+        note = _i18n.t("The bucket has {n} teams: its {k} heaviest played (tick others on the form).", n=len(fld), k=FIELD_MAX)
+    else:
+        return fld, weights, None
+    return [fld[i] for i in idx], ([weights[i] for i in idx] if weights else None), note
+
+
 def _with_notes(res: dict, notes: list[str]) -> dict:
 
     if notes and isinstance(res, dict) and "error" not in res:
@@ -1312,20 +1471,46 @@ def _playout_brings(job: dict | None, opp: str, cell_row: str = "", cell_col: st
             **{f"b{k + 1}": str(i) for k, i in enumerate(theirs)}}
 
 
+
+
+TEAM_PARAMS = ("mine", "theirs", "a", "b", "team", "reference", "paste_p1", "paste_p2")
+
+
+def _paste_links(params: dict) -> dict:
+
+
+    from vgc_suite.core.buckets import PASTE_RE
+    for k in TEAM_PARAMS:
+        m = PASTE_RE.fullmatch((params.get(k) or "").strip())
+        if not m:
+            continue
+        try:
+            from vgc_suite.buddy import _fetch_paste
+            text = _fetch_paste(m.group(1)).replace("\r", "").strip()
+        except Exception:
+            continue
+        if "\n" in text:
+            params[k] = text + "\n"
+    return params
+
+
 def _team_src(text: str) -> str:
     text = text.strip()
     if "\n" in text:
         return text
+    if re.match(r"https?://", text):
+        from vgc_suite.core.buckets import PASTE_RE
+        raise BadInput(_i18n.t("That pokepast.es link couldn't be read (is this PC online, and is the paste still there?). Paste the team's export instead.")
+                       if PASTE_RE.fullmatch(text) else _i18n.t("Only pokepast.es links can be read. Paste the team's Showdown export instead."))
     if not re.fullmatch(r"[A-Za-z0-9][A-Za-z0-9_-]{0,31}", text) or Path(text).exists():
-        raise BadInput(_i18n.t("Paste a Showdown team export, or give a team id from the library (e.g. BR-111).") if _has_library()
-                       else _i18n.t("Paste a Showdown team export."))
+        raise BadInput(_i18n.t("Paste a Showdown team export or a pokepast.es link."))
     return text
 
 
 
 TEAM_FIELDS = {"preview": [("A", "mine"), ("B", "theirs")], "h2h": [("A", "a"), ("B", "b")], "playout": [("A", "a"), ("B", "b")],
                "validate": [("team", "team"), ("reference", "reference")], "fieldplay": [("team", "team")],
-               "analyze": [("P1", "paste_p1"), ("P2", "paste_p2")]}
+               "analyze": [("P1", "paste_p1"), ("P2", "paste_p2")], "spreads": [("team", "team")]}
 SWAP = {"preview": [("mine", "theirs"), ("name_a", "name_b")], "h2h": [("a", "b")],
         "playout": [("a", "b"), ("name_a", "name_b"), ("a1", "b1"), ("a2", "b2"), ("a3", "b3"), ("a4", "b4")]}
 _SPECIES: dict[str, list[str]] = {}
@@ -1339,7 +1524,14 @@ def team_species(text: str) -> list[str]:
         return []
     if text not in _SPECIES:
         sp = []
-        if "\n" in text:
+        if "\n" in text and _i18n.is_japanese(text):
+
+
+            try:
+                sp = [x["species"] for x in _i18n.parse_ja(text)]
+            except BaseException:
+                sp = []
+        elif "\n" in text:
             for block in re.split(r"\n\s*\n", text.replace("\r", "")):
                 line = block.strip().split("\n")[0] if block.strip() else ""
                 head = line.split("@")[0].strip()
@@ -1743,7 +1935,7 @@ def _tpl_t(text, **slots):
 
 ENV.globals["_"] = _tpl_t
 
-EXTRA_TITLES = {"muselfplay": "Matchup self-play", "mxcheck": "Matrix checked with search", "mxsearch": "Matchup searched", "turn1": "Turn-1 lab"}
+EXTRA_TITLES = {"muselfplay": "Matchup self-play", "mxcheck": "Matrix checked with search", "mxsearch": "Matchup searched", "turn1": "Turn-1 lab", "tournament": "Fictional tournament", "spreads": "Tune spreads"}
 ENV.globals["tool_title"] = lambda tool: _i18n.t((TOOLS.get(tool) or (EXTRA_TITLES.get(tool, "Turn-1 lab"),))[0])
 ENV.globals["lang"] = _i18n.language
 ENV.globals["languages"] = _i18n.LANGUAGES
@@ -1754,6 +1946,16 @@ def _names(xs, sep=", "):
 
 
 ENV.filters["names"] = _names
+
+
+def _six(xs):
+
+
+    from markupsafe import Markup, escape
+    return Markup('<span class="six-grid">' + "".join(f"<span>{escape(_names([x]))}</span>" for x in xs or []) + "</span>")
+
+
+ENV.filters["six"] = _six
 ENV.filters["dex"] = lambda v, kind: _i18n.dex(kind, v) if isinstance(v, str) else v
 
 
@@ -1796,6 +1998,47 @@ def _bucket_format(name: str) -> str:
 
 
 ENV.globals["bucket_format"] = _bucket_format
+
+
+def _bucket_backup(name: str) -> str:
+
+
+    from vgc_suite.core import buckets
+    try:
+        return buckets.backup_text(name)
+    except Exception:
+        return ""
+
+
+ENV.globals["bucket_backup"] = _bucket_backup
+
+
+def _bucket_exports(name: str) -> list[str]:
+
+    from vgc_suite.core import buckets
+    try:
+        return buckets.team_exports(name)
+    except Exception:
+        return []
+
+
+ENV.globals["bucket_exports"] = _bucket_exports
+from vgc_suite.core.tournament import STRUCTURE as _TOUR_STRUCTURE
+ENV.globals["tour_structure"] = _TOUR_STRUCTURE
+
+
+def _tour_round(label: str) -> str:
+
+
+    m = re.fullmatch(r"(Swiss round|Top) (\d+)", label or "")
+    if m:
+        return _i18n.t("Swiss round {n}", n=m.group(2)) if m.group(1) == "Swiss round" else _i18n.t("Top {n}", n=m.group(2))
+    return {"Semifinals": _i18n.t("Semifinals"), "Final": _i18n.t("Final")}.get(label, label)
+
+
+ENV.filters["tour_round"] = _tour_round
+from vgc_suite.core.buckets import FIELD_MAX as _FIELD_MAX
+ENV.globals["field_max"] = _FIELD_MAX
 
 SWITCH_MIN_GAIN = 0.10
 
@@ -2177,13 +2420,6 @@ def _bucket_names() -> list[str]:
         return []
 
 
-def _has_library() -> bool:
-
-
-    from vgc_trainer.showdown.teams import TEAM_FILES
-    return any(f.exists() for f in TEAM_FILES)
-
-
 def _has_meta_field() -> bool:
 
     from vgc_suite.core.validator import META_FIELD
@@ -2191,8 +2427,9 @@ def _has_meta_field() -> bool:
 
 
 ENV.globals.update(in_app=lambda: OPEN_WINDOW is not None, browser_mode=lambda: BROWSER_MODE, private=PRIVATE, favorites=favorites, mxchecks=mxchecks, mxsearches=mxsearches, sweep_six_paste=sweep_six_paste, team_paste=team_paste, dd_team_paste=dd_team_paste, has_mxcheck=True, smogon_month=_smogon_month, TOOLS=TOOLS, LIMITS=LIMITS, WAIT=WAIT, win_curve_svg=win_curve_svg, suite_lock=lambda: suite_lock.state(),
-                   team_buckets=_bucket_names, has_meta_field=_has_meta_field,
-                   has_library=_has_library())
+                   team_buckets=_bucket_names, has_meta_field=_has_meta_field)
+
+
 STATIC = {"style.css": "text/css", "app.js": "text/javascript", "sprites.js": "text/javascript", "fonts/fonts.css": "text/css",
           **{f"fonts/{n}-{s}.woff2": "font/woff2" for n in ("fredoka", "nunito") for s in ("latin", "latin-ext")}}
 
@@ -2476,6 +2713,10 @@ class Handler(BaseHTTPRequestHandler):
             from urllib.parse import parse_qs as qs
             q = qs(urlparse(self.path).query)
             return self._buddy_page(q.get("msg", [])[:1], who=q.get("who", [""])[0])
+        if path == "tournament":
+            return self._page("tournament.html", active="tournament", history=self.jobs.history("tournament"))
+        if path == "spreads":
+            return self._page("spreads.html", active="spreads", history=self.jobs.history("spreads"))
         if path == "prep":
             return self._page("prep.html", active="prep")
         if path == "compare":
@@ -2653,7 +2894,7 @@ class Handler(BaseHTTPRequestHandler):
         if path.startswith("job/"):
             job = self.jobs.get(path[4:])
 
-            if job is None or (job["tool"] not in TOOLS and job["tool"] not in ("turn1", "muselfplay", "mxcheck", "mxsearch")):
+            if job is None or (job["tool"] not in TOOLS and job["tool"] not in ("turn1", "muselfplay", "mxcheck", "mxsearch", "tournament", "spreads")):
                 return self._send(ENV.get_template("base.html").render(missing=True), code=404)
             ahead = self.jobs.ahead_of(job["id"]) if job["status"] == "queued" else 0
             sheets = _preview_sheets(job) if job["tool"] == "preview" and job["status"] == "done" else None
@@ -2689,7 +2930,7 @@ class Handler(BaseHTTPRequestHandler):
         sid = path.split("/")[2]
         if suite_lock.state() is not None:
             return self._locked_page()
-        c = crawler.open_session(sid, newest_checkpoint(), self.jobs.device)
+        c = crawler.open_session(sid, newest_checkpoint(), self.jobs.crawl_device)
         if c is None:
             return self._send("no such crawl", "text/plain", 404)
         nid = q.get("n", ["0"])[0]
@@ -2722,16 +2963,17 @@ class Handler(BaseHTTPRequestHandler):
             except ValueError as e:
                 return self._send(str(e), "text/plain; charset=utf-8", 400)
             try:
+                _paste_links(params)
                 a, b = _read(_team_src(params.get("a", "")), fmt, "Team A"), _read(_team_src(params.get("b", "")), fmt, "Team B")
             except BadInput as e:
                 return self._send(str(e), "text/plain; charset=utf-8", 400)
             oa, _ = _turn1_bring({**params, "ai": "c"}, "a", [], a)
             ob, _ = _turn1_bring({**params, "bi": "c"}, "b", [], b)
             names = {s: (params.get(f"name_{s}") or "").strip()[:40] or d for s, d in (("a", "Team A"), ("b", "Team B"))}
-            c = crawler.new_session([a, b], [oa["bring"], ob["bring"]], names, newest_checkpoint(), self.jobs.device, fmt=fmt)
+            c = crawler.new_session([a, b], [oa["bring"], ob["bring"]], names, newest_checkpoint(), self.jobs.crawl_device, fmt=fmt)
             return self._redirect(f"/crawler/s/{c.data['id']}")
         sid = path.split("/")[2]
-        c = crawler.open_session(sid, newest_checkpoint(), self.jobs.device)
+        c = crawler.open_session(sid, newest_checkpoint(), self.jobs.crawl_device)
         if c is None:
             return self._send("no such crawl", "text/plain", 404)
         nid = params.get("n", "0")
@@ -2781,15 +3023,16 @@ class Handler(BaseHTTPRequestHandler):
         return self.client_address[0] in ("127.0.0.1", "::1") or self.client_address[0] in _own_addresses()
 
     def _buckets_page(self, msgs: list[str] | None = None, edit: str | None = None, text: str | None = None,
-                      note: str | None = None, ok: bool = False, fmt: str | None = None) -> None:
+                      note: str | None = None, ok: bool = False, fmt: str | None = None, extra: dict | None = None) -> None:
+
 
         from vgc_suite.core import buckets
         if edit is None:
             edit = parse_qs(urlparse(self.path).query).get("edit", [""])[0]
         if edit and text is None and edit in buckets.names():
-            text, note, fmt = buckets.to_text(edit), buckets.get(edit).get("note", ""), buckets.format_of(edit)
+            text, note, fmt = buckets.to_text(edit), buckets.note_of(buckets.get(edit)), buckets.format_of(edit)
         return self._page("buckets.html", active="buckets", buckets=buckets.summaries(), msgs=msgs or [], ok=ok, edit=edit or "",
-                          text=text or "", note=note or "", fmt=fmt or ENV.globals["current_format"])
+                          text=text or "", note=note or "", fmt=fmt or ENV.globals["current_format"], **(extra or {}))
 
     def _buckets_post(self, action: str) -> None:
         from vgc_suite.core import buckets
@@ -2803,6 +3046,19 @@ class Handler(BaseHTTPRequestHandler):
                 return self._buckets_page(problems, edit=old, text=params.get("text", ""), note=params.get("note", ""), fmt=fmt)
             return self._buckets_page([_i18n.t("Saved bucket {name}: {n} {format} teams.", name=name, n=len(b['teams']), format=ENV.globals['format_short'].get(fmt, fmt))],
                                       edit=name, ok=True)
+        if action == "import":
+            prefix = params.get("prefix", "").strip() or "Showdown"
+            if not buckets.NAME_RE.fullmatch(prefix):
+                return self._buckets_page([_i18n.t("Bucket names: letters, digits, spaces, '-', '_' or '.'.")],
+                                          extra={"backup": params.get("backup", ""), "prefix": prefix})
+            got = buckets.import_backup(params.get("backup", ""), prefix)
+            if not got["teams"]:
+                return self._buckets_page([_i18n.t("No teams found: a backup's teams each start with a line like === [format] folder/name ===.")],
+                                          extra={"backup": params.get("backup", ""), "prefix": prefix})
+            bo3 = {"1": True, "0": False}.get(params.get("bo3", ""))
+            got["buddy"] = buckets.buddy_backup(got["teams"], bo3)
+            msgs = [_i18n.t("{n} teams into {bucket}.", n=k, bucket=b) for b, k in got["buckets"].items()] or [_i18n.t("No team was added.")]
+            return self._buckets_page(msgs, ok=bool(got["buckets"]), extra={"imported": got, "prefix": prefix})
         if action == "delete" and name in buckets.names():
             buckets.delete(name)
             return self._buckets_page([_i18n.t("Deleted bucket {name}.", name=name)], edit="", ok=True)
@@ -2975,7 +3231,7 @@ class Handler(BaseHTTPRequestHandler):
             from vgc_suite.core import crawler
             from vgc_suite.core.models import newest_checkpoint
             sid, nid = tool.split("/")[2], params.get("n", "0")
-            c = crawler.open_session(sid, newest_checkpoint(), self.jobs.device)
+            c = crawler.open_session(sid, newest_checkpoint(), self.jobs.crawl_device)
             if c is None or nid not in c.data["nodes"]:
                 return self._send("no such crawl node", "text/plain", 404)
             me, side = (params.get("me") or "").strip()[:18], params.get("side") if params.get("side") in ("p1", "p2") else "p1"
@@ -3044,7 +3300,7 @@ class Handler(BaseHTTPRequestHandler):
             self.send_header("Location", f"/job/{dd}#brings")
             self.end_headers()
             return
-        if tool not in TOOLS and tool not in ("turn1", "muselfplay", "mxcheck", "mxsearch"):
+        if tool not in TOOLS and tool not in ("turn1", "muselfplay", "mxcheck", "mxsearch", "tournament", "spreads"):
             return self._send("not found", "text/plain", 404)
         n = min(int(self.headers.get("Content-Length") or 0), 2_000_000)
         params = {k: v[0] for k, v in parse_qs(self.rfile.read(n).decode("utf8"), keep_blank_values=True).items()}
@@ -3066,7 +3322,7 @@ class Handler(BaseHTTPRequestHandler):
                 self.send_header("Location", f"/job/{hit['id']}")
                 self.end_headers()
                 return
-        jid = self.jobs.submit(tool, params)
+        jid = self.jobs.submit(tool, _paste_links(params))
         self.send_response(303)
         self.send_header("Location", f"/job/{jid}")
         self.end_headers()

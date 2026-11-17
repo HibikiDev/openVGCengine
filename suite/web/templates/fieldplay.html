@@ -15,6 +15,7 @@
           {% set bks = team_buckets() %}{% if bks %}<optgroup label="{{ _('Your team buckets') }}">
           {% for b in bks %}<option value="bucket:{{ b }}" data-format="{{ bucket_format(b) }}">{{ _("Bucket: {name}", name=b) }}</option>{% endfor %}</optgroup>{% endif %}
         </select>
+        {% include "_bucket_pick.html" %}
         {% if not bks and not has_meta_field() %}<div class="small">{{ _("<b>No field yet:</b> make a <a href=\"/buckets\">team bucket</a> of the teams you expect to face, then pick it here.")|safe }}</div>{% endif %}</div>
       <div><label for="series">{{ _("Series per team") }}</label>
         <select id="series" name="series"><option value="1">1</option><option value="2" selected>2</option><option value="3">3</option></select></div>
@@ -33,7 +34,7 @@
         </select></div>
     </div>
     <p class="small muted" id="sheet-note" hidden>{{ _("Game 1 plays the Deep Dive's bring for that opponent (the same leads, searched cells included); games 2 and 3 change leads by the bot's rule, reacting to game 1. Your team and the field come from that Deep Dive run.") }}</p>
-    <p class="small"><label><input type="checkbox" name="raw" value="1"> {{ _("Without search") }} <span class="muted">{{ _("(much faster, weaker play)") }}</span></label></p>
+    <p class="small"><label><input type="checkbox" name="raw" value="1"> {{ _("Fast Mode - no search") }} <span class="muted">{{ _("(much faster, weaker play)") }}</span></label></p>
     <p class="small muted">{{ _("Each side picks its own four at team preview and changes leads between games like the practice bot. A long run: a field of 14 teams at 2 series is 28 series.") }}</p>
     <button class="btn" type="submit">{{ _("Play the series") }}</button>
   </form>

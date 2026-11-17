@@ -22,11 +22,9 @@
       <div><label for="note">{{ _("Note") }} <span class="hint">{{ _("optional") }}</span></label><input id="note" name="note" maxlength="300" value="{{ note }}" placeholder="{{ _('e.g. what I expect on day 1') }}"></div>
       <div><label for="format">{{ _("Format") }}</label><select id="format" name="format">{% for f, short in tool_formats %}<option value="{{ f }}"{{ ' selected' if f == fmt }}>{{ short }}</option>{% endfor %}</select></div>
     </div>
-    <label for="text">{{ _("Teams") }} <span class="hint">{{ _("up to 20") }}</span></label>
+    <label for="text">{{ _("Teams") }}</label>
     <div class="note small">{{ _("<b>Open team sheets work as they are.</b> Your field's teams need no EVs: paste what the sheet shows, and each set without a spread gets its species' most used one from the usage stats. A nature, if the paste has one, is kept.")|safe }}</div>
-    <textarea id="text" name="text" required style="min-height:260px; font-family: ui-monospace, Consolas, monospace; font-size:.85rem" placeholder="{% if has_library %}BR-111 x2
-NI-1
-{% endif %}https://pokepast.es/0123abcd x1.5
+    <textarea id="text" name="text" required style="min-height:260px; font-family: ui-monospace, Consolas, monospace; font-size:.85rem" placeholder="https://pokepast.es/0123abcd x1.5
 ---
 # Sun core x3
 Charizard @ Charizardite Y
@@ -34,9 +32,9 @@ Ability: Blaze
 ...">{{ text }}</textarea>
     <details><summary class="small">{{ _("How to write the teams") }}</summary>
       <ul class="small">
-        <li>{{ (_("One <b>library id</b> (BR-111, NI-1, LO-25) or <b>pokepast.es link</b> per line: each line is one team.") if has_library else _("One <b>pokepast.es link</b> per line: each line is one team."))|safe }}</li>
+        <li>{{ _("One <b>pokepast.es link</b> per line: each line is one team.")|safe }}</li>
         <li>{{ _("For a <b>pasted Showdown export</b>, separate teams with a line of <code>---</code>.")|safe }}</li>
-        <li>{{ _("A <b>weight</b> goes at the end of a line or a header: <code>{example} x2</code> means faced twice as often as a team at x1. No weight means x1.", example='BR-111' if has_library else 'https://pokepast.es/0123abcd')|safe }}</li>
+        <li>{{ _("A <b>weight</b> goes at the end of a line or a header: <code>{example} x2</code> means faced twice as often as a team at x1. No weight means x1.", example='https://pokepast.es/0123abcd')|safe }}</li>
         <li>{{ _("An optional <b>header line</b> <code># Label x3</code> above a team names it and sets its weight.")|safe }}</li>
         <li>{{ _("pokepast.es links are read once, when you save. The bucket keeps the team itself, so later edits on pokepast don't change it.") }}</li>
         <li>{{ _("A bucket holds one format's teams; the tools offer it in that format.") }}</li>
@@ -51,6 +49,25 @@ Ability: Blaze
   </form>
 </div>
 
+<div class="card" id="import">
+  <h2>{{ _("Import from Showdown backups") }}</h2>
+  <p class="small">{{ _("Paste what Showdown's teambuilder gives you under <b>Backup all teams</b> (the whole list or one format's). Each <code>=== [format] folder/name ===</code> line starts a team; every team goes into a bucket of its own format (<b>{prefix} Reg M-C</b>, <b>{prefix} VGC 2013</b>, ...), named after the team. A team already there isn't added twice.", prefix="Showdown")|safe }}</p>
+  <form method="post" action="/buckets/import">
+    <textarea name="backup" rows="10" required placeholder="=== [gen9championsvgc2026regmc] Folder/Team name ===">{{ backup or '' }}</textarea>
+    <div class="row">
+      <div><label for="prefix">{{ _("Bucket names start with") }}</label><input id="prefix" name="prefix" value="{{ prefix or 'Showdown' }}" maxlength="24"></div>
+      <div><label for="bo3">{{ _("For your local Showdown") }}</label><select id="bo3" name="bo3">
+        <option value="">{{ _("Bo1 or Bo3, as in the backup") }}</option><option value="1">{{ _("all Bo3") }}</option><option value="0">{{ _("all Bo1") }}</option></select></div>
+    </div>
+    <button class="btn" type="submit">{{ _("Import") }}</button>
+  </form>
+  {% if imported %}
+  {% if imported.skipped %}<p class="small"><b>{{ _("Left out:") }}</b></p><ul class="small">{% for t, why in imported.skipped %}<li>{{ t }}: {{ why }}</li>{% endfor %}</ul>{% endif %}
+  {% if imported.buddy %}<div class="export"><p class="small">{{ _("The same backup for the local Showdown the Buddy opens: its format lines name the practice server's formats, so Showdown files each team under the right one. In Showdown's teambuilder: <b>Backup all teams</b>, paste it below what is there, Save.")|safe }}</p>
+    <pre class="small" style="max-height:16em;overflow:auto">{{ imported.buddy }}</pre><button type="button" class="btn alt inline" onclick="copyExport(this)">{{ _("Copy") }}</button></div>{% endif %}
+  {% endif %}
+</div>
+
 <div class="card">
   <h2>{{ _("Saved buckets") }}</h2>
   {% if buckets %}
@@ -59,13 +76,18 @@ Ability: Blaze
   <h3 style="margin-bottom:4px">{{ b.name }} <span class="tag">{{ format_short.get(b.format, b.format) }}</span> <span class="muted small">· {{ _("{n} teams", n=b.teams|length) }} · {{ _("updated {when}", when=b.updated) }}</span></h3>
   {% if b.note %}<p class="small muted" style="margin-top:0">{{ b.note }}</p>{% endif %}
   <div class="scroll"><table class="tbl">
-    <tr><th>{{ _("team") }}</th><th class="num">{{ _("weight") }}</th><th class="num">{{ _("share") }}</th><th>{{ _("six") }}</th></tr>
+    <tr><th>{{ _("team") }}</th><th class="num">{{ _("weight") }}</th><th class="num">{{ _("share") }}</th><th>{{ _("six") }}</th><th></th></tr>
+    {% set ex = bucket_exports(b.name) %}
     {% for t in b.teams %}<tr><td class="small">{{ _(t.label) }}</td><td class="num">x{{ '%g'|format(t.weight) }}</td>
-      <td class="num">{{ (t.weight / tot)|pct }}</td><td class="small">{{ t.species|names(' · ') }}</td></tr>{% endfor %}
+      <td class="num">{{ (t.weight / tot)|pct }}</td><td class="small">{{ t.species|six }}</td>
+      <td>{% if ex %}<span><pre hidden>{{ ex[loop.index0] }}</pre><button type="button" class="btn alt inline" style="font-size:.8rem; padding:1px 8px" onclick="copyExport(this)"
+        title="{{ _("Copies this team as a Showdown export: in the teambuilder, New Team, Import from text, paste.") }}">{{ _("copy") }}</button></span>{% endif %}</td></tr>{% endfor %}
   </table></div>
   <div style="display:flex; gap:10px; margin:8px 0 18px; flex-wrap: wrap; align-items: center">
     <a href="/buckets?edit={{ b.name|urlencode }}">{{ _("edit") }}</a>
     <a href="/validate?field={{ ('bucket:' ~ b.name)|urlencode }}">{{ _("Deep Dive against it") }}</a>
+    {% set bk = bucket_backup(b.name) %}{% if bk %}<span><pre hidden>{{ bk }}</pre><button type="button" class="btn alt inline" style="font-size:.85rem" onclick="copyExport(this)"
+      title="{{ _("Copies the bucket as a Showdown backup for your local Showdown (the Buddy's): in its teambuilder, Backup all teams, paste it below what is there, Save.") }}">{{ _("copy") }}</button></span>{% endif %}
     <form method="post" action="/buckets/delete" onsubmit="return confirm({{ _('Delete bucket {name}?', name=b.name)|tojson|e }})" style="margin:0">
       <input type="hidden" name="name" value="{{ b.name }}"><button class="btn alt inline" type="submit" style="font-size:.85rem">{{ _("delete") }}</button></form>
   </div>

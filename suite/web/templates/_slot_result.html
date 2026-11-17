@@ -12,7 +12,7 @@
   </div>
   <p class="small">{{ _("Flag a drop of more than") }} <input id="slot-guard" class="num-inline" type="number" min="1" max="30" value="5"> {{ _("points on any other team, or a team that falls under 50%.") }}</p>
   <div class="scroll"><table class="tbl" id="slot-table"></table></div>
-  <p class="small muted">{{ (_("Points vs your current team, as picked (searched; the both-adapt pass is a raw quick read and doesn't rank here).") if r.search else _("Points vs your current team, as picked (quick mode; the both-adapt pass is a raw quick read and doesn't rank here).")) }} {{ _("Single-team changes under ~{n} points are noise; read the averages.", n=(139 / (r.search.games_per_team ** 0.5))|round|int if r.search else 8) }}</p>
+  <p class="small muted">{{ (_("Points vs your current team, as picked (Search Mode; the both-adapt pass is a fast read and doesn't rank here).") if r.search else _("Points vs your current team, as picked (Fast Mode; the both-adapt pass is a fast read and doesn't rank here).")) }} {{ _("Single-team changes under ~{n} points are noise; read the averages.", n=(139 / (r.search.games_per_team ** 0.5))|round|int if r.search else 8) }}</p>
 </div>
 <script type="application/json" id="slot-data">{{ {"teams": r.opponents|map(attribute='id')|list, "share": r.opponents|map(attribute='share')|list} | tojson }}</script>
 <script type="application/json" id="slot-rows">[{% for c in r.rows %}{{ {"label": c.label, "shown": c.label|cand_label, "source": c.source, "set": c.set|set_text, "fast": c.opponents,

@@ -28,6 +28,7 @@ for p in (ROOT / "trainer", ROOT / "suite", ROOT / "trainer/scripts"):
 import show_trace
 from vgc_suite.buddy import Buddy, disagreements, log_notes
 from vgc_suite.core.teams import lookup_team
+from vgc_trainer import gpu_lock
 from vgc_trainer.formats import REGULATIONS
 from vgc_trainer.showdown.agent import Agent
 from vgc_trainer.showdown.buddy_client import BuddyClient
@@ -75,6 +76,10 @@ def make_client(args):
     team_ids = [t for t in args.team.split(",") if t]
     teams = [lookup_team(t) for t in team_ids]
     agent = Agent(args.checkpoint, args.device, seed=args.seed, temperature=args.temperature, min_p=args.min_p, closer=args.closer)
+
+
+    if gpu_lock.configure(args.device):
+        print(f"GPU work serialised (device {args.device})", flush=True)
     formats = [buddy_format(f) for f in (args.formats.split(",") if args.formats else PLAYED)]
     client = BuddyClient(args.port, args.username, agent, teams[0] if teams else [], fmt=formats[0], formats=formats,
                          allow=set(args.allow.split(",")) if args.allow else None)
@@ -118,10 +123,14 @@ async def _coach(args, agent, user: str, room: str | None = None) -> None:
     from vgc_suite.core.bundle import path as pinned
     try:
         if not _COACH_LS:
-            ls = LiveSearch(agent, 8, 8, seed=0, score="value", cand_temp=2.0)
-            ls.load_reply_policy(str(pinned("reply_policy")))
-            ls.load_foe_preview(str(pinned("preview_head")))
-            _COACH_LS.append(ls)
+            def build() -> LiveSearch:
+                ls = LiveSearch(agent, 8, 8, seed=0, score="value", cand_temp=2.0)
+                ls.load_reply_policy(str(pinned("reply_policy")))
+                ls.load_foe_preview(str(pinned("preview_head")))
+                return ls
+            ls = await gpu_lock.call(build)
+            if not _COACH_LS:
+                _COACH_LS.append(ls)
         await coach.watch(args.port, user, agent, _COACH_LS[0], str(args.checkpoint), room=room)
     except Exception as e:
         print(f"coach for {user} stopped ({type(e).__name__}: {e})", flush=True)
@@ -182,7 +191,7 @@ async def main(args) -> None:
                     f.write(json.dumps(record) + "\n")
             if args.post_game and result is not None and record["opponent"]:
                 try:
-                    lines = await asyncio.to_thread(disagreements, client.agent, result.raw, record["opponent"])
+                    lines = await asyncio.to_thread(gpu_lock.locked(disagreements), client.agent, result.raw, record["opponent"])
                     log_notes(Path(args.buddy_notes), battle.room, record["opponent"], lines)
                     print(f"{battle.room}: buddy notes for {record['opponent']}: {len(lines)}", flush=True)
                 except Exception as e:
